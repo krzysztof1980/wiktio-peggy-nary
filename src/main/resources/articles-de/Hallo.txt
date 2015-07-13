@@ -1,0 +1,66 @@
+{{Siehe auch|[[hallo]]}}
+== Hallo ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=das Hallo
+|Nominativ Plural=die Hallos
+|Genitiv Singular=des Hallos
+|Genitiv Plural=der Hallos
+|Dativ Singular=dem Hallo
+|Dativ Plural=den Hallos
+|Akkusativ Singular=das Hallo
+|Akkusativ Plural=die Hallos
+}}
+
+{{Worttrennung}}
+:Hal·lo, {{Pl.}} Hal·los
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|haˈloː}}, {{Pl.}} {{Lautschrift|haˈloːs}}
+:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{Reime}} {{Reim|oː|Deutsch}}
+
+{{Bedeutungen}}
+:[1] lautes Rufen
+
+{{Herkunft}}
+:Substantivierung des Grußworts [[hallo]]
+
+{{Synonyme}}
+:[1] [[Gejohle]]
+
+{{Beispiele}}
+:[1] Als er die Treppe hinaufkam, wurde er mit großem ''Hallo'' empfangen.
+:[1] „Da gab es keine Möglichkeit, mich von vielen Leuten (…) zu verabschieden. Deswegen wird es jetzt ein Tag des großen ''Hallos'' und des offiziellen Abschieds werden.“<ref>Marc Heinrich (Interviewer): [http://www.faz.net/aktuell/rhein-main/sport/eintracht-frankfurt/im-gespraech-armin-reutershahn-der-tag-des-hallos-und-des-abschieds-1843358.html ''Im Gespräch: Armin Reutershahn. „Der Tag des Hallos und des Abschieds“''] auf www.faz.net vom 15. August 2009</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] großes ''Hallo''
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|hallo}}
+|Ü-rechts=
+*{{cs}}: [1] {{Ü|cs|haló}} {{n}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-Duden|Hallo}}
+:[1] {{Ref-DWDS|Hallo}}
+:[1] {{Ref-UniLeipzig|Hallo}}
+
+{{Quellen|}}
+
+{{Ähnlichkeiten}}
+:[[Hall]], [[Halle]], [[halle]], [[Halo]], [[holla]], [[Holle]]
+
+[[fr:Hallo]]
+[[hu:Hallo]]
+[[io:Hallo]]
+[[it:Hallo]]
+[[ko:Hallo]]
+[[mg:Hallo]]
+[[pl:Hallo]]
+[[ru:Hallo]]
+[[sv:Hallo]]
+[[zh:Hallo]]

@@ -1,0 +1,394 @@
+{{Siehe auch|[[Bar]], [[-bar]]}}
+
+== bar ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Adjektiv|Deutsch}} ===
+
+{{Deutsch Adjektiv Übersicht
+|Positiv=bar
+|Komparativ=—
+|Superlativ=—
+}}
+
+{{Worttrennung}}
+:bar, {{kSt.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|baːɐ̯}}
+:{{Hörbeispiele}} {{Audio|De-bar.OGG‎|bar‎}}
+:{{Reime}} {{Reim|aːɐ̯|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[nackt]]
+:[2] mit [[Geld]]
+
+{{Herkunft}}
+:mittelhochdeutsch und althochdeutsch ''bar''; aus germanisch ''*baza-'' „[[bar]], [[bloß]]“, dieses aus indogermanisch ''*b<sup>h</sup>oso-'' mit der gleichen Bedeutung. Zahlreiche verwandte Wörter in anderen indogermanischen Sprachen. Man nimmt an, dass ein indogermanischer Verb ''*b<sup>h</sup>es-/ *b<sup>h</sup>sā/ *psā-'' mit der Bedeutung „[[reiben]], [[abreiben]]“ zugrundeliegt. Die Bedeutung entwickelt sich demnach von abgerieben zu nackt, bloß. Daraus entstehen die Bedeutungen „ohne etwas“ (wie in ''bar jeder Einsicht'') und „offen vor Augen liegend“ (schon im Mittelhochdeutsch auf Geld bezogen).<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Seite 89.</ref>
+
+{{Synonyme}}
+:[1] [[bloß]], [[nackt]], [[unbedeckt]]
+
+{{Gegenwörter}}
+:[1] [[angezogen]], [[bedeckt]], [[bekleidet]]
+:[2] [[unbar]]
+
+{{Unterbegriffe}}
+:[2] in [[Hartgeld]], in kleiner [[Münze]]
+
+{{Beispiele}}
+:[1] Er kam ''baren'' Hauptes.
+:[2] Wir zahlen ''bar.''
+
+{{Redewendungen}}
+:[1] baren Hauptes, barer Unsinn
+:[2] Nur Bares ist Wahres; in, gegen bar ; er bekam es bar auf die Hand (derb: auf die Klaue)
+:[2] metaphorisch: [[etwas für bare Münze nehmen]]
+
+{{Wortbildungen}}
+:[1] [[barbusig]], [[barfuß]], [[barhäuptig]]
+:[2] [[Bareinlage]], [[Bares]], [[Barzahlung]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|bare}}
+*{{nl}}: [2] {{Ü|nl|contant}}, {{Ü|nl|cash}}
+|Ü-rechts=
+*{{sv}}: [1] {{Ü|sv|bar}}, {{Ü|sv|ren}}; [2] {{Ü|sv|kontant}}
+*{{cs}}: [2] {{Ü|cs|hotově}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|bar}}
+:[1] {{Ref-Grimm|bar}}
+:[1] {{Ref-DWDS|bar}}
+:[1] {{Ref-Canoo|bar}}
+:[1] {{Ref-UniLeipzig|bar}}
+:[1] {{Ref-FreeDictionary|bar}}
+{{Referenzen prüfen|Deutsch}}
+
+=== {{Wortart|Präposition|Deutsch}}, auch Postposition ===
+
+{{Worttrennung}}
+:bar
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈbaːɐ̯}}
+:{{Hörbeispiele}} {{Audio|De-bar.OGG‎|bar‎}}
+:{{Reime}} {{Reim|aːɐ̯|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''mit [[Genitiv]]'' [[ohne]]
+
+{{Herkunft}}
+:[1] wie oben Adjektiv ''bar''
+
+{{Synonyme}}
+:[1] [[ohne]]
+
+{{Gegenwörter}}
+:[1] [[einschließlich]], [[inklusive]], [[mit]], [[samt]]
+
+{{Beispiele}}
+:[1] ''bar'' jeder Vernunft, jeden Anstandes ''bar''
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+|Ü-rechts=
+*{{sv}}: [1] {{Ü|sv|utan}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|bar}}
+:[1] {{Ref-Grimm|bar}}
+:[1] {{Ref-DWDS|bar}}
+:[1] {{Ref-Canoo|bar}}
+:[1] {{Ref-UniLeipzig|bar}}
+:[1] {{Ref-FreeDictionary|bar}}
+{{Referenzen prüfen|Deutsch}}
+
+== bar ({{Sprache|Italienisch}}) ==
+=== {{Wortart|Substantiv|Italienisch}}, {{m}} ===
+
+{{Italienisch Substantiv Übersicht
+|Singular=il bar
+|Plural=i bar
+}}
+
+{{Worttrennung}}
+:bar, {{Pl.}} bar
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bar}}, {{Pl.}} {{Lautschrift|bar}}
+:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] die [[Bar]]
+:[2] das [[Café]], das [[Straßencafé]]
+:[3] die [[Hausbar]]
+:[4] ''[[Physik]]:'' das [[Bar]]: Maßeinheit für den Druck
+
+{{Unterbegriffe}}
+:[1] [[barista#Substantiv.2C_m|barista]] {{m}} ([[Barmann]])
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen|spr=Italienisch}}
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+:{{Übersetzungen umleiten|1|Bar}}
+:{{Übersetzungen umleiten|2|Café}}, {{Übersetzungen umleiten||Straßencafé}}
+:{{Übersetzungen umleiten|3|Hausbar}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=it|Bar (pubblico esercizio)}}
+:[2–4] {{Ref-Pons|it|bar}}
+:[1, 2] {{Ref-Leo|it|bar}}
+
+== bar ({{Sprache|Polnisch}}) ==
+=== {{Wortart|Substantiv|Polnisch}}, {{m}} ===
+
+{{Polnisch Substantiv Übersicht
+|Nominativ Singular=bar
+|Genitiv Singular=baru
+|Dativ Singular=barowi
+|Akkusativ Singular=bar
+|Instrumental Singular=barem
+|Lokativ Singular=barze
+|Vokativ Singular=barze
+|Nominativ Plural=bary
+|Genitiv Plural=barów
+|Dativ Plural=barom
+|Akkusativ Plural=bary
+|Instrumental Plural=barami
+|Lokativ Plural=barach
+|Vokativ Plural=bary
+}}
+
+{{Worttrennung}}
+:bar, {{Pl.}} ba·ry
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bar}}, {{Pl.}} {{Lautschrift|ˈbarɨ}}
+:{{Hörbeispiele}} {{Audio|Pl-bar.ogg}}, {{Pl.}} {{Audio|}}
+:{{Reime}} {{Reim|ar|Polnisch}}
+
+{{Bedeutungen}}
+:[1] ''[[Gastronomie]]:'' Bar
+:[2] ''[[Theke]] in [1]:'' Bar, Tresen, Theke
+
+{{Herkunft}}
+:[[Entlehnung]] aus dem [[englisch]]en ''{{Ü|en|bar}}''<ref>{{Ref-SWO-PWN|2729}}</ref>
+
+{{Verkleinerungsformen}}
+:[1, 2] [[barek]]
+
+{{Oberbegriffe}}
+:[1] [[lokal]]
+:[2] [[bufet]]
+
+{{Unterbegriffe}}
+:[1] [[bar kawowy]], [[bar mleczny]], [[bar szybkiej obsługi]] ([[fast food]]), [[bistro]], [[drink-bar]], [[kotajlbar]] ([[cocktail-bar]]), [[snack-bar]]
+
+{{Beispiele}}
+:[1]
+
+{{Charakteristische Wortkombinationen}}
+:[2] [[jeść]] ([[zjeść]]) [[przy]] ''barze''
+
+{{Wortbildungen}}
+:[1] [[barowy]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+:{{Übersetzungen umleiten|1|Bar|1}} {{f}}
+:{{Übersetzungen umleiten|2|Bar|}} {{f}}, {{Übersetzungen umleiten||Tresen|}} {{m}}, {{Übersetzungen umleiten||Theke|}} {{f}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=pl|bar (lokal gastronomiczny)}}
+:[1, 2] {{Ref-Pons|pl}}
+:[1, 2] {{Ref-SJP-PWN|bar}}
+:[1, 2] {{Ref-SWO-PWN|2729}}
+:[*] {{Ref-SO-PWN|bar}}
+
+=== {{Wortart|Substantiv|Polnisch}}, {{m}} ===
+
+{{Polnisch Substantiv Übersicht
+|Nominativ Singular=bar
+|Genitiv Singular=baru
+|Dativ Singular=barowi
+|Akkusativ Singular=bar
+|Instrumental Singular=barem
+|Lokativ Singular=barze
+|Vokativ Singular=barze
+|Nominativ Plural=—
+|Genitiv Plural=—
+|Dativ Plural=—
+|Akkusativ Plural=—
+|Instrumental Plural=—
+|Lokativ Plural=—
+|Vokativ Plural=—
+}}
+
+{{Worttrennung}}
+:bar, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bar}}
+:{{Hörbeispiele}} {{Audio|}}
+:{{Reime}} {{Reim|ar|Polnisch}}
+
+{{Bedeutungen}}
+:[1] ''[[Chemie]], [[Physik]]:'' Barium
+
+{{Symbole}}
+:[1] [[Ba]]
+
+{{Herkunft}}
+:[[Entlehnung]] aus dem [[neulateinisch]]en ''{{Ü|la|barium}}''<ref>{{Ref-SWO-PWN|2730}}</ref>
+
+{{Oberbegriffe}}
+:[1] [[pierwiastek chemiczny]], [[pierwiastek]]
+
+{{Beispiele}}
+:[1]
+
+{{Wortbildungen}}
+:[1] [[barowy]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+:{{Übersetzungen umleiten|1|Barium|1}} {{n}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=pl|bar (pierwiastek)}}
+:[1] {{Ref-Pons|pl}}
+:[1] {{Ref-SJP-PWN|bar}}
+:[1] {{Ref-SWO-PWN|2730}}
+:[1] {{Ref-SO-PWN|bar}}
+
+{{Periodensystem (Polnisch)}}
+
+=== {{Wortart|Substantiv|Polnisch}}, {{m}} ===
+
+{{Polnisch Substantiv Übersicht
+|Nominativ Singular=bar
+|Genitiv Singular=bara
+|Dativ Singular=barowi
+|Akkusativ Singular=bar
+|Instrumental Singular=barem
+|Lokativ Singular=barze
+|Vokativ Singular=barze
+|Nominativ Plural=bary
+|Genitiv Plural=barów
+|Dativ Plural=barom
+|Akkusativ Plural=bary
+|Instrumental Plural=barami
+|Lokativ Plural=barach
+|Vokativ Plural=bary
+}}
+
+{{Worttrennung}}
+:bar, {{Pl.}} ba·ry
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bar}}, {{Pl.}} {{Lautschrift|ˈbarɨ}}
+:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{Reime}} {{Reim|ar|Polnisch}}
+
+{{Bedeutungen}}
+:[1] ''[[Physik]]:'' Bar
+
+{{Abkürzungen}}
+:[1] [[b]]
+
+{{Oberbegriffe}}
+:[1] [[jednostka]]
+
+{{Beispiele}}
+:[1]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+:{{Übersetzungen umleiten|1|Bar|1}} {{n}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=pl|bar (jednostka)}}
+:[1] {{Ref-Pons|pl}}
+:[1] {{Ref-SJP-PWN|bar}}
+:[1] {{Ref-SWO-PWN|2730}}
+:[1] {{Ref-SO-PWN|bar}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+:[[Bar]], [[bar-]], [[bare]], [[bat]], [[par]]
+
+[[ar:bar]]
+[[br:bar]]
+[[bs:bar]]
+[[chr:bar]]
+[[cs:bar]]
+[[cy:bar]]
+[[da:bar]]
+[[el:bar]]
+[[en:bar]]
+[[es:bar]]
+[[et:bar]]
+[[eu:bar]]
+[[fa:bar]]
+[[fi:bar]]
+[[fj:bar]]
+[[fr:bar]]
+[[gl:bar]]
+[[hr:bar]]
+[[hu:bar]]
+[[hy:bar]]
+[[id:bar]]
+[[io:bar]]
+[[is:bar]]
+[[it:bar]]
+[[ja:bar]]
+[[jbo:bar]]
+[[jv:bar]]
+[[kk:bar]]
+[[kn:bar]]
+[[ko:bar]]
+[[ku:bar]]
+[[la:bar]]
+[[li:bar]]
+[[lt:bar]]
+[[lv:bar]]
+[[mg:bar]]
+[[ml:bar]]
+[[my:bar]]
+[[nl:bar]]
+[[no:bar]]
+[[pl:bar]]
+[[pt:bar]]
+[[ro:bar]]
+[[ru:bar]]
+[[sa:bar]]
+[[sh:bar]]
+[[simple:bar]]
+[[sq:bar]]
+[[sv:bar]]
+[[sw:bar]]
+[[ta:bar]]
+[[te:bar]]
+[[th:bar]]
+[[tk:bar]]
+[[tr:bar]]
+[[tt:bar]]
+[[uz:bar]]
+[[vi:bar]]
+[[vo:bar]]
+[[wo:bar]]
+[[zh:bar]]

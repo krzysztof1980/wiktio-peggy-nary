@@ -1,0 +1,88 @@
+== Thulium ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=das Thulium
+|Nominativ Plural=—
+|Genitiv Singular=des Thuliums
+|Genitiv Plural=—
+|Dativ Singular=dem Thulium
+|Dativ Plural=—
+|Akkusativ Singular=das Thulium
+|Akkusativ Plural=—
+|Bild=Tm-TableImage.png|210px|1|''Thulium'' im Periodensystem
+}}
+
+{{Worttrennung}}
+:Thu·li·um, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈtuːli̯ʊm}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] [[chemisch]]es [[Element]] mit der Ordnungszahl 69, das zu den [[Lanthanoid]]en gehört
+
+{{Abkürzungen}}
+:[1] [[Tm]] ''(chemisches Zeichen)''
+
+{{Herkunft}}
+:[1] nach Thule, dem mythischen Namen für Skandinavien
+
+{{Oberbegriffe}}
+:[1] [[Lanthanoid]], [[Metall]], [[chemisches Element]]
+
+{{Beispiele}}
+:[1] In der Natur kommt ''Thulium'' nur in Verbindungen vor.
+:[1] Im Mineral Gadolinit finden sich geringe Mengen ''Thulium.''
+
+{{Wortbildungen}}
+:[[Thuliumverbindung]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{ar}}: [1] {{Üt|ar|ثليوم|}}
+*{{hy}}: [1] {{Üt|hy|թուլիում|tulium}}
+*{{zh-cn}}: [1] {{Üt|zh|铥|diū}}
+*{{zh-tw}}: [1] {{Üt|zh|銩|diū}}
+*{{en}}: [1] {{Ü|en|thulium}}
+*{{fi}}: [1] {{Ü|fi|tulium}}
+*{{fr}}: [1] {{Ü|fr|thulium}} {{m}}
+*{{he}}: [1] {{Üt|he|תוליום|tulium}}
+*{{is}}: [1] {{Ü|is|túlín}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|tulio}}
+*{{lt}}: [1] {{Ü|lt|tulis}}
+*{{nl}}: [1] {{Ü|nl|thulium}}
+*{{pl}}: [1] {{Ü|pl|tul}}
+*{{pt}}: [1] {{Ü|pt|túlio}}
+*{{ro}}: [1] {{Ü|ro|tuliu}}
+*{{ru}}: [1] {{Üt|ru|тулий|tulij}}
+*{{sv}}: [1] {{Ü|sv|tulium}}
+*{{es}}: [1] {{Ü|es|tulio}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Thulium}}
+:[1] {{Ref-Canoo|Thulium}}
+
+{{Periodensystem}}
+
+{{Ähnlichkeiten}}
+:[[Thallium]]
+
+[[cs:Thulium]]
+[[en:Thulium]]
+[[eu:Thulium]]
+[[fr:Thulium]]
+[[hu:Thulium]]
+[[io:Thulium]]
+[[ja:Thulium]]
+[[lt:Thulium]]
+[[nn:Thulium]]
+[[pl:Thulium]]
+[[pt:Thulium]]
+[[ro:Thulium]]
+[[ru:Thulium]]
+[[sv:Thulium]]
+[[zh:Thulium]]

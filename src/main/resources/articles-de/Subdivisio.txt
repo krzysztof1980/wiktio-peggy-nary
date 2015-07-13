@@ -1,0 +1,45 @@
+== Subdivisio ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=die Subdivisio
+|Nominativ Plural=die Subdivisiones
+|Genitiv Singular=der Subdivisio
+|Genitiv Plural=der Subdivisiones
+|Dativ Singular=der Subdivisio
+|Dativ Plural=den Subdivisiones
+|Akkusativ Singular=die Subdivisio
+|Akkusativ Plural=die Subdivisiones
+}}
+
+{{Worttrennung}}
+:Sub·di·vi·sio, {{Pl.}} Sub·di·vi·si·o·nes
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|zʊpdiˈviːzi̯o}}, {{Pl.}} {{Lautschrift|zʊpdiviˈzi̯oːneːs}}
+:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] ''[[Biologie]]:'' die hierarchische Gliederungsstufe der [[Divisio]] (deutsch: [[Abteilung]]) im Reich der Pflanzen und der Pilze wird weiter in ''Subdivisiones'' (deutsch: [[Unterabteilung|Unterabteilungen]]) differenziert
+
+{{Synonyme}}
+:[1] Unterabteilung (in der Biologie)
+
+{{Beispiele}}
+:[1] Die Taxonomie der Biologie geht auf die Systematik Carl von Linnés zurück. Hier finden wir Begriffe wie Regnum - Subregnum - Divisio und ''Subdivisio,'' mit anderen Worten Reich - Unterreich - Abteilung und Unterabteilung.
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{fr}}: [1] {{Ü|fr|sub-division}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Abteilung (Biologie)}}
+:[1] [http://www.wissenschaft-online.de/abo/lexikon/bio/64514] wissenschaft-online.de, 03/2012
+
+{{Ähnlichkeiten}}
+:[[Subdivision]]
+
+[[fr:Subdivisio]]
+[[ru:Subdivisio]]

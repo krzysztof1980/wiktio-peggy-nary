@@ -1,0 +1,67 @@
+== pittoresk ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Adjektiv|Deutsch}} ===
+{{überarbeiten|Synonym aus Bedeutung entfernen|Deutsch}}
+
+{{Deutsch Adjektiv Übersicht
+|Positiv=pittoresk
+|Komparativ=pittoresker
+|Superlativ=am pittoreskesten
+}}
+
+{{Worttrennung}}
+:pit·to·resk, {{Komp.}} pit·to·res·ker, {{Sup.}} pit·to·res·kes·ten
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˌpɪtoˈʀɛsk}}, {{Komp.}} {{Lautschrift|ˌpɪtoˈʀɛskɐ}}, {{Sup.}} {{Lautschrift|ˌpɪtoˈʀɛskəstn̩}}
+:{{Hörbeispiele}} {{Audio|De-at-pittoresk.ogg|pittoresk (österreichisch)}}, {{Komp.}} {{Audio|}}, {{Sup.}} {{Audio|}}
+:{{Reime}} {{Reim|ɛsk|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''[[bildungssprachlich]]:'' [[malerisch]]
+
+{{Herkunft}}
+:im 18. Jahrhundert von französisch ''{{Ü|fr|pittoresque}}'' entlehnt, das auf italienisch ''{{Ü|it|pittoresco}}'' zurückgeht, einer [[Ableitung]] von italienisch ''{{Ü|it|pittore}}'' „Maler“, das seinerseits auf lateinisch ''{{Ü|la|pictor}}'' „zurückgeht<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „pittoresk“, Seite 705.</ref><ref>[http://www.zeno.org/Brockhaus-1837/A/Pittoresk?hl=pittoresk Brockhaus Bilder-Conversations-Lexikon, Band 3. Leipzig 1839., Seite 507.]</ref>; zu [[französisch]] ''{{Ü|fr|pittoresque}}''<ref>[http://www.zeno.org/Brockhaus-1809/B/Pittoresk?hl=pittoresk Brockhaus Conversations-Lexikon Bd. 8. Leipzig 1811, Seite 251.]</ref>
+
+{{Sinnverwandte Wörter}}
+:[1] [[bildschön]], [[hübsch]], [[malerisch]]
+
+{{Beispiele}}
+:[1] Die kleine Stadt mit ihrem Labyrinth enger Straßen und ihren alten Häusern macht einen ''pittoresken'' Eindruck.
+:[1] Wir waren in dem ''pittoreskesten'' Dorf der ganzen Umgebung gelandet.
+:[1] „Diese Stadt soll sehr ''pittoresk'' sein.“<ref>{{Literatur | Autor=Jan Weiler | Titel=In meinem kleinen Land | Verlag=Rowohlt Taschenbuch Verlag | Ort=Reinbek | Jahr=2006 (10. Auflage)| ISBN=978-3-499-62199-4}}, Seite 121.</ref>
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|picturesque}}
+*{{fr}}: [1] {{Ü|fr|pittoresque}} {{mf}}
+*{{it}}: [1] {{Ü|it|pittoresco}}, {{Ü|it|suggestivo}}
+*{{nl}}: [1] {{Ü|nl|pittoresk}}, {{Ü|nl|schilderachtig}}
+*{{no}}: [1] {{Ü|no|pittoresk}}
+*{{pl}}: [1] {{Ü|pl|malowniczy}}
+|Ü-rechts=
+*{{pt}}: [1] {{Ü|pt|pitoresco}}
+*{{ru}}: [1] {{Üt|ru|живописный|shiwopisnyj}}
+*{{sk}}: [1] {{Ü|sk|pitoreskný}}
+*{{sl}}: [1] {{Ü|sl|pitoresken}}, {{Ü|sl|razgiban}}, {{Ü|sl|slikovit}}
+*{{es}}: [1] {{Ü|es|pintoresco}} {{m}}, {{Ü|es|pintoresca}} {{f}}
+*{{cs}}: [1] {{Ü|cs|pitoreskní}}, {{Ü|cs|malebný}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-DWDS|pittoresk}}
+:[1] {{Ref-Canoo|pittoresk}}
+:[1] {{Ref-UniLeipzig|pittoresk}}
+
+{{Quellen|}}
+
+[[Kategorie:Gallizismus]]
+
+[[en:pittoresk]]
+[[fi:pittoresk]]
+[[fr:pittoresk]]
+[[hu:pittoresk]]
+[[io:pittoresk]]
+[[ko:pittoresk]]
+[[pl:pittoresk]]
+[[sv:pittoresk]]
+[[zh:pittoresk]]

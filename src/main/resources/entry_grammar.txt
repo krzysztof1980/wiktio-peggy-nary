@@ -1,0 +1,98 @@
+Dokument = Line*+ Eintrag EOF ;
+
+//==============================================================================
+// Wiktionary Eintrag
+//==============================================================================
+Eintrag = DeEintrag OtherLangEintrag* EOF ;
+OtherLangEintrag = (!DeSpracheKopf Line)+ ;
+DeEintrag = DeSpracheKopf (WortartKopf MiddleSection TranslationsSection)+ ;
+
+DeSpracheKopf = KOPF2 Lemma "({{Sprache|Deutsch}})" Space KOPF2 EOL ;
+Lemma = Letter+ Space {lemma};
+WortartKopf = SubstantivKopf ;
+
+//==============================================================================
+// Substantiv
+//==============================================================================
+SubstantivKopf = KOPF3 "{{Wortart|Substantiv|Deutsch}}," Space Gender _*+ KOPF3 EOL {createSubstantiv};
+
+//------------------------------------------------------------------------------
+// Flexion table
+//------------------------------------------------------------------------------
+FlexionTable = LT "Deutsch Substantiv Übersicht" Space EOL FlexionForm+ RT EOL ;
+FlexionForm = "|" (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
+NomSg = "Nominativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addNomSg};
+NomPl = "Nominativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addNomPl};
+GenSg = "Genitiv Singular" Space OptDigit Space "=" FlexionVariantList EOL {addGenSg};
+GenPl = "Genitiv Plural" Space OptDigit Space "=" FlexionVariantList EOL {addGenPl};
+DatSg = "Dativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addDatSg};
+DatPl = "Dativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addDatPl};
+AkkSg = "Akkusativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addAkkSg};
+AkkPl = "Akkusativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addAkkPl};
+
+FlexionVariantList  = Space Phrase (BR Phrase)* {flexionVariantList}
+                    / Space "—" Space {absentFlexionForm}
+                    / (!EOL _)* ;
+
+//==============================================================================
+// Common Wiktionary markup
+//==============================================================================
+Gender = LT Letter+ RT Space {gender};
+
+MiddleSection = (!TranslationsSection (FlexionTable / Line))* ;
+
+//------------------------------------------------------------------------------
+// Meanings
+//------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------
+// Translations
+//------------------------------------------------------------------------------
+TranslationsSection = TranslationsKopf TranslationsTable (!KOPF2 Line)* ;
+TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 EOL ;
+TranslationsTable = LT "Ü-Tabelle" Line (LangTranslations / DialectTable / !RT Line)*+ RT EOL ;
+LangTranslations = LangLvl Lang ":" Space TranslationMeaning (";" Space TranslationMeaning)* EOL {addTranslationsForLanguage};
+LangLvl = "*"+ ;
+Lang = LT Word RT {lang};
+TranslationMeaning = TranslationMeaningNo Translation ("," Space Translation)* {translationMeaning};
+TranslationMeaningNo = "[" _++ "]" Space {translationMeaningNo};
+Translation = LT (UeTemplate / UetTemplate) RT Space Gender? {translation};
+UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {ueTemplate};
+UetTemplate = ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {uetTemplate};
+DialectTable = "|Dialekttabelle=" EOL (!RT Line)* ; // ignore it for now
+
+//------------------------------------------------------------------------------
+// General Wiki Markup
+//------------------------------------------------------------------------------
+KOPF2 = "==" Space ;
+KOPF3 = "===" Space ;
+KOPF4 = "====" Space ;
+LT = "{{" Space ; // Left template opening
+IT = "|" ; // Inside template separator
+RT = "}}" Space ; // Right template closing
+TemplateAttr = (!(IT / RT) _)+ ;
+
+//------------------------------------------------------------------------------
+// HTML markup
+//------------------------------------------------------------------------------
+BR = "<br" Space "/>" ;
+
+//------------------------------------------------------------------------------
+// Common expressions
+//------------------------------------------------------------------------------
+Line = _++ EOL ;
+BadLine = _++ EOL ;
+EmptyLine =  [\n\r]* ;
+
+Digit = [0-9] ;
+OptDigit = Digit? ;
+Number = Digit+ ;
+
+Letter = [a-z] / [A-Z] / [äÄüÜöÖß] ;
+Word = Letter (Letter / [-'])* ;
+Phrase = Word (Space Word)* ;
+
+Space = " "* ;
+EOF = !_ ;
+EOL = [\r\n]+ / EOF  ;

@@ -1,0 +1,93 @@
+== Ablehnung ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=die Ablehnung
+|Nominativ Plural=die Ablehnungen
+|Genitiv Singular=der Ablehnung
+|Genitiv Plural=der Ablehnungen
+|Dativ Singular=der Ablehnung
+|Dativ Plural=den Ablehnungen
+|Akkusativ Singular=die Ablehnung
+|Akkusativ Plural=die Ablehnungen
+}}
+
+{{Worttrennung}}
+:Ab·leh·nung, {{Pl.}} Ab·leh·nun·gen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈapˌleːnʊŋ}}, {{Pl.}} {{Lautschrift|ˈapˌleːnʊŋən}}
+:{{Hörbeispiele}} 
+::österreichisch: {{Audio|De-at-Ablehnung.ogg}}, {{Pl.}} {{Audio|De-at-Ablehnungen.ogg|Ablehnungen}}
+::deutsch: {{Audio|}}, {{Pl.}} {{Audio|De-Ablehnungen.ogg|Ablehnungen}}
+
+{{Bedeutungen}}
+:[1] [[Reiz]] (vor allem bei Mensch oder Tier), der [[Unlust]] auslöst
+:[2] [[zwischenmenschlich]]e [[Zurückweisung]] oder Nicht-[[Annahme]] einer anderen [[Person]]
+:[3] [[negativ]]e [[Reaktion]] auf eine [[Bitte]], ein [[Gesuch]], eine [[Aufforderung]], einen [[Antrag]] oder Ähnliches; [[Verweigerung]] einer Reaktion auf ein [[Schriftstück]], einen [[Brief]], einen [[Eid]], einer [[Zahlung]]; [[Verweigerung]] der Annahme eines Gegenstandes, ein [[abschlägig]]er [[Bescheid]], eine [[Missbilligung]], eine [[Verurteilung]]
+
+{{Herkunft}}
+:''substantiviertes Verb'' [[ablehnen]] und ''Suffix'' [[-ung]]
+
+{{Sinnverwandte Wörter}}
+:[1] [[Aversion]]
+:[1, 2] [[Abscheu]], [[Unbehagen]]
+:[2] [[Antipathie]], [[Groll]]
+:[3] [[Abfuhr]], [[Absage]], [[Negativbescheid]], [[Missbilligung]], [[Schlappe]]
+
+{{Gegenwörter}}
+:[1] [[Appetit]], [[Begierde]], [[Lust]]
+:[2] [[Aufnahme]], [[Akzeptanz]], [[Sympathie]]
+:[2, 3] [[Annahme]]
+
+{{Beispiele}}
+:[1] Dieser Lärm, den du Musik nennst, stößt bei mir auf ''Ablehnung.''
+:[2] Gegen ihn habe ich eine ''Ablehnung.''
+:[2] „Ihre ''Ablehnung'' führt zu unserer ''Ablehnung''.“<ref>{{Literatur | Autor=Alice Bota, Khuê Pham, Özlem Topçu| Titel=Wir neuen Deutschen. Wer wir sind, was wir wollen | Verlag=Rowohlt Verlag | Ort=Reinbek| Jahr=2012| ISBN=978-3-498-00673-0}}, Seite 54.</ref>
+:[3] Er vernahm ihre ''Ablehnung'' mit Bitterkeit.
+
+{{Wortbildungen}}
+:[3] [[Ablehnungsquote]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [3] {{Ü|en|refusal}}, {{Ü|en|rejection}} (einer Stelle, eines Angebotes)
+*{{fr}}: [2] {{Ü|fr|rejet}} {{m}}; [3] {{Ü|fr|refus}} {{m}}
+*{{eo}}: [2] {{Ü|eo|naŭzo}}; [3] {{Ü|eo|rifuzo}}
+*{{ja}}: [3] {{Üt|ja|否定|ひてい, hitei}}
+*{{nl}}: [1] {{Ü|nl|afkeer}};{{Ü|nl|ongenoegen}}; [2] {{Ü|nl|afwijzing}} ; [3] {{Ü|nl|weigering}} 
+|Ü-rechts=
+*{{pt}}: [2, 3] {{Ü|pt|rejeição}}
+*{{ru}}: [1] {{Ü|ru|отвращение}}, [2] {{Ü|ru|неприязнь}}, [3] {{Ü|ru|отказ}},
+*{{sv}}: [1] {{Ü|sv|inge olust}}; [2] {{Ü|sv|känna olust}}; [3] {{Ü|sv|avslag}}, {{Ü|sv|avvisande}}
+*{{es}}: [1] {{Ü|es|repudio}} {{m}}; [3] {{Ü|es|rechazo}} {{m}}
+*{{hu}}: [1] {{Ü|hu|lemondás}}
+}}
+
+{{Referenzen}}
+:[1] {{Lit-Wahrig: Deutsches Wörterbuch|A=1986}}
+:[1] {{Wikipedia|Ablehnung}}
+:[1–3] {{Ref-DWDS|Ablehnung}}
+:[2, 3] {{Ref-Canoo|Ablehnung}}
+:[1–3] {{Ref-UniLeipzig|Ablehnung}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+:[[ablehnen]], [[Anlehnung]]
+
+[[cs:Ablehnung]]
+[[en:Ablehnung]]
+[[fi:Ablehnung]]
+[[fr:Ablehnung]]
+[[io:Ablehnung]]
+[[is:Ablehnung]]
+[[it:Ablehnung]]
+[[ko:Ablehnung]]
+[[ku:Ablehnung]]
+[[mg:Ablehnung]]
+[[pl:Ablehnung]]
+[[ru:Ablehnung]]
+[[sv:Ablehnung]]
+[[tl:Ablehnung]]
+[[zh:Ablehnung]]
