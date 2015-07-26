@@ -13,7 +13,7 @@
     <module name="wiktiopeggynary" />
     <envs />
     <method>
-      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_Mouse Generator" />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_Mouse_Parser Generator" />
       <option name="Make" enabled="true" />
     </method>
   </configuration>
