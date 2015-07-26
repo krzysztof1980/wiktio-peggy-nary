@@ -1,45 +1,53 @@
-Dokument = Line*+ Eintrag EOF ;
+Dokument = (!KOPF2 Line)* Eintrag EOF ;
 
 //==============================================================================
 // Wiktionary Eintrag
 //==============================================================================
-Eintrag = DeEintrag OtherLangEintrag* EOF ;
+Eintrag = DeEintrag? OtherLangEintrag* EOF ;
 OtherLangEintrag = (!DeSpracheKopf Line)+ ;
-DeEintrag = DeSpracheKopf (WortartKopf MiddleSection TranslationsSection)+ ;
+DeEintrag = DeSpracheKopf DeWortart+ ;
 
-DeSpracheKopf = KOPF2 Lemma "({{Sprache|Deutsch}})" Space KOPF2 EOL ;
-Lemma = Letter+ Space {lemma};
+DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
+DeSpracheTemplate = LT "Sprache" IT "Deutsch" RT ;
+Lemma = Letter+ Space {};
+
+DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
 WortartKopf = SubstantivKopf ;
+WortartBody = MiddleSection TranslationsSection? ~{};
+UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;
+WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT ;
 
 //==============================================================================
 // Substantiv
 //==============================================================================
-SubstantivKopf = KOPF3 "{{Wortart|Substantiv|Deutsch}}," Space Gender _*+ KOPF3 EOL {createSubstantiv};
+SubstantivKopf = KOPF3 SubstantivTemplate "," Space Gender _*+ KOPF3 RestOfLine {createSubstantiv};
+SubstantivTemplate = LT "Wortart" IT "Substantiv" IT "Deutsch" RT ;
 
 //------------------------------------------------------------------------------
 // Flexion table
 //------------------------------------------------------------------------------
-FlexionTable = LT "Deutsch Substantiv Übersicht" Space EOL FlexionForm+ RT EOL ;
+FlexionTable = FlexionTableKopf FlexionForm+ RT RestOfLine ;
+FlexionTableKopf = LT "Deutsch Substantiv Übersicht" Space RestOfLine ;
 FlexionForm = "|" (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
-NomSg = "Nominativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addNomSg};
-NomPl = "Nominativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addNomPl};
-GenSg = "Genitiv Singular" Space OptDigit Space "=" FlexionVariantList EOL {addGenSg};
-GenPl = "Genitiv Plural" Space OptDigit Space "=" FlexionVariantList EOL {addGenPl};
-DatSg = "Dativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addDatSg};
-DatPl = "Dativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addDatPl};
-AkkSg = "Akkusativ Singular" Space OptDigit Space "=" FlexionVariantList EOL {addAkkSg};
-AkkPl = "Akkusativ Plural" Space OptDigit Space "=" FlexionVariantList EOL {addAkkPl};
+NomSg = "Nominativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomSg};
+NomPl = "Nominativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomPl};
+GenSg = "Genitiv Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addGenSg};
+GenPl = "Genitiv Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addGenPl};
+DatSg = "Dativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addDatSg};
+DatPl = "Dativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addDatPl};
+AkkSg = "Akkusativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addAkkSg};
+AkkPl = "Akkusativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addAkkPl};
 
-FlexionVariantList  = Space Phrase (BR Phrase)* {flexionVariantList}
-                    / Space "—" Space {absentFlexionForm}
+FlexionVariantList  = Space Phrase (BR Phrase)* {}
+                    / Space "—" Space {}
                     / (!EOL _)* ;
 
 //==============================================================================
 // Common Wiktionary markup
 //==============================================================================
-Gender = LT Letter+ RT Space {gender};
+Gender = LT Letter+ RT Space {};
 
-MiddleSection = (!TranslationsSection (FlexionTable / Line))* ;
+MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 
 //------------------------------------------------------------------------------
 // Meanings
@@ -49,18 +57,18 @@ MiddleSection = (!TranslationsSection (FlexionTable / Line))* ;
 //------------------------------------------------------------------------------
 // Translations
 //------------------------------------------------------------------------------
-TranslationsSection = TranslationsKopf TranslationsTable (!KOPF2 Line)* ;
-TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 EOL ;
-TranslationsTable = LT "Ü-Tabelle" Line (LangTranslations / DialectTable / !RT Line)*+ RT EOL ;
-LangTranslations = LangLvl Lang ":" Space TranslationMeaning (";" Space TranslationMeaning)* EOL {addTranslationsForLanguage};
+TranslationsSection = TranslationsKopf (!TranslationsTable Line)* TranslationsTable (!KopfStart Line)* ;
+TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 RestOfLine ;
+TranslationsTable = LT "Ü-Tabelle" Line (LangTranslations / DialectTable / !RT Line)*+ RT RestOfLine ;
+LangTranslations = LangLvl Lang ":" Space TranslationMeaning (";" Space TranslationMeaning)* RestOfLine {addTranslationsForLanguage};
 LangLvl = "*"+ ;
-Lang = LT Word RT {lang};
-TranslationMeaning = TranslationMeaningNo Translation ("," Space Translation)* {translationMeaning};
-TranslationMeaningNo = "[" _++ "]" Space {translationMeaningNo};
-Translation = LT (UeTemplate / UetTemplate) RT Space Gender? {translation};
-UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {ueTemplate};
-UetTemplate = ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {uetTemplate};
-DialectTable = "|Dialekttabelle=" EOL (!RT Line)* ; // ignore it for now
+Lang = LT Word RT {};
+TranslationMeaning = TranslationMeaningNo Translation (","? Space Translation)* {};
+TranslationMeaningNo = "[" _++ "]" Space {};
+Translation = LT (UeTemplate / UetTemplate) RT Space Gender? {};
+UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
+UetTemplate = ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
+DialectTable = "|Dialekttabelle=" RestOfLine (!RT Line)* ; // ignore it for now
 
 //------------------------------------------------------------------------------
 // General Wiki Markup
@@ -68,6 +76,7 @@ DialectTable = "|Dialekttabelle=" EOL (!RT Line)* ; // ignore it for now
 KOPF2 = "==" Space ;
 KOPF3 = "===" Space ;
 KOPF4 = "====" Space ;
+KopfStart = "="+ " " ;
 LT = "{{" Space ; // Left template opening
 IT = "|" ; // Inside template separator
 RT = "}}" Space ; // Right template closing
@@ -77,6 +86,9 @@ TemplateAttr = (!(IT / RT) _)+ ;
 // HTML markup
 //------------------------------------------------------------------------------
 BR = "<br" Space "/>" ;
+Comment = CommentStart _++ CommentEnd Space ;
+CommentStart = "<!--" ;
+CommentEnd = "-->" ;
 
 //------------------------------------------------------------------------------
 // Common expressions
@@ -84,6 +96,7 @@ BR = "<br" Space "/>" ;
 Line = _++ EOL ;
 BadLine = _++ EOL ;
 EmptyLine =  [\n\r]* ;
+RestOfLine = _*+ EOL ;
 
 Digit = [0-9] ;
 OptDigit = Digit? ;
@@ -95,4 +108,4 @@ Phrase = Word (Space Word)* ;
 
 Space = " "* ;
 EOF = !_ ;
-EOL = [\r\n]+ / EOF  ;
+EOL = [\r\n]+ / EOF ;

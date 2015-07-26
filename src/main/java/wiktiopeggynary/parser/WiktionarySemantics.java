@@ -10,6 +10,8 @@
 
 package wiktiopeggynary.parser;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import wiktiopeggynary.model.Kasus;
 import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.WiktionaryEntry;
@@ -24,6 +26,8 @@ import java.util.*;
 
 class WiktionarySemantics extends SemanticsBase {
 
+    private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
+
     private String lemma;
     private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
 
@@ -31,10 +35,15 @@ class WiktionarySemantics extends SemanticsBase {
         return Collections.unmodifiableCollection(wiktionaryEntries);
     }
 
+    void WortartBody_fail() {
+        logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
+        lhs().errClear();
+    }
+
     //-------------------------------------------------------------------
     //  Lemma = Letter+ Space
     //-------------------------------------------------------------------
-    void lemma() {
+    void Lemma() {
         lemma = rhsText(0, rhsSize() - 1);
     }
 
@@ -52,7 +61,7 @@ class WiktionarySemantics extends SemanticsBase {
     //-------------------------------------------------------------------
     //  Gender = LT Letter+ RT Space
     //-------------------------------------------------------------------
-    void gender() {
+    void Gender() {
         lhs().put(rhsText(1, rhsSize() - 2));
     }
 
@@ -134,7 +143,7 @@ class WiktionarySemantics extends SemanticsBase {
     //-------------------------------------------------------------------
     //  FlexionVariantList = Space Phrase (BR Phrase)*
     //-------------------------------------------------------------------
-    void flexionVariantList() {
+    void FlexionVariantList_0() {
         List<String> variants = new ArrayList<>();
         for (int i = 1; i < rhsSize(); i += 2) {
             variants.add(rhs(i).text());
@@ -145,7 +154,7 @@ class WiktionarySemantics extends SemanticsBase {
     //-------------------------------------------------------------------
     //  FlexionVariantList = Space "-" Space
     //-------------------------------------------------------------------
-    void absentFlexionForm() {
+    void FlexionVariantList_1() {
         lhs().put(new ArrayList<>());
     }
 
@@ -162,7 +171,7 @@ class WiktionarySemantics extends SemanticsBase {
     //-------------------------------------------------------------------
     //  Lang = LT Word RT
     //-------------------------------------------------------------------
-    void lang() {
+    void Lang() {
         lhs().put(rhs(1).text());
     }
 
@@ -170,7 +179,7 @@ class WiktionarySemantics extends SemanticsBase {
     //  TranslationMeaning = TranslationMeaningNo Translation
     //      ("," Space Translation)*
     //-------------------------------------------------------------------
-    void translationMeaning() {
+    void TranslationMeaning() {
         TranslationMeaning meaning = new TranslationMeaning((String) rhs(0).get());
         for (int i = 1; i < rhsSize(); i += 3)
             meaning.addTranslation((Translation) rhs(i).get());
@@ -180,14 +189,14 @@ class WiktionarySemantics extends SemanticsBase {
     //-------------------------------------------------------------------
     //  TranslationMeaningNo = "[" _++ "]" Space
     //-------------------------------------------------------------------
-    void translationMeaningNo() {
+    void TranslationMeaningNo() {
         lhs().put(rhsText(1, rhsSize() - 2));
     }
 
     //-------------------------------------------------------------------
     //  Translation = LT (UeTemplate / UetTemplate) RT Space Gender?
     //-------------------------------------------------------------------
-    void translation() {
+    void Translation() {
         Translation t = (Translation) rhs(1).get();
         if (rhsSize() == 5)
             t.setGender((String) rhs(4).get());
@@ -198,7 +207,7 @@ class WiktionarySemantics extends SemanticsBase {
     //  UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
     //      (IT TemplateAttr)? (IT TemplateAttr)?
     //-------------------------------------------------------------------
-    void ueTemplate() {
+    void UeTemplate() {
         Translation translation = new Translation();
         translation.setInternalLink(rhs(4).text());
         if (rhsSize() >= 7)
@@ -212,7 +221,7 @@ class WiktionarySemantics extends SemanticsBase {
     //  UetTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
     //      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)?
     //-------------------------------------------------------------------
-    void uetTemplate() {
+    void UetTemplate() {
         Translation translation = new Translation();
         translation.setInternalLink(rhs(4).text());
         translation.setTranscription(rhs(6).text());
@@ -221,5 +230,9 @@ class WiktionarySemantics extends SemanticsBase {
         if (rhsSize() == 11)
             translation.setExternalLink(rhs(10).text());
         lhs().put(translation);
+    }
+
+    private String getFormattedErrorMessageForLogging() {
+        return lhs().errMsg().replace("\n", "\\n");
     }
 }

@@ -33,6 +33,9 @@ public final class ParserService {
 
     public Collection<WiktionaryEntry> parseWiktionaryPage(String page) {
         WiktionaryParser parser = new WiktionaryParser();
+        String trace = System.getProperty("wiktiopeggynary.trace");
+        if (trace != null)
+            parser.setTrace(trace);
         boolean ok = parser.parse(new SourceString(page));
         return ok? parser.semantics().getWiktionaryEntries() : new ArrayList<>();
     }
