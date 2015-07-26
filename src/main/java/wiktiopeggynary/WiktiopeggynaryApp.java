@@ -1,20 +1,18 @@
 package wiktiopeggynary;
 
+import wiktiopeggynary.client.IndexInElasticsearchClient;
 import wiktiopeggynary.model.WiktionaryEntry;
-import wiktiopeggynary.model.substantiv.FlexionForm;
-import wiktiopeggynary.model.substantiv.Substantiv;
 import wiktiopeggynary.parser.ParserService;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
-
-import static java.lang.String.format;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -58,32 +56,11 @@ public class WiktiopeggynaryApp {
             System.out.println("Provided file does not exist");
             return;
         }
-        Path outputPath = Paths.get(Paths.get(".").toAbsolutePath().normalize().toString(), "wiktiopeggynary-out.txt");
-        System.out.println("Printing output to " + outputPath);
-        try (PrintWriter out = new PrintWriter(Files.newOutputStream(outputPath))) {
-            List<WiktionaryEntry> parsedEntries = new LinkedList<>();
-            ParserService.getInstance().parseWiktionaryDump(
-                    dumpFilePath,
-                    parsedEntries::add,
-                    () -> {
-                    });
-            out.println(format("Parsed %d entries", parsedEntries.size()));
-            int[] count = {0};
-            parsedEntries.stream()
-                    .filter(e -> e instanceof Substantiv)
-                    .map(e -> (Substantiv) e)
-                    .filter(s -> s.getFlexionTable().hasUnparsedForms())
-                    .forEach(s -> {
-                        out.println("---------------------------------------------");
-                        out.println(s);
-                        s.getFlexionTable().getFlexionForms().stream()
-                                .filter(FlexionForm::isUnparsed)
-                                .forEach(f -> out.println("\t" + f));
-                        count[0]++;
-                    });
-            out.println("=============================================");
-            out.println(count[0] + " substantives contained flexion forms, that could not be parsed");
-        }
+        IndexInElasticsearchClient client = new IndexInElasticsearchClient();
+        ParserService.getInstance().parseWiktionaryDump(
+                dumpFilePath,
+                client::indexWiktionaryPage,
+                client::cleanup);
     }
 
     private static InputStream getResourceURLFromUserInput() throws IOException {

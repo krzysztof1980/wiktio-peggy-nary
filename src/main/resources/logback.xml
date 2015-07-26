@@ -1,0 +1,37 @@
+<configuration>
+
+    <appender name="FILE_PARSER" class="ch.qos.logback.core.FileAppender">
+        <file>parser.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%-30(%-5level %logger{20}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE_INDEX" class="ch.qos.logback.core.FileAppender">
+        <file>elasticsearch.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%-30(%-5level %logger{20}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-30(%-5level %logger{20}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="wiktiopeggynary.parser" level="debug" additivity="false">
+        <appender-ref ref="FILE_PARSER" />
+    </logger>
+
+    <logger name="wiktiopeggynary.client" level="debug" additivity="false">
+        <appender-ref ref="FILE_INDEX" />
+    </logger>
+
+    <root level="warn">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
