@@ -2,10 +2,7 @@ package wiktiopeggynary.model;
 
 import wiktiopeggynary.model.translation.TranslationMeaning;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -28,6 +25,10 @@ public class WiktionaryEntry {
             translations.put(language, new ArrayList<>());
         }
         translations.get(language).add(translationMeaning);
+    }
+
+    public Map<String, List<TranslationMeaning>> getTranslations() {
+        return Collections.unmodifiableMap(translations);
     }
 
     @Override

@@ -12,16 +12,20 @@ DeSpracheTemplate = LT "Sprache" IT "Deutsch" RT ;
 Lemma = Letter+ Space {};
 
 DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
-WortartKopf = SubstantivKopf ;
+WortartKopf = SubstantivKopf {saveEintrag};
 WortartBody = MiddleSection TranslationsSection? ~{};
 UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;
-WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT ;
+WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT {};
 
 //==============================================================================
 // Substantiv
 //==============================================================================
-SubstantivKopf = KOPF3 SubstantivTemplate "," Space Gender _*+ KOPF3 RestOfLine {createSubstantiv};
-SubstantivTemplate = LT "Wortart" IT "Substantiv" IT "Deutsch" RT ;
+SubstantivKopf = KOPF3 SubstantivTemplate SubstantivAttributes KOPF3 RestOfLine ;
+SubstantivTemplate = LT "Wortart" IT "Substantiv" IT "Deutsch" RT {createSubstantiv};
+SubstantivAttributes = (","? Space SubstantivAttribute)+ ~{} / _++ KOPF3 ;
+SubstantivAttribute = Gender {substantivGender}
+                    / WortartTemplate {substantivWortart}
+                    / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination};
 
 //------------------------------------------------------------------------------
 // Flexion table
@@ -45,7 +49,8 @@ FlexionVariantList  = Space Phrase (BR Phrase)* {}
 //==============================================================================
 // Common Wiktionary markup
 //==============================================================================
-Gender = LT Letter+ RT Space {};
+Gender = LT GenderTemplateArgument RT Space {};
+GenderTemplateArgument = "mf" / "f" ("m" / "n") / "n" ("m" / "f") / "m" / "f" / "n" / "u" ;
 
 MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 
@@ -57,15 +62,16 @@ MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 //------------------------------------------------------------------------------
 // Translations
 //------------------------------------------------------------------------------
-TranslationsSection = TranslationsKopf (!TranslationsTable Line)* TranslationsTable (!KopfStart Line)* ;
+TranslationsSection = TranslationsKopf (!TranslationsTableKopf Line)* TranslationsTable (!KopfStart Line)* ;
 TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 RestOfLine ;
-TranslationsTable = LT "Ü-Tabelle" Line (LangTranslations / DialectTable / !RT Line)*+ RT RestOfLine ;
+TranslationsTable = TranslationsTableKopf (LangTranslations / DialectTable / !RT Line)*+ RT RestOfLine ;
+TranslationsTableKopf = LT "Ü-Tabelle" Line ;
 LangTranslations = LangLvl Lang ":" Space TranslationMeaning (";" Space TranslationMeaning)* RestOfLine {addTranslationsForLanguage};
 LangLvl = "*"+ ;
 Lang = LT Word RT {};
-TranslationMeaning = TranslationMeaningNo Translation (","? Space Translation)* {};
+TranslationMeaning = TranslationMeaningNo Translation ("," Space Translation)* {};
 TranslationMeaningNo = "[" _++ "]" Space {};
-Translation = LT (UeTemplate / UetTemplate) RT Space Gender? {};
+Translation = LT (UeTemplate / UetTemplate) RT Space Gender? (![,;] !EOL _)* {}; // ignore additional information at the end
 UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
 UetTemplate = ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
 DialectTable = "|Dialekttabelle=" RestOfLine (!RT Line)* ; // ignore it for now

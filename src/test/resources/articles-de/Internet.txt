@@ -1,0 +1,372 @@
+{{auch|İnternet|internet}}
+== Internet ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=das Internet
+|Nominativ Plural=—
+|Genitiv Singular=des Internets
+|Genitiv Plural=—
+|Dativ Singular=dem Internet
+|Dativ Plural=—
+|Akkusativ Singular=das Internet
+|Akkusativ Plural=—
+|Bild 1=Internet map 1024.jpg|300px|1|Karte des ''Internets''
+}}
+
+{{Worttrennung}}
+:In·ter·net, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈɪntɐnɛt}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] [[online|Online]]-[[Medium]]; weltweites, öffentliches Computernetzwerk
+
+{{Abkürzungen}}
+:[1] [[iNet]], [[Intern.]]
+
+{{Herkunft}}
+:übernommen aus gleichbedeutend {{en.}} ''{{Ü|en|Internet}},''<ref>{{Lit-Duden: Herkunftswörterbuch|A=4}}</ref> dieses entstanden als Kurzform von ''{{Ü|en|internetwork}},'' „miteinander verbundene Netzwerke“,<ref>Oxford English Dictionary „[http://www.oed.com/view/Entry/248411 Internet]“</ref> wiederum gebildet aus ''{{Ü|en|inter-}},'' „zwischen“, und ''{{Ü|en|network}},'' „Netzwerk“<ref>Oxford English Dictionary „[http://www.oed.com/view/Entry/248415 internetwork]“</ref>
+
+{{Synonyme}}
+:[1] [[Datenautobahn]]; {{umg.|:}} [[Netz]]; [[World Wide Web]], [[WWW]], [[Web]] (obwohl das WWW nur ein Teil des Internets ist)
+
+{{Gegenwörter}}
+:[1] [[Extranet]], [[Intranet]], [[Schlandnet]]
+
+{{Oberbegriffe}}
+:[1] [[Netzwerk]]
+
+{{Unterbegriffe}}
+:[1] [[Breitband-Internet]]
+
+{{Beispiele}}
+:[1] Das ''Internet'' verbindet viele Computer auf der Welt.
+:[1] „Während das ''Internet'' bislang eher ein Meer der Anonymität war, aus dem lediglich Inseln mit namentlicher Nutzernennung ragten, kehrt sich dieses Verhältnis derzeit um.“<ref>{{Literatur | Autor=Marcel Rosenbach, Hilmar Schmundt | Titel=Blog-Warte im Tollhaus|Sammelwerk=DER SPIEGEL | Nummer= Heft 31 | Jahr=2011}}, Seite 134-135, Zitat Seite 134</ref>
+:[1] „Dazu gab es im ''Internet'' keine spitzfindigen Kommentare.“<ref>{{Literatur | Autor=Günter Grass| Titel =Im Krebsgang | TitelErg=Eine Novelle| Verlag=Steidl | Ort=Göttingen | Jahr=2002 | ISBN=3-88243-800-2 | Seiten=18}}</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[im]] ''Internet'' [[surfen]]
+
+{{Wortbildungen}}
+:[[Internetadresse]], [[Internetanschluss]], [[Internetanwender]], [[Internetauktion]], [[Internetcafé]], [[Internetdienst]], [[Internetkonzern]], [[Internetprotokoll]], [[Internetprovider]], [[Internetradio]], [[Internetriese]], [[Internetschutz]], [[Internetseite]], [[Internetsteuer]], [[Internetsucht]], [[Internetsurfer]], [[Internetzeitung]], [[Internetzugang]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{af}}: [1] {{Ü|af|internet}}
+*{{ar}}: [1] {{Üxx5|ar|ʔinternet(un)|إِنْتَرْنَتٌ|إنترنت}}
+*{{az}}: [1] {{Ü|az|internet}}
+*{{ast}}: [1] {{Ü|ast|Internet}}
+*{{eu}}: [1] {{Ü|eu|Internet}}
+*{{bn}}: [1] {{Üt|bn|ইন্টারনেট|inṭāraneṭ}}
+*{{bs}}: [1] {{Ü|bs|internet}}
+*{{br}}: [1] {{Ü|br|Internet}}
+*{{bg}}: [1] {{Üt|bg|интернет|internet}}
+*{{zh}}:
+**{{zh-tw}}: [1] {{Üt|zh|因特網|yīntè wǎng}}, {{Üt|zh|互聯網|hùlián wǎng}}, {{Üt|zh|網際網路|wǎngjì wǎnglù}}
+**{{zh-cn}}: [1] {{Üt|zh|因特网|yīntè wǎng}}, {{Üt|zh|互联网|hùlián wǎng}} {{Üt|zh|网际网路|wǎngjì wǎnglù}}
+*{{da}}: [1] {{Ü|da|internet}}
+*{{en}}: [1] {{Ü|en|Internet}}, {{Ü|en|Net}}
+*{{eo}}: [1] {{Ü|eo|interreto}}
+*{{et}}: [1] {{Ü|et|internet}}
+*{{fi}}: [1] {{Ü|fi|internet}}
+*{{fr}}: [1] {{Ü|fr|internet}} {{m}}, {{Ü|fr|Internet}} {{m}}
+*{{gl}}: [1] {{Ü|gl|Internet}}
+*{{ka}}: [1] {{Üt|ka|ინტერნეტი|interneti}}
+*{{el}}: [1] {{Üt|el|διαδίκτυο|diadíktyo}} {{n}}
+*{{he}}: [1] {{Üt|he|אינטרנט|internet}}
+*{{hi}}: [1] {{Üt|hi|इंटरनेट|iṇṭaraneṭ}}
+*{{id}}: [1] {{Ü|id|internet}}
+*{{ia}}: [1] {{Ü|ia|Internet}}, {{Ü|ia|Interrete}}
+*{{ga}}: [1] {{Ü|ga|Idirlíon}}
+*{{is}}: [1] {{Ü|is|internetið}}
+*{{it}}: [1] {{Ü|it|Internet}}
+*{{ja}}: [1] {{Üt|ja|インターネット|intānetto}}
+*{{yi}}: [1] {{Üt|yi|אינטערנעץ|internet}}
+*{{kn}}: [1] {{Üt|kn|ಅಂತರ ಜಾಲ|antara jāla}}
+*{{csb}}: [1] {{Ü|csb|internet}}
+*{{ca}}: [1] {{Ü|ca|internet}}
+*{{ko}}: [1] {{Üt|ko|인터넷|Inteonet}}
+*{{hr}}: [1] {{Ü|hr|Internet}}
+*{{ku}}: [1] {{Ü|ku|înternet}}
+*{{la}}: [1] {{Ü|la|interrete}}
+|Ü-rechts=
+*{{lv}}: [1] {{Ü|lv|Internets}}
+*{{li}}: [1] {{Ü|li|Internet}}
+*{{lt}}: [1] {{Ü|lt|internetas}}
+*{{lb}}: [1] {{Ü|lb|Internet}}
+*{{ms}}: [1] {{Ü|ms|internet}}
+*{{mk}}: [1] {{Üt|mk|интернет|internet}}
+*{{nds}}: [1] {{Ü|nds|Internet}}
+*{{nl}}: [1] {{Ü|nl|internet}}
+*{{no}}: [1] {{Ü|no|Internett}} {{n}}
+*{{os}}: [1] {{Üt|os|интернет|internet}}
+*{{fa}}: [1] {{Üt|fa|اینترنت|internet}}
+*{{pl}}: [1] {{Ü|pl|Internet}} {{m}}, {{Ü|pl|internet}} {{m}}
+*{{pt}}: [1] {{Ü|pt|Internet}}
+*{{rm}}: [1] {{Ü|rm|Internet}}
+*{{ro}}: [1] {{Ü|ro|Internet}}
+*{{ru}}: [1] {{Üt|ru|интернет|internét}} {{m}}
+*{{sa}}: [1] {{Üt|sa|आन्तरजालम्|āntarajālam}}
+*{{sv}}: [1] {{Ü|sv|internet}} {{n}}
+*{{sr}}: [1] {{Üt|sr|интернет|internet}}
+*{{scn}}: [1] {{Ü|scn|Internet}}
+*{{sk}}: [1] {{Ü|sk|internet}}
+*{{sl}}: [1] {{Ü|sl|internet}}
+*{{es}}: [1] {{Ü|es|internet}}
+*{{su}}: [1] {{Ü|su|internét}}
+*{{tl}}: [1] {{Ü|tl|Internet}}
+*{{ta}}: [1] {{Üt|ta|இணையம்|iṇaiyam}}
+*{{tt}}: [1] {{Ü|tt|päräwez}}
+*{{th}}: [1] {{Üt|th|อินเทอร์เน็ต|xinthexr̒nĕt}}
+*{{tpi}}: [1] {{Ü|tpi|intanet}}
+*{{cs}}: [1] {{Ü|cs|internet}}
+*{{tr}}: [1] {{Ü|tr|İnternet}}
+*{{uk}}: [1] {{Üt|uk|iнтернет|internét}} {{m}}
+*{{hu}}: [1] {{Ü|hu|internet}}
+*{{uz}}: [1] {{Ü|uz|internet}}
+*{{vi}}: [1] {{Ü|vi|Internet}}
+*{{vo}}: [1] {{Ü|vo|Vüresod}}
+*{{be}}: [1] {{Üt|be|інтэрнэт|internet}}
+*{{fy}}: [1] {{Ü|fy|ynternet}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Canoo}}
+:[1] {{Ref-UniLeipzig}}
+:[1] {{Ref-FreeDictionary}}
+:[1] {{Ref-Duden}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|Anagramme=[[renitent]]}}
+
+{{2x----}}
+
+== Internet ({{Sprache|Englisch}}) ==
+=== {{Wortart|Substantiv|Englisch}} ===
+
+{{Englisch Substantiv Übersicht
+|Singular=the Internet
+|Plural=-
+}}
+
+{{Worttrennung}}
+:In·ter·net, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈɪntɚˌnɛt}}, {{Lautschrift|ˈɪɾ̃ɚˌnɛt}}, {{kPl.}}
+:{{IPA}} {{brit.}} {{Lautschrift|ˈɪntənɛt}}, {{Lautschrift|ˈɪntə(r)ˌnet}}, {{kPl.}}
+:{{Hörbeispiele}} {{Audio|En-uk-Internet.ogg|spr=uk}}, {{kPl.}}
+
+{{Bedeutungen}}
+:[1] {{Kontext|Informatik|Internet|spr=en}} [[Internet#Deutsch|Internet]]
+
+{{Beispiele}}
+:[1] „The origins of the ''Internet'' date back to research commissioned by the United States government in the 1960s to build robust, fault-tolerant communication via computer networks.“<ref>{{Internetquelle | url=http://de.wikipedia.org/ | titel=Internet | hrsg=Wikipedia | datum=2015-01-01 | archiv-url=http://de.wikipedia.org/wiki/Internet | archiv-datum=2015-01-01 | zugriff=2015-01-08 | sprache=Deutsch | format=HTML }}</ref>
+:Der Ursprung des ''Internet''s geht zurück auf Forschung, die von der Regierung der Vereinigten Staaten in den 1960er Jahren autorisiert wurde, um eine robuste, fehlertolerantes Kommunikation zwischen Computernetzwerken zu ermöglichen.
+
+{{Charakteristische Wortkombinationen}}
+:[[Internet of things|''Internet'' of things]] ([[IoT]]), [[Internet service provider|''Internet'' service provider]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{de}}: [1] [[Internet#Deutsch|Internet]] {{m}}
+|Ü-rechts=
+*{{tr}}: [1] {{Ü|tr|İnternet}}
+}} <!-- für weitere Sprachkürzel siehe den Link rechts unterhalb des Editierfensters -->
+
+{{Referenzen}}
+<!--Referenzlinks bitte prüfen und entfernen, wenn sie ins Leere führen!-->
+<!--             Leerzeichen durch +  ersetzen!                         -->
+<!--        Bedeutungszuordnung bitte korrekt vornehmen!                -->
+:[1] {{Wikipedia|spr=en|Internet}}
+:[1] {{Ref-Oxford|Internet}}
+:[1] {{Ref-Macmillan|the-Internet|Internet}}
+:[1] {{Ref-Longman|Internet}}
+:[1] {{Ref-MWD|Internet}}
+:[1] {{Ref-Dictionary|Internet}}
+:[1] {{Ref-Pons|en|Internet}}
+:[1] {{Ref-dictcc|Internet}}
+:[1] {{Ref-Leo|en|Internet}}
+
+{{Quellen}}
+
+== Internet ({{Sprache|Französisch}}) ==
+=== {{Wortart|Substantiv|Französisch}}, {{m}} ===
+
+{{Französisch Substantiv Übersicht
+|Singular=l’Internet
+|Plural=—
+}}
+
+{{Anmerkung|zum Artikelgebrauch}}
+:Das [[Substantiv]] ''Internet'' wird häufig ohne [[Artikel]] gebraucht.
+
+{{Alternative Schreibweisen}}
+:[[internet]]
+
+{{Worttrennung}}
+:In·ter·net, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ɛ̃tɛʁnɛt}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] {{Kontext|Informatik|Internet|spr=fr}} [[Internet#Deutsch|Internet]]
+
+{{Herkunft}}
+:seit 1995 verbreitete [[Entlehnung]] aus dem [[englisch]]en ''{{Ü|en|Internet}}''<ref>{{Lit-Robert: Petit Robert|A=2009}}, Seite 1357.</ref>
+
+{{Synonyme}}
+:[1] [[Net]], [[Toile]], [[Web]]/[[web]]
+
+{{Oberbegriffe}}
+:[1] [[réseau]]
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen}}
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[accès]] [[à]] ''Internet,'' [[naviguer]] [[sur]] ''Internet''
+
+{{Wortbildungen}}
+:[1] [[internaute]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{de}}: [1] [[#Internet (Deutsch)|Internet]] {{n}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=fr}}
+:[1] {{Ref-Pons|fr}}
+:[1] {{Ref-Leo|fr}}
+:[1] {{Lit-Robert: Petit Robert|A=2009}}, Seite 1357.
+:[1] {{Lit-Larousse: Petit Larousse|A=2010}}, Seite 547.
+
+{{Quellen|}}
+
+== Internet ({{Sprache|Polnisch}}) ==
+=== {{Wortart|Substantiv|Polnisch}}, {{m}} ===
+
+{{Polnisch Substantiv Übersicht
+|Nominativ Singular 1=Internet
+|Genitiv Singular 1=Internetu
+|Dativ Singular 1=Internetowi
+|Akkusativ Singular 1=Internet
+|Instrumental Singular 1=Internetem
+|Lokativ Singular 1=Internecie
+|Vokativ Singular 1=Internecie
+|Nominativ Singular 2=Internet
+|Genitiv Singular 2=Internet
+|Dativ Singular 2=Internet
+|Akkusativ Singular 2=Internet
+|Instrumental Singular 2=Internet
+|Lokativ Singular 2=Internet
+|Vokativ Singular 2=Internet
+|Nominativ Plural=—
+|Genitiv Plural=—
+|Dativ Plural=—
+|Akkusativ Plural=—
+|Instrumental Plural=—
+|Lokativ Plural=—
+|Vokativ Plural=—
+}}
+
+{{Anmerkung|zur Deklination}}
+:Das [[Substantiv]] ''Internet'' wird selten auch [[indeklinabel]] (Singular 2) verwendet.<ref>{{Lit-PWN: Słownik Poprawnej Polszczyzny|A=6}}, Seite 264.</ref>
+
+{{Alternative Schreibweisen}}
+:[[internet]]
+
+{{Worttrennung}}
+:In·ter·net, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|inˈtɛrnɛt}}
+:{{Hörbeispiele}} {{Audio|Pl-Internet.ogg}}
+
+{{Bedeutungen}}
+:[1] {{Kontext|Informatik|Internet|spr=pl}} [[Internet#Deutsch|Internet]]
+
+{{Gegenwörter}}
+:[1] [[intranet]]
+
+{{Oberbegriffe}}
+:[1] [[sieć]]
+
+{{Beispiele}}
+:[1] Szukam informacji w ''Internecie.''
+::Ich suche Informationen im ''Internet.''
+:[1] My nie mamy dostępu do ''Internetu'' w domu.
+::Wir haben keinen Zugang zum ''Internet'' zu Hause.
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[surfować]] [[po]] ''Internecie''
+
+{{Wortbildungen}}
+:[1] [[internetowy]]
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{de}}: [1] [[#Internet (Deutsch)|Internet]] {{n}}
+|Ü-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=pl}}
+:[1] {{Ref-Pons|pl}}
+:[1] {{Ref-SJP-PWN}}
+:[1] {{Lit-PWN: Słownik Poprawnej Polszczyzny|A=6}}, Seite 264
+:[*] {{Ref-SO-PWN}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+:[[Internat]], [[Interner]], [[Intranet]], [[intranet]], [[internat]]
+
+[[Kategorie:Anglizismus]]
+
+[[ca:Internet]]
+[[cs:Internet]]
+[[da:Internet]]
+[[el:Internet]]
+[[en:Internet]]
+[[es:Internet]]
+[[et:Internet]]
+[[fa:Internet]]
+[[fi:Internet]]
+[[fr:Internet]]
+[[hy:Internet]]
+[[io:Internet]]
+[[it:Internet]]
+[[ja:Internet]]
+[[kk:Internet]]
+[[km:Internet]]
+[[ko:Internet]]
+[[ku:Internet]]
+[[mg:Internet]]
+[[mr:Internet]]
+[[my:Internet]]
+[[nah:Internet]]
+[[nl:Internet]]
+[[no:Internet]]
+[[pl:Internet]]
+[[pt:Internet]]
+[[ro:Internet]]
+[[ru:Internet]]
+[[sh:Internet]]
+[[si:Internet]]
+[[simple:Internet]]
+[[so:Internet]]
+[[sv:Internet]]
+[[te:Internet]]
+[[th:Internet]]
+[[uz:Internet]]
+[[vi:Internet]]

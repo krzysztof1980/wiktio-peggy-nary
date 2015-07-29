@@ -16,6 +16,7 @@ import wiktiopeggynary.model.Kasus;
 import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.substantiv.FlexionForm;
+import wiktiopeggynary.model.substantiv.MultiGender;
 import wiktiopeggynary.model.substantiv.Substantiv;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
@@ -29,15 +30,28 @@ class WiktionarySemantics extends SemanticsBase {
     private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
 
     private String lemma;
+    private WiktionaryEntry entryWorkingCopy;
+
     private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
 
     public Collection<WiktionaryEntry> getWiktionaryEntries() {
         return Collections.unmodifiableCollection(wiktionaryEntries);
     }
 
+    void saveEintrag() {
+        wiktionaryEntries.push(entryWorkingCopy);
+    }
+
     void WortartBody_fail() {
         logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
         lhs().errClear();
+    }
+
+    //-------------------------------------------------------------------
+    //  WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT
+    //-------------------------------------------------------------------
+    void WortartTemplate() {
+        lhs().put(rhs(3).text());
     }
 
     //-------------------------------------------------------------------
@@ -47,22 +61,39 @@ class WiktionarySemantics extends SemanticsBase {
         lemma = rhsText(0, rhsSize() - 1);
     }
 
-    //-------------------------------------------------------------------
-    //  SubstantivSectionHead = Head3 "{{Wortart|Substantiv|Deutsch}},"
-    //    Space Gender Head3 EOL
-    //-------------------------------------------------------------------
     void createSubstantiv() {
-        Substantiv s = new Substantiv();
-        s.setLemma(lemma);
-        s.setGender((String) rhs(3).get());
-        wiktionaryEntries.push(s);
+        entryWorkingCopy = new Substantiv();
+        entryWorkingCopy.setLemma(lemma);
+    }
+
+    void SubstantivAttributes_0_fail() {
+        logger.error("Exception parsing Substantiv attribute for lemma '{}': {}", lemma, getFormattedErrorMessageForLogging());
+        lhs().errClear();
+    }
+
+    void substantivGender() {
+        ((Substantiv) entryWorkingCopy).setGender((MultiGender) rhs(0).get());
+    }
+
+    void substantivWortart() {
+        ((Substantiv) entryWorkingCopy).addAttribute((String) rhs(0).get());
+    }
+
+    void substantivAdjDeklination() {
+        ((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
     }
 
     //-------------------------------------------------------------------
     //  Gender = LT Letter+ RT Space
     //-------------------------------------------------------------------
     void Gender() {
-        lhs().put(rhsText(1, rhsSize() - 2));
+        String genderText = rhsText(1, rhsSize() - 2);
+        try {
+            lhs().put(new MultiGender(genderText));
+        } catch (IllegalArgumentException e) {
+            logger.error("Exception parsing gender '{}' for lemma '{}'", genderText, lemma);
+            throw new ParseException(String.format("Exception parsing article for lemma '%s'", lemma), e);
+        }
     }
 
     //-------------------------------------------------------------------
@@ -199,7 +230,7 @@ class WiktionarySemantics extends SemanticsBase {
     void Translation() {
         Translation t = (Translation) rhs(1).get();
         if (rhsSize() == 5)
-            t.setGender((String) rhs(4).get());
+            t.setGender((MultiGender) rhs(4).get());
         lhs().put(t);
     }
 

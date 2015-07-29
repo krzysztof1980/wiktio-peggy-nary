@@ -6,6 +6,7 @@ import wiktiopeggynary.parser.dumpparser.WiktionaryPageDocument;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageParser;
 import wiktiopeggynary.parser.mouse.SourceString;
 
+import java.lang.reflect.InvocationTargetException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -34,8 +35,18 @@ public final class ParserService {
     public Collection<WiktionaryEntry> parseWiktionaryPage(String page) {
         WiktionaryParser parser = new WiktionaryParser();
         String trace = System.getProperty("wiktiopeggynary.trace");
-        if (trace != null)
+        if (trace != null) {
             parser.setTrace(trace);
+            try {
+                parser.getClass().getMethod("setMemo", int.class).invoke(parser, 0);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            }
+        }
         boolean ok = parser.parse(new SourceString(page));
         return ok? parser.semantics().getWiktionaryEntries() : new ArrayList<>();
     }

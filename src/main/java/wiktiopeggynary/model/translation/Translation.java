@@ -1,5 +1,7 @@
 package wiktiopeggynary.model.translation;
 
+import wiktiopeggynary.model.substantiv.MultiGender;
+
 /**
  * @author Krzysztof Witukiewicz
  */
@@ -10,8 +12,7 @@ public class Translation {
     private String label;
     private String externalLink;
 
-    // TODO: to enum
-    private String gender;
+    private MultiGender gender;
 
     public String getInternalLink() {
         return internalLink;
@@ -45,11 +46,11 @@ public class Translation {
         this.transcription = transcription;
     }
 
-    public String getGender() {
+    public MultiGender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(MultiGender gender) {
         this.gender = gender;
     }
 

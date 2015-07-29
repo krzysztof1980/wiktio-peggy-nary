@@ -1,0 +1,38 @@
+== Bahnangestellter ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, ''adjektivische Deklination'', {{m}} ===
+
+{{Deutsch adjektivische Deklination m|Bahnangestellte}}
+
+{{Worttrennung}}
+:Bahn·an·ge·stell·ter, {{Pl.}} Bahn·an·ge·stell·te
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|…}}, {{Pl.}} {{Lautschrift|…}}
+:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] (Person im Beruf) [[Angestellter]] bei einer [[Bahngesellschaft]]
+
+{{Synonyme}}
+:[1] [[Eisenbahnbediensteter]], [[Eisenbahner]]
+
+{{Weibliche Wortformen}}
+:[1] [[Bahnangestellte]]
+
+{{Oberbegriffe}}
+:[1] [[Eisenbahn]], [[Beruf]]
+
+{{Beispiele}}
+:[1] Wenn Sie eine Frage haben, wenden Sie sich an einen ''Bahnangestellten.''
+
+==== Übersetzungen ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+|Ü-rechts=
+*{{sv}}: [1] {{Ü|sv|bananställd}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-UniLeipzig|Bahnangestellter}}
+
+[[ko:Bahnangestellter]]

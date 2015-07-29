@@ -32,13 +32,6 @@ public class WiktiopeggynaryApp {
                 else
                     printHelp();
                 break;
-            case "-r":
-                InputStream resourceStream = getResourceURLFromUserInput();
-                if (resourceStream != null)
-                    parseSingleResource(resourceStream);
-                else
-                    printHelp();
-                break;
             default:
                 printHelp();
         }
@@ -53,7 +46,7 @@ public class WiktiopeggynaryApp {
     private static void parseDump(String dumpFile) throws IOException {
         Path dumpFilePath = Paths.get(dumpFile);
         if (!Files.exists(dumpFilePath)) {
-            System.out.println("Provided file does not exist");
+            System.out.println("Provided file doNes not exist");
             return;
         }
         IndexInElasticsearchClient client = new IndexInElasticsearchClient();
@@ -81,6 +74,5 @@ public class WiktiopeggynaryApp {
     private static void printHelp() {
         System.out.println("Command line options:");
         System.out.println("\tParse dump of Wiktionary: -f dump-file-name");
-        System.out.println("\tParse single resource:    -r");
     }
 }
