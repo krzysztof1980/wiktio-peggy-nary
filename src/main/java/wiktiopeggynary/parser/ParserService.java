@@ -2,6 +2,7 @@ package wiktiopeggynary.parser;
 
 import de.tudarmstadt.ukp.jwktl.parser.WiktionaryDumpParser;
 import wiktiopeggynary.model.WiktionaryEntry;
+import wiktiopeggynary.parser.dumpparser.WiktionaryAutocorrectionService;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageDocument;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageParser;
 import wiktiopeggynary.parser.mouse.SourceString;
@@ -47,7 +48,8 @@ public final class ParserService {
                 e.printStackTrace();
             }
         }
-        boolean ok = parser.parse(new SourceString(page));
+        String correctedPage = WiktionaryAutocorrectionService.getInstance().correctPage(page);
+        boolean ok = parser.parse(new SourceString(correctedPage));
         return ok? parser.semantics().getWiktionaryEntries() : new ArrayList<>();
     }
 

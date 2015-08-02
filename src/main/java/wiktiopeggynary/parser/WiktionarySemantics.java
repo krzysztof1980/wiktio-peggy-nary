@@ -84,7 +84,7 @@ class WiktionarySemantics extends SemanticsBase {
     }
 
     //-------------------------------------------------------------------
-    //  Gender = LT Letter+ RT Space
+    //  Gender = LT GenderTemplateArgument RT Space
     //-------------------------------------------------------------------
     void Gender() {
         String genderText = rhsText(1, rhsSize() - 2);
@@ -190,13 +190,15 @@ class WiktionarySemantics extends SemanticsBase {
     }
 
     //-------------------------------------------------------------------
-    //  LangTranslations = LangLvl Lang ":" Space TranslationMeaning
-    //      (";" Space TranslationMeaning)* EOL
+    //  LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine
     //-------------------------------------------------------------------
     void addTranslationsForLanguage() {
         String language = (String) rhs(1).get();
-        for (int i = 4; i < rhsSize(); i += 3)
-            wiktionaryEntries.peek().addTranslationMeaning(language, (TranslationMeaning) rhs(i).get());
+        for (int i = 4; i < rhsSize() - 1; i++) {
+            TranslationMeaning meaning = (TranslationMeaning) rhs(i).get();
+            if (!meaning.getTranslations().isEmpty())
+                wiktionaryEntries.peek().addTranslationMeaning(language, meaning);
+        }
     }
 
     //-------------------------------------------------------------------
@@ -207,60 +209,139 @@ class WiktionarySemantics extends SemanticsBase {
     }
 
     //-------------------------------------------------------------------
-    //  TranslationMeaning = TranslationMeaningNo Translation
-    //      ("," Space Translation)*
+    //  TranslationMeaning = ItemNo Translation+
     //-------------------------------------------------------------------
     void TranslationMeaning() {
         TranslationMeaning meaning = new TranslationMeaning((String) rhs(0).get());
-        for (int i = 1; i < rhsSize(); i += 3)
-            meaning.addTranslation((Translation) rhs(i).get());
+        for (int i = 1; i < rhsSize(); i++) {
+            Translation translation = (Translation) rhs(i).get();
+            if (!translation.getInternalLink().isEmpty())
+                meaning.addTranslation(translation);
+        }
         lhs().put(meaning);
     }
 
     //-------------------------------------------------------------------
-    //  TranslationMeaningNo = "[" _++ "]" Space
-    //-------------------------------------------------------------------
-    void TranslationMeaningNo() {
-        lhs().put(rhsText(1, rhsSize() - 2));
-    }
-
-    //-------------------------------------------------------------------
-    //  Translation = LT (UeTemplate / UetTemplate) RT Space Gender?
+    //  Translation = TranslationDetails (UeTemplate / UetTemplate) Gender?
+    //                      0                        1                 2
+    //      TranslationDetails (COMMA / SEMICOLON)? Space
+    //               3(2)              4(3)
     //-------------------------------------------------------------------
     void Translation() {
         Translation t = (Translation) rhs(1).get();
-        if (rhsSize() == 5)
-            t.setGender((MultiGender) rhs(4).get());
+        if (rhs(2).get() instanceof MultiGender)
+            t.setGender((MultiGender) rhs(2).get());
         lhs().put(t);
     }
 
     //-------------------------------------------------------------------
-    //  UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
-    //      (IT TemplateAttr)? (IT TemplateAttr)?
+    //  UeTemplate = LT ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
+    //                0      1        2       3       4       5
+    //      (IT TemplateAttr)? (IT TemplateAttr)? RT Space
+    //        6        7         8      9        10(6) 11(7)
     //-------------------------------------------------------------------
     void UeTemplate() {
         Translation translation = new Translation();
-        translation.setInternalLink(rhs(4).text());
-        if (rhsSize() >= 7)
-            translation.setLabel(rhs(6).text());
-        if (rhsSize() == 9)
-            translation.setExternalLink(rhs(8).text());
+        translation.setInternalLink(rhs(5).text());
+        if (rhsSize() > 6 + 2) // 2 = RT Space
+            translation.setLabel(rhs(7).text());
+        if (rhsSize() == 12)
+            translation.setExternalLink(rhs(9).text());
         lhs().put(translation);
     }
 
     //-------------------------------------------------------------------
-    //  UetTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
-    //      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)?
+    //  UetTemplate = LT ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr
+    //                 0        1        2       3       4       5
+    //      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? RT Space
+    //       6        7       8      9          10       11      12(6) 13(7)
     //-------------------------------------------------------------------
     void UetTemplate() {
         Translation translation = new Translation();
-        translation.setInternalLink(rhs(4).text());
-        translation.setTranscription(rhs(6).text());
-        if (rhsSize() >= 9)
-            translation.setLabel(rhs(8).text());
-        if (rhsSize() == 11)
-            translation.setExternalLink(rhs(10).text());
+        translation.setInternalLink(rhs(5).text());
+        translation.setTranscription(rhs(7).text());
+        if (rhsSize() > 8 + 2) // 2 = RT Space
+            translation.setLabel(rhs(9).text());
+        if (rhsSize() == 14)
+            translation.setExternalLink(rhs(11).text());
         lhs().put(translation);
+    }
+
+    //-------------------------------------------------------------------
+    //  ItemNo = "[" _++ "]" Space
+    //-------------------------------------------------------------------
+    void ItemNo() {
+        lhs().put(rhsText(1, rhsSize() - 2));
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void MeaningsTextbaustein() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void Meaning() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void Template() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void TemplateAttr_0() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void TemplateAttr_1() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void TemplateAttr_2() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void Link() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void RichLine_0() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void RichLine_1() {
+
+    }
+
+    //-------------------------------------------------------------------
+    //
+    //-------------------------------------------------------------------
+    public void RichLine_2() {
+
     }
 
     private String getFormattedErrorMessageForLogging() {

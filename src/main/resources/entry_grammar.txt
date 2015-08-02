@@ -8,20 +8,20 @@ OtherLangEintrag = (!DeSpracheKopf Line)+ ;
 DeEintrag = DeSpracheKopf DeWortart+ ;
 
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
-DeSpracheTemplate = LT "Sprache" IT "Deutsch" RT ;
+DeSpracheTemplate = LT "Sprache" SEP "Deutsch" RT ;
 Lemma = Letter+ Space {};
 
 DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
 WortartKopf = SubstantivKopf {saveEintrag};
 WortartBody = MiddleSection TranslationsSection? ~{};
 UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;
-WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT {};
+WortartTemplate = LT "Wortart" SEP TemplateAttr SEP "Deutsch" RT {};
 
 //==============================================================================
 // Substantiv
 //==============================================================================
 SubstantivKopf = KOPF3 SubstantivTemplate SubstantivAttributes KOPF3 RestOfLine ;
-SubstantivTemplate = LT "Wortart" IT "Substantiv" IT "Deutsch" RT {createSubstantiv};
+SubstantivTemplate = LT "Wortart" SEP "Substantiv" SEP "Deutsch" RT {createSubstantiv};
 SubstantivAttributes = (","? Space SubstantivAttribute)+ ~{} / _++ KOPF3 ;
 SubstantivAttribute = Gender {substantivGender}
                     / WortartTemplate {substantivWortart}
@@ -32,7 +32,7 @@ SubstantivAttribute = Gender {substantivGender}
 //------------------------------------------------------------------------------
 FlexionTable = FlexionTableKopf FlexionForm+ RT RestOfLine ;
 FlexionTableKopf = LT "Deutsch Substantiv Übersicht" Space RestOfLine ;
-FlexionForm = "|" (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
+FlexionForm = SEP (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
 NomSg = "Nominativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomSg};
 NomPl = "Nominativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomPl};
 GenSg = "Genitiv Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addGenSg};
@@ -57,7 +57,10 @@ MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 //------------------------------------------------------------------------------
 // Meanings
 //------------------------------------------------------------------------------
-
+MeaningsTextbaustein = MeaningsKopf MeaningList {};
+MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
+MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
+Meaning = ItemNo Template RichLine {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -66,42 +69,67 @@ TranslationsSection = TranslationsKopf (!TranslationsTableKopf Line)* Translatio
 TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 RestOfLine ;
 TranslationsTable = TranslationsTableKopf (LangTranslations / DialectTable / !RT Line)*+ RT RestOfLine ;
 TranslationsTableKopf = LT "Ü-Tabelle" Line ;
-LangTranslations = LangLvl Lang ":" Space TranslationMeaning (";" Space TranslationMeaning)* RestOfLine {addTranslationsForLanguage};
+LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine {addTranslationsForLanguage};
 LangLvl = "*"+ ;
 Lang = LT Word RT {};
-TranslationMeaning = TranslationMeaningNo Translation ("," Space Translation)* {};
-TranslationMeaningNo = "[" _++ "]" Space {};
-Translation = LT (UeTemplate / UetTemplate) RT Space Gender? (![,;] !EOL _)* {}; // ignore additional information at the end
-UeTemplate = ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
-UetTemplate = ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? {};
+TranslationMeaning = ItemNo Translation+ {};
+Translation = TranslationDetails (UeTemplate / UetTemplate) Gender? TranslationDetails (COMMA / SEMICOLON)? Space {};
+TranslationDetails = (CursiveText / Link / (!(ItemNo / UeTemplate / UetTemplate / COMMA / SEMICOLON / EOL) _))* (COMMA / SEMICOLON)?;
+UeTemplate = LT ("Ü" / "Ü?") SEP TemplateAttr SEP TemplateAttr (SEP TemplateAttr)? (SEP TemplateAttr)? RT Space {};
+UetTemplate = LT ("Üt" / "Üt?") SEP TemplateAttr SEP TemplateAttr SEP TemplateAttr (SEP TemplateAttr)? (SEP TemplateAttr)? RT Space {};
 DialectTable = "|Dialekttabelle=" RestOfLine (!RT Line)* ; // ignore it for now
 
 //------------------------------------------------------------------------------
 // General Wiki Markup
 //------------------------------------------------------------------------------
-KOPF2 = "==" Space ;
-KOPF3 = "===" Space ;
-KOPF4 = "====" Space ;
-KopfStart = "="+ " " ;
-LT = "{{" Space ; // Left template opening
-IT = "|" ; // Inside template separator
-RT = "}}" Space ; // Right template closing
-TemplateAttr = (!(IT / RT) _)+ ;
+KOPF2       = "=="      Space ;
+KOPF3       = "==="     Space ;
+KOPF4       = "===="    Space ;
+KopfStart   = "==" ;
+SEP         = "|"       Space ; // attribute separator (used in links and templates to separate attributes)
+
+TextbausteinEnd = LT / KopfStart / EOF ;
+
+// Template
+LT = "{{"   Space ; // Left Template opening
+RT = "}}"   Space ; // Right Template closing
+Template = LT TemplateAttr (SEP TemplateAttr)* RT {} ;
+TemplateAttr    = Link+ {}
+                / Link* (TemplateAttrPlainText Link*)+ {}
+                / Space {};
+TemplateAttrPlainText = (!(SEP / RT / Link) _)+ ;
+
+// Link
+LL = "[[" ;   // Left Link opening
+RL = "]]" ;   // Right Link opening; no space after, because wee need to treat spaces as part of plain text that can come after the link
+Link = LL LinkAttr (SEP LinkAttr)? RL {};
+LinkAttr = (!(SEP / RL) _)+ ;
+
+// Line with links
+RichLine = Link+ EOL {}
+         / (Link? PlainText Link?)+ EOL {}
+         / Space EOL {};
+PlainText = (!EOL _)+ ;
+
+CursiveText = "''" _*+ "''" Space ;
+
+// Item number, that is used to number the elements in a Textbaustein like translation table or meanings
+ItemNo = "[" _++ "]" Space {};
 
 //------------------------------------------------------------------------------
 // HTML markup
 //------------------------------------------------------------------------------
 BR = "<br" Space "/>" ;
-Comment = CommentStart _++ CommentEnd Space ;
-CommentStart = "<!--" ;
-CommentEnd = "-->" ;
+Comment         = CommentStart _++ CommentEnd Space ;
+CommentStart    = "<!--" Space ;
+CommentEnd      = "-->" Space ;
 
 //------------------------------------------------------------------------------
 // Common expressions
 //------------------------------------------------------------------------------
 Line = _++ EOL ;
 BadLine = _++ EOL ;
-EmptyLine =  [\n\r]* ;
+EmptyLine = Space EOL ;
 RestOfLine = _*+ EOL ;
 
 Digit = [0-9] ;
@@ -113,5 +141,7 @@ Word = Letter (Letter / [-'])* ;
 Phrase = Word (Space Word)* ;
 
 Space = " "* ;
+COMMA = "," Space ;
+SEMICOLON = ";" Space ;
 EOF = !_ ;
 EOL = [\r\n]+ / EOF ;

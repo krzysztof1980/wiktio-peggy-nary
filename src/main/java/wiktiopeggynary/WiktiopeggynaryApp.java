@@ -46,7 +46,7 @@ public class WiktiopeggynaryApp {
     private static void parseDump(String dumpFile) throws IOException {
         Path dumpFilePath = Paths.get(dumpFile);
         if (!Files.exists(dumpFilePath)) {
-            System.out.println("Provided file doNes not exist");
+            System.out.println("Provided file does not exist");
             return;
         }
         IndexInElasticsearchClient client = new IndexInElasticsearchClient();

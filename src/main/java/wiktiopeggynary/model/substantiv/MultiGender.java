@@ -10,7 +10,7 @@ public class MultiGender {
 
     private Gender[] genders;
 
-    public MultiGender(Gender[] genders) {
+    public MultiGender(Gender... genders) {
         if (genders == null || genders.length == 0)
             throw new IllegalArgumentException("genders cannot be null or empty");
         this.genders = genders;
@@ -39,5 +39,21 @@ public class MultiGender {
         return Arrays.stream(genders)
                 .map(Gender::getArtikel)
                 .collect(Collectors.joining(", "));
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        MultiGender that = (MultiGender) o;
+
+        return Arrays.equals(genders, that.genders);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return genders != null ? Arrays.hashCode(genders) : 0;
     }
 }
