@@ -10,7 +10,8 @@ import java.util.*;
 public class WiktionaryEntry {
 
     private String lemma;
-    private Map<String, List<TranslationMeaning>> translations = new HashMap<>();
+    private final List<Meaning> meanings = new ArrayList<>();
+    private final Map<String, List<TranslationMeaning>> translations = new HashMap<>();
 
     public String getLemma() {
         return lemma;
@@ -20,7 +21,22 @@ public class WiktionaryEntry {
         this.lemma = lemma;
     }
 
+    public void addMeaning(Meaning meaning) {
+        if (meaning == null)
+            throw new IllegalArgumentException("meaning must not be null");
+        meanings.add(meaning);
+    }
+
+    public List<Meaning> getMeanings() {
+        return Collections.unmodifiableList(meanings);
+    }
+
     public void addTranslationMeaning(String language, TranslationMeaning translationMeaning) {
+        if (language == null || language.isEmpty())
+            throw new IllegalArgumentException("language must not be empty");
+        if (translationMeaning == null)
+            throw new IllegalArgumentException("translationMeaning must not be null");
+
         if (!translations.containsKey(language)) {
             translations.put(language, new ArrayList<>());
         }

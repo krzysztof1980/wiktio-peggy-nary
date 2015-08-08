@@ -13,8 +13,10 @@ package wiktiopeggynary.parser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wiktiopeggynary.model.Kasus;
+import wiktiopeggynary.model.Meaning;
 import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.WiktionaryEntry;
+import wiktiopeggynary.model.markup.*;
 import wiktiopeggynary.model.substantiv.FlexionForm;
 import wiktiopeggynary.model.substantiv.MultiGender;
 import wiktiopeggynary.model.substantiv.Substantiv;
@@ -34,8 +36,15 @@ class WiktionarySemantics extends SemanticsBase {
 
     private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
 
+    // TODO: only for research
+    private Collection<Template> templates = new LinkedList<>();
+
     public Collection<WiktionaryEntry> getWiktionaryEntries() {
         return Collections.unmodifiableCollection(wiktionaryEntries);
+    }
+
+    public Collection<Template> getTemplates() {
+        return Collections.unmodifiableCollection(templates);
     }
 
     void saveEintrag() {
@@ -275,73 +284,86 @@ class WiktionarySemantics extends SemanticsBase {
     }
 
     //-------------------------------------------------------------------
-    //
-    //-------------------------------------------------------------------
-    public void MeaningsTextbaustein() {
-
-    }
-
-    //-------------------------------------------------------------------
-    //
+    //  Meaning = MeaningLvl RichTextComponent++ EOL
     //-------------------------------------------------------------------
     public void Meaning() {
-
+        RichText richText = new RichText();
+        for (int i = 2; i < rhsSize() - 1; i++)
+            richText.addComponent((DisplayableAsText) rhs(i).get());
+        Meaning meaning = new Meaning(richText);
+        entryWorkingCopy.addMeaning(meaning);
     }
 
     //-------------------------------------------------------------------
-    //
+    //  Template = LT TemplateAttr (SEP TemplateAttr)* RT
+    //              0      1         2        3        n-1
     //-------------------------------------------------------------------
     public void Template() {
-
+        Template template = new Template(rhs(1).text());
+        for (int i = 3; i < rhsSize() - 1; i+=2)
+            template.addAttribute((RichText) rhs(i).get());
+        lhs().put(template);
+        templates.add(template);
     }
 
     //-------------------------------------------------------------------
-    //
+    //  TemplateAttr = (!(SEP / RT) RichTextComponent)*
     //-------------------------------------------------------------------
-    public void TemplateAttr_0() {
-
+    public void TemplateAttr() {
+        RichText richText = new RichText();
+        for (int i = 0; i < rhsSize(); i++)
+            richText.addComponent((DisplayableAsText) rhs(i).get());
+        lhs().put(richText);
     }
 
     //-------------------------------------------------------------------
-    //
-    //-------------------------------------------------------------------
-    public void TemplateAttr_1() {
-
-    }
-
-    //-------------------------------------------------------------------
-    //
-    //-------------------------------------------------------------------
-    public void TemplateAttr_2() {
-
-    }
-
-    //-------------------------------------------------------------------
-    //
+    //  Link = LL LinkAttr (SEP LinkAttr)? RL
+    //         0      1      2      3      4(2)
     //-------------------------------------------------------------------
     public void Link() {
-
+        InternalLink link = new InternalLink(rhs(1).text());
+        if (rhsSize() > 3)
+            link.setLinkText(rhs(3).text());
+        lhs().put(link);
     }
 
     //-------------------------------------------------------------------
-    //
+    //  CursiveText = "''" RichTextComponent*+ "''" Space
+    //                  0            1          n-2  n-1
     //-------------------------------------------------------------------
-    public void RichLine_0() {
-
+    public void CursiveText() {
+        CursiveBlock cursiveBlock = new CursiveBlock();
+        for (int i = 1; i < rhsSize() - 2; i++)
+            cursiveBlock.addComponent((DisplayableAsText) rhs(i).get());
+        lhs().put(cursiveBlock);
     }
 
     //-------------------------------------------------------------------
-    //
+    //  RichTextComponent = Link
     //-------------------------------------------------------------------
-    public void RichLine_1() {
-
+    public void RichTextComponent_0() {
+        lhs().put(rhs(0).get());
     }
 
     //-------------------------------------------------------------------
-    //
+    //  RichTextComponent = CursiveText
     //-------------------------------------------------------------------
-    public void RichLine_2() {
+    public void RichTextComponent_1() {
+        lhs().put(rhs(0).get());
+    }
 
+    //-------------------------------------------------------------------
+    //  RichTextComponent = Template
+    //-------------------------------------------------------------------
+    public void RichTextComponent_2() {
+        lhs().put(rhs(0).get());
+    }
+
+    //-------------------------------------------------------------------
+    //  RichTextComponent = !EOL _
+    //-------------------------------------------------------------------
+    public void RichTextComponent_3() {
+        lhs().put(new PlainText(rhsText(0, rhsSize())));
     }
 
     private String getFormattedErrorMessageForLogging() {

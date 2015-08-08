@@ -52,15 +52,16 @@ FlexionVariantList  = Space Phrase (BR Phrase)* {}
 Gender = LT GenderTemplateArgument RT Space {};
 GenderTemplateArgument = "mf" / "f" ("m" / "n") / "n" ("m" / "f") / "m" / "f" / "n" / "u" ;
 
-MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
+MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
 
 //------------------------------------------------------------------------------
 // Meanings
 //------------------------------------------------------------------------------
-MeaningsTextbaustein = MeaningsKopf MeaningList {};
+MeaningsTextbaustein = MeaningsKopf MeaningList ;
 MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
-Meaning = ItemNo Template RichLine {};
+Meaning = MeaningLvl RichTextComponent++ EOL {};
+MeaningLvl = ":"+ (ItemNo / "*") ;
 
 //------------------------------------------------------------------------------
 // Translations
@@ -90,14 +91,11 @@ SEP         = "|"       Space ; // attribute separator (used in links and templa
 
 TextbausteinEnd = LT / KopfStart / EOF ;
 
-// Template
-LT = "{{"   Space ; // Left Template opening
-RT = "}}"   Space ; // Right Template closing
-Template = LT TemplateAttr (SEP TemplateAttr)* RT {} ;
-TemplateAttr    = Link+ {}
-                / Link* (TemplateAttrPlainText Link*)+ {}
-                / Space {};
-TemplateAttrPlainText = (!(SEP / RT / Link) _)+ ;
+// Rich text components
+RichTextComponent = Link {}
+                  / CursiveText {}
+                  / Template {}
+                  / !EOL _ {};
 
 // Link
 LL = "[[" ;   // Left Link opening
@@ -105,13 +103,13 @@ RL = "]]" ;   // Right Link opening; no space after, because wee need to treat s
 Link = LL LinkAttr (SEP LinkAttr)? RL {};
 LinkAttr = (!(SEP / RL) _)+ ;
 
-// Line with links
-RichLine = Link+ EOL {}
-         / (Link? PlainText Link?)+ EOL {}
-         / Space EOL {};
-PlainText = (!EOL _)+ ;
+CursiveText = "''" RichTextComponent*+ "''" Space {};
 
-CursiveText = "''" _*+ "''" Space ;
+// Template
+LT = "{{"   Space ; // Left Template opening
+RT = "}}"   Space ; // Right Template closing
+Template = LT TemplateAttr (SEP TemplateAttr)* RT {} ;
+TemplateAttr = (!(SEP / RT) RichTextComponent)* {};
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" _++ "]" Space {};
