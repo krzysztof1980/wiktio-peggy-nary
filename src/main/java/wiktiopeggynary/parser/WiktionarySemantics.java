@@ -36,8 +36,7 @@ class WiktionarySemantics extends SemanticsBase {
 
     private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
 
-    // TODO: only for research
-    private Collection<Template> templates = new LinkedList<>();
+    private Collection<Template> templates = new ArrayList<>();
 
     public Collection<WiktionaryEntry> getWiktionaryEntries() {
         return Collections.unmodifiableCollection(wiktionaryEntries);

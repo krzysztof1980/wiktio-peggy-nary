@@ -9,7 +9,7 @@ class ResourceParserRunner {
 
     static void main(String[] args) {
         String articleTitle = getArticleFromUserInput()
-        def wiktionaryEntries = ParserService.getInstance().parseWiktionaryPage(ResourceUtils.readArticleFromResources(articleTitle))
+        def wiktionaryEntries = ParserService.getInstance().parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle))
         wiktionaryEntries.each {
             e -> println(e)
         }

@@ -15,7 +15,7 @@ class TranslationsParserSpec extends Specification {
 
     def "translation meaning number is not interpreted"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
 
         then: "the meaning number is an integer"
@@ -27,7 +27,7 @@ class TranslationsParserSpec extends Specification {
 
     def "entry['#lang'] has #meaningCount meanings#notes"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
 
         then:
@@ -42,7 +42,7 @@ class TranslationsParserSpec extends Specification {
 
     def "Translations with details in cursive: meaning '#meaningTxt'#notes has #translationsCount translations"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
         def langTranslations = entry.translations["pl"]
 
@@ -64,7 +64,7 @@ class TranslationsParserSpec extends Specification {
 
     def "Translations with details as links: meaning '#meaningTxt'#notes has #translationsCount translations"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
         def langTranslations = entry.translations["en"]
 
@@ -87,7 +87,7 @@ class TranslationsParserSpec extends Specification {
 
     def "translation '#translationTxt' has gender: #gender"() {
         when: "we take translations for Spanish"
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
         def langTranslations = entry.translations["pl"]
 
@@ -107,7 +107,7 @@ class TranslationsParserSpec extends Specification {
 
     def "content of translation in entry['#lang'] meaning[#meaningIdx] translation[#translationIdx]"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Staat"))[0];
         def langTranslations = entry.translations[lang]
         def translation = langTranslations[meaningIdx].translations[translationIdx];
@@ -126,7 +126,7 @@ class TranslationsParserSpec extends Specification {
 
     def "ignore empty translations and comments"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Heckmeck"))[0];
 
         then: "there is only a Swedish translation, because other 2 are empty"

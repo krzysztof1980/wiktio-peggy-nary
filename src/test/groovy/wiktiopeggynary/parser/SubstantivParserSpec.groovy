@@ -15,7 +15,7 @@ class SubstantivParserSpec extends Specification {
 
     def "gender and other attributes"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Boot"))
 
         then: "there are 3 entries"
@@ -42,7 +42,7 @@ class SubstantivParserSpec extends Specification {
 
     def "adjektivische Deklination"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Bahnangestellter"))
         Substantiv entry = entries[0] as Substantiv
 
@@ -56,7 +56,7 @@ class SubstantivParserSpec extends Specification {
 
     def "adjektivische Deklination with error"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Suchende"))
         Substantiv entry = entries[0] as Substantiv
 
@@ -70,7 +70,7 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table with line breaks"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Zug"))
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
@@ -85,7 +85,7 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table without plural"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Zug"))
         Substantiv entry = entries[1] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
@@ -99,7 +99,7 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table with unknown format"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryPage(
+        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources("Zug"))
         Substantiv entry = entries[1] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()

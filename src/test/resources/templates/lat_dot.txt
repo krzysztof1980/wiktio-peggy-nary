@@ -1,0 +1,2 @@
+<!-- lat. -->
+[[lateinisch|lateinisch{{#if: {{{1|}}} |{{#ifeq: {{{1}}} | : | <nowiki>:</nowiki>|{{#ifeq: {{{1}}}| ; | <nowiki>;</nowiki>|{{{1}}}}}}}}}]]<noinclude>{{Dokumentation}}</noinclude>

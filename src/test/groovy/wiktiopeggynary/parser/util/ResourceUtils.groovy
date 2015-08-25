@@ -12,4 +12,8 @@ final class ResourceUtils {
     static boolean hasResourceForArticle(String title) {
         return this.getClass().getResource("/articles-de/${title}.txt") != null
     }
+
+    static String readTemplateDefinitionFromResources(String name) {
+        return this.getClass().getResource("/templates/${name}.txt").text
+    }
 }

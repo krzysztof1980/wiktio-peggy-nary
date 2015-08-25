@@ -1,69 +1,89 @@
 package wiktiopeggynary.parser;
 
 import de.tudarmstadt.ukp.jwktl.parser.WiktionaryDumpParser;
-import wiktiopeggynary.model.WiktionaryEntry;
-import wiktiopeggynary.model.markup.Template;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import wiktiopeggynary.parser.dumpparser.WiktionaryAutocorrectionService;
-import wiktiopeggynary.parser.dumpparser.WiktionaryPageDocument;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageParser;
+import wiktiopeggynary.parser.mouse.ParserBase;
 import wiktiopeggynary.parser.mouse.SourceString;
-import wiktiopeggynary.parser.util.PrintingTemplateConsumer;
+import wiktiopeggynary.parser.template.parser.TemplateParser;
+import wiktiopeggynary.util.ServiceLocator;
 
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Consumer;
 
 /**
  * @author Krzysztof Witukiewicz
  */
 public final class ParserService {
+	private static final Logger logger = LoggerFactory.getLogger(ParserService.class);
 
-    private static final ParserService instance = new ParserService();
+	public void getWiktionaryEntriesFromDump(Path wiktionaryDumpPath,
+	                                         Consumer<WiktionaryEntryPageParseResult> consumer) {
+		WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
+			if (p.getNamespace() == null) {
+				try {
+					consumer.accept(parseWiktionaryEntryPage(p.getText()));
+				} catch (ParseException e) {
+					logger.error("Error parsing wiktionary entry with title '{}'", p.getTitle());
+				}
+			}
+		});
+		processDump(wiktionaryDumpPath, wiktionaryPageParser);
+	}
 
-    private ParserService() {
-    }
+	public Map<String, String> getTemplateDefinitionPagesFromDump(Path wiktionaryDumpPath) {
+		Map<String, String> result = new HashMap<>();
+		WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
+			if ("Vorlage".equals(p.getNamespace()))
+				result.put(p.getTitle(), p.getText());
+		});
+		processDump(wiktionaryDumpPath, wiktionaryPageParser);
+		return result;
+	}
 
-    public static ParserService getInstance() {
-        return instance;
-    }
+	private void processDump(Path wiktionaryDumpPath,
+	                         WiktionaryPageParser wiktionaryPageParser) {
+		WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(wiktionaryPageParser);
+		dumpParser.parse(wiktionaryDumpPath.toFile());
+	}
 
-    public void parseWiktionaryDump(Path wiktionaryDumpPath, Consumer<WiktionaryEntry> consumer, Runnable cleanup) {
-        PrintingTemplateConsumer templateConsumer = new PrintingTemplateConsumer();
-        WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(
-                new WiktionaryPageParser(p -> processWiktionaryPage(p, consumer, templateConsumer), cleanup));
-        dumpParser.parse(wiktionaryDumpPath.toFile());
-        templateConsumer.print();
-    }
+	public WiktionaryEntryPageParseResult parseWiktionaryEntryPage(String page) throws ParseException {
+		if (page == null)
+			throw new IllegalArgumentException("page must not be null");
+		WiktionaryParser parser = new WiktionaryParser();
+		setTraceInParser(parser);
+		String correctedPage = ServiceLocator.getService(WiktionaryAutocorrectionService.class).correctPage(page);
+		if (parser.parse(new SourceString(correctedPage)))
+			return new WiktionaryEntryPageParseResult(parser.semantics().getWiktionaryEntries(),
+			                                          parser.semantics().getTemplates());
+		else
+			throw new ParseException();
+	}
 
-    public Collection<WiktionaryEntry> parseWiktionaryPage(String page) {
-        PrintingTemplateConsumer templateConsumer = new PrintingTemplateConsumer();
-        Collection<WiktionaryEntry> entries = parseWiktionaryPage(page, templateConsumer);
-        templateConsumer.print();
-        return entries;
-    }
+	public TemplateDefinitionPageParseResult parseTemplateDefinitionPage(String page) throws ParseException {
+		if (page == null)
+			throw new IllegalArgumentException("page must not be null");
+		TemplateParser parser = new TemplateParser();
+		if (parser.parse(new SourceString(page)))
+			return new TemplateDefinitionPageParseResult(parser.semantics().getTemplateDefinition(),
+			                                             parser.semantics().getTemplates());
+		else
+			throw new ParseException();
+	}
 
-    private void processWiktionaryPage(WiktionaryPageDocument wiktionaryPage, Consumer<WiktionaryEntry> entryConsumer, Consumer<Collection<Template>> templatesConsumer) {
-        if (wiktionaryPage.getNamespace() == null) {
-            Collection<WiktionaryEntry> wiktionaryEntries = parseWiktionaryPage(wiktionaryPage.getText(), templatesConsumer);
-            wiktionaryEntries.forEach(entryConsumer::accept);
-        }
-    }
-
-    private Collection<WiktionaryEntry> parseWiktionaryPage(String page, Consumer<Collection<Template>> templatesConsumer) {
-        WiktionaryParser parser = new WiktionaryParser();
-        String trace = System.getProperty("wiktiopeggynary.trace");
-        if (trace != null) {
-            parser.setTrace(trace);
-            try {
-                parser.getClass().getMethod("setMemo", int.class).invoke(parser, 0);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        String correctedPage = WiktionaryAutocorrectionService.getInstance().correctPage(page);
-        boolean ok = parser.parse(new SourceString(correctedPage));
-        templatesConsumer.accept(parser.semantics().getTemplates());
-        return ok ? parser.semantics().getWiktionaryEntries() : new ArrayList<>();
-    }
+	private void setTraceInParser(ParserBase parser) {
+		String trace = System.getProperty("wiktiopeggynary.trace");
+		if (trace != null) {
+			parser.setTrace(trace);
+			try {
+				parser.getClass().getMethod("setMemo", int.class).invoke(parser, 0);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }

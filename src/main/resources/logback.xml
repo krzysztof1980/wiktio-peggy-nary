@@ -26,7 +26,7 @@
         <appender-ref ref="FILE_PARSER" />
     </logger>
 
-    <logger name="wiktiopeggynary.client" level="debug" additivity="false">
+    <logger name="wiktiopeggynary.persistence" level="debug" additivity="false">
         <appender-ref ref="FILE_INDEX" />
     </logger>
 

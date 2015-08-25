@@ -12,12 +12,10 @@ import java.util.function.Consumer;
 public class WiktionaryPageParser implements IWiktionaryPageParser {
 
     private Consumer<WiktionaryPageDocument> pageConsumer;
-    private Runnable cleanup;
     private WiktionaryPageDocument currentPage;
 
-    public WiktionaryPageParser(Consumer<WiktionaryPageDocument> pageConsumer, Runnable cleanup) {
+    public WiktionaryPageParser(Consumer<WiktionaryPageDocument> pageConsumer) {
         this.pageConsumer = pageConsumer;
-        this.cleanup = cleanup;
     }
 
     @Override
@@ -37,7 +35,7 @@ public class WiktionaryPageParser implements IWiktionaryPageParser {
 
     @Override
     public void onClose(IDumpInfo iDumpInfo) {
-        cleanup.run();
+
     }
 
     @Override

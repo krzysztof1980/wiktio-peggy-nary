@@ -13,7 +13,7 @@ class MeaningsParserSpec extends Specification {
 
     def "'#lemma' meaning[#meaningIdx] (#notes) = '#meaningDetails': '#meaningDefinition'"() {
         when:
-        def entry = ParserService.getInstance().parseWiktionaryPage(
+        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
                 readArticleFromResources(lemma))[0]
         def meaning = entry.getMeanings().get(meaningIdx)
 
