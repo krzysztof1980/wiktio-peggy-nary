@@ -3,7 +3,7 @@ package wiktiopeggynary.parser.template.model;
 /**
  * @author Krzysztof Witukiewicz
  */
-public abstract class TemplateParameter {
+public abstract class TemplateParameter<T> {
 
 	private final DisplayableAsText value;
 

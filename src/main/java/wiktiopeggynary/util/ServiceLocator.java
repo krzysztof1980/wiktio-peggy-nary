@@ -17,4 +17,8 @@ public class ServiceLocator {
 	public static void loadService(Object service) {
 		services.put(service.getClass(), service);
 	}
+
+	public static <S, T extends S> void loadService(Class<S> serviceType, T service) {
+		services.put(serviceType, service);
+	}
 }

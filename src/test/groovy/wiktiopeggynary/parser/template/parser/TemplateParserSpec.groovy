@@ -113,7 +113,7 @@ class TemplateParserSpec extends Specification {
         testCase.result.asText() == "some value"
     }
 
-    def "Named parameter"() {
+    def "named parameter"() {
         given:
         def parser = new TemplateParser()
 

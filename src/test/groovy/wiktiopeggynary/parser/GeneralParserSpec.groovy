@@ -11,13 +11,13 @@ class GeneralParserSpec extends Specification {
 
     def "create entity pro section"() {
         expect:
-        ParserService.getInstance().parseWiktionaryEntryPage(
+        new ParserService().parseWiktionaryEntryPage(
                 readArticleFromResources("Boot")).size() == 3
     }
 
     def "parse only german sections"() {
         expect:
-        ParserService.getInstance().parseWiktionaryEntryPage(
+        new ParserService().parseWiktionaryEntryPage(
                 readArticleFromResources("Kim")).size() == 2
     }
 }

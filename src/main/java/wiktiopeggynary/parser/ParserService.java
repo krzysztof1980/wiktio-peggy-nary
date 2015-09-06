@@ -18,7 +18,7 @@ import java.util.function.Consumer;
 /**
  * @author Krzysztof Witukiewicz
  */
-public final class ParserService {
+public class ParserService {
 	private static final Logger logger = LoggerFactory.getLogger(ParserService.class);
 
 	public void getWiktionaryEntriesFromDump(Path wiktionaryDumpPath,

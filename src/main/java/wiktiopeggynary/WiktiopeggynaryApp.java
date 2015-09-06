@@ -2,6 +2,7 @@ package wiktiopeggynary;
 
 import wiktiopeggynary.parser.ParserService;
 import wiktiopeggynary.parser.dumpparser.WiktionaryAutocorrectionService;
+import wiktiopeggynary.persistence.ElasticsearchClient;
 import wiktiopeggynary.util.ServiceLocator;
 
 import java.io.IOException;
@@ -45,8 +46,8 @@ public class WiktiopeggynaryApp {
 			System.out.println("Provided file does not exist");
 			return;
 		}
-		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(dumpFilePath);
-		parseManager.parse();
+		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(new ElasticsearchClient());
+		parseManager.parse(dumpFilePath);
 	}
 
 	private static void printHelp() {

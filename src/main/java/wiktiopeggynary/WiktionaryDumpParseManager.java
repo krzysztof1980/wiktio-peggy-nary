@@ -11,7 +11,9 @@ import wiktiopeggynary.util.ServiceLocator;
 
 import java.nio.file.Path;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -19,18 +21,17 @@ import java.util.Map;
 public class WiktionaryDumpParseManager {
 	private static final Logger logger = LoggerFactory.getLogger(WiktionaryDumpParseManager.class);
 
+	private final ElasticsearchClient esClient;
 	private final ParserService parserService;
 
-	private final Path wiktionaryDumpPath;
-
-	public WiktionaryDumpParseManager(Path wiktionaryDumpPath) {
-		this.wiktionaryDumpPath = wiktionaryDumpPath;
+	public WiktionaryDumpParseManager(ElasticsearchClient esClient) {
+		if (esClient == null)
+			throw new IllegalArgumentException("esClient must not be null");
+		this.esClient = esClient;
 		parserService = ServiceLocator.getService(ParserService.class);
 	}
 
-	public void parse() {
-		ElasticsearchClient esClient = new ElasticsearchClient();
-
+	public void parse(Path wiktionaryDumpPath) {
 		logger.debug("Deleting indices...");
 		esClient.deleteWiktionaryEntryIndexIfExists();
 		esClient.deleteTemplateDefinitionIndexIfExists();
@@ -42,12 +43,16 @@ public class WiktionaryDumpParseManager {
 		logger.debug("Indexing wiktionary entries...");
 		Map<String, TemplateDefinition> templateDefinitions = new HashMap<>();
 		parserService.getWiktionaryEntriesFromDump(wiktionaryDumpPath, r -> {
-			r.getTemplates().forEach(t -> {
+			r.getTemplates().forEach(template -> {
 				// if templateDefinitionsPages does not contain the name, than it means, that it could not be parsed
 				// and was removed
-				if (!templateDefinitions.containsKey(t.getName()) && templateDefinitionsPages.containsKey(t.getName()
-				)) {
-					parseTemplate(t.getName(), templateDefinitionsPages, templateDefinitions);
+				if (!templateDefinitions.containsKey(template.getName()) && templateDefinitionsPages.containsKey(template.getName())) {
+					parseTemplate(template.getName(), templateDefinitionsPages, templateDefinitions);
+				}
+				TemplateDefinition templateDefinition = templateDefinitions.get(template.getName());
+				if (templateDefinition != null) {
+					List<String> parameters = template.getAttributes().stream().map(a -> a.asText()).collect(Collectors.toList());
+					//templateDefinition.asText()
 				}
 			});
 			// TODO: do template processing

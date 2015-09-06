@@ -33,6 +33,13 @@ public abstract class TemplateParameterApplication<T> implements DisplayableAsTe
 	@Override
 	public String asText(TemplateDefinitionParameter... parameters) {
 		Optional<TemplateDefinitionParameter> param = Arrays.stream(parameters).filter(p -> p.getIdentifier().equals(identifier)).findFirst();
-		return param.isPresent() ? param.get().getValue() : defaultValue;
+		return param.isPresent()
+		       ? param.get().getValue()
+		       : defaultValue != null ? defaultValue : String.format("{{{%s}}}", identifier);
+	}
+
+	@Override
+	public String toString() {
+		return String.format("{{{%s|%s}}}", identifier, defaultValue);
 	}
 }
