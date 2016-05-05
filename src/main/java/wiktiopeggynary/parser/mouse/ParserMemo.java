@@ -2,7 +2,7 @@
 //
 //  Part of PEG parser generator Mouse.
 //
-//  Copyright (C) 2009, 2010, 2013
+//  Copyright (C) 2009, 2010, 2013, 2014, 2015
 //  by Roman R. Redziejowski (www.romanredz.se).
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,11 +26,13 @@
 //    100504 In Cache(String) set diag to name instead of null.
 //   Version 1.6
 //    130416 Allowed m=0 to enable performance comparisons.
+//   Version 1.7
+//    140516 Changed initialization of 'cacheSize' to the default value 0.
+//    150629 The 'reuse' services rewritten to use new methods of 'Phrase'.
 //
 //=========================================================================
 
 package wiktiopeggynary.parser.mouse;
-
 
 //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 //
@@ -44,7 +46,7 @@ public class ParserMemo extends ParserBase
   //-------------------------------------------------------------------
   //  Cache size.
   //-------------------------------------------------------------------
-  int cacheSize = 1;
+  int cacheSize = 0;
 
   //-------------------------------------------------------------------
   //  Phrase to reuse.
@@ -122,19 +124,13 @@ public class ParserMemo extends ParserBase
   //-------------------------------------------------------------------
   protected boolean reuse()
     {
-      if (reuse.success)
-      {
-        pos = reuse.end;               // Update position
-        current.end = pos;             // Update end of current
-        current.rhs.add(reuse);        // Attach p to rhs of current
-        current.errMerge(reuse);       // Merge error info with current
+      pos = reuse.end;                 // Update position
+      current.end = pos;               // Update end of current
+      current.hwmUpdFrom(reuse);       // Propagate error info
+      if (!reuse.success)
+         return false;
+      current.rhs.add(reuse);          // Attach to rhs of current
         return true;
-      }
-      else
-      {
-        current.errMerge(reuse);       // Merge error info with current
-        return false;
-      }
     }
 
   //-------------------------------------------------------------------
@@ -142,19 +138,13 @@ public class ParserMemo extends ParserBase
   //-------------------------------------------------------------------
   protected boolean reuseInner()
     {
-      if (reuse.success)
-      {
-        pos = reuse.end;               // Update position
-        current.end = pos;             // Update end of current
-        current.rhs.addAll(reuse.rhs); // Add rhs to rhs of current
-        current.errMerge(reuse);       // Merge error info with current
+      pos = reuse.end;                 // Update position
+      current.end = pos;               // Update end of current
+      current.hwmUpdFrom(reuse);       // Propagate error info
+      if (!reuse.success)
+         return false;
+      current.rhs.addAll(reuse.rhs);   // Add rhs to rhs of current
         return true;
-      }
-      else
-      {
-        current.errMerge(reuse);       // Merge error info with current
-        return false;
-      }
     }
 
   //-------------------------------------------------------------------
@@ -162,13 +152,10 @@ public class ParserMemo extends ParserBase
   //-------------------------------------------------------------------
   protected boolean reusePred()
     {
-      if (reuse.success)
-        return true;
-      else
-      {
-        current.errMerge(reuse);       // Merge error info with current
-        return false;
-      }
+      pos = reuse.end;                 // Update position
+      current.end = pos;               // Update end of current
+      current.hwmUpdFrom(reuse);       // Propagate error info
+      return (reuse.success);
     }
 
 
