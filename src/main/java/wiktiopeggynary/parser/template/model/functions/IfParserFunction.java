@@ -1,17 +1,26 @@
 package wiktiopeggynary.parser.template.model.functions;
 
-import wiktiopeggynary.parser.template.model.runtime.TemplateDefinitionParameter;
+import wiktiopeggynary.model.markup.RichText;
+import wiktiopeggynary.model.markup.RichTextComponent;
+
+import java.util.Optional;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class IfParserFunction extends ParserFunction {
+public class IfParserFunction extends SimpleParserFunctionWithParameters {
+
+	public IfParserFunction(RichText... parameters) {
+		super(parameters);
+	}
 
 	@Override
-	public String asText(TemplateDefinitionParameter... parameters) {
-		String testString = getParameters().get(0).asText(parameters);
-		String conditionTrue = getParameters().get(1).asText(parameters);
-		String conditionFalse = getParameters().size() == 3 ? getParameters().get(2).asText(parameters) : "";
-		return !testString.isEmpty() ? conditionTrue : conditionFalse;
+	public Optional<IfeqParserFunction> mergeWith(RichTextComponent component) {
+		return Optional.empty();
+	}
+
+	@Override
+	protected RichText doEvaluate(EvaluatedParameters params) {
+		return !params.idx(0).get().isEmpty() ? params.idx(1).get() : params.idx(2).orElse(RichText.empty());
 	}
 }

@@ -1,15 +1,16 @@
 package wiktiopeggynary
 
 import spock.lang.Specification
+import spock.lang.Subject
 import spock.lang.Unroll
 import wiktiopeggynary.model.WiktionaryEntry
 import wiktiopeggynary.model.markup.Template
 import wiktiopeggynary.parser.ParserService
 import wiktiopeggynary.parser.TemplateDefinitionPageParseResult
 import wiktiopeggynary.parser.WiktionaryEntryPageParseResult
+import wiktiopeggynary.parser.template.TemplateService
 import wiktiopeggynary.parser.template.model.TemplateDefinition
-import wiktiopeggynary.persistence.ElasticsearchClient
-import wiktiopeggynary.util.ServiceLocator
+import wiktiopeggynary.persistence.ElasticsearchNativeClient
 
 import java.nio.file.Path
 import java.util.function.Consumer
@@ -22,65 +23,47 @@ class WiktionaryDumpParseManagerSpec extends Specification {
 
     final Path DUMP_PATH = Mock()
 
-    ElasticsearchClient esClient = Mock() {
+    ElasticsearchNativeClient esClient = Mock() {
         1 * deleteWiktionaryEntryIndexIfExists()
         1 * deleteTemplateDefinitionIndexIfExists()
     }
 
     ParserService parserService = Mock()
+    TemplateService templateService = Mock()
 
-    def setup() {
-        ServiceLocator.loadService(ParserService.class, parserService)
-    }
+    @Subject
+    WiktionaryDumpParseManager wiktionaryDumpParseManager = new WiktionaryDumpParseManager(parserService,
+                                                                                           templateService, esClient)
 
     def "parse no entries"() {
         given: "ParserService that returns neither wiktionary entries nor templates"
-        with(parserService) {
-            1 * getTemplateDefinitionPagesFromDump(DUMP_PATH) >> [:]
-            1 * getWiktionaryEntriesFromDump(DUMP_PATH, _)
-        }
-
-        and: "object under test"
-        WiktionaryDumpParseManager wiktionaryDumpParseManager = new WiktionaryDumpParseManager(esClient)
+        1 * parserService.getWiktionaryEntriesFromDump(DUMP_PATH, _)
 
         when:
         wiktionaryDumpParseManager.parse(DUMP_PATH)
 
         then:
-        0 * parserService.parseTemplateDefinitionPage(_)
-        with(esClient) {
-            0 * indexWiktionaryEntry(_)
-            0 * indexTemplateDefinition(_)
-        }
+        0 * esClient.indexWiktionaryEntry(_)
+        0 * templateService.parseTemplateDefinitionPageForTemplate(_)
     }
 
     def "parse an entry that uses no templates"() {
         given: "ParserService that returns a wiktionary entry"
         def wiktionaryEntry = new WiktionaryEntry()
         def pageParseResult = new WiktionaryEntryPageParseResult([wiktionaryEntry], [])
-        with(parserService) {
-            1 * getTemplateDefinitionPagesFromDump(DUMP_PATH) >> [:]
-            1 * getWiktionaryEntriesFromDump(DUMP_PATH, _) >>
-                    { _, Consumer<WiktionaryEntryPageParseResult> consumer -> consumer.accept(pageParseResult) }
-        }
-
-        and: "object under test"
-        WiktionaryDumpParseManager wiktionaryDumpParseManager = new WiktionaryDumpParseManager(esClient)
+        1 * parserService.getWiktionaryEntriesFromDump(DUMP_PATH, _) >>
+                { _, Consumer<WiktionaryEntryPageParseResult> consumer -> consumer.accept(pageParseResult) }
 
         when:
         wiktionaryDumpParseManager.parse(DUMP_PATH)
 
         then:
-        0 * parserService.parseTemplateDefinitionPage(_)
-        with(esClient) {
-            1 * indexWiktionaryEntry(wiktionaryEntry)
-            0 * indexTemplateDefinition(_)
-        }
+        1 * esClient.indexWiktionaryEntry(wiktionaryEntry)
+        0 * templateService.parseTemplateDefinitionPageForTemplate(_)
     }
 
     def "parse an entry that uses templates"() {
         final TEMPLATE_NAME = "templateX"
-        final TEMPLATE_DEFINITION = "text of template definition"
 
         given: "ParserService that returns a wiktionary entry and a template"
         def wiktionaryEntry = Mock(WiktionaryEntry)
@@ -88,30 +71,16 @@ class WiktionaryDumpParseManagerSpec extends Specification {
             getName() >> TEMPLATE_NAME
         }
         def pageParseResult = new WiktionaryEntryPageParseResult([wiktionaryEntry], [template])
-        with(parserService) {
-            1 * getTemplateDefinitionPagesFromDump(DUMP_PATH) >> [(TEMPLATE_NAME): TEMPLATE_DEFINITION]
-            1 * getWiktionaryEntriesFromDump(DUMP_PATH, _) >>
-                    { _, Consumer<WiktionaryEntryPageParseResult> consumer -> consumer.accept(pageParseResult) }
-        }
-
-        and: "object under test"
-        WiktionaryDumpParseManager wiktionaryDumpParseManager = new WiktionaryDumpParseManager(esClient)
+        1 * parserService.getWiktionaryEntriesFromDump(DUMP_PATH, _) >>
+                { _, Consumer<WiktionaryEntryPageParseResult> consumer -> consumer.accept(pageParseResult) }
 
         when:
         wiktionaryDumpParseManager.parse(DUMP_PATH)
 
         then:
-        interaction {
-            def templateDefinition = Mock(TemplateDefinition)
-            with(parserService) {
-                def templatePageParseResult = new TemplateDefinitionPageParseResult(templateDefinition, [])
-                1 * parseTemplateDefinitionPage(TEMPLATE_DEFINITION) >> templatePageParseResult
-            }
-            with(esClient) {
-                1 * indexWiktionaryEntry(wiktionaryEntry)
-                1 * indexTemplateDefinition(templateDefinition)
-            }
-        }
+        1 * esClient.indexWiktionaryEntry(wiktionaryEntry)
+        1 * templateService.parseTemplateDefinitionPageForTemplate(TEMPLATE_NAME)
+        1 * templateService.processTemplateDefinitions(_)
     }
 
     def "template containing another template"() {
@@ -132,9 +101,6 @@ class WiktionaryDumpParseManagerSpec extends Specification {
             1 * getWiktionaryEntriesFromDump(DUMP_PATH, _) >>
                     { _, Consumer<WiktionaryEntryPageParseResult> consumer -> consumer.accept(pageParseResult) }
         }
-
-        and: "object under test"
-        WiktionaryDumpParseManager wiktionaryDumpParseManager = new WiktionaryDumpParseManager(esClient)
 
         when:
         wiktionaryDumpParseManager.parse(DUMP_PATH)

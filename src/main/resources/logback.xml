@@ -4,7 +4,31 @@
         <file>parser.log</file>
         <append>false</append>
         <encoder>
-            <pattern>%-30(%-5level %logger{20}) %msg%n</pattern>
+            <pattern>%-20t %-30(%-5level %logger{20}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ERRONEOUS_WIKTIONARY_ENTRIES" class="ch.qos.logback.core.FileAppender">
+        <file>erroneous_wiktionary_entries.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="MISSING_TEMPLATE_DEFINITIONS" class="ch.qos.logback.core.FileAppender">
+        <file>missing_template_definitions.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ERRONEOUS_TEMPLATE_DEFINITIONS" class="ch.qos.logback.core.FileAppender">
+        <file>erroneous_template_definitions.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%msg%n</pattern>
         </encoder>
     </appender>
 
@@ -16,18 +40,42 @@
         </encoder>
     </appender>
 
+    <appender name="FILE_LOG" class="ch.qos.logback.core.FileAppender">
+        <file>wiktiopeggynary.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss} %-30(%-5level %logger{20}) %msg%n</pattern>
+        </encoder>
+    </appender>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{HH:mm:ss} %-30(%-5level %logger{20}) %msg%n</pattern>
         </encoder>
     </appender>
 
-    <logger name="wiktiopeggynary.parser" level="debug" additivity="false">
+    <logger name="wiktiopeggynary.parser" level="debug">
         <appender-ref ref="FILE_PARSER" />
     </logger>
 
-    <logger name="wiktiopeggynary.persistence" level="debug" additivity="false">
+    <logger name="erroneous_wiktionary_entries" level="debug">
+        <appender-ref ref="ERRONEOUS_WIKTIONARY_ENTRIES" />
+    </logger>
+
+    <logger name="missing_template_definitions" level="debug">
+        <appender-ref ref="MISSING_TEMPLATE_DEFINITIONS" />
+    </logger>
+
+    <logger name="erroneous_template_definitions" level="debug">
+        <appender-ref ref="ERRONEOUS_TEMPLATE_DEFINITIONS" />
+    </logger>
+
+    <logger name="wiktiopeggynary.persistence" level="debug">
         <appender-ref ref="FILE_INDEX" />
+    </logger>
+
+    <logger name="wiktiopeggynary" level="debug">
+        <appender-ref ref="FILE_LOG" />
     </logger>
 
     <root level="warn">

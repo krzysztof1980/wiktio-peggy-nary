@@ -1,28 +1,27 @@
 package wiktiopeggynary.parser.template.model.functions;
 
-import wiktiopeggynary.parser.template.model.DisplayableAsText;
-import wiktiopeggynary.parser.template.model.runtime.TemplateDefinitionParameter;
+import org.apache.commons.lang3.Validate;
+import wiktiopeggynary.model.markup.Constant;
+import wiktiopeggynary.model.markup.RichText;
+import wiktiopeggynary.model.visitor.RichTextEvaluator;
+import wiktiopeggynary.parser.template.TemplateService;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class SwitchParserFunction implements DisplayableAsText {
+public class SwitchParserFunction extends ParserFunction {
 
-	private final DisplayableAsText comparisonString;
+	private final RichText comparisonString;
 	private final Stack<SwitchTestCase> testCases = new Stack<>();
 
-	public SwitchParserFunction(DisplayableAsText comparisonString) {
-		if (comparisonString == null)
-			throw new IllegalArgumentException("comparisonString must not be null");
+	public SwitchParserFunction(RichText comparisonString) {
+		Validate.notNull(comparisonString);
 		this.comparisonString = comparisonString;
 	}
 
-	public DisplayableAsText getComparisonString() {
+	public RichText getComparisonString() {
 		return comparisonString;
 	}
 
@@ -31,46 +30,52 @@ public class SwitchParserFunction implements DisplayableAsText {
 	}
 
 	public void addTestCase(SwitchTestCase testCase) {
-		if (testCase == null)
-			throw new IllegalArgumentException("testCase must not be null");
+		Validate.notNull(testCase);
 		if (testCases.isEmpty() || !testCases.peek().tryMerge(testCase)) {
 			testCases.push(testCase);
 		}
 	}
 
 	@Override
-	public String asText(TemplateDefinitionParameter... parameters) {
-		String comparisonStringText = comparisonString.asText(parameters);
+	public RichText evaluate(TemplateService templateService, Collection<Constant> constants) {
+		RichTextEvaluator comparisonEvaluator = new RichTextEvaluator(templateService, constants);
+		comparisonEvaluator.visit(comparisonString);
+		RichText evaluatedComparison = comparisonEvaluator.getResult();
 		for (SwitchTestCase c : testCases) {
-			if (c.tests.isEmpty() || c.tests.stream().anyMatch(t -> t.asText(parameters).trim().equals(comparisonStringText)))
-				return c.result.asText(parameters);
+			if (c.tests.isEmpty() || c.tests.stream().anyMatch(t -> {
+				RichTextEvaluator testEvaluator = new RichTextEvaluator(templateService, constants);
+				testEvaluator.visit(t);
+				return testEvaluator.getResult().equals(evaluatedComparison);
+			})) {
+				RichTextEvaluator resultEvaluator = new RichTextEvaluator(templateService, constants);
+				resultEvaluator.visit(c.getResult());
+				return resultEvaluator.getResult();
+			}
 		}
-		return "";
+		return RichText.empty();
 	}
 
 	public static class SwitchTestCase {
 
-		private final List<DisplayableAsText> tests = new ArrayList<>();
-		private DisplayableAsText result;
+		private final List<RichText> tests = new ArrayList<>();
+		private RichText result;
 
-		public SwitchTestCase(DisplayableAsText test, DisplayableAsText result) {
-			if (test == null)
-				throw new IllegalArgumentException("test must not be null");
+		public SwitchTestCase(RichText test, RichText result) {
+			Validate.notNull(test);
 			tests.add(test);
 			this.result = result;
 		}
 
-		public SwitchTestCase(DisplayableAsText defaultResult) {
-			if (defaultResult == null)
-				throw new IllegalArgumentException("defaultResult must not be null");
+		public SwitchTestCase(RichText defaultResult) {
+			Validate.notNull(defaultResult);
 			result = defaultResult;
 		}
 
-		public List<DisplayableAsText> getTests() {
+		public List<RichText> getTests() {
 			return Collections.unmodifiableList(tests);
 		}
 
-		public DisplayableAsText getResult() {
+		public RichText getResult() {
 			return result;
 		}
 

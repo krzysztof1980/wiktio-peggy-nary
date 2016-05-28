@@ -10,6 +10,7 @@
 
 package wiktiopeggynary.parser;
 
+import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wiktiopeggynary.model.Kasus;
@@ -22,350 +23,386 @@ import wiktiopeggynary.model.substantiv.MultiGender;
 import wiktiopeggynary.model.substantiv.Substantiv;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
+import wiktiopeggynary.model.visitor.RichTextEvaluator;
 import wiktiopeggynary.parser.mouse.Phrase;
 import wiktiopeggynary.parser.mouse.SemanticsBase;
+import wiktiopeggynary.parser.template.TemplateService;
 
 import java.util.*;
+import java.util.stream.IntStream;
 
 class WiktionarySemantics extends SemanticsBase {
 
-    private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
+	private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
 
-    private String lemma;
-    private WiktionaryEntry entryWorkingCopy;
+	private String lemma;
+	private WiktionaryEntry entryWorkingCopy;
 
-    private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
+	private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
 
-    private Collection<Template> templates = new ArrayList<>();
+	private TemplateService templateService;
 
-    public Collection<WiktionaryEntry> getWiktionaryEntries() {
-        return Collections.unmodifiableCollection(wiktionaryEntries);
-    }
+	void setTemplateService(TemplateService templateService) {
+		Validate.isTrue(this.templateService == null, "templateService can be initialized only once");
+		this.templateService = templateService;
+	}
 
-    public Collection<Template> getTemplates() {
-        return Collections.unmodifiableCollection(templates);
-    }
+	public String getLemma() {
+		return lemma;
+	}
 
-    void saveEintrag() {
-        wiktionaryEntries.push(entryWorkingCopy);
-    }
+	public Collection<WiktionaryEntry> getWiktionaryEntries() {
+		return Collections.unmodifiableCollection(wiktionaryEntries);
+	}
 
-    void WortartBody_fail() {
-        logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
-        lhs().errClear();
-    }
+	void saveEintrag() {
+		wiktionaryEntries.push(entryWorkingCopy);
+	}
 
-    //-------------------------------------------------------------------
-    //  WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT
-    //-------------------------------------------------------------------
-    void WortartTemplate() {
-        lhs().put(rhs(3).text());
-    }
+	void WortartBody_fail() {
+		logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
+		lhs().errClear();
+	}
 
-    //-------------------------------------------------------------------
-    //  Lemma = Letter+ Space
-    //-------------------------------------------------------------------
-    void Lemma() {
-        lemma = rhsText(0, rhsSize() - 1);
-    }
+	//-------------------------------------------------------------------
+	//  WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT
+	//-------------------------------------------------------------------
+	void WortartTemplate() {
+		lhs().put(rhs(3).text());
+	}
 
-    void createSubstantiv() {
-        entryWorkingCopy = new Substantiv();
-        entryWorkingCopy.setLemma(lemma);
-    }
+	//-------------------------------------------------------------------
+	//  Lemma = Letter+ Space
+	//-------------------------------------------------------------------
+	void Lemma() {
+		lemma = rhsText(0, rhsSize() - 1);
+	}
 
-    void SubstantivAttributes_0_fail() {
-        logger.error("Exception parsing Substantiv attribute for lemma '{}': {}", lemma, getFormattedErrorMessageForLogging());
-        lhs().errClear();
-    }
+	void createSubstantiv() {
+		entryWorkingCopy = new Substantiv();
+		entryWorkingCopy.setLemma(lemma);
+	}
 
-    void substantivGender() {
-        ((Substantiv) entryWorkingCopy).setGender((MultiGender) rhs(0).get());
-    }
+	void SubstantivAttributes_0_fail() {
+		logger.error("Exception parsing Substantiv attribute for lemma '{}': {}", lemma,
+		             getFormattedErrorMessageForLogging());
+		lhs().errClear();
+	}
 
-    void substantivWortart() {
-        ((Substantiv) entryWorkingCopy).addAttribute((String) rhs(0).get());
-    }
+	void substantivGender() {
+		((Substantiv) entryWorkingCopy).setGender((MultiGender) rhs(0).get());
+	}
 
-    void substantivAdjDeklination() {
-        ((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
-    }
+	void substantivWortart() {
+		((Substantiv) entryWorkingCopy).addAttribute((String) rhs(0).get());
+	}
 
-    //-------------------------------------------------------------------
-    //  Gender = LT GenderTemplateArgument RT Space
-    //-------------------------------------------------------------------
-    void Gender() {
-        String genderText = rhsText(1, rhsSize() - 2);
-        try {
-            lhs().put(new MultiGender(genderText));
-        } catch (IllegalArgumentException e) {
-            logger.error("Exception parsing gender '{}' for lemma '{}'", genderText, lemma);
-            throw new ParseException(String.format("Exception parsing article for lemma '%s'", lemma), e);
-        }
-    }
+	void substantivAdjDeklination() {
+		((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
+	}
 
-    //-------------------------------------------------------------------
-    //  NomSg = "Nominativ Singular" Space Digit Space "="
-    //    FlexionVariantList EOL
-    //-------------------------------------------------------------------
-    void addNomSg() {
-        addFlexionForm(Kasus.Nominativ, Numerus.Singular);
-    }
+	//-------------------------------------------------------------------
+	//  Gender = LT GenderTemplateArgument RT Space
+	//-------------------------------------------------------------------
+	void Gender() {
+		String genderText = rhsText(1, rhsSize() - 2);
+		try {
+			lhs().put(new MultiGender(genderText));
+		} catch (IllegalArgumentException e) {
+			logger.error("Exception parsing gender '{}' for lemma '{}'", genderText, lemma);
+			throw new ParseException(String.format("Exception parsing article for lemma '%s'", lemma), e);
+		}
+	}
 
-    //-------------------------------------------------------------------
-    //  NomPl = "Nominativ Plural" Space Digit Space "="
-    //    FlexionVariantList EOL
-    //-------------------------------------------------------------------
-    void addNomPl() {
-        addFlexionForm(Kasus.Nominativ, Numerus.Plural);
-    }
+	//-------------------------------------------------------------------
+	//  NomSg = "Nominativ Singular" Space Digit Space "="
+	//    FlexionVariantList EOL
+	//-------------------------------------------------------------------
+	void addNomSg() {
+		addFlexionForm(Kasus.Nominativ, Numerus.Singular);
+	}
 
-    //-------------------------------------------------------------------
-    //  GenSg = "Genitiv Singular" Space Digit Space "="
-    //    FlexionVariantList EOL
-    //-------------------------------------------------------------------
-    void addGenSg() {
-        addFlexionForm(Kasus.Genitiv, Numerus.Singular);
-    }
+	//-------------------------------------------------------------------
+	//  NomPl = "Nominativ Plural" Space Digit Space "="
+	//    FlexionVariantList EOL
+	//-------------------------------------------------------------------
+	void addNomPl() {
+		addFlexionForm(Kasus.Nominativ, Numerus.Plural);
+	}
 
-    //-------------------------------------------------------------------
-    //  GenPl = "Genitiv Plural" Space Digit Space "=" FlexionVariantList
-    //    EOL
-    //-------------------------------------------------------------------
-    void addGenPl() {
-        addFlexionForm(Kasus.Genitiv, Numerus.Plural);
-    }
+	//-------------------------------------------------------------------
+	//  GenSg = "Genitiv Singular" Space Digit Space "="
+	//    FlexionVariantList EOL
+	//-------------------------------------------------------------------
+	void addGenSg() {
+		addFlexionForm(Kasus.Genitiv, Numerus.Singular);
+	}
 
-    //-------------------------------------------------------------------
-    //  DatSg = "Dativ Singular" Space Digit Space "=" FlexionVariantList
-    //    EOL
-    //-------------------------------------------------------------------
-    void addDatSg() {
-        addFlexionForm(Kasus.Dativ, Numerus.Singular);
-    }
+	//-------------------------------------------------------------------
+	//  GenPl = "Genitiv Plural" Space Digit Space "=" FlexionVariantList
+	//    EOL
+	//-------------------------------------------------------------------
+	void addGenPl() {
+		addFlexionForm(Kasus.Genitiv, Numerus.Plural);
+	}
 
-    //-------------------------------------------------------------------
-    //  DatPl = "Dativ Plural" Space Digit Space "=" FlexionVariantList
-    //    EOL
-    //-------------------------------------------------------------------
-    void addDatPl() {
-        addFlexionForm(Kasus.Dativ, Numerus.Plural);
-    }
+	//-------------------------------------------------------------------
+	//  DatSg = "Dativ Singular" Space Digit Space "=" FlexionVariantList
+	//    EOL
+	//-------------------------------------------------------------------
+	void addDatSg() {
+		addFlexionForm(Kasus.Dativ, Numerus.Singular);
+	}
 
-    //-------------------------------------------------------------------
-    //  AkkSg = "Akkusativ Singular" Space Digit Space "="
-    //    FlexionVariantList EOL
-    //-------------------------------------------------------------------
-    void addAkkSg() {
-        addFlexionForm(Kasus.Akkusativ, Numerus.Singular);
-    }
+	//-------------------------------------------------------------------
+	//  DatPl = "Dativ Plural" Space Digit Space "=" FlexionVariantList
+	//    EOL
+	//-------------------------------------------------------------------
+	void addDatPl() {
+		addFlexionForm(Kasus.Dativ, Numerus.Plural);
+	}
 
-    //-------------------------------------------------------------------
-    //  AkkPl = "Akkusativ Plural" Space Digit Space "="
-    //    FlexionVariantList EOL
-    //-------------------------------------------------------------------
-    void addAkkPl() {
-        addFlexionForm(Kasus.Akkusativ, Numerus.Plural);
-    }
+	//-------------------------------------------------------------------
+	//  AkkSg = "Akkusativ Singular" Space Digit Space "="
+	//    FlexionVariantList EOL
+	//-------------------------------------------------------------------
+	void addAkkSg() {
+		addFlexionForm(Kasus.Akkusativ, Numerus.Singular);
+	}
 
-    private void addFlexionForm(Kasus kasus, Numerus numerus) {
-        FlexionForm flexionForm = new FlexionForm(kasus, numerus);
-        Phrase flexionVariantListPhrase = rhs(5);
-        if (flexionVariantListPhrase.get() != null) {
-            ((Iterable<String>) flexionVariantListPhrase.get()).forEach(v -> flexionForm.addVariant(v));
-        } else {
-            flexionForm.setUnparsedForm(flexionVariantListPhrase.text());
-        }
-        ((Substantiv) wiktionaryEntries.peek()).getFlexionTable().addFlexionForm(flexionForm);
-    }
+	//-------------------------------------------------------------------
+	//  AkkPl = "Akkusativ Plural" Space Digit Space "="
+	//    FlexionVariantList EOL
+	//-------------------------------------------------------------------
+	void addAkkPl() {
+		addFlexionForm(Kasus.Akkusativ, Numerus.Plural);
+	}
 
-    //-------------------------------------------------------------------
-    //  FlexionVariantList = Space Phrase (BR Phrase)*
-    //-------------------------------------------------------------------
-    void FlexionVariantList_0() {
-        List<String> variants = new ArrayList<>();
-        for (int i = 1; i < rhsSize(); i += 2) {
-            variants.add(rhs(i).text());
-        }
-        lhs().put(variants);
-    }
+	private void addFlexionForm(Kasus kasus, Numerus numerus) {
+		FlexionForm flexionForm = new FlexionForm(kasus, numerus);
+		Phrase flexionVariantListPhrase = rhs(5);
+		if (flexionVariantListPhrase.get() != null) {
+			((Iterable<String>) flexionVariantListPhrase.get()).forEach(v -> flexionForm.addVariant(v));
+		} else {
+			flexionForm.setUnparsedForm(flexionVariantListPhrase.text());
+		}
+		((Substantiv) wiktionaryEntries.peek()).getFlexionTable().addFlexionForm(flexionForm);
+	}
 
-    //-------------------------------------------------------------------
-    //  FlexionVariantList = Space "-" Space
-    //-------------------------------------------------------------------
-    void FlexionVariantList_1() {
-        lhs().put(new ArrayList<>());
-    }
+	//-------------------------------------------------------------------
+	//  FlexionVariantList = Space Phrase (BR Phrase)*
+	//-------------------------------------------------------------------
+	void FlexionVariantList_0() {
+		List<String> variants = new ArrayList<>();
+		for (int i = 1; i < rhsSize(); i += 2) {
+			variants.add(rhs(i).text());
+		}
+		lhs().put(variants);
+	}
 
-    //-------------------------------------------------------------------
-    //  LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine
-    //-------------------------------------------------------------------
-    void addTranslationsForLanguage() {
-        String language = (String) rhs(1).get();
-        for (int i = 4; i < rhsSize() - 1; i++) {
-            TranslationMeaning meaning = (TranslationMeaning) rhs(i).get();
-            if (!meaning.getTranslations().isEmpty())
-                wiktionaryEntries.peek().addTranslationMeaning(language, meaning);
-        }
-    }
+	//-------------------------------------------------------------------
+	//  FlexionVariantList = Space "-" Space
+	//-------------------------------------------------------------------
+	void FlexionVariantList_1() {
+		lhs().put(new ArrayList<>());
+	}
 
-    //-------------------------------------------------------------------
-    //  Lang = LT Word RT
-    //-------------------------------------------------------------------
-    void Lang() {
-        lhs().put(rhs(1).text());
-    }
+	//-------------------------------------------------------------------
+	//  LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine
+	//-------------------------------------------------------------------
+	void addTranslationsForLanguage() {
+		String language = (String) rhs(1).get();
+		for (int i = 4; i < rhsSize() - 1; i++) {
+			TranslationMeaning meaning = (TranslationMeaning) rhs(i).get();
+			if (!meaning.getTranslations().isEmpty())
+				wiktionaryEntries.peek().addTranslationMeaning(language, meaning);
+		}
+	}
 
-    //-------------------------------------------------------------------
-    //  TranslationMeaning = ItemNo Translation+
-    //-------------------------------------------------------------------
-    void TranslationMeaning() {
-        TranslationMeaning meaning = new TranslationMeaning((String) rhs(0).get());
-        for (int i = 1; i < rhsSize(); i++) {
-            Translation translation = (Translation) rhs(i).get();
-            if (!translation.getInternalLink().isEmpty())
-                meaning.addTranslation(translation);
-        }
-        lhs().put(meaning);
-    }
+	//-------------------------------------------------------------------
+	//  Lang = LT Word RT
+	//-------------------------------------------------------------------
+	void Lang() {
+		lhs().put(rhs(1).text());
+	}
 
-    //-------------------------------------------------------------------
-    //  Translation = TranslationDetails (UeTemplate / UetTemplate) Gender?
-    //                      0                        1                 2
-    //      TranslationDetails (COMMA / SEMICOLON)? Space
-    //               3(2)              4(3)
-    //-------------------------------------------------------------------
-    void Translation() {
-        Translation t = (Translation) rhs(1).get();
-        if (rhs(2).get() instanceof MultiGender)
-            t.setGender((MultiGender) rhs(2).get());
-        lhs().put(t);
-    }
+	//-------------------------------------------------------------------
+	//  TranslationMeaning = ItemNo Translation+
+	//-------------------------------------------------------------------
+	void TranslationMeaning() {
+		TranslationMeaning meaning = new TranslationMeaning((String) rhs(0).get());
+		for (int i = 1; i < rhsSize(); i++) {
+			Translation translation = (Translation) rhs(i).get();
+			if (!translation.getInternalLink().isEmpty())
+				meaning.addTranslation(translation);
+		}
+		lhs().put(meaning);
+	}
 
-    //-------------------------------------------------------------------
-    //  UeTemplate = LT ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
-    //                0      1        2       3       4       5
-    //      (IT TemplateAttr)? (IT TemplateAttr)? RT Space
-    //        6        7         8      9        10(6) 11(7)
-    //-------------------------------------------------------------------
-    void UeTemplate() {
-        Translation translation = new Translation();
-        translation.setInternalLink(rhs(5).text());
-        if (rhsSize() > 6 + 2) // 2 = RT Space
-            translation.setLabel(rhs(7).text());
-        if (rhsSize() == 12)
-            translation.setExternalLink(rhs(9).text());
-        lhs().put(translation);
-    }
+	//-------------------------------------------------------------------
+	//  Translation = TranslationDetails (UeTemplate / UetTemplate) Gender?
+	//                      0                        1                 2
+	//      TranslationDetails (COMMA / SEMICOLON)? Space
+	//               3(2)              4(3)
+	//-------------------------------------------------------------------
+	void Translation() {
+		Translation t = (Translation) rhs(1).get();
+		if (rhs(2).get() instanceof MultiGender)
+			t.setGender((MultiGender) rhs(2).get());
+		lhs().put(t);
+	}
 
-    //-------------------------------------------------------------------
-    //  UetTemplate = LT ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr
-    //                 0        1        2       3       4       5
-    //      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? RT Space
-    //       6        7       8      9          10       11      12(6) 13(7)
-    //-------------------------------------------------------------------
-    void UetTemplate() {
-        Translation translation = new Translation();
-        translation.setInternalLink(rhs(5).text());
-        translation.setTranscription(rhs(7).text());
-        if (rhsSize() > 8 + 2) // 2 = RT Space
-            translation.setLabel(rhs(9).text());
-        if (rhsSize() == 14)
-            translation.setExternalLink(rhs(11).text());
-        lhs().put(translation);
-    }
+	//-------------------------------------------------------------------
+	//  UeTemplate = LT ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
+	//                0      1        2       3       4       5
+	//      (IT TemplateAttr)? (IT TemplateAttr)? RT Space
+	//        6        7         8      9        10(6) 11(7)
+	//-------------------------------------------------------------------
+	void UeTemplate() {
+		Translation translation = new Translation();
+		translation.setInternalLink(rhs(5).text());
+		if (rhsSize() > 6 + 2) // 2 = RT Space
+			translation.setLabel(rhs(7).text());
+		if (rhsSize() == 12)
+			translation.setExternalLink(rhs(9).text());
+		lhs().put(translation);
+	}
 
-    //-------------------------------------------------------------------
-    //  ItemNo = "[" _++ "]" Space
-    //-------------------------------------------------------------------
-    void ItemNo() {
-        lhs().put(rhsText(1, rhsSize() - 2));
-    }
+	//-------------------------------------------------------------------
+	//  UetTemplate = LT ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr
+	//                 0        1        2       3       4       5
+	//      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? RT Space
+	//       6        7       8      9          10       11      12(6) 13(7)
+	//-------------------------------------------------------------------
+	void UetTemplate() {
+		Translation translation = new Translation();
+		translation.setInternalLink(rhs(5).text());
+		translation.setTranscription(rhs(7).text());
+		if (rhsSize() > 8 + 2) // 2 = RT Space
+			translation.setLabel(rhs(9).text());
+		if (rhsSize() == 14)
+			translation.setExternalLink(rhs(11).text());
+		lhs().put(translation);
+	}
 
-    //-------------------------------------------------------------------
-    //  Meaning = MeaningLvl RichTextComponent++ EOL
-    //-------------------------------------------------------------------
-    public void Meaning() {
-        RichText richText = new RichText();
-        for (int i = 2; i < rhsSize() - 1; i++)
-            richText.addComponent((DisplayableAsText) rhs(i).get());
-        Meaning meaning = new Meaning(richText);
-        entryWorkingCopy.addMeaning(meaning);
-    }
+	//-------------------------------------------------------------------
+	//  ItemNo = "[" _++ "]" Space
+	//-------------------------------------------------------------------
+	void ItemNo() {
+		lhs().put(rhsText(1, rhsSize() - 2));
+	}
 
-    //-------------------------------------------------------------------
-    //  Template = LT TemplateAttr (SEP TemplateAttr)* RT
-    //              0      1         2        3        n-1
-    //-------------------------------------------------------------------
-    public void Template() {
-        Template template = new Template(rhs(1).text());
-        for (int i = 3; i < rhsSize() - 1; i+=2)
-            template.addAttribute((RichText) rhs(i).get());
-        lhs().put(template);
-        templates.add(template);
-    }
+	//-------------------------------------------------------------------
+	//  Meaning = MeaningLvl RichTextComponent++ EOL
+	//-------------------------------------------------------------------
+	public void Meaning() {
+		RichText richText = new RichText();
+		processSequenceOfRichTextComponents(1, rhsSize(), richText);
+		RichTextEvaluator evaluator = new RichTextEvaluator(templateService, Collections.emptyList());
+		evaluator.visit(richText);
+		Meaning meaning = new Meaning(evaluator.getResult());
+		entryWorkingCopy.addMeaning(meaning);
+	}
 
-    //-------------------------------------------------------------------
-    //  TemplateAttr = (!(SEP / RT) RichTextComponent)*
-    //-------------------------------------------------------------------
-    public void TemplateAttr() {
-        RichText richText = new RichText();
-        for (int i = 0; i < rhsSize(); i++)
-            richText.addComponent((DisplayableAsText) rhs(i).get());
-        lhs().put(richText);
-    }
+	//-------------------------------------------------------------------
+	//  Template = LT TName (SEP TParam)* RT
+	//              0   1     2     3     n-1
+	//-------------------------------------------------------------------
+	public void Template() {
+		Template.Builder templateBuilder = new Template.Builder().withName(rhs(1).text());
+		for (int i = 3; i < rhsSize() - 1; i += 2) {
+			templateBuilder.withParameter((TemplateParameter) rhs(i).get());
+		}
+		lhs().put(templateBuilder.build());
+	}
 
-    //-------------------------------------------------------------------
-    //  Link = LL LinkAttr (SEP LinkAttr)? RL
-    //         0      1      2      3      4(2)
-    //-------------------------------------------------------------------
-    public void Link() {
-        InternalLink link = new InternalLink(rhs(1).text());
-        if (rhsSize() > 3)
-            link.setLinkText(rhs(3).text());
-        lhs().put(link);
-    }
+	//-------------------------------------------------------------------
+	//  TParam = Number EQ (!(SEP / RT) RichTextComponent)*
+	//             0    1                        2
+	//-------------------------------------------------------------------
+	public void TParam_0() {
+		RichText richText = new RichText();
+		processSequenceOfRichTextComponents(2, rhsSize(), richText);
+		lhs().put(new NumberedTemplateParameter(Integer.valueOf(rhs(0).text()), richText));
+	}
 
-    //-------------------------------------------------------------------
-    //  CursiveText = "''" RichTextComponent*+ "''" Space
-    //                  0            1          n-2  n-1
-    //-------------------------------------------------------------------
-    public void CursiveText() {
-        CursiveBlock cursiveBlock = new CursiveBlock();
-        for (int i = 1; i < rhsSize() - 2; i++)
-            cursiveBlock.addComponent((DisplayableAsText) rhs(i).get());
-        lhs().put(cursiveBlock);
-    }
+	//-------------------------------------------------------------------
+	//  TParam = Name EQ (!(SEP / RT) RichTextComponent)*
+	//             0  1                        2
+	//-------------------------------------------------------------------
+	public void TParam_1() {
+		RichText richText = new RichText();
+		processSequenceOfRichTextComponents(2, rhsSize(), richText);
+		lhs().put(new NamedTemplateParameter(rhs(0).text(), richText));
+	}
 
-    //-------------------------------------------------------------------
-    //  RichTextComponent = Link
-    //-------------------------------------------------------------------
-    public void RichTextComponent_0() {
-        lhs().put(rhs(0).get());
-    }
+	//-------------------------------------------------------------------
+	//  TCallParam = (!(SEP / RF) RichTextComponent)*
+	//                                     0
+	//-------------------------------------------------------------------
+	public void TParam_2() {
+		RichText richText = new RichText();
+		processSequenceOfRichTextComponents(0, rhsSize(), richText);
+		lhs().put(new AnonymousTemplateParameter(richText));
+	}
 
-    //-------------------------------------------------------------------
-    //  RichTextComponent = CursiveText
-    //-------------------------------------------------------------------
-    public void RichTextComponent_1() {
-        lhs().put(rhs(0).get());
-    }
+	//-------------------------------------------------------------------
+	//  Link = LL LinkAttr (SEP LinkAttr)? RL
+	//         0      1      2      3      4(2)
+	//-------------------------------------------------------------------
+	public void Link() {
+		InternalLink.Builder linkBuilder = new InternalLink.Builder().withPageTitle(rhs(1).text());
+		if (rhsSize() > 3)
+			linkBuilder.withLinkText(rhs(3).text());
+		lhs().put(linkBuilder.build());
+	}
 
-    //-------------------------------------------------------------------
-    //  RichTextComponent = Template
-    //-------------------------------------------------------------------
-    public void RichTextComponent_2() {
-        lhs().put(rhs(0).get());
-    }
+	//-------------------------------------------------------------------
+	//  CursiveText = "''" RichTextComponent*+ "''" Space
+	//                  0            1          n-2  n-1
+	//-------------------------------------------------------------------
+	public void CursiveText() {
+		RichText body = new RichText();
+		processSequenceOfRichTextComponents(1, rhsSize() - 2, body);
+		lhs().put(new CursiveBlock(body));
+	}
 
-    //-------------------------------------------------------------------
-    //  RichTextComponent = !EOL _
-    //-------------------------------------------------------------------
-    public void RichTextComponent_3() {
-        lhs().put(new PlainText(rhsText(0, rhsSize())));
-    }
+	//-------------------------------------------------------------------
+	//  RichTextComponent = Link
+	//-------------------------------------------------------------------
+	public void RichTextComponent_0() {
+		lhs().put(rhs(0).get());
+	}
 
-    private String getFormattedErrorMessageForLogging() {
-        return lhs().errMsg().replace("\n", "\\n");
-    }
+	//-------------------------------------------------------------------
+	//  RichTextComponent = CursiveText
+	//-------------------------------------------------------------------
+	public void RichTextComponent_1() {
+		lhs().put(rhs(0).get());
+	}
+
+	//-------------------------------------------------------------------
+	//  RichTextComponent = Template
+	//-------------------------------------------------------------------
+	public void RichTextComponent_2() {
+		lhs().put(rhs(0).get());
+	}
+
+	//-------------------------------------------------------------------
+	//  RichTextComponent = !EOL _
+	//-------------------------------------------------------------------
+	public void RichTextComponent_3() {
+		lhs().put(new PlainText(rhsText(0, rhsSize())));
+	}
+
+	private void processSequenceOfRichTextComponents(int startInclusive, int endExclusive, RichText richText) {
+		IntStream.range(startInclusive, endExclusive)
+		         .mapToObj(i -> rhs(i).get())
+		         .filter(Objects::nonNull)
+		         .forEach(o -> richText.addComponent((RichTextComponent) o));
+	}
+
+	private String getFormattedErrorMessageForLogging() {
+		return lhs().errMsg().replace("\n", "\\n");
+	}
 }

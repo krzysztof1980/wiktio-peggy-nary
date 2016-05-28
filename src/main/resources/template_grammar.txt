@@ -1,7 +1,6 @@
 TemplateDefinition = Space TemplateDefinitionComponent* EOF {} ;
 
-TParam = LP Number (SEP DefaultValue)? RP Space {} /
-         LP TParamName (SEP DefaultValue)? RP Space {};
+TParam = LP TParamName (SEP DefaultValue)? RP Space {};
 TParamName = (!(SEP / RP) _)+ ;
 DefaultValue = (!RP _)* ;
 

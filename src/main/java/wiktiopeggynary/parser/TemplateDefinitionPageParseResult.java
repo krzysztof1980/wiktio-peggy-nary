@@ -1,6 +1,6 @@
 package wiktiopeggynary.parser;
 
-import wiktiopeggynary.parser.template.model.Template;
+import wiktiopeggynary.model.markup.Template;
 import wiktiopeggynary.parser.template.model.TemplateDefinition;
 
 import java.util.ArrayList;

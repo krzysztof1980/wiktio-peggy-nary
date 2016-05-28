@@ -10,8 +10,9 @@
 
 package wiktiopeggynary.parser.template.parser;
 
-import wiktiopeggynary.parser.template.model.*;
-import wiktiopeggynary.parser.template.model.functions.ParserFunction;
+import wiktiopeggynary.model.markup.*;
+import wiktiopeggynary.parser.template.model.TemplateDefinition;
+import wiktiopeggynary.parser.template.model.TemplateParameterApplication;
 import wiktiopeggynary.parser.template.model.functions.ParserFunctionType;
 import wiktiopeggynary.parser.template.model.functions.SwitchParserFunction;
 
@@ -38,34 +39,25 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//  TemplateDefinition = Space TemplateDefinitionComponent* EOF
 	//-------------------------------------------------------------------
 	void TemplateDefinition() {
-		templateDefinition = new TemplateDefinition();
+		RichText body = new RichText();
 		IntStream.range(1, rhsSize())
 		         .mapToObj(i -> rhs(i).get())
 		         .filter(Objects::nonNull)
-		         .forEach(o -> templateDefinition.addComponent((DisplayableAsText) o));
-	}
-
-	//-------------------------------------------------------------------
-	//  TParam = LP Number (SEP DefaultValue)? RP Space
-	//           0     1     2        3       4(2) 5(3)
-	//-------------------------------------------------------------------
-	void TParam_0() {
-		TParam(new NumberedTemplateParameterApplication(Integer.valueOf(rhs(1).text())));
+		         .forEach(o -> body.addComponent((RichTextComponent) o));
+		templateDefinition = new TemplateDefinition(body);
 	}
 
 	//-------------------------------------------------------------------
 	//  TParam = LP Name (SEP DefaultValue)? RP Space
 	//           0   1     2        3       4(2) 5(3)
 	//-------------------------------------------------------------------
-	void TParam_1() {
-		TParam(new NamedTemplateParameterApplication(rhs(1).text()));
-	}
-
-	private void TParam(TemplateParameterApplication param) {
+	void TParam() {
+		TemplateParameterApplication.Builder builder = new TemplateParameterApplication.Builder().withIdentifier(rhs(1).text());
 		if (rhsSize() == 6) {
-			param.setDefaultValue(rhs(3).text());
+			// TODO: maybe it should be a RichText, and not a simple String
+			builder.withDefaultValue(new RichText(new PlainText(rhs(3).text())));
 		}
-		lhs().put(param);
+		lhs().put(builder.build());
 	}
 
 	//-------------------------------------------------------------------
@@ -75,18 +67,18 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	void Function() {
 		String name = rhs(2).text();
 		ParserFunctionType functionType = ParserFunctionType.valueOf(name.toUpperCase());
-		ParserFunction function = functionType.createParserFunction();
-		for (int i = 4; i < rhsSize() - 1; i += 2) {
-			function.addParameter((DisplayableAsText) rhs(i).get());
+		RichText[] parameters = new RichText[(rhsSize() - 4) / 2];
+		for (int i = 0, j = 4; j < rhsSize() - 1; i++, j += 2) {
+			parameters[i] = (RichText) rhs(j).get();
 		}
-		lhs().put(function);
+		lhs().put(functionType.createParserFunction(parameters));
 	}
 
 	//-------------------------------------------------------------------
 	//  FParam = Space (!(SEP / RF) TemplateDefinitionComponent)*
 	//-------------------------------------------------------------------
 	void FParam() {
-		lhs().put(processSequenceOfDisplayableAsText(1));
+		lhs().put(processSequenceOfRichTextComponents(1));
 	}
 
 	//-------------------------------------------------------------------
@@ -94,7 +86,7 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                   0       1       2      3         4         n-1
 	//-------------------------------------------------------------------
 	public void SwitchFunction() {
-		SwitchParserFunction function = new SwitchParserFunction((DisplayableAsText) rhs(2).get());
+		SwitchParserFunction function = new SwitchParserFunction((RichText) rhs(2).get());
 		for (int i = 4; i < rhsSize() - 1; i += 2) {
 			function.addTestCase((SwitchParserFunction.SwitchTestCase) rhs(i).get());
 		}
@@ -106,7 +98,7 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                       0        1    2    3
 	//-------------------------------------------------------------------
 	public void SwitchTestCase_0() {
-		lhs().put(new SwitchParserFunction.SwitchTestCase((DisplayableAsText) rhs(3).get()));
+		lhs().put(new SwitchParserFunction.SwitchTestCase((RichText) rhs(3).get()));
 	}
 
 	//-------------------------------------------------------------------
@@ -114,7 +106,7 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                       0       1
 	//-------------------------------------------------------------------
 	public void SwitchTestCase_1() {
-		lhs().put(new SwitchParserFunction.SwitchTestCase((DisplayableAsText) rhs(0).get()));
+		lhs().put(new SwitchParserFunction.SwitchTestCase((RichText) rhs(0).get()));
 	}
 
 	//-------------------------------------------------------------------
@@ -122,8 +114,8 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                       0       1     2
 	//-------------------------------------------------------------------
 	public void SwitchTestCase_2() {
-		DisplayableAsText test = (DisplayableAsText) rhs(0).get();
-		DisplayableAsText result = rhsSize() == 3 ? (DisplayableAsText) rhs(2).get() : null;
+		RichText test = (RichText) rhs(0).get();
+		RichText result = rhsSize() == 3 ? (RichText) rhs(2).get() : null;
 		lhs().put(new SwitchParserFunction.SwitchTestCase(test, result));
 	}
 
@@ -132,7 +124,7 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                                              0
 	//-------------------------------------------------------------------
 	public void SwitchTest() {
-		lhs().put(processSequenceOfDisplayableAsText(0));
+		lhs().put(processSequenceOfRichTextComponents(0));
 	}
 
 	//-------------------------------------------------------------------
@@ -169,11 +161,11 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                 0    1     2       3       n-1
 	//-------------------------------------------------------------------
 	public void TemplateCall() {
-		Template template = new Template(rhs(1).text());
+		Template.Builder templateBuilder = new Template.Builder().withName(rhs(1).text());
 		for (int i = 3; i < rhsSize() - 1; i+=2) {
-			template.addParameter((TemplateParameter) rhs(i).get());
+			templateBuilder.withParameter((TemplateParameter) rhs(i).get());
 		}
-		lhs().put(template);
+		lhs().put(templateBuilder.build());
 	}
 
 	//-------------------------------------------------------------------
@@ -181,33 +173,29 @@ public class TemplateSemantics extends wiktiopeggynary.parser.mouse.SemanticsBas
 	//                        0    1                          2
 	//-------------------------------------------------------------------
 	public void TCallParam_0() {
-		lhs().put(new NumberedTemplateParameter(Integer.valueOf(rhs(0).text()), processSequenceOfDisplayableAsText(2)));
+		lhs().put(new NumberedTemplateParameter(Integer.valueOf(rhs(0).text()), processSequenceOfRichTextComponents(2)));
 	}
 
 	//-------------------------------------------------------------------
 	//  TCallParam = Name EQ (!(SEP / RF) TemplateDefinitionComponent)*
 	//-------------------------------------------------------------------
 	public void TCallParam_1() {
-		lhs().put(new NamedTemplateParameter(rhs(0).text(), processSequenceOfDisplayableAsText(2)));
+		lhs().put(new NamedTemplateParameter(rhs(0).text(), processSequenceOfRichTextComponents(2)));
 	}
 
 	//-------------------------------------------------------------------
 	//  TCallParam = (!(SEP / RF) TemplateDefinitionComponent)*
 	//-------------------------------------------------------------------
 	public void TCallParam_2() {
-		lhs().put(new AnonymousTemplateParameter(processSequenceOfDisplayableAsText(0)));
+		lhs().put(new AnonymousTemplateParameter(processSequenceOfRichTextComponents(0)));
 	}
 
-	private DisplayableAsText processSequenceOfDisplayableAsText(int offset) {
-		CompoundDisplayableAsText compound = new CompoundDisplayableAsText();
+	private RichText processSequenceOfRichTextComponents(int offset) {
+		RichText richText = new RichText();
 		IntStream.range(offset, rhsSize())
 		         .mapToObj(i -> rhs(i).get())
 		         .filter(Objects::nonNull)
-		         .forEach(o -> compound.addComponent((DisplayableAsText) o));
-		if (compound.getComponents().size() == 0)
-			return PlainText.EMPTY_TEXT;
-		if (compound.getComponents().size() == 1)
-			return compound.getComponents().get(0);
-		return compound;
+		         .forEach(o -> richText.addComponent((RichTextComponent) o));
+		return richText;
 	}
 }

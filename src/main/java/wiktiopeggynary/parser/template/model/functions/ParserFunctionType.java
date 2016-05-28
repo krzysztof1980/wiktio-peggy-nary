@@ -1,6 +1,8 @@
 package wiktiopeggynary.parser.template.model.functions;
 
-import java.util.function.Supplier;
+import wiktiopeggynary.model.markup.RichText;
+
+import java.util.function.Function;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -11,13 +13,13 @@ public enum ParserFunctionType {
     IFEQ(IfeqParserFunction::new),
     IFEXIST(IfexistParserFunction::new);
 
-    private final Supplier<ParserFunction> supplier;
+    private final Function<RichText[], SimpleParserFunctionWithParameters> factoryMethod;
 
-    private ParserFunctionType(Supplier<ParserFunction> supplier) {
-        this.supplier = supplier;
+    ParserFunctionType(Function<RichText[], SimpleParserFunctionWithParameters> factoryMethod) {
+        this.factoryMethod = factoryMethod;
     }
 
-    public ParserFunction createParserFunction() {
-        return supplier.get();
+    public SimpleParserFunctionWithParameters createParserFunction(RichText... parameters) {
+        return factoryMethod.apply(parameters);
     }
 }

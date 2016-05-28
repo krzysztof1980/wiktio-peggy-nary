@@ -2,7 +2,9 @@ package wiktiopeggynary.parser.template.model
 
 import spock.lang.Specification
 import spock.lang.Unroll
-import wiktiopeggynary.parser.template.model.runtime.NumberedTemplateDefinitionParameter
+import wiktiopeggynary.model.markup.Constant
+import wiktiopeggynary.model.markup.RichText
+import wiktiopeggynary.parser.template.TemplateService
 
 /**
  * @author Krzysztof Witukiewicz
@@ -12,35 +14,34 @@ class TemplateParameterApplicationSpec extends Specification {
 
     def "parameter is available"() {
         given:
-        def param = new NumberedTemplateDefinitionParameter(1, "foo")
-        def paramApp = new NumberedTemplateParameterApplication(1)
+        def paramApp = new TemplateParameterApplication.Builder().withIdentifier("1").build()
 
         expect:
-        paramApp.asText(param) == "foo"
+        paramApp.evaluate(Mock(TemplateService), [new Constant("1", new RichText("foo"))]) == new RichText("foo")
     }
 
     def "numbered parameter is not available"() {
         given:
-        def paramApp = new NumberedTemplateParameterApplication(1)
+        def paramApp = new TemplateParameterApplication.Builder().withIdentifier("1").build()
 
         expect:
-        paramApp.asText() == "{{{1}}}"
+        paramApp.evaluate(Mock(TemplateService), []) == new RichText("{{{1}}}")
     }
 
     def "named parameter is not available"() {
         given:
-        def paramApp = new NamedTemplateParameterApplication("foo")
+        def paramApp = new TemplateParameterApplication.Builder().withIdentifier("foo").build()
 
         expect:
-        paramApp.asText() == "{{{foo}}}"
+        paramApp.evaluate(Mock(TemplateService), []) == new RichText("{{{foo}}}")
     }
 
     def "parameter not available but default value is defined"() {
         given:
-        def paramApp = new NamedTemplateParameterApplication("foo")
-        paramApp.setDefaultValue("bar")
+        def paramApp = new TemplateParameterApplication.Builder().withIdentifier("foo").
+                withDefaultValue(new RichText("bar")).build()
 
         expect:
-        paramApp.asText() == "bar"
+        paramApp.evaluate(Mock(TemplateService), []) == new RichText("bar")
     }
 }

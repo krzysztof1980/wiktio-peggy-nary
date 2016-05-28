@@ -1,49 +1,65 @@
 package wiktiopeggynary.model.markup;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Stack;
-import java.util.stream.Collectors;
+import org.apache.commons.lang3.Validate;
+import wiktiopeggynary.model.visitor.DefaultRichTextComponentVisitor;
+import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
+
+import java.util.Arrays;
+import java.util.Optional;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class RichText implements DisplayableAsText {
+public class RichText extends CompoundRichTextComponent {
 
-    private final Stack<DisplayableAsText> contents = new Stack<>();
+	public RichText() {
+	}
 
-    public RichText() {
+    public RichText(RichTextComponent... components) {
+	    Arrays.stream(components).forEach(this::addComponent);
     }
 
-    public RichText(DisplayableAsText component) {
-        addComponent(component);
-    }
+	public RichText(String plainText) {
+		addComponent(new PlainText(plainText));
+	}
 
-    public List<DisplayableAsText> getContents() {
-        return Collections.unmodifiableList(contents);
-    }
+	public static RichText empty() {
+		return new RichText();
+	}
 
-    public void addComponent(DisplayableAsText component) {
-        if (component == null)
-            throw new IllegalArgumentException("component must not be null");
-        if (component instanceof PlainText)
-            addPlainText((PlainText) component);
-        else
-            contents.add(component);
-    }
+	@Override
+	public void addComponent(RichTextComponent component) {
+		Validate.notNull(component);
+		if (component instanceof RichText) {
+			((RichText) component).getComponents().forEach(this::addComponent);
+		} else {
+			super.addComponent(component);
+		}
+	}
 
-    private void addPlainText(PlainText plainText) {
-        DisplayableAsText topComponent = !contents.isEmpty() ? contents.peek() : null;
-        if (topComponent != null && topComponent instanceof PlainText) {
-            contents.pop();
-            contents.push(new PlainText(topComponent.asText() + plainText.asText()));
-        } else {
-            contents.push(plainText);
-        }
-    }
+	@Override
+	public void accept(RichTextComponentVisitor visitor) {
+		visitor.visit(this);
+	}
 
-    @Override
-    public String asText() {
-        return contents.stream().map(DisplayableAsText::asText).collect(Collectors.joining());
-    }
+	@Override
+	public Optional<RichText> mergeWith(RichTextComponent component) {
+		final RichText[] mergedObj = new RichText[1];
+		component.accept(new DefaultRichTextComponentVisitor() {
+			@Override
+			public void visit(RichText richText) {
+				mergedObj[0] = new RichText();
+				getComponents().forEach(mergedObj[0]::addComponent);
+				richText.getComponents().forEach(mergedObj[0]::addComponent);
+			}
+		});
+		return Optional.ofNullable(mergedObj[0]);
+	}
+
+	@Override
+	public String toString() {
+		return "RichText{" +
+				       "components=" + getComponents() +
+				       '}';
+	}
 }

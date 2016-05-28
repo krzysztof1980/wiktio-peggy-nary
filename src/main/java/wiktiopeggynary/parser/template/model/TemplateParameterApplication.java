@@ -1,45 +1,83 @@
 package wiktiopeggynary.parser.template.model;
 
-import wiktiopeggynary.parser.template.model.runtime.TemplateDefinitionParameter;
+import org.apache.commons.lang3.Validate;
+import wiktiopeggynary.model.markup.Constant;
+import wiktiopeggynary.model.markup.RichText;
+import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
+import wiktiopeggynary.parser.template.TemplateService;
 
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.Optional;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public abstract class TemplateParameterApplication<T> implements DisplayableAsText {
+public class TemplateParameterApplication implements EvaluableRichTextComponent {
 
-	private final T identifier;
+	private final String identifier;
 
-	private String defaultValue;
+	private RichText defaultValue;
 
-	public TemplateParameterApplication(T identifier) {
+	private TemplateParameterApplication(String identifier, RichText defaultValue) {
+		Validate.notBlank(identifier);
 		this.identifier = identifier;
+		this.defaultValue = defaultValue;
 	}
 
-	public T getIdentifier() {
+	public String getIdentifier() {
 		return identifier;
 	}
 
-	public String getDefaultValue() {
+	public RichText getDefaultValue() {
 		return defaultValue;
 	}
 
-	public void setDefaultValue(String defaultValue) {
+	public void setDefaultValue(RichText defaultValue) {
 		this.defaultValue = defaultValue;
 	}
 
 	@Override
-	public String asText(TemplateDefinitionParameter... parameters) {
-		Optional<TemplateDefinitionParameter> param = Arrays.stream(parameters).filter(p -> p.getIdentifier().equals(identifier)).findFirst();
-		return param.isPresent()
-		       ? param.get().getValue()
-		       : defaultValue != null ? defaultValue : String.format("{{{%s}}}", identifier);
+	public void accept(RichTextComponentVisitor visitor) {
+		visitor.visit(this);
+	}
+
+	@Override
+	public RichText evaluate(TemplateService templateService, Collection<Constant> constants) {
+		Optional<Constant> constant = constants.stream().filter(
+				c -> c.getName().equals(identifier)).findFirst();
+		if (constant.isPresent())
+			return constant.get().getValue();
+		else if (defaultValue != null)
+			return defaultValue;
+		else
+			return new RichText(toString());
 	}
 
 	@Override
 	public String toString() {
-		return String.format("{{{%s|%s}}}", identifier, defaultValue);
+		if (defaultValue != null)
+			return String.format("{{{%s|%s}}}", identifier, defaultValue);
+		else
+			return String.format("{{{%s}}}", identifier);
+	}
+
+	public static class Builder {
+
+		private String identifier;
+		private RichText defaultValue;
+
+		public Builder withIdentifier(String identifier) {
+			this.identifier = identifier;
+			return this;
+		}
+
+		public Builder withDefaultValue(RichText defaultValue) {
+			this.defaultValue = defaultValue;
+			return this;
+		}
+
+		public TemplateParameterApplication build() {
+			return new TemplateParameterApplication(identifier, defaultValue);
+		}
 	}
 }

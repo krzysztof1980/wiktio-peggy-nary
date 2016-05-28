@@ -2,8 +2,11 @@ package wiktiopeggynary.parser
 
 import spock.lang.Specification
 import spock.lang.Unroll
+import wiktiopeggynary.model.markup.RichText
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.MultiGender
+import wiktiopeggynary.parser.template.TemplateService
+import wiktiopeggynary.parser.template.model.TemplateDefinition
 
 import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 
@@ -14,9 +17,15 @@ import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 class TranslationsParserSpec extends Specification {
 
     def "translation meaning number is not interpreted"() {
+        given:
+        def templateService = Mock(TemplateService) {
+            parseTemplateDefinitionPageForTemplate(_) >> new TemplateDefinition(new RichText("dummy"))
+        }
+        def parserService = new ParserService(new SequentialParserTaskExecutorFactory())
+
         when:
-        def entry = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"))[0];
+        def entry = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
 
         then: "the meaning number is an integer"
         entry.translations["ar"][0].meaningNumber == "1"

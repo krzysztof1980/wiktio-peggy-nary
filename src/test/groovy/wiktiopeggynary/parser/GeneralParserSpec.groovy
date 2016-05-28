@@ -1,6 +1,7 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Specification
+import wiktiopeggynary.parser.template.TemplateService
 
 import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 
@@ -10,14 +11,17 @@ import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 class GeneralParserSpec extends Specification {
 
     def "create entity pro section"() {
-        expect:
-        new ParserService().parseWiktionaryEntryPage(
-                readArticleFromResources("Boot")).size() == 3
+        when:
+        def parseResult = new ParserService(new SequentialParserTaskExecutorFactory()).parseWiktionaryEntryPage(
+                readArticleFromResources("Boot"), Mock(TemplateService))
+
+        then:
+        parseResult.wiktionaryEntries.size() == 3
     }
 
     def "parse only german sections"() {
         expect:
-        new ParserService().parseWiktionaryEntryPage(
+        new ParserService(parserTaskExecutorFactory).parseWiktionaryEntryPage(
                 readArticleFromResources("Kim")).size() == 2
     }
 }

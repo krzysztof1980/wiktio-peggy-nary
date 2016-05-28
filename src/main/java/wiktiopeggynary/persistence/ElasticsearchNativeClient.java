@@ -12,25 +12,25 @@ import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.unit.ByteSizeUnit;
 import org.elasticsearch.common.unit.ByteSizeValue;
-import org.elasticsearch.node.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.parser.template.model.TemplateDefinition;
 
 import java.io.Closeable;
+import java.net.InetAddress;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
-
-import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class ElasticsearchClient implements Closeable{
-	private static final Logger logger = LoggerFactory.getLogger(ElasticsearchClient.class);
+public class ElasticsearchNativeClient implements Closeable {
+	private static final Logger logger = LoggerFactory.getLogger(ElasticsearchNativeClient.class);
 
 	private static final String WIKTIONARY_ENTRY_INDEX = "dewiktionary_entries";
 	private static final String WIKTIONARY_ENTRY_TYPE = "entry";
@@ -38,13 +38,13 @@ public class ElasticsearchClient implements Closeable{
 	private static final String TEMPLATE_DEF_INDEX = "dewiktionary_templates";
 	private static final String TEMPLATE_DEF_TYPE = "template";
 
-	private final Node node;
 	private final Client client;
 	private final BulkProcessor bulkProcessor;
 	
-	public ElasticsearchClient() {
-		node = nodeBuilder().client(true).node();
-		client = node.client();
+	public ElasticsearchNativeClient() {
+		client = TransportClient.builder().build()
+		                        .addTransportAddress(new InetSocketTransportAddress(InetAddress.getLoopbackAddress(),
+		                                                                            9300));
 		BulkProcessor.Listener bulkProcessorListener = new BulkProcessor.Listener() {
 			
 			@Override
@@ -119,7 +119,6 @@ public class ElasticsearchClient implements Closeable{
 		} catch (InterruptedException e) {
 			logger.error("Exception while waiting for bulk operation to finish", e);
 		} finally {
-			node.close();
 			client.close();
 			logger.info("Indexing was finished!");
 		}

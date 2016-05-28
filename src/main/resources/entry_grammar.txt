@@ -15,7 +15,7 @@ DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
 WortartKopf = SubstantivKopf {saveEintrag};
 WortartBody = MiddleSection TranslationsSection? ~{};
 UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;
-WortartTemplate = LT "Wortart" SEP TemplateAttr SEP "Deutsch" RT {};
+WortartTemplate = LT "Wortart" SEP TParam SEP "Deutsch" RT {};
 
 //==============================================================================
 // Substantiv
@@ -76,8 +76,8 @@ Lang = LT Word RT {};
 TranslationMeaning = ItemNo Translation+ {};
 Translation = TranslationDetails (UeTemplate / UetTemplate) Gender? TranslationDetails (COMMA / SEMICOLON)? Space {};
 TranslationDetails = (CursiveText / Link / (!(ItemNo / UeTemplate / UetTemplate / COMMA / SEMICOLON / EOL) _))* (COMMA / SEMICOLON)?;
-UeTemplate = LT ("Ü" / "Ü?") SEP TemplateAttr SEP TemplateAttr (SEP TemplateAttr)? (SEP TemplateAttr)? RT Space {};
-UetTemplate = LT ("Üt" / "Üt?") SEP TemplateAttr SEP TemplateAttr SEP TemplateAttr (SEP TemplateAttr)? (SEP TemplateAttr)? RT Space {};
+UeTemplate = LT ("Ü" / "Ü?") SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? RT Space {};
+UetTemplate = LT ("Üt" / "Üt?") SEP TParam SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? RT Space {};
 DialectTable = "|Dialekttabelle=" RestOfLine (!RT Line)* ; // ignore it for now
 
 //------------------------------------------------------------------------------
@@ -87,7 +87,7 @@ KOPF2       = "=="      Space ;
 KOPF3       = "==="     Space ;
 KOPF4       = "===="    Space ;
 KopfStart   = "==" ;
-SEP         = "|"       Space ; // attribute separator (used in links and templates to separate attributes)
+SEP         = Space "|" Space ; // attribute separator (used in links and templates to separate attributes)
 
 TextbausteinEnd = LT / KopfStart / EOF ;
 
@@ -106,10 +106,14 @@ LinkAttr = (!(SEP / RL) _)+ ;
 CursiveText = "''" RichTextComponent*+ "''" Space {};
 
 // Template
-LT = "{{"   Space ; // Left Template opening
-RT = "}}"   Space ; // Right Template closing
-Template = LT TemplateAttr (SEP TemplateAttr)* RT {} ;
-TemplateAttr = (!(SEP / RT) RichTextComponent)* {};
+LT =       "{{" Space ; // Left Template opening
+RT = Space "}}" Space ; // Right Template closing
+Template = LT TName (SEP TParam)* RT {} ;
+TName = (!(SEP / RT) _)+ ;
+TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
+	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
+			           (!(SEP / RT) RichTextComponent)* {};
+TParamName = (!EQ _)+ ;
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" _++ "]" Space {};
@@ -141,5 +145,6 @@ Phrase = Word (Space Word)* ;
 Space = " "* ;
 COMMA = "," Space ;
 SEMICOLON = ";" Space ;
+EQ = Space "=" Space ;
 EOF = !_ ;
 EOL = [\r\n]+ / EOF ;

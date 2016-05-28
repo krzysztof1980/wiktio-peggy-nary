@@ -1,18 +1,18 @@
 package wiktiopeggynary.parser.template.model.functions;
 
-import wiktiopeggynary.parser.template.model.runtime.TemplateDefinitionParameter;
+import wiktiopeggynary.model.markup.RichText;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class IfeqParserFunction extends ParserFunction {
+public class IfeqParserFunction extends SimpleParserFunctionWithParameters {
 
-    @Override
-    public String asText(TemplateDefinitionParameter... parameters) {
-        String s1 = getParameters().get(0).asText(parameters);
-        String s2 = getParameters().get(1).asText(parameters);
-        String valueIfIdentical = getParameters().get(2).asText(parameters);
-        String valueIfDifferent = getParameters().get(3).asText(parameters);
-        return s1.equals(s2) ? valueIfIdentical : valueIfDifferent;
-    }
+	public IfeqParserFunction(RichText... parameters) {
+		super(parameters);
+	}
+
+	@Override
+	public RichText doEvaluate(EvaluatedParameters params) {
+		return params.idx(0).get().equals(params.idx(1).get()) ? params.idx(2).get() : params.idx(3).get();
+	}
 }

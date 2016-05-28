@@ -1,0 +1,6 @@
+<!-- Kontext -->
+<i>{{<!--Darstellung-->
+<!--#if: {{{1|}}} | {{#switch: {{Kontext/Abk|{{{1|}}}}}|{{PAGENAME}}=-->
+#if: {{{1|}}} | {{#switch: {{{1|}}}|{{PAGENAME}}=
+| ; = &#59;&nbsp;
+| bar }} }}

@@ -1,25 +1,15 @@
 package wiktiopeggynary.parser.template.model.functions;
 
-import wiktiopeggynary.parser.template.model.DisplayableAsText;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
+import wiktiopeggynary.parser.template.model.EvaluableRichTextComponent;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public abstract class ParserFunction implements DisplayableAsText {
+public abstract class ParserFunction implements EvaluableRichTextComponent {
 
-    private List<DisplayableAsText> parameters = new ArrayList<>();
-
-    public void addParameter(DisplayableAsText parameter) {
-	    if (parameter == null)
-		    throw new IllegalArgumentException("parameter must not be null");
-        parameters.add(parameter);
-    }
-
-    protected List<DisplayableAsText> getParameters() {
-        return Collections.unmodifiableList(parameters);
-    }
+	@Override
+	public void accept(RichTextComponentVisitor visitor) {
+		visitor.visit(this);
+	}
 }
