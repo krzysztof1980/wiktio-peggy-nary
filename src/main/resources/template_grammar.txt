@@ -28,12 +28,12 @@ TName = (!(SEP / RF) _)+ ;
 TCallParam = Number           EQ (!(SEP / RF) TemplateDefinitionComponent)* {} /
 			 TCallParamName   EQ (!(SEP / RF) TemplateDefinitionComponent)* {} /
 			                  (!(SEP / RF) TemplateDefinitionComponent)* {};
-TCallParamName = (!EQ _)+ ;
+TCallParamName = (!(EQ / SEP / RF) _)+ ;
 
 LP  = "{{{" ;
 RP  = "}}}" ;
 LF  = "{{" Space ;
-RF  = Space "}}" Space ;
+RF  = Space "}}" ;
 SEP = Space "|"  Space ;
 EQ  = Space "="  Space ;
 COL = Space ":"  Space ;

@@ -358,12 +358,12 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 
 	//-------------------------------------------------------------------
-	//  CursiveText = "''" RichTextComponent*+ "''" Space
-	//                  0            1          n-2  n-1
+	//  CursiveText = "''" RichTextComponent*+ "''"
+	//                  0            1          n-1
 	//-------------------------------------------------------------------
 	public void CursiveText() {
 		RichText body = new RichText();
-		processSequenceOfRichTextComponents(1, rhsSize() - 2, body);
+		processSequenceOfRichTextComponents(1, rhsSize() - 1, body);
 		lhs().put(new CursiveBlock(body));
 	}
 

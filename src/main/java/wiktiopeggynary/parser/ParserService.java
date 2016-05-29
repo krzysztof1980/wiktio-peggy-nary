@@ -75,7 +75,7 @@ public class ParserService {
 			throw new IllegalArgumentException("page must not be null");
 		WiktionaryParser parser = new WiktionaryParser(templateService);
 		setTraceInParser(parser);
-		String correctedPage = autocorrectionService.correctPage(page);
+		String correctedPage = page; // autocorrectionService.correctPage(page); // TODO: what for was this?
 		if (parser.parse(new SourceString(correctedPage)))
 			return new WiktionaryEntryPageParseResult(parser.semantics().getWiktionaryEntries());
 		else {

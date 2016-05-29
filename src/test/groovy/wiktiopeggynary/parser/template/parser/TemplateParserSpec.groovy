@@ -137,8 +137,8 @@ class TemplateParserSpec extends Specification {
         and: "the comparison string is an application of named parameter"
         switchFunction.comparisonString.components.size() == 1
         switchFunction.comparisonString.components[0] instanceof TemplateParameterApplication
-        TemplateParameterApplication param = switchFunction.comparisonString.components
-                [0] as TemplateParameterApplication
+        TemplateParameterApplication param =
+                switchFunction.comparisonString.components[0] as TemplateParameterApplication
         param.identifier == "A"
     }
 

@@ -20,7 +20,7 @@ WortartTemplate = LT "Wortart" SEP TParam SEP "Deutsch" RT {};
 //==============================================================================
 // Substantiv
 //==============================================================================
-SubstantivKopf = KOPF3 SubstantivTemplate SubstantivAttributes KOPF3 RestOfLine ;
+SubstantivKopf = KOPF3 SubstantivTemplate Space SubstantivAttributes Space KOPF3 RestOfLine ;
 SubstantivTemplate = LT "Wortart" SEP "Substantiv" SEP "Deutsch" RT {createSubstantiv};
 SubstantivAttributes = (","? Space SubstantivAttribute)+ ~{} / _++ KOPF3 ;
 SubstantivAttribute = Gender {substantivGender}
@@ -103,17 +103,17 @@ RL = "]]" ;   // Right Link opening; no space after, because wee need to treat s
 Link = LL LinkAttr (SEP LinkAttr)? RL {};
 LinkAttr = (!(SEP / RL) _)+ ;
 
-CursiveText = "''" RichTextComponent*+ "''" Space {};
+CursiveText = "''" RichTextComponent*+ "''" {};
 
 // Template
 LT =       "{{" Space ; // Left Template opening
-RT = Space "}}" Space ; // Right Template closing
+RT = Space "}}" ; // Right Template closing
 Template = LT TName (SEP TParam)* RT {} ;
 TName = (!(SEP / RT) _)+ ;
 TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
 			           (!(SEP / RT) RichTextComponent)* {};
-TParamName = (!EQ _)+ ;
+TParamName = (!(SEP / RT / EQ) _)+ ;
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" _++ "]" Space {};

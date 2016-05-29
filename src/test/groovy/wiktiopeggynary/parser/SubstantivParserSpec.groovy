@@ -1,6 +1,5 @@
 package wiktiopeggynary.parser
 
-import spock.lang.Specification
 import wiktiopeggynary.model.Kasus
 import wiktiopeggynary.model.Numerus
 import wiktiopeggynary.model.substantiv.Gender
@@ -11,12 +10,12 @@ import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 /**
  * @author Krzysztof Witukiewicz
  */
-class SubstantivParserSpec extends Specification {
+class SubstantivParserSpec extends ParserSpecBase {
 
     def "gender and other attributes"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Boot"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Boot"), templateService).wiktionaryEntries
 
         then: "there are 3 entries"
         entries.size() == 3
@@ -42,8 +41,8 @@ class SubstantivParserSpec extends Specification {
 
     def "adjektivische Deklination"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Bahnangestellter"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Bahnangestellter"), templateService).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then: "it is Maskulinum"
@@ -56,8 +55,8 @@ class SubstantivParserSpec extends Specification {
 
     def "adjektivische Deklination with error"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Suchende"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Suchende"), templateService).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then: "it is Femininum"
@@ -70,8 +69,8 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table with line breaks"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Zug"), templateService).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
 
@@ -85,8 +84,8 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table without plural"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Zug"), templateService).wiktionaryEntries
         Substantiv entry = entries[1] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
 
@@ -99,8 +98,8 @@ class SubstantivParserSpec extends Specification {
 
     def "flexion table with unknown format"() {
         when:
-        def entries = ParserService.getInstance().parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"))
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Zug"), templateService).wiktionaryEntries
         Substantiv entry = entries[1] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
 

@@ -2,12 +2,9 @@ package wiktiopeggynary.model.markup;
 
 import org.apache.commons.lang3.Validate;
 import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
-import wiktiopeggynary.model.visitor.RichTextEvaluator;
-import wiktiopeggynary.model.visitor.TemplateParameterVisitor;
+import wiktiopeggynary.model.visitor.TemplateEvaluator;
 import wiktiopeggynary.parser.template.TemplateService;
 import wiktiopeggynary.parser.template.model.EvaluableRichTextComponent;
-import wiktiopeggynary.parser.template.model.TemplateDefinition;
-import wiktiopeggynary.parser.template.model.TemplateDefinitionParameterListBuilder;
 
 import java.util.*;
 
@@ -25,39 +22,6 @@ public class Template implements EvaluableRichTextComponent {
 		this.parameters = Arrays.asList(parameters);
 	}
 
-	private static List<TemplateParameter> resolveParameters(TemplateService templateService,
-	                                                         List<TemplateParameter> parameters,
-	                                                         Collection<Constant> constants) {
-		List<TemplateParameter> resolvedParameters = new ArrayList<>(parameters.size());
-		parameters.forEach(p -> {
-			final RichTextEvaluator evaluator = new RichTextEvaluator(templateService, constants);
-			p.getValue().accept(evaluator);
-			p.accept(new TemplateParameterVisitor() {
-				@Override
-				public void visit(AnonymousTemplateParameter param) {
-					resolvedParameters.add(new AnonymousTemplateParameter(evaluator.getResult()));
-				}
-
-				@Override
-				public void visit(NumberedTemplateParameter param) {
-					resolvedParameters.add(new NumberedTemplateParameter(param.getNumber(), evaluator.getResult()));
-				}
-
-				@Override
-				public void visit(NamedTemplateParameter param) {
-					resolvedParameters.add(new NamedTemplateParameter(param.getName(), evaluator.getResult()));
-				}
-			});
-		});
-		return resolvedParameters;
-	}
-
-	private static Collection<Constant> getParametersForTemplateDefinition(List<TemplateParameter> resolvedParameters) {
-		TemplateDefinitionParameterListBuilder builder = new TemplateDefinitionParameterListBuilder();
-		resolvedParameters.forEach(p -> p.accept(builder));
-		return builder.build();
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -68,10 +32,7 @@ public class Template implements EvaluableRichTextComponent {
 
 	@Override
 	public RichText evaluate(TemplateService templateService, Collection<Constant> constants) {
-		TemplateDefinition templateDefinition = templateService.parseTemplateDefinitionPageForTemplate(name);
-		Validate.notNull(templateDefinition, String.format("Missing definition for template '%s'", name));
-		return templateDefinition.evaluate(templateService, getParametersForTemplateDefinition(
-				resolveParameters(templateService, getParameters(), constants)));
+		return new TemplateEvaluator(templateService).evaluate(this, constants);
 	}
 
 	@Override
