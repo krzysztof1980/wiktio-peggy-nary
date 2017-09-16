@@ -2,8 +2,8 @@
 === {{Wortart|Substantiv|Englisch}} ===
 
 {{Englisch Substantiv Übersicht
-|Singular=the harness
-|Plural=the harnesses
+|Singular=harness
+|Plural=harnesses
 |Bild 1=Harness (PSF).png|220px|2|horse ''harness''
 |Bild 2=PSM V39 D327 Crompton thirty six harness worsted loom.jpg|220px|6|''harness''
 }}
@@ -12,8 +12,8 @@
 :har·ness, {{Pl.}} har·nesses
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈhɑ:nɪs}}, {{amer.|:}} {{Lautschrift|ˈhɑ:rnɪs}}, {{Pl.}} {{Lautschrift|…}}
-:{{Hörbeispiele}} {{Audio|En-us-harness.ogg|harness (amerikanisch)}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈhɑːnɪs}}, {{amer.|:}} {{Lautschrift|ˈhɑːrnɪs}}, {{Pl.}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|En-us-harness.ogg|spr=us}}
 
 {{Bedeutungen}}
 :[1] das Zuggeschirr, Geschirr, Gurtzeug, Harnisch, Beschirrung
@@ -36,7 +36,7 @@
 :[[baby harness]], [[harness assembly]], [[harness attachment]], [[saventy harness]], [[wiring harness]], [[harnesser]], [[harnessless]], [[harnesslike]], [[reharness]], [[well-harnessed]], [[cable harness]], [[wire harness]], [[harness horse]]
 
 {{Absatz}}
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[Zuggeschirr]], [[Geschirr]], [[Gurtzeug]], [[Harnisch]], [[Beschirrung]]; [2] das [[Pferdegeschirr]]; [3] das [[Zaumzeug]] [4] der [[Kabelstrang]] [5] der [[Klettergurt]] [6] das [[Webgeschirr]]; [7] [[Alltagstrott]]; [8] [[Harnisch]], [[Rüstung]]
 |Ü-rechts=
@@ -49,31 +49,3 @@
 :[1,2,5,7] {{Ref-Pons|en|harness}}
 :[1–5] {{Ref-dictcc|harness}}
 :[1–6] {{Ref-Leo|en|harness}}
-
-[[chr:harness]]
-[[cs:harness]]
-[[cy:harness]]
-[[en:harness]]
-[[eo:harness]]
-[[et:harness]]
-[[fi:harness]]
-[[fr:harness]]
-[[hu:harness]]
-[[hy:harness]]
-[[id:harness]]
-[[io:harness]]
-[[it:harness]]
-[[kn:harness]]
-[[ko:harness]]
-[[ku:harness]]
-[[mg:harness]]
-[[ml:harness]]
-[[my:harness]]
-[[pl:harness]]
-[[pt:harness]]
-[[sv:harness]]
-[[ta:harness]]
-[[te:harness]]
-[[tr:harness]]
-[[vi:harness]]
-[[zh:harness]]

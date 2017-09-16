@@ -2,15 +2,12 @@
 == Kim ({{Sprache|Deutsch}}) ==
 === {{Wortart|Substantiv|Deutsch}}, {{m}}, {{Wortart|Vorname|Deutsch}} ===
 
-{{Deutsch Substantiv Übersicht
-|Nominativ Singular=<small>(der)</small> Kim
-|Nominativ Plural=die Kims
-|Genitiv Singular=<small>(des Kim/<br />des Kims)</small><br />Kims
-|Genitiv Plural=der Kims
-|Dativ Singular=<small>(dem)</small> Kim
-|Dativ Plural=den Kims
-|Akkusativ Singular=<small>(den)</small> Kim
-|Akkusativ Plural=die Kims
+{{Deutsch Vorname Übersicht m
+|Nominativ Plural=Kims
+|Genitiv Singular=Kims
+|Genitiv Plural=Kims
+|Dativ Plural=Kims
+|Akkusativ Plural=Kims
 }}
 
 {{Worttrennung}}
@@ -18,7 +15,7 @@
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|kɪm}}, {{Pl.}} {{Lautschrift|kɪms}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{Hörbeispiele}} {{Audio|}}
 :{{Reime}} {{Reim|ɪm|Deutsch}}
 
 {{Bedeutungen}}
@@ -36,12 +33,12 @@
 {{Beispiele}}
 :[1] Der neunmalkluge ''Kim'' ist eine echte Nervensäge.
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|Kim (Vorname)|Kim}}
@@ -49,29 +46,27 @@
 :[1] {{Lit-Burkart: Vornamen}}, „Kim“, Seite 241
 :[1] {{Lit-Duden: Vornamenlexikon|A=3}}, „<sup>1</sup>Kim“, Seite 251
 
-{{Quellen|}}
-
-{{----}}
+{{Quellen}}
 
 === {{Wortart|Substantiv|Deutsch}}, {{f}}, {{Wortart|Vorname|Deutsch}} ===
 
-{{Deutsch Substantiv Übersicht
-|Nominativ Singular=<small>(die)</small> Kim
-|Nominativ Plural=die Kims
-|Genitiv Singular=<small>(der Kim)</small><br />Kims
-|Genitiv Plural=der Kims
-|Dativ Singular=<small>(der)</small> Kim
-|Dativ Plural=den Kims
-|Akkusativ Singular=<small>(die)</small> Kim
-|Akkusativ Plural=die Kims
+{{Deutsch Vorname Übersicht f
+|Nominativ Singular=Kim
+|Nominativ Plural=Kims
+|Genitiv Singular=Kims
+|Genitiv Plural=Kims
+|Dativ Singular=Kim
+|Dativ Plural=Kims
+|Akkusativ Singular=Kim
+|Akkusativ Plural=Kims
 }}
 
 {{Worttrennung}}
 :Kim, {{Pl.}} Kims
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}, {{Pl.}} {{Lautschrift|…}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|}}
 :{{Reime}} {{Reim|ɪm|Deutsch}}
 
 {{Bedeutungen}}
@@ -89,12 +84,12 @@
 {{Beispiele}}
 :[1] ''Kim'' ist ihr Hund weggelaufen.
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|Kim (Vorname)|Kim}}
@@ -102,9 +97,7 @@
 :[1] {{Lit-Duden: Lexikon der Vornamen|A=2}}, „Kim“, Seite 130
 :[1] {{Lit-Duden: Vornamenlexikon|A=3}}, „<sup>3</sup>Kim“, Seite 251
 
-{{Quellen|}}
-
-{{2x----}}
+{{Quellen}}
 
 == Kim ({{Sprache|Dänisch}}) ==
 === {{Wortart|Substantiv|Dänisch}}, {{m}}, {{Wortart|Vorname|Dänisch}} ===
@@ -113,7 +106,7 @@
 :Kim
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -134,20 +127,18 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Dänisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=da|Kim (navn)}}
 :[1] {{Ref-NordicNames|Kim}}
 
-{{Quellen|}}
-
-{{----}}
+{{Quellen}}
 
 === {{Wortart|Substantiv|Dänisch}}, {{f}}, {{Wortart|Vorname|Dänisch}} ===
 
@@ -155,7 +146,7 @@
 :Kim
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -164,18 +155,16 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Dänisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=da|Kim (navn)}}
 :[1] {{Ref-NordicNames|Kim}}
-
-{{2x----}}
 
 == Kim ({{Sprache|Englisch}}) ==
 === {{Wortart|Substantiv|Englisch}}, {{m}}, {{Wortart|Vorname|Englisch}} ===
@@ -184,7 +173,7 @@
 :Kim
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -199,12 +188,12 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Englisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[]]
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=en|Kim (given name)}}
@@ -213,9 +202,7 @@
 :[1] {{Lit-Hanks: First Names|A=2}}, „Kim“, Seite 158
 :[1] {{Lit-Wallace: Baby Name Book|A=revised}}, „Kim“, Seite 215
 
-{{Quellen|}}
-
-{{----}}
+{{Quellen}}
 
 === {{Wortart|Substantiv|Englisch}}, {{f}}, {{Wortart|Vorname|Englisch}} ===
 
@@ -223,7 +210,7 @@
 :Kim
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -241,12 +228,12 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Englisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[]]
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=en|Kim (given name)}}
@@ -255,9 +242,7 @@
 :[1] {{Lit-Hanks: First Names|A=2}}, „Kim“, Seite 158
 :[1] {{Lit-Wallace: Baby Name Book|A=revised}}, „Kim“, Seite 567
 
-{{Quellen|}}
-
-{{2x----}}
+{{Quellen}}
 
 == Kim ({{Sprache|Norwegisch}}) ==
 === {{Wortart|Substantiv|Norwegisch}}, {{m}}, {{Wortart|Vorname|Norwegisch}} ===
@@ -280,15 +265,14 @@
 
 {{Bekannte Namensträger}}
 :[1] [[w:no:Kim Larsen (fotball)|Kim Larsen]], [[w:no:Kim Rune Hagen|Kim Rune Hagen]]
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 {{Referenzen}}
 :[1] {{Wikipedia|spr=no|Kim (navn)}}
 :[1] {{Ref-NordicNames|Kim}}
 :[1] {{Lit-Duden: Vornamenlexikon|A=3}}, „<sup>2</sup>Kim“, Seite 251
-{{Quellen|}}
-{{----}}
+{{Quellen}}
 
 === {{Wortart|Substantiv|Norwegisch}}, {{f}}, {{Wortart|Vorname|Norwegisch}} ===
 
@@ -296,7 +280,7 @@
 :Kim
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -308,20 +292,18 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Norwegisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[]]
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=da|Kim (navn)}}
 :[1] {{Ref-NordicNames|Kim}}
 
-{{Quellen|}}
-
-{{2x----}}
+{{Quellen}}
 
 == Kim ({{Sprache|Schwedisch}}) ==
 === {{Wortart|Substantiv|Schwedisch}}, {{Wortart|Vorname|Schwedisch}} ===
@@ -337,7 +319,7 @@
 :Kim, {{kPl.}}
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}
+:{{IPA}} {{Lautschrift|}}
 :{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
@@ -358,11 +340,11 @@
 :[2] Mål! ''Kim'' Källström skjuter mål!
 ::Tor! ''Kim'' Källström schießt ein Tor!
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[]]
 |Ü-rechts=
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1, 2] {{Wikipedia|spr=sv|Kim}}
@@ -375,17 +357,3 @@
 
 {{Ähnlichkeiten}}
 :[[Tim]]
-
-[[ar:Kim]]
-[[el:Kim]]
-[[en:Kim]]
-[[fi:Kim]]
-[[fr:Kim]]
-[[ko:Kim]]
-[[nl:Kim]]
-[[no:Kim]]
-[[pl:Kim]]
-[[ru:Kim]]
-[[sr:Kim]]
-[[sv:Kim]]
-[[zh:Kim]]

@@ -2,22 +2,23 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Rüttelstreifen
-|Nominativ Plural=die Rüttelstreifen
-|Genitiv Singular=des Rüttelstreifens
-|Genitiv Plural=der Rüttelstreifen
-|Dativ Singular=dem Rüttelstreifen
-|Dativ Plural=den Rüttelstreifen
-|Akkusativ Singular=den Rüttelstreifen
-|Akkusativ Plural=die Rüttelstreifen
+|Genus=m
+|Nominativ Singular=Rüttelstreifen
+|Nominativ Plural=Rüttelstreifen
+|Genitiv Singular=Rüttelstreifens
+|Genitiv Plural=Rüttelstreifen
+|Dativ Singular=Rüttelstreifen
+|Dativ Plural=Rüttelstreifen
+|Akkusativ Singular=Rüttelstreifen
+|Akkusativ Plural=Rüttelstreifen
 }}
 
 {{Worttrennung}}
 :Rüt·tel·strei·fen, {{Pl.}} Rüt·tel·strei·fen
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fn̩}}, {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fm̩}}, {{Pl.}} {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fn̩}}, {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fm̩}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fn̩}}, {{Lautschrift|ˈʀʏtl̩ˌʃtʀaɪ̯fm̩}}
+:{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
 :[1] in den Straßenbelag [[einlassen|eingelassene]] oder [[einfräsen|eingefräste]] Markierung am Fahrbahnrand, welche durch [[haptisch]]e und [[akustisch]]e [[Signal]]e den [[Fahrer]] darauf aufmerksam machen, dass er von der [[Fahrbahn]] abkommt
@@ -37,12 +38,12 @@
 [http://www.focus.de/auto/news/forschung-ruettelstreifen-verhindern-uebermuedungs-unfaelle_aid_363440.html Internetbeleg hier]“</ref>
 :[1] „Schwere Autobahn-Unfälle können mit Hilfe von sogenannten ''Rüttelstreifen'' deutlich verringert werden.“<ref>Auto - Motor – Sport, 19.01.2009 [http://www.auto-motor-und-sport.de/news/autobahn-unfaelle-ruettelstreifen-senken-unfallrisiko-942330.html Internetbeleg hier]</ref>
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|rumble strip}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|}}
-}} <!-- für weitere Sprachkürzel siehe den Link unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] Markus Lerner: Sicherheitswirkung eingefräster ''Rüttelstreifen'' an Autobahnen, Band 20 von Info, Bundesanstalt für Strassenwesen Bergisch Gladbach, 2009 (Wirtschaftsverl. NW, Verl. für Neue Wiss.)

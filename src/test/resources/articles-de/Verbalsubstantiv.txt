@@ -2,22 +2,23 @@
 === {{Wortart|Substantiv|Deutsch}}, {{n}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=das Verbalsubstantiv
-|Nominativ Plural=die Verbalsubstantive
-|Genitiv Singular=des Verbalsubstantivs
-|Genitiv Plural=der Verbalsubstantive
-|Dativ Singular=dem Verbalsubstantiv
-|Dativ Plural=den Verbalsubstantiven
-|Akkusativ Singular=das Verbalsubstantiv
-|Akkusativ Plural=die Verbalsubstantive
+|Genus=n
+|Nominativ Singular=Verbalsubstantiv
+|Nominativ Plural=Verbalsubstantive
+|Genitiv Singular=Verbalsubstantivs
+|Genitiv Plural=Verbalsubstantive
+|Dativ Singular=Verbalsubstantiv
+|Dativ Plural=Verbalsubstantiven
+|Akkusativ Singular=Verbalsubstantiv
+|Akkusativ Plural=Verbalsubstantive
 }}
 
 {{Worttrennung}}
 :Ver·bal·sub·stan·tiv, {{Pl.}} Ver·bal·sub·stan·ti·ve
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|vɛʁˈbaːlˌzʊpstantiːf}}, {{Pl.}} {{Lautschrift|vɛʁˈbaːlˌzʊpstantiːvə}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|vɛʁˈbaːlˌzʊpstantiːf}}
+:{{Hörbeispiele}} {{Audio|De-Verbalsubstantiv.ogg}}
 
 {{Bedeutungen}}
 :[1] ''[[Linguistik]]:'' Sammelbegriff für verschiedene Klassen von [[Substantiv]]en, die durch [[Substantivierung]] von [[Verbform]]en entstanden sind oder noch entstehen
@@ -35,10 +36,10 @@
 :[1] Die Wortwurzel von ''Verbalsubstantiven'' ist ein [[Verb]].
 :[1] „In anderen Sprachen und in früheren Sprachzuständen gibt es außerdem noch ein Gerundiv(um), das sogenannte Participium necessitatis (Partizip der Notwendigkeit; Angabe, daß das im Verb Ausgedrückte getan werden muß) und das Gerundium, ein zugehöriges ''Verbalsubstantiv.''“<ref> ''Kluge. Etymologisches Wörterbuch der deutschen Sprache''. Bearbeitet von Elmar Seebold. 24., durchgesehene und erweiterte Auflage. de Gruyter, Berlin/ New York 2002, S. XXXV. ISBN 3-11-017472-3. Fett gedruckt: '''Gerundiv(um)''', '''Participium necessitatis''' und '''Gerundium'''. </ref>
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-*{{en}}: [1] {{Ü|en|}}
-*{{fr}}: [1] {{Ü|fr|}}
+*{{en}}: [1] {{Ü|en|verbal noun}}
+*{{fr}}: [1] {{Ü|fr|nom verbal}}
 |Ü-rechts=
 *{{ku}}: [1] {{Ü|ku|navdêra lêkerî}} {{f}}
 *{{cs}}: [1] {{Ü|cs|verbální substantivum}} {{n}}
@@ -48,10 +49,8 @@
 :[1] {{Wikipedia|Verbalsubstantiv}}
 :[1] {{Ref-Canoo|Verbalsubstantiv}}
 :[1] Hadumod Bußmann: ''Lexikon der Sprachwissenschaft.'' 3., aktualisierte und erweiterte Auflage. Kröner, Stuttgart 2002. Stichwort: „Verbalsubstantiv“. ISBN 3-520-45203-0.
-:[1] Helmut Glück (Hrsg.), unter Mitarbeit von Friederike Schmöe: ''Metzler Lexikon Sprache.'' Dritte, neubearbeitete Auflage, Stichwort: „Verbalsubstantiv“. Metzler, Stuttgart/ Weimar 2005. ISBN 978-3-476-02056-7.
+:[1] Helmut Glück (Hrsg.), unter Mitarbeit von Friederike Schmöe: ''Metzler Lexikon Sprache.'' Dritte, neubearbeitete Auflage, Stichwort: „Verbalsubstantiv“. Metzler, Stuttgart/Weimar 2005. ISBN 978-3-476-02056-7.
 
-{{Quellen|}}
+{{Quellen}}
 
 [[Kategorie:Fremdwort]]
-
-[[zh:Verbalsubstantiv]]

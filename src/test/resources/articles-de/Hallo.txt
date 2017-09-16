@@ -3,22 +3,23 @@
 === {{Wortart|Substantiv|Deutsch}}, {{n}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=das Hallo
-|Nominativ Plural=die Hallos
-|Genitiv Singular=des Hallos
-|Genitiv Plural=der Hallos
-|Dativ Singular=dem Hallo
-|Dativ Plural=den Hallos
-|Akkusativ Singular=das Hallo
-|Akkusativ Plural=die Hallos
+|Genus=n
+|Nominativ Singular=Hallo
+|Nominativ Plural=Hallos
+|Genitiv Singular=Hallos
+|Genitiv Plural=Hallos
+|Dativ Singular=Hallo
+|Dativ Plural=Hallos
+|Akkusativ Singular=Hallo
+|Akkusativ Plural=Hallos
 }}
 
 {{Worttrennung}}
 :Hal·lo, {{Pl.}} Hal·los
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|haˈloː}}, {{Pl.}} {{Lautschrift|haˈloːs}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|haˈloː}}
+:{{Hörbeispiele}} {{Audio|De-Hallo.ogg}}
 :{{Reime}} {{Reim|oː|Deutsch}}
 
 {{Bedeutungen}}
@@ -37,7 +38,7 @@
 {{Charakteristische Wortkombinationen}}
 :[1] großes ''Hallo''
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|hallo}}
 |Ü-rechts=
@@ -49,18 +50,7 @@
 :[1] {{Ref-DWDS|Hallo}}
 :[1] {{Ref-UniLeipzig|Hallo}}
 
-{{Quellen|}}
+{{Quellen}}
 
 {{Ähnlichkeiten}}
 :[[Hall]], [[Halle]], [[halle]], [[Halo]], [[holla]], [[Holle]]
-
-[[fr:Hallo]]
-[[hu:Hallo]]
-[[io:Hallo]]
-[[it:Hallo]]
-[[ko:Hallo]]
-[[mg:Hallo]]
-[[pl:Hallo]]
-[[ru:Hallo]]
-[[sv:Hallo]]
-[[zh:Hallo]]

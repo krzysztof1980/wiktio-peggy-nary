@@ -2,8 +2,8 @@
 === {{Wortart|Substantiv|Englisch}} ===
 
 {{Englisch Substantiv Übersicht
-|Singular=the boulder
-|Plural=the boulders
+|Singular=boulder
+|Plural=boulders
 |Bild=Ffionphort cracked granite boulder.jpg|200px|1|Cracked granite ''boulder''
 }}
 
@@ -15,11 +15,11 @@
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|ˈbəʊldəʳ}}, {{Pl.}} {{Lautschrift|ˈbəʊldəʳs}}
-:{{Hörbeispiele}} {{Audio|En-us-boulder.ogg|boulder (amerikanisch)}}, {{Pl.}} {{Audio|}}
+:{{Hörbeispiele}} {{Audio|En-us-boulder.ogg|spr=us}}
 
 {{Bedeutungen}}
 :[1] einzelner Felsbrocken/Felsblock, theoretisch beweglich, mehr oder weniger rund
-:[2] Geröll
+:[2] Geröll {{QS Bedeutungen|unbelegt|spr=en}}
 
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=en}}
@@ -28,7 +28,7 @@
 :[[boulders]], [[bouldered]], [[bouldery]], [[boulder period]], [[boulder clay]]
 
 {{Absatz}}
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[Felsbrocken]], [[Felsblock]], [[Stein]] {{m}}; [2] [[Geröll]] {{n}}
 |Ü-rechts=
@@ -45,30 +45,4 @@
 :[1] {{Ref-dictcc|en|boulder}}
 :[1] {{Ref-Leo|en|boulder}}
 
-[[ca:boulder]]
-[[cy:boulder]]
-[[da:boulder]]
-[[el:boulder]]
-[[en:boulder]]
-[[eo:boulder]]
-[[es:boulder]]
-[[et:boulder]]
-[[fa:boulder]]
-[[fr:boulder]]
-[[hu:boulder]]
-[[hy:boulder]]
-[[io:boulder]]
-[[it:boulder]]
-[[kn:boulder]]
-[[ko:boulder]]
-[[ku:boulder]]
-[[mg:boulder]]
-[[ml:boulder]]
-[[nl:boulder]]
-[[pl:boulder]]
-[[ru:boulder]]
-[[simple:boulder]]
-[[sv:boulder]]
-[[ta:boulder]]
-[[vi:boulder]]
-[[zh:boulder]]
+{{Referenzen prüfen|Englisch}}

@@ -5,21 +5,15 @@
 {{Deutsch Adjektiv Übersicht
 |Positiv=gut
 |Komparativ=besser
-|Superlativ=am besten
+|Superlativ=besten
 }}
 
-{{Anmerkungen|zur Schulnote}}
-:In Österreich gebraucht man in diesem Zusammenhang vornehmlich die nominalisierte Form „das Gut“, die der Note 2 entspricht
-
 {{Worttrennung}}
-:''Neue Rechtschreibung:'' gut, {{Komp.}} bes·ser, {{Sup.}} am bes·ten
-:''Alte Rechtschreibung:'' gut, {{Komp.}} bes·ser, {{Sup.}} am be·sten
+:gut, {{Komp.}} bes·ser, {{Sup.}} am bes·ten
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ɡuːt}}, {{Komp.}} {{Lautschrift|ˈbɛsɐ}}, {{Sup.}} {{Lautschrift|ˈbɛstən}}, {{Lautschrift|ˈbɛstn̩}}
-:{{Hörbeispiele}} 
-::deutsch: {{Audio|De-gut.ogg|gut}}, {{Komp.}} {{Audio|De-besser.ogg|besser}}, {{Sup.}} {{Audio|De-ambesten.ogg|am besten}}
-::österreichisch: {{Audio|De-at-gut.ogg}} {{Komp.}} {{Audio||besser}}, {{Sup.}} {{Audio||am besten}}
+:{{IPA}} {{Lautschrift|ɡuːt}}
+:{{Hörbeispiele}} {{Audio|De-gut.ogg}}, {{Audio|De-at-gut.ogg|spr=at}}
 :{{Reime}} {{Reim|uːt|Deutsch}}
 
 {{Bedeutungen}}
@@ -27,7 +21,7 @@
 ::[a] ''prädikativ oder attributiv gebraucht''
 ::[b] ''adverbiell gebraucht''
 :[2] eine Schulnote
-::[a] ''(Deutschland)'' entspricht der Note 2
+::[a] ''(Deutschland und Österreich<ref>In Österreich großgeschrieben: „Mit „Gut“ sind Leistungen zu beurteilen, mit denen der Schüler …“ ([https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10009375 Leistungsbeurteilungsverordnung, § 14. (3))]</ref>)'' entspricht der Note 2
 ::[b] ''(Schweiz)'' entspricht der Note 5
 :[3] mit Zahl- oder Maßangaben: reichlich bemessen, etwas mehr als angegeben
 :[4] jemandem [[freundlich]] gesinnt, jemandem zugetan
@@ -35,7 +29,7 @@
 :[6] ohne größere Mühen zu erledigen, leicht machbar
 
 {{Herkunft}}
-:[[mittelhochdeutsch]] und [[althochdeutsch]] ''guot'', ursprünglich „[[passend]]“ <ref>{{Ref-Duden|gut}}</ref><ref>{{Ref-DWDS|gut}}</ref>
+:[[mittelhochdeutsch]] und [[althochdeutsch]] ''guot'', ursprünglich „[[passend]]“<ref>{{Ref-Duden|gut}}</ref><ref>{{Ref-DWDS|gut}}</ref>
 
 {{Synonyme}}
 :[1] [[schön]], [[fein]], [[O. K.]], [[okay]]
@@ -86,14 +80,14 @@
 {{Wortbildungen}}
 :[[Gut]], [[Gutachten]], [[gutachten]], [[Gutachter]], [[Gutachterin]], [[gutachterlich]], [[gutachtlich]], [[gutartig]], [[gutausgebaut]], [[gutaussehend]], [[gutbeleumdet]], [[gutbetucht]], [[gutbezahlt]], [[Gutbringen]], [[gutbringen]], [[gutbringend]], [[gutbürgerlich]], [[gutdotiert]], [[Gutdünken]], [[Güte]], [[Gutenachtgruss]], [[Gutenachtgruß]], [[Gutenachtkuss]], [[Gutenachtkuß]], [[Gutenachtlied]], [[Gutenberg]], [[Gutenmorgengruss]], [[Gutenmorgengruß]], [[Gutfinden]], [[gutfundiert]], [[gutgebaut]], [[gutgebracht]], [[gutgeheißen]], [[Gutgehen]], [[gutgehen]], [[gutgehend]], [[gutgekleidet]], [[gutgelaunt]], [[gutgelungen]], [[gutgemacht]], [[gutgemeint]], [[gutgeordnet]], [[gutgepflegt]], [[gutgesinnt]], [[gutgläubig]], [[Gutgläubigkeit]], [[Guthaben]], [[guthaben]], [[guthabend]], [[Gutheißen]], [[gutheißen]], [[gutheißend]], [[Gutheit]], [[gutheißen]], [[gutheißend]], [[gutherzig]], [[gütig]], [[gutklassig]], [[Gutleuthaus]], [[gutmachen]], [[Gutmensch]], [[gutmütig]], [[gutnachbarlich]], [[Gutpunkt]], [[Gutsagen]], [[gutsagen]], [[gutsagend]], [[Gutschein]], [[gutschreiben]], [[Gutschrift]], [[Guttempler]], [[Guttemplerorden]], [[guttuend]], [[Guttun]], [[guttun]], [[gutunterrichtet]], [[gutverdienend]], [[gutwillig]], [[Gutwilligkeit]], [[herzensgut]], [[vergüten]], [[wiedergutmachen]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{af}}: [1] {{Ü|af|goed}}
 *{{ar}}: [1] {{Üt|ar|جيّد|jỹd}}, {{Üt|ar|طيّب|ṭỹb}}, {{Üt|ar|حسن|‎ħasan}}
 *{{az}}: [1] {{Ü|az|yaxşı}}
 *{{bs}}: [1] {{Ü|bs|dobar}}; [1b] {{Ü|bs|dobro}}
 *{{br}}: [1] {{Ü|br|mat}}
-*{{bg}}: [1a] {{Üt|bg|добър|dobăr}}
+*{{bg}}: [1a] {{Üt|bg|добър|dob'ăr}}
 *{{zh}}: [1] {{Üt|zh|好|hǎo}}
 *{{da}}: [1] {{Ü|da|god}}
 *{{en}}: [1a] {{Ü|en|good}}; [1b] {{Ü|en|well}}
@@ -121,6 +115,7 @@
 *{{pt}}: [1a] {{Ü|pt|bom}}; [1b] {{Ü|pt|bem}}
 *{{ru}}: [1a] {{Üt|ru|хороший|chorošij}}; [1b] {{Üt|ru|хорошо|chorošo}}
 *{{sv}}: [1] {{Ü|sv|bra}}; [1a] {{Ü|sv|god}}; [1b] {{Ü|sv|väl}}, {{Ü|sv|bra}}; [3] {{Ü|sv|dryg}}; [4] {{Ü|sv|god}}; [5] {{Ü|sv|fin}}; [6] {{Ü|sv|mycket möjligt}}
+*{{sr}}: [1] {{Üt|sr|добар|dobar}}
 *{{sk}}: [1a] {{Ü|sk|dobrý}}; [1b] {{Ü|sk|dobre}}
 *{{wen}}:
 **{{dsb}}: [1] {{Ü|dsb|dobry}}
@@ -157,16 +152,16 @@
 === {{Wortart|Substantiv|Englisch}} ===
 
 {{Englisch Substantiv Übersicht
-|Singular=the gut
-|Plural=the guts
+|Singular=gut
+|Plural=guts
 }}
 
 {{Worttrennung}}
 :gut, {{Pl.}} guts
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ɡʌt}}, {{Pl.}} {{Lautschrift|…}}
-:{{Hörbeispiele}} {{Audio|En-us-inlandnorth-gut.ogg|amerik}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ɡʌt}}
+:{{Hörbeispiele}} {{Audio|En-us-inlandnorth-gut.ogg|amerik}}
 
 {{Bedeutungen}}
 :[1] [[Darm]]
@@ -187,7 +182,7 @@
 :[4] to [[have a gut feeling]], to [[feel something in one’s guts]] - ein [[Bauchgefühl]] haben, eine [[Ahnung]] haben
 :[4] to [[follow one’s gut]] – auf sein Bauchgefühl hören, vertrauen; seinem Bauch vertrauen
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[Darm]], [2] [[Gedärm]], [[Eingeweide]], [3] [[Mumm]], [4] [[Bauchgefühl]]
 |Ü-rechts=
@@ -207,53 +202,3 @@
 
 {{Ähnlichkeiten}}
 :[[goutieren]], [[Gut]]
-
-[[af:gut]]
-[[ar:gut]]
-[[br:gut]]
-[[chr:gut]]
-[[cs:gut]]
-[[da:gut]]
-[[el:gut]]
-[[en:gut]]
-[[eo:gut]]
-[[es:gut]]
-[[et:gut]]
-[[eu:gut]]
-[[fa:gut]]
-[[fi:gut]]
-[[fj:gut]]
-[[fo:gut]]
-[[fr:gut]]
-[[hr:gut]]
-[[hu:gut]]
-[[hy:gut]]
-[[id:gut]]
-[[io:gut]]
-[[it:gut]]
-[[ja:gut]]
-[[kk:gut]]
-[[kn:gut]]
-[[ko:gut]]
-[[ku:gut]]
-[[la:gut]]
-[[li:gut]]
-[[lt:gut]]
-[[lv:gut]]
-[[mg:gut]]
-[[ml:gut]]
-[[my:gut]]
-[[nl:gut]]
-[[no:gut]]
-[[pl:gut]]
-[[pt:gut]]
-[[ru:gut]]
-[[simple:gut]]
-[[sv:gut]]
-[[ta:gut]]
-[[te:gut]]
-[[tr:gut]]
-[[vec:gut]]
-[[vi:gut]]
-[[vo:gut]]
-[[zh:gut]]

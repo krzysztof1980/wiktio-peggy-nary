@@ -1,17 +1,17 @@
-{{Siehe auch|liebe}}
 {{Wort der Woche|23|2009}}
 == Liebe ({{Sprache|Deutsch}}) ==
 === {{Wortart|Substantiv|Deutsch}}, {{f}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Liebe
-|Nominativ Plural=die Lieben
-|Genitiv Singular=der Liebe
-|Genitiv Plural=der Lieben
-|Dativ Singular=der Liebe
-|Dativ Plural=den Lieben
-|Akkusativ Singular=die Liebe
-|Akkusativ Plural=die Lieben
+|Genus=f
+|Nominativ Singular=Liebe
+|Nominativ Plural=Lieben
+|Genitiv Singular=Liebe
+|Genitiv Plural=Lieben
+|Dativ Singular=Liebe
+|Dativ Plural=Lieben
+|Akkusativ Singular=Liebe
+|Akkusativ Plural=Lieben
 |Bild=Emblem-favorites.svg|250px|1|das Herz als Symbol der Liebe
 }}
 
@@ -19,8 +19,8 @@
 :Lie·be, {{Pl.}} Lie·ben
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈliːbə}}, {{Pl.}} {{Lautschrift|ˈliːbn̩}}
-:{{Hörbeispiele}} {{Audio|De-Liebe.ogg|Liebe}}, {{Pl.}} {{Audio|De-Lieben.ogg|Lieben}}
+:{{IPA}} {{Lautschrift|ˈliːbə}}
+:{{Hörbeispiele}} {{Audio|De-Liebe.ogg}}
 :{{Reime}} {{Reim|iːbə|Deutsch}}
 
 {{Bedeutungen}}
@@ -47,7 +47,7 @@
 :[1] [[Emotion]], [[Gefühl]], [[Gefühlsregung]]
 
 {{Unterbegriffe}}
-:[1] [[Eigenliebe]], [[Elternliebe]], [[Feindesliebe]], [[Freiheitsliebe]], [[Gegenliebe]], [[Hassliebe]], [[Knabenliebe]], [[Menschenliebe]], [[Mutterliebe]], [[Nächstenliebe]], [[Selbstliebe]], [[Tierliebe]], [[Vaterliebe]]
+:[1] [[Affenliebe]], [[Eigenliebe]], [[Elternliebe]], [[Feindesliebe]], [[Freiheitsliebe]], [[Gegenliebe]], [[Hassliebe]], [[Knabenliebe]], [[Jugendliebe]], [[Menschenliebe]], [[Mutterliebe]], [[Nächstenliebe]], [[Selbstliebe]], [[Tierliebe]], [[Vaterliebe]], [[Vorliebe]]
 
 {{Beispiele}}
 :[1] Die ''Liebe'' überwindet alle Grenzen.
@@ -75,15 +75,17 @@
 :[7] [[Eine Liebe ist der anderen wert]]
 
 {{Charakteristische Wortkombinationen}}
-:[1] [[bei aller Liebe]], [[endlos]]e ''Liebe,'' [[echt]]e ''Liebe,'' [[ewig]]e ''Liebe,'' ''Liebe'' [[empfinden]], [[Liebe auf den ersten Blick]], [[Liebe und Grießschmarren]], [[unendlich]]e ''Liebe,'' [[unerfüllt]]e ''Liebe,'' [[unerschütterlich]]e ''Liebe,'' [[unglücklich]]e ''Liebe,'' [[unsterblich]]e ''Liebe,'' [[wahr]]e ''Liebe,'' [[zärtlich]]e ''Liebe''
+:[1] [[bei aller Liebe]], [[endlos]]e ''Liebe,'' [[echt]]e ''Liebe,'' [[ewig]]e ''Liebe,'' ''Liebe'' [[empfinden]], [[Liebe auf den ersten Blick]], [[Liebe und Grießschmarren]], [[platonische Liebe]], [[unendlich]]e ''Liebe,'' [[unerfüllt]]e ''Liebe,'' [[unerschütterlich]]e ''Liebe,'' [[unglücklich]]e ''Liebe,'' [[unsterblich]]e ''Liebe,'' [[wahr]]e ''Liebe,'' [[zärtlich]]e ''Liebe''
 :[3] [[Liebe machen]]
+:[5] ''Liebe'' zum [[Detail]]
 :[8] erste ''Liebe,'' große ''Liebe,'' letzte ''Liebe''
 
 {{Wortbildungen}}
-:[[Affenliebe]], [[Vorliebe]]
-:[[Geliebte]], [[Geliebter]], [[lieb]], [[liebebedürftig]], [[Liebedienerei]], [[liebedienerisch]], [[Liebelei]], [[lieben]], [[Liebesabenteuer]], [[Liebesaffäre]], [[Liebesakt]], [[Liebesapfel]], [[Liebesbedürfnis]], [[Liebesbeweis]], [[Liebesbeziehung]], [[Liebesbrief]], [[Liebesdichtung]], [[Liebesdienerin]], [[Liebesdienst]], [[Liebesdinge]], [[Liebesentzug]], [[Liebeserklärung]], [[Liebeserlebnis]], [[Liebesfilm]], [[Liebesgedicht]], [[Liebesgeschichte]], [[Liebesgott]], [[Liebesgöttin]], [[Liebesheirat]], [[Liebeskomödie]], [[Liebeskugeln]], [[Liebeskummer]], [[Liebeskunst]], [[Liebesleben]], [[Liebeslied]], [[Liebeslohn]], [[Liebeslyrik]], [[Liebesmüh]], [[Liebesmühe]], [[Liebesnacht]], [[Liebesnest]], [[Liebespaar]], [[Liebespärchen]], [[Liebespein]], [[Liebesperlen]], [[Liebesqual]], [[Liebesroman]], [[Liebesschwur]], [[Liebesspiel]], [[Liebesszene]], [[Liebestat]], [[Liebestod]], [[liebestoll]], [[Liebestöter]], [[Liebestrank]], [[Liebesverhältnis]], [[Liebesverlust]], [[Liebeswahn]], [[Liebeswerben]], [[Liebeszauber]], [[liebevoll]], [[Liebhaber]], [[Liebling]], [[lieblos]], [[verlieben]], [[Verliebtheit]]
+:Adjektive: [[lieb]], [[liebebedürftig]], [[liebedienerisch]], [[liebestoll]], [[liebevoll]], [[lieblos]]
+:Substantive: [[Geliebte]], [[Geliebter]], [[Liebedienerei]], [[Liebelei]], [[Liebesabenteuer]], [[Liebesaffäre]], [[Liebesakt]], [[Liebesapfel]], [[Liebesbedürfnis]], [[Liebesbeweis]], [[Liebesbeziehung]], [[Liebesbrief]], [[Liebesdichtung]], [[Liebesdienerin]], [[Liebesdienst]], [[Liebesdinge]], [[Liebesentzug]], [[Liebeserklärung]], [[Liebeserlebnis]], [[Liebesfilm]], [[Liebesgedicht]], [[Liebesgeschichte]], [[Liebesgott]], [[Liebesgöttin]], [[Liebesheirat]], [[Liebeskomödie]], [[Liebeskugeln]], [[Liebeskummer]], [[Liebeskunst]], [[Liebesleben]], [[Liebeslied]], [[Liebeslohn]], [[Liebeslyrik]], [[Liebesmüh]], [[Liebesmühe]], [[Liebesnacht]], [[Liebesnest]], [[Liebespaar]], [[Liebespärchen]], [[Liebespein]], [[Liebesperlen]], [[Liebesqual]], [[Liebesroman]], [[Liebesschloss]], [[Liebesschwur]], [[Liebesspiel]], [[Liebesszene]], [[Liebestat]], [[Liebestod]], [[Liebestöter]], [[Liebestrank]], [[Liebesverhältnis]], [[Liebesverlust]], [[Liebeswahn]], [[Liebeswerben]], [[Liebeszauber]], [[Liebhaber]], [[Liebling]], [[Verliebtheit]]
+:Verben: [[lieben]], [[verlieben]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{sq}}: [1] {{Ü|sq|dashuri}}
 *{{ar}}: [1] {{Üt|ar|حب|haba}}
@@ -105,25 +107,27 @@
 *{{ga}}: [1] {{Ü|ga|grá}}
 *{{is}}: [1] {{Ü|is|ást}}
 *{{it}}: [1] {{Ü|it|amore}} {{m}}
-*{{ja}}: [1] {{Üt|ja|愛|あい, ai}}, {{Üt|ja|愛情|あいじょう, aijô}}; [2] {{Üt|ja|恋|こい, koi}}; [3] {{Üt|ja|恋愛|れんあい, ren'ai}},
+*{{ja}}: [1] {{Üt|ja|愛|あい, ai}}, {{Üt|ja|愛情|あいじょう, aijô}}; [2] {{Üt|ja|恋|こい, koi}}; [3] {{Üt|ja|恋愛|れんあい, ren'ai}}
 *{{ca}}: [1] {{Ü|ca|afecte}} {{m}}, {{Ü|ca|amor}} {{m}}
 *{{ko}}: [1] {{Üt|ko|사랑|sa-rang}}
 *{{ku}}: [1] {{Ü|ku|evîn}}
-|Ü-rechts=
+*{{lo}}: [1] {{Üt|lo|ຄວາມຮັກ|}}
 *{{la}}: [1] {{Ü|la|amor}} {{m}}; [2] {{Ü|la|libido}}; [3] {{Ü|la|coitus}}
+|Ü-rechts=
 *{{lt}}: [1] {{Ü|lt|meilė}}
-*{{lus}}: [1] {{Ü|lus|hmangaihna}}
 *{{lb}}: [1] {{Ü|lb|Léift}} {{f}}
+*{{lus}}: [1] {{Ü|lus|hmangaihna}}
 *{{nl}}: [1, 8] {{Ü|nl|liefde}} {{f}}
 *{{no}}: [1] {{Ü|no|kjærlighet}}
 *{{oc}}: [1] {{Ü|oc|afeccion}} {{f}}, {{Ü|oc|amor}} {{m}}
-*{{fa}}: [1] {{Üt|fa|عشق|shq}}
+*{{fa}}: [1] {{Üt|fa|عشق|ɛʃɢ}}
+*{{pdt}}: [1] {{Ü|pdt|Leew}} {{f}}
 *{{pl}}: [1–3, 5, 8] {{Ü|pl|miłość}} {{f}}
 *{{pt}}: [1, 2, 8] {{Ü|pt|amor}}
-*{{ro}}: [1] {{Ü|ro|iubire}}
-*{{ru}}: [1, 2, 3] {{Üt|ru|любовь|lûbóv'}} {{f}}
+*{{ro}}: [1] {{Ü|ro|iubire}}, {{Ü|ro|dragoste}} {{f}}
+*{{ru}}: [1–3] {{Üt|ru|любовь|lûbóv'}} {{f}}
 *{{sv}}: [1, 2] {{Ü|sv|kärlek}}; [3] {{Ü|sv|sex}}; [4] {{Ü|sv|kärleksaffär}}; [5–8] {{Ü|sv|kärlek}}
-*{{sr}}: [1] {{Üt|sr|љубав|ljubav}}
+*{{sr}}: [1] {{Üt|sr|љубав|ljubav}} {{f}}
 *{{sl}}: [1] {{Ü|sl|ljubezen}}
 *{{wen}}:
 **{{hsb}}: [1] {{Ü?|hsb|lubosć}} {{f}}
@@ -131,38 +135,42 @@
 *{{sw}}: [1] {{Ü|sw|upendo}}
 *{{tg}}: [1] {{Üt|tg|ишқ|iškˌ}}
 *{{cs}}: [1–6, 8] {{Ü|cs|láska}} {{f}}
-*{{tr}}: [1] {{Ü|tr|sevgi}}
+*{{tr}}: [1] {{Ü|tr|aşk}}; [2] {{Ü|tr|sevgi}}
 *{{uk}}: [1] {{Üt|uk|любов|lyubov}}
 *{{hu}}: [1–3] {{Ü|hu|szerelem}}
 |Dialekttabelle=
-*Bayrisch: ''Liab''
+*{{bar}}: [?] {{Ü?|bar|Liab}}
 |D-rechts=
-*Schweizerdeutsch: ''Liäbi,'' ''Liebi''
+*{{gsw}}: [?] {{Ü?|gsw|Liäbi}}, {{Ü?|gsw|Liebi}}
 }}
 
 {{Referenzen}}
-:[1, 2] {{Wikipedia|Liebe}}
-:[1, 2] Wikiquote-Artikel „[http://de.wikiquote.org/wiki/Liebe Liebe]”
+:[1, 2] {{Wikipedia}}
+:[1] {{Ref-Grimm}}
+:[1–3, 7, 8] {{Ref-DWDS}}
+:[*] {{Ref-Canoo}}
+:[*] {{Ref-UniLeipzig}}
+:[1–8] {{Ref-Duden}}
+:[1–3, 5, 7, 8] {{Ref-wissen.de|Wörterbuch}}
+:[1, 2] {{Ref-wissen.de|Lexikon}}
+:[1–3, 8] {{Ref-PONS}}
+:[*] {{Ref-OWID|elexiko|64996}}
+:[*] {{Wikiquote}}
 :[1–3, 4–8] {{Lit-Duden: Universalwörterbuch|A=4}}, „Liebe“, Seite 1018
-:* {{Ref-Grimm|Liebe}}
-:* {{Ref-DWDS|Liebe}}
-:* {{Ref-Canoo|Liebe}}
-:* {{Ref-UniLeipzig|Liebe}}
 
-{{Quellen|}}
-
-'''Siehe auch:''' „[[Ich liebe Dich]]“ in verschiedenen Sprachen
+{{Quellen}}
 
 === {{Wortart|Substantiv|Deutsch}}, {{f}}, {{Wortart|Toponym|Deutsch}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Liebe
+|Genus=f
+|Nominativ Singular=Liebe
 |Nominativ Plural=—
-|Genitiv Singular=der Liebe
+|Genitiv Singular=Liebe
 |Genitiv Plural=—
-|Dativ Singular=der Liebe
+|Dativ Singular=Liebe
 |Dativ Plural=—
-|Akkusativ Singular=die Liebe
+|Akkusativ Singular=Liebe
 |Akkusativ Plural=—
 }}
 
@@ -180,7 +188,7 @@
 {{Beispiele}}
 :[1] {{Beispiele fehlen}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{fr}}: [1] {{Ü|fr|}}
 |Ü-rechts=
@@ -190,48 +198,4 @@
 {{Referenzen}}
 :[1] {{Wikipedia|Liebe (Begriffsklärung)|Liebe}}
 
-{{Ähnlichkeiten}}
-:[[Diebe]], [[Hiebe]], [[lebe]], [[lieb]], [[lieben]], [[lieber]], [[Liede]], [[liefe]], [[Liegen]], [[liege]], [[Libido]], [[Siebe]], [[siebe]]
-:''Anagramme:'' [[Beile]]
-
-[[af:Liebe]]
-[[ar:Liebe]]
-[[chr:Liebe]]
-[[cs:Liebe]]
-[[da:Liebe]]
-[[el:Liebe]]
-[[en:Liebe]]
-[[et:Liebe]]
-[[eu:Liebe]]
-[[fa:Liebe]]
-[[fi:Liebe]]
-[[fr:Liebe]]
-[[gl:Liebe]]
-[[hu:Liebe]]
-[[hy:Liebe]]
-[[io:Liebe]]
-[[it:Liebe]]
-[[ja:Liebe]]
-[[ka:Liebe]]
-[[ko:Liebe]]
-[[ku:Liebe]]
-[[lb:Liebe]]
-[[lt:Liebe]]
-[[mg:Liebe]]
-[[mi:Liebe]]
-[[mn:Liebe]]
-[[nl:Liebe]]
-[[no:Liebe]]
-[[pl:Liebe]]
-[[pt:Liebe]]
-[[ro:Liebe]]
-[[ru:Liebe]]
-[[sm:Liebe]]
-[[sr:Liebe]]
-[[sv:Liebe]]
-[[tg:Liebe]]
-[[th:Liebe]]
-[[tl:Liebe]]
-[[tr:Liebe]]
-[[uz:Liebe]]
-[[zh:Liebe]]
+{{Ähnlichkeiten 1|[[Diebe]], [[Hiebe]], [[lebe]], [[lieb]], [[lieben]], [[lieber]], [[Liede]], [[liefe]], [[Liegen]], [[liege]], [[Libido]], [[Siebe]], [[siebe]]|Anagramme=[[Beile]]}}

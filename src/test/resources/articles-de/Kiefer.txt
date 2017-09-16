@@ -2,14 +2,15 @@
 === {{Wortart|Substantiv|Deutsch}}, {{f}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Kiefer
-|Nominativ Plural=die Kiefern
-|Genitiv Singular=der Kiefer
-|Genitiv Plural=der Kiefern
-|Dativ Singular=der Kiefer
-|Dativ Plural=den Kiefern
-|Akkusativ Singular=die Kiefer
-|Akkusativ Plural=die Kiefern
+|Genus=f
+|Nominativ Singular=Kiefer
+|Nominativ Plural=Kiefern
+|Genitiv Singular=Kiefer
+|Genitiv Plural=Kiefern
+|Dativ Singular=Kiefer
+|Dativ Plural=Kiefern
+|Akkusativ Singular=Kiefer
+|Akkusativ Plural=Kiefern
 |Bild=Pinus syluestriformis (Takenouchi)T.Wang ex Cheng.JPG|250|1|''Kiefern''
 }}
 
@@ -17,19 +18,19 @@
 :Kie·fer, {{Pl.}} Kie·fern
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈkiːfɐ}}, {{Pl.}} {{Lautschrift|ˈkiːfɐn}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈkiːfɐ}}
+:{{Hörbeispiele}} {{Audio|De-Kiefer.ogg}}
 :{{Reime}} {{Reim|iːfɐ|Deutsch}}
 
 {{Bedeutungen}}
-:[1] ''[[Botanik]]:'' [[Nadelbaum]] der Gattung ''Pinus'' (zum Beispiel ''Pinus sylvestris'', Kiefer oder Föhre)
-:[2] [[Holz]] aus Kiefern
+:[1] {{K|Botanik}} [[Nadelbaum]] der Gattung ''Pinus'' (zum Beispiel ''Pinus sylvestris'', Kiefer oder Föhre)
+:[2] [[Holz]] aus [1]
 
 {{Abkürzungen}}
 :[[Ki]]
 
 {{Herkunft}}
-:seit dem 15. Jahrhundert bezeugt; mittelhochdeutsch: ''*kienvore''; althochdeutsch: ''kienforaha,'' Zusammensetzung von ''[[Kien]]'' und [[Föhre]] mit der Bedeutung „Föhre, die als Kienspäne brauchbar ist“ <ref>{{Lit-Duden: Herkunftswörterbuch|A=4}}, Seite 404.</ref> <ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}} Seite 486.</ref>
+:seit dem 15. Jahrhundert bezeugt; mittelhochdeutsch: ''*kienvore''; althochdeutsch: ''kienforaha,'' Zusammensetzung von ''[[Kien]]'' und [[Föhre]] mit der Bedeutung „Föhre, die als Kienspäne brauchbar ist“ <ref>{{Lit-Duden: Herkunftswörterbuch|A=4}}, Seite 404.</ref><ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}} Seite 486.</ref>
 
 {{Synonyme}}
 :[1] [[Föhre]]
@@ -42,39 +43,49 @@
 :[2] [[Holzart]], [[Holz]]
 
 {{Unterbegriffe}}
-:[1] [[Latsche]] ''(P. mugo)'', [[Pinie]] ([[Schirmkiefer]], ''P. pinea''), [[Schwarzkiefer]] ''(P. nigra)'', [[Zirbelkiefer]]
+:[1] [[Gemeine Kiefer]], [[Latsche]] ''(P. mugo)'', [[Latschenkiefer]], [[Pinie]] ([[Schirmkiefer]], ''P. pinea''), [[Schwarzkiefer]] ''(P. nigra)'', [[Waldkiefer]] ''(Pinus sylvestris)'', [[Zirbelkiefer]]
+:[1] [[Rotföhre]]
 
 {{Beispiele}}
 :[1] Die ''Kiefer'' gehört zu den Nadelbäumen.
 
 {{Wortbildungen}}
-:[[Kiefernholz]], [[Kiefernnadel]], [[Kiefernsamen]], [[Kiefernspanner]], [[Kiefernspinner]], [[Kiefernstamm]], [[Kiefernwald]], [[Kiefernzapfen]]
+:[1] [[Kiefernnadel]], [[Kiefernsamen]], [[Kiefernspinner]], [[Kiefernstamm]], [[Kiefernwald]], [[Kiefernzapfen]]
+:[2] [[Kiefernholz]], [[Kiefernspanner]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-*{{bg}}: [1] {{Ü|bg|бор}}
+*{{bg}}: [1] {{Üt|bg|бор|bor}}
 *{{da}}: [1] {{Ü|da|fyr}}
 *{{en}}: [1] {{Ü|en|pine}}
+*{{et}}: [1] {{Ü|et|mänd}}
 *{{fo}}: [1] {{Ü|fo|furuviður}}, {{Ü|fo|fura}}
 *{{fi}}: [1] {{Ü|fi|mänty}}
 *{{fr}}: [1] {{Ü|fr|pin}} {{m}}
-*{{el}}: [1] {{Üt|el|πεύκη|peúkē, pévki}}
+*{{ka}}: [1] {{Üt|ka|ფიჭვი|}}
+*{{el}}: [1] {{Üt|el|πεύκο|péfko}}
 *{{is}}: [1] {{Ü|is|fura}}
+*{{it}}: [1] {{Ü|it|pino}} {{m}}
 *{{ja}}: [1] {{Üt|ja|松|マツ, matsu}}
 *{{ca}}: [1] {{Ü|ca|pi roig}} {{m}}, {{Ü|ca|pi rojal}} {{m}}, {{Ü|ca|pi rojalet}} {{m}}
 *{{ko}}: [1] {{Üt|ko|소나무|sonamu}}
-|Ü-rechts=
 *{{lv}}: [1] {{Ü|lv|priede}}
+|Ü-rechts=
 *{{lt}}: [1] {{Ü|lt|pušis}}
+*{{nds}}: [1] {{Ü|nds|Fuhr}} {{f}}
 *{{nl}}: [1] {{Ü|nl|pijn}}
-*{{pl}}: [1, 2] {{Ü|pl|sosna}} {{f}}, [2] {{Ü|pl|sośnina}} {{f}}
+*{{no}}: [1] {{Ü|no|furu}} {{f}}
+*{{pl}}: [1, 2] {{Ü|pl|sosna}} {{f}}; [2] {{Ü|pl|sośnina}} {{f}}
 *{{pt}}: [1] {{Ü|pt|pinheiro}} {{m}}
 *{{ru}}: [1] {{Üt|ru|сосна|sosná}}
+*{{gd}}: [1] {{Ü|gd|giuthas}} {{m}}
 *{{sv}}: [1] {{Ü|sv|tall}}, {{Ü|sv|fura}}; [2] {{Ü|sv|furu}}, {{Ü|sv|fur}}, {{Ü|sv|furuträ}}
 *{{sl}}: [1] {{Ü|sl|bor}}, {{Ü|sl|borovec}} {{m}}
 *{{es}}: [1, 2] {{Ü|es|pino}} {{m}}
 *{{cs}}: [1] {{Ü|cs|borovice}}
 *{{tr}}: [1] {{Ü|tr|çam}}
+*{{hu}}: [1] {{Ü|hu|erdeifenyő}}
+*{{cy}}: [1] {{Ü|cy|pinwydden}} {{f}}
 |Dialekttabelle=
 *{{als}}:
 ** Schwäbisch: Fohr
@@ -85,42 +96,42 @@
 }}
 
 {{Referenzen}}
-:[1] {{Wikipedia|Kiefer}}
-:[1] {{Ref-Grimm|Kiefer|id=GK04311}}
-:[1] {{Ref-DWDS|Kiefer}}
-:[1] {{Ref-Canoo|Kiefer}}
-:[1] {{Ref-UniLeipzig|Kiefer}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Grimm|id=GK04311}}
+:[1] {{Ref-DWDS}}
+:[1] {{Ref-Canoo}}
+:[1] {{Ref-UniLeipzig}}
 
-{{Quellen|}}
-
-{{----}}
+{{Quellen}}
 
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Kiefer
-|Nominativ Plural=die Kiefer
-|Genitiv Singular=des Kiefers
-|Genitiv Plural=der Kiefer
-|Dativ Singular=dem Kiefer
-|Dativ Plural=den Kiefern
-|Akkusativ Singular=den Kiefer
-|Akkusativ Plural=die Kiefer
+|Genus=m
+|Nominativ Singular=Kiefer
+|Nominativ Plural=Kiefer
+|Genitiv Singular=Kiefers
+|Genitiv Plural=Kiefer
+|Dativ Singular=Kiefer
+|Dativ Plural=Kiefern
+|Akkusativ Singular=Kiefer
+|Akkusativ Plural=Kiefer
+|Bild=Human_jawbone_num.JPG|mini|1|ein Unter''kiefer'' eines Menschen
 }}
 
 {{Worttrennung}}
 :Kie·fer, {{Pl.}} Kie·fer
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈkiːfɐ}}, {{Pl.}} {{Lautschrift|ˈkiːfɐ}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈkiːfɐ}}
+:{{Hörbeispiele}} {{Audio|De-Kiefer.ogg}}
 :{{Reime}} {{Reim|iːfɐ|Deutsch}}
 
 {{Bedeutungen}}
-:[1] ''[[Anatomie]]:'' zum [[kauen|Kauen]] dienender [[knöchern]]er Teil des [[Gesichtschädel]]s, Träger der [[Zahn|Zähne]]
+:[1] {{K|Anatomie}} zum [[kauen|Kauen]] dienender [[knöchern]]er Teil des [[Gesichtschädel]]s, Träger der [[Zahn|Zähne]]
 
 {{Herkunft}}
-:mittelhochdeutsch: ''kiver,'' ''kivel,'' ''kiuwel''; gemeingermanisches Wort; altschwedisch: ''kiæpter,'' altisländisch: ''kiaptr,'' altenglisch: ''ceafl,'' altsächsisch: ''kaflos'' (Plural); zu der indogermanischen Wortwurzel: ''*geph-,'' ''*gebh-'' = Kiefer, [[Mund]] gebildet <ref>{{Lit-Duden: Herkunftswörterbuch|A=4}}, Seite 404.</ref> <ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}} Seite 486.</ref>
+:mittelhochdeutsch: ''kiver,'' ''kivel,'' ''kiuwel''; gemeingermanisches Wort; altschwedisch: ''kiæpter,'' altisländisch: ''kiaptr,'' altenglisch: ''ceafl,'' altsächsisch: ''kaflos'' (Plural); zu der indogermanischen Wortwurzel: ''*geph-,'' ''*gebh-'' = Kiefer, [[Mund]] gebildet <ref>{{Lit-Duden: Herkunftswörterbuch|A=4}}, Seite 404.</ref><ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}} Seite 486.</ref>
 
 {{Synonyme}}
 :[1] [[Kieferknochen]]
@@ -137,15 +148,18 @@
 {{Wortbildungen}}
 :[[Kieferanomalie]], [[Kieferbruch]], [[Kieferchirurgie]], [[Kieferfraktur]], [[Kiefergelenk]], [[Kieferhöhle]], [[Kieferklemme]], [[Kieferknochen]], [[Kieferorthopädie]], [[Kieferspalte]], [[Kiefersperre]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
+*{{da}}: [1] {{Ü|da|kæbe}} {{u}}
 *{{en}}: [1] {{Ü|en|jaw}}, {{Ü|en|jowl}}
+*{{fo}}: [1] {{Ü|fo|kjálki}} {{m}}
 *{{fr}}: [1] {{Ü|fr|mâchoire}} {{f}}
 *{{it}}: [1] {{Ü|it|mascella}} {{f}}
 *{{ca}}: [1] {{Ü|ca|mandíbula}} {{f}}
 *{{ko}}: [1] {{Üt|ko|턱|toek}}
-*{{pl}}: [1] {{Ü|pl|szczęka}} {{f}}
 |Ü-rechts=
+*{{no}}: [1] {{Ü|no|kjeve}} {{m}}
+*{{pl}}: [1] {{Ü|pl|szczęka}} {{f}}
 *{{pt}}: [1] {{Ü|pt|mandíbula}} {{f}}, {{Ü|pt|maxilar}} {{m}}
 *{{ru}}: [1] {{Üt|ru|челюсть|tschéljust’}} {{f}}
 *{{sv}}: [1] {{Ü|sv|käke}}
@@ -154,36 +168,12 @@
 }}
 
 {{Referenzen}}
-:[1] {{Wikipedia|Kiefer}}
-:[1] {{Ref-Grimm|Kiefer|id=GK04309}}
-:[1] {{Ref-DWDS|Kiefer}}
-:[1] {{Ref-Canoo|Kiefer}}
-:[1] {{Ref-UniLeipzig|Kiefer}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Grimm|id=GK04309}}
+:[1] {{Ref-DWDS}}
+:[1] {{Ref-Canoo}}
+:[1] {{Ref-UniLeipzig}}
 
 {{Quellen}}
 
-{{Ähnlichkeiten}}
-:[[Kiffer]], [[Küfer]]
-
-[[chr:Kiefer]]
-[[cs:Kiefer]]
-[[el:Kiefer]]
-[[en:Kiefer]]
-[[es:Kiefer]]
-[[fi:Kiefer]]
-[[fr:Kiefer]]
-[[gl:Kiefer]]
-[[hu:Kiefer]]
-[[id:Kiefer]]
-[[io:Kiefer]]
-[[ko:Kiefer]]
-[[ku:Kiefer]]
-[[mg:Kiefer]]
-[[nah:Kiefer]]
-[[pl:Kiefer]]
-[[pt:Kiefer]]
-[[ru:Kiefer]]
-[[sr:Kiefer]]
-[[sv:Kiefer]]
-[[tr:Kiefer]]
-[[zh:Kiefer]]
+{{Ähnlichkeiten 1|[[Kiffer]], [[Küfer]]}}

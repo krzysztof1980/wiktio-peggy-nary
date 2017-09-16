@@ -2,14 +2,17 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Zug
-|Nominativ Plural=die Züge
-|Genitiv Singular=des Zuges<br />des Zugs
-|Genitiv Plural=der Züge
-|Dativ Singular=dem Zug<br />dem Zuge
-|Dativ Plural=den Zügen
-|Akkusativ Singular=den Zug
-|Akkusativ Plural=die Züge
+|Genus=m
+|Nominativ Singular=Zug
+|Nominativ Plural=Züge
+|Genitiv Singular=Zuges
+|Genitiv Singular*=Zugs
+|Genitiv Plural=Züge
+|Dativ Singular=Zug
+|Dativ Singular*=Zuge
+|Dativ Plural=Zügen
+|Akkusativ Singular=Zug
+|Akkusativ Plural=Züge
 |Bild=Indian Pacific Bellevue, Western Australia-small.jpg|210px|1|Ein ''Zug''
 }}
 
@@ -17,37 +20,38 @@
 :Zug, {{Pl.}} Zü·ge
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ʦuːk}}, {{Pl.}} {{Lautschrift|ˈʦyːɡə}}
-:{{Hörbeispiele}} {{Audio|DE-Zug.ogg|Zug}} {{Audio|By-Zug.ogg|Zug (Bayrisch)}}, {{Pl.}} {{Audio|De-Züge.OGG|Züge}}
+:{{IPA}} {{Lautschrift|ʦuːk}}
+:{{Hörbeispiele}} {{Audio|DE-Zug.ogg|Zug}} {{Audio|By-Zug.ogg|Zug (Bayrisch)}}
 :{{Reime}} {{Reim|uːk|Deutsch}}
 
 {{Bedeutungen}}
 :[1] mehrere hintereinander gekoppelte [[Fahrzeug]]e (speziell auf [[Schiene]]n)
-:[2] ''[[Physik]], [[Mechanik]]:'' Kraft, die in eine bestimmte Richtung zieht
+:[2] {{K|Mechanik|Physik}} Kraft, die in eine bestimmte Richtung zieht
 :[3] das Einwirken auf etwas, um es zu sich hin zu bewegen; gegen die Kräfte des Festhaltens oder des inneren Zusammenhalts wirkende Kraft
 :[4] [[Luftzug]]; starker [[Luftdurchgang]] (vor allem in [[Gebäude]]n)
-:[5] ''[[Spiel]]e:'' Bewegen einer Brettspielfigur von einem [[Feld]] auf ein anderes
-:[6] ''[[Menschenführung]]:'' kleinere Organisationseinheiten in einer Hierarchie
-::[a] ''[[Militär]]:'' drittgrößte Gliederungsform einer militärischen [[Teileinheit]]
-::[b] ''[[Feuerwehr]]:'' größte reguläre taktische [[Einheit]] bestehend aus zwei Gruppen
-::[c] ''[[Technisches Hilfswerk]]:'' eigenständige Einsatzverbände
-::[d] ''[[Hilfsorganisation]]:'' eine taktische Einheit des [[ziviler Bevölkerungsschutz|zivilen Bevölkerungsschutzes]]
+:[5] {{K|[[Spiel]]e}} Bewegen einer Brettspielfigur von einem [[Feld]] auf ein anderes
+:[6] {{K|Menschenführung}} kleinere Organisationseinheiten in einer Hierarchie
+::[a] {{K|Militär}} drittgrößte Gliederungsform einer militärischen [[Teileinheit]]
+::[b] {{K|Feuerwehr}} größte reguläre taktische [[Einheit]] bestehend aus zwei Gruppen
+::[c] {{K|Technisches Hilfswerk}} eigenständige Einsatzverbände
+::[d] {{K|Hilfsorganisation}} eine taktische Einheit des [[ziviler Bevölkerungsschutz|zivilen Bevölkerungsschutzes]]
 :[7] [[Wanderung]]
 ::[a] ''speziell:'' von [[Vogel|Vögeln]]
 :[8] das [[einatmen|Einatmen]] ([[Atemzug]]), das [[Rauchen]] ([[inhalieren]]) oder das [[schlucken|Schlucken]] beim [[trinken|Trinken]]
-:[9] ''bei Festen, kurz für:'' [[Umzug]]
+:[9] Personengruppe bei feierlichen oder fröhlichen Anlässen auf einem gemeinsamen Weg
 :[10] charakteristische Form der Linie
 ::[a] beim Schriftbild, bei einer Zeichnung
 ::[b] im Gesicht, Gesichtsschnitt ([[Gesichtszug]])
 ::[c] ''übertragen:'' Eigenart, Eigenschaft ([[Charakterzug]])
 :[11] spiralförmige Rille im [[Lauf]] von [[Feuerwaffe]]n
 :[12] Vorrichtung, die durch Ziehen ein Ereignis auslöst
-:[13] ''kurz für:'' [[Feldzug]], [[Kriegszug]]
+:[13] Unternehmung mit Waffeneinsatz
 
 {{Abkürzungen}}
 :[6a] [[Zg]]
 
-{{QS Herkunft|fehlt}}
+{{Herkunft}}
+:[[mittelhochdeutsch]] ''{{Ü|gmh|zuc}}'', ''{{Ü|gmh|zug}}'', [[althochdeutsch]] ''{{Ü|goh|zug}}'' ‚[[Bewegung]], [[Ziehen]]‘, [[westgermanisch]] ''{{Ü|gmw|tugi-}}'' ‚Zug‘, belegt seit dem 11.&nbsp;Jahrhundert<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: ‚Zug‘, Seite 1018.</ref>, nach Pfeifer seit dem 9.&nbsp;Jahrhundert<ref>{{Literatur|Autor=Wolfgang Pfeifer [Leitung]|Titel=Etymologisches Wörterbuch des Deutschen|Auflage=2. durchgesehene und erweiterte |Verlag=Deutscher Taschenbuch Verlag|Ort=München|Jahr=1993|ISBN=3-423-03358-4}}, Stichwort ‚Zug‘.</ref>; 16.&nbsp;Jahrhundert in den Bedeutungen ‚ziehende Menschengruppe‘ (zuerst im militärischen Bereich) und ‚Luftzug‘, 19.&nbsp;Jahrhundert ‚[[Eisenbahnzug]]‘.<ref>{{Lit-Duden: Herkunftswörterbuch|A=5 (neu bearbeitet)}}, Stichwort ''Zug''.</ref>
 
 {{Synonyme}}
 :[1] [[Bahn]], [[Eisenbahn]], [[Eisenbahnzug]]
@@ -60,14 +64,17 @@
 :[7] [[Tour]]
 :[7a] [[Vogelzug]]
 :[8] [[Atemzug]], [[Lungenzug]]
-:[9] [[Festumzug]], [[Festzug]], [[Umzug]]
+:[9] [[Umzug]]
 :[10a] [[Schriftzug]]
 :[10b] [[Gesichtszug]]
 :[10c] [[Charakterzug]], [[Wesenszug]]
 
+{{Sinnverwandte Wörter}}
+:[6a] [[Peloton]]
+
 {{Gegenwörter}}
 :[2] [[Druckkraft]]
-:[6a] [[Trupp]], [[Gruppe]]
+:[6a] [[Gruppe]], [[Trupp]]
 
 {{Oberbegriffe}}
 :[1] [[Fortbewegungsmittel]]
@@ -77,21 +84,29 @@
 :[6a] [[Teileinheit]]
 
 {{Unterbegriffe}}
-:[1] [[Anschlusszug]], [[Eisenbahnzug]], [[Güterzug]], [[Hochgeschwindigkeitszug]], [[Lastzug]], [[Müllzug]], [[Munitionszug]], [[Nachtzug]], [[Nahverkehrszug]], [[Pullmanzug]], [[Reisezug]], [[Schnellzug]], [[Sonderzug]], [[Straßenbahnzug]], [[Wendezug]]
-:[5] [[Schachzug]]
+:[1] [[Abendzug]], [[Achtuhrzug]], [[Anschlusszug]], [[Bummelzug]], [[Direktzug]], [[Durchgangszug]] ([[D-Zug]]), [[Eisenbahnzug]], [[Flüchtlingszug]], [[Güterzug]], [[Hochgeschwindigkeitszug]], [[Lastzug]], [[Lazarettzug]], [[Linienzug]], [[Militärzug]], [[Mittagzug]]/[[Mittagszug]], [[Morgenzug]], [[Müllzug]], [[Munitionszug]], [[Nachtzug]], [[Nahverkehrszug]], [[Proviantzug]], [[Pullmanzug]], [[Reisezug]], [[Schnellzug]], [[Sonderzug]], [[Straßenbahnzug]], [[Transportzug]] (→ [[Autotransportzug]]), [[Vorortzug]], [[Wendezug]]
+:[1, 5] [[Gegenzug]]
+:[3] [[Klimmzug]]
+:[5] [[Abgabezug]], [[Schachzug]]
+:[6] [[Proviantzug]]
+:[7] [[Fischzug]], [[Freischärlerzug]], [[Saubannerzug]]
 :[7a] [[Durchzug]], [[Heimzug]], [[Wegzug]]
-:[9] [[Demonstrationszug]], [[Festzug]], [[Karnevalszug]], [[Siegeszug]], [[Triumphzug]]
+:[9] [[Demonstrationszug]], [[Festumzug]], [[Festzug]], [[Karnevalszug]], [[Leichenzug]], [[Siegeszug]], [[Streifzug]], [[Trauerzug]], [[Triumphzug]], [[Umzug]]
 :''übertragen:'' [[Beutezug]], [[Eroberungszug]], [[Feldzug]], [[Geleitzug]], [[Kreuzzug]], [[Kriegszug]], [[Raubzug]]
 :''übertragen:'' [[Straßenzug]]
+:[12] [[Flaschenzug]], [[Lösezug]]
+:[13] [[Beutezug]], [[Feldzug]], [[Kriegszug]], [[Raubzug]]
 
 {{Beispiele}}
 :[1] Dies ist der ''Zug'' nach nirgendwo.
+:[1] „Ich könnte ein halbes Buch mit den Trümpfen und Vergnügungen vollschreiben, die eine Fahrt in einem ''Zug'' bereithält.“<ref>{{Literatur | Autor=Andreas Altmann | Titel= Gebrauchsanweisung für die Welt |TitelErg=| Verlag= Piper| Ort= München/Berlin/Zürich |Auflage= 8.| Jahr= 2016 | ISBN=978-3-492-27608-5 | Seiten=93. Erstauflage 2012.}}</ref>
 :[2] Der Balken wird hier mit 5000 Newton auf ''Zug'' belastet.
 :[2] Das Drahtseil war dem ''Zug'' nicht gewachsen.
 :[3] Ein ''Zug'' am Seil – und die Falltür geht auf!
 :[4] Der ''Zug'' kann Erkältungen bewirken.
 :[5] Beim Schach wird der erste ''Zug'' oft mit einem Bauern gemacht.
 :[6] Ein ''Zug'' besteht aus drei Gruppen. Der Lösch''zug'' besteht aus drei Fahrzeugen.
+:[6a] „Die Vorposten meldeten mit einiger Verspätung, daß der Pfad von einem ''Zug'' berittener Gendarmen aus Reni blockiert wäre und sonst alles in Ordnung sei.“<ref>{{Literatur | Autor=Eugen Uricaru | Titel=Scheiterhaufen und Flamme | Verlag=Verlag der Nation | Ort=Berlin | Auflage=1. | Jahr=1984 | ISBN=3-88680-500-X | Seiten=293. }}</ref>
 :[7] Auf ihrem ''Zug'' durch die Vororte erbeuteten die Einbrecher wertvollen Schmuck.
 :[7a] Störche sieht man auf dem ''Zuge'' über dem Bosporus.
 :[8] Er hat einen guten ''Zug.''
@@ -122,65 +137,64 @@
 :[2] auf ''Zug'' [[belasten]]
 
 {{Wortbildungen}}
-:{{Wortbildung|Adjektive|:}}
+:{{Wortbildung|Adjektive}}
 :[4] [[zugig]], [[zügig]]
-:{{Wortbildung|Substantive|:}}
-:[1] [[Aufzug]], [[Zugausfall]], [[Zugfahrt]], [[Zugführer]], [[Zugmaschine]], [[Zugpersonal]], [[Zugtoilette]], [[Zugunglück]], [[Zugverbindung]], [[Zugverkehr]], [[Zugverspätung]]
-:[2] [[Zugbelastung]], [[Zugbrücke]], [[Zugkraft]]
-:[5] [[Abgabezug]], [[Schachzug]], [[Zugfolge]]
-:[7] [[Fischzug]], [[Freischärlerzug]], [[Saubannerzug]]
+:{{Wortbildung|Substantive}}
+:[[Gebirgszug]]
+:[1] [[Aufzug]], [[Vorzug]], [[Zugabteil]], [[Zugausfall]], [[Zugbeeinflussung]] (→ [[Zugbeeinflussungssystem]]), [[Zugfahren]], [[Zugfahrt]], [[Zugführer]], [[Zuggarnitur]], [[Zugmaschine]], [[Zugpersonal]], [[Zugleitsystem]], [[Zugtoilette]], [[Zugtunnel]], [[Zugunglück]], [[Zugverbindung]], [[Zugverkehr]], [[Zugverspätung]]
+:[2] [[Zugbelastung]], [[Zugbrücke]], [[Zugkraft]], [[Zugochse]], [[Zugpferd]], [[Zugtier]]
+:[5] [[Zugfolge]]
 :[11] [[Zugkaliber]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-*{{ar}}: [1] {{Üt|ar|قطار|qṭạr}}
-*{{bg}}: [1] {{Üt|bg|влак|wlak}}
+*{{ar|DMG}}
+**{{MHA}}: [1] {{Üxx4|ar|قطار|d=qiṭār|DMG=0|v=قِطَار}}
+*{{bg}}: [1] {{Üt|bg|влак|vlak}}
+*{{da}}: [1] {{Ü|da|tog}} {{n}}
 *{{en}}: [1] {{Ü|en|train}}; [3] {{Ü|en|traction}}; [4] {{Ü|en|breath}}, {{Ü|en|draught}}, {{Ü|en|draft}}, {{Ü|en|drag}}; [5] {{Ü|en|move}}; [6] {{Ü|en|platoon}}; [7] {{Ü|en|tour}}, {{Ü|en|march}}; [7a] {{Ü|en|migration}}, {{Ü|en|passage}}; [10] {{Ü|en|feature}}; [11] {{Ü|en|groove}}
 *{{eo}}: [1] {{Ü|eo|vagonaro}}; [4] {{Ü|eo|trablovo}}
+*{{fo}}: [1] {{Ü|fo|tok}} {{n}}
 *{{fi}}: [1] {{Ü|fi|juna}}; [3] {{Ü|fi|veto}}; [4] {{Ü|fi|veto}}
 *{{fr}}: [1] {{Ü|fr|train}} {{m}}; [3] {{Ü|fr|traction exercée}} {{f}}; [4] {{Ü|fr|courant d'air}} {{m}}; [5] {{Ü|fr|mouvement}} {{m}}; [6] {{Ü|fr|section}} {{f}}; [7a] {{Ü|fr|migration}} {{f}}; [8] {{Ü|fr|gorgée}} {{f}} ''(Schluck),'' {{Ü|fr|bouffée}} {{f}} ''(Rauchen),'' {{Ü|fr|souffle}} {{m}} ''(Atemzug);'' [9] {{Ü|fr|cortège}} {{m}}; [10] {{Ü|fr|trait}} {{m}}; [10b] {{Ü|fr|trait du visage}} {{m}}; [10c] {{Ü|fr|trait de caractère}} {{m}}; [13] {{Ü|fr|campagne}} {{f}}
 *{{el}}: [1] {{Üt|el|τρένο|tréno}} {{n}}
+*{{is}}: [1] {{Ü|is|lest}} {{f}}, {{Ü|is|járnbrautarlest}} {{f}}
 *{{it}}: [1] {{Ü|it|treno}}; [4] {{Ü|it|corrente d'aria}}; [5] {{Ü|it|mossa}}; [6] {{Ü|it|sezione}}; [7a] {{Ü|it|volo}}; [8] {{Ü|it|tirata}} ''(Rauchen),'' {{Ü|it|boccata}} ''(Rauchen),'' {{Ü|it|sorso}} ''Schluck);'' [9] {{Ü|it|processione}}, {{Ü|it|corteo}}; [10b] {{Ü|it|lineamento}}; [10c] {{Ü|it|tratto}}
 *{{ja}}: [1] {{Üt|ja|列車|れっしゃ, ressha}}; {{Üt|ja|トレーン|torên}}, {{Üt|ja|電車|でんしゃ, densha}} ''(elektr.),'' {{Üt|ja|汽車|きしゃ, kisha}} ''(Dampf)''
+|Ü-rechts=
 *{{ca}}: [1] {{Ü|ca|tren}} {{m}}
 *{{nl}}: [1] {{Ü|nl|trein}} {{m}}
 *{{no}}:
-**{{nb}}: [1] {{Ü|nb|tog}} {{n}}; [4, 5, 7] {{Ü|nb|trekk}} {{n}};
-|Ü-rechts=
+**{{nb}}: [1] {{Ü|nb|tog}} {{n}}; [4, 5, 7] {{Ü|nb|trekk}} {{n}}
 *{{pl}}: [1] {{Ü|pl|pociąg}} {{m}}
-*{{pt}}: [1] ''Brasilien:'' {{Ü|pt|trem}}, ''Portugal:'' {{Ü|pt|comboio}}; [3] {{Ü|pt|puxada}}, {{Ü|pt|tração}}; [4] {{Ü|pt|corrente de ar}}; [5] {{Ü|pt|lance}}; [6] {{Ü|pt|pelotão}}; [7] {{Ü|pt|marcha}}, [7a] {{Ü|pt|bandada}}; [8] {{Ü|pt|chupada}} ''(Rauchen),'' {{Ü|pt|trago}} ''(Schluck),'' {{Ü|pt|fôlego}} ''(Atemzug);'' [9] {{Ü|pt|cortejo}}, {{Ü|pt|procissão}}, {{Ü|pt|préstito}} ''(Leichenzug );'' [10b] {{Ü|pt|traço}}; [10c] {{Ü|pt|rasgo}}
+*{{pt}}: [1] ''Brasilien:'' {{Ü|pt|trem}}, ''Portugal:'' {{Ü|pt|comboio}}; [3] {{Ü|pt|puxada}}, {{Ü|pt|tração}}; [4] {{Ü|pt|corrente de ar}}; [5] {{Ü|pt|lance}}; [6] {{Ü|pt|pelotão}}; [7] {{Ü|pt|marcha}}; [7a] {{Ü|pt|bandada}}; [8] {{Ü|pt|chupada}} ''(Rauchen),'' {{Ü|pt|trago}} ''(Schluck),'' {{Ü|pt|fôlego}} ''(Atemzug);'' [9] {{Ü|pt|cortejo}}, {{Ü|pt|procissão}}, {{Ü|pt|préstito}} ''(Leichenzug );'' [10b] {{Ü|pt|traço}}; [10c] {{Ü|pt|rasgo}}
 *{{rm}}: [1] {{Ü|rm|tren}}; [6] {{Ü|rm|secziun}}
-*{{ru}}: [1] {{Üt|ru|поезд|pojésd}} {{m}}; [4] {{Üt|ru|сквозняк|skvoznjak}} {{m}}
-*{{sv}}: [1] {{Ü|sv|tåg}} {{n}}; [8] {{Ü|sv|bloss}} {{n}}; [9] {{Ü|sv|procession}} {{u}}, {{Ü|sv|tåg}} {{n}}
+*{{ru}}: [1] {{Üt|ru|поезд|pojésd}} {{m}}; [4] {{Üt|ru|сквозняк|skvoznjak}} {{m}}; [10] {{Üt|ru|черта|čerta}} {{f}}
+*{{sv}}: [1] {{Ü|sv|tåg}} {{n}}; [2–4] {{Ü|sv|drag}} {{n}}; [8] {{Ü|sv|bloss}} {{n}}; [9] {{Ü|sv|procession}} {{u}}, {{Ü|sv|tåg}} {{n}}
 *{{es}}: [1] {{Ü|es|tren}}; [2] {{Ü|es|tracción}}; [3] {{Ü|es|tensión}}; [4] {{Ü|es|corriente de aire}}; [5] {{Ü|es|jugada}}; [6] {{Ü|es|pelotón}}; [7] {{Ü|es|marcha}}; [7a] {{Ü|es|bandada}}; [8] {{Ü|es|calada}} ''(Rauchen),'' {{Ü|es|trago}} ''(Schluck),'' {{Ü|es|aliento}} ''(Atemzug);'' [9] {{Ü|es|cortejo}}, {{Ü|es|procesión}}; [10a] {{Ü|es|trazo}} [10b] {{Ü|es|facciones}}; [10c] {{Ü|es|rasgo}}; [11] {{Ü|es|ranura}}
 *{{cs}}: [1] {{Ü|cs|vlak}}; [2,5,7,10a,13] {{Ü|cs|tah}}; [3] {{Ü|cs|tažení}}; [4] {{Ü|cs|průvan}}; [8] {{Ü|cs|vtažení}} ''(Rauchen),'' {{Ü|cs|hlt}} ''(Schluck),'' {{Ü|cs|nádechnutí}} ''(Atemzug);'' [9] {{Ü|cs|průvod}}; [10b,10c] {{Ü|cs|rys}}; [11] {{Ü|cs|drážka}}
 *{{tr}}: [1] {{Ü|tr|tren}}; [3] {{Ü|tr|çekim}}, {{Ü|tr|çekme}}; [4] {{Ü|tr|ceyran}}; [5] {{Ü|tr|hamle}}; [6] {{Ü|tr|manga}}; [8] {{Ü|tr|nefes}} ''(Atemzug);'' [9] {{Ü|tr|taşınma}}; [10b] {{Ü|tr|hat}}; [10c] {{Ü|tr|huy}}
+*{{hu}}: [1] {{Ü|hu|vonat}}; [4] {{Ü|hu|huzat}}; [5] {{Üt|hu|lépés|játékban}}; [6] {{Üt|hu|szakasz|harcászat}}; [7] {{Ü|hu|vonulás}}; [10] {{Ü|hu|vonás}}
 }}
 
 {{Referenzen}}
-:[1, 4–7, 10] {{Wikipedia|Zug}}
+:[1, 4–7, 10] {{Wikipedia}}
 :[1] {{Wikipedia|Zug (Eisenbahn)}}
 :[6a] {{Wikipedia|Zug (Militär)}}
 :[11] {{Wikipedia|Zug (Waffe)}}
-:[1–10, 12, 13] {{Ref-Grimm|Zug}}
-:[1–10, 12, 13] {{Ref-DWDS|Zug}}
-:[1, 2, 4, 9, 10] {{Ref-Canoo|Zug}}
-:[1, 4, 6, 8–10] {{Ref-UniLeipzig|Zug}}
-:[1-8, 10] {{Ref-FreeDictionary|Zug}}
-:[1-6, 8, 10-12] {{Ref-Duden|Zug Wagenreihe Kolonne Kraft}}
-:[1-3, 5, 6, 8, 10-12] {{Ref-wissen.de|Wörterbuch|Zug}}
+:[1–10, 12, 13] {{Ref-Grimm}}
+:[1–10, 12, 13] {{Ref-DWDS}}
+:[1, 2, 4, 9, 10] {{Ref-Canoo}}
+:[1, 4, 6, 8–10] {{Ref-UniLeipzig}}
+:[1-8, 10] {{Ref-FreeDictionary}}
+:[1–6, 8, 10–12] {{Ref-Duden|Zug Wagenreihe Kolonne Kraft}}
+:[1–3, 5, 6, 8, 10-12] {{Ref-wissen.de|Wörterbuch}}
+
+{{Quellen}}
 
 === {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Toponym|Deutsch}} ===
 
-{{Deutsch Substantiv Übersicht
-|Nominativ Singular=<small>(das)</small> Zug
-|Nominativ Plural=—
-|Genitiv Singular=<small>(des)</small> Zugs<br /><small>(des)</small> Zuges
-|Genitiv Plural=—
-|Dativ Singular=<small>(dem)</small> Zug
-|Dativ Plural=—
-|Akkusativ Singular=<small>(das)</small> Zug
-|Akkusativ Plural=—
+{{Deutsch Toponym Übersicht
 |Bild 1=Wappen Zug matt.svg|100px|1|Wappen des Kantons ''Zug''
 |Bild 2=Zoug-ville-blason.svg|100px|2|Wappen der Stadt ''Zug''
 |Bild 3=Wappen at lech.png|100px|4|Wappen der Stadt ''Zug''
@@ -220,7 +234,7 @@
 
 {{Absatz}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{fr}}: [1] {{Ü|fr|Zoug}}
 *{{it}}: [1] {{Ü|it|Zugo}}
@@ -242,32 +256,3 @@
 :[2] {{Ref-wissen.de|Wörterbuch|zug-stadt|Zug (Stadt)}}
 
 {{Ähnlichkeiten 1|[[Bug]], [[Fug]], [[Lug]], [[Zeug]], [[zig]], [[zog]], [[zum]], [[zur]]}}
-
-[[br:Zug]]
-[[chr:Zug]]
-[[cs:Zug]]
-[[cy:Zug]]
-[[da:Zug]]
-[[el:Zug]]
-[[en:Zug]]
-[[et:Zug]]
-[[eu:Zug]]
-[[fi:Zug]]
-[[fr:Zug]]
-[[hu:Zug]]
-[[id:Zug]]
-[[io:Zug]]
-[[ja:Zug]]
-[[ko:Zug]]
-[[ku:Zug]]
-[[mg:Zug]]
-[[nl:Zug]]
-[[no:Zug]]
-[[pl:Zug]]
-[[pt:Zug]]
-[[ru:Zug]]
-[[sv:Zug]]
-[[tl:Zug]]
-[[ug:Zug]]
-[[uz:Zug]]
-[[zh:Zug]]

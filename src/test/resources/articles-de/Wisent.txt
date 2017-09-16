@@ -2,14 +2,15 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Wisent
-|Nominativ Plural=die Wisente
-|Genitiv Singular=des Wisents
-|Genitiv Plural=der Wisente
-|Dativ Singular=dem Wisent
-|Dativ Plural=den Wisenten
-|Akkusativ Singular=den Wisent
-|Akkusativ Plural=die Wisente
+|Genus=m
+|Nominativ Singular=Wisent
+|Nominativ Plural=Wisente
+|Genitiv Singular=Wisents
+|Genitiv Plural=Wisente
+|Dativ Singular=Wisent
+|Dativ Plural=Wisenten
+|Akkusativ Singular=Wisent
+|Akkusativ Plural=Wisente
 |Bild=Wisent.jpg|210px|1|ein männlicher ''Wisent''
 }}
 
@@ -17,17 +18,17 @@
 :Wi·sent, {{Pl.}} Wi·sen·te
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈviːzɛnt}}, {{Pl.}} {{Lautschrift|ˈviːˌzɛntə}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈviːzɛnt}}
+:{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
 :[1] eine europäische Bisonart (''Bison bonasus'')
 
 {{Abkürzungen}}
-:[1] ''(wissenschaftlich)'' B. bonasus
+:[1] ''wissenschaftlich:'' [[B. bonasus]]
 
 {{Herkunft}}
-:[1] bezeugt im [[Mittelhochdeutsch]]en ''wisent,'' im [[Althochdeutsch]]en ''wisunt,'' ''wisant''; entstammt seinerseits dem [[Germanisch]]en ''*wisand,'' ''*wisund,'' ''*wisunt,'' möglicherweise in der [[Bedeutung]] „[[stinken]]d“, nach dem [[Moschus]][[Geruch|geruch]], den Wisente während der Brunftzeit verströmen<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=21}}: Wisent</ref>
+:bezeugt im [[Mittelhochdeutsch]]en ''wisent,'' im [[Althochdeutsch]]en ''wisunt,'' ''wisant''; entstammt seinerseits dem [[Germanisch]]en ''*wisand,'' ''*wisund,'' ''*wisunt,'' möglicherweise in der [[Bedeutung]] „[[stinken]]d“, nach dem [[Moschus]][[Geruch|geruch]], den Wisente während der Brunftzeit verströmen<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=21}}: Wisent</ref>
 
 {{Synonyme}}
 :[1] [[Europäischer Bison]]
@@ -40,23 +41,22 @@
 
 {{Unterbegriffe}}
 :[1] [[Bergwisent]] ''(Bison bonasus caucasicus)'', [[Flachlandwisent]] ''(Bison bonasus bonasus)'', [[Ungarischer Wisent]] ''(Bison bonasus hungarorum)'', [[Karpatenwisent]] ''(Bison bonasus hungarorum)'', [[Kaukasuswisent]] ''(Bison bonasus caucasicus)''
-
-'''Verwandte Begriffe'''
-:[1] [[Bisent]]: Hybrid aus Wisent und [[Bison|Bison [2]]]
-:[1] [[Zubron]]: Hybrid aus Wisent und [[Hausrind]]
+:[1] ''Verwandte Begriffe:''
+::[[Bisent]]: Hybrid aus Wisent und [[Bison|Bison [2]]]
+::[[Zubron]]: Hybrid aus Wisent und [[Hausrind]]
 
 {{Beispiele}}
 :[1] Der ''Wisent'' ist Europas schwerstes und größtes Landsäugetier und zudem der letzte Vertreter der Wildrindarten des europäischen Kontinents.
 
 {{Wortbildungen}}
-:[1] [[Wisentherde]], [[Wisentkuh]], [[Wisentstier]], [[Wisentbulle]], [[Wisentkalb]], [[Wisentgehege]], [[Wisentbestand]], [[Wisenthorn]]
+:[[Wisentherde]], [[Wisentkuh]], [[Wisentstier]], [[Wisentbulle]], [[Wisentkalb]], [[Wisentgehege]], [[Wisentbestand]], [[Wisenthorn]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{af}}: [1] {{Ü|af|europese buffel}}
 *{{bg}}: [1] {{Üt|bg|зубър|zubăr}}
-*{{zh-cn}}: [1] {{Üt|zh|欧洲野牛|ōuzhōuyěniú}}
 *{{zh-tw}}: [1] {{Üt|zh|歐洲野牛|ōuzhōuyěniú}}
+*{{zh-cn}}: [1] {{Üt|zh|欧洲野牛|ōuzhōuyěniú}}
 *{{da}}: [1] {{Ü|da|visent}}
 *{{en}}: [1] {{Ü|en|wisent}}
 *{{eo}}: [1] {{Ü|eo|visento}}
@@ -70,15 +70,15 @@
 |Ü-rechts=
 *{{lt}}: [1] {{Ü|lt|stumbras}}
 *{{nl}}: [1] {{Ü|nl|wisent}}
+*{{dsb}}: [1] {{Ü|dsb|wizent}} {{m}}
 *{{no}}: [1] {{Ü|no|visent}}
+*{{hsb}}: [1] {{Ü|hsb|zubr evropský}} {{m}}
 *{{pl}}: [1] {{Ü|pl|żubr}}
 *{{pt}}: [1] {{Ü|pt|wisent}}, {{Ü|pt|bisonte-europeu}}, {{Ü|pt|bisâo-europeu}}
 *{{ro}}: [1] {{Ü|ro|zimbru}}
 *{{ru}}: [1] {{Üt|ru|зубр|zubr}}
 *{{sv}}: [1] {{Ü|sv|visent}}
 *{{sk}}: [1] {{Ü|sk|zubor}}
-*{{dsb}}: [1] {{Ü|dsb|wizent}} {{m}}
-*{{hsb}}: [1] {{Ü|hsb|zubr evropský}} {{m}}
 *{{es}}: [1] {{Ü|es|bisonte europeo}} {{m}}
 *{{cs}}: [1] {{Ü|cs|zubr}}
 *{{hu}}: [1] {{Ü|hu|bölény}}
@@ -94,17 +94,4 @@
 
 {{Quellen}}
 
-{{Ähnlichkeiten}}
-:[[Wiesen]], [[wissend]], [[Bisent]]
-
-[[chr:Wisent]]
-[[cs:Wisent]]
-[[en:Wisent]]
-[[fr:Wisent]]
-[[io:Wisent]]
-[[lt:Wisent]]
-[[nl:Wisent]]
-[[pl:Wisent]]
-[[ro:Wisent]]
-[[sv:Wisent]]
-[[zh:Wisent]]
+{{Ähnlichkeiten 1|[[Wiesen]], [[wissend]], [[Bisent]]}}

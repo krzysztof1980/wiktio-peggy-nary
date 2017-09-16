@@ -1,10 +1,17 @@
 == Suchende ({{Sprache|Deutsch}}) ==
-=== {{Wortart|Substantiv|Deutsch}}, ''adjektivische Deklination,'' {{f}} ===
+=== {{Wortart|Substantiv|Deutsch}}, {{f}}, ''adjektivische Deklination'' ===
 
-{{Deutsch adjektivische Deklination f|Suchende}}
+{{Deutsch adjektivisch Übersicht
+|Genus=f
+|Stamm=Suchende
+}}
 
 {{Worttrennung}}
 :Su·chen·de, {{Pl.}} Su·chen·den
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
 :[1] weibliche Person, die etwas oder jemanden sucht
@@ -18,7 +25,7 @@
 {{Beispiele}}
 :[1] Sie halfen der ''Suchenden,'' bis sie ihr Handy fanden.
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 *{{fr}}: [1] {{Ü|fr|}}

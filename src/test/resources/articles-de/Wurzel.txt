@@ -1,0 +1,156 @@
+== Wurzel ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Wurzel
+|Nominativ Plural=Wurzeln
+|Genitiv Singular=Wurzel
+|Genitiv Plural=Wurzeln
+|Dativ Singular=Wurzel
+|Dativ Plural=Wurzeln
+|Akkusativ Singular=Wurzel
+|Akkusativ Plural=Wurzeln
+|Bild 1=Roots by cesarpb.jpg|210px|1|Wurzeln der ''Rhizophora mangle''
+|Bild 2=Root symbol.svg|210px|3|Wurzelzeichen
+}}
+
+{{Worttrennung}}
+:Wur·zel, {{Pl.}} Wur·zeln
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈvʊʁʦl̩}}
+:{{Hörbeispiele}} {{Audio|De-Wurzel.ogg}}
+:{{Reime}} {{Reim|ʊʁʦl̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{K|Botanik}} Organ, mit dem sich Pflanzen auf oder im Untergrund verankern und Nährstoffe aufnehmen
+:[2] Ort oder Sache, aus dem etwas oder jemand hervorgegangen ist
+:[3] {{K|Mathematik}} kurz für [[Quadratwurzel]]; siehe auch Wurzel<sup>[4]</sup>
+:[4] {{K|Mathematik}} [[Zahl]], die sich aus dem [[Wurzelziehen]], oder auch [[Radizieren]], ergibt
+:[5] {{K|Graphentheorie|Mathematik}} der oberste Knoten in einem [[Baum]]
+:[6] ''norddeutsch'' für die [[Möhre]]
+:[7] {{K|Allgemeine Linguistik}} Grundform eines [[Wort]]es; Ausgangsform für [[Flexion]] und [[Wortbildung]]
+:[8] {{K|Historiolinguistik}} belegte oder rekonstruierte historische Grundform eines Wortes
+
+{{Symbole}}
+:[3, 4] <math>\sqrt{\;\;}</math>
+
+{{Synonyme}}
+:[2] [[Abstammung]], [[Herkunft]], [[Ursprung]]
+:[3] [[Quadratwurzel]]
+:[4] [[Radix]]
+:[5] [[Wurzelknoten]]
+:[6] [[Möhre]], [[Mohrrübe]], [[Karotte]]
+:[7] [[Primitivum]], [[Radix]], [[Stamm]], [[Stammwort]], [[Wurzelwort]]
+:[7, 8] [[Wortwurzel]]
+
+{{Gegenwörter}}
+:[1] [[Rhizom]]
+:[3] [[Quadrat]]
+:[7] [[Derivat]]([[Derivatum|um]])
+:[7, 8] [[Stamm]], [[Wortstamm]]
+
+{{Verkleinerungsformen}}
+:[[Würzelchen]], [[Würzlein]]
+
+{{Oberbegriffe}}
+:[5] [[Knoten]]
+:[6] [[Gemüse]], [[Nahrungsmittel]], [[Lebensmittel]]
+
+{{Unterbegriffe}}
+:[1] [[Baumwurzel]]
+:[4] [[Quadratwurzel]], [[Kubikwurzel]]
+
+{{Beispiele}}
+:[1] Löwenzahn hat relativ tiefe ''Wurzeln.''
+:[2] Dort liegen meine ''Wurzeln.''
+:[3] Neun mal neun ist 81, die ''Wurzel'' aus 81 ist also neun.
+:[4] Drei hoch vier ist 81, die vierte ''Wurzel'' aus 81 ist also drei.
+:[6] Heute gibt's Erbsen und ''Wurzeln.''
+:[7] „Hund“ ist die ''Wurzel'' für Wörter wie „Hunde“, „Hundes“, „hündisch“.
+:[7] „Denn die Lautung sag in unserem Beispiel ist unzweifelhaft eine Einheit, ohne doch »Wort« oder »Bildungssilbe« zu sein; wir nennen so etwas gewöhnlich »''Wurzel''«, geraten aber in Verlegenheit, wenn wir eine genaue Bestimmung dieses Begriffs geben sollen (…).“<ref>Walter Porzig: ''Das Wunder der Sprache. Probleme, Methoden und Ergebnisse der modernen Sprachwissenschaft.'' Dritte Auflage. Francke, Bern/München 1962, Seite 102. Kursiv gedruckt: ''sag.''</ref>
+:[8] Indogermanisch ''*kap-'' ‚halten, packen‘ ist die ''Wurzel,'' auf die unter anderem die deutschen Wörter „haben“ und „heben“ zurückgeführt werden können.
+:[8] „Aus einer hebräischen ''Wurzel'' können im Jiddischen auf verschiedene Weise Verben gebildet werden.“<ref>{{Literatur | Autor=Roland Gruschka |Herausgeber=Monika Grübel, Peter Honnen |Titel= Westjiddisch an Rhein und Main und im übrigen Europa |Sammelwerk=Jiddisch im Rheinland | Verlag= Klartext | Ort=Essen | Jahr=2013 | Seiten=15-40, Zitat Seite 19.| ISBN=978-3-8375-0886-4}}</ref>
+
+{{Redewendungen}}
+:[1] [[die Axt an die Wurzel legen]]
+:[1] das Übel [[an der Wurzel packen]]
+:[2] [[Wurzeln schlagen]]
+:[2] [[zu seinen Wurzeln zurückkehren]]
+:[2] [[die Wurzel alles Bösen]], [[die Wurzel allen Übels]]
+
+{{Charakteristische Wortkombinationen}}
+:[3, 4] [[berechnen]], [[ziehen]]
+:[5] [[Binärbaum]]
+
+{{Wortbildungen}}
+:[1] [[Flachwurzel]], [[Luftwurzel]], [[Pfahlwurzel]], [[Wurzelgnom]], [[Wurzelsepp]], [[Wurzelstock]], [[Wurzelzwerg]]
+:[1] [[Brechwurzel]], [[Schwarzwurzel]]
+:[1, 2] [[entwurzeln]], [[wurzeln]], [[verwurzelt]]
+:[3, 4] [[Kubikwurzel]], [[Quadratwurzel]], [[Wurzelexponent]]
+:[5] [[Wurzelelement]]
+:[7] [[Wurzelmorphem]]
+:[7, 8] [[Wortwurzel]]
+
+{{Absatz}}
+==== {{Übersetzungen}} ====
+*[6] siehe [[Möhre]] oder [[Karotte]]
+{{Ü-Tabelle|Ü-links=
+*{{bg}}: [1] {{Üt|bg|корен|kóren}} {{m}}
+*{{en}}: [1, 2, 4, 5] {{Ü|en|root}}; [3] {{Ü|en|square root}}
+*{{eo}}: [1] {{Ü|eo|radiko}}
+*{{fr}}: [1, 2, 4] {{Ü|fr|racine}} {{f}}; [3] {{Ü|fr|racine carrée}} {{f}}
+*{{el}}: [1, 2, 3, 4, 5, 7, 8] {{Üt|el|ρίζα|ríza}} {{f}}
+*{{io}}: [1–3] {{Ü|io|radiko}}
+*{{ia}}: [1-4] {{Ü|ia|radice}}; [3] {{Ü|ia|radice quadrate}}
+*{{is}}: [3] {{Ü|is|kvaðratrót}}
+*{{it}}: [1] {{Ü|it|radice}}
+*{{ja}}: [1] {{Üt|ja|根|ね, ne}}
+*{{kn}}: [1] {{Üt|kn|ಬೇರು|bēru}}
+*{{ca}}: [1–5] {{Ü|ca|arrel}} {{f}}
+*{{la}}: [1] {{Ü|la|radix}}
+*{{ml}}: [1] {{Üt|ml|വേര്|vēr}}
+*{{nds}}: [1–6] {{Ü|nds|Woddel}}, {{Ü|nds|Wuddel}}
+*{{nl}}: [1] {{Ü|nl|wortel}}
+*{{no}}:
+**{{nb}}: [1–5, 7, 8?] {{Ü|nb|rot}} {{m}} {{f}}; [6] {{Ü|nb|gulrot}} {{m}}
+**{{nn}}: [1–5, 7, 8?] {{Ü|nn|rot}} {{f}}; [6] {{Ü|nn|gulrot}} {{f}}
+|Ü-rechts=
+*{{oc}}: [1–5, 7] {{Ü|oc|arraïc}} ([[aranesisch]])
+*{{pdt}}: [1] {{Ü|pdt|Wartel}} {{f}}
+*{{pl}}: [1–2,5] {{Ü|pl|korzeń}} {{m}}; [3–4] {{Ü|pl|pierwiastek}} {{m}}; [7–8] {{Ü|pl|rdzeń}} {{m}}
+*{{pt}}: [1, 2, 4] {{Ü|pt|raiz}}; [3] {{Ü|pt|}}
+*{{ru}}: [1, 3, 4] {{Üt|ru|корень|kóren}} {{m}}
+*{{sv}}: [1–4] {{Ü|sv|rot}} {{u}}
+*{{sr}}: [1] {{Üt|sr|корен|koren}}
+*{{sl}}: [1] {{Ü|sl|korenina}} {{f}}; [3] {{Ü|sl|koren}} {{m}}
+*{{wen}}:
+**{{dsb}}: [1] {{Ü|dsb|kórjeń}} {{m}}, {{Ü|dsb|kóruš}} {{m}}
+**{{hsb}}: [1] {{Ü|hsb|korjeń}} {{m}}; [3] {{Ü|hsb|radiks}} {{m}}
+*{{es}}: [1] {{Ü|es|raíz}}
+*{{ta}}: [1] {{Üt|ta|வேர்|vēr}}
+*{{te}}: [1] {{Üt|te|వేరు|vēru}}
+*{{cs}}: [1] {{Ü|cs|kořen}} {{m}}; [2] {{Ü|cs|kořeny}} {{m}} ''pl''; [3] {{Ü|cs|odmocnítko}} {{n}}; [4] {{Ü|cs|odmocnina}}; [7] {{Ü|cs|kořen}} {{m}}
+*{{hu}}: [1] {{Ü|hu|gyökér}}; [3, 4] {{Ü|hu|gyök}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Wurzel (Pflanze)}}
+:[3] {{Wikipedia|Quadratwurzel}}
+:[4] {{Wikipedia|Wurzel (Mathematik)}}
+:[5] {{Wikipedia|Wurzel (Graphentheorie)}}
+:[7] {{Wikipedia|Wurzel (Linguistik)}}
+:[1, 4, 6, 8] {{Ref-DWDS|Wurzel}}
+:[1] {{Ref-Canoo|Wurzel}}
+:[1, 3, 4] {{Ref-UniLeipzig|Wurzel}}
+:[1–4, 8] {{Ref-FreeDictionary|Wurzel}}
+:[7] {{Ref-Grimm|Wurzel|id=GW29476}}
+:[7, 8] Hadumod Bußmann: ''Lexikon der Sprachwissenschaft.'' 3., aktualisierte und erweiterte Auflage. Kröner, Stuttgart 2002. Stichwort: „Wurzel“. ISBN 3-520-45203-0.
+:[7, 8] Helmut Glück (Hrsg.), unter Mitarbeit von Friederike Schmöe: ''Metzler Lexikon Sprache.'' Dritte, neubearbeitete Auflage, Stichwort: „Wurzel“. Metzler, Stuttgart/ Weimar 2005. ISBN 978-3-476-02056-7.
+:[7, 8] Theodor Lewandowski: ''Linguistisches Wörterbuch''. 4., neu bearbeitete Auflage Quelle & Meyer, Heidelberg 1985, Stichwort: „Wurzel“. ISBN 3-494-02050-7.
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+[[Wurt]] [[-wurz]], [[Würze]]

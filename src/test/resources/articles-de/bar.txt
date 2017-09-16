@@ -22,7 +22,7 @@
 :[2] mit [[Geld]]
 
 {{Herkunft}}
-:mittelhochdeutsch und althochdeutsch ''bar''; aus germanisch ''*baza-'' „[[bar]], [[bloß]]“, dieses aus indogermanisch ''*b<sup>h</sup>oso-'' mit der gleichen Bedeutung. Zahlreiche verwandte Wörter in anderen indogermanischen Sprachen. Man nimmt an, dass ein indogermanischer Verb ''*b<sup>h</sup>es-/ *b<sup>h</sup>sā/ *psā-'' mit der Bedeutung „[[reiben]], [[abreiben]]“ zugrundeliegt. Die Bedeutung entwickelt sich demnach von abgerieben zu nackt, bloß. Daraus entstehen die Bedeutungen „ohne etwas“ (wie in ''bar jeder Einsicht'') und „offen vor Augen liegend“ (schon im Mittelhochdeutsch auf Geld bezogen).<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Seite 89.</ref>
+:mittelhochdeutsch und althochdeutsch ''bar''; aus germanisch ''*baza-'' „[[bar]], [[bloß]]“, dieses aus indogermanisch ''*b<sup>h</sup>oso-'' mit der gleichen Bedeutung. Das Wort ist seit dem 10. Jahrhundert belegt. Zahlreiche verwandte Wörter in anderen indogermanischen Sprachen. Man nimmt an, dass ein indogermanisches Verb <nowiki>*</nowiki>''b<sup>h</sup>es-/ *b<sup>h</sup>sā/ *psā-'' mit der Bedeutung „[[reiben]], [[abreiben]]“ zugrundeliegt. Die Bedeutung entwickelt sich demnach von abgerieben zu nackt, bloß. Daraus entstehen die Bedeutungen „ohne etwas“ (wie in ''bar jeder Einsicht'') und „offen vor Augen liegend“ (schon im Mittelhochdeutsch auf Geld bezogen).<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: ''bar'', Seite 89.</ref>
 
 {{Synonyme}}
 :[1] [[bloß]], [[nackt]], [[unbedeckt]]
@@ -45,11 +45,12 @@
 
 {{Wortbildungen}}
 :[1] [[barbusig]], [[barfuß]], [[barhäuptig]]
-:[2] [[Bareinlage]], [[Bares]], [[Barzahlung]]
+:[2] [[Bareinlage]], [[Bares]], [[Bargeld]], [[Barzahlung]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|bare}}
+*{{el}}: [2] {{Üt|el|τοις μετρητοίς|tis metritís}}, {{Üt|el|σε μετρητά|se metritá}}
 *{{nl}}: [2] {{Ü|nl|contant}}, {{Ü|nl|cash}}
 |Ü-rechts=
 *{{sv}}: [1] {{Ü|sv|bar}}, {{Ü|sv|ren}}; [2] {{Ü|sv|kontant}}
@@ -57,13 +58,15 @@
 }}
 
 {{Referenzen}}
-:[1] {{Wikipedia|bar}}
-:[1] {{Ref-Grimm|bar}}
-:[1] {{Ref-DWDS|bar}}
-:[1] {{Ref-Canoo|bar}}
-:[1] {{Ref-UniLeipzig|bar}}
-:[1] {{Ref-FreeDictionary|bar}}
-{{Referenzen prüfen|Deutsch}}
+:[1, 2] {{Wikipedia|bar}}
+:[*] {{Ref-Grimm|bar}}
+:[*] {{Ref-DWDS|bar}}
+:[*] {{Ref-Canoo|bar}}
+:[] {{Ref-UniLeipzig|bar}}
+:[1, 2] {{Ref-FreeDictionary|bar}}
+:[1, 2] {{Ref-Duden|bar_Adjektiv}}
+
+{{Quellen}}
 
 === {{Wortart|Präposition|Deutsch}}, auch Postposition ===
 
@@ -76,7 +79,7 @@
 :{{Reime}} {{Reim|aːɐ̯|Deutsch}}
 
 {{Bedeutungen}}
-:[1] ''mit [[Genitiv]]'' [[ohne]]
+:[1] ''mit [[Genitiv]]:'' [[ohne]]
 
 {{Herkunft}}
 :[1] wie oben Adjektiv ''bar''
@@ -90,7 +93,7 @@
 {{Beispiele}}
 :[1] ''bar'' jeder Vernunft, jeden Anstandes ''bar''
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 |Ü-rechts=
@@ -98,20 +101,19 @@
 }}
 
 {{Referenzen}}
-:[1] {{Wikipedia|bar}}
-:[1] {{Ref-Grimm|bar}}
 :[1] {{Ref-DWDS|bar}}
-:[1] {{Ref-Canoo|bar}}
-:[1] {{Ref-UniLeipzig|bar}}
-:[1] {{Ref-FreeDictionary|bar}}
+:[(1)] {{Ref-FreeDictionary|bar}}
 {{Referenzen prüfen|Deutsch}}
+:[1] {{Ref-Grimm|bar}}
+:[1] {{Ref-UniLeipzig|bar}}
 
 == bar ({{Sprache|Italienisch}}) ==
 === {{Wortart|Substantiv|Italienisch}}, {{m}} ===
 
 {{Italienisch Substantiv Übersicht
-|Singular=il bar
-|Plural=i bar
+|Genus=m
+|Singular=bar
+|Plural=bar
 }}
 
 {{Worttrennung}}
@@ -128,12 +130,12 @@
 :[4] ''[[Physik]]:'' das [[Bar]]: Maßeinheit für den Druck
 
 {{Unterbegriffe}}
-:[1] [[barista#Substantiv.2C_m|barista]] {{m}} ([[Barmann]])
+:[1] [[barista#Substantiv, m|barista]] {{m}} ([[Barmann]])
 
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=Italienisch}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 :{{Übersetzungen umleiten|1|Bar}}
 :{{Übersetzungen umleiten|2|Café}}, {{Übersetzungen umleiten||Straßencafé}}
@@ -200,7 +202,7 @@
 {{Wortbildungen}}
 :[1] [[barowy]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 :{{Übersetzungen umleiten|1|Bar|1}} {{f}}
 :{{Übersetzungen umleiten|2|Bar|}} {{f}}, {{Übersetzungen umleiten||Tresen|}} {{m}}, {{Übersetzungen umleiten||Theke|}} {{f}}
@@ -259,7 +261,7 @@
 {{Wortbildungen}}
 :[1] [[barowy]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 :{{Übersetzungen umleiten|1|Barium|1}} {{n}}
 |Ü-rechts=
@@ -313,7 +315,7 @@
 {{Beispiele}}
 :[1]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 :{{Übersetzungen umleiten|1|Bar|1}} {{n}}
 |Ü-rechts=
@@ -328,67 +330,51 @@
 
 {{Quellen}}
 
+== bar ({{Sprache|Spanisch}}) ==
+=== {{Wortart|Substantiv|Spanisch}}, {{m}} ===
+
+{{Spanisch Substantiv Übersicht
+|Genus=m
+|Plural=bares
+}}
+
+{{Worttrennung}}
+:bar
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|baɾ}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] Räumlichkeit zum Ausschank und zur Einnahme von Getränken
+:[2] ''[[Physik]]:'' Maßeinheit für den Druck, das [[Bar]]
+
+{{Unterbegriffe}}
+:[1] [[bar de alterne]] ''(Animierkneipe)'', [[bar del hotel]] ''(Hotelbar)'', [[bar de refrescos]] ''(Erfrischungsbar)'', [[bar habitual]] ''(Stammlokal)'', [[mueble bar]] ''(Hausbar)''
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen|spr=es}}
+
+{{Wortbildungen}}
+:[1] [[camarera de bar]] ''(Bardame)'', [[coche bar]] ''(Büfetwagen)'', [[dueño de un bar]] ''(Barbesitzer)'', [[taburete de bar]] ''(Barhocker)''
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{de}}: [1] [[Bar]], [[Erfrischungshalle]], [[Erfrischungsraum]], [[Kneipe]], [[Schankstube]], [[Schenke]], [[Trinkhalle]]; [2] [[Bar]]
+|Ü-rechts=
+*{{fr}}: [1] {{Ü|fr|}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-DIX|bar}}
+:[1] {{Ref-Leo|es|bar}}
+:[1] {{Ref-Pons|es|bar}}
+:[1] {{Ref-Beolingus|es|bar}}
+:[1] {{Ref-Pauker|SP|bar}}
+:[1, 2] {{Ref-DLE|bar}}
+:[1] {{Ref-SpanishDict|bar}}
+
 {{Ähnlichkeiten}}
 :[[Bar]], [[bar-]], [[bare]], [[bat]], [[par]]
 
-[[ar:bar]]
-[[br:bar]]
-[[bs:bar]]
-[[chr:bar]]
-[[cs:bar]]
-[[cy:bar]]
-[[da:bar]]
-[[el:bar]]
-[[en:bar]]
-[[es:bar]]
-[[et:bar]]
-[[eu:bar]]
-[[fa:bar]]
-[[fi:bar]]
-[[fj:bar]]
-[[fr:bar]]
-[[gl:bar]]
-[[hr:bar]]
-[[hu:bar]]
-[[hy:bar]]
-[[id:bar]]
-[[io:bar]]
-[[is:bar]]
-[[it:bar]]
-[[ja:bar]]
-[[jbo:bar]]
-[[jv:bar]]
-[[kk:bar]]
-[[kn:bar]]
-[[ko:bar]]
-[[ku:bar]]
-[[la:bar]]
-[[li:bar]]
-[[lt:bar]]
-[[lv:bar]]
-[[mg:bar]]
-[[ml:bar]]
-[[my:bar]]
-[[nl:bar]]
-[[no:bar]]
-[[pl:bar]]
-[[pt:bar]]
-[[ro:bar]]
-[[ru:bar]]
-[[sa:bar]]
-[[sh:bar]]
-[[simple:bar]]
-[[sq:bar]]
-[[sv:bar]]
-[[sw:bar]]
-[[ta:bar]]
-[[te:bar]]
-[[th:bar]]
-[[tk:bar]]
-[[tr:bar]]
-[[tt:bar]]
-[[uz:bar]]
-[[vi:bar]]
-[[vo:bar]]
-[[wo:bar]]
-[[zh:bar]]
+[[Kategorie:Entlehnung aus dem Englischen (Polnisch)]]

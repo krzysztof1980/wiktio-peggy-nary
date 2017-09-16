@@ -1,111 +1,92 @@
 == milliard ({{Sprache|Englisch}}) ==
 === {{Wortart|Substantiv|Englisch}} ===
 
-{{Anmerkungen}}
-:Im amerikanischen Englisch wird dieselbe Zahl mit [[billion#billion (Englisch)|billion]] bezeichnet. Diese Bezeichnung gewinnt auch im britischen Sprachraum an Bedeutung.
+{{Englisch Substantiv Übersicht
+|Singular=milliard
+|Plural=milliards
+}}
 
 {{Worttrennung}}
-:milliard, {{Pl.}}
+:mil·liard, {{Pl.}} mil·liards
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈmɪlɪɑːd}}, {{Pl.}}
-:{{Hörbeispiele}} {{Audio|En-uk-milliard.ogg|milliard (britisch)}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|ˈmɪlɪɑːd}}, {{Pl.}} {{Lautschrift|ˈmɪlɪɑːds}}
+:{{Hörbeispiele}} {{Audio|En-uk-milliard.ogg}}, {{Pl.}} {{Audio|}}
 
 {{Bedeutungen}}
-:[1] (UK): tausend [[Million]]en (1000 Millionen, 10<sup>9</sup>)
+:[1] {{BE|, südafrikanisch, veraltend:}} tausend Millionen
 
 {{Herkunft}}
-:französisch für „Milliarde“; von lateinisch ''mille'' „Tausend“
+:im späten 18. Jahrhundert aus dem Französischen<ref>{{Ref-OEtymD}}</ref>
 
-{{Oberbegriffe}}
-:[1] [[number]]
+{{Synonyme}}
+:[1] [[billion]]
 
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=en}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[Milliarde]]
-*{{en}}: [1] {{amer.|:}} {{Ü|en|billion}}
 *{{fi}}: [1] {{Ü|fi|miljardi}}
 |Ü-rechts=
 *{{fr}}: [1] {{Ü|fr|milliard}}
-*{{ja}}: [1] {{Ü|ja|十億}}
+*{{ja}}: [1] {{Üt|ja|十億|}}
 *{{nl}}: [1] {{Ü|nl|miljard}}
 }}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=en|milliard}}
-:[1] {{Ref-Pons|en|milliard}}
+:[1] {{Ref-Oxford}}
+:[1] {{Ref-Cambridge}}
 :[1] {{Ref-MWD|milliard}}
 :[1] {{Ref-Dictionary|milliard}}
+:[1] {{Ref-Pons|en|milliard}}
 :[1] {{Ref-dictcc|en|milliard}}
-{{Referenzen prüfen|Englisch}}
 
-{{2x----}}
+{{Quellen}}
 
 == milliard ({{Sprache|Französisch}}) ==
 === {{Wortart|Substantiv|Französisch}}, {{m}} ===
+
+{{Französisch Substantiv Übersicht
+|Singular=le milliard
+|Plural=les milliards
+}}
 
 {{Worttrennung}}
 :milliard, {{Pl.}}
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|mɪˈljɑːr}}, {{Pl.}} {{Lautschrift|…}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|miljaːʀ}}, {{Pl.}} {{Lautschrift|miljaːʀ}}
+:{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
-:[1] tausend [[Million]]en (1000 Millionen, 10<sup>9</sup>)
+:[1] tausend Millionen
 
 {{Herkunft}}
-:von lateinisch ''mille'' „Tausend“
+:im 16. Jahrhundert von ''[[million]]''<ref>{{Ref-CNRTL}}</ref>
 
-{{Oberbegriffe}}
-:[1] [[nombre]]
+{{Synonyme}}
+:[1] [[billion]]
 
 {{Beispiele}}
 :[1] {{Beispiele fehlen|spr=fr}}
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{de}}: [1] [[Milliarde]]
-*{{en}}: [1] {{brit.|:}} {{Ü|en|milliard}}, {{amer.|:}} {{Ü|en|billion}}
+*{{en}}: [1] {{Ü|en|billion}}
 |Ü-rechts=
 *{{fi}}: [1] {{Ü|fi|miljardi}}
-*{{ja}}: [1] {{Ü|ja|十億}}
+*{{ja}}: [1] {{Üt|ja|十億|}}
 *{{nl}}: [1] {{Ü|nl|miljard}}
 }}
 
 {{Referenzen}}
 :[1] {{Wikipedia|spr=fr|milliard}}
-:[1] {{Ref-Pons|fr|milliard}}
 :[1] {{Ref-CNRTL|milliard}}
+:[1] {{Ref-Pons|fr|milliard}}
 :[1] {{Ref-Leo|fr|milliard}}
-{{Referenzen prüfen|Französisch}}
 
-[[ast:milliard]]
-[[cy:milliard]]
-[[da:milliard]]
-[[el:milliard]]
-[[en:milliard]]
-[[et:milliard]]
-[[fi:milliard]]
-[[fr:milliard]]
-[[hu:milliard]]
-[[hy:milliard]]
-[[io:milliard]]
-[[kn:milliard]]
-[[ko:milliard]]
-[[ku:milliard]]
-[[lo:milliard]]
-[[ml:milliard]]
-[[nl:milliard]]
-[[nn:milliard]]
-[[pl:milliard]]
-[[ru:milliard]]
-[[sv:milliard]]
-[[ta:milliard]]
-[[tr:milliard]]
-[[uk:milliard]]
-[[vi:milliard]]
-[[zh:milliard]]
+{{Quellen}}

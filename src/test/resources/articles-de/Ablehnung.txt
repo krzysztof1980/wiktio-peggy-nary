@@ -2,24 +2,23 @@
 === {{Wortart|Substantiv|Deutsch}}, {{f}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Ablehnung
-|Nominativ Plural=die Ablehnungen
-|Genitiv Singular=der Ablehnung
-|Genitiv Plural=der Ablehnungen
-|Dativ Singular=der Ablehnung
-|Dativ Plural=den Ablehnungen
-|Akkusativ Singular=die Ablehnung
-|Akkusativ Plural=die Ablehnungen
+|Genus=f
+|Nominativ Singular=Ablehnung
+|Nominativ Plural=Ablehnungen
+|Genitiv Singular=Ablehnung
+|Genitiv Plural=Ablehnungen
+|Dativ Singular=Ablehnung
+|Dativ Plural=Ablehnungen
+|Akkusativ Singular=Ablehnung
+|Akkusativ Plural=Ablehnungen
 }}
 
 {{Worttrennung}}
 :Ab·leh·nung, {{Pl.}} Ab·leh·nun·gen
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈapˌleːnʊŋ}}, {{Pl.}} {{Lautschrift|ˈapˌleːnʊŋən}}
-:{{Hörbeispiele}} 
-::österreichisch: {{Audio|De-at-Ablehnung.ogg}}, {{Pl.}} {{Audio|De-at-Ablehnungen.ogg|Ablehnungen}}
-::deutsch: {{Audio|}}, {{Pl.}} {{Audio|De-Ablehnungen.ogg|Ablehnungen}}
+:{{IPA}} {{Lautschrift|ˈapˌleːnʊŋ}}
+:{{Hörbeispiele}} {{Audio|De-Ablehnung.ogg}}, {{Audio|De-at-Ablehnung.ogg|spr=at}}
 
 {{Bedeutungen}}
 :[1] [[Reiz]] (vor allem bei Mensch oder Tier), der [[Unlust]] auslöst
@@ -27,7 +26,7 @@
 :[3] [[negativ]]e [[Reaktion]] auf eine [[Bitte]], ein [[Gesuch]], eine [[Aufforderung]], einen [[Antrag]] oder Ähnliches; [[Verweigerung]] einer Reaktion auf ein [[Schriftstück]], einen [[Brief]], einen [[Eid]], einer [[Zahlung]]; [[Verweigerung]] der Annahme eines Gegenstandes, ein [[abschlägig]]er [[Bescheid]], eine [[Missbilligung]], eine [[Verurteilung]]
 
 {{Herkunft}}
-:''substantiviertes Verb'' [[ablehnen]] und ''Suffix'' [[-ung]]
+:[[Ableitung]] des Substantivs vom Stamm des Verbs ''[[ablehnen]]'' mit dem [[Derivatem]] ([[Ableitungsmorphem]]) ''[[-ung]]''
 
 {{Sinnverwandte Wörter}}
 :[1] [[Aversion]]
@@ -45,20 +44,21 @@
 :[2] Gegen ihn habe ich eine ''Ablehnung.''
 :[2] „Ihre ''Ablehnung'' führt zu unserer ''Ablehnung''.“<ref>{{Literatur | Autor=Alice Bota, Khuê Pham, Özlem Topçu| Titel=Wir neuen Deutschen. Wer wir sind, was wir wollen | Verlag=Rowohlt Verlag | Ort=Reinbek| Jahr=2012| ISBN=978-3-498-00673-0}}, Seite 54.</ref>
 :[3] Er vernahm ihre ''Ablehnung'' mit Bitterkeit.
+:[3] „Die ''Ablehnung'' hatte sowohl politische als auch kommerzielle Gründe.“<ref>{{Literatur | Autor= Edward Fox | Titel= Der Mann, der zum Himmel ging | TitelErg= Ein Ungar in Tibet| Verlag= Wagenbach | Ort= Berlin |Jahr= 2007| Seiten= 43.|ISBN= 978-3-8031-2578-1}} Englisches Original 2001.</ref>
 
 {{Wortbildungen}}
 :[3] [[Ablehnungsquote]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [3] {{Ü|en|refusal}}, {{Ü|en|rejection}} (einer Stelle, eines Angebotes)
-*{{fr}}: [2] {{Ü|fr|rejet}} {{m}}; [3] {{Ü|fr|refus}} {{m}}
 *{{eo}}: [2] {{Ü|eo|naŭzo}}; [3] {{Ü|eo|rifuzo}}
+*{{fr}}: [2] {{Ü|fr|rejet}} {{m}}; [3] {{Ü|fr|refus}} {{m}}
 *{{ja}}: [3] {{Üt|ja|否定|ひてい, hitei}}
-*{{nl}}: [1] {{Ü|nl|afkeer}};{{Ü|nl|ongenoegen}}; [2] {{Ü|nl|afwijzing}} ; [3] {{Ü|nl|weigering}} 
+*{{nl}}: [1] {{Ü|nl|afkeer}};{{Ü|nl|ongenoegen}}; [2] {{Ü|nl|afwijzing}} ; [3] {{Ü|nl|weigering}}
 |Ü-rechts=
 *{{pt}}: [2, 3] {{Ü|pt|rejeição}}
-*{{ru}}: [1] {{Ü|ru|отвращение}}, [2] {{Ü|ru|неприязнь}}, [3] {{Ü|ru|отказ}},
+*{{ru}}: [1] {{Üt|ru|отвращение|}}; [2] {{Üt|ru|неприязнь|}}; [3] {{Üt|ru|отказ|}}
 *{{sv}}: [1] {{Ü|sv|inge olust}}; [2] {{Ü|sv|känna olust}}; [3] {{Ü|sv|avslag}}, {{Ü|sv|avvisande}}
 *{{es}}: [1] {{Ü|es|repudio}} {{m}}; [3] {{Ü|es|rechazo}} {{m}}
 *{{hu}}: [1] {{Ü|hu|lemondás}}
@@ -75,19 +75,3 @@
 
 {{Ähnlichkeiten}}
 :[[ablehnen]], [[Anlehnung]]
-
-[[cs:Ablehnung]]
-[[en:Ablehnung]]
-[[fi:Ablehnung]]
-[[fr:Ablehnung]]
-[[io:Ablehnung]]
-[[is:Ablehnung]]
-[[it:Ablehnung]]
-[[ko:Ablehnung]]
-[[ku:Ablehnung]]
-[[mg:Ablehnung]]
-[[pl:Ablehnung]]
-[[ru:Ablehnung]]
-[[sv:Ablehnung]]
-[[tl:Ablehnung]]
-[[zh:Ablehnung]]

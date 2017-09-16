@@ -2,22 +2,23 @@
 === {{Wortart|Substantiv|Deutsch}}, {{f}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Aberration
-|Nominativ Plural=die Aberrationen
-|Genitiv Singular=der Aberration
-|Genitiv Plural=der Aberrationen
-|Dativ Singular=der Aberration
-|Dativ Plural=den Aberrationen
-|Akkusativ Singular=die Aberration
-|Akkusativ Plural=die Aberrationen
+|Genus=f
+|Nominativ Singular=Aberration
+|Nominativ Plural=Aberrationen
+|Genitiv Singular=Aberration
+|Genitiv Plural=Aberrationen
+|Dativ Singular=Aberration
+|Dativ Plural=Aberrationen
+|Akkusativ Singular=Aberration
+|Akkusativ Plural=Aberrationen
 }}
 
 {{Worttrennung}}
 :Ab·er·ra·ti·on, {{Pl.}} Ab·er·ra·ti·o·nen
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|apˌʔɛʀaˈʦi̯oːn}}, {{Pl.}} {{Lautschrift|apˌʔɛʀaˈʦi̯oːnən}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|apˌʔɛʀaˈʦi̯oːn}}
+:{{Hörbeispiele}} {{Audio|De-Aberration.ogg}}
 :{{Reime}} {{Reim|oːn|Deutsch}}
 
 {{Bedeutungen}}
@@ -25,14 +26,14 @@
 ::*[[jährlich]]e ''Aberration:'' aufgrund des [[Erdumlauf]]s um die [[Sonne]]
 ::*[[täglich]]e ''Aberration:'' aufgrund der [[Erdrotation]]
 :[2] ''[[Optik]]:'' [[Abbildungsfehler]] von [[Linse]]n:
-::*[[chromatisch]]e ''Aberration:'' [[Strahl]]en unterschiedlicher [[Wellenlänge]] werden unterschiedlich stark gebrochen
-::*[[sphärisch]]e ''Aberration:'' [[Randstrahl]]en werden stärker gebrochen als [[achsennah]]e Strahlen
+::*[[chromatisch]]e ''Aberration:'' unterschiedlich starke Brechung von [[Strahl]]en unterschiedlicher [[Wellenlänge]]
+::*[[sphärisch]]e ''Aberration:'' unterschiedlich starke Brechung von [[Randstrahl]]en gegenüber [[achsennah]]en Strahlen
 :[3] ''[[Biologie]]:'' [[Abweichung]] von den [[Artmerkmal]]en
 :[4] ''[[Psychologie]]:'' eine leichte psychische Störung
 :[5] ''[[Medizin]]:'' anomale Lage oder Entwicklung eines Organs oder Gewebes
 
 {{Herkunft}}
-:Von lateinisch [[aberratio]] „Entfernung, Abweichung“ zu lateinisch  [[aberrare]] „abirren, abweichen“ einer Zusammensetzung von lateinisch [[ab]] „weg“ und [[errare]] „irren, schwanken“.
+:Von lateinisch [[aberratio]] „Entfernung, Abweichung“ zu lateinisch  [[aberrare]] „abirren, abweichen“ einer Zusammensetzung von lateinisch [[ab]] „weg“ und [[errare]] „irren, schwanken“. {{QS Herkunft|unbelegt}}
 
 {{Synonyme}}
 :[1–3] [[Aberratio]]
@@ -59,18 +60,19 @@
 :[1] [[Aberrationskonstante]], [[Aberrationszeit]]
 :[3] [[Chromosomenaberration]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1–3] {{Ü|en|aberration}}
 *{{fr}}: [1–3] {{Ü|fr|aberration}} {{f}}
-*{{is}}: [1] {{Ü|is|ljósvilla}}, [2] {{Ü|is|myndskekkja}} (bei Spiegeln: {{Ü|is|spegilskekkja}}, bei Linsen: {{Ü|is|linsuskekkja}}), [3] {{Ü|is|frávik}}
+*{{is}}: [1] {{Ü|is|ljósvilla}}; [2] {{Ü|is|myndskekkja}} (bei Spiegeln: {{Ü|is|spegilskekkja}}, bei Linsen: {{Ü|is|linsuskekkja}}), [3] {{Ü|is|frávik}}
 *{{ca}}: [1] {{Ü|ca|aberració}} {{f}}
 |Ü-rechts=
 *{{lv}}: [1, 2] {{Ü|lv|aberācija}}
-*{{pl}}: [1, 2, 4] {{Ü|pl|aberracja}} {{f}}, [1] {{Ü|pl|aberracja światła}} {{f}}, [2] {{Ü|pl|aberracja optyczna}} {{f}}
-*{{ru}}: [1–3] {{Üt|ru|аберрация|aberrázija}} {{f}}, [1–4] {{Üt|ru|отклонение|otklonénije}} {{f}}
+*{{pl}}: [1, 2, 4] {{Ü|pl|aberracja}} {{f}}; [1] {{Ü|pl|aberracja światła}} {{f}}; [2] {{Ü|pl|aberracja optyczna}} {{f}}
+*{{ru}}: [1–3] {{Üt|ru|аберрация|aberrázija}} {{f}}; [1–4] {{Üt|ru|отклонение|otklonénije}} {{f}}
 *{{sv}}: [1–4] {{Ü|sv|aberration}}
 *{{es}}: [1–3] {{Ü|es|aberración}}
+*{{cs}}: [1–5] {{Ü|cs|aberace}} {{f}}
 }}
 
 {{Referenzen}}
@@ -85,17 +87,4 @@
 
 {{Quellen}}
 
-[[Kategorie:Fremdwort]]
-
-[[ar:Aberration]]
-[[en:Aberration]]
-[[fr:Aberration]]
-[[hu:Aberration]]
-[[io:Aberration]]
-[[ko:Aberration]]
-[[lt:Aberration]]
-[[mg:Aberration]]
-[[pl:Aberration]]
-[[ro:Aberration]]
-[[sv:Aberration]]
-[[zh:Aberration]]
+[[Kategorie:Entlehnung aus dem Lateinischen (Deutsch)]]

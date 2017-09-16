@@ -2,22 +2,24 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Januar
-|Nominativ Plural=die Januare
-|Genitiv Singular=des Januars
-|Genitiv Plural=der Januare
-|Dativ Singular=dem Januar
-|Dativ Plural=den Januaren
-|Akkusativ Singular=den Januar
-|Akkusativ Plural=die Januare
+|Genus=m
+|Nominativ Singular=Januar
+|Nominativ Plural=Januare
+|Genitiv Singular=Januars
+|Genitiv Plural=Januare
+|Dativ Singular=Januar
+|Dativ Plural=Januaren
+|Akkusativ Singular=Januar
+|Akkusativ Plural=Januare
+|Bild=Schnee im Januar mit stillgelegten Booten am Lahnufer in Marburg-Weidenhausen 2017-01-10.jpg|thumb|1|Das Wort ''Januar'' geschrieben im [[Schnee]]
 }}
 
 {{Worttrennung}}
 :Ja·nu·ar, {{Pl.}} Ja·nu·a·re
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈjanu̯aːɐ̯}}, {{Pl.}} {{Lautschrift|ˈjanu̯aːʀə}}
-:{{Hörbeispiele}} {{Audio|De-Januar.ogg}}, {{Pl.}} {{Audio|De-Januare.ogg|Januare}}
+:{{IPA}} {{Lautschrift|ˈjanu̯aːɐ̯}}
+:{{Hörbeispiele}} {{Audio|De-Januar.ogg}}
 
 {{Bedeutungen}}
 :[1] der [[erste]], 31[[-tägig]]e [[Monat]] im [[Kalenderjahr]]
@@ -40,7 +42,10 @@
 {{Beispiele}}
 :[1] Der ''Januar'' ist der erste Monat im Jahr.
 
-==== Übersetzungen ====
+{{Charakteristische Wortkombinationen}}
+:[1] 1./2./3./4./5./…/31. ''Januar''
+
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{af}}: [1] {{Ü|af|Januarie}}
 *{{sq}}: [1] {{Ü|sq|janar}}
@@ -52,7 +57,7 @@
 *{{eu}}: [1] {{Ü|eu|urtarril}}
 *{{bs}}: [1] {{Ü|bs|januar}}, {{Ü|bs|siječanj}}
 *{{br}}: [1] {{Ü|br|Genver}}
-*{{bg}}: [1] {{Ü|bg|януари}} {{m}}
+*{{bg}}: [1] {{Üt|bg|януари|}} {{m}}
 *{{ceb}}: [1] {{Ü|ceb|enero}}
 *{{da}}: [1] {{Ü|da|januar}}, {{Ü|da|glugmåned}}
 *{{en}}: [1] {{Ü|en|January}}
@@ -65,21 +70,22 @@
 *{{fur}}: [1] {{Ü|fur|genâr}} {{m}}
 *{{gl}}: [1] {{Ü|gl|Xaneiro}}
 *{{ka}}: [1] {{Üt|ka|იანვარი|ianvari}}
-*{{el}} : [1] {{Üt|el|Ιανουάριος|Ianuarios}} {{m}}, {{Üt|el|Γενάρης|Jenaris}} {{m}}
-*{{kl}}: [1] {{Ü|kl|Jannuaari}}
+*{{el}}: [1] {{Üt|el|Ιανουάριος|Ianouários}} {{m}}, {{Üt|el|Γενάρης|Genáris}} {{m}}
+*{{kl}}: [1] {{Ü|kl|januaari}}
 *{{gn}}: [1] {{Ü|gn|Jasyteĩ}}
 *{{ht}}: [1] {{Ü|ht|Janvye}}
 *{{haw}}: [1] {{Ü|haw|Ianuali}}
-*{{he}}: [1] {{Ü|he|ינואר}}
+*{{he}}: [1] {{Üt|he|ינואר|}}
 *{{io}}: [1] {{Ü|io|januaro}}
 *{{id}}: [1] {{Ü|id|januari}}
+*{{ia}}: [1] {{Ü|ia|januario}}
 *{{ga}}: [1] {{Ü|ga|Eanáir}}
 *{{xh}}: [1] {{Ü|xh|Januwari|uJanuwari}}
 *{{zu}}: [1] {{Ü|zu|Januwari|uJanuwari}}
 *{{is}}: [1] {{Ü|is|janúar}}
 *{{it}}: [1] {{Ü|it|gennaio}} {{m}}
 *{{ja}}: [1] {{Üt|ja|一月|いちがつ, ichigatsu}}
-*{{kn}}: [1] {{Ü|kn|ಜನವರಿ}}
+*{{kn}}: [1] {{Üt|kn|ಜನವರಿ|}}
 *{{pam}}: [1] {{Ü|pam|eneru}}
 *{{csb}}: [1] {{Ü|csb|stëcznik}}
 *{{ca}}: [1] {{Ü|ca|gener}} {{m}}
@@ -89,22 +95,28 @@
 *{{co}}: [1] {{Ü|co|ghjennaghju}}, {{Ü|co|ghjinnaghju)}}
 *{{hr}}: [1] {{Ü|hr|siječanj}} {{m}}, {{Ü|hr|januar}} {{m}}
 *{{ku}}: [1] {{Ü|ku|rêbendan}}
+*{{lo}}: [1] {{Üt|lo|ເດື່ອນມັງກອນ|}}
 *{{la}}: [1] {{Ü|la|Ianuarius}} {{m}}
 *{{lv}}: [1] {{Ü|lv|janvāris}} {{m}}
 *{{lt}}: [1] {{Ü|lt|sausis}}
 *{{jbo}}: [1] {{Ü|jbo|pavma'i}}
+*{{lb}}: [1] {{Ü|lb|Januar}}
 *{{mt}}: [1] {{Ü|mt|Jannar}} {{m}}
-|Ü-rechts=
 *{{gv}}: [1] {{Ü|gv|Jerrey Gueree}}
+|Ü-rechts=
 *{{mi}}: [1] {{Ü|mi|Hānuere}}, {{Ü|mi|Kohi tātea}}, {{Ü|mi|Hiringa a nuku}}
-*{{mr}}: [1] {{Ü|mr|जानेवारी}}
+*{{mr}}: [1] {{Üt|mr|जानेवारी|}}
 *{{nah}}: [1] {{Ü|nah|Ic cē mētztli}}
 *{{nl}}: [1] {{Ü|nl|januari}} {{m}}, {{Ü|nl|louwmaand}} {{m}}, {{Ü|nl|ijsmaand}} {{m}}, {{Ü|nl|wolfsmaand}} {{m}}, {{Ü|nl|hardmaand}} {{m}}
+*{{se}}: [1] {{Ü|se|ođđajagimánnu}}
 *{{no}}: [1] {{Ü|no|januar}}
 *{{nov}}: [1] {{Ü|nov|januare}}
 *{{oc}}: [1] {{Ü|oc|genièr}} {{m}}
-*{{pa}}: [1] {{Ü|pa|ਜਨਵਰੀ}}
+*{{om}}: [1] {{Ü|om|Amajjii}}
+*{{pa}}: [1] {{Üt|pa|ਜਨਵਰੀ|}}
+*{{pdc}}: [1] {{Ü|pdc|Yenner}}
 *{{fa}}: [1] {{Üt|fa|ژانویه|žānwiye}}
+*{{pdt}}: [1] {{Ü|pdt|Jaunewoa}}
 *{{pl}}: [1] {{Ü|pl|styczeń}} {{m}}
 *{{pt}}: [1] {{Ü|pt|janeiro}} {{m}}
 *{{qu}}: [1] {{Ü|qu|Qhulla puquy killa}}
@@ -116,6 +128,7 @@
 *{{sv}}: [1] {{Ü|sv|januari}}, {{Ü|sv|torsmånad}} (veraltet)
 *{{sr}}: [1] {{Üt|sr|јануар|januar}} {{m}}
 *{{st}}: [1] {{Ü|st|Pherekgong}}
+*{{scn}}: [1] {{Ü|scn|jinnaru}}
 *{{sk}}: [1] {{Ü|sk|január}} {{m}}
 *{{sl}}: [1] {{Ü|sl|januar}} {{m}}
 *{{so}}: [1] {{Ü|so|janaayo}}
@@ -125,18 +138,18 @@
 *{{es}}: [1] {{Ü|es|enero}} {{m}}
 *{{sw}}: [1] {{Ü|sw|Januari}}
 *{{tl}}: [1] {{Ü|tl|Enero}}
-*{{ta}}: [1] {{Ü|ta|ஜனவரி}}
-*{{te}}: [1] {{Ü|te|జనవర}}
+*{{ta}}: [1] {{Üt|ta|ஜனவரி|}}
+*{{te}}: [1] {{Üt|te|జనవర|}}
 *{{tet}}: [1] {{Ü|tet|janeiru}}
-*{{th}}: [1] {{Ü|th|มกราคม}}
+*{{th}}: [1] {{Üt|th|มกราคม|}}
 *{{tpi}}: [1] {{Ü|tpi|Janueri}}
 *{{cs}}: [1] {{Ü|cs|leden}} {{m}}
-*{{cv}}: [1] {{Ü|cv|кăрлач}}
+*{{cv}}: [1] {{Üt|cv|кăрлач|}}
 *{{tr}}: [1] {{Ü|tr|ocak}}
 *{{tyv}}: [1] {{Üt|tyv|январь|}}
 *{{uk}}: [1] {{Üt|uk|січень|sitschen'}} {{m}}
 *{{hu}}: [1] {{Ü|hu|január}}
-*{{ur}}: [1] {{Ü|ur|جنوری}}
+*{{ur}}: [1] {{Üt|ur|جنوری|}}
 *{{uz}}: [1] {{Ü|uz|yanvar}}
 *{{cy}}: [1] {{Ü|cy|ionawr}}
 *{{wa}}: [1] {{Ü|wa|djanvî}}
@@ -147,10 +160,8 @@
 *{{ts}}: [1] {{Ü|ts|sunguti}}
 *{{yo}}: [1] {{Ü|yo|oṣù kínní}}
 |Dialekttabelle=
-*Berlinerisch:
-*Elsässisch:
-|D-rechts=
 *Pfälzisch: [1] [[Jannewa]], [[Jonnewa]], [[Jennewa]]
+|D-rechts=
 *Schwäbisch: [1] [[Jenner]]
 }}
 
@@ -165,53 +176,3 @@
 
 {{Ähnlichkeiten}}
 :[[Jaguar]]
-
-[[ang:Januar]]
-[[ast:Januar]]
-[[az:Januar]]
-[[br:Januar]]
-[[cs:Januar]]
-[[csb:Januar]]
-[[cy:Januar]]
-[[da:Januar]]
-[[el:Januar]]
-[[en:Januar]]
-[[es:Januar]]
-[[et:Januar]]
-[[eu:Januar]]
-[[fi:Januar]]
-[[fr:Januar]]
-[[fy:Januar]]
-[[ga:Januar]]
-[[gl:Januar]]
-[[hr:Januar]]
-[[hu:Januar]]
-[[hy:Januar]]
-[[id:Januar]]
-[[io:Januar]]
-[[it:Januar]]
-[[ja:Januar]]
-[[ko:Januar]]
-[[ku:Januar]]
-[[lb:Januar]]
-[[ln:Januar]]
-[[lo:Januar]]
-[[lt:Januar]]
-[[lv:Januar]]
-[[mg:Januar]]
-[[my:Januar]]
-[[nl:Januar]]
-[[nn:Januar]]
-[[no:Januar]]
-[[oc:Januar]]
-[[om:Januar]]
-[[pl:Januar]]
-[[pt:Januar]]
-[[ro:Januar]]
-[[ru:Januar]]
-[[sm:Januar]]
-[[sv:Januar]]
-[[th:Januar]]
-[[tr:Januar]]
-[[uk:Januar]]
-[[zh:Januar]]

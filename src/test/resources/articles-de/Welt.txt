@@ -1,16 +1,17 @@
 {{Wort der Woche|20|2008}}
 == Welt ({{Sprache|Deutsch}}) ==
 === {{Wortart|Substantiv|Deutsch}}, {{f}} ===
-{{überarbeiten|Bedeutung 11 ist weder durch eine Referenz noch ein Zitat belegt - [[Benutzer:Master of Contributions|MoC]] ~<small>[[Benutzer Diskussion:Master of Contributions|meine Nachrichtenseite]]</small>~ 03:02, 5. Mär. 2015 (MEZ)|Deutsch}}
+
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=die Welt
-|Nominativ Plural=die Welten
-|Genitiv Singular=der Welt
-|Genitiv Plural=der Welten
-|Dativ Singular=der Welt
-|Dativ Plural=den Welten
-|Akkusativ Singular=die Welt
-|Akkusativ Plural=die Welten
+|Genus=f
+|Nominativ Singular=Welt
+|Nominativ Plural=Welten
+|Genitiv Singular=Welt
+|Genitiv Plural=Welten
+|Dativ Singular=Welt
+|Dativ Plural=Welten
+|Akkusativ Singular=Welt
+|Akkusativ Plural=Welten
 |Bild=The Earth seen from Apollo 17.jpg|mini|1|die ''Welt'' aus dem Weltraum betrachtet
 }}
 
@@ -18,42 +19,48 @@
 :Welt, {{Pl.}} Wel·ten
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|vɛlt}}, {{Pl.}} {{Lautschrift|ˈvɛltn̩}}
-:{{Hörbeispiele}} {{Audio|De-at-Welt.ogg|Welt (österreichisch)}}, {{Pl.}} {{Audio|De-Welten.ogg|Welten}}
+:{{IPA}} {{Lautschrift|vɛlt}}
+:{{Hörbeispiele}} {{Audio|De-at-Welt.ogg|spr=at}}, {{Audio|De-Welt.ogg|Welt (hochdeutsch)}}
 :{{Reime}} {{Reim|ɛlt|Deutsch}}
 
 {{Bedeutungen}}
-:[1] {{Kontext|Astronomie|Geografie}} der [[Planet]] [[Erde]]
-:[2] {{Kontext|Philosophie|Kosmologie}} die [[erkennbar]]e Welt, das [[Universum]]
-:[3] {{hist.|:}} das vom [[Erkenntnisstand]] [[abhängig]]e [[Bild]] des [[Planet]]en [[Erde]]
-:[4] {{polit.|,}} {{hist.|,}} {{wirtschaft.}} und {{sozial.:}} [[großräumig]]e [[Teil]]e der [[Erde]], die [[gleich]]e [[politisch]]e, [[historisch]]e, [[wirtschaftlich]]e und [[sozial]]e [[Merkmal]]e [[besitzen]] oder [[zeitlich]] in einem [[Zusammenhang]] [[stehen]], die [[Weltgesellschaft]] als solche, die [[Gesamtheit]] aller [[Mensch]]en
-:[5] {{Kontext|Biologie|Ökologie}} [[System]]e von [[Lebewesen]], die [[gemeinsam]]e [[Merkmal]]e [[besitzen]]
-:[6] {{Kontext|Psychologie}} [[geistig]] aufgebaute [[Sphäre]]n mit [[gemeinsam]]en [[Merkmal]]en
-:[7] {{Kontext|Religion}} [[religiös]] aufgebaute [[Sphäre]]n mit [[gemeinsam]]en [[Merkmal]]en
-:[8] {{fiktiv|:}} durch gemeinsame Merkmale [[zusammenfassbar]]e [[Erscheinung]]en
-:[9] {{Kontext|Fantasy|Literatur|Sciencefiction}} ein oder mehrere [[beliebig]]e [[Planet]]en (meist bewohnt oder [[bewohnbar]])
-:[10] ''<!--[[ostdeutsch]], -- nur? -->[[Jugendsprache]] der 1970er und 1980er Jahre:'' [[spontan]]er [[Ausruf]] der [[Begeisterung]] und [[Zustimmung]]
-:[11] {{umg.|:}} ein [[Vermögen]], (sehr) viel Geld
+:[1] {{K|Astronomie|Geografie}} der [[Planet]] [[Erde]]
+:[2] {{K|Kosmologie|Philosophie}} die [[erkennbar]]e Welt, das [[Universum]]
+:[3] {{K|historisch}} das vom [[Erkenntnisstand]] [[abhängig]]e [[Bild]] des [[Planet]]en [[Erde]]
+:[4] {{K|historisch|politisch|sozial|wirtschaftlich}} [[großräumig]]e [[Teil]]e der [[Erde]], die [[gleich]]e [[politisch]]e, [[historisch]]e, [[wirtschaftlich]]e und [[sozial]]e [[Merkmal]]e [[besitzen]] oder [[zeitlich]] in einem [[Zusammenhang]] [[stehen]], die [[Weltgesellschaft]] als solche, die [[Gesamtheit]] aller [[Mensch]]en
+:[5] {{K|Biologie|Ökologie}} [[System]]e von [[Lebewesen]], die [[gemeinsam]]e [[Merkmal]]e [[besitzen]]
+:[6] {{K|Psychologie}} [[geistig]] aufgebaute [[Sphäre]]n mit [[gemeinsam]]en [[Merkmal]]en
+:[7] {{K|Religion}} [[religiös]] aufgebaute [[Sphäre]]n mit [[gemeinsam]]en [[Merkmal]]en
+:[8] {{K|fiktiv}} durch gemeinsame Merkmale [[zusammenfassbar]]e [[Erscheinung]]en
+:[9] {{K|Fantasy|Literatur|Sciencefiction}} ein oder mehrere [[beliebig]]e [[Planet]]en (meist bewohnt oder [[bewohnbar]])
+:[10] {{K|Jugendsprache|der 1970er und 1980er Jahre|meist ostdeutsch}} [[spontan]]er [[Ausruf]] der [[Begeisterung]] und [[Zustimmung]]; im Unterschied vom Normalen, Durchschnittlichen, Alltäglichen das positiv gewertete [[Besondere]]
+:[11] {{K|ugs.}} ein [[Vermögen]], (sehr) viel Geld
 
 {{Herkunft}}
-:[[mittelhochdeutsch]] ''welt'' und ''werlt'' von [[althochdeutsch]] ''weralt'' „[[Menschenalter]]“ aus ''[[wer]]'' „[[Mann]]“ und ''[[alt]]'' als Übersetzung von lateinisch ''{{Ü|la|saeculum}}'' und ''{{Ü|la|mundus}}'' <ref>{{Ref-Duden|Welt}}</ref><ref>{{Ref-DWDS|Welt}}</ref>
+:[[mittelhochdeutsch]] ''welt'' und ''werlt'' von [[althochdeutsch]] ''weralt'' „[[Menschenalter]]“ aus ''[[wer]]'' „[[Mann]]“ und ''[[alt]]'' als Übersetzung von lateinisch ''{{Ü|la|saeculum}}'' und ''{{Ü|la|mundus}}''<ref>{{Ref-Duden|Welt}}</ref><ref>{{Ref-DWDS|Welt}}</ref>
 
 {{Synonyme}}
-:[1] [[Erde]], [[Erdball]], [[Erdkreis]], [[Erdkugel]], [[Globus]], [[Weltkörper]], [[Weltkugel]]; der blaue Planet
-:[2] [[All]], [[Kosmos]], [[Universum]], [[Weltraum]], [[Weltenraum]], [[Weltall]]
+:[1] [[Erde]], [[Erdball]], [[Erdkreis]], [[Erdkugel]], [[Globus]], [[Weltkörper]], [[Weltkugel]]; [[der blaue Planet]]
+:[2] [[All]], [[Kosmos]], [[Universum]], [[Weltall]], [[Weltraum]], [[Weltenraum]]
 :[3] [[Weltbild]]
-:[4] [[Menschheit]], [[Menschengemeinschaft]], [[Menschengesellschaft]], [[menschlich]]e [[Gemeinschaft]], menschliche [[Gesellschaft]], [[Wirkungsbereich]], [[Wirkungskreis]], [[Diesseits]]
+:[4] [[Diesseits]], [[Menschheit]], [[Menschengemeinschaft]], [[Menschengesellschaft]], [[menschlich]]e [[Gemeinschaft]], menschliche [[Gesellschaft]], [[Wirkungsbereich]], [[Wirkungskreis]]
 :[4, 5] [[Lebensbereich]]
 :[5] [[Biozönose]]
 :[5–8] [[Reich]], [[Sphäre]]
-:[7] [[Göttlichkeit]], [[Schöpfung]], [[Gottes Schöpfung]]
+:[7] [[Gottes Schöpfung]], [[Göttlichkeit]], [[Schöpfung]]
 :[9] [[Planet]]
 
 {{Unterbegriffe}}
 :[1] [[Urwelt]]
+:[2] [[Planckwelt]]
+:[3] [[Gelehrtenwelt]], [[Vorteilswelt]]
 :[5] [[Bergwelt]], [[Pflanzenwelt]], [[Tierwelt]], [[Vogelwelt]]
-:[6] [[Kinderwelt]], [[Märchenwelt]]
-:[?] [[Außenwelt]], [[Damenwelt]], [[Fantasiewelt]], [[Frauenwelt]], [[Gedankenwelt]], [[Gegenwelt]], [[Geschäftswelt]], [[Halbwelt]], [[Herrenwelt]], [[Innenwelt]], [[Klangwelt]], [[Lebewelt]], [[Männerwelt]], [[Nachwelt]], [[Nanowelt]], [[Parallelwelt]], [[Planckwelt]], [[Sprachwelt]], [[Systemwelt]], [[Traumwelt]], [[Umwelt]], [[Unterwelt]]
+:[4] [[Farbenwelt]], [[Rahmenwelt]]
+:[5, 6] [[Außenwelt]], [[Innenwelt]], [[Parallelwelt]]
+:[6] [[Arbeitswelt]], [[Autowelt]], [[Damenwelt]], [[Fantasiewelt]], [[Frauenwelt]], [[Gedankenwelt]], [[Gefühlswelt]], [[Herrenwelt]], [[Kinderwelt]], [[Klangwelt]], [[Kunstwelt]], [[Lebenswelt]], [[Lebewelt]], [[Männerwelt]], [[Märchenwelt]], [[Onlinewelt]], [[Prämienwelt]], [[Spielwelt]], [[Sportlerwelt]], [[Sportwelt]], [[Tanzwelt]], [[Tenniswelt]], [[Traumwelt]]
+:[6, 7] [[Unterwelt]]
+:[8] [[Bilderwelt]], [[Consultingwelt]], [[Geschäftswelt]], [[Geschenkewelt]], [[Implementierungswelt]], [[Kinowelt]], [[Reisewelt]], [[Science-Fiction-Welt]], [[Sprachwelt]], [[Systemwelt]], [[Nachwelt]], [[Nanowelt]]
+:[?] [[Gegenwelt]], [[Halbwelt]], [[Schneewelt]], [[Staatenwelt]], [[Unterwasserwelt]], [[Wasserwelt]]<!-- habitabler Exoplanet -->, [[Umwelt]]
 
 {{Beispiele}}
 :[1] Ein Globus ist ein Modell der ''Welt.''
@@ -72,46 +79,50 @@
 :[11] Das kostet nicht die ''Welt.''
 
 {{Redewendungen}}
-:[1–11] ''[[über Gott und die Welt reden]]''
+:[1–9, 11] ''[[über Gott und die Welt reden]]''
 :[4] ''[[Alte Welt]]'' – [[Europa]], [[Asien]], [[Afrika]]
 :[4] ''[[Dritte Welt]]'' – ''unscharf:'' die Entwicklungsländer, Schwellenländer in Afrika und Asien
 :[4] ''[[Neue Welt]]'' – [[Nordamerika]], [[Südamerika]] und je nach Sichtweise auch [[Australien]] und [[Ozeanien]]
-:[11] [[Das kostet (doch) nicht die Welt!|Das kostet (doch) nicht die ''Welt!'']]
-:''[[Heile Welt]]''
-:[[die Welt aus den Angeln heben|die ''Welt'' aus den Angeln heben]]
-:[[etwas aus der Welt schaffen|etwas aus der ''Welt'' schaffen]]
-:[[für jemanden bricht eine Welt zusammen|für jemanden bricht eine ''Welt'' zusammen]]
-:[[in einer anderen Welt leben|in einer anderen ''Welt'' leben]]
-:[[nicht aus der Welt liegen|nicht aus der ''Welt'' liegen]]
-:[[nicht aus der Welt sein|nicht aus der ''Welt'' sein]]
-:''[[die Welt retten]]''
-:Mann oder Frau ''[[von Welt]]''
-:''[[große weite Welt]]''
+:[11] ''[[Das kostet (doch) nicht die Welt!|Das kostet (doch) nicht die Welt!]]''
 :''[[am Ende der Welt]]''
-:''[[um Welten]]'' anders
+:''[[die Welt aus den Angeln heben|die Welt aus den Angeln heben]]''
+:''[[die Welt retten]]''
+:''[[etwas aus der Welt schaffen]]''
+:''[[für jemanden bricht eine Welt zusammen]]''
+:''[[große weite Welt]]''
+:''[[Heile Welt]]''
+:''[[in einer anderen Welt leben]]''
+:Mann oder Frau ''[[von Welt]]'' sein
+:''[[nicht aus der Welt liegen]]''
+:''[[nicht aus der Welt sein]]''
+:''[[um Welten]]'' anders sein
 
 {{Sprichwörter}}
-:[[die Welt ist ein Dorf|die ''Welt'' ist ein Dorf]]
-:[[die Welt ist klein|die ''Welt'' ist klein]]
+:[[die Welt ist ein Dorf]]/[[die Welt ist ein Kuhdorf]]
+:[[die Welt ist klein]]
+
+{{Charakteristische Wortkombinationen}}
+:[11] {{Audio|De-für keinen Preis der Welt.ogg|->}} für [[kein]]en [[Preis]] der ''Welt,'' {{Audio|De-um keinen Preis der Welt.ogg|->}} um [[kein]]en [[Preis]] der ''Welt''
 
 {{Wortbildungen}}
 :{{Wortbildung|Adjektive}} [[weltabgewandt]], [[weltbekannt]], [[weltberühmt]], [[weltbewegend]], [[weltfremd]], [[weltlich]], [[weltmännisch]], [[weltoffen]], [[weltumfassend]], [[weltumspannend]], [[weltweit]]
-:{{Wortbildung|Substantive}} [[Bilderwelt]], [[UNESCO-Weltkulturerbe]], [[Weltachse]], [[Weltall]], [[Weltalter]], [[Weltanschauung]], [[Weltausstellung]], [[Weltbank]], [[Weltbevölkerung]], [[Weltbild]], [[Weltbürger]], [[Weltchronik]], [[Weltcup]], [[Weltempfänger]], [[Weltenbaum]], [[Weltenbrand]], [[Weltenbummel]], [[Weltenei]], [[Weltenergiebedarf]], [[Weltenergieverbrauch]], [[Weltenganzes]], [[Weltenlauf]] ([[Weltlauf]]), [[Welteninsel]], [[Weltenrund]], [[Weltflucht]], [[Weltformat]], [[Weltformel]], [[Weltfrieden]], [[Weltgeist]], [[Weltgeltung]], [[Weltgemeinschaft]], [[Weltgericht]], [[Weltgeschehen]], [[Weltgeschichte]], [[Weltgesellschaft]], [[Weltgetriebe]], [[Weltgipfel]], [[Welthandel]], [[Weltherrschaft]], [[Welthunger]], [[Weltjugendtag]], [[Weltkarte]], [[Weltklima]], [[Weltkonzern]], [[Weltkrieg]], [[Weltkrise]], [[Weltkugel]], [[Weltkultur]], [[Weltkulturerbe]], [[Weltlinie]], [[Weltliteratur]], [[Weltmacht]], [[Weltmarkt]], [[Weltmeer]], [[Weltmeister]], [[Weltmensch]], [[Weltnetz]], [[Weltordnung]], [[Weltöffentlichkeit]], [[Weltpokal]], [[Weltpolitik]], [[Weltpremiere]], [[Weltpreis]], [[Weltpriester]], [[Weltrangliste]], [[Weltraum]]/[[Weltenraum]], [[Weltregierung]], [[Weltreich]], [[Weltreise]], [[Weltrekord]], [[Weltreligion]], [[Weltrevolution]], [[Weltschmerz]], [[Weltspitze]], [[Weltsprache]], [[Weltstadt]], [[Welttag]], [[Welttournee]], [[Weltumrundung]], [[Weltuntergang]], [[Weltverbesserer]], [[Weltwährung]], [[Weltwirtschaft]], [[Weltwissen]], [[Weltwunder]], [[Weltzeit]]
+:{{Wortbildung|Substantive}} [[Weltachse]], [[Weltall]], [[Weltalter]], [[Weltanschauung]], [[Weltatlas]], [[Weltausstellung]], [[Weltbank]], [[Weltbevölkerung]], [[Weltbild]], [[Weltbürger]], [[Weltchronik]], [[Weltcup]], [[Weltdopingagentur]], [[Welteinheitswährung]], [[Weltempfänger]], [[Weltenbaum]], [[Weltenbrand]], [[Weltenbummel]], [[Weltenei]], [[Weltenergiebedarf]], [[Weltenergieverbrauch]], [[Weltenganzes]], [[Weltenlauf]] ([[Weltlauf]]), [[Welteninsel]], [[Weltmodell]], [[Weltenrund]], [[Welterkenntnis]], [[Weltflucht]], [[Weltformat]], [[Weltformel]], [[Weltfrieden]], [[Weltfrömmigkeit]], [[Weltfußball]], [[Weltgeist]], [[Weltgeltung]], [[Weltgemeinschaft]], [[Weltgericht]], [[Weltgeschehen]], [[Weltgeschichte]], [[Weltgesellschaft]], [[Weltgetriebe]], [[Weltgipfel]], [[Welthandel]], [[Welthauptstadt]], [[Weltherrschaft]], [[Welthunger]], [[Weltjugendtag]], [[Weltkarte]], [[Weltklima]], [[Weltkonzern]], [[Weltkrieg]], [[Weltkrise]], [[Weltkugel]], [[Weltkultur]], [[Weltkulturerbe]] (→ [[UNESCO-Weltkulturerbe]]), [[Weltlinie]], [[Weltliteratur]], [[Weltmacht]], [[Weltmarkt]], [[Weltmeer]], [[Weltmeister]], [[Weltmensch]], [[Weltnetz]], [[Weltordnung]], [[Weltöffentlichkeit]], [[Weltpokal]], [[Weltpolitik]], [[Weltpremiere]], [[Weltpreis]], [[Weltpriester]], [[Weltrangliste]], [[Weltraum]]/[[Weltenraum]], [[Weltregierung]], [[Weltreich]], [[Weltreise]], [[Weltreisender]], [[Weltrekord]], [[Weltreligion]], [[Weltrevolution]], [[Weltrezession]], [[Weltschmerz]], [[Weltspitze]], [[Weltsprache]], [[Weltstadt]], [[Welttag]], [[Welttournee]], [[Weltumrundung]], [[Weltuntergang]], [[Weltverbesserer]], [[Weltwährung]], [[Weltwirtschaft]], [[Weltwissen]], [[Weltwunder]], [[Weltzeit]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-*{{ar}}: [1] {{Üxx5|ar|ʕardˤ(un)|أَرْضْ|أرض}} {{m}}; [2, 7] {{Üxx5|ar|ʕa:lem(un)|عَالَمٌ|عالم}} {{m}};
+*{{ar|DMG}}:
+**{{MHA}}: [1] {{Üxx4|ar|ارض|v=أَلْأَرْض|d=al-arḍ|DMG=0}} {{m}}; [2, 7] {{Üxx4|ar|عالم|v=عَالَم|d=ʿālam|DMG=0}} {{m}}
 *{{hy}}: [1] {{Üt|hy|աշխարհ|aschcharh}}
 *{{bg}}: [1] {{Üt|bg|свят|svjat}} {{m}}
 *{{zh}}: [1] {{Üt|zh|世界|shì jiè}}; [5–8] {{Üt|zh|界|jiè}}
-*{{en}}: [1–9] {{Ü|en|world}}; [1] {{Ü|en|earth}}
+*{{en}}: [1] {{Ü|en|Earth}}, {{Ü|en|World}}; [1–9] {{Ü|en|world}}
 *{{eo}}: [1] {{Ü|eo|Tero}}; [2] {{Ü|eo|universo}}; [3–9] {{Ü|eo|mondo}}
-*{{fi}}: [1] {{Ü|fi|maailma}}; [1] {{Ü|fi|Maa}}
+*{{fi}}: [1] {{Ü|fi|Maa}}; [3] {{Ü|fi|maailma}}
 *{{fr}}: [1] {{Ü|fr|monde}} {{m}}
 *{{ka}}: [1] {{Üt|ka|მსოფლიო|msophlio}}; [2] {{Üt|ka|სამყარო|samq'aro}}
 *{{el}}: [1–9] {{Üt|el|κόσμος|kósmos}} {{m}}
-*{{he}}: [1] {{Üt|he|עולם|O'lam}}
-*{{io}}: [1] {{Ü|io|Tero}}; [2] {{Ü|io|universo}}; [3-9] {{Ü|io|mondo}}
+*{{he|CHA}}: [1] {{Üxx4|he|עולם|v=הַעוֹלָם|d=ha-ʿōlām|CHA=0}} {{m}}
+*{{io}}: [1] {{Ü|io|Tero}}; [2] {{Ü|io|universo}}; [3–9] {{Ü|io|mondo}}
 *{{it}}: [1] {{Ü|it|mondo}} {{m}}
 *{{ja}}: [1] {{Üt|ja|世界|せかい, sekai}}; [4] {{Üt|ja|世間|せけん, seken}}, {{Üt|ja|万国|ばんこく, bankoku}} (''im Sinne von'': alle Länder); [5–8] {{Üt|ja|界|かい, kai}}
 *{{ca}}: [1–7] {{Ü|ca|món}} {{m}}
@@ -119,6 +130,7 @@
 *{{la}}: [1–4] {{Ü|la|terra|terrae}}, [[vlat]]; [2] {{Ü|la|universum}}, {{Ü|la|universitas}}
 *{{lv}}: [1–2] {{Ü|lv|pasaule}} {{f}}
 |Ü-rechts=
+*{{nds}}: [1–9] {{Ü|nds|Weld}} {{f}}
 *{{nl}}: [1] {{Ü|nl|wereld}}
 *{{no}}:
 **{{nb}}: [1] {{Ü|nb|verden}} {{m}}
@@ -127,14 +139,16 @@
 *{{pl}}: [1–9] {{Ü|pl|świat}} {{m}}
 *{{pt}}: [1–10] {{Ü|pt|mundo}} {{m}}, {{Ü|pt|Terra}} {{f}}
 *{{ru}}: [1–10] {{Üt|ru|мир|mir}} {{m}}, {{Üt|ru|свет|swet}} {{m}}
+*{{sr}}: [1–10] {{Üt|sr|свет|svet}}
 *{{sv}}: [1–7, 9] {{Ü|sv|värld}} {{u}}; [1] {{Ü|sv|jorden}} {{u}}
 *{{wen}}:
+**{{dsb}}: [1] {{Ü|dsb|}}
 **{{hsb}}: [1-4] {{Ü|hsb|swět}} {{m}}
 *{{es}}: [1–9] {{Ü|es|mundo}} {{m}}; [1] {{Ü|es|Tierra}} {{f}}; [2] {{Ü|es|universo}} {{m}}
 *{{sw}}: [1] {{Ü|sw|dunia}}
 *{{ta}}: [1] {{Üt|ta|உலகம்|ulakam}}
 *{{cs}}: [1–9] {{Ü|cs|svět}} {{m}}
-*{{tr}}: [1] {{Ü|tr|Dünya}}; [2] {{Ü|tr|Âlem}}, {{Ü|tr|Evren}}, {{Ü|tr|Kâinat}}; [3, 9] {{Ü|tr|dünya}}; [9] {{Ü|tr|gezegen}};
+*{{tr}}: [1] {{Ü|tr|Dünya}}; [2] {{Ü|tr|Âlem}}, {{Ü|tr|Evren}}, {{Ü|tr|Kâinat}}; [3, 9] {{Ü|tr|dünya}}; [9] {{Ü|tr|gezegen}}
 *{{hu}}: [1] {{Ü|hu|világ}}
 *{{vi}}: [1] {{Ü|vi|thế giới}}
 |Dialekttabelle=
@@ -144,46 +158,37 @@
 }}
 
 {{Referenzen}}
-:[1–10] {{Wikipedia|Welt (Begriffsklärung)}}
+:[1, 2] {{Wikipedia|Welt (Begriffsklärung)}}
 :[1–4] {{Wikipedia}}
-:[1–9] {{Ref-Grimm}}
-:[1–10] {{Ref-DWDS}}
-:[1–4] {{Ref-Duden}}
-:[1–10] {{Ref-Canoo}}
-:[1–10] {{Ref-UniLeipzig}}
-:[1–10] {{Ref-FreeDictionary}}
-:[1–10] {{Ref-Duden}}
+:[1–9, 11] {{Ref-Grimm}}
+:[1–9, 11] {{Ref-DWDS}}
+:[1–9, 11] {{Ref-Duden}}
+:[1–9] {{Ref-Canoo}}
+:[1–9, 11] {{Ref-UniLeipzig}}
+:[1–9, 11] {{Ref-FreeDictionary}}
+:[10] Heinemann, Margot; ''Kleines Wörterbuch der Jugendsprache'', 2.; unveränd. Aufl. Leipzig, Bibliographisches Institut, ISBN 3-323-00273-3
+{{Referenzen prüfen|Deutsch}}
 
 {{Quellen}}
 
 === {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Toponym|Deutsch}} ===
 
-{{Deutsch Substantiv Übersicht
-|Nominativ Singular=<small>(das)</small> Welt
-|Nominativ Plural=—
-|Genitiv Singular=<small>(des)</small> Welts
-|Genitiv Plural=—
-|Dativ Singular=<small>(dem)</small> Welt
-|Dativ Plural=—
-|Akkusativ Singular=<small>(das)</small> Welt
-|Akkusativ Plural=—
+{{Deutsch Toponym Übersicht
 }}
-
-{{Artikel Toponym}}
 
 {{Worttrennung}}
 :Welt, {{kPl.}}
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|vɛlt}}
-:{{Hörbeispiele}} {{Audio|}}
+:{{Hörbeispiele}} {{Audio|De-Welt.ogg}}
 :{{Reime}} {{Reim|ɛlt|Deutsch}}
 
 {{Bedeutungen}}
 :[1] eine [[Gemeinde]] auf der [[Halbinsel]] [[Eiderstedt]] in [[Schleswig-Holstein]], [[Deutschland]]
 
 {{Herkunft}}
-:''früher:'' [[Wehldt]], vermutlich von [[Wehle]] - [[Brack]] {{QS Herkunft|unbelegt}}
+:''früher:'' ''[[Wehldt]]'', vermutlich von ''[[Wehle]]'' - [[Brack]] {{QS Herkunft|unbelegt}}
 
 {{Oberbegriffe}}
 :[1] [[Gemeinde]], [[Ort]]
@@ -196,7 +201,7 @@
 {{Wortbildungen}}
 :[[Welter]], [[Weltererin]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{da}}: [1] {{Ü|da|Velt}}
 |Ü-rechts=
@@ -206,45 +211,6 @@
 {{Referenzen}}
 :[1] {{Wikipedia|Welt (Eiderstedt)}}
 
-{{Quellen|}}
+{{Quellen}}
 
-{{Ähnlichkeiten}}
-:[[Weltergewicht]], [[well]], [[wellt]]
-
-[[ast:Welt]]
-[[az:Welt]]
-[[br:Welt]]
-[[ca:Welt]]
-[[chr:Welt]]
-[[cs:Welt]]
-[[da:Welt]]
-[[el:Welt]]
-[[en:Welt]]
-[[et:Welt]]
-[[fi:Welt]]
-[[fr:Welt]]
-[[gl:Welt]]
-[[hu:Welt]]
-[[id:Welt]]
-[[io:Welt]]
-[[it:Welt]]
-[[ja:Welt]]
-[[ko:Welt]]
-[[ku:Welt]]
-[[ky:Welt]]
-[[li:Welt]]
-[[lo:Welt]]
-[[lt:Welt]]
-[[mg:Welt]]
-[[mn:Welt]]
-[[nah:Welt]]
-[[nl:Welt]]
-[[no:Welt]]
-[[pl:Welt]]
-[[ps:Welt]]
-[[pt:Welt]]
-[[ru:Welt]]
-[[sv:Welt]]
-[[ta:Welt]]
-[[tr:Welt]]
-[[zh:Welt]]
+{{Ähnlichkeiten 2|[[Weltergewicht]], [[well]], [[wellt]]}}

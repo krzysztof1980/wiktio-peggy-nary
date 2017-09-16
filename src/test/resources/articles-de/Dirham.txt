@@ -2,14 +2,15 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Dirham
-|Nominativ Plural=die Dirhams
-|Genitiv Singular=des Dirhams
-|Genitiv Plural=der Dirhams
-|Dativ Singular=dem Dirham
-|Dativ Plural=den Dirhams
-|Akkusativ Singular=den Dirham
-|Akkusativ Plural=die Dirhams
+|Genus=m
+|Nominativ Singular=Dirham
+|Nominativ Plural=Dirhams
+|Genitiv Singular=Dirhams
+|Genitiv Plural=Dirhams
+|Dativ Singular=Dirham
+|Dativ Plural=Dirhams
+|Akkusativ Singular=Dirham
+|Akkusativ Plural=Dirhams
 }}
 
 {{Anmerkung}}
@@ -22,14 +23,14 @@
 :Dir·ham, {{Pl.}} Dir·hams
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|…}}, {{Pl.}} {{Lautschrift|…}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|}}
 
 {{Bedeutungen}}
 :[1] Währungseinheit in verschiedenen arabischen Ländern
 ::[1a] in den [[Vereinigte Arabische Emirate|Vereinigten Arabische Emiraten]] (siehe [[VAE-Dirham]])
 ::[1b] in [[Marokko]] (siehe [[marokkanischer Dirham]])
-::[1c] in [[Katar]] (kleinere Einheit des [[Katar-Riyal|Katar-Riyals]])
+::[1c] in [[Katar]] (kleinere Einheit des [[Katar-Riyal]]s)
 ::[1d] in [[Libyen]] (kleinere Einheit des [[libyscher Dinar|libyschen Dinars]])
 ::[1e] in [[Tadschikistan]] (kleinere Einheit des [[Somoni]])
 ::[1f] früher in [[Jordanien]] (kleinere Einheit des [[jordanischer Dinar|jordanischen Dinars]])
@@ -56,7 +57,7 @@
 {{Beispiele}}
 :[1] „Junge Burschen streunen umher und verkaufen Zigaretten zu einem ''Dirham'' das Stück.“<ref>Wortschatz-Lexikon Uni Leipzig, Quelle: spiegel.de vom 17.04.2006</ref>
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1, 2] {{Ü|en|dirham}}
 *{{fr}}: [1] {{Ü|fr|dirham}} {{m}}
@@ -76,5 +77,3 @@
 
 {{Ähnlichkeiten}}
 :[[Direm]], [[Dirhem]]
-
-[[ko:Dirham]]

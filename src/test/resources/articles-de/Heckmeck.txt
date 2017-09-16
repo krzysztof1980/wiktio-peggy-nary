@@ -2,14 +2,15 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Heckmeck
-|Nominativ Plural=die Heckmecks
-|Genitiv Singular=des Heckmecks
-|Genitiv Plural=der Heckmecks
-|Dativ Singular=dem Heckmeck
-|Dativ Plural=den Heckmecks
-|Akkusativ Singular=den Heckmeck
-|Akkusativ Plural=die Heckmecks
+|Genus=m
+|Nominativ Singular=Heckmeck
+|Nominativ Plural=Heckmecks
+|Genitiv Singular=Heckmecks
+|Genitiv Plural=Heckmecks
+|Dativ Singular=Heckmeck
+|Dativ Plural=Heckmecks
+|Akkusativ Singular=Heckmeck
+|Akkusativ Plural=Heckmecks
 }}
 
 {{Anmerkungen}}
@@ -19,13 +20,14 @@
 :Heck·meck, {{Pl.}} Heck·mecks
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|ˈhɛkmɛk}}, {{Pl.}} {{Lautschrift|ˈhɛkmɛks}}
+:{{IPA}} {{Lautschrift|ˈhɛkmɛk}}
+:{{Hörbeispiele}} {{Audio|De-Heckmeck.ogg}}
 
 {{Bedeutungen}}
 :[1] ugs. für unnötige Aufregung, Hektik, Durcheinander, unnötige Umstände
 
 {{Herkunft}}
-:verballhornt aus dem arab. ''haqi milki'' (= \"Mein Recht, mein Eigentum\", Beginn einer Kreditrückforderungsformel arabischsprachiger Juden, die im Mittelalter ab 1492 aus Spanien nach Deutschland kamen.)
+:verballhornt aus dem arab. ''haqqi milki'' (= "Mein Recht, mein Eigentum", Beginn einer Kreditrückforderungsformel arabischsprachiger Juden, die im Mittelalter ab 1492 aus Spanien nach Deutschland kamen.)
 :andere Quellen sehen in ''Heckmeck'' lediglich eine [[Reduplikation]] (genauer: [[Reimdoppelung]]) des 18. Jahrhunderts in Anlehnung an ''[[meckern]]''; vorauf ging seit dem 15. Jahrhundert ''Hackemack'' und ''Hack und Mack'' „Gesindel, Gerede“<ref> ''Kluge. Etymologisches Wörterbuch der deutschen Sprache''. Bearbeitet von Elmar Seebold. 24., durchgesehene und erweiterte Auflage. de Gruyter, Berlin/ New York 2002. ISBN 3-11-017472-3 </ref>
 
 {{Sinnverwandte Wörter}}
@@ -33,22 +35,24 @@
 
 {{Beispiele}}
 :[1] Mach' nicht so einen ''Heckmeck!''
-:[1] „Heute rege ich mich über Frau Beckham auf, wenn so ein ''Heckmeck'' gemacht wird, in welcher Suite das Paar in Mailand nächtigt...“<ref> Ulli Hoeneß in einem Spiegel-Interview, ''DER SPIEGEL'' 5, 2009, Seite 101 </ref>
+:[1] „Heute rege ich mich über Frau Beckham auf, wenn so ein ''Heckmeck'' gemacht wird, in welcher Suite das Paar in Mailand nächtigt…“<ref> Ulli Hoeneß in einem Spiegel-Interview, ''DER SPIEGEL'' 5, 2009, Seite 101 </ref>
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{en}}: [1] {{Ü|en|}}
 *{{fr}}: [1] {{Ü|fr|}}
 |Ü-rechts=
 *{{sv}}: [1] {{Ü|sv|spektakel}}, {{Ü|sv|väsen}}, {{Ü|sv|rabalder}}
-}}<!-- für weitere Sprachkürzel siehe den Link rechts unterhalb des Editierfensters -->
+}}
 
 {{Referenzen}}
 :[1] {{Ref-DWDS|Heckmeck}}
-:[1] {{Ref-Canoo|Heckmeck}}
-:[1] {{Ref-UniLeipzig|Heckmeck}}
+:[*] {{Ref-Canoo|Heckmeck}}
+:[*] {{Ref-UniLeipzig|Heckmeck}}
+:[1] {{Ref-FreeDictionary|Heckmeck}}
+:[1] {{Ref-Duden|Heckmeck}}
+:[1] {{Ref-wissen.de|Wörterbuch|Heckmeck}}
+:[1] {{Ref-PONS|Heckmeck}}
+:[*] {{Ref-OWID|elexiko|197065}}
 
 {{Quellen}}
-
-[[io:Heckmeck]]
-[[ru:Heckmeck]]

@@ -1,14 +1,16 @@
 == Thulium ({{Sprache|Deutsch}}) ==
 === {{Wortart|Substantiv|Deutsch}}, {{n}} ===
 
+{{Elemente|Tm|Erbium|Er|Ytterbium|Yb}}
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=das Thulium
+|Genus=n
+|Nominativ Singular=Thulium
 |Nominativ Plural=—
-|Genitiv Singular=des Thuliums
+|Genitiv Singular=Thuliums
 |Genitiv Plural=—
-|Dativ Singular=dem Thulium
+|Dativ Singular=Thulium
 |Dativ Plural=—
-|Akkusativ Singular=das Thulium
+|Akkusativ Singular=Thulium
 |Akkusativ Plural=—
 |Bild=Tm-TableImage.png|210px|1|''Thulium'' im Periodensystem
 }}
@@ -39,7 +41,7 @@
 {{Wortbildungen}}
 :[[Thuliumverbindung]]
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
 *{{ar}}: [1] {{Üt|ar|ثليوم|}}
 *{{hy}}: [1] {{Üt|hy|թուլիում|tulium}}
@@ -49,6 +51,7 @@
 *{{fi}}: [1] {{Ü|fi|tulium}}
 *{{fr}}: [1] {{Ü|fr|thulium}} {{m}}
 *{{he}}: [1] {{Üt|he|תוליום|tulium}}
+*{{ia}}: [1] {{Ü|ia|thulium}}
 *{{is}}: [1] {{Ü|is|túlín}}
 |Ü-rechts=
 *{{it}}: [1] {{Ü|it|tulio}}
@@ -70,19 +73,3 @@
 
 {{Ähnlichkeiten}}
 :[[Thallium]]
-
-[[cs:Thulium]]
-[[en:Thulium]]
-[[eu:Thulium]]
-[[fr:Thulium]]
-[[hu:Thulium]]
-[[io:Thulium]]
-[[ja:Thulium]]
-[[lt:Thulium]]
-[[nn:Thulium]]
-[[pl:Thulium]]
-[[pt:Thulium]]
-[[ro:Thulium]]
-[[ru:Thulium]]
-[[sv:Thulium]]
-[[zh:Thulium]]

@@ -3,29 +3,32 @@
 === {{Wortart|Substantiv|Deutsch}}, {{m}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=der Tun
-|Nominativ Plural=die Tune
-|Genitiv Singular=des Tuns<br />des Tunes
-|Genitiv Plural=der Tune
-|Dativ Singular=dem Tun<br />dem Tune
-|Dativ Plural=den Tunen
-|Akkusativ Singular=den Tun
-|Akkusativ Plural=die Tune
+|Genus=m
+|Nominativ Singular=Tun
+|Nominativ Plural=Tune
+|Genitiv Singular=Tuns
+|Genitiv Singular*=Tunes
+|Genitiv Plural=Tune
+|Dativ Singular=Tun
+|Dativ Singular*=Tune
+|Dativ Plural=Tunen
+|Akkusativ Singular=Tun
+|Akkusativ Plural=Tune
 }}
 
 {{Alternative Schreibweisen}}
-:Thun
+:[[Thun]]
 
 {{Worttrennung}}
-: Tun, {{Pl.}} Tu·ne
+:Tun, {{Pl.}} Tu·ne
 
 {{Aussprache}}
-:{{IPA}} {{Lautschrift|tuːn}}, {{Pl.}} {{Lautschrift|ˈtuːnə}}
-:{{Hörbeispiele}} {{Audio|}}, {{Pl.}} {{Audio|}}
+:{{IPA}} {{Lautschrift|tuːn}}
+:{{Hörbeispiele}} {{Audio|}}
 :{{Reime}} {{Reim|uːn|Deutsch}}
 
 {{Bedeutungen}}
-:[1] großer und schneller, als Speisefisch beliebter Meeresfisch ''(Thunnus)''
+:[1] ''veraltet:'' großer und schneller, als Speisefisch beliebter Meeresfisch ''(Thunnus)''
 
 {{Synonyme}}
 :[1] [[Thunfisch]]
@@ -36,26 +39,30 @@
 {{Wortbildungen}}
 :Tunfang<!--bewusst nicht wikifiziert-->
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-:siehe [[Thunfisch]]
+{{Übersetzungen umleiten|1|Thunfisch|}}
 }}
 
 {{Referenzen}}
-:[1] {{Wikipedia|Tunfische}}
+:[1] [https://books.google.se/books?id=hAk9BQAAQBAJ&pg=PA95&dq=%22tun%22+ein+fisch&hl=de&sa=X&ei=kRNwVcrkE4StswGg-5ygCg&redir_esc=y#v=onepage&q=%22tun%22%20ein%20fisch&f=false Die Fische, von A.E. Brehm]
 
 === {{Wortart|Substantiv|Deutsch}}, {{n}} ===
 
 {{Deutsch Substantiv Übersicht
-|Nominativ Singular=das Tun
+|Genus=n
+|Nominativ Singular=Tun
 |Nominativ Plural=—
-|Genitiv Singular=des Tuns
+|Genitiv Singular=Tuns
 |Genitiv Plural=—
-|Dativ Singular=dem Tun
+|Dativ Singular=Tun
 |Dativ Plural=—
-|Akkusativ Singular=das Tun
+|Akkusativ Singular=Tun
 |Akkusativ Plural=—
 }}
+
+{{Nicht mehr gültige Schreibweisen}}
+:[[Thun]]
 
 {{Worttrennung}}
 :Tun, {{kPl.}}
@@ -78,11 +85,11 @@
 :[1] Dein ''Tun'' wird nicht ohne Folgen bleiben.
 
 {{Redewendungen}}
-: Tun und Lassen, sinnvolles Tun
+:Tun und Lassen, sinnvolles Tun
 
-==== Übersetzungen ====
+==== {{Übersetzungen}} ====
 {{Ü-Tabelle|Ü-links=
-*{{en}}: [1] {{Ü|en|doings}}
+*{{en}}: [1] {{Ü|en|doing}}
 *{{fr}}: [1] {{Ü|fr|}}
 |Ü-rechts=
 *{{it}}: [1] {{Ü|it|}}
@@ -95,16 +102,4 @@
 :[1] {{Ref-Canoo|Tun}}
 :[1] {{Ref-UniLeipzig|Tun}}
 :[1] {{Ref-Duden|Tun_Beschaeftigung_Handlung|Tun}}
-
-[[chr:Tun]]
-[[en:Tun]]
-[[fi:Tun]]
-[[fr:Tun]]
-[[hu:Tun]]
-[[io:Tun]]
-[[ku:Tun]]
-[[mg:Tun]]
-[[no:Tun]]
-[[pl:Tun]]
-[[ru:Tun]]
-[[tr:Tun]]
+:[1] {{Ref-Pons|Tun}}
