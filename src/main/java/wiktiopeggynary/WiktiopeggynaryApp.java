@@ -4,7 +4,8 @@ import org.apache.commons.cli.*;
 import wiktiopeggynary.parser.ConcurrentParserTaskExecutorFactory;
 import wiktiopeggynary.parser.ParserService;
 import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory;
-import wiktiopeggynary.persistence.ElasticsearchNativeClient;
+import wiktiopeggynary.persistence.TemplateEsRepository;
+import wiktiopeggynary.persistence.WiktionaryEntryEsRepository;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,15 +16,15 @@ import java.nio.file.Paths;
  * @author Krzysztof Witukiewicz
  */
 public class WiktiopeggynaryApp {
-
+	
 	private final String dumpFile;
 	private final boolean parallel;
-
+	
 	public WiktiopeggynaryApp(String dumpFile, boolean parallel) {
 		this.dumpFile = dumpFile;
 		this.parallel = parallel;
 	}
-
+	
 	public static void main(String[] args) throws Exception {
 		Options options = new Options();
 		Option file = Option.builder("f")
@@ -38,7 +39,7 @@ public class WiktiopeggynaryApp {
 		                        .build();
 		options.addOption(file);
 		options.addOption(parallel);
-
+		
 		CommandLineParser parser = new DefaultParser();
 		CommandLine line;
 		try {
@@ -55,12 +56,12 @@ public class WiktiopeggynaryApp {
 		                                                line.hasOption(parallel.getOpt()));
 		app.parseDump();
 	}
-
+	
 	private static void printHelp(Options options) {
 		HelpFormatter formatter = new HelpFormatter();
 		formatter.printHelp("java wiktiopeggynary.WiktiopeggynaryApp [OPTION]", options);
 	}
-
+	
 	public void parseDump() throws IOException {
 		Path dumpFilePath = Paths.get(dumpFile);
 		if (!Files.exists(dumpFilePath)) {
@@ -70,7 +71,15 @@ public class WiktiopeggynaryApp {
 		ParserService parserService = new ParserService(parallel
 		                                                ? new ConcurrentParserTaskExecutorFactory()
 		                                                : new SequentialParserTaskExecutorFactory());
-		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, new ElasticsearchNativeClient());
-		parseManager.parse(dumpFilePath);
+		WiktionaryEntryEsRepository wiktionaryEntryRepo = new WiktionaryEntryEsRepository();
+		TemplateEsRepository templateRepo = new TemplateEsRepository();
+		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, wiktionaryEntryRepo,
+		                                                                         templateRepo);
+		try {
+			parseManager.parse(dumpFilePath);
+		} finally {
+			wiktionaryEntryRepo.cleanup();
+			templateRepo.cleanup();
+		}
 	}
 }

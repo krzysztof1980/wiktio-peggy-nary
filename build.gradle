@@ -1,22 +1,25 @@
 group 'wiktiopeggynary'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
 apply plugin: 'groovy'
+apply plugin: 'maven'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
     compile 'de.tudarmstadt.ukp.jwktl:jwktl:1.0.1',
-            'org.elasticsearch:elasticsearch:2.3.2',
+            'org.elasticsearch.client:elasticsearch-rest-high-level-client:5.6.0',
             'com.fasterxml.jackson.core:jackson-databind:2.5.3',
             'org.apache.commons:commons-lang3:3.4',
             'org.slf4j:slf4j-api:1.7.12',
-            'commons-cli:commons-cli:1.3'
+            'commons-cli:commons-cli:1.3',
+            'org.codehaus.groovy:groovy-all:2.4.12',
+            'pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT'
 
     runtime 'ch.qos.logback:logback-classic:1.1.3',
             'org.slf4j:jul-to-slf4j:1.7.12'
@@ -27,4 +30,56 @@ dependencies {
                 'org.spockframework:spock-core:1.0-groovy-2.4',
                 'cglib:cglib-nodep:3.1',
                 'org.objenesis:objenesis:2.1'
+}
+
+sourceSets {
+    main {
+        java { srcDirs = [] }    // no source dirs for the java compiler
+        groovy { srcDirs = ["src/main/java", "src/main/groovy"] }  // compile everything in src/ with groovy
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT'
+    }
+}
+
+
+import pl.kwitukiewicz.wdb.elasticsearch.WiktionaryDumpEsRepository
+
+task('updateTestData', dependsOn: [jar]) {
+    inputs.property("dumpFile", dumpFile)
+
+    doLast {
+        logger.quiet "Dump file: $dumpFile"
+        def testDataDir = file('src/test/resources/articles-de')
+        def repo = new WiktionaryDumpEsRepository()
+        def headerLineMatcher = { String line -> line.startsWith("== ") }
+        testDataDir.eachFile { file ->
+            def title = (file.name - ".txt").replaceAll("_", " ")
+            def headerLine = file.readLines().find(headerLineMatcher)
+            def entries = repo.findEntryByTitle(title)
+            def entry
+            if (entries.size() == 1) {
+                entry = entries[0]
+            } else if (entries.size() > 1) {
+                entry = entries.find { e ->
+                    def entryHeaderLine = e.text.readLines().find(headerLineMatcher)
+                    return entryHeaderLine == headerLine
+                }
+            }
+            if (entry == null) {
+                logger.error("No dictionary entry found for the title '${title}'")
+            } else {
+                file.setText(entry.text, "UTF-8")
+                logger.quiet "Set text of length=${entry.text.length()} in file $file.name"
+            }
+        }
+    }
 }
