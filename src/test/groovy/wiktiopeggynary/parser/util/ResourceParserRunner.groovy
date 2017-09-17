@@ -1,6 +1,8 @@
 package wiktiopeggynary.parser.util
 
 import wiktiopeggynary.parser.ParserService
+import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory
+import wiktiopeggynary.parser.template.TemplateService
 
 /**
  * @author Krzysztof Witukiewicz
@@ -9,7 +11,9 @@ class ResourceParserRunner {
 
     static void main(String[] args) {
         String articleTitle = getArticleFromUserInput()
-        def wiktionaryEntries = ParserService.getInstance().parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle))
+        def parserService = new ParserService(new SequentialParserTaskExecutorFactory())
+        def templateService = new TemplateService(Collections.emptyMap(), parserService)
+        def wiktionaryEntries = parserService.parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle), templateService)
         wiktionaryEntries.each {
             e -> println(e)
         }
@@ -18,14 +22,14 @@ class ResourceParserRunner {
     private static String getArticleFromUserInput() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))
         while (true) {
-            System.out.print("Provide word from articles-de: ");
-            String line = reader.readLine();
+            System.out.print("Provide word from articles-de: ")
+            String line = reader.readLine()
             if (line.length() == 0)
                 return null
             if (ResourceUtils.hasResourceForArticle(line)) {
                 return line
             } else {
-                System.out.println("Resource with provided name does not exist!");
+                System.out.println("Resource with provided name does not exist!")
             }
         }
     }

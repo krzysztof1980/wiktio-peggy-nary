@@ -15,8 +15,10 @@ import java.util.concurrent.*;
 import java.util.function.Consumer;
 
 /**
+ * @deprecated Complexity of this solution seems to be unneeded for the problem at hand
  * @author Krzysztof Witukiewicz
  */
+@Deprecated
 public class TemplateService {
 	private static final Logger logger = LoggerFactory.getLogger(TemplateService.class);
 	private static final Logger missingDefLogger = LoggerFactory.getLogger("missing_template_definitions");

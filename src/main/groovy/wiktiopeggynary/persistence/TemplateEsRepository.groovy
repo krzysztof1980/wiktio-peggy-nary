@@ -26,4 +26,9 @@ class TemplateEsRepository extends ElasticsearchIndexingRepository {
     protected Logger getLogger() {
         return logger
     }
+
+    @Override
+    protected String createIdForObject(Object o) {
+        return null // let ES create the ID
+    }
 }

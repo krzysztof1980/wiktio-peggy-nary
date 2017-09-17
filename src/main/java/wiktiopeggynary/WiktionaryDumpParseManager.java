@@ -8,6 +8,7 @@ import wiktiopeggynary.persistence.TemplateEsRepository;
 import wiktiopeggynary.persistence.WiktionaryEntryEsRepository;
 
 import java.nio.file.Path;
+import java.util.Collections;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -30,20 +31,21 @@ public class WiktionaryDumpParseManager {
 	public void parse(Path wiktionaryDumpPath) {
 		logger.info("Deleting indices...");
 
-		logger.info("Reading in template definitions pages...");
-		TemplateService templateService = new TemplateService(parserService.getTemplateDefinitionPagesFromDump(
-				wiktionaryDumpPath), parserService);
+		// TODO: consider removing the TemplateService altogether if not needed
+//		logger.info("Reading in template definitions pages...");
+//		TemplateService templateService = new TemplateService(parserService.getTemplateDefinitionPagesFromDump(
+//				wiktionaryDumpPath), parserService);
 
 		logger.info("Indexing wiktionary entries...");
 		wiktionaryEntryRepo.prepareIndexForRebuild();
-		parserService.getWiktionaryEntriesFromDump(wiktionaryDumpPath, templateService,
+		parserService.getWiktionaryEntriesFromDump(wiktionaryDumpPath, new TemplateService(Collections.emptyMap(), parserService),
 		                                           r -> r.getWiktionaryEntries().forEach(wiktionaryEntryRepo::indexWiktionaryEntry)
 		);
 		wiktionaryEntryRepo.indexRebuildDone();
 
-		logger.info("Indexing template definitions...");
-		templateRepo.prepareIndexForRebuild();
-		templateService.processTemplateDefinitions(templateRepo::indexTemplateDefinition);
-		templateRepo.indexRebuildDone();
+//		logger.info("Indexing template definitions...");
+//		templateRepo.prepareIndexForRebuild();
+//		templateService.processTemplateDefinitions(templateRepo::indexTemplateDefinition);
+//		templateRepo.indexRebuildDone();
 	}
 }
