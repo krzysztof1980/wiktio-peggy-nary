@@ -5,7 +5,7 @@ Dokument = (!KOPF2 Line)* Eintrag EOF ;
 //==============================================================================
 Eintrag = DeEintrag? OtherLangEintrag* EOF ;
 OtherLangEintrag = (!DeSpracheKopf Line)+ ;
-DeEintrag = DeSpracheKopf DeWortart+ ;
+DeEintrag = DeSpracheKopf (!KOPF3 Line)* DeWortart+ ;
 
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
 DeSpracheTemplate = LT "Sprache" SEP "Deutsch" RT ;
@@ -52,7 +52,9 @@ FlexionVariantList  = Space Phrase (BR Phrase)* {}
 Gender = LT GenderTemplateArgument RT Space {};
 GenderTemplateArgument = "mf" / "f" ("m" / "n") / "n" ("m" / "f") / "m" / "f" / "n" / "u" ;
 
-MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
+// TODO: enable MeaningsTextbaustein when fixed
+//MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
+MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 
 //------------------------------------------------------------------------------
 // Meanings

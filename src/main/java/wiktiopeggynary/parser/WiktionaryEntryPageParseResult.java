@@ -20,4 +20,11 @@ public class WiktionaryEntryPageParseResult {
 	public Collection<WiktionaryEntry> getWiktionaryEntries() {
 		return Collections.unmodifiableCollection(wiktionaryEntries);
 	}
+	
+	@Override
+	public String toString() {
+		return "WiktionaryEntryPageParseResult{" +
+				       "wiktionaryEntries=" + wiktionaryEntries +
+				       '}';
+	}
 }
