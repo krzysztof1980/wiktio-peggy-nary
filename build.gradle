@@ -54,8 +54,6 @@ buildscript {
 import pl.kwitukiewicz.wdb.elasticsearch.WiktionaryDumpEsRepository
 
 task('updateTestData', dependsOn: [jar]) {
-    inputs.property("dumpFile", dumpFile)
-
     doLast {
         logger.quiet "Dump file: $dumpFile"
         def testDataDir = file('src/test/resources/articles-de')
