@@ -19,6 +19,7 @@ import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.markup.*;
 import wiktiopeggynary.model.substantiv.FlexionForm;
+import wiktiopeggynary.model.substantiv.FlexionTable;
 import wiktiopeggynary.model.substantiv.MultiGender;
 import wiktiopeggynary.model.substantiv.Substantiv;
 import wiktiopeggynary.model.translation.Translation;
@@ -29,78 +30,79 @@ import wiktiopeggynary.parser.mouse.SemanticsBase;
 import wiktiopeggynary.parser.template.TemplateService;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 class WiktionarySemantics extends SemanticsBase {
-
+	
 	private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
-
+	
 	private String lemma;
 	private WiktionaryEntry entryWorkingCopy;
-
+	
 	private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
-
+	
 	private TemplateService templateService;
-
+	
 	void setTemplateService(TemplateService templateService) {
 		Validate.isTrue(this.templateService == null, "templateService can be initialized only once");
 		this.templateService = templateService;
 	}
-
+	
 	public String getLemma() {
 		return lemma;
 	}
-
+	
 	public Collection<WiktionaryEntry> getWiktionaryEntries() {
 		return Collections.unmodifiableCollection(wiktionaryEntries);
 	}
-
+	
 	void saveEintrag() {
 		wiktionaryEntries.push(entryWorkingCopy);
 	}
-
+	
 	void WortartBody_fail() {
 		logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
 		lhs().errClear();
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  WortartTemplate = LT "Wortart" IT TemplateAttr IT "Deutsch" RT
 	//-------------------------------------------------------------------
 	void WortartTemplate() {
 		lhs().put(rhs(3).text());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Lemma = Letter+ Space
 	//-------------------------------------------------------------------
 	void Lemma() {
 		lemma = rhsText(0, rhsSize() - 1);
 	}
-
+	
 	void createSubstantiv() {
 		entryWorkingCopy = new Substantiv();
 		entryWorkingCopy.setLemma(lemma);
 	}
-
+	
 	void SubstantivAttributes_0_fail() {
 		logger.error("Exception parsing Substantiv attribute for lemma '{}': {}", lemma,
 		             getFormattedErrorMessageForLogging());
 		lhs().errClear();
 	}
-
+	
 	void substantivGender() {
 		((Substantiv) entryWorkingCopy).setGender((MultiGender) rhs(0).get());
 	}
-
+	
 	void substantivWortart() {
 		((Substantiv) entryWorkingCopy).addAttribute((String) rhs(0).get());
 	}
-
+	
 	void substantivAdjDeklination() {
 		((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Gender = LT GenderTemplateArgument RT Space
 	//-------------------------------------------------------------------
@@ -113,100 +115,81 @@ class WiktionarySemantics extends SemanticsBase {
 			throw new ParseException(String.format("Exception parsing article for lemma '%s'", lemma), e);
 		}
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  NomSg = "Nominativ Singular" Space Digit Space "="
-	//    FlexionVariantList EOL
+	//  NomSg = "Nominativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addNomSg() {
 		addFlexionForm(Kasus.Nominativ, Numerus.Singular);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  NomPl = "Nominativ Plural" Space Digit Space "="
-	//    FlexionVariantList EOL
+	//  NomPl = "Nominativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addNomPl() {
 		addFlexionForm(Kasus.Nominativ, Numerus.Plural);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  GenSg = "Genitiv Singular" Space Digit Space "="
-	//    FlexionVariantList EOL
+	//  GenSg = "Genitiv Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addGenSg() {
 		addFlexionForm(Kasus.Genitiv, Numerus.Singular);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  GenPl = "Genitiv Plural" Space Digit Space "=" FlexionVariantList
-	//    EOL
+	//  GenPl = "Genitiv Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addGenPl() {
 		addFlexionForm(Kasus.Genitiv, Numerus.Plural);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  DatSg = "Dativ Singular" Space Digit Space "=" FlexionVariantList
-	//    EOL
+	//  DatSg = "Dativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addDatSg() {
 		addFlexionForm(Kasus.Dativ, Numerus.Singular);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  DatPl = "Dativ Plural" Space Digit Space "=" FlexionVariantList
-	//    EOL
+	//  DatPl = "Dativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addDatPl() {
 		addFlexionForm(Kasus.Dativ, Numerus.Plural);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  AkkSg = "Akkusativ Singular" Space Digit Space "="
-	//    FlexionVariantList EOL
+	//  AkkSg = "Akkusativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addAkkSg() {
 		addFlexionForm(Kasus.Akkusativ, Numerus.Singular);
 	}
-
+	
 	//-------------------------------------------------------------------
-	//  AkkPl = "Akkusativ Plural" Space Digit Space "="
-	//    FlexionVariantList EOL
+	//  AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addAkkPl() {
 		addFlexionForm(Kasus.Akkusativ, Numerus.Plural);
 	}
-
+	
 	private void addFlexionForm(Kasus kasus, Numerus numerus) {
-		FlexionForm flexionForm = new FlexionForm(kasus, numerus);
-		Phrase flexionVariantListPhrase = rhs(5);
-		if (flexionVariantListPhrase.get() != null) {
-			((Iterable<String>) flexionVariantListPhrase.get()).forEach(v -> flexionForm.addVariant(v));
+		String variant = rhs(rhsSize() - 2).text();
+		String optDigitText = rhs(2).text();
+		int formIdx = optDigitText.isEmpty() ? 0 : Integer.valueOf(optDigitText) - 1;
+		FlexionTable flexionTable = ((Substantiv) wiktionaryEntries.peek()).getFlexionTable();
+		List<FlexionForm> existingForms =
+				flexionTable.getFlexionForms().stream()
+				            .filter(f -> f.getKasus().equals(kasus) && f.getNumerus().equals(numerus))
+				            .collect(Collectors.toList());
+		if (existingForms.size() > formIdx) {
+			existingForms.get(formIdx).addVariant(variant);
 		} else {
-			flexionForm.setUnparsedForm(flexionVariantListPhrase.text());
+			FlexionForm form = new FlexionForm(kasus, numerus);
+			form.addVariant(variant);
+			flexionTable.addFlexionForm(form);
 		}
-		((Substantiv) wiktionaryEntries.peek()).getFlexionTable().addFlexionForm(flexionForm);
 	}
-
-	//-------------------------------------------------------------------
-	//  FlexionVariantList = Space Phrase (BR Phrase)*
-	//-------------------------------------------------------------------
-	void FlexionVariantList_0() {
-		List<String> variants = new ArrayList<>();
-		for (int i = 1; i < rhsSize(); i += 2) {
-			variants.add(rhs(i).text());
-		}
-		lhs().put(variants);
-	}
-
-	//-------------------------------------------------------------------
-	//  FlexionVariantList = Space "-" Space
-	//-------------------------------------------------------------------
-	void FlexionVariantList_1() {
-		lhs().put(new ArrayList<>());
-	}
-
+	
 	//-------------------------------------------------------------------
 	//  LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine
 	//-------------------------------------------------------------------
@@ -218,14 +201,14 @@ class WiktionarySemantics extends SemanticsBase {
 				wiktionaryEntries.peek().addTranslationMeaning(language, meaning);
 		}
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Lang = LT Word RT
 	//-------------------------------------------------------------------
 	void Lang() {
 		lhs().put(rhs(1).text());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  TranslationMeaning = ItemNo Translation+
 	//-------------------------------------------------------------------
@@ -238,7 +221,7 @@ class WiktionarySemantics extends SemanticsBase {
 		}
 		lhs().put(meaning);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Translation = TranslationDetails (UeTemplate / UetTemplate) Gender?
 	//                      0                        1                 2
@@ -251,7 +234,7 @@ class WiktionarySemantics extends SemanticsBase {
 			t.setGender((MultiGender) rhs(2).get());
 		lhs().put(t);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  UeTemplate = LT ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
 	//                0      1        2       3       4       5
@@ -267,7 +250,7 @@ class WiktionarySemantics extends SemanticsBase {
 			translation.setExternalLink(rhs(9).text());
 		lhs().put(translation);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  UetTemplate = LT ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr
 	//                 0        1        2       3       4       5
@@ -284,14 +267,14 @@ class WiktionarySemantics extends SemanticsBase {
 			translation.setExternalLink(rhs(11).text());
 		lhs().put(translation);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  ItemNo = "[" _++ "]" Space
 	//-------------------------------------------------------------------
 	void ItemNo() {
 		lhs().put(rhsText(1, rhsSize() - 2));
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Meaning = MeaningLvl RichTextComponent++ EOL
 	//-------------------------------------------------------------------
@@ -303,7 +286,7 @@ class WiktionarySemantics extends SemanticsBase {
 		Meaning meaning = new Meaning(evaluator.getResult());
 		entryWorkingCopy.addMeaning(meaning);
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Template = LT TName (SEP TParam)* RT
 	//              0   1     2     3     n-1
@@ -315,7 +298,7 @@ class WiktionarySemantics extends SemanticsBase {
 		}
 		lhs().put(templateBuilder.build());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  TParam = Number EQ (!(SEP / RT) RichTextComponent)*
 	//             0    1                        2
@@ -325,7 +308,7 @@ class WiktionarySemantics extends SemanticsBase {
 		processSequenceOfRichTextComponents(2, rhsSize(), richText);
 		lhs().put(new NumberedTemplateParameter(Integer.valueOf(rhs(0).text()), richText));
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  TParam = Name EQ (!(SEP / RT) RichTextComponent)*
 	//             0  1                        2
@@ -335,7 +318,7 @@ class WiktionarySemantics extends SemanticsBase {
 		processSequenceOfRichTextComponents(2, rhsSize(), richText);
 		lhs().put(new NamedTemplateParameter(rhs(0).text(), richText));
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  TCallParam = (!(SEP / RF) RichTextComponent)*
 	//                                     0
@@ -345,7 +328,7 @@ class WiktionarySemantics extends SemanticsBase {
 		processSequenceOfRichTextComponents(0, rhsSize(), richText);
 		lhs().put(new AnonymousTemplateParameter(richText));
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  Link = LL LinkAttr (SEP LinkAttr)? RL
 	//         0      1      2      3      4(2)
@@ -356,7 +339,7 @@ class WiktionarySemantics extends SemanticsBase {
 			linkBuilder.withLinkText(rhs(3).text());
 		lhs().put(linkBuilder.build());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  CursiveText = "''" RichTextComponent*+ "''"
 	//                  0            1          n-1
@@ -366,42 +349,42 @@ class WiktionarySemantics extends SemanticsBase {
 		processSequenceOfRichTextComponents(1, rhsSize() - 1, body);
 		lhs().put(new CursiveBlock(body));
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = Link
 	//-------------------------------------------------------------------
 	public void RichTextComponent_0() {
 		lhs().put(rhs(0).get());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = CursiveText
 	//-------------------------------------------------------------------
 	public void RichTextComponent_1() {
 		lhs().put(rhs(0).get());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = Template
 	//-------------------------------------------------------------------
 	public void RichTextComponent_2() {
 		lhs().put(rhs(0).get());
 	}
-
+	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = !EOL _
 	//-------------------------------------------------------------------
 	public void RichTextComponent_3() {
 		lhs().put(new PlainText(rhsText(0, rhsSize())));
 	}
-
+	
 	private void processSequenceOfRichTextComponents(int startInclusive, int endExclusive, RichText richText) {
 		IntStream.range(startInclusive, endExclusive)
 		         .mapToObj(i -> rhs(i).get())
 		         .filter(Objects::nonNull)
 		         .forEach(o -> richText.addComponent((RichTextComponent) o));
 	}
-
+	
 	private String getFormattedErrorMessageForLogging() {
 		return lhs().errMsg().replace("\n", "\\n");
 	}

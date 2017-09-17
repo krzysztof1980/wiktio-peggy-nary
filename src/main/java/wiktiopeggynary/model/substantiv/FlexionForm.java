@@ -18,7 +18,6 @@ public class FlexionForm {
     private final Kasus kasus;
     private final Numerus numerus;
     private final List<String> variants = new ArrayList<>();
-    private String unparsedForm;
 
     public FlexionForm(Kasus kasus, Numerus numerus) {
         this.kasus = kasus;
@@ -37,27 +36,31 @@ public class FlexionForm {
         variants.add(variant);
     }
 
-    public String getUnparsedForm() {
-        return unparsedForm;
-    }
-
-    public void setUnparsedForm(String unparsedForm) {
-        this.unparsedForm = unparsedForm;
-    }
-
-    public Iterable<String> getVariants() {
-        return Collections.unmodifiableCollection(variants);
-    }
-
-    public boolean isUnparsed() {
-        return getUnparsedForm() != null;
+    public List<String> getVariants() {
+        return Collections.unmodifiableList(variants);
     }
 
     @Override
     public String toString() {
-        String value = isUnparsed()
-                ? format("'%s' (unparsed)", getUnparsedForm())
-                : format("'%s'", variants.stream().collect(Collectors.joining(", ")));
+        String value = format("'%s'", variants.stream().collect(Collectors.joining(", ")));
         return format("%s %s=%s", kasus, numerus, value);
     }
+	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		
+		FlexionForm that = (FlexionForm) o;
+		
+		if (kasus != that.kasus) return false;
+		return numerus == that.numerus;
+	}
+	
+	@Override
+	public int hashCode() {
+		int result = kasus.hashCode();
+		result = 31 * result + numerus.hashCode();
+		return result;
+	}
 }

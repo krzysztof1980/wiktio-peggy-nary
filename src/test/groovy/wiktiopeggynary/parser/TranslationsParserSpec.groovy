@@ -94,6 +94,7 @@ class TranslationsParserSpec extends ParserSpecBase {
         langTranslations[meaningIdx].translations[translationIdx].gender == gender
 
         where:
+        // @formatter:off
         meaningIdx | translationIdx | translationTxt                                     || gender
         0          | 0              | "[1, 2] {{Ü|pl|państwo}} {{n}}"                    || new MultiGender(Gender.NEUTRUM)
         1          | 0              | "[3] {{Ü|pl|Stany}} ''Pl.,''"                      || null
@@ -102,6 +103,7 @@ class TranslationsParserSpec extends ParserSpecBase {
         3          | 0              | "[5] {{Ü|pl|społeczeństwo}} {{n}},"                || new MultiGender(Gender.NEUTRUM)
         3          | 1              | "''Bienen, Wespen, Hummeln:'' {{Ü|pl|rój}} {{m}};" || new MultiGender(Gender.MASKULINUM)
         4          | 0              | "[7] {{Ü|pl|dwór}} {{m}}"                          || new MultiGender(Gender.MASKULINUM)
+        // @formatter:on
     }
 
     def "content of translation in entry['#lang'] meaning[#meaningIdx] translation[#translationIdx]"() {
@@ -118,9 +120,9 @@ class TranslationsParserSpec extends ParserSpecBase {
         translation.externalLink == externalLink
 
         where:
-        lang | meaningIdx | translationIdx | translationTxt               || internalLink | transcription | label    | externalLink
-        "eu" | 0          | 0              | "{{Ü|eu|estatu}}"            || "estatu"     | null          | null     | null
-        "bg" | 0          | 0              | "{{Üt|bg|държава|dŭrzhava}}" || "държава"    | "dŭrzhava"    | null     | null
+        lang | meaningIdx | translationIdx | translationTxt               || internalLink | transcription | label | externalLink
+        "eu" | 0          | 0              | "{{Ü|eu|estatu}}"            || "estatu"     | null          | null  | null
+        "bg" | 0          | 0              | "{{Üt|bg|държава|dŭrzhava}}" || "държава"    | "dăržáva"     | null  | null
     }
 
     def "ignore empty translations and comments"() {

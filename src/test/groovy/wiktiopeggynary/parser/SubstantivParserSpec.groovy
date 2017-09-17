@@ -67,7 +67,7 @@ class SubstantivParserSpec extends ParserSpecBase {
         entry.attributes[0] == Substantiv.ATTR_ADJ_DEKLINATION
     }
 
-    def "flexion table with line breaks"() {
+    def "flexion table with multiple variants of the same form"() {
         when:
         def entries = parserService.parseWiktionaryEntryPage(
                 readArticleFromResources("Zug"), templateService).wiktionaryEntries
@@ -78,35 +78,27 @@ class SubstantivParserSpec extends ParserSpecBase {
         flexionForms[2].kasus == Kasus.Genitiv
         flexionForms[2].numerus == Numerus.Singular
         flexionForms[2].variants.size() == 2
-        flexionForms[2].variants[0] == "des Zuges"
-        flexionForms[2].variants[1] == "des Zugs"
+        flexionForms[2].variants[0] == "Zuges"
+        flexionForms[2].variants[1] == "Zugs"
     }
 
-    def "flexion table without plural"() {
+    def "flexion table with multiple flexion forms"() {
         when:
         def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"), templateService).wiktionaryEntries
-        Substantiv entry = entries[1] as Substantiv
+                readArticleFromResources("Boot"), templateService).wiktionaryEntries
+        Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionTable().getFlexionForms()
 
-        then: "forms for Plural are empty"
-        flexionForms.size() == 8
-        flexionForms.stream().allMatch {
-            ff -> ff.numerus == Numerus.Singular || (ff.variants.size() == 0 && !ff.unparsed)
-        }
-    }
+        then: // first form of Nominativ Plural
+        flexionForms[1].kasus == Kasus.Nominativ
+        flexionForms[1].numerus == Numerus.Plural
+        flexionForms[1].variants.size() == 1
+        flexionForms[1].variants[0] == "Boote"
 
-    def "flexion table with unknown format"() {
-        when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"), templateService).wiktionaryEntries
-        Substantiv entry = entries[1] as Substantiv
-        def flexionForms = entry.getFlexionTable().getFlexionForms()
-
-        then: "forms for Singular have all unknown format"
-        flexionForms.size() == 8
-        flexionForms.stream().allMatch {
-            ff -> ff.numerus == Numerus.Plural || (ff.variants.size() == 0 && ff.unparsed)
-        }
+        and: // second form of Nominativ Plural
+        flexionForms[2].kasus == Kasus.Nominativ
+        flexionForms[2].numerus == Numerus.Plural
+        flexionForms[2].variants.size() == 1
+        flexionForms[2].variants[0] == "Böte"
     }
 }

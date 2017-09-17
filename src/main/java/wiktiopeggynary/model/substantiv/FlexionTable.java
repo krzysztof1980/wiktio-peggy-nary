@@ -21,10 +21,6 @@ public class FlexionTable {
         return Collections.unmodifiableCollection(flexionForms);
     }
 
-    public boolean hasUnparsedForms() {
-        return flexionForms.stream().anyMatch(FlexionForm::isUnparsed);
-    }
-
     @Override
     public String toString() {
         return "FlexionTable {\n"

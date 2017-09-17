@@ -30,21 +30,17 @@ SubstantivAttribute = Gender {substantivGender}
 //------------------------------------------------------------------------------
 // Flexion table
 //------------------------------------------------------------------------------
-FlexionTable = FlexionTableKopf FlexionForm+ RT RestOfLine ;
+FlexionTable = FlexionTableKopf FlexionForm* RT RestOfLine ;
 FlexionTableKopf = LT "Deutsch Substantiv Übersicht" Space RestOfLine ;
 FlexionForm = SEP (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
-NomSg = "Nominativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomSg};
-NomPl = "Nominativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addNomPl};
-GenSg = "Genitiv Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addGenSg};
-GenPl = "Genitiv Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addGenPl};
-DatSg = "Dativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addDatSg};
-DatPl = "Dativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addDatPl};
-AkkSg = "Akkusativ Singular" Space OptDigit Space "=" FlexionVariantList RestOfLine {addAkkSg};
-AkkPl = "Akkusativ Plural" Space OptDigit Space "=" FlexionVariantList RestOfLine {addAkkPl};
-
-FlexionVariantList  = Space Phrase (BR Phrase)* {}
-                    / Space "—" Space {}
-                    / (!EOL _)* ;
+NomSg = "Nominativ Singular" Space OptDigit "*"? Space "=" Phrase EOL {addNomSg};
+NomPl = "Nominativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addNomPl};
+GenSg = "Genitiv Singular" Space OptDigit "*"? Space "=" Phrase EOL {addGenSg};
+GenPl = "Genitiv Plural" Space OptDigit "*"? Space "=" Phrase EOL {addGenPl};
+DatSg = "Dativ Singular" Space OptDigit "*"? Space "=" Phrase EOL {addDatSg};
+DatPl = "Dativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addDatPl};
+AkkSg = "Akkusativ Singular" Space OptDigit "*"? Space "=" Phrase EOL {addAkkSg};
+AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addAkkPl};
 
 //==============================================================================
 // Common Wiktionary markup
@@ -69,7 +65,7 @@ MeaningLvl = ":"+ (ItemNo / "*") ;
 // Translations
 //------------------------------------------------------------------------------
 TranslationsSection = TranslationsKopf (!TranslationsTableKopf Line)* TranslationsTable (!KopfStart Line)* ;
-TranslationsKopf = KOPF4 "Übersetzungen" Space KOPF4 RestOfLine ;
+TranslationsKopf = KOPF4 LT "Übersetzungen" RT Space KOPF4 RestOfLine ;
 TranslationsTable = TranslationsTableKopf (LangTranslations / DialectTable / !RT Line)*+ RT RestOfLine ;
 TranslationsTableKopf = LT "Ü-Tabelle" Line ;
 LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine {addTranslationsForLanguage};
