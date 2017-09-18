@@ -13,10 +13,7 @@ package wiktiopeggynary.parser;
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wiktiopeggynary.model.Kasus;
-import wiktiopeggynary.model.Meaning;
-import wiktiopeggynary.model.Numerus;
-import wiktiopeggynary.model.WiktionaryEntry;
+import wiktiopeggynary.model.*;
 import wiktiopeggynary.model.markup.*;
 import wiktiopeggynary.model.substantiv.FlexionForm;
 import wiktiopeggynary.model.substantiv.FlexionTable;
@@ -25,7 +22,6 @@ import wiktiopeggynary.model.substantiv.Substantiv;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
 import wiktiopeggynary.model.visitor.RichTextEvaluator;
-import wiktiopeggynary.parser.mouse.Phrase;
 import wiktiopeggynary.parser.mouse.SemanticsBase;
 import wiktiopeggynary.parser.template.TemplateService;
 
@@ -285,6 +281,18 @@ class WiktionarySemantics extends SemanticsBase {
 		evaluator.visit(richText);
 		Meaning meaning = new Meaning(evaluator.getResult());
 		entryWorkingCopy.addMeaning(meaning);
+	}
+	
+	//=====================================================================
+	//  OldSpellingTemplate = LT "..." (SEP TextualTParam)+ RT
+	//                        0    1    2         3         n-1
+	//=====================================================================
+	public void OldSpellingTemplate() {
+		ObsoleteWiktionaryEntry entry = new ObsoleteWiktionaryEntry();
+		entry.setDescription(rhs(1).text());
+		entry.setLemma(lemma);
+		entry.setCorrectSpelling(rhs(3).text());
+		wiktionaryEntries.push(entry);
 	}
 	
 	//-------------------------------------------------------------------

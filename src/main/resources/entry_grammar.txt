@@ -3,8 +3,10 @@ Dokument = (!KOPF2 Line)* Eintrag EOF ;
 //==============================================================================
 // Wiktionary Eintrag
 //==============================================================================
-Eintrag = DeEintrag? OtherLangEintrag* EOF ;
+Eintrag = DeEintrag? OtherLangEintrag* EOF / OldSpellingEintrag Line* EOF ;
 OtherLangEintrag = (!DeSpracheKopf Line)+ ;
+OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate EOL ;
+OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") (SEP TextualTParam)+ RT {};
 DeEintrag = DeSpracheKopf (!KOPF3 Line)* DeWortart+ ;
 
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
@@ -112,6 +114,7 @@ TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
 			           (!(SEP / RT) RichTextComponent)* {};
 TParamName = (!(SEP / RT / EQ) _)+ ;
+TextualTParam = (!(SEP / RT) _)+ ;
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" _++ "]" Space {};
