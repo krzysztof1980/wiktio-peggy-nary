@@ -1,17 +1,18 @@
-Dokument = (!KOPF2 Line)* Eintrag EOF ;
+Dokument = (!KOPF2 Line)* Eintrag ;
 
 //==============================================================================
 // Wiktionary Eintrag
 //==============================================================================
-Eintrag = DeEintrag? OtherLangEintrag* EOF / OldSpellingEintrag Line* EOF ;
-OtherLangEintrag = (!DeSpracheKopf Line)+ ;
-OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate EOL ;
-OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") (SEP TextualTParam)+ RT {};
+Eintrag = DeEintrag? OtherLangEintrag* EOF / OldSpellingEintrag Line* EOF;
+OtherLangEintrag = !DeSpracheKopf SpracheKopf (!SpracheKopf Line)* ;
+OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate ;
+OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") SEP TextualTParam RestOfLine {};
 DeEintrag = DeSpracheKopf (!KOPF3 Line)* DeWortart+ ;
 
+SpracheKopf = KOPF2 Lemma "(" LT "Sprache" SEP _++ RT ")" Space KOPF2 RestOfLine ;
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
 DeSpracheTemplate = LT "Sprache" SEP "Deutsch" RT ;
-Lemma = Letter+ Space {};
+Lemma = (!(Space "(") _)+ Space {};
 
 DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
 WortartKopf = SubstantivKopf {saveEintrag};
@@ -24,7 +25,7 @@ WortartTemplate = LT "Wortart" SEP TParam SEP "Deutsch" RT {};
 //==============================================================================
 SubstantivKopf = KOPF3 SubstantivTemplate Space SubstantivAttributes Space KOPF3 RestOfLine ;
 SubstantivTemplate = LT "Wortart" SEP "Substantiv" SEP "Deutsch" RT {createSubstantiv};
-SubstantivAttributes = (","? Space SubstantivAttribute)* ;
+SubstantivAttributes = (","? Space SubstantivAttribute)* ~{};
 SubstantivAttribute = Gender {substantivGender}
                     / WortartTemplate {substantivWortart}
                     / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination};
@@ -131,9 +132,8 @@ CommentEnd      = "-->" Space ;
 //------------------------------------------------------------------------------
 // Common expressions
 //------------------------------------------------------------------------------
-Line = _++ EOL ;
+Line = _*+ EOL ;
 BadLine = _++ EOL ;
-EmptyLine = Space EOL ;
 RestOfLine = _*+ EOL ;
 
 Digit = [0-9] ;
@@ -149,4 +149,4 @@ COMMA = "," Space ;
 SEMICOLON = ";" Space ;
 EQ = Space "=" Space ;
 EOF = !_ ;
-EOL = [\r\n]+ / EOF ;
+EOL = [\r\n]+ ;

@@ -304,7 +304,7 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  OldSpellingTemplate = LT "..." (SEP TextualTParam)+ RT
+	//  OldSpellingTemplate = LT "..." SEP TextualTParam RestOfLine
 	//                        0    1    2         3         n-1
 	//=====================================================================
 	void OldSpellingTemplate() {

@@ -1,0 +1,51 @@
+
+== Unabwendbarkeit ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Unabwendbarkeit
+|Nominativ Plural=Unabwendbarkeiten
+|Genitiv Singular=Unabwendbarkeit
+|Genitiv Plural=Unabwendbarkeiten
+|Dativ Singular=Unabwendbarkeit
+|Dativ Plural=Unabwendbarkeiten
+|Akkusativ Singular=Unabwendbarkeit
+|Akkusativ Plural=Unabwendbarkeiten
+}}
+
+{{Worttrennung}}
+:Un·ab·wend·bar·keit, {{Pl.}} Un·ab·wend·bar·kei·ten
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʊnʔapˈvɛntbaːɐ̯kaɪ̯t}}, {{Lautschrift|ˈʊnʔapˌvɛntbaːɐ̯kaɪ̯t}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] die Tatsache, nicht vermeidbar zu sein
+
+{{Herkunft}}
+:[[Derivation]] ([[Ableitung]]) zum Adjektiv ''[[unabwendbar]]'' mit dem [[Derivatem]] ([[Ableitungsmorphem]]) ''[[-keit]]''
+
+{{Beispiele}}
+:[1] „‚Es ist kein akutes Risiko‘, betont Anders Levermann, ‚aber es zeigt die ''Unabwendbarkeit'' des Meeresspiegelanstiegs.‘“<ref>{{Per-Süddeutsche Online | Online=http://www.sueddeutsche.de/wissen/prognose-zum-klimawandel-wo-das-meer-das-welterbe-ueberspuelt-1.1905188 | Autor=Patrick Illinger | Titel=Wasser bedroht Welterbe | Tag=05| Monat=03| Jahr=2014| Zugriff=2017-05-07 }}</ref>
+:[1] „Wenn die Tragödie die Nothwendigkeit der göttlichen Weltordnung und die ''Unabwendbarkeit'' des Schicksals darstellte, so spottete die Komödie jener Nothwendigkeit als einer albernen Einrichtung und verhöhnte die Idee des Schicksals durch die Feier der schicksallosen Nullität.“<ref>{{Literatur | Autor=Karl Rosenkranz | Titel=Die Poesie und ihre Geschichte | Verlag=Gebrüder Bornträger | Ort=Königsberg | Jahr=1855 | Seiten=194| Online=Zitiert nach {{GBS|vXRKAAAAcAAJ|PA194|Hervorhebung=Unabwendbarkeit}}}}</ref>
+:[1] „Hinzu kommt, daß nach der Formulierung des § 7 StVG die Haftung die Regel, die ''Unabwendbarkeit'' hingegen die Ausnahme ist.“<ref>{{Literatur | Autor= Dietrich Freyberger, Karen Lessing| Titel=Anwalts-Taschenbuch Verkehrsrecht | Verlag=Otto Schmidt | Jahr=2000 | Seiten=288 |Online=Zitiert nach {{GBS|-y5tvlSlT-EC|PA288|Hervorhebung=Unabwendbarkeit}}}}</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|ineluttabilità}} {{f}}
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[*] {{Wikipedia-Suche|Unabwendbarkeit}}
+:[*] {{Ref-DWDS|Unabwendbarkeit}}
+:[*] {{Ref-Canoo|Unabwendbarkeit}}
+:[*] {{Ref-OWID|elexiko|103013}}
+:[1] {{Ref-Duden|Unabwendbarkeit}}
+
+{{Quellen}}

@@ -1,0 +1,30 @@
+== Audio Designer ({{Sprache|Deutsch}}) ==
+{{erweitern|Schreibweise belegen|Deutsch}}
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Audio Designer
+|Nominativ Plural=Audio Designer
+|Genitiv Singular=Audio Designers
+|Genitiv Plural=Audio Designer
+|Dativ Singular=Audio Designer
+|Dativ Plural=Audio Designern
+|Akkusativ Singular=Audio Designer
+|Akkusativ Plural=Audio Designer
+}}
+
+{{Alternative Schreibweisen}}
+:[[Audio-Designer]]
+
+{{Worttrennung}}
+:Au·dio De·sig·ner, {{Pl.}} Au·dio De·sig·ner
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] auf Gestaltung von Hörereignissen spezialisiertes Berufsbild in der Schnittmenge aus Tontechniker, Tonmeister, Toningenieur, Komponist, Geräuschemacher, Tonassistent, Musiker und Sprecher
+
+{{Lemmaverweis|Audio-Designer}}

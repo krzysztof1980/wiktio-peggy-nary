@@ -3,7 +3,6 @@ package wiktiopeggynary.parser;
 import de.tudarmstadt.ukp.jwktl.parser.WiktionaryDumpParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wiktiopeggynary.parser.dumpparser.WiktionaryAutocorrectionService;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageDocument;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageParser;
 import wiktiopeggynary.parser.mouse.ParserBase;
@@ -26,7 +25,6 @@ public class ParserService {
 	private static final Logger logger = LoggerFactory.getLogger(ParserService.class);
 	private static final Logger erroneousEntriesLogger = LoggerFactory.getLogger("erroneous_wiktionary_entries");
 	
-	private final WiktionaryAutocorrectionService autocorrectionService = new WiktionaryAutocorrectionService();
 	private final ParserTaskExecutorFactory parserTaskExecutorFactory;
 	
 	public ParserService(ParserTaskExecutorFactory parserTaskExecutorFactory) {
@@ -76,8 +74,9 @@ public class ParserService {
 			throw new IllegalArgumentException("page must not be null");
 		WiktionaryParser parser = new WiktionaryParser(templateService);
 		setTraceInParser(parser);
-		String correctedPage = page; // autocorrectionService.correctPage(page); // TODO: what for was this?
-		if (parser.parse(new SourceString(correctedPage)))
+		if (!page.endsWith("\n"))
+			page = page + "\n";
+		if (parser.parse(new SourceString(page)))
 			return new WiktionaryEntryPageParseResult(parser.semantics().getWiktionaryEntries());
 		else {
 			erroneousEntriesLogger.error(
