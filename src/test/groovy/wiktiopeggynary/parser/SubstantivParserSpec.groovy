@@ -67,19 +67,22 @@ class SubstantivParserSpec extends ParserSpecBase {
         entry.attributes[0] == Substantiv.ATTR_ADJ_DEKLINATION
     }
 
-    def "flexion table with multiple variants of the same form"() {
+    def "flexion table with multiple variants of single form"() {
         when:
         def entries = parserService.parseWiktionaryEntryPage(
                 readArticleFromResources("Zug"), templateService).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
-        def flexionForms = entry.getFlexionTable().getFlexionForms()
+        def flexionForms = entry.getFlexionForms(Numerus.Singular)
 
         then:
-        flexionForms[2].kasus == Kasus.Genitiv
-        flexionForms[2].numerus == Numerus.Singular
-        flexionForms[2].variants.size() == 2
-        flexionForms[2].variants[0] == "Zuges"
-        flexionForms[2].variants[1] == "Zugs"
+        flexionForms.size() == 1
+        def flexionForm1 = flexionForms[0]
+        flexionForm1.gender == Gender.MASKULINUM
+        def genitiv = flexionForms[0].flexions[1]
+        genitiv.kasus == Kasus.Genitiv
+        genitiv.variants.size() == 2
+        genitiv.variants[0] == "Zuges"
+        genitiv.variants[1] == "Zugs"
     }
 
     def "flexion table with multiple flexion forms"() {
@@ -87,18 +90,79 @@ class SubstantivParserSpec extends ParserSpecBase {
         def entries = parserService.parseWiktionaryEntryPage(
                 readArticleFromResources("Boot"), templateService).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
-        def flexionForms = entry.getFlexionTable().getFlexionForms()
+        def flexionForms = entry.getFlexionForms(Numerus.Plural)
 
-        then: // first form of Nominativ Plural
-        flexionForms[1].kasus == Kasus.Nominativ
-        flexionForms[1].numerus == Numerus.Plural
-        flexionForms[1].variants.size() == 1
-        flexionForms[1].variants[0] == "Boote"
+        then:
+        flexionForms.size() == 2
+
+        and: // first form of Nominativ Plural
+        def flexionForm1 = flexionForms[0]
+        flexionForm1.gender == Gender.PLURAL
+        def nominativ1 = flexionForm1.flexions[0]
+        nominativ1.kasus == Kasus.Nominativ
+        nominativ1.variants.size() == 1
+        nominativ1.variants[0] == "Boote"
 
         and: // second form of Nominativ Plural
-        flexionForms[2].kasus == Kasus.Nominativ
-        flexionForms[2].numerus == Numerus.Plural
-        flexionForms[2].variants.size() == 1
-        flexionForms[2].variants[0] == "Böte"
+        def flexionForm2 = flexionForms[1]
+        flexionForm2.gender == Gender.PLURAL
+        def nominativ2 = flexionForm2.flexions[0]
+        nominativ2.kasus == Kasus.Nominativ
+        nominativ2.variants.size() == 1
+        nominativ2.variants[0] == "Böte"
+    }
+
+    def "flexion table with multiple variants in first of 2 singular forms"() {
+        when:
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Monat"), templateService).wiktionaryEntries
+        Substantiv entry = entries[0] as Substantiv
+        def flexionForms = entry.getFlexionForms(Numerus.Singular)
+
+        then:
+        flexionForms.size() == 2
+
+        and: // first form of Genitiv Singular
+        def flexionForm1 = flexionForms[0]
+        flexionForm1.gender == Gender.MASKULINUM
+        def genitiv1 = flexionForm1.flexions[1]
+        genitiv1.kasus == Kasus.Genitiv
+        genitiv1.variants.size() == 2
+        genitiv1.variants[0] == "Monates"
+        genitiv1.variants[1] == "Monats"
+
+        and: // second form of Genitiv Singular
+        def flexionForm2 = flexionForms[1]
+        flexionForm2.gender == Gender.NEUTRUM
+        def genitiv2 = flexionForm2.flexions[1]
+        genitiv2.kasus == Kasus.Genitiv
+        genitiv2.variants.size() == 1
+        genitiv2.variants[0] == "Monats"
+    }
+
+    def "no gender defined in the flexion table"() {
+        when:
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Oachkatzlschwoaf"), templateService).wiktionaryEntries
+        Substantiv entry = entries[0] as Substantiv
+        def flexionForms = entry.getFlexionForms(Numerus.Singular)
+
+        then: "there is one flexion form for Singular"
+        flexionForms.size() == 1
+        def flexionForm1 = flexionForms[0]
+
+        and: "its gender is set to the gender of Substantiv"
+        entry.gender.isSameAs(Gender.MASKULINUM)
+        flexionForm1.gender == Gender.MASKULINUM
+    }
+
+    def "no singular form - gender not specified in header"() {
+        when:
+        def entries = parserService.parseWiktionaryEntryPage(
+                readArticleFromResources("Eltern"), templateService).wiktionaryEntries
+        Substantiv entry = entries[0] as Substantiv
+
+        then:
+        entry.gender.isSameAs(Gender.PLURAL)
     }
 }

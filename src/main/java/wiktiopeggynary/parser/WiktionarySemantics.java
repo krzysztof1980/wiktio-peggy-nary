@@ -15,10 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wiktiopeggynary.model.*;
 import wiktiopeggynary.model.markup.*;
-import wiktiopeggynary.model.substantiv.FlexionForm;
-import wiktiopeggynary.model.substantiv.FlexionTable;
-import wiktiopeggynary.model.substantiv.MultiGender;
-import wiktiopeggynary.model.substantiv.Substantiv;
+import wiktiopeggynary.model.substantiv.*;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
 import wiktiopeggynary.model.visitor.RichTextEvaluator;
@@ -26,7 +23,6 @@ import wiktiopeggynary.parser.mouse.SemanticsBase;
 import wiktiopeggynary.parser.template.TemplateService;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 class WiktionarySemantics extends SemanticsBase {
@@ -81,7 +77,7 @@ class WiktionarySemantics extends SemanticsBase {
 		entryWorkingCopy.setLemma(lemma);
 	}
 	
-	void SubstantivAttributes_0_fail() {
+	void SubstantivAttributes_fail() {
 		logger.error("Exception parsing Substantiv attribute for lemma '{}': {}", lemma,
 		             getFormattedErrorMessageForLogging());
 		lhs().errClear();
@@ -89,6 +85,20 @@ class WiktionarySemantics extends SemanticsBase {
 	
 	void substantivGender() {
 		((Substantiv) entryWorkingCopy).setGender((MultiGender) rhs(0).get());
+	}
+	
+	//-------------------------------------------------------------------
+	// Gender = LT GenderTemplateArgument "."? RT Space
+	//-------------------------------------------------------------------
+	void Gender() {
+		lhs().put(rhs(1).get());
+	}
+	
+	//-------------------------------------------------------------------
+	// GenderTemplateArgument = [mnfu]+
+	//-------------------------------------------------------------------
+	void GenderTemplateArgument() {
+		lhs().put(new MultiGender(lhs().text()));
 	}
 	
 	void substantivWortart() {
@@ -99,16 +109,16 @@ class WiktionarySemantics extends SemanticsBase {
 		((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
 	}
 	
-	//-------------------------------------------------------------------
-	//  Gender = LT GenderTemplateArgument RT Space
-	//-------------------------------------------------------------------
-	void Gender() {
-		String genderText = rhsText(1, rhsSize() - 2);
-		try {
-			lhs().put(new MultiGender(genderText));
-		} catch (IllegalArgumentException e) {
-			logger.error("Exception parsing gender '{}' for lemma '{}'", genderText, lemma);
-			throw new ParseException(String.format("Exception parsing article for lemma '%s'", lemma), e);
+	//=====================================================================
+	//  Genus = "Genus" (Space Digit)? "=" [mnfu0] EOL
+	//=====================================================================
+	void addGenus() {
+		Gender gender = Gender.fromShortcut(rhs(rhsSize() - 2).text());
+		if (gender != Gender.PLURAL) {
+			((Substantiv) entryWorkingCopy).addFlexionForm(Numerus.Singular,
+			                                               new FlexionForm(gender));
+		} else {
+			((Substantiv) entryWorkingCopy).setGender(new MultiGender(Gender.PLURAL));
 		}
 	}
 	
@@ -116,73 +126,83 @@ class WiktionarySemantics extends SemanticsBase {
 	//  NomSg = "Nominativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addNomSg() {
-		addFlexionForm(Kasus.Nominativ, Numerus.Singular);
+		addFlexion(Kasus.Nominativ, Numerus.Singular);
 	}
 	
 	//-------------------------------------------------------------------
 	//  NomPl = "Nominativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addNomPl() {
-		addFlexionForm(Kasus.Nominativ, Numerus.Plural);
+		addFlexion(Kasus.Nominativ, Numerus.Plural);
 	}
 	
 	//-------------------------------------------------------------------
 	//  GenSg = "Genitiv Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addGenSg() {
-		addFlexionForm(Kasus.Genitiv, Numerus.Singular);
+		addFlexion(Kasus.Genitiv, Numerus.Singular);
 	}
 	
 	//-------------------------------------------------------------------
 	//  GenPl = "Genitiv Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addGenPl() {
-		addFlexionForm(Kasus.Genitiv, Numerus.Plural);
+		addFlexion(Kasus.Genitiv, Numerus.Plural);
 	}
 	
 	//-------------------------------------------------------------------
 	//  DatSg = "Dativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addDatSg() {
-		addFlexionForm(Kasus.Dativ, Numerus.Singular);
+		addFlexion(Kasus.Dativ, Numerus.Singular);
 	}
 	
 	//-------------------------------------------------------------------
 	//  DatPl = "Dativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addDatPl() {
-		addFlexionForm(Kasus.Dativ, Numerus.Plural);
+		addFlexion(Kasus.Dativ, Numerus.Plural);
 	}
 	
 	//-------------------------------------------------------------------
 	//  AkkSg = "Akkusativ Singular" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addAkkSg() {
-		addFlexionForm(Kasus.Akkusativ, Numerus.Singular);
+		addFlexion(Kasus.Akkusativ, Numerus.Singular);
 	}
 	
 	//-------------------------------------------------------------------
 	//  AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL
 	//-------------------------------------------------------------------
 	void addAkkPl() {
-		addFlexionForm(Kasus.Akkusativ, Numerus.Plural);
+		addFlexion(Kasus.Akkusativ, Numerus.Plural);
 	}
 	
-	private void addFlexionForm(Kasus kasus, Numerus numerus) {
+	private void addFlexion(Kasus kasus, Numerus numerus) {
 		String variant = rhs(rhsSize() - 2).text();
-		String optDigitText = rhs(2).text();
-		int formIdx = optDigitText.isEmpty() ? 0 : Integer.valueOf(optDigitText) - 1;
-		FlexionTable flexionTable = ((Substantiv) wiktionaryEntries.peek()).getFlexionTable();
-		List<FlexionForm> existingForms =
-				flexionTable.getFlexionForms().stream()
-				            .filter(f -> f.getKasus().equals(kasus) && f.getNumerus().equals(numerus))
-				            .collect(Collectors.toList());
-		if (existingForms.size() > formIdx) {
-			existingForms.get(formIdx).addVariant(variant);
+		String formNo = rhs(2).text();
+		int formIdx = formNo.isEmpty() ? 0 : Integer.valueOf(formNo) - 1;
+		List<FlexionForm> flexionForms = ((Substantiv) entryWorkingCopy).getFlexionForms(numerus);
+		FlexionForm flexionForm;
+		if (formIdx < flexionForms.size()) {
+			flexionForm = flexionForms.get(formIdx);
+		} else if (numerus == Numerus.Singular) {
+			flexionForm = new FlexionForm(((Substantiv) entryWorkingCopy).getGender().getGenders()[0]);
+			((Substantiv) entryWorkingCopy).addFlexionForm(Numerus.Singular, flexionForm);
+		} else if (numerus == Numerus.Plural) {
+			flexionForm = new FlexionForm(Gender.PLURAL);
+			((Substantiv) entryWorkingCopy).addFlexionForm(numerus, flexionForm);
 		} else {
-			FlexionForm form = new FlexionForm(kasus, numerus);
-			form.addVariant(variant);
-			flexionTable.addFlexionForm(form);
+			throw new IllegalStateException("Singular flexion form does not yet exist for " + entryWorkingCopy.getLemma());
+		}
+		Optional<Flexion> optExistingFlexion = flexionForm.getFlexions().stream().filter(
+				f -> f.getKasus().equals(kasus)).findFirst();
+		if (optExistingFlexion.isPresent()) {
+			optExistingFlexion.get().addVariant(variant);
+		} else {
+			Flexion flexion = new Flexion(kasus);
+			flexion.addVariant(variant);
+			flexionForm.addFlexion(flexion);
 		}
 	}
 	
@@ -274,7 +294,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//-------------------------------------------------------------------
 	//  Meaning = MeaningLvl RichTextComponent++ EOL
 	//-------------------------------------------------------------------
-	public void Meaning() {
+	void Meaning() {
 		RichText richText = new RichText();
 		processSequenceOfRichTextComponents(1, rhsSize(), richText);
 		RichTextEvaluator evaluator = new RichTextEvaluator(templateService, Collections.emptyList());
@@ -287,7 +307,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  OldSpellingTemplate = LT "..." (SEP TextualTParam)+ RT
 	//                        0    1    2         3         n-1
 	//=====================================================================
-	public void OldSpellingTemplate() {
+	void OldSpellingTemplate() {
 		ObsoleteWiktionaryEntry entry = new ObsoleteWiktionaryEntry();
 		entry.setDescription(rhs(1).text());
 		entry.setLemma(lemma);
@@ -299,7 +319,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  Template = LT TName (SEP TParam)* RT
 	//              0   1     2     3     n-1
 	//-------------------------------------------------------------------
-	public void Template() {
+	void Template() {
 		Template.Builder templateBuilder = new Template.Builder().withName(rhs(1).text());
 		for (int i = 3; i < rhsSize() - 1; i += 2) {
 			templateBuilder.withParameter((TemplateParameter) rhs(i).get());
@@ -311,7 +331,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  TParam = Number EQ (!(SEP / RT) RichTextComponent)*
 	//             0    1                        2
 	//-------------------------------------------------------------------
-	public void TParam_0() {
+	void TParam_0() {
 		RichText richText = new RichText();
 		processSequenceOfRichTextComponents(2, rhsSize(), richText);
 		lhs().put(new NumberedTemplateParameter(Integer.valueOf(rhs(0).text()), richText));
@@ -321,7 +341,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  TParam = Name EQ (!(SEP / RT) RichTextComponent)*
 	//             0  1                        2
 	//-------------------------------------------------------------------
-	public void TParam_1() {
+	void TParam_1() {
 		RichText richText = new RichText();
 		processSequenceOfRichTextComponents(2, rhsSize(), richText);
 		lhs().put(new NamedTemplateParameter(rhs(0).text(), richText));
@@ -331,7 +351,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  TCallParam = (!(SEP / RF) RichTextComponent)*
 	//                                     0
 	//-------------------------------------------------------------------
-	public void TParam_2() {
+	void TParam_2() {
 		RichText richText = new RichText();
 		processSequenceOfRichTextComponents(0, rhsSize(), richText);
 		lhs().put(new AnonymousTemplateParameter(richText));
@@ -341,7 +361,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  Link = LL LinkAttr (SEP LinkAttr)? RL
 	//         0      1      2      3      4(2)
 	//-------------------------------------------------------------------
-	public void Link() {
+	void Link() {
 		InternalLink.Builder linkBuilder = new InternalLink.Builder().withPageTitle(rhs(1).text());
 		if (rhsSize() > 3)
 			linkBuilder.withLinkText(rhs(3).text());
@@ -352,7 +372,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  CursiveText = "''" RichTextComponent*+ "''"
 	//                  0            1          n-1
 	//-------------------------------------------------------------------
-	public void CursiveText() {
+	void CursiveText() {
 		RichText body = new RichText();
 		processSequenceOfRichTextComponents(1, rhsSize() - 1, body);
 		lhs().put(new CursiveBlock(body));
@@ -361,28 +381,28 @@ class WiktionarySemantics extends SemanticsBase {
 	//-------------------------------------------------------------------
 	//  RichTextComponent = Link
 	//-------------------------------------------------------------------
-	public void RichTextComponent_0() {
+	void RichTextComponent_0() {
 		lhs().put(rhs(0).get());
 	}
 	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = CursiveText
 	//-------------------------------------------------------------------
-	public void RichTextComponent_1() {
+	void RichTextComponent_1() {
 		lhs().put(rhs(0).get());
 	}
 	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = Template
 	//-------------------------------------------------------------------
-	public void RichTextComponent_2() {
+	void RichTextComponent_2() {
 		lhs().put(rhs(0).get());
 	}
 	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = !EOL _
 	//-------------------------------------------------------------------
-	public void RichTextComponent_3() {
+	void RichTextComponent_3() {
 		lhs().put(new PlainText(rhsText(0, rhsSize())));
 	}
 	

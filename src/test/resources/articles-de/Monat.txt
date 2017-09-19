@@ -1,0 +1,205 @@
+== Monat ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{mn.}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus 1=m
+|Genus 2=n
+|Nominativ Singular 1=Monat
+|Nominativ Singular 2=Monat
+|Nominativ Plural=Monate
+|Genitiv Singular 1=Monates
+|Genitiv Singular 1*=Monats
+|Genitiv Singular 2=Monats
+|Genitiv Plural=Monate
+|Dativ Singular 1=Monat
+|Dativ Singular 1*=Monate
+|Dativ Singular 2=Monat
+|Dativ Plural=Monaten
+|Akkusativ Singular 1=Monat
+|Akkusativ Singular 2=Monat
+|Akkusativ Plural=Monate
+}}
+
+{{Anmerkung}}
+:Das Geschlecht ist im bairischen und damit auch im österreichischen Sprachgebiet umgangssprachlich sächlich.<ref>{{Lit-ÖBV: Österreichisches Wörterbuch|A=38 (Schulausgabe)}}, Seite 447</ref>
+
+{{Worttrennung}}
+:Mo·nat, {{Pl.}} Mo·na·te
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmoːnat}}
+:{{Hörbeispiele}} {{Audio|De-Monat.ogg}}, {{Audio|De-at-Monat.ogg|spr=at}}
+:{{Reime}} {{Reim|oːnat|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ein Maß zur Festlegung einer [[Zeitspanne]]; der zwölfte Teil eines [[Jahr]]es, der nach dem [[gregorianischer Kalender|gregorianischen Kalender]] zwischen 28 und 31 [[Tag]]en betragen kann
+
+{{Abkürzungen}}
+:[1] [[M]], [[M.]], [[Mon.]], [[Mo.]], [[Mt.]]
+
+{{Herkunft}}
+:seit dem 8. Jahrhundert bezeugt; mittelhochdeutsch: ''mānōt''; althochdeutsch: ''mānōd,'' ''mānōth''; aus germanisch ''*mǣnōþ-'' „[[Monat]], [[Mond]]“; von indogermanisch *mēnōt-, mēneses-<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Seite 358.</ref>
+
+{{Synonyme}}
+:[1] ''poetisch und veraltet:'' [[Mond]]
+
+{{Oberbegriffe}}
+:[1] [[Zeitspanne]], [[Zeitraum]]
+:{{K|siehe auch}} [[Thesaurus:Zeit und Kalender]]
+
+{{Unterbegriffe}}
+:[1] ''[[offiziell]] und [[gregorianisch]]:''
+:[[Januar]]; ''österreichisch:'' [[Jänner]]; [[Februar]]; ''österreichisch:'' [[Feber]]; [[März]], [[April]], [[Mai]], [[Juni]], [[Juli]], [[August]], [[September]], [[Oktober]], [[November]], [[Dezember]]
+:[1] [[Ferienmonat]], [[Schnuppermonat]], [[Supermonat]], [[Urlaubsmonat]]
+:[1] ''[[germanisch]], [[altdeutsch]] und teilweise zwischen 1933 und 1945:''
+:[[Brachet]], [[Brachmonat]], [[Brachmond]], [[Christmonat]], [[Christmond]], [[Eismonat]], [[Eismond]], [[Erntemonat]], [[Erntemond]], [[Ernting]], [[Frühlingsmonat]], [[Frühlingsmond]], [[Gilbhart]], [[Hartung]], [[Herbstmonat]], [[Herbstmond]], [[Heuert]], [[Heuet]], [[Heumonat]], [[Heumond]], [[Hornung]], [[Jul]], [[Julmonat]], [[Julmond]], [[Lenzing]], [[Lenzmonat]], [[Lenzmond]], [[Nebelmond]], [[Nebelung]], [[Neblung]], [[Ostermonat]], [[Ostermond]], [[Scheiding]], [[Schneemond]], [[Wandelmonat]], [[Wandelmond]], [[Weidemonat]], [[Weidemond]], [[Weinmonat]], [[Weinmond]], [[Windmond]], [[Wintermonat]], [[Wintermond]], [[Wonnemonat]], [[Wonnemond]]
+:[1] ''[[jüdisch]]:''
+:[[Tishri]], [[Cheshvan]], [[Kislev]], [[Tevet]], [[Shevat]], [[Adar]], [[Nisan]], [[Iyar]], [[Sivan]], [[Tammuz]], [[Av]], [[Elul]]
+:[1] ''[[islamisch]]:''
+:[[Muharram]], [[Safar]], [[Rabi' I]], [[Rabi' II]], [[Jumada I]],[[Jumada II]], [[Rajab]], [[Sha'ban]], [[Ramadan]], [[Shawwal]], [[Dhu l-Qua'dah]], [[Dhu l-Hijja]]
+:[1] ''andere [[Kriterium|Kriterien]]:''
+:[[Berichtsmonat]], [[Fastenmonat]], [[Folgemonat]], [[Herbstmonat]], [[Kriegsmonat]], [[Lebensmonat]], [[Nebelmonat]], [[Regenmonat]], [[Rosenkranzmonat]], [[Schwangerschaftsmonat]], [[Sommermonat]], [[Vätermonat]], [[Vergleichsmonat]], [[Vormonat]]
+
+{{Beispiele}}
+:[1] Jeden ''Monat'' suche ich mehrere Beispiele zusammen und trage sie nach.
+:[1] „Der Oktober ist auch das ''Monat'' der Freisprüche.“<ref>{{Internetquelle|hrsg=ORF|titel=Pröll-Abschied überrascht ÖVP|url=http://orf.at/stories/2095800/2095893/ |werk=news|datum=2011-12-26|zugriff=2016-03-09}}</ref>
+:[1] „Damit sinkt die Kündigungsfrist bei neuen Verträgen auf ein ''Monat'', branchenüblich sind derzeit drei ''Monate''.“<ref>{{Per-Standard Online | Online=http://derstandard.at/2000025589905/Kuendigungsfrist-bei-Handyvertraegen-sinkt-auf-einen-Monat | Autor= | Titel=Kündigungsfrist bei Handyverträgen sinkt auf einen Monat | TitelErg= | Tag= 12| Monat=11 | Jahr=2015 | Seiten= | Zugriff=2016-02-27 | Kommentar= }}</ref>
+:[1] „Die Klinik und das ''Monat'' kann gewählt werden.“<ref>{{Internetquelle|hrsg=Medizinische Universität Graz|titel=ASEA-UNINET - Austauschprogramm|url=http://www.medunigraz.at/cms/cms.php?search=des&pageName=2433 |zugriff=2016-03-09}}</ref>
+:[1] „[Der Kläger] vertritt die Ansicht, daß der Entziehungsgrund am 1. 10. 1990 eingetreten sei und die Leistung daher noch für das ''Monat'' Oktober 1990 gebühre.“<ref>[https://www.ris.bka.gv.at/Dokumente/Justiz/JJT_19911022_OGH0002_010OBS00206_9100000_000/JJT_19911022_OGH0002_010OBS00206_9100000_000.html Erkenntnis des österreichischen OGH vom 22. Oktober 1991]</ref>
+:[1] „Beim Transport zu Betrieben, die dem Fleischuntersuchungsgesetz unterliegen, ist ein Dokument (zum Beispiel Lieferschein) mitzuführen, das einen Sichtvermerk des Fleischuntersuchungsorganes mit folgenden Angaben enthält: […] 3. bei tiefgekühltem Fleisch auch das ''Monat'' und das Jahr, in denen es tiefgekühlt wurde.“<ref>[https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR12137472 Außer Kraft getretene österreichische Frischfleisch-Hygieneverordnung, § 14.] (7) </ref>
+:[1] „Die endgültigen Zahlen für das laufende ''Monat'' würden aber erst nach Ostern erhoben.“<ref>{{Per-Presse (Onlineausgabe) | Online=http://diepresse.com/home/panorama/religion/555680/KirchenAustritte_Wir-kommen-kaum-mehr-nach | Autor=APA | Titel= Kirchen-Austritte: "Wir kommen kaum mehr nach"| TitelErg= | Tag=01 | Monat=04 | Jahr=2010 | Zugriff=2016-02-27 | Kommentar= }}</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] pro ''Monat'', jeden ''Monat'', jeder ''Monat''
+
+{{Wortbildungen}}
+:''Adjektive/Adverbien:'' [[mehrmonatig]] ([[einmonatig]], [[zweimonatig]], [[dreimonatig]], [[viermonatig]], [[sechsmonatig]], [[siebenmonatig]], [[achtmonatig]], [[neunmonatig]], [[zehnmonatig]], [[elfmonatig]], [[zwölfmonatig]]), [[monatelang]], [[monatlich]] ([[einmonatlich]], [[zweimonatlich]], [[dreimonatlich]], [[viermonatlich]], [[fünfmonatig]], [[sechsmonatlich]], [[siebenmonatlich]], [[achtmonatlich]], [[neunmonatlich]], [[zehnmonatlich]], [[elfmonatlich]], [[zwölfmonatlich]]), [[monatsweise]]
+:''Substantive:'' Kind: ([[Siebenmonatskind]], [[Achtmonatskind]], [[Zehnmonatskind]]), [[Mannmonat]], [[Monatsanfang]], [[Monatsbedarf]], [[Monatsbeginn]], [[Monatsbeitrag]], [[Monatsbericht]], [[Monatsbinde]], [[Monatsblutung]], [[Monatsbudget]], [[Monatseinkommen]], [[Monatsende]], [[Monatserdbeere]], [[Monatserster]], [[Monatsfluss]], [[Monatsfrist]], [[Monatsgehalt]], [[Monatsgeld]], [[Monatsheft]], [[Monatshälfte]], [[Monatshoroskop]], [[Monatshygiene]], [[Monatskarte]], [[Monatsletzter]], [[Monatslohn]], [[Monatsmiete]], [[Monatsmitte]], [[Monatsmittel]], [[Monatsname]], [[Monatsproduktion]], [[Monatsrate]], [[Monatsration]], [[Monatsrente]], [[Monatssalär]], [[Monatsschluss]], [[Monatsschrift]] (→ [[Halbmonatsschrift]], [[Zweimonatsschrift]]), [[Monatsverdienst]], [[Monatswechsel]], [[Monatsziel]] (→ [[Dreimonatsziel]], [[Sechsmonatsziel]]), [[Monatszins]], [[Monatszuteilung]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{af}}: [1] {{Ü|af|maand}}
+*{{sq}}: [1] {{Ü|sq|muaj}}
+*{{grc}}: [1] {{Üt|grc|μήν|mēn}}
+*{{ar}}: [1] {{Üt|ar|شَهْر|shahr}}
+*{{az}}: [1] {{Ü|az|ay}}
+*{{ast}}: [1] {{Ü|ast|mes}}
+*{{ay}}: [1] {{Ü|ay|phajgsi}}
+*{{ba}}: [1] {{Üt|ba|ай|ay}}
+*{{eu}}: [1] {{Ü|eu|hil}}, {{Ü|eu|hilabete}}
+*{{bn}}: [1] {{Üt|bn|মাস|mash}}
+*{{bs}}: [1] {{Ü|bs|mjesec}}
+*{{br}}: [1] {{Ü|br|miz}}, {{Ü|br|mizvezh}}
+*{{bg}}: [1] {{Üt|bg|месец|mésec}} {{m}}
+*{{zh}}: [1] {{Üt|zh|月|yuè}}
+*{{da}}: [1] {{Ü|da|måned}} {{u}}
+*{{en}}: [1] {{Ü|en|month}}
+*{{eo}}: [1] {{Ü|eo|monato}}
+*{{et}}: [1] {{Ü|et|kuu}}
+*{{fo}}: [1] {{Ü|fo|mánaður}}
+*{{fi}}: [1] {{Ü|fi|kuukausi}}
+*{{fr}}: [1] {{Ü|fr|mois}}
+*{{fur}}: [1] {{Ü|fur|mês}} {{m}}
+*{{gl}}: [1] {{Ü|gl|mes}}
+*{{ka}}: [1] {{Üt|ka|თვე|t’ve}}
+*{{el}}: [1] {{Üt|el|μήνας|mínas}}
+*{{kl}}: [1] {{Ü|kl|qaammat}}
+*{{gn}}: [1] {{Ü|gn|jasyho}}
+*{{gu}}: [1] {{Üt|gu|મહિનો|mahino}}
+*{{he}}: [1] {{Üt|he|חודש|chodesh}}
+*{{hi}}: [1] {{Üt|hi|महीना|mahīnā}}, {{Üt|hi|माह|māha}}, {{Üt|hi|मास|māsa}}
+*{{io}}: [1] {{Ü|io|monato}}
+*{{id}}: [1] {{Ü|id|bulan}}
+*{{ia}}: [1] {{Ü|ia|mense}}
+*{{ga}}: [1] {{Ü|ga|mí}}
+*{{is}}: [1] {{Ü|is|mánuður}}
+*{{it}}: [1] {{Ü|it|mese}}
+*{{sah}}: [1] {{Üt|sah|ый|ıy}}
+*{{ja}}: [1] {{Üt|ja|月|tsuki}}
+*{{yi}}: [1] {{Üt|yi|חודש|khoydesh}}
+*{{csb}}: [1] {{Ü|csb|miesąc}}
+*{{ca}}: [1] {{Ü|ca|mes}} {{m}}
+*{{ko}}: [1] {{Üt|ko|달|dal}}, {{Üt|ko|월|wol}}
+*{{kw}}: [1] {{Ü|kw|mis}}
+*{{co}}: [1] {{Ü|co|mese}}
+*{{hr}}: [1] {{Ü|hr|mjesec}}
+*{{ku}}: [1] ''Kurmanji:'' {{Ü|ku|meh}}, ''Sorani:'' {{Üt|ku|مانگ|mang}}
+*{{la}}: [1] {{Ü|la|mensis}}
+*{{lv}}: [1] {{Ü|lv|mēnesis}}
+*{{li}}: [1] {{Ü|li|maond}}
+*{{ln}}: [1] {{Ü|ln|sanza}}
+*{{lt}}: [1] {{Ü|lt|mėnuo}}
+*{{lb}}: [1] {{Ü|lb|Mount}} {{m}}
+*{{mas}}: [1] {{Ü|mas|olapa}}
+*{{mg}}: [1] {{Ü|mg|volana}}
+|Ü-rechts=
+*{{ms}}: [1] {{Ü|ms|bulan}}
+*{{mt}}: [1] {{Ü|mt|xahar}}
+*{{gv}}: [1] {{Ü|gv|mee}}
+*{{mi}}: [1] {{Ü|mi|kaupeka}}
+*{{arn}}: [1] {{Ü|arn|küyen}}, {{Ü|arn|cüyen}}
+*{{mr}}: [1] {{Üt|mr|महिना|mahinā}}
+*{{mk}}: [1] {{Üt|mk|месец|mesec}}
+*{{mn}}: [1] {{Üt|mn|сар|sar}}
+*{{nds}}: [1] {{Ü|nds|Maand}}, {{Ü|nds|Moond}}
+*{{nl}}: [1] {{Ü|nl|maand}}
+*{{se}}: [1] {{Ü|se|mánotbadji}}
+*{{no}}: [1] {{Ü|no|måned}} {{m}}
+*{{nov}}: [1] {{Ü|nov|mensu}}
+*{{oc}}: [1] {{Ü|oc|mes}}
+*{{os}}: [1] {{Üt|os|мӕй|mæj}}
+*{{pa}}: [1] {{Üt|pa|ਮਹੀਨਾ|mahīnā}}
+*{{fa}}: [1] {{Üt|fa|ماه|mâh}}
+*{{pl}}: [1] {{Ü|pl|miesiąc}}
+*{{pt}}: [1] {{Ü|pt|mês}}
+*{{qu}}: [1] {{Ü|qu|killa}}
+*{{rap}}: [1] {{Ü|rap|ava'e}}
+*{{rm}}: [1] {{Ü|rm|mais}}
+*{{ro}}: [1] {{Ü|ro|lună}}
+*{{ru}}: [1] {{Üt|ru|месяц|mjésjats}}
+*{{sm}}: [1] {{Ü|sm|māsina}}
+*{{sa}}: [1] {{Üt|sa|मास|māsa}}
+*{{sc}}: [1] {{Ü|sc|mese}}, {{Ü|sc|mesi}}
+*{{gd}}: [1] {{Ü|gd|mìos}} {{m}} {{f}}
+*{{sv}}: [1] {{Ü|sv|månad}} {{u}}
+*{{sr}}: [1] {{Üt|sr|месец|mesec}}
+*{{sn}}: [1] {{Ü|sn|mwedzi}}
+*{{scn}}: [1] {{Ü|scn|misi}} {{m}}
+*{{sk}}: [1] {{Ü|sk|mesiac}} {{m}}
+*{{sl}}: [1] {{Ü|sl|mesec}}
+*{{wen}}:
+**{{hsb}}: [1] {{Ü|hsb|měsac}} {{m}}
+**{{dsb}}: [1] {{Ü|dsb|mjasec}} {{m}}
+*{{es}}: [1] {{Ü|es|mes}} {{m}}
+*{{sw}}: [1] {{Ü|sw|mwezi}}
+*{{tt}}: [1] {{Üt|tt|ай|ay}}
+*{{th}}: [1] {{Üt|th|เดือน|deuan}}
+*{{tpi}}: [1] {{Ü|tpi|mun}}
+*{{cs}}: [1] {{Ü|cs|měsíc}} {{m}}
+*{{ce}}: [1] {{Üt|ce|бутт|butt}}
+*{{tr}}: [1] {{Ü|tr|ay}}
+*{{cv}}: [1] {{Üt|cv|уйăх|ujăh}}
+*{{tk}}: [1] {{Ü|tk|aý}}
+*{{uk}}: [1] {{Üt|uk|місяць|mísjacʹ}}
+*{{hu}}: [1] {{Ü|hu|hónap}}
+*{{cy}}: [1] {{Ü|cy|mis}} {{m}}
+*{{wa}}: [1] {{Ü|wa|meûs}}
+*{{be}}: [1] {{Üt|be|месяц|mjesjats}}
+*{{fy}}: [1] {{Ü|fy|moanne}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Grimm}}
+:[1] {{Ref-DWDS}}
+:[1] {{Ref-Canoo}}
+:[1] {{Ref-UniLeipzig}}
+:[1] {{Ref-FreeDictionary}}
+:[1] {{Ref-Duden}}
+
+{{Quellen}}
+
+{{Monate (Deutsch)}}
+
+{{Ähnlichkeiten}}
+:[[Mona]], [[Monade]], [[Mond]], [[Monet]], [[month]]

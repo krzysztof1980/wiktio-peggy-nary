@@ -1,0 +1,117 @@
+== Eltern ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=0
+|Nominativ Singular=—
+|Nominativ Plural=Eltern
+|Genitiv Singular=—
+|Genitiv Plural=Eltern
+|Dativ Singular=—
+|Dativ Plural=Eltern
+|Akkusativ Singular=—
+|Akkusativ Plural=Eltern
+|Bild=Andrea Faria, Conrado e filha.jpg|220px|1|''Eltern'' mit ihrer Tochter
+}}
+
+{{Anmerkung|Singular}}
+:Der Singular „der oder das [[Elter]]“ wird heute nur in der Fachsprache verwendet<ref>Désirée Waterstradt: Prozess-Soziologie der Elternschaft. Nationsbildung, Figurationsideale und generative Machtarchitektur in Deutschland, Münster 2015, S. 100ff. ISBN 978-3-95645-530-8</ref><ref>{{Ref-Duden|Elter}}</ref>
+
+{{Nicht mehr gültige Schreibweisen}}
+:[[Aeltern]], [[Ältern]]
+
+{{Worttrennung}}
+:{{kSg.}}, {{Pl.}} El·tern
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈɛltɐn}}
+:{{Hörbeispiele}} {{Audio|De-Eltern.ogg}}, {{Audio|De-at-Eltern.ogg|spr=at}}
+:{{Reime}} {{Reim|ɛltɐn|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[Vater]] und [[Mutter]] eines [[Kind]]es
+
+{{Herkunft}}
+:Von [[indogermanisch]] ''al-'' nähren, wachsen machen, wachsen<ref>Julius Pokorny: Indogermanisches Etymologisches Wörterbuch Bern/Wien 1859; überarbeitete Fassung von 2007, S. 26.</ref>. Durch das Grundprinzip der parallelisierenden Verwandtschaftsterminologie Gleichsetzung von [[Vater]] und [[Mutter]] und Entstehung eines elternzentrierten Verwandtschaftssystems<ref>Michael Mitterauer: Mittelalter, In: Gestrich, Andreas/Krause, Jens-Uwe/Mitterauer, Michael (Hrsg.), Geschichte der Familie. Stuttgart 2003, S. 179. ISBN 3-520-37601-6</ref>. Belegt seit dem 8.&nbsp;Jahrhundert<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „Eltern“, Seite 242.</ref>, [[althochdeutsch]] ''eltiron'' und ''altiron'', [[westgermanisch]] *''aldizōn-'', [[Komparativ]] zu ''[[alt]]'', [[mittelhochdeutsch]] ''eltern'' und ''altern''. Ursprünglich „die Älteren“<ref>{{Ref-Duden|Eltern}}</ref>. Bis ins 19. Jahrhundert auch ''Ältern''<ref>{{Ref-DWDS|Eltern}}</ref> und ''Aeltern''<ref>Désirée Waterstradt: Prozess-Soziologie der Elternschaft. Nationsbildung, Figurationsideale und generative Machtarchitektur in Deutschland, Münster 2015, S. 86. ISBN 978-3-95645-530-8</ref>. Durch Vereinheitlichung der deutschen Rechtschreibung Ende des 19. Jahrhunderts Rechtschreibung nur noch ''Eltern''<ref>Désirée Waterstradt: Prozess-Soziologie der Elternschaft. Nationsbildung, Figurationsideale und generative Machtarchitektur in Deutschland, Münster 2015, S. 86. ISBN 978-3-95645-530-8</ref>.
+
+{{Synonyme}}
+:[1] [[Elternpaar]], (die) [[Erzeuger]]; ''in der Jugendsprache:'' (die) Alten, [[Ernährer]]
+
+{{Sinnverwandte Wörter}}
+:[1] [[Erziehungsberechtigte]]n
+
+{{Gegenwörter}}
+:[1] [[Kind]]er
+
+{{Oberbegriffe}}
+:[1] [[Vorfahr]]
+
+{{Unterbegriffe}}
+:[1] [[Elternteil]], [[Mutter]], [[Vater]]
+:[1] [[Großeltern]], [[Urgroßeltern]], [[Alteltern]], [[Altgroßeltern]], [[Alturgroßeltern]], [[Obereltern]], [[Obergroßeltern]], [[Oberurgroßeltern]], [[Stammeltern]], [[Stammgroßeltern]], [[Stammurgroßeltern]], [[Ahneneltern]], [[Ahnengroßeltern]], [[Ahnenurgroßeltern]], [[Urahneneltern]], [[Urahnengroßeltern]], [[Urahnenurgroßeltern]], [[Erzeltern]], [[Erzgroßeltern]], [[Erzurgroßeltern]], [[Erzahneneltern]], [[Erzahnengroßeltern]], [[Erzahnenurgroßeltern]]
+:[1] [[Adoptionseltern]], [[Adoptiveltern]], [[Brauteltern]], [[Ersatzeltern]], [[Gasteltern]], [[Helikoptereltern]], [[Herbergseltern]], [[Herkunftseltern]], [[Kindergarteneltern]], [[Pateneltern]], [[Pflegeeltern]], [[Rabeneltern]], [[Schülereltern]], [[Schwiegereltern]], [[Stiefeltern]], [[Storcheneltern]], [[Tageseltern]], [[Vogeleltern]], [[Zieheltern]], [[Zwillingseltern]]
+
+{{Beispiele}}
+:[1] ''Eltern'' haften für ihre Kinder.
+:[1] "''Eltern'' brauchen Zeit, um ihre Kinder ins Leben zu begleiten, und sie brauchen Zeit, wenn Angehörige Unterstützung benötigen oder pflegebedürftig werden."<ref>{{Per-Zeit Online | Online=http://www.zeit.de/politik/deutschland/2011-10/kita-krippenplatz-rechtsanspruch | Autor=ZEIT ONLINE, dpa, AFP, Reuters | Titel=Ministerin Schröder will mehr Zeit für Familien | TitelErg=Familienpolitik | Tag=28 | Monat=10 | Jahr=2011 | Zugriff=2011-10-30 }}</ref>
+:[1] Andere wiederum beneiden die Einzelkinder: wie schön es doch sein müsse, alleine aufzuwachsen, alle Aufmerksamkeit der Eltern zu genießen, sich nichts mit anderen teilen zu müssen.<ref>{{Per-Zeit Online | Online=http://www.zeit.de/zeit-wissen/2011/06/Psychologie-Einzelkinder | Autor=Hella Kemper | Titel=Allein – und gemein? | TitelErg=Psychologie | Tag=28 | Monat=11 | Jahr=2011 | Zugriff=2011-10-30 }}</ref>
+:[1] „Oma und Opa waren da, meine ''Eltern,'' mein Bruder Sebastian und Onkel Hugo.“<ref>{{Literatur|Autor=Edgar Rai|Titel=Nächsten Sommer. 3. Auflage|Verlag=Aufbau Verlag|Ort= Berlin |Jahr=2011|}}, Seite 11. ISBN 978-3-458-7466-2732-8.</ref>
+:[1] „Meine ''Eltern'' wurden beide kurz nach Kriegsende geboren, in einer Zeit, die keine optimalen Startbedingungen für sie bot:…“<ref>{{Literatur | Autor=Anne-Ev Ustorf | Titel=Wir Kinder der Kriegskinder | TitelErg=Die Generation im Schatten des Zweiten Weltkriegs|Auflage =4.|Verlag=Herder | Ort=Freiburg/Basel/Wien |Jahr= 2013| Seiten =24.|ISBN=978-3-451-06212-4}} Erste Veröffentlichung 2008.</ref>
+:[1] „Meine ''Eltern'' stammten aus der Türkei und hatten zuletzt in Istanbul gelebt.“<ref>{{Literatur | Autor= Mehmet Gürcan Daimagüler | Titel= Kein schönes Land in dieser Zeit |TitelErg= Das Märchen von der gescheiterten Integration | Verlag= Goldmann | Ort=München | Jahr= 2013 | ISBN= 978-3-442-15737-2}}, Seite 61.</ref>
+:[1] „Der kleine Junge ist nicht das erste Baby mit drei genetischen ''Eltern''.“<ref>faz.net: [http://www.faz.net/aktuell/gesellschaft/kerntransfer-baby-mit-drei-eltern-geboren-14456379.html ''Kerntransfer: Baby dreier Eltern geboren'']. 27.09.2016.</ref>
+
+{{Redewendungen}}
+:[1] [[nicht von schlechten Eltern]]
+
+{{Wortbildungen}}
+:Adjektive: [[elterlich]], [[elterlicherseits]], [[elternlos]]
+:Substantive: [[Elter]], [[Elternabend]], [[Elternarbeit]], [[Elternbeirat]], [[Elternbeiträge]], [[Elternberatung]], [[Elternbrief]], [[Elterngeld]], [[Elterngeneration]], [[Elterngespräch]], [[Elterngruppe]], [[Elternhaus]], [[Elterninitiative]], [[Elternkammer]], [[Eltern-Kind-Zentrum]], [[Elternpaar]], [[Elternrecht]], [[Elternschaft]], [[Elternschule]], [[Elternseminar]], [[Elternsprecher]], [[Elternsprechstunde]], [[Elternsprechtag]], [[Elterntag]], [[Elternteil]], [[Elternverein]], [[Elternversammlung]], [[Elternvertreter]], [[Elternwohnung]], [[Elternzeit]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{hy}}: [1] {{Üt|hy|ծնողներ|''ostarm.'' dsənoghner; ''westarm.'' tsənoghner}} ''Pl.''
+*{{az}}: [1] {{Ü|az|valideyn}}
+*{{eu}}: [1] {{Ü|eu|gurasoak}} ''Pl.''
+*{{zh}}: [1] {{Üt|zh|父母|fùmǔ}}
+*{{da}}: [1] {{Ü|da|forældre}} ''Pl.''
+*{{en}}: [1] {{Ü|en|parents}} (Sg. {{Ü|en|parent}})
+*{{et}}: [1] {{Ü|et|vanemad}}
+*{{fo}}: [1] {{Ü|fo|foreldur}} {{n}} ''pl''
+*{{fi}}: [1] {{Ü|fi|vanhemmat}} ''Pl.''
+*{{fr}}: [1] {{Ü|fr|parents}} {{mPl.}}
+*{{ka}}: [1] {{Üt|ka|მშობლები|mshoblebi}} ''Pl.''
+*{{el}}: [1] {{Üt|el|γονείς|gonís}} {{mPl.}}
+*{{kl}}: [1] {{Ü|kl|angajoqqaat}} ''pl''
+*{{is}}: [1] {{Ü|is|foreldrar}} {{m}} ''pl''
+*{{it}}: [1] {{Ü|it|genitori}}
+*{{ja}}: [1] {{Üt|ja|両親|りょうしん, ryôshin}}
+|Ü-rechts=
+*{{ca}}: [1] {{Ü|ca|pares}}
+*{{la}}: [1] {{Ü|la|parentes}} {{m}}/{{f}} (Sg. {{Ü|la|parens}})
+*{{lv}}: [1] {{Ü|lv|vecāki}} {{mPl.}}
+*{{nl}}: [1] {{Ü|nl|ouders}} ''Pl.''
+*{{no}}: [1] {{Ü|no|foreldre}} {{mPl.}}
+*{{pl}}: [1] {{Ü|pl|rodzice}} {{mPl.}}
+*{{pt}}: [1] {{Ü|pt|pais}}
+*{{rm}}: [1] {{Ü|rm|genituors}}
+*{{ro}}: [1] {{Ü|ro|părinți}} ''Pl.''
+*{{ru}}: [1] {{Üt|ru|родители|roditjeli}} {{mPl.}}
+*{{sv}}: [1] {{Ü|sv|föräldrar}} ''Pl.''
+*{{es}}: [1] {{Ü|es|padres}} {{mPl.}}
+*{{cs}}: [1] {{Ü|cs|rodiče}} {{mPl.}}
+*{{tr}}: [1] {{Ü|tr|ana baba}}, {{Ü|tr|ebeveyn}}
+*{{hu}}: [1] {{Ü|hu|szülők}} ''Pl.''
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Duden}}
+:[1] {{Ref-DWDS}}
+:[1] {{Ref-Canoo}}
+:[1] {{Ref-UniLeipzig}}
+
+{{Quellen}}
+
+{{Verwandte (Deutsch)}}
+
+{{Ähnlichkeiten 1|[[Altern]], [[altern]], [[eitern]], [[Elstern]], [[entern]], [[Estern]], [[Eutern]], [[extern]], [[keltern]]}}

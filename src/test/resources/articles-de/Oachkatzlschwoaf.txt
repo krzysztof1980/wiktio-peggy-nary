@@ -1,0 +1,49 @@
+== Oachkatzlschwoaf ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Nominativ Singular=da Oachkatzlschwoaf
+|Nominativ Plural=d’Oachkatzlschweaf
+|Genitiv Singular= am Oachkatzlschwoaf sei<br /><small>''(Genitiv existiert im Bairischen nicht.)''</small>
+|Genitiv Plural= de Oachkatzlschweaf eana
+|Dativ Singular=am Oachkatzlschwoaf
+|Dativ Plural=de Oachkatzlschweaf
+|Akkusativ Singular=an Oachkatzlschwoaf
+|Akkusativ Plural=de Oachkatzlschweaf
+|Bild=Eichhörnchen im Herbst.jpg|220px|1|ein Eichhörnchen
+}}
+
+{{Anmerkung}}
+:''Oachkatzlschwoaf'' ist ein Wort, mit dem bayrische und österreichische „Eingeborene“ gerne Fremde („Zuagroaste“) scherzhaft einem Basis-Sprachtest unterwerfen.<br />Für Sprecher, die nicht im bairischen Sprachraum geboren sind, ist es sehr schwierig, das Wort auch nur ansatzweise im jeweils lokalen Dialekt richtig wiederzugeben; eine Aussprache hinzubekommen, die sich nicht von der der Einheimischen unterscheidet, ist praktisch unmöglich. Ein besonderer Reiz für Bayern/Österreicher bei diesem Test liegt darin, dass diese Ausspracheunterschiede von den „[[Preußen|Preißn]]“ (das sind alle anderen Menschen außer ihnen) gar nicht erkannt werden.
+
+{{Worttrennung}}
+:Oach·katzl·schwoaf, {{Pl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈoa̯χkaʦl̩ˌʃwoa̯f}}
+:{{Hörbeispiele}} {{Audio|De-Oachkatzlschowaf.ogg|Oachkatzlschwoaf}}, {{Audio|De-at-Oachkatzlschwoaf.ogg|spr=at}}
+
+{{Bedeutungen}}
+:[1] ''bayrisch, österreichisch:'' Eichkätzchenschweif, Eichhörnchenschwanz
+
+{{Beispiele}}
+:[1] „''‚Oachkatzlschwoaf‘'' ruft der fünfjährige Oskar wie aus der Pistole geschossen. Der aufgeweckte Bub ist mittlerweile fast schon ein Medienprofi und weiß, mit was man bei den Erwachsenen Eindruck schinden kann. Vor zwei Monaten hat Nadine Wackerl, Leiterin der Kindertagesstätte Sankt Nikolaus in Starnberg, das Projekt ‚Dialektförderung‘ gestartet. Deutsch und Bairisch stehen auf dem Programm, nicht als Unterrichtsfach, die Sprachen werden spielerisch gelehrt.“<ref>{{Per-Süddeutsche Online | Online=http://www.sueddeutsche.de/muenchen/starnberg/starnberger-kindertagesstaette-servus-statt-tschuess-1.1018803 | Autor=Patrizia Steipe | Titel=Servus statt Tschüss | Tag=14 | Monat=3 | Jahr=2011 | Zugriff=2013-12-04 }}</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|squirrel tail}}
+*{{fr}}: [1] {{Ü|fr|queue d'un écureuil}} {{f}}
+*{{it}}: [1] {{Ü|it|coda di scoiattolo}} {{f}}
+*{{sv}}: [1] {{Ü|sv|ekorrsvans}}
+|Ü-rechts=
+*{{es}}: [1] {{Ü|es|cola de la ardilla}} {{f}}
+*{{cs}}: [1] {{Ü|cs|veverčí ocas}} {{m}}, {{Ü|cs|ocas veverky}} {{m}}
+*{{hu}}: [1] {{Ü|hu|mókusfarok}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Oachkatzlschwoaf}}
+:[1] {{Internetquelle | url=http://www.kleinberg.net/Dissertation/Kleinberg-Dissertation.pdf | autor=David Kleinberg | titel=Oachkatzlschwoaf: A Study of Language Choice in Ried im Innkreis, Austria  | hrsg= University of North Carolina  | datum=2006  | zugriff=2015-08-23 }}
+:[1] {{Internetquelle | url=http://oachkatzlschwoaf.ostarrichi.org/wort-17273-Oachkatzlschwoaf-Eichkatzchenschweif.html | titel=Oachkatzlschwoaf | hrsg=ostarrichi.org | datum=August 2012 | zugriff=2015-08-23 }}
+
+{{Quellen}}

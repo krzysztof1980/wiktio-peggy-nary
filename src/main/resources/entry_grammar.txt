@@ -24,7 +24,7 @@ WortartTemplate = LT "Wortart" SEP TParam SEP "Deutsch" RT {};
 //==============================================================================
 SubstantivKopf = KOPF3 SubstantivTemplate Space SubstantivAttributes Space KOPF3 RestOfLine ;
 SubstantivTemplate = LT "Wortart" SEP "Substantiv" SEP "Deutsch" RT {createSubstantiv};
-SubstantivAttributes = (","? Space SubstantivAttribute)+ ~{} / _++ KOPF3 ;
+SubstantivAttributes = (","? Space SubstantivAttribute)* ;
 SubstantivAttribute = Gender {substantivGender}
                     / WortartTemplate {substantivWortart}
                     / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination};
@@ -34,7 +34,8 @@ SubstantivAttribute = Gender {substantivGender}
 //------------------------------------------------------------------------------
 FlexionTable = FlexionTableKopf FlexionForm* RT RestOfLine ;
 FlexionTableKopf = LT "Deutsch Substantiv Übersicht" Space RestOfLine ;
-FlexionForm = SEP (NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
+FlexionForm = SEP (Genus / NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
+Genus = "Genus" (Space Digit)? "=" [mnfu0] EOL {addGenus};
 NomSg = "Nominativ Singular" Space OptDigit "*"? Space "=" Phrase EOL {addNomSg};
 NomPl = "Nominativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addNomPl};
 GenSg = "Genitiv Singular" Space OptDigit "*"? Space "=" Phrase EOL {addGenSg};
@@ -47,8 +48,8 @@ AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addAkkPl};
 //==============================================================================
 // Common Wiktionary markup
 //==============================================================================
-Gender = LT GenderTemplateArgument RT Space {};
-GenderTemplateArgument = "mf" / "f" ("m" / "n") / "n" ("m" / "f") / "m" / "f" / "n" / "u" ;
+Gender = LT GenderTemplateArgument "."? RT Space {};
+GenderTemplateArgument = [mnfu]+ {};
 
 // TODO: enable MeaningsTextbaustein when fixed
 //MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;

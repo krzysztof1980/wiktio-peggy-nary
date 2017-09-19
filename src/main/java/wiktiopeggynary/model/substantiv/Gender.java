@@ -7,7 +7,8 @@ public enum Gender {
     MASKULINUM("der", "m"),
     FEMININUM("die", "f"),
     NEUTRUM("das", "n"),
-    UTRUM("-", "u");
+	UTRUM("-", "u"),
+    PLURAL("pl.", "0");
 
     private final String artikel;
     private final String shortcut;
@@ -33,8 +34,10 @@ public enum Gender {
                 return FEMININUM;
             case "n":
                 return NEUTRUM;
-            case "u":
-                return UTRUM;
+	        case "u":
+	        	return UTRUM;
+            case "0":
+                return PLURAL;
             default:
                 throw new IllegalArgumentException(String.format("The shortcut '%s' is not supported", shortcut));
         }
