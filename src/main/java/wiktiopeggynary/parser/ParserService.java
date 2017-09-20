@@ -13,6 +13,7 @@ import wiktiopeggynary.parser.template.parser.TemplateParser;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -68,8 +69,8 @@ public class ParserService {
 		dumpParser.parse(wiktionaryDumpPath.toFile());
 	}
 	
-	public WiktionaryEntryPageParseResult parseWiktionaryEntryPage(String page,
-	                                                               TemplateService templateService) throws ParseException {
+	public Optional<WiktionaryEntryPageParseResult> parseWiktionaryEntryPage(String page,
+	                                                                         TemplateService templateService) {
 		if (page == null)
 			throw new IllegalArgumentException("page must not be null");
 		WiktionaryParser parser = new WiktionaryParser(templateService);
@@ -77,15 +78,13 @@ public class ParserService {
 		if (!page.endsWith("\n"))
 			page = page + "\n";
 		if (parser.parse(new SourceString(page)))
-			return new WiktionaryEntryPageParseResult(parser.semantics().getWiktionaryEntries());
+			return Optional.of(new WiktionaryEntryPageParseResult(parser.semantics().getWiktionaryEntries()));
 		else {
-			erroneousEntriesLogger.error(
-					parser.semantics().getLemma() != null ? parser.semantics().getLemma() : "unknown");
-			throw new ParseException();
+			return Optional.empty();
 		}
 	}
 	
-	public TemplateDefinitionPageParseResult parseTemplateDefinitionPage(String page) throws ParseException {
+	public TemplateDefinitionPageParseResult parseTemplateDefinitionPage(String page) {
 		if (page == null)
 			throw new IllegalArgumentException("page must not be null");
 		TemplateParser parser = new TemplateParser();
@@ -93,7 +92,7 @@ public class ParserService {
 			return new TemplateDefinitionPageParseResult(parser.semantics().getTemplateDefinition(),
 			                                             parser.semantics().getTemplates());
 		else
-			throw new ParseException();
+			return null;
 	}
 	
 	private void setTraceInParser(ParserBase parser) {
@@ -128,14 +127,24 @@ public class ParserService {
 		public void run() {
 			try {
 				templateService.initPageSpecificTemplateDefinitions(pageDocument);
-				WiktionaryEntryPageParseResult parseResult = parseWiktionaryEntryPage(pageDocument.getText(),
-				                                                                      templateService);
-				consumer.accept(parseResult);
+				Optional<WiktionaryEntryPageParseResult> optParseResult = parseWiktionaryEntryPage(
+						pageDocument.getText(),
+						templateService);
+				if (optParseResult.isPresent()) {
+					consumer.accept(optParseResult.get());
+				} else {
+					logger.error("Cannot parse wiktionary entry with title '{}'", pageDocument.getTitle());
+					erroneousEntriesLogger.error(pageDocument.getTitle() + " (cannot parse)");
+				}
 				int currentCount = count.incrementAndGet();
 				if (currentCount % 5000 == 0)
 					logger.debug("Parsed {} wiktionary pages", currentCount);
-			} catch (ParseException e) {
-				logger.error("Error parsing wiktionary entry with title '{}'", pageDocument.getTitle());
+			} catch (Exception e) {
+				logger.error(String.format("Error parsing wiktionary entry with title '%s'", pageDocument.getTitle()),
+				             e);
+				erroneousEntriesLogger.error(
+						String.format("%s (exception: %s: %s)", pageDocument.getTitle(), e.getClass().getSimpleName(),
+						              e.getMessage()));
 			}
 		}
 	}

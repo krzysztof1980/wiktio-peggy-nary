@@ -1,13 +1,13 @@
-Dokument = (!KOPF2 Line)* Eintrag ;
+Dokument = (!KOPF2 Line)* Eintrag? ;
 
 //==============================================================================
 // Wiktionary Eintrag
 //==============================================================================
-Eintrag = DeEintrag? OtherLangEintrag* EOF / OldSpellingEintrag Line* EOF;
-OtherLangEintrag = !DeSpracheKopf SpracheKopf (!SpracheKopf Line)* ;
+Eintrag = DeEintrag _*+ EOF / OldSpellingEintrag Line* EOF / DeEintragWithErrors ;
 OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate ;
 OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") SEP TextualTParam RestOfLine {};
 DeEintrag = DeSpracheKopf (!KOPF3 Line)* DeWortart+ ;
+DeEintragWithErrors = DeSpracheKopf _* EOF {};
 
 SpracheKopf = KOPF2 Lemma "(" LT "Sprache" SEP _++ RT ")" Space KOPF2 RestOfLine ;
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
@@ -74,7 +74,7 @@ TranslationsTable = TranslationsTableKopf (LangTranslations / DialectTable / !RT
 TranslationsTableKopf = LT "Ü-Tabelle" Line ;
 LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine {addTranslationsForLanguage};
 LangLvl = "*"+ ;
-Lang = LT Word RT {};
+Lang = LT Phrase RT {};
 TranslationMeaning = ItemNo Translation+ {};
 Translation = TranslationDetails (UeTemplate / UetTemplate) Gender? TranslationDetails (COMMA / SEMICOLON)? Space {};
 TranslationDetails = (CursiveText / Link / (!(ItemNo / UeTemplate / UetTemplate / COMMA / SEMICOLON / EOL) _))* (COMMA / SEMICOLON)?;
@@ -140,8 +140,8 @@ Digit = [0-9] ;
 OptDigit = Digit? ;
 Number = Digit+ ;
 
-Letter = [a-z] / [A-Z] / [äÄüÜöÖß] ;
-Word = Letter (Letter / [-'])* ;
+Letter = !Digit ^[!@#$%^&*()_-+=[\]{};:'"\\|<>,./?`~\n\t ] ;
+Word = Letter+ ("-" Letter+)* ;
 Phrase = Word (Space Word)* ;
 
 Space = " "* ;

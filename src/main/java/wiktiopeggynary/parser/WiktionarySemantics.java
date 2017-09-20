@@ -27,7 +27,8 @@ import java.util.stream.IntStream;
 
 class WiktionarySemantics extends SemanticsBase {
 	
-	private static Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
+	private static final Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
+	private static final Logger erroneousEntriesLogger = LoggerFactory.getLogger("erroneous_wiktionary_entries");
 	
 	private String lemma;
 	private WiktionaryEntry entryWorkingCopy;
@@ -41,10 +42,6 @@ class WiktionarySemantics extends SemanticsBase {
 		this.templateService = templateService;
 	}
 	
-	public String getLemma() {
-		return lemma;
-	}
-	
 	public Collection<WiktionaryEntry> getWiktionaryEntries() {
 		return Collections.unmodifiableCollection(wiktionaryEntries);
 	}
@@ -56,6 +53,11 @@ class WiktionarySemantics extends SemanticsBase {
 	void WortartBody_fail() {
 		logger.error("[lemma={}] DeWortart_fail: {}", lemma, getFormattedErrorMessageForLogging());
 		lhs().errClear();
+	}
+	
+	void DeEintragWithErrors() {
+		logger.error("The entry for '{}' is german, but cannot be parsed", lemma);
+		erroneousEntriesLogger.error(lemma + " (german, but cannot be parsed)");
 	}
 	
 	//-------------------------------------------------------------------
