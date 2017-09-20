@@ -1,5 +1,6 @@
 package wiktiopeggynary.parser
 
+import spock.lang.Unroll
 import wiktiopeggynary.model.Kasus
 import wiktiopeggynary.model.Numerus
 import wiktiopeggynary.model.substantiv.Gender
@@ -147,12 +148,18 @@ class SubstantivParserSpec extends ParserSpecBase {
         flexionForm1.gender == Gender.MASKULINUM
     }
 
-    def "no singular form - gender not specified in header"() {
+    @Unroll
+    def "#lemma has no singular form - gender not specified in header and #testcase"() {
         when:
-        def entries = parseWiktionaryEntryPage("Eltern").wiktionaryEntries
+        def entries = parseWiktionaryEntryPage(lemma).wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then:
         entry.gender.isSameAs(Gender.PLURAL)
+
+        where:
+        lemma        | testcase
+        "Eltern"     | "Genus=0 in the flexion table"
+        "Everglades" | "Genus=x in the flexion table"
     }
 }

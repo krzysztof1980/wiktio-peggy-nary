@@ -1,0 +1,47 @@
+== Everglades ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{Wortart|Toponym|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=x
+|Nominativ Singular=—
+|Nominativ Plural=Everglades
+|Genitiv Singular=—
+|Genitiv Plural=Everglades
+|Dativ Singular=—
+|Dativ Plural=Everglades
+|Akkusativ Singular=—
+|Akkusativ Plural=Everglades
+}}
+
+{{Worttrennung}}
+:{{kSg.}}, {{Pl.}} Ever·glades
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈɛvəɡleɪdz}}
+:{{Hörbeispiele}} {{Audio|De-Everglades.ogg}}
+
+{{Bedeutungen}}
+:[1] tropisches [[Marschland]] im Südwesten des US-amerikanischen Bundesstaats [[Florida]]
+
+{{Beispiele}}
+:[1] „In Gebieten außerhalb der ''Everglades,'' wo die Pythons nicht oder kaum vorkommen, gibt es Pelztiere in Hülle und Fülle.“<ref>{{Per-Spiegel Online | Online=http://www.spiegel.de/wissenschaft/natur/0,1518,812444,00.html | Titel=Pythons rotten Tierarten aus | Tag=31 | Monat=01 | Jahr=2012 | Zugriff=2012-01-31}}</ref>
+:[1] „Phil Graham, später der große Mann hinter der Washington Post, wuchs auf einem Wohnboot in den Sümpfen der ''Everglades'' auf.“<ref>{{Literatur | Autor= Geert Mak | Titel= Amerika! |TitelErg= Auf der Suche nach dem Land der unbegrenzten Möglichkeiten | Verlag= Siedler | Ort=München | Jahr= 2013 | ISBN= 978-3-88680-0023-6}}, Seite 295. Kursiv gedruckt: ''Washington Post''.</ref>
+
+{{Wortbildungen}}
+:[[Everglades-Nationalpark]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|Everglades}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Everglades}}
+:[1] {{Ref-DWDS|Everglades}}
+:[1] {{Ref-UniLeipzig|Everglades}}
+:[1] {{Ref-Duden|Everglades}}
+
+{{Quellen}}
