@@ -4,8 +4,6 @@ import spock.lang.Unroll
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.MultiGender
 
-import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
-
 /**
  * @author Krzysztof Witukiewicz
  */
@@ -14,8 +12,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "translation meaning number is not interpreted"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
 
         then: "the meaning number is an integer"
         entry.translations["ar"][0].meaningNumber == "1"
@@ -26,8 +23,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "entry['#lang'] has #meaningCount meanings#notes"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
 
         then:
         entry.translations[lang].size() == meaningCount
@@ -41,8 +37,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "Translations with details in cursive: meaning '#meaningTxt'#notes has #translationsCount translations"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
         def langTranslations = entry.translations["pl"]
 
         then:
@@ -63,8 +58,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "Translations with details as links: meaning '#meaningTxt'#notes has #translationsCount translations"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
         def langTranslations = entry.translations["en"]
 
         then:
@@ -86,8 +80,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "translation '#translationTxt' has gender: #gender"() {
         when: "we take translations for Spanish"
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
         def langTranslations = entry.translations["pl"]
 
         then: "the first translation in second meaning is Femininum"
@@ -108,8 +101,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "content of translation in entry['#lang'] meaning[#meaningIdx] translation[#translationIdx]"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Staat"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
         def langTranslations = entry.translations[lang]
         def translation = langTranslations[meaningIdx].translations[translationIdx];
 
@@ -127,8 +119,7 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "ignore empty translations and comments"() {
         when:
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Heckmeck"), templateService).wiktionaryEntries[0];
+        def entry = parseWiktionaryEntryPage("Heckmeck").wiktionaryEntries[0]
 
         then: "there is only a Swedish translation, because other 2 are empty"
         entry.translations.size() == 1

@@ -5,8 +5,6 @@ import wiktiopeggynary.model.Numerus
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.Substantiv
 
-import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
-
 /**
  * @author Krzysztof Witukiewicz
  */
@@ -14,8 +12,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "gender and other attributes"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Boot"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Boot").wiktionaryEntries
 
         then: "there are 3 entries"
         entries.size() == 3
@@ -41,8 +38,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "adjektivische Deklination"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Bahnangestellter"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Bahnangestellter").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then: "it is Maskulinum"
@@ -55,8 +51,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "adjektivische Deklination with error"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Suchende"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Suchende").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then: "it is Femininum"
@@ -69,8 +64,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "flexion table with multiple variants of single form"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Zug"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Zug").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionForms(Numerus.Singular)
 
@@ -87,8 +81,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "flexion table with multiple flexion forms"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Boot"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Boot").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionForms(Numerus.Plural)
 
@@ -114,8 +107,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "flexion table with multiple variants in first of 2 singular forms"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Monat"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Monat").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionForms(Numerus.Singular)
 
@@ -142,8 +134,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "no gender defined in the flexion table"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Oachkatzlschwoaf"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Oachkatzlschwoaf").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
         def flexionForms = entry.getFlexionForms(Numerus.Singular)
 
@@ -158,8 +149,7 @@ class SubstantivParserSpec extends ParserSpecBase {
 
     def "no singular form - gender not specified in header"() {
         when:
-        def entries = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources("Eltern"), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage("Eltern").wiktionaryEntries
         Substantiv entry = entries[0] as Substantiv
 
         then:

@@ -3,8 +3,6 @@ package wiktiopeggynary.parser
 import spock.lang.Unroll
 import wiktiopeggynary.model.ObsoleteWiktionaryEntry
 
-import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
-
 /**
  * @author Krzysztof Witukiewicz
  */
@@ -13,8 +11,7 @@ class GeneralParserSpec extends ParserSpecBase {
     @Unroll
     def "newline: #testcase"() {
         expect:
-        !parserService.parseWiktionaryEntryPage(readArticleFromResources(lemma), templateService).wiktionaryEntries.
-                isEmpty()
+        !parseWiktionaryEntryPage(lemma).wiktionaryEntries.isEmpty()
 
         where:
         testcase                          | lemma
@@ -23,21 +20,18 @@ class GeneralParserSpec extends ParserSpecBase {
 
     def "create entity pro section"() {
         expect:
-        parserService.parseWiktionaryEntryPage(readArticleFromResources("Boot"), templateService).wiktionaryEntries.
-                size() == 3
+        parseWiktionaryEntryPage("Boot").wiktionaryEntries.size() == 3
     }
 
     def "parse only german sections"() {
         expect:
-        parserService.parseWiktionaryEntryPage(readArticleFromResources("Kim"), templateService).wiktionaryEntries.
-                size() == 2
+        parseWiktionaryEntryPage("Kim").wiktionaryEntries.size() == 2
     }
 
     @Unroll
     def "old spellings: '#oldSpelling' -> '#correctSpelling' (#description)"() {
         when:
-        def entries = parserService.
-                parseWiktionaryEntryPage(readArticleFromResources(lemma), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage(lemma).wiktionaryEntries
 
         then:
         entries.size() == 1
@@ -59,8 +53,7 @@ class GeneralParserSpec extends ParserSpecBase {
     @Unroll
     def "lemma == '#lemma'"() {
         when:
-        def entries = parserService.
-                parseWiktionaryEntryPage(readArticleFromResources(lemma), templateService).wiktionaryEntries
+        def entries = parseWiktionaryEntryPage(lemma).wiktionaryEntries
 
         then:
         entries.size() == 1
