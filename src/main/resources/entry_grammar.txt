@@ -19,7 +19,7 @@ DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
 DeSpracheTemplate = LT "Sprache" SEP "Deutsch" RT ;
 Lemma = (!(Space "(") _)+ Space {};
 
-DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf Line* ) ;
+DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf (!KopfStart Line)* ) ;
 WortartKopf = SubstantivKopf {saveEintrag};
 WortartBody = MiddleSection TranslationsSection? ~{};
 UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;

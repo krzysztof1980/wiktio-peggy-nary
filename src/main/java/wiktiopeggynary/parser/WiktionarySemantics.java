@@ -56,8 +56,7 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	void DeEintragWithErrors() {
-		logger.error("The entry for '{}' is german, but cannot be parsed", lemma);
-		erroneousEntriesLogger.error(lemma + " (german, but cannot be parsed)");
+		throw new ParseException("The entry for '" + lemma + "' is german, but cannot be parsed");
 	}
 	
 	//-------------------------------------------------------------------
