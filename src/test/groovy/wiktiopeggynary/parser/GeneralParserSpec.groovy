@@ -1,7 +1,7 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
-import wiktiopeggynary.model.ObsoleteWiktionaryEntry
+import wiktiopeggynary.model.ReferenceWiktionaryEntry
 
 /**
  * @author Krzysztof Witukiewicz
@@ -29,25 +29,27 @@ class GeneralParserSpec extends ParserSpecBase {
     }
 
     @Unroll
-    def "old spellings: '#oldSpelling' -> '#correctSpelling' (#description)"() {
+    def "old spellings: '#lemma' -> '#referenceValue' (#referenceType)"() {
         when:
         def entries = parseWiktionaryEntryPage(lemma).wiktionaryEntries
 
         then:
         entries.size() == 1
-        entries[0] instanceof ObsoleteWiktionaryEntry
-        def entry = entries[0] as ObsoleteWiktionaryEntry
+        entries[0] instanceof ReferenceWiktionaryEntry
+        def entry = entries[0] as ReferenceWiktionaryEntry
         entry.lemma == lemma
-        entry.obsoleteSpelling == oldSpelling
-        entry.correctSpelling == correctSpelling
-        entry.description == description
+        entry.referenceValue == referenceValue
+        entry.referenceType.referenceName == referenceType
 
         where:
-        lemma                        || oldSpelling                  | correctSpelling             | description
-        "Gemse"                      || "Gemse"                      | "Gämse"                     | "Alte Schreibweise"
-        "Scheisskerl"                || "Scheisskerl"                | "Scheißkerl"                | "Schweizer und Liechtensteiner Schreibweise"
-        "Stilleben"                  || "Stilleben"                  | "Stillleben"                | "Alte Schreibweise"
-        "Weisse-Kragen-Kriminalität" || "Weisse-Kragen-Kriminalität" | "Weiße-Kragen-Kriminalität" | "Schweizer und Liechtensteiner Schreibweise"
+        lemma                        || referenceValue              | referenceType
+        "Gemse"                      || "Gämse"                     | "Alte Schreibweise"
+        "Scheisskerl"                || "Scheißkerl"                | "Schweizer und Liechtensteiner Schreibweise"
+        "Stilleben"                  || "Stillleben"                | "Alte Schreibweise"
+        "Weisse-Kragen-Kriminalität" || "Weiße-Kragen-Kriminalität" | "Schweizer und Liechtensteiner Schreibweise"
+        "Citrusfrucht"               || "Zitrusfrucht"              | "Alternative Schreibweise"
+        "Egoshooter"                 || "Ego-Shooter"               | "Alternative Schreibweise"
+        "Photo"                      || "Foto"                      | "Alternative Schreibweise"
     }
 
     @Unroll

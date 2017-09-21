@@ -3,13 +3,18 @@ Dokument = (!KOPF2 Line)* Eintrag? ;
 //==============================================================================
 // Wiktionary Eintrag
 //==============================================================================
-Eintrag = DeEintrag _*+ EOF / OldSpellingEintrag Line* EOF / DeEintragWithErrors ;
-OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate ;
-OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") SEP TextualTParam RestOfLine {};
+Eintrag = DeEintrag _*+ EOF
+        / OldSpellingEintrag Line* EOF
+        / AltSpellingEintrag Line* EOF
+        / DeEintragWithErrors ;
 DeEintrag = DeSpracheKopf (!KOPF3 Line)* DeWortart+ ;
 DeEintragWithErrors = DeSpracheKopf _* EOF {};
+OldSpellingEintrag = DeSpracheKopf Line*+ OldSpellingTemplate ;
+OldSpellingTemplate = LT ("Alte Schreibweise" / "Schweizer und Liechtensteiner Schreibweise") SEP TextualTParam RestOfLine {};
+AltSpellingEintrag = DeSpracheKopf Line*+ AltSpellingTemplate ;
+AltSpellingTemplate = "*" Space "Alternative Schreibweise" _*+ Link RestOfLine {}
+                    / LT "Alternative Schreibweisen" RT EOL ":" Link {};
 
-SpracheKopf = KOPF2 Lemma "(" LT "Sprache" SEP _++ RT ")" Space KOPF2 RestOfLine ;
 DeSpracheKopf = KOPF2 Lemma "(" DeSpracheTemplate ")" Space KOPF2 RestOfLine ;
 DeSpracheTemplate = LT "Sprache" SEP "Deutsch" RT ;
 Lemma = (!(Space "(") _)+ Space {};

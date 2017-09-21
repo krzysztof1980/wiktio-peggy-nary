@@ -310,10 +310,35 @@ class WiktionarySemantics extends SemanticsBase {
 	//                        0    1    2         3         n-1
 	//=====================================================================
 	void OldSpellingTemplate() {
-		ObsoleteWiktionaryEntry entry = new ObsoleteWiktionaryEntry();
-		entry.setDescription(rhs(1).text());
+		ReferenceWiktionaryEntry entry = new ReferenceWiktionaryEntry();
 		entry.setLemma(lemma);
-		entry.setCorrectSpelling(rhs(3).text());
+		entry.setReferenceType(ReferenceWiktionaryEntry.ReferenceType.fromReferenceName(rhs(1).text()));
+		entry.setReferenceValue(rhs(3).text());
+		wiktionaryEntries.push(entry);
+	}
+	
+	//=====================================================================
+	//  AltSpellingTemplate = "*" Space "..." _*+ Link RestOfLine ;
+	//                         0    1     2  ...  n-2     n-1
+	//=====================================================================
+	void AltSpellingTemplate_0() {
+		AltSpellingTemplate(rhsSize() - 2);
+	}
+	
+	//-------------------------------------------------------------------
+	//  AltSpellingTemplate_1 = LT "..." RT EOL ":" Link
+	//                          0    1   2   3   4   5
+	//-------------------------------------------------------------------
+	void AltSpellingTemplate_1() {
+		AltSpellingTemplate(5);
+	}
+	
+	private void AltSpellingTemplate(int linkIndex) {
+		ReferenceWiktionaryEntry entry = new ReferenceWiktionaryEntry();
+		entry.setLemma(lemma);
+		entry.setReferenceType(ReferenceWiktionaryEntry.ReferenceType.ALTERNATIVE_SPELLING);
+		InternalLink link = (InternalLink) rhs(linkIndex).get();
+		entry.setReferenceValue(link.getPageTitle());
 		wiktionaryEntries.push(entry);
 	}
 	
