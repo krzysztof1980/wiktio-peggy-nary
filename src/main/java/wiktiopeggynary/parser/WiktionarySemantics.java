@@ -112,7 +112,8 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  Genus = "Genus" (Space Digit)? "=" [mnfu0] EOL
+	//  Genus = "Genus" (Space Digit)? "=" ([mnfu0x] / "pl") EOL
+	//                                            n-2        n-1
 	//=====================================================================
 	void addGenus() {
 		Gender gender = Gender.fromShortcut(rhs(rhsSize() - 2).text());

@@ -41,7 +41,7 @@ SubstantivAttribute = Gender {substantivGender}
 FlexionTable = FlexionTableKopf FlexionForm* RT RestOfLine ;
 FlexionTableKopf = LT "Deutsch Substantiv Übersicht" Space RestOfLine ;
 FlexionForm = SEP (Genus / NomSg / NomPl / GenSg / GenPl / DatSg / DatPl / AkkSg / AkkPl / BadLine ) ;
-Genus = "Genus" (Space Digit)? "=" [mnfu0x] EOL {addGenus};
+Genus = "Genus" (Space Digit)? "=" ([mnfu0x] / "pl") EOL {addGenus};
 NomSg = "Nominativ Singular" Space OptDigit "*"? Space "=" Phrase EOL {addNomSg};
 NomPl = "Nominativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addNomPl};
 GenSg = "Genitiv Singular" Space OptDigit "*"? Space "=" Phrase EOL {addGenSg};

@@ -1,0 +1,32 @@
+== Seschellen ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{Wortart|Eigenname|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=pl
+|Nominativ Singular=—
+|Nominativ Plural=Seschellen
+|Genitiv Singular=—
+|Genitiv Plural= Seschellen
+|Dativ Singular=—
+|Dativ Plural= Seschellen
+|Akkusativ Singular=—
+|Akkusativ Plural=Seschellen
+}}
+
+{{Worttrennung}}
+:{{kSg.}}, {{Pl.}} Se·schel·len
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|zeˈʃɛlən}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] ''[[veraltend]]:'' für die [[Seychellen]]
+
+{{Wortbildungen}}
+:[[Seschellennuß]]
+
+{{Lemmaverweis|Seychellen}}
+
+{{Referenzen}}
+:[1] {{Lit-Duden: Rechtschreibung|A=24}}

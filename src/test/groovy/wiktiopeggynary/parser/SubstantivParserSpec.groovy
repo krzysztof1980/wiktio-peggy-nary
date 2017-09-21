@@ -161,5 +161,6 @@ class SubstantivParserSpec extends ParserSpecBase {
         lemma        | testcase
         "Eltern"     | "Genus=0 in the flexion table"
         "Everglades" | "Genus=x in the flexion table"
+        "Seschellen" | "Genus=pl in the flexion table"
     }
 }
