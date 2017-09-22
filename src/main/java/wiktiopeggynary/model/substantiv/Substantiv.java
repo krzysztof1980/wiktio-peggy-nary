@@ -38,6 +38,10 @@ public class Substantiv extends WiktionaryEntry {
 		attributes.add(attribute);
 	}
 	
+	public Map<Numerus, List<FlexionForm>> getFlexionForms() {
+		return flexionForms;
+	}
+	
 	public List<FlexionForm> getFlexionForms(Numerus numerus) {
 		return Collections.unmodifiableList(flexionForms.get(numerus));
 	}

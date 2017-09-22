@@ -1,5 +1,7 @@
 package wiktiopeggynary.model.substantiv;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -10,7 +12,7 @@ public class MultiGender {
 
     private Gender[] genders;
 
-    public MultiGender(Gender... genders) {
+    public MultiGender(@JsonProperty("genders") Gender... genders) {
         if (genders == null || genders.length == 0)
             throw new IllegalArgumentException("genders cannot be null or empty");
         this.genders = genders;

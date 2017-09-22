@@ -5,20 +5,21 @@ import wiktiopeggynary.model.WiktionaryEntry;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * @author Krzysztof Witukiewicz
  */
 public class WiktionaryEntryPageParseResult {
 
-	private final Collection<WiktionaryEntry> wiktionaryEntries = new ArrayList<>();
+	private final List<WiktionaryEntry> wiktionaryEntries = new ArrayList<>();
 
 	public WiktionaryEntryPageParseResult(Collection<WiktionaryEntry> wiktionaryEntries) {
 		this.wiktionaryEntries.addAll(wiktionaryEntries);
 	}
 
-	public Collection<WiktionaryEntry> getWiktionaryEntries() {
-		return Collections.unmodifiableCollection(wiktionaryEntries);
+	public List<WiktionaryEntry> getWiktionaryEntries() {
+		return Collections.unmodifiableList(wiktionaryEntries);
 	}
 	
 	@Override

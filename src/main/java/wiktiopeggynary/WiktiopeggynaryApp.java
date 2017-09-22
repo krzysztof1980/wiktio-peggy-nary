@@ -1,6 +1,7 @@
 package wiktiopeggynary;
 
 import org.apache.commons.cli.*;
+import wiktiopeggynary.model.WiktionaryEntrySerializer;
 import wiktiopeggynary.parser.ConcurrentParserTaskExecutorFactory;
 import wiktiopeggynary.parser.ParserService;
 import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory;
@@ -71,7 +72,7 @@ public class WiktiopeggynaryApp {
 		ParserService parserService = new ParserService(parallel
 		                                                ? new ConcurrentParserTaskExecutorFactory()
 		                                                : new SequentialParserTaskExecutorFactory());
-		WiktionaryEntryEsRepository wiktionaryEntryRepo = new WiktionaryEntryEsRepository();
+		WiktionaryEntryEsRepository wiktionaryEntryRepo = new WiktionaryEntryEsRepository(new WiktionaryEntrySerializer());
 		TemplateEsRepository templateRepo = new TemplateEsRepository();
 		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, wiktionaryEntryRepo,
 		                                                                         templateRepo);

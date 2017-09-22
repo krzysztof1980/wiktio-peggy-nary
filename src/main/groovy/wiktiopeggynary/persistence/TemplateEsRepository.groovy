@@ -3,7 +3,6 @@ package wiktiopeggynary.persistence
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import pl.kwitukiewicz.wdb.elasticsearch.ElasticsearchIndexingRepository
-import wiktiopeggynary.parser.template.model.TemplateDefinition
 
 /**
  * @author Krzysztof Witukiewicz
@@ -18,17 +17,12 @@ class TemplateEsRepository extends ElasticsearchIndexingRepository {
         super(TEMPLATE_DEF_INDEX, TEMPLATE_DEF_TYPE)
     }
 
-    void indexTemplateDefinition(TemplateDefinition templateDefinition) {
-        indexObject(templateDefinition)
-    }
+//    void indexTemplateDefinition(TemplateDefinition templateDefinition) {
+//        indexObject(templateDefinition)
+//    }
 
     @Override
     protected Logger getLogger() {
         return logger
-    }
-
-    @Override
-    protected String createIdForObject(Object o) {
-        return null // let ES create the ID
     }
 }

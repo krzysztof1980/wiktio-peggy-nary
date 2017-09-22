@@ -1,5 +1,7 @@
 package wiktiopeggynary.model.translation;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -13,7 +15,7 @@ public class TranslationMeaning {
     private String meaningNumber;
     private List<Translation> translations = new ArrayList<>();
 
-    public TranslationMeaning(String meaningNumber) {
+    public TranslationMeaning(@JsonProperty("meaningNumber") String meaningNumber) {
         this.meaningNumber = meaningNumber;
     }
 

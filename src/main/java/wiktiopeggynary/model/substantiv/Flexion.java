@@ -1,5 +1,6 @@
 package wiktiopeggynary.model.substantiv;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import wiktiopeggynary.model.Kasus;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class Flexion {
     private final Kasus kasus;
     private final List<String> variants = new ArrayList<>();
 
-    public Flexion(Kasus kasus) {
+    public Flexion(@JsonProperty("kasus") Kasus kasus) {
         this.kasus = kasus;
     }
 

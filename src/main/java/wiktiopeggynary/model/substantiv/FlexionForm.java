@@ -1,5 +1,6 @@
 package wiktiopeggynary.model.substantiv;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.lang3.Validate;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class FlexionForm {
 	private final Gender gender;
     private final List<Flexion> flexions = new ArrayList<>();
 	
-	public FlexionForm(Gender gender) {
+	public FlexionForm(@JsonProperty("gender") Gender gender) {
 		Validate.notNull(gender);
 		this.gender = gender;
 	}

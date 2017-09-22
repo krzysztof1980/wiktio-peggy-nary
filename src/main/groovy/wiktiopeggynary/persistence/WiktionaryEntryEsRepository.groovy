@@ -7,22 +7,28 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import pl.kwitukiewicz.wdb.elasticsearch.ElasticsearchIndexingRepository
 import wiktiopeggynary.model.WiktionaryEntry
+import wiktiopeggynary.model.WiktionaryEntrySerializer
 
 /**
  * @author Krzysztof Witukiewicz
  */
-class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository<WiktionaryEntry> {
+class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository {
     private static final Logger logger = LoggerFactory.getLogger(WiktionaryEntryEsRepository.class)
 
     private static final String WIKTIONARY_ENTRY_INDEX = "dewiktionary_entries"
     private static final String WIKTIONARY_ENTRY_TYPE = "entry"
 
-    WiktionaryEntryEsRepository() {
+    private final WiktionaryEntrySerializer entrySerializer
+
+    WiktionaryEntryEsRepository(WiktionaryEntrySerializer entrySerializer) {
         super(WIKTIONARY_ENTRY_INDEX, WIKTIONARY_ENTRY_TYPE)
+        this.entrySerializer = entrySerializer
     }
 
     void indexWiktionaryEntry(WiktionaryEntry entry) {
-        indexObject(entry)
+        def id = UUID.randomUUID()
+        def entryJsonString = entrySerializer.serializeWiktionaryEntry(entry)
+        indexDocument(id.toString(), entryJsonString)
     }
 
     @Override
@@ -54,10 +60,5 @@ class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository<Wiktio
     @Override
     protected Logger getLogger() {
         return logger
-    }
-
-    @Override
-    protected String createIdForObject(WiktionaryEntry entry) {
-        return UUID.randomUUID()
     }
 }
