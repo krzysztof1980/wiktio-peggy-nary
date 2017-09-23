@@ -58,20 +58,9 @@ task('updateTestData', dependsOn: [jar]) {
         logger.quiet "Dump file: $dumpFile"
         def testDataDir = file('src/test/resources/articles-de')
         def repo = new WiktionaryDumpEsRepository()
-        def headerLineMatcher = { String line -> line.startsWith("== ") }
         testDataDir.eachFile { file ->
             def title = (file.name - ".txt").replaceAll("_", " ")
-            def headerLine = file.readLines().find(headerLineMatcher)
-            def entries = repo.findEntryByTitle(title)
-            def entry
-            if (entries.size() == 1) {
-                entry = entries[0]
-            } else if (entries.size() > 1) {
-                entry = entries.find { e ->
-                    def entryHeaderLine = e.text.readLines().find(headerLineMatcher)
-                    return entryHeaderLine == headerLine
-                }
-            }
+            def entry = repo.findPageById("null:${title}")
             if (entry == null) {
                 logger.error("No dictionary entry found for the title '${title}'")
             } else {
