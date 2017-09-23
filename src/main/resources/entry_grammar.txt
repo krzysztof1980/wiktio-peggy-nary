@@ -57,9 +57,7 @@ AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addAkkPl};
 Gender = LT GenderTemplateArgument "."? RT Space {};
 GenderTemplateArgument = [mnfu]+ {};
 
-// TODO: enable MeaningsTextbaustein when fixed
-//MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
-MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
+MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
 
 //------------------------------------------------------------------------------
 // Meanings
@@ -67,8 +65,9 @@ MiddleSection = (!TranslationsKopf (FlexionTable / Line))* ;
 MeaningsTextbaustein = MeaningsKopf MeaningList ;
 MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
-Meaning = MeaningLvl RichTextComponent++ EOL {};
+Meaning = MeaningLvl MeaningKontext Space RichTextComponent++ EOL {};
 MeaningLvl = ":"+ (ItemNo / "*") ;
+MeaningKontext = Kontext? {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -101,7 +100,6 @@ TextbausteinEnd = LT / KopfStart / EOF ;
 // Rich text components
 RichTextComponent = Link {}
                   / CursiveText {}
-                  / Template {}
                   / !EOL _ {};
 
 // Link
@@ -115,13 +113,20 @@ CursiveText = "''" RichTextComponent*+ "''" {};
 // Template
 LT =       "{{" Space ; // Left Template opening
 RT = Space "}}" ; // Right Template closing
-Template = LT TName (SEP TParam)* RT {} ;
-TName = (!(SEP / RT) _)+ ;
 TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
-			           (!(SEP / RT) RichTextComponent)* {};
+	     TPosParam {};
 TParamName = (!(SEP / RT / EQ) _)+ ;
+TPosParam = (!(SEP / RT) RichTextComponent)* {};
 TextualTParam = (!(SEP / RT) _)+ ;
+
+// Kontext template
+Kontext = LT "K" KontextPartList KontextFtParam KontextSprParam RT {};
+KontextPartList = !(SEP "ft" EQ / SEP "spr" EQ) (SEP TPosParam KontextPartSep)+ {};
+KontextPartSep = (SEP "t" [1-7] EQ [:;_])? {};
+KontextFtParam = (SEP "ft" EQ (!(SEP / RT) RichTextComponent*))? {};
+KontextSprParam = (SEP "spr" EQ (!(SEP / RT) RichTextComponent*))? ;
+
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" _++ "]" Space {};

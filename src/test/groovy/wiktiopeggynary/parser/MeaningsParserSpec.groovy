@@ -1,13 +1,12 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
-import wiktiopeggynary.model.Meaning
+import wiktiopeggynary.meaning.Meaning
+import wiktiopeggynary.meaning.MeaningKontext
 import wiktiopeggynary.model.markup.CursiveBlock
 import wiktiopeggynary.model.markup.InternalLink
 import wiktiopeggynary.model.markup.PlainText
 import wiktiopeggynary.model.markup.RichText
-
-import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 
 /**
  * @author Krzysztof Witukiewicz
@@ -15,80 +14,92 @@ import static wiktiopeggynary.parser.util.ResourceUtils.readArticleFromResources
 @Unroll
 class MeaningsParserSpec extends ParserSpecBase {
 
-    def "simple case"() {
+    def "without Kontext"() {
         given:
-        def expectedMeaning = new RichText("Gebiet, auf dem ein Staat liegt")
+        def text = new RichText(new PlainText("nach Einfluss oder Aufgabe gestaffeltes "),
+                                new InternalLink.Builder().withPageTitle("System").build(),
+                                new PlainText(" aus "),
+                                new InternalLink.Builder().withPageTitle("Individuum").withLinkText("Individuen").
+                                        build())
+        def expectedMeaning = new Meaning(text: text)
 
         expect:
-        getMeaningFromWiktionaryEntry("Staat", 1).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Staat", 0) == expectedMeaning
     }
 
-    def "template as details"() {
+    def "with plain text-Kontext"() {
         given:
-        def expectedMeaning = new RichText(
-                new PlainText("{{K}} die "),
-                new InternalLink.Builder().withPageTitle("Vereinigte Staaten von Amerika")
-                                          .withLinkText("Vereinigten Staaten von Amerika")
-                                          .build());
+        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText(new PlainText("Politik")))])
+        def text = new RichText("Gebiet, auf dem ein Staat liegt")
+        def expectedMeaning = new Meaning(kontext: kontext, text: text)
 
         expect:
-        getMeaningFromWiktionaryEntry("Staat", 2).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Staat", 1) == expectedMeaning
     }
 
-    def "templates as details"() {
+    def "rich text-Kontext"() {
         given:
-        def expectedMeaning = new RichText(
-                new PlainText("{{iron.}} {{scherzh.}} großes "),
-                new InternalLink.Builder().withPageTitle("Loch").build(),
-                new PlainText(" im "),
-                new InternalLink.Builder().withPageTitle("Strumpf").build());
+        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(
+                text: new RichText(new InternalLink.Builder().withPageTitle("umgangssprachlich").build(),
+                                   new PlainText(", nur "),
+                                   new InternalLink.Builder().withPageTitle("Plural").build()))])
 
         expect:
-        getMeaningFromWiktionaryEntry("Kartoffel", 4).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Staat", 2).kontext == kontext
+    }
+
+    def "Kontext with multiple parts"() {
+        given:
+        def kontext = new MeaningKontext(parts: [
+                new MeaningKontext.Part(text: new RichText("ironisch")),
+                new MeaningKontext.Part(text: new RichText("scherzhaft"))])
+
+        expect:
+        getMeaningFromWiktionaryEntry("Kartoffel", 4).kontext == kontext
     }
 
     def "citation as details"() {
         given:
-        def expectedMeaning = new RichText(
+        def text = new RichText(
                 new CursiveBlock(
                         new RichText(new InternalLink.Builder().withPageTitle("Militär").build(), new PlainText(":"))),
-                new PlainText(" seegehende Einheiten einer bestimmten Größenordnung bei der Marine"));
+                new PlainText(" seegehende Einheiten einer bestimmten Größenordnung bei der Marine"))
 
         expect:
-        getMeaningFromWiktionaryEntry("Boot", 1).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Boot", 1).text == text
     }
 
+    // TODO: consider sub meanings, otherwise it does not make sense
     def "sub-meaning"() {
         given:
-        def expectedMeaning = new RichText(
+        def text = new RichText(
                 new PlainText("in "),
                 new InternalLink.Builder().withPageTitle("Katar").build(),
                 new PlainText(" (kleinere Einheit des "),
-                new InternalLink.Builder().withPageTitle("Katar-Riyal").withLinkText("Katar-Riyals").build(),
-                new PlainText(")"));
+                new InternalLink.Builder().withPageTitle("Katar-Riyal").build(),
+                new PlainText("s)"))
 
         expect:
-        getMeaningFromWiktionaryEntry("Dirham", 3).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Dirham", 3).text == text
     }
 
     def "sub-meaning (with '*' in front)"() {
         given:
-        def expectedMeaning = new RichText(
+        def text = new RichText(
                 new InternalLink.Builder().withPageTitle("jährlich").build(),
                 new PlainText("e "),
                 new CursiveBlock(new RichText("Aberration:")),
                 new PlainText(" aufgrund des "),
                 new InternalLink.Builder().withPageTitle("Erdumlauf").build(),
                 new PlainText("s um die "),
-                new InternalLink.Builder().withPageTitle("Sonne").build());
+                new InternalLink.Builder().withPageTitle("Sonne").build())
 
         expect:
-        getMeaningFromWiktionaryEntry("Aberration", 1).text == expectedMeaning
+        getMeaningFromWiktionaryEntry("Aberration", 1).text == text
     }
 
     private Meaning getMeaningFromWiktionaryEntry(String lemma, int meaningIdx) {
-        def entry = parserService.parseWiktionaryEntryPage(
-                readArticleFromResources(lemma), templateService).wiktionaryEntries[0]
+        def entry = parseWiktionaryEntryPage(lemma).wiktionaryEntries[0]
         return entry.getMeanings().get(meaningIdx)
     }
 }

@@ -1,5 +1,6 @@
 package wiktiopeggynary.model.markup;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
@@ -15,7 +16,7 @@ public class InternalLink implements RichTextComponent {
 
 	private final String linkText;
 
-	private InternalLink(String pageTitle, String linkText) {
+	private InternalLink(@JsonProperty("pageTitle") String pageTitle, @JsonProperty("linkText") String linkText) {
 		Validate.notBlank(pageTitle);
 		this.pageTitle = pageTitle;
 		this.linkText = linkText;

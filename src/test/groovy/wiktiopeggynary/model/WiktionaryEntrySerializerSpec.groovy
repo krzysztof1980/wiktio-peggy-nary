@@ -15,14 +15,20 @@ class WiktionaryEntrySerializerSpec extends ParserSpecBase {
 
     def "generic entry"() {
         when:
-        def entry = getWiktionaryEntry("Boot", 0, Substantiv)
+        def entry = getWiktionaryEntry("Kartoffel", 0, Substantiv)
 
         then: "lemma is set"
         !StringUtils.isBlank(entry.lemma)
 
         and: "translations are set"
         !entry.translations.isEmpty()
-        entry.translations["en"][0].translations[0].internalLink == "boat"
+        entry.translations["en"][0].translations[0].internalLink == "potato"
+
+        and: "meanings are set"
+        !entry.meanings.isEmpty()
+        def meaning = entry.meanings[4]
+        meaning.kontext.parts.size() == 2
+        meaning.text.components.size() == 4
     }
 
     def "complex substantiv"() {

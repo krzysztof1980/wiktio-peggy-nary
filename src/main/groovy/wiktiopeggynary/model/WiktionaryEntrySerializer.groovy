@@ -1,5 +1,6 @@
 package wiktiopeggynary.model
 
+import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 
 /**
@@ -8,6 +9,10 @@ import com.fasterxml.jackson.databind.ObjectMapper
 class WiktionaryEntrySerializer {
 
     private final ObjectMapper objectMapper = new ObjectMapper()
+
+    WiktionaryEntrySerializer() {
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+    }
 
     String serializeWiktionaryEntry(WiktionaryEntry entry) {
         objectMapper.writeValueAsString(entry)

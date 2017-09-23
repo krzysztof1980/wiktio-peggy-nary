@@ -1,5 +1,6 @@
 package wiktiopeggynary.model.markup;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.lang3.Validate;
 import wiktiopeggynary.model.visitor.DefaultRichTextComponentVisitor;
 import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
@@ -13,7 +14,7 @@ public class CursiveBlock implements RichTextComponent {
 
 	private final RichText body;
 
-	public CursiveBlock(RichText body) {
+	public CursiveBlock(@JsonProperty("body") RichText body) {
 		Validate.notNull(body);
 		this.body = body;
 	}

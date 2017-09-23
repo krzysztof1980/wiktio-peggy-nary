@@ -1,5 +1,6 @@
 package wiktiopeggynary.model.markup;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import wiktiopeggynary.model.visitor.DefaultRichTextComponentVisitor;
@@ -14,7 +15,7 @@ public class PlainText implements RichTextComponent {
 
     private final String text;
 
-    public PlainText(String text) {
+    public PlainText(@JsonProperty("text") String text) {
 	    Validate.notNull(text);
 	    this.text = text;
     }

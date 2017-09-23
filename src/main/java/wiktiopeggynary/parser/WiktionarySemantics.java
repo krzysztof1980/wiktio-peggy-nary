@@ -13,12 +13,16 @@ package wiktiopeggynary.parser;
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wiktiopeggynary.model.*;
+import wiktiopeggynary.meaning.Meaning;
+import wiktiopeggynary.meaning.MeaningKontext;
+import wiktiopeggynary.model.Kasus;
+import wiktiopeggynary.model.Numerus;
+import wiktiopeggynary.model.ReferenceWiktionaryEntry;
+import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.markup.*;
 import wiktiopeggynary.model.substantiv.*;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
-import wiktiopeggynary.model.visitor.RichTextEvaluator;
 import wiktiopeggynary.parser.mouse.SemanticsBase;
 import wiktiopeggynary.parser.template.TemplateService;
 
@@ -294,15 +298,24 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  Meaning = MeaningLvl RichTextComponent++ EOL
+	//  Meaning = MeaningLvl MeaningKontext Space RichTextComponent+
+	//                0            1          2        3..n-1
 	//-------------------------------------------------------------------
 	void Meaning() {
-		RichText richText = new RichText();
-		processSequenceOfRichTextComponents(1, rhsSize(), richText);
-		RichTextEvaluator evaluator = new RichTextEvaluator(templateService, Collections.emptyList());
-		evaluator.visit(richText);
-		Meaning meaning = new Meaning(evaluator.getResult());
+		Meaning meaning = new Meaning();
+		meaning.setKontext((MeaningKontext) rhs(1).get());
+		RichText text = new RichText();
+		processSequenceOfRichTextComponents(3, rhsSize(), text);
+		meaning.setText(text);
 		entryWorkingCopy.addMeaning(meaning);
+	}
+	
+	//=====================================================================
+	//  MeaningKontext = Kontext?
+	//=====================================================================
+	void MeaningKontext() {
+		if (!lhs().isEmpty())
+			lhs().put(rhs(0).get());
 	}
 	
 	//=====================================================================
@@ -343,18 +356,6 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  Template = LT TName (SEP TParam)* RT
-	//              0   1     2     3     n-1
-	//-------------------------------------------------------------------
-	void Template() {
-		Template.Builder templateBuilder = new Template.Builder().withName(rhs(1).text());
-		for (int i = 3; i < rhsSize() - 1; i += 2) {
-			templateBuilder.withParameter((TemplateParameter) rhs(i).get());
-		}
-		lhs().put(templateBuilder.build());
-	}
-	
-	//-------------------------------------------------------------------
 	//  TParam = Number EQ (!(SEP / RT) RichTextComponent)*
 	//             0    1                        2
 	//-------------------------------------------------------------------
@@ -375,13 +376,19 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  TCallParam = (!(SEP / RF) RichTextComponent)*
-	//                                     0
+	//  TParam = TPosParam
 	//-------------------------------------------------------------------
 	void TParam_2() {
+		lhs().put(new AnonymousTemplateParameter((RichText) rhs(0).get()));
+	}
+	
+	//-------------------------------------------------------------------
+	//  TPosParam = RichTextComponent*
+	//-------------------------------------------------------------------
+	void TPosParam() {
 		RichText richText = new RichText();
 		processSequenceOfRichTextComponents(0, rhsSize(), richText);
-		lhs().put(new AnonymousTemplateParameter(richText));
+		lhs().put(richText);
 	}
 	
 	//-------------------------------------------------------------------
@@ -420,19 +427,66 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  RichTextComponent = Template
-	//-------------------------------------------------------------------
-	void RichTextComponent_2() {
-		lhs().put(rhs(0).get());
-	}
-	
-	//-------------------------------------------------------------------
 	//  RichTextComponent = !EOL _
 	//-------------------------------------------------------------------
-	void RichTextComponent_3() {
+	void RichTextComponent_2() {
 		lhs().put(new PlainText(rhsText(0, rhsSize())));
 	}
 	
+	//=====================================================================
+	//  Kontext = LT "K" KontextPartList KontextFtParam KontextSprParam RT
+	//            0   1         2              3
+	//=====================================================================
+	void Kontext() {
+		MeaningKontext kontext = new MeaningKontext();
+		kontext.setParts((List<MeaningKontext.Part>) rhs(2).get());
+		kontext.setSuffix((RichText) rhs(3).get());
+		lhs().put(kontext);
+	}
+	
+	//=====================================================================
+	//  KontextPartList = (SEP TPosParam KontextPartSep)+
+	//                    0 (3)   1 (4)      2 (5)
+	//=====================================================================
+	void KontextPartList() {
+		List<MeaningKontext.Part> parts = new ArrayList<>();
+		for (int i = 1; i < rhsSize() - 1; i += 3) {
+			MeaningKontext.Part part = new MeaningKontext.Part();
+			part.setText((RichText) rhs(i).get());
+			part.setSeparator((String) rhs(i + 1).get());
+			parts.add(part);
+		}
+		lhs().put(parts);
+	}
+	
+	//=====================================================================
+	//  KontextPartSep = (SEP "t" [1-7] EQ [:;_])?
+	//                     0   1    2    3   4
+	//=====================================================================
+	void KontextPartSep() {
+		if (!lhs().isEmpty()) {
+			String sep = rhs(4).text();
+			if (sep.equals("_"))
+				sep = " ";
+			lhs().put(sep);
+		}
+	}
+	
+	//=====================================================================
+	//  KontextFtParam = (SEP "ft" EQ RichTextComponent*)?
+	//                     0    1  2      3..n-1
+	//=====================================================================
+	void KontextFtParam() {
+		if (!lhs().isEmpty()) {
+			RichText text = new RichText();
+			processSequenceOfRichTextComponents(3, rhsSize(), text);
+			lhs().put(text);
+		}
+	}
+	
+	//=====================================================================
+	// Utility methods
+	//=====================================================================
 	private void processSequenceOfRichTextComponents(int startInclusive, int endExclusive, RichText richText) {
 		IntStream.range(startInclusive, endExclusive)
 		         .mapToObj(i -> rhs(i).get())
