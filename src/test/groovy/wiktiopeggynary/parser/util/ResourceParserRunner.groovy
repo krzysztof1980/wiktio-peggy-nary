@@ -2,7 +2,6 @@ package wiktiopeggynary.parser.util
 
 import wiktiopeggynary.parser.ParserService
 import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory
-import wiktiopeggynary.parser.template.TemplateService
 
 /**
  * @author Krzysztof Witukiewicz
@@ -12,8 +11,7 @@ class ResourceParserRunner {
     static void main(String[] args) {
         String articleTitle = getArticleFromUserInput()
         def parserService = new ParserService(new SequentialParserTaskExecutorFactory())
-        def templateService = new TemplateService(Collections.emptyMap(), parserService)
-        def wiktionaryEntries = parserService.parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle), templateService)
+        def wiktionaryEntries = parserService.parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle))
         wiktionaryEntries.each {
             e -> println(e)
         }

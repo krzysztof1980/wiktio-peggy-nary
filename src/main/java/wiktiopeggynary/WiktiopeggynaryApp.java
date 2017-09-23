@@ -5,7 +5,6 @@ import wiktiopeggynary.model.WiktionaryEntrySerializer;
 import wiktiopeggynary.parser.ConcurrentParserTaskExecutorFactory;
 import wiktiopeggynary.parser.ParserService;
 import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory;
-import wiktiopeggynary.persistence.TemplateEsRepository;
 import wiktiopeggynary.persistence.WiktionaryEntryEsRepository;
 
 import java.io.IOException;
@@ -73,14 +72,11 @@ public class WiktiopeggynaryApp {
 		                                                ? new ConcurrentParserTaskExecutorFactory()
 		                                                : new SequentialParserTaskExecutorFactory());
 		WiktionaryEntryEsRepository wiktionaryEntryRepo = new WiktionaryEntryEsRepository(new WiktionaryEntrySerializer());
-		TemplateEsRepository templateRepo = new TemplateEsRepository();
-		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, wiktionaryEntryRepo,
-		                                                                         templateRepo);
+		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, wiktionaryEntryRepo);
 		try {
 			parseManager.parse(dumpFilePath);
 		} finally {
 			wiktionaryEntryRepo.cleanup();
-			templateRepo.cleanup();
 		}
 	}
 }

@@ -1,6 +1,0 @@
-<!-- Lit-Czihak: Biologie -->
-{{#switch: {{{A}}}
- | 3 = {{Literatur | Autor=Gerhard Czihak, Volker Blüm | Herausgeber=Gerhard Czihak | Titel=Biologie | TitelErg=Ein Lehrbuch | Auflage=3. | Verlag=Springer | Ort=Berlin/Heidelberg/New York | Jahr=1981 | ISBN=3-540-09363-X | DNB=810200589 }}
- | #default = {{Literaturliste/ohne Auflage|3}}
-}}<noinclude>
-[[Kategorie:Wiktionary:Vorlage Literatur|Czihak: Biologie]]</noinclude>

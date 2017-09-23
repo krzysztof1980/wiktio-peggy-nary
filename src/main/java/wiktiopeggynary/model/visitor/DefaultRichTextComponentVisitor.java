@@ -1,8 +1,9 @@
 package wiktiopeggynary.model.visitor;
 
-import wiktiopeggynary.model.markup.*;
-import wiktiopeggynary.parser.template.model.TemplateParameterApplication;
-import wiktiopeggynary.parser.template.model.functions.ParserFunction;
+import wiktiopeggynary.model.markup.CursiveBlock;
+import wiktiopeggynary.model.markup.InternalLink;
+import wiktiopeggynary.model.markup.PlainText;
+import wiktiopeggynary.model.markup.RichText;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -23,17 +24,5 @@ public abstract class DefaultRichTextComponentVisitor implements RichTextCompone
 
 	@Override
 	public void visit(InternalLink internalLink) {
-	}
-
-	@Override
-	public void visit(Template template) {
-	}
-
-	@Override
-	public void visit(ParserFunction function) {
-	}
-
-	@Override
-	public void visit(TemplateParameterApplication parameterApplication) {
 	}
 }

@@ -10,7 +10,6 @@
 
 package wiktiopeggynary.parser;
 
-import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wiktiopeggynary.meaning.Meaning;
@@ -24,7 +23,6 @@ import wiktiopeggynary.model.substantiv.*;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
 import wiktiopeggynary.parser.mouse.SemanticsBase;
-import wiktiopeggynary.parser.template.TemplateService;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -32,19 +30,11 @@ import java.util.stream.IntStream;
 class WiktionarySemantics extends SemanticsBase {
 	
 	private static final Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
-	private static final Logger erroneousEntriesLogger = LoggerFactory.getLogger("erroneous_wiktionary_entries");
 	
 	private String lemma;
 	private WiktionaryEntry entryWorkingCopy;
 	
 	private Stack<WiktionaryEntry> wiktionaryEntries = new Stack<>();
-	
-	private TemplateService templateService;
-	
-	void setTemplateService(TemplateService templateService) {
-		Validate.isTrue(this.templateService == null, "templateService can be initialized only once");
-		this.templateService = templateService;
-	}
 	
 	public Collection<WiktionaryEntry> getWiktionaryEntries() {
 		return Collections.unmodifiableCollection(wiktionaryEntries);

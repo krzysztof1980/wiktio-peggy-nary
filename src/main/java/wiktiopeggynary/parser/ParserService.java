@@ -7,16 +7,12 @@ import wiktiopeggynary.parser.dumpparser.WiktionaryPageDocument;
 import wiktiopeggynary.parser.dumpparser.WiktionaryPageParser;
 import wiktiopeggynary.parser.mouse.ParserBase;
 import wiktiopeggynary.parser.mouse.SourceString;
-import wiktiopeggynary.parser.template.TemplateService;
-import wiktiopeggynary.parser.template.parser.TemplateParser;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -47,13 +43,12 @@ public class ParserService {
 	}
 	
 	public void getWiktionaryEntriesFromDump(Path wiktionaryDumpPath,
-	                                         TemplateService templateService,
 	                                         Consumer<WiktionaryEntryPageParseResult> consumer) {
 		AtomicInteger count = new AtomicInteger();
 		ExecutorService executor = parserTaskExecutorFactory.createExecutor();
 		WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
 			if (p.getNamespace() == null && !ignoredEntries.contains(p.getTitle())) {
-				executor.execute(new ParseWiktionaryEntryPageTask(p, templateService, consumer, count));
+				executor.execute(new ParseWiktionaryEntryPageTask(p, consumer, count));
 			}
 		});
 		WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(wiktionaryPageParser);
@@ -66,28 +61,10 @@ public class ParserService {
 		}
 	}
 	
-	public Map<String, String> getTemplateDefinitionPagesFromDump(Path wiktionaryDumpPath) {
-		Map<String, String> result = new HashMap<>();
-		WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
-			if ("Vorlage".equals(p.getNamespace()))
-				result.put(p.getTitle(), p.getText());
-		});
-		processDump(wiktionaryDumpPath, wiktionaryPageParser);
-		logger.info("Got {} template definitions from dump", result.size());
-		return result;
-	}
-	
-	private void processDump(Path wiktionaryDumpPath,
-	                         WiktionaryPageParser wiktionaryPageParser) {
-		WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(wiktionaryPageParser);
-		dumpParser.parse(wiktionaryDumpPath.toFile());
-	}
-	
-	public Optional<WiktionaryEntryPageParseResult> parseWiktionaryEntryPage(String page,
-	                                                                         TemplateService templateService) {
+	public Optional<WiktionaryEntryPageParseResult> parseWiktionaryEntryPage(String page) {
 		if (page == null)
 			throw new IllegalArgumentException("page must not be null");
-		WiktionaryParser parser = new WiktionaryParser(templateService);
+		WiktionaryParser parser = new WiktionaryParser();
 		setTraceInParser(parser);
 		if (!page.endsWith("\n"))
 			page = page + "\n";
@@ -96,17 +73,6 @@ public class ParserService {
 		else {
 			return Optional.empty();
 		}
-	}
-	
-	public TemplateDefinitionPageParseResult parseTemplateDefinitionPage(String page) {
-		if (page == null)
-			throw new IllegalArgumentException("page must not be null");
-		TemplateParser parser = new TemplateParser();
-		if (parser.parse(new SourceString(page)))
-			return new TemplateDefinitionPageParseResult(parser.semantics().getTemplateDefinition(),
-			                                             parser.semantics().getTemplates());
-		else
-			return null;
 	}
 	
 	private void setTraceInParser(ParserBase parser) {
@@ -124,15 +90,13 @@ public class ParserService {
 	private class ParseWiktionaryEntryPageTask implements Runnable {
 		
 		final WiktionaryPageDocument pageDocument;
-		final TemplateService templateService;
 		final Consumer<WiktionaryEntryPageParseResult> consumer;
 		final AtomicInteger count;
 		
 		private ParseWiktionaryEntryPageTask(WiktionaryPageDocument pageDocument,
-		                                     TemplateService templateService,
-		                                     Consumer<WiktionaryEntryPageParseResult> consumer, AtomicInteger count) {
+		                                     Consumer<WiktionaryEntryPageParseResult> consumer,
+		                                     AtomicInteger count) {
 			this.pageDocument = pageDocument;
-			this.templateService = templateService;
 			this.consumer = consumer;
 			this.count = count;
 		}
@@ -140,10 +104,8 @@ public class ParserService {
 		@Override
 		public void run() {
 			try {
-				templateService.initPageSpecificTemplateDefinitions(pageDocument);
 				Optional<WiktionaryEntryPageParseResult> optParseResult = parseWiktionaryEntryPage(
-						pageDocument.getText(),
-						templateService);
+						pageDocument.getText());
 				if (optParseResult.isPresent()) {
 					consumer.accept(optParseResult.get());
 				} else {

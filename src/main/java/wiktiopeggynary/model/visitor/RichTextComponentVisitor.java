@@ -1,8 +1,9 @@
 package wiktiopeggynary.model.visitor;
 
-import wiktiopeggynary.model.markup.*;
-import wiktiopeggynary.parser.template.model.TemplateParameterApplication;
-import wiktiopeggynary.parser.template.model.functions.ParserFunction;
+import wiktiopeggynary.model.markup.CursiveBlock;
+import wiktiopeggynary.model.markup.InternalLink;
+import wiktiopeggynary.model.markup.PlainText;
+import wiktiopeggynary.model.markup.RichText;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -16,10 +17,4 @@ public interface RichTextComponentVisitor {
 	void visit(CursiveBlock cursiveBlock);
 
 	void visit(InternalLink internalLink);
-
-	void visit(Template template);
-
-	void visit(ParserFunction function);
-	
-	void visit(TemplateParameterApplication parameterApplication);
 }
