@@ -1,9 +1,9 @@
 package wiktiopeggynary.model.translation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import wiktiopeggynary.markup.ItemNumber;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,19 +12,19 @@ import java.util.List;
  */
 public class TranslationMeaning {
 
-    private String meaningNumber;
+    private List<ItemNumber> meaningNumbers;
     private List<Translation> translations = new ArrayList<>();
 
-    public TranslationMeaning(@JsonProperty("meaningNumber") String meaningNumber) {
-        this.meaningNumber = meaningNumber;
+    public TranslationMeaning(@JsonProperty("meaningNumbers") List<ItemNumber> meaningNumbers) {
+        this.meaningNumbers = new ArrayList<>(meaningNumbers);
     }
 
-    public String getMeaningNumber() {
-        return meaningNumber;
+    public List<ItemNumber> getMeaningNumbers() {
+        return Collections.unmodifiableList(meaningNumbers);
     }
 
-    public Collection<Translation> getTranslations() {
-        return Collections.unmodifiableCollection(translations);
+    public List<Translation> getTranslations() {
+        return Collections.unmodifiableList(translations);
     }
 
     public void addTranslation(Translation t) {
@@ -34,7 +34,7 @@ public class TranslationMeaning {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("TranslationMeaning{");
-        sb.append("meaningNumber='").append(meaningNumber).append('\'');
+        sb.append("meaningNumbers='").append(meaningNumbers).append('\'');
         sb.append(", translations=").append(translations);
         sb.append('}');
         return sb.toString();

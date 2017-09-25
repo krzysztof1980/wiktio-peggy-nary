@@ -12,6 +12,8 @@ package wiktiopeggynary.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import wiktiopeggynary.markup.ItemNumber;
+import wiktiopeggynary.meaning.KontextShortcutMapper;
 import wiktiopeggynary.meaning.Meaning;
 import wiktiopeggynary.meaning.MeaningKontext;
 import wiktiopeggynary.model.Kasus;
@@ -225,7 +227,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  TranslationMeaning = ItemNo Translation+
 	//-------------------------------------------------------------------
 	void TranslationMeaning() {
-		TranslationMeaning meaning = new TranslationMeaning((String) rhs(0).get());
+		TranslationMeaning meaning = new TranslationMeaning((List<ItemNumber>) rhs(0).get());
 		for (int i = 1; i < rhsSize(); i++) {
 			Translation translation = (Translation) rhs(i).get();
 			if (!translation.getInternalLink().isEmpty())
@@ -281,23 +283,62 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  ItemNo = "[" _++ "]" Space
+	//  ItemNo = "[" ItemNoBody "]" Space
 	//-------------------------------------------------------------------
 	void ItemNo() {
-		lhs().put(rhsText(1, rhsSize() - 2));
+		lhs().put(rhs(1).get());
+	}
+	
+	//=====================================================================
+	//  ItemNoBody = ItemNoRange (COMMA ItemNoRange)*
+	//=====================================================================
+	void ItemNoBody() {
+		List<ItemNumber> numbers = new ArrayList<>();
+		for (int i = 0; i < rhsSize(); i+=2) {
+			numbers.add((ItemNumber) rhs(i).get());
+		}
+		lhs().put(numbers);
+	}
+	
+	//=====================================================================
+	//  ItemNoRange = ItemNoElement "-" ItemNoElement / ItemNoElement
+	//=====================================================================
+	void ItemNoRange() {
+		if (rhsSize() > 1) {
+			lhs().put(ItemNumber.range(rhs(0).text(), rhs(2).text()));
+		} else {
+			lhs().put(ItemNumber.singleNumber(rhs(0).text()));
+		}
 	}
 	
 	//-------------------------------------------------------------------
-	//  Meaning = MeaningLvl MeaningKontext Space RichTextComponent+
-	//                0            1          2        3..n-1
+	//  Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*
+	//                0            1               2         3         4..n-1
 	//-------------------------------------------------------------------
 	void Meaning() {
 		Meaning meaning = new Meaning();
-		meaning.setKontext((MeaningKontext) rhs(1).get());
+		
+		// ItemNo
+		List<ItemNumber> numbers = (List<ItemNumber>) rhs(1).get();
+		if (numbers == null) {
+			numbers = Collections.singletonList(ItemNumber.singleNumber(rhs(1).text()));
+		}
+		meaning.setNumbers(numbers);
+		
+		// MeaningKontext
+		meaning.setKontext((MeaningKontext) rhs(2).get());
+		
+		// text
 		RichText text = new RichText();
-		processSequenceOfRichTextComponents(3, rhsSize(), text);
+		processSequenceOfRichTextComponents(4, rhsSize(), text);
 		meaning.setText(text);
-		entryWorkingCopy.addMeaning(meaning);
+		
+		if (rhs(0).text().length() == 1) {
+			entryWorkingCopy.addMeaning(meaning);
+		} else {
+			Meaning mainMeaning = entryWorkingCopy.getMeanings().get(entryWorkingCopy.getMeanings().size() - 1);
+			mainMeaning.addSubMeaing(meaning);
+		}
 	}
 	
 	//=====================================================================
@@ -472,6 +513,25 @@ class WiktionarySemantics extends SemanticsBase {
 			processSequenceOfRichTextComponents(3, rhsSize(), text);
 			lhs().put(text);
 		}
+	}
+	
+	//=====================================================================
+	//  AbkTemplate = LT AbkTemplateName (SEP TParam)* RT
+	//                0         1          2     3     n-1
+	//=====================================================================
+	void AbkTemplate() {
+		String abk = rhs(1).text();
+		if (rhsSize() > 5)
+			throw new ParseException("More than 1 parameter in Abk-template: " + abk);
+		if (!KontextShortcutMapper.getShortcuts().containsKey(abk))
+			throw new ParseException("Unknown shortcut in Abk-template: " + abk);
+		MeaningKontext kontext = new MeaningKontext();
+		kontext.setParts(Collections.singletonList(new MeaningKontext.Part(new RichText(abk), null)));
+		if (rhsSize() == 5) {
+			TemplateParameter param = (TemplateParameter) rhs(3).get();
+			kontext.setSuffix(param.getValue());
+		}
+		lhs().put(kontext);
 	}
 	
 	//=====================================================================

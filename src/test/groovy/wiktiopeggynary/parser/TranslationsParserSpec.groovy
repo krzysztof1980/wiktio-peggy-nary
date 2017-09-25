@@ -1,6 +1,7 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
+import wiktiopeggynary.markup.ItemNumber
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.MultiGender
 
@@ -10,15 +11,18 @@ import wiktiopeggynary.model.substantiv.MultiGender
 @Unroll
 class TranslationsParserSpec extends ParserSpecBase {
 
-    def "translation meaning number is not interpreted"() {
+    def "translation meaning numbers"() {
         when:
         def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
 
         then: "the meaning number is an integer"
-        entry.translations["ar"][0].meaningNumber == "1"
+        entry.translations["ar"][0].meaningNumbers == [ItemNumber.singleNumber("1")]
+
+        then: "the meaning number is a list of integers"
+        entry.translations["fo"][0].meaningNumbers == [ItemNumber.singleNumber("1"), ItemNumber.singleNumber("2")]
 
         and: "the meaning number is a list of range and integer"
-        entry.translations["fr"][0].meaningNumber == "1–2, 4"
+        entry.translations["fr"][0].meaningNumbers == [ItemNumber.range("1", "2"), ItemNumber.singleNumber("4")]
     }
 
     def "entry['#lang'] has #meaningCount meanings#notes"() {

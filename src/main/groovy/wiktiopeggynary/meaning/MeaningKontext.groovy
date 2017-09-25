@@ -18,6 +18,14 @@ class MeaningKontext {
     @EqualsAndHashCode
     static class Part {
 
+        Part() {
+        }
+
+        Part(RichText text, String separator) {
+            this.text = text
+            this.separator = separator
+        }
+
         RichText text
         String separator
     }

@@ -1,0 +1,123 @@
+== Skizze ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Skizze
+|Nominativ Plural=Skizzen
+|Genitiv Singular=Skizze
+|Genitiv Plural=Skizzen
+|Dativ Singular=Skizze
+|Dativ Plural=Skizzen
+|Akkusativ Singular=Skizze
+|Akkusativ Plural=Skizzen
+|Bild 1=Frans_Koppelaar_-_Lions.jpg|mini|1a|zwei Freihand''skizzen'' eines Löwen von Frans Koppelaar, 1980
+|Bild 2=Croquis_-_sample.jpg|mini|1b|architektonische ''Skizze''
+|Bild 3=Hausfreden_Skizze.jpg|mini|1b|kartographische ''Skizze'' einer Burgruine
+}}
+
+{{Worttrennung}}
+:Skiz·ze, {{Pl.}} Skiz·zen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈskɪʦə}}
+:{{Hörbeispiele}} {{Audio|De-Skizze.ogg}}
+:{{Reime}} {{Reim|ɪʦə|Deutsch}}
+
+{{Bedeutungen}}
+:[1] 
+::[a] ''[[Bildende Kunst]]:'' eine mit [[grob]]en [[Strich]]en knapp gehaltene, [[bildlich]]e [[Darstellung]], die als Entwurf dienen kann
+::[b] ''[[technisches Zeichnen]]; [[Architektur]], [[Bauwesen]], [[Kartographie]], [[Mathematik]], [[Technik]]:'' unausgefeilter, ungenauer Grundriss, Riss, Schema
+:[2] ''(im übertragenen Sinne)''
+::[a] geraffter, stichwortartiger Entwurf (zumeist eines mündlichen Vortrags)
+::[b] knapp gefasste Rohfassung einer literarischen Darstellung
+
+{{Herkunft}}
+:[[Entlehnung]] aus dem [[Italienisch]]en ''{{Ü|it|schizzo}}'' „(Tinten-, Tusche-)Spritzer“,<ref>{{Ref-Duden|Skizze}}</ref> seinerseits – je nach Quelle – entweder [[onomatopoetisch]]en Ursprungs oder aber aus dem [[Lateinisch]]en ''{{Ü|la|schedium}}'' „improvisiertes Gedicht“, das wiederum auf das [[Altgriechisch]]e [[σχέδιος]] ''(schédios)'' „aus freier Hand“ zurückgeht {{QS Herkunft|unbelegt}}<!-- nur teilweise (un)belegt, siehe auch Duden -->
+
+{{Synonyme}}
+:[1a] [[Abbozzo]], [[Bildentwurf]], [[Entwurf]], [[Studie]], [[Vorzeichnung]]
+:[1b] [[Croquis]], [[Kroki]], [[Rohentwurf]], [[Rohzeichnung]]
+:[2a] [[Konzept]], [[Überblick]]
+:[2b] [[Aufzeichnung]]
+
+{{Gegenwörter}}
+:[1] [[Detailzeichnung]]
+
+{{Oberbegriffe}}
+:[1, 2] [[Abriss]]
+
+{{Unterbegriffe}}
+:[1a] [[Konturbild]], [[Pochade]], [[Umrisszeichnung]]
+
+{{Beispiele}}
+:[1a] Sie fertigt eine ''Skizze'' an.
+:[1b] „Das Festhalten von Idee oder Vision in einer ''Skizze'' ist wichtiger Bestandteil des architektonischen schöpferischen Vorgangs und spiegelt das bildnerische Potenzial der künstlerischen Hand wider.[…] Diese heute - im Zeitalter der möglichen perfekten Montage - vielleicht antiquierte Methode ermöglicht aber das „Unmittelbare“, das ein wesentliches Merkmal einer ''Skizze,'' des Unfertigen, ist - im Gegensatz zur „wirklichkeitstäuschenden“ Eintragung mittels Computer.“<ref>[http://www.wienerstaedtische.com/group/sponsoring-csr/architektur-im-ringturm/ausstellungen-nachlese/20050408-ideen-in-umrissen/ Vienna Insurance Group, ''Ideen in Umrissen'', 08.04.2005]</ref>
+:[2a] Er machte sich ''Skizzen'' für den Vortrag.
+:[2b] „Die Juden, schrieb er in seinen autobiografischen ''Skizzen,'' wussten, was ihnen blühte, wenn sie nicht auswanderten.“<ref>[http://www.taz.de/index.php?id=digitaz-artikel&ressort=ku&art=2828&no_cache=1 Online-Ausgabe der taz, 'Archiv', ''Der Akten-Forscher'', 07.08.2007]</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[eine]] [[flüchtig]]e Skizze, eine Skizze [[anfertigen]], eine Skizze [[machen]], eine Skizze [[zeichnen]], eine [[rasch]] [[hinwerfen|hingeworfene]] Skizze, eine [[undetailliert]]e Skizze
+:[1b] [[baustatisch]]e Skizze
+:[2a] [[die]] Skizze [[ein]]er [[Rede]]
+:[2b] [[Eindruck|Eindrücke]] (eines [[Ereignis]]ses) [[in]] einer Skizze [[festhalten]]
+
+{{Wortbildungen}}
+:[[Ansichtsskizze]], [[Arbeitsskizze]], [[Bleistiftskizze]], [[Buntstiftskizze]], [[Charakterskizze]], [[Entwurfsskizze]], [[Farbskizze]], [[Faustskizze]], [[Federskizze]], [[Filzstiftskizze]], [[Geländeskizze]], [[Handskizze]], [[Kartenskizze]], [[Kreideskizze]], [[Lageskizze]], [[Planskizze]], [[Prosaskizze]], [[Reiseskizze]], [[Schaltskizze]], [[Skizzenblatt]], [[Skizzenblock]], [[Skizzenbuch]], [[Skizzenform]], [[skizzenhaft]], [[Skizzenhaftigkeit]], [[Skizzenheft]], [[Skizzenmappe]], [[skizzieren]], [[Skizzist]], [[Tatortskizze]], [[Teilskizze]], [[Wegeskizze]], [[Wegskizze]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{af}}: [1, 2] {{Ü|af|skets}}
+*{{eu}}: [1, 2] {{Ü|eu|marrazki}}, {{Ü|eu|zirriborro}}
+*{{br}}: [1, 2] {{Ü|br|damskeud}}
+*{{bg}}: [1] {{Üt|bg|скица|skitsa}}; [2b] {{Üt|bg|скеч|skeč}}
+*{{zh}}: [1] {{Üt|zh|底子|dǐzǐ}}, {{Üt|zh|草稿|cǎogǎo}}
+*{{zh-tw}}: [1] {{Üt|zh|速寫|sùxiě}}, {{Üt|zh|略圖|lüètú}}
+*{{zh-cn}}: [1] {{Üt|zh|速写|sùxiě}}, {{Üt|zh|略图|lüètú}}
+*{{en}}: [1, 2] {{Ü|en|sketch}}
+*{{eo}}: [1] {{Ü|eo|skizo}}
+*{{et}}: [1, 2] {{Ü|et|skits}}
+*{{fi}}: [1a] {{Ü|fi|piirros}}, {{Ü|fi|piirustus}}
+*{{fr}}: [1] {{Ü|fr|esquisse}} {{f}}; [1, 2] {{Ü|fr|brouillon}} {{m}}; [2] {{Ü|fr|note|notes}} {{f}} ''Pl''
+*{{ka}}: [1a] {{Üt|ka|მონასახი|}}, {{Üt|ka|მონახაზი|}}
+*{{el}}: [1, 2] {{Üt|el|σχέδιο|schédio}} {{n}}, [1]&nbsp;{{Üt|el|σκίτσο|skítso}} {{n}}
+*{{it}}: [1] {{Ü|it|schizzo}} {{m}}; [2b] {{Ü|it|abbozzo}} {{m}}
+*{{ja}}: [1] ''(französische Entlehnung)'' {{Üt|ja|エスキス|えすきす, esukisu}}, {{Üt|ja|画稿|がこう, gakō}}, ''(englische Entlehnung)'' {{Üt|ja|スケッチ|すけっち, suketchi}}, {{Üt|ja|見取り図|みとりず, mitorizu}}; [1a] {{Üt|ja|下絵|したえ, shitae}}, ''(schriftsprachlich)'' {{Üt|ja|素描|そびょう, sobyō}}, ''(schriftsprachlich)'' {{Üt|ja|点描|てんびょう, tenbyō}}, {{Üt|ja|略画|りゃくが, ryakuga}}, [1b] ''(französische Entlehnung)'' {{Üt|ja|クロッキー|くろっきー, kurokkī}}, [2b] ''(schriftsprachlich)'' {{Üt|ja|文案|ぶんあん, bunan}}, ''(schriftsprachlich)'' {{Üt|ja|略記|りゃっき, ryakki}}
+|Ü-rechts=
+*{{hr}}: [1] {{Ü|hr|nacrt}}, {{Ü|hr|skica}}
+*{{lv}}: [1, 2] {{Ü|lv|skice}}, {{Ü|lv|skečs}}
+*{{lt}}: [1] {{Ü|lt|eskizas}}
+*{{nl}}: [1, 2] {{Ü|nl|schets}}
+*{{dsb}}: [1, 2] {{Ü|dsb|skica}} {{f}}
+*{{no}}: [1] {{Ü|no|skisse}} {{m}}
+*{{hsb}}: [1, 2] {{Ü|hsb|skica}} {{f}}
+*{{pl}}: [1, 2] {{Ü|pl|szkic}} {{m}}
+*{{ro}}: [1a] {{Ü|ro|crochiu}}; [1] {{Ü|ro|scheci}}; [1, 2] {{Ü|ro|schiţă}}
+*{{ru}}: [1] {{Üt|ru|эскиз|eskiz}} {{m}}, {{Üt|ru|набросок|nabrosok}} {{m}}; [2] {{Üt|ru|рассказ|rasskaz}} {{m}}, {{Üt|ru|очерк|očerk}} {{m}}
+*{{sv}}: [1] {{Ü|sv|skiss}}
+*{{sr}}: [1] {{Ü|sr|nacrt}}, {{Ü|sr|skica}}
+*{{es}}: [1] {{Ü|es|boceto}} {{m}}, {{Ü|es|bosquejo}}; [2] {{Ü|es|esbozo}} {{m}}
+*{{th}}: [1] {{Üt|th|ภาพร่าง|pâap râang}}, {{Üt|th|สเก๊ตช์|sà-gét}}
+*{{cs}}: [1] {{Ü|cs|črta}}, {{Ü|cs|črta povídka}}, {{Ü|cs|náčrt}}, {{Ü|cs|nákres}}, {{Ü|cs|nárys}}, {{Ü|cs|skica}}
+*{{tr}}: [1] {{Ü|tr|kroki}}, {{Ü|tr|tasarçizim}}, {{Ü|tr|taslak}}, {{Ü|tr|kısa öykü}}
+*{{hu}}: [1] {{Ü|hu|karcolat}}, {{Ü|hu|skicc}}, {{Ü|hu|vázlat}}, {{Ü|hu|vázlatrajz}}
+*{{be}}: [1, 2] {{Üt|be|накід|nakid}}, {{Üt|be|эскіз|eskiz}}
+}}
+
+{{Referenzen}}
+:[1, 2] {{Wikipedia|Skizze}}
+:[1] {{Ref-Grimm|Skizze}}
+:[1, 2] {{Ref-DWDS|Skizze}}
+:[1, 2] {{Ref-Duden|Skizze}}
+:[1] {{Ref-Canoo|Skizze}}
+:[1, 2] {{Ref-UniLeipzig|Skizze}}
+:[1, 2] {{Ref-FreeDictionary|Skizze}}
+:[1, 2] {{Ref-wissen.de|Wörterbuch|Skizze}}
+:[1, 2] {{Ref-wissen.de|Fremdwort|Skizze}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+:[[Schütze]], [[Sitz]]e, [[Skythe]]
+
+[[Kategorie:Entlehnung aus dem Italienischen (Deutsch)]]

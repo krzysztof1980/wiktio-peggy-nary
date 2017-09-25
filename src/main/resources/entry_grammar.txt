@@ -65,9 +65,9 @@ MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))
 MeaningsTextbaustein = MeaningsKopf MeaningList ;
 MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
-Meaning = MeaningLvl MeaningKontext Space RichTextComponent++ EOL {};
-MeaningLvl = ":"+ (ItemNo / "*") ;
-MeaningKontext = Kontext? {};
+Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*+ EOL {};
+MeaningLvl = ":"+ ;
+MeaningKontext = (Kontext / AbkTemplate)? {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -121,15 +121,20 @@ TPosParam = (!(SEP / RT) RichTextComponent)* {};
 TextualTParam = (!(SEP / RT) _)+ ;
 
 // Kontext template
-Kontext = LT "K" KontextPartList KontextFtParam KontextSprParam RT {};
+Kontext = LT [Kk] KontextPartList KontextFtParam KontextSprParam RT {};
 KontextPartList = !(SEP "ft" EQ / SEP "spr" EQ) (SEP TPosParam KontextPartSep)+ {};
 KontextPartSep = (SEP "t" [1-7] EQ [:;_])? {};
 KontextFtParam = (SEP "ft" EQ (!(SEP / RT) RichTextComponent*))? {};
 KontextSprParam = (SEP "spr" EQ (!(SEP / RT) RichTextComponent*))? ;
 
+AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {} ;
+AbkTemplateName = (!(SEP / RT) _)+ ;
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
-ItemNo = "[" _++ "]" Space {};
+ItemNo = "[" ItemNoBody "]" Space {};
+ItemNoBody = ItemNoRange (COMMA ItemNoRange)* {};
+ItemNoRange = (ItemNoElement "–" ItemNoElement / ItemNoElement) {};
+ItemNoElement = ([a-z] / [0-9])+ ;
 
 //------------------------------------------------------------------------------
 // HTML markup

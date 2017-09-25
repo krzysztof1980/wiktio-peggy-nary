@@ -1,6 +1,7 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
+import wiktiopeggynary.markup.ItemNumber
 import wiktiopeggynary.meaning.Meaning
 import wiktiopeggynary.meaning.MeaningKontext
 import wiktiopeggynary.model.markup.CursiveBlock
@@ -21,20 +22,21 @@ class MeaningsParserSpec extends ParserSpecBase {
                                 new PlainText(" aus "),
                                 new InternalLink.Builder().withPageTitle("Individuum").withLinkText("Individuen").
                                         build())
-        def expectedMeaning = new Meaning(text: text)
 
-        expect:
-        getMeaningFromWiktionaryEntry("Staat", 0) == expectedMeaning
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Staat", 0)
+
+        then:
+        meaning.kontext == null
+        meaning.text == text
     }
 
     def "with plain text-Kontext"() {
         given:
-        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText(new PlainText("Politik")))])
-        def text = new RichText("Gebiet, auf dem ein Staat liegt")
-        def expectedMeaning = new Meaning(kontext: kontext, text: text)
+        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("Politik"))])
 
         expect:
-        getMeaningFromWiktionaryEntry("Staat", 1) == expectedMeaning
+        getMeaningFromWiktionaryEntry("Staat", 1).kontext == kontext
     }
 
     def "rich text-Kontext"() {
@@ -58,6 +60,18 @@ class MeaningsParserSpec extends ParserSpecBase {
         getMeaningFromWiktionaryEntry("Kartoffel", 4).kontext == kontext
     }
 
+    def "Kontext in form of a Abk-template "() {
+        when:
+        def entry = parseWiktionaryEntryPage("Steppke").wiktionaryEntries[0]
+
+        then:
+        entry.meanings.size() == 2
+        entry.meanings[0].kontext == new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("ugs."))],
+                                                        suffix: new RichText(","))
+        entry.meanings[1].kontext == new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("ugs."))],
+                                                        suffix: new RichText(":"))
+    }
+
     def "citation as details"() {
         given:
         def text = new RichText(
@@ -69,33 +83,50 @@ class MeaningsParserSpec extends ParserSpecBase {
         getMeaningFromWiktionaryEntry("Boot", 1).text == text
     }
 
-    // TODO: consider sub meanings, otherwise it does not make sense
     def "sub-meaning"() {
-        given:
-        def text = new RichText(
-                new PlainText("in "),
-                new InternalLink.Builder().withPageTitle("Katar").build(),
-                new PlainText(" (kleinere Einheit des "),
-                new InternalLink.Builder().withPageTitle("Katar-Riyal").build(),
-                new PlainText("s)"))
+        when:
+        def entry = parseWiktionaryEntryPage("Dirham").wiktionaryEntries[0]
 
-        expect:
-        getMeaningFromWiktionaryEntry("Dirham", 3).text == text
+        then:
+        entry.meanings.size() == 2
+        entry.meanings[0].subMeanings.size() == 6
+        entry.meanings[1].subMeanings.isEmpty()
+        entry.meanings[0].numbers == [ItemNumber.singleNumber("1")]
+        entry.meanings[0].subMeanings[5].numbers == [ItemNumber.singleNumber("1f")]
+        entry.meanings[0].subMeanings[5].text ==
+                new RichText(new PlainText("früher in "),
+                             new InternalLink.Builder().withPageTitle("Jordanien").build(),
+                             new PlainText(" (kleinere Einheit des "),
+                             new InternalLink.Builder().withPageTitle("jordanischer Dinar")
+                                                       .withLinkText("jordanischen Dinars")
+                                                       .build(),
+                             new PlainText(")"))
     }
 
     def "sub-meaning (with '*' in front)"() {
-        given:
-        def text = new RichText(
-                new InternalLink.Builder().withPageTitle("jährlich").build(),
-                new PlainText("e "),
-                new CursiveBlock(new RichText("Aberration:")),
-                new PlainText(" aufgrund des "),
-                new InternalLink.Builder().withPageTitle("Erdumlauf").build(),
-                new PlainText("s um die "),
-                new InternalLink.Builder().withPageTitle("Sonne").build())
+        when:
+        def entry = parseWiktionaryEntryPage("Aberration").wiktionaryEntries[0]
 
-        expect:
-        getMeaningFromWiktionaryEntry("Aberration", 1).text == text
+        then:
+        entry.meanings.size() == 5
+        entry.meanings[0].subMeanings.size() == 2
+        entry.meanings[0].subMeanings[1].numbers == [ItemNumber.singleNumber("*")]
+        entry.meanings[0].subMeanings[1].text ==
+                new RichText(new InternalLink.Builder().withPageTitle("täglich").build(),
+                             new PlainText("e "),
+                             new CursiveBlock(new RichText("Aberration:")),
+                             new PlainText(" aufgrund der "),
+                             new InternalLink.Builder().withPageTitle("Erdrotation").build())
+    }
+
+    def "meaning without text"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Skizze").wiktionaryEntries[0]
+
+        then:
+        entry.meanings.size() == 2
+        entry.meanings[0].numbers == [ItemNumber.singleNumber("1")]
+        entry.meanings[0].text == new RichText()
     }
 
     private Meaning getMeaningFromWiktionaryEntry(String lemma, int meaningIdx) {

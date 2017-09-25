@@ -2,6 +2,7 @@ package wiktiopeggynary.model
 
 import org.apache.commons.lang3.StringUtils
 import spock.lang.Subject
+import wiktiopeggynary.markup.ItemNumber
 import wiktiopeggynary.model.substantiv.Substantiv
 import wiktiopeggynary.parser.ParserSpecBase
 
@@ -22,11 +23,14 @@ class WiktionaryEntrySerializerSpec extends ParserSpecBase {
 
         and: "translations are set"
         !entry.translations.isEmpty()
-        entry.translations["en"][0].translations[0].internalLink == "potato"
+        def enTransMeaning0 = entry.translations["en"][0]
+        enTransMeaning0.meaningNumbers == [ItemNumber.singleNumber("1")]
+        enTransMeaning0.translations[0].internalLink == "potato"
 
         and: "meanings are set"
         !entry.meanings.isEmpty()
         def meaning = entry.meanings[4]
+        meaning.numbers == [ItemNumber.singleNumber("5")]
         meaning.kontext.parts.size() == 2
         meaning.text.components.size() == 4
     }
