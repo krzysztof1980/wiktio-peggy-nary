@@ -1,0 +1,49 @@
+== Lichtwoche ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Lichtwoche
+|Nominativ Plural=Lichtwochen
+|Genitiv Singular=Lichtwoche
+|Genitiv Plural=Lichtwochen
+|Dativ Singular=Lichtwoche
+|Dativ Plural=Lichtwochen
+|Akkusativ Singular=Lichtwoche
+|Akkusativ Plural=Lichtwochen
+}}
+
+{{Worttrennung}}
+:Licht·wo·che, {{Pl.}} Licht·wo·chen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈlɪçtˌvɔχə}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] {{QS Bedeutungen|unbelegt}} Entfernung, die das Licht in einer Woche im Vakuum zurücklegt
+
+{{Herkunft}}
+:[[Kompositum]] aus den Substantiven ''[[Licht]]'' und ''[[Woche]]''
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|}}
+*{{es}}: [1] {{Ü|es|}}
+|Dialekttabelle=
+*{{als}}:
+*{{bar}}:
+|D-rechts=
+*{{ksh}}:
+*Ostmitteldeutsch:
+}}
+
+{{Referenzen}}
+:[*] {{Ref-DWDS|Lichtwoche}}
+:[*] {{Ref-UniLeipzig|Lichtwoche}}

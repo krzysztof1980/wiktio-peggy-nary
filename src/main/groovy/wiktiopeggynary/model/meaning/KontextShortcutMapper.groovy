@@ -1,4 +1,4 @@
-package wiktiopeggynary.meaning
+package wiktiopeggynary.model.meaning
 
 /**
  * @author Krzysztof Witukiewicz

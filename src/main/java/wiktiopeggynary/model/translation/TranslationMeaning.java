@@ -1,7 +1,7 @@
 package wiktiopeggynary.model.translation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import wiktiopeggynary.markup.ItemNumber;
+import wiktiopeggynary.model.markup.ItemNumber;
 
 import java.util.ArrayList;
 import java.util.Collections;

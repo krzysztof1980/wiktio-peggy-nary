@@ -1,4 +1,4 @@
-package wiktiopeggynary.meaning
+package wiktiopeggynary.model.meaning
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString

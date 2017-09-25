@@ -1,13 +1,9 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
-import wiktiopeggynary.markup.ItemNumber
-import wiktiopeggynary.meaning.Meaning
-import wiktiopeggynary.meaning.MeaningKontext
-import wiktiopeggynary.model.markup.CursiveBlock
-import wiktiopeggynary.model.markup.InternalLink
-import wiktiopeggynary.model.markup.PlainText
-import wiktiopeggynary.model.markup.RichText
+import wiktiopeggynary.model.markup.*
+import wiktiopeggynary.model.meaning.Meaning
+import wiktiopeggynary.model.meaning.MeaningKontext
 
 /**
  * @author Krzysztof Witukiewicz
@@ -127,6 +123,16 @@ class MeaningsParserSpec extends ParserSpecBase {
         entry.meanings.size() == 2
         entry.meanings[0].numbers == [ItemNumber.singleNumber("1")]
         entry.meanings[0].text == new RichText()
+    }
+
+    def "QS Bedeutungen"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Lichtwoche", 0)
+
+        then:
+        meaning.numbers == [ItemNumber.singleNumber("1")]
+        meaning.kontext == null
+        meaning.text == new RichText("Entfernung, die das Licht in einer Woche im Vakuum zurücklegt")
     }
 
     private Meaning getMeaningFromWiktionaryEntry(String lemma, int meaningIdx) {

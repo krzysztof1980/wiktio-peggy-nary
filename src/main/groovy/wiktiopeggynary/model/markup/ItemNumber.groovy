@@ -1,4 +1,4 @@
-package wiktiopeggynary.markup
+package wiktiopeggynary.model.markup
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString

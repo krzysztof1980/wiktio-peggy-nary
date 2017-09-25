@@ -2,7 +2,7 @@ package wiktiopeggynary.model
 
 import org.apache.commons.lang3.StringUtils
 import spock.lang.Subject
-import wiktiopeggynary.markup.ItemNumber
+import wiktiopeggynary.model.markup.ItemNumber
 import wiktiopeggynary.model.substantiv.Substantiv
 import wiktiopeggynary.parser.ParserSpecBase
 

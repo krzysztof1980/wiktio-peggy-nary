@@ -1,7 +1,7 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
-import wiktiopeggynary.markup.ItemNumber
+import wiktiopeggynary.model.markup.ItemNumber
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.MultiGender
 

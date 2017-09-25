@@ -12,15 +12,14 @@ package wiktiopeggynary.parser;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wiktiopeggynary.markup.ItemNumber;
-import wiktiopeggynary.meaning.KontextShortcutMapper;
-import wiktiopeggynary.meaning.Meaning;
-import wiktiopeggynary.meaning.MeaningKontext;
 import wiktiopeggynary.model.Kasus;
 import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.ReferenceWiktionaryEntry;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.markup.*;
+import wiktiopeggynary.model.meaning.KontextShortcutMapper;
+import wiktiopeggynary.model.meaning.Meaning;
+import wiktiopeggynary.model.meaning.MeaningKontext;
 import wiktiopeggynary.model.substantiv.*;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
@@ -312,8 +311,8 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*
-	//                0            1               2         3         4..n-1
+	//  Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent* EOL
+	//                0            1               2         3         4..n-2       n-1
 	//-------------------------------------------------------------------
 	void Meaning() {
 		Meaning meaning = new Meaning();
@@ -330,7 +329,7 @@ class WiktionarySemantics extends SemanticsBase {
 		
 		// text
 		RichText text = new RichText();
-		processSequenceOfRichTextComponents(4, rhsSize(), text);
+		processSequenceOfRichTextComponents(4, rhsSize()-1, text);
 		meaning.setText(text);
 		
 		if (rhs(0).text().length() == 1) {

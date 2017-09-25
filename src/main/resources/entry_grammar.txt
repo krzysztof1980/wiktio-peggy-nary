@@ -67,7 +67,7 @@ MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
 Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*+ EOL {};
 MeaningLvl = ":"+ ;
-MeaningKontext = (Kontext / AbkTemplate)? {};
+MeaningKontext = (Kontext / QsTemplate / AbkTemplate)? {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -129,6 +129,8 @@ KontextSprParam = (SEP "spr" EQ (!(SEP / RT) RichTextComponent*))? ;
 
 AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {} ;
 AbkTemplateName = (!(SEP / RT) _)+ ;
+
+QsTemplate = LT "QS Bedeutungen" (SEP TPosParam)* RT ;
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" ItemNoBody "]" Space {};

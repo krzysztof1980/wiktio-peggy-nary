@@ -1,9 +1,9 @@
-package wiktiopeggynary.meaning
+package wiktiopeggynary.model.meaning
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 import org.apache.commons.lang3.Validate
-import wiktiopeggynary.markup.ItemNumber
+import wiktiopeggynary.model.markup.ItemNumber
 import wiktiopeggynary.model.markup.RichText
 
 /**

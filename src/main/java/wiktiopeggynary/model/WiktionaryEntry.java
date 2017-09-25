@@ -1,6 +1,6 @@
 package wiktiopeggynary.model;
 
-import wiktiopeggynary.meaning.Meaning;
+import wiktiopeggynary.model.meaning.Meaning;
 import wiktiopeggynary.model.translation.TranslationMeaning;
 
 import java.util.*;
