@@ -57,7 +57,7 @@ AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addAkkPl};
 Gender = LT GenderTemplateArgument "."? RT Space {};
 GenderTemplateArgument = [mnfu]+ {};
 
-MiddleSection = (!TranslationsKopf (FlexionTable / MeaningsTextbaustein / Line))* ;
+MiddleSection = (!KopfStart (FlexionTable / MeaningsTextbaustein / Line))* ;
 
 //------------------------------------------------------------------------------
 // Meanings

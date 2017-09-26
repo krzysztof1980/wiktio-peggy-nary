@@ -28,6 +28,16 @@ class GeneralParserSpec extends ParserSpecBase {
         parseWiktionaryEntryPage("Kim").wiktionaryEntries.size() == 2
     }
 
+    def "no translations"() {
+        when:
+        def entries = parseWiktionaryEntryPage("SQL").wiktionaryEntries
+
+        then:
+        entries.size() == 1
+        entries[0].translations.size() == 0
+        entries[0].meanings.size() == 1
+    }
+
     @Unroll
     def "old spellings: '#lemma' -> '#referenceValue' (#referenceType)"() {
         when:

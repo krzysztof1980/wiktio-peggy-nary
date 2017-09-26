@@ -54,9 +54,10 @@ public class Substantiv extends WiktionaryEntry {
 	
 	@Override
 	public String toString() {
-		return String.format("Substantiv{%s %s: %s flexion forms, %s translation(s)}",
+		return String.format("Substantiv{%s %s: %s flexion form(s), %s meaning(s), %s translation(s)}",
 		                     getLemma(), gender,
 		                     flexionForms.get(Numerus.Singular).size() + flexionForms.get(Numerus.Plural).size(),
+		                     getMeanings().size(),
 		                     getTranslations().size());
 	}
 }

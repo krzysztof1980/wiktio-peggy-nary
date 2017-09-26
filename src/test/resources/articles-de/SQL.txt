@@ -1,0 +1,76 @@
+== SQL ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Abkürzung|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=SQL
+|Nominativ Plural=—
+|Genitiv Singular=SQLs
+|Genitiv Plural=—
+|Dativ Singular=SQL
+|Dativ Plural=—
+|Akkusativ Singular=SQL
+|Akkusativ Plural=—
+}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ɛskuːˈʔɛl}}
+
+{{Bedeutungen}}
+:[1] eine [[Datenbanksprache]]
+
+{{Herkunft}}
+:von [[englisch]] ''[[SQL#Englisch|SQL]]''
+
+{{Sinnverwandte Wörter}}
+:[1] ''[[Vorgänger]]:'' [[SEQUEL]]
+
+{{Oberbegriffe}}
+:[1] [[Datenbanksprache]]
+
+{{Unterbegriffe}}
+:[1] ''[[Dialekt]]e:'' [[MySQL]], [[SchemaSQL]], [[Transact-SQL]]
+
+{{Beispiele}}
+:[1] „''SQL'' ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken sowie zum Bearbeiten (Einfügen, Verändern, Löschen) und Abfragen von darauf basierenden Datenbeständen.“<ref name="WP">{{Wikipedia|SQL|oldid=166104694}}</ref>
+:[1] „Das ursprüngliche ''SQL'' war keine Turing-vollständige Programmiersprache, es ermöglichte also nicht die Realisierung von beliebigen Computerprogrammen.“<ref name="WP" />
+{{Wortbildungen}}
+:[[SQL-Abfrage]], [[SQL-Anweisung]], [[SQL-Befehl]], [[SQL-Datenbank]], [[SQL-Datentyp]], [[SQL-Dialekt]], [[SQL-Grundlage]], [[SQL-Injection]], [[SQL-Kenntnis]], [[SQL-Schnittstelle]], [[SQL-Server]], [[SQL-Standard]], [[SQL-String]], [[SQL-Syntax]], [[SQL-Teacher]], [[SQL-Technik]], [[SQL-Trainer]], [[SQL-Tuning]], [[SQL-Tutorial]], [[SQL-Version]]
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Abkürzungen}}
+:[1] {{Ref-UniLeipzig}}
+
+{{Quellen}}
+
+== SQL ({{Sprache|Englisch}}) ==
+=== {{Wortart|Abkürzung|Englisch}} ===
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ɛs kjuː ɛl}}
+:{{Hörbeispiele}} {{Audio|En-us-SQL.ogg|spr=us}}
+
+{{Bedeutungen}}
+:[1] {{Ü|en|structured|'''S'''tructured}} {{Ü|en|query|'''Q'''uery}} {{Ü|en|language|'''L'''anguage}}
+
+{{Oberbegriffe}}
+:[1] [[QL]]
+
+{{Unterbegriffe}}
+:[1] [[ESQL]], [[PL-SQL]], [[T-SQL]]
+
+{{Beispiele}}
+:[1] The most common operation in ''SQL'' is the query, which is performed with the declarative SELECT statement.
+::Die grundlegendste Möglichkeit die ''SQL'' bietet, ist die Abfrage. Sie wird mittels des Befehles SELECT durchgeführt.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|SQL}}
+|Ü-rechts=
+*{{tr}}: [1] {{Ü|tr|SQL}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Ref-Abkürzungen}}
