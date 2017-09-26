@@ -5,9 +5,9 @@ import wiktiopeggynary.model.visitor.TemplateParameterVisitor;
 /**
  * @author Krzysztof Witukiewicz
  */
-public class AnonymousTemplateParameter extends TemplateParameter {
+public class PositionalTemplateParameter extends TemplateParameter {
 
-	public AnonymousTemplateParameter(RichText value) {
+	public PositionalTemplateParameter(RichText value) {
 		super(value);
 	}
 

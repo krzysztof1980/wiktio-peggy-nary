@@ -1,0 +1,59 @@
+== Verpflegung ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Verpflegung
+|Nominativ Plural=Verpflegungen
+|Genitiv Singular=Verpflegung
+|Genitiv Plural=Verpflegungen
+|Dativ Singular=Verpflegung
+|Dativ Plural=Verpflegungen
+|Akkusativ Singular=Verpflegung
+|Akkusativ Plural=Verpflegungen
+}}
+
+{{Worttrennung}}
+:Ver·pfle·gung, {{Pl.}} Ver·pfle·gun·gen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|fɛɐ̯ˈpfleːɡʊŋ}}
+:{{Hörbeispiele}} {{Audio|}}
+:{{Reime}} {{Reim|eːɡʊŋ|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{K|ft=|ohne Plural}} Vorgang respektive Handlung, jemanden mit Essen und Trinken zu versorgen
+:[2] {{K|ft=|meist im Singular}} Zusammenstellung von Nahrungsmitteln und Getränken
+
+{{Herkunft}}
+:[[Ableitung]] von ''[[verpflegen]]'' mit dem [[Ableitungsmorphem]] ''[[-ung]]''
+
+{{Unterbegriffe}}
+:[1, 2] [[Selbstverpflegung]], [[Vollverpflegung]]
+:[2] [[Gemeinschaftsverpflegung]], [[Kaltverpflegung]], [[Kantinenverpflegung]], [[Marschverpflegung]], [[Reiseverpflegung]], [[Tagesverpflegung]], [[Truppenverpflegung]], [[Zwischenverpflegung]]
+
+{{Beispiele}}
+:[1] Die ''Verpflegung'' der Flutopfer hat nun höchste Priorität.
+:[2] Für eine Wanderung sollte man sich ''Verpflegung'' mitnehmen.
+
+{{Wortbildungen}}
+:[[Verpflegungsdepot]], [[Verpflegungsgeld]], [[Verpflegungskosten]], [[Verpflegungsmagazin]], [[Verpflegungsmehraufwand]], [[Verpflegungsnachschub]], [[Verpflegungssatz]], [[Verpflegungsstelle]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|}}
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[1, 2] {{Wikipedia|Verpflegung}}
+:[1, 2] {{Ref-DWDS|Verpflegung}}
+:[*] {{Ref-Canoo|Verpflegung}}
+:[*] {{Ref-UniLeipzig|Verpflegung}}
+:[1, 2] {{Ref-Duden|Verpflegung}}
+:[1, 2] {{Ref-wissen.de|Wörterbuch|Verpflegung}}
+:[1, 2] {{Ref-PONS|Verpflegung}}
+:[*] {{Ref-OWID|elexiko|258165}}

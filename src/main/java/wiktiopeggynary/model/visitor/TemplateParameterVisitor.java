@@ -1,15 +1,15 @@
 package wiktiopeggynary.model.visitor;
 
-import wiktiopeggynary.model.markup.AnonymousTemplateParameter;
 import wiktiopeggynary.model.markup.NamedTemplateParameter;
 import wiktiopeggynary.model.markup.NumberedTemplateParameter;
+import wiktiopeggynary.model.markup.PositionalTemplateParameter;
 
 /**
  * @author Krzysztof Witukiewicz
  */
 public interface TemplateParameterVisitor {
 
-	void visit(AnonymousTemplateParameter param);
+	void visit(PositionalTemplateParameter param);
 
 	void visit(NumberedTemplateParameter param);
 

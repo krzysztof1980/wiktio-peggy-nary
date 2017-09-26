@@ -1,0 +1,346 @@
+{{Wort der Woche|11|2011}}
+== Bauch ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Bauch
+|Nominativ Plural=Bäuche
+|Genitiv Singular=Bauches
+|Genitiv Singular*=Bauchs
+|Genitiv Plural=Bäuche
+|Dativ Singular=Bauch
+|Dativ Singular*=Bauche
+|Dativ Plural=Bäuchen
+|Akkusativ Singular=Bauch
+|Akkusativ Plural=Bäuche
+|Bild 1=Buikjuh.JPG|mini|1|trainierter ''Bauch'' eines Mannes
+|Bild 2=Obesity6.JPG|mini|3|''Bauch'' eines Übergewichtigen
+|Bild 3=Pregnancy_34_weeks1.jpg|mini|3|''Bauch'' einer Schwangeren
+}}
+
+{{Worttrennung}}
+:Bauch, {{Pl.}} Bäu·che
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|baʊ̯χ}}
+:{{Hörbeispiele}} {{Audio|De-Bauch.ogg}}
+:{{Reime}} {{Reim|aʊ̯χ|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{K|Anatomie}} (bei [[Wirbeltier]]en samt [[Mensch]]) der sich [[zwischen]] [[Zwerchfell]] und [[Becken]] befindliche [[vordere]] [[Teil]] des [[Rumpf]]es
+:[2] {{K|übertr.|t1=_|zu [1], wobei »Bauch« den [[Sitz]] der [[Emotion]] und [[Intuition]] bezeichnet}} [[subjektiv]]er, [[gefühlsmäßig]]er [[Eindruck]]; ([[intuitiv]]es) [[Gefühl]]
+:[3] {{K|zumeist aber nicht ausschließlich als Merkmal von Beleibtheit}} sich [[nach]] [[vorn]] [[wölbend]]er Teil des unter [1] beschriebenen [[Körperteil]]s
+:[4] {{K|übertr.|t1=_|zu [3]}} [[gewölbt]]er Teil eines [[Gegenstand]]s
+::[a] {{K|speziell|t1=;|ugs.}} [[Unterseite]] eines [[Schiff]]s
+::[b] {{K|speziell|t1=;|ugs.}} Unterseite eines [[Flugzeug]]s
+::[c] {{K|speziell|t1=;|ugs.}} Unterseite eines [[Auto]]s
+::[d] {{K|speziell|t1=;|ugs.}} [[Ausbuchtung]] einer [[Mauer]]
+:[5] {{K|ugs.}} der innere unter [1] beschriebene Teil des Rumpfes, in dem die [[Nahrung]] [[verdauen|verdaut]] wird; [[Magen]] (samt [[Darm]])
+:[6] {{K|ugs.|t1=_|übertr.|t2=_|zu [5]}} [[innerer]] Teil eines Gegenstands
+
+{{Herkunft}}
+:Das Wort ist ein als Teil des [[althochdeutsch]]en [[Kompositums]] ''{{Ü|goh|uuasbucho}}'' ‚ein [[gefunden]]er [[verstümmelt]]er [[Rumpf]]‘ bereits seit dem 8. Jahrhundert und schließlich als eigenständige Form ''{{Ü|goh|būh}}'' seit dem 11. Jahrhundert (um 1000<ref name="Pfeifer">{{Ref-Pfeifer|Bauch}}</ref>) bezeugtes [[Erbwort]] aus dem [[Althochdeutsch]]en, welches sich im [[Mittelhochdeutsch]]en zur Form ''{{Ü|gmh|būch}}'' entwickelte.<ref name="Kluge">{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Seite 96.</ref> Ebenso wie [[altnordisch]] ''{{Ü|non|búkr}}''<ref name="Kluge"/> / ''{{Ü|non|būkr}}'' ‚Bauch, [[Körper]]‘<ref name="Pfeifer"/>, [[altenglisch]] ''{{Ü|ang|búc|būc}}'' ‚Bauch, [[Rumpf]]‘<ref name="Pfeifer"/><ref name="Kluge"/>, [[altfriesisch]] ''{{Ü|ofs|būk}} / {{Ü|ofs|būch}}''<ref name="Kluge"/>, [[mittelniederdeutsch]] ''{{Ü|gml|būk}}''<ref name="Pfeifer"/>, [[mittelniederländisch]] ''{{Ü|dum|buuc}}''<ref name="Pfeifer"/>, [[niederländisch]] ''{{Ü|nl|buik}}''<ref name="Pfeifer"/> und [[schwedisch]] ''{{Ü|sv|buk}}''<ref name="Pfeifer"/> entstammen die beiden alt- und mittelhochdeutschen Formen der (nicht belegbaren aber rekonstruierten) [[germanisch]]en Form ''*būka-'' {{m}} ‚Bauch‘.<ref name="Kluge"/> Diese [[Form]] geht zurück auf eine [[Wurzel]] mit verschiedenen anlautenden [[Labialen]], mit der dicke, bauchige Gegenstände bezeichnet wurden (vergleiche [[russisch]] ''{{Üt|ru|пузо|púzo}}'' ‚Bauch, [[Wanst]]‘)<ref name="Kluge"/>; wenn eine Bedeutung ‚[[geschwollen|Geschwollener]] ([[etwa]] [[nach]] dem [[Essen]])‘ angenommen wird, sind jene Formen vielleicht eine [[Guttural]]erweiterung der (nicht belegbaren aber rekonstruierten) [[indoeuropäisch]]en Wurzeln ''*b(e)u-, *bh(e)u-, *b(h)ū-'' ‚[[aufblasen]], [[schwellen]]‘.<ref name="Pfeifer"/> Vermutlich waren diese ursprünglich Lautgebärden für die aufgeblasenen (und daher dicken) Backen (vergleiche die Zusammenstellung unter »[[Bausch]]«).<ref name="Kluge"/> Da das Wort nur in germanischen [[Sprachen]] (''*būka-'') bezeugt ist, kann die Möglichkeit, dass es der nicht-indoeuropäischen Sprache einer vorgermanischen Substratbevölkerung entstammt, nicht ausgeschlossen werden.<ref name="Pfeifer"/>
+
+{{Synonyme}}
+:[1] {{fachspr.}} ''([[Medizin]]):'' [[Abdomen]]
+:[1] {{geh.|:}} [[Leib]]
+:[3] {{landsch.}} {{ugs.|,}} ''besonders [[norddeutsch|nord-]], [[mitteldeutsch|mittel-]] und [[ostmitteldeutsch]]:'' [[Plauze]]
+:[3, 5] ''[[salopp]]:'' [[Ranzen]]
+
+{{Sinnverwandte Wörter}}
+:[2] [[Empfinden]], [[Gefühl]], [[Gespür]], [[Inneres]], [[innere]] [[Stimme]], [[Instinkt]], [[Intuition]]
+:[3, 5] {{landsch.|:}} [[Wamme]]
+:[3, 5] {{ugs.}} {{abw.|:}} [[Wampe]]
+:[3] {{ugs.}} ''[[spöttisch]]:'' [[Bierbauch]]; {{ugs.}} {{abw.}} ''oder'' {{scherzh.|:}} [[Schmerbauch]]; {{ugs.|,}} ''zumeist'' {{scherzh.|:}} [[Speckbauch]]
+:[3] {{scherzh.|:}} [[Embonpoint]]
+:[3] ''[[salopp]]'' {{abw.|:}} [[Wanst]]
+:[3] ''[[berlinisch]]'' {{scherzh.|:}} [[Mollenfriedhof]]; {{österr.}} {{scherzh.|:}} [[Backhendlfriedhof]], [[Backhendlgottsacker]]; {{schweiz.}} {{scherzh.|:}} [[Güggelifriedhof]]
+:[4] [[Ausbuchtung]], [[Rundung]], [[Wölbung]]
+:[5] [[Darm]], [[Magen]]
+:[6] [[Innenräume]], [[Inneres]]
+
+{{Gegenwörter}}
+:[1] ''[[andere]] [[Bereiche]] des [[Rumpfs]]:'' [[Becken]]/''[[medizinisch]]:'' [[Pelvis]], [[Brust]]/''[[medizinisch]]:'' [[Pectus]], [[Brustkorb]]/''[[medizinisch]]:'' [[Thorax]], [[Flanke]]/''[[jägersprachlich]]:'' [[Dünnung]]/[[Weiche]], [[Hüfte]]/''[[medizinisch]]:'' [[Coxa]]/''[[medizinisch]]:'' [[Ischium]], [[Lende]], [[Rücken]]/''[[medizinisch]]:'' [[Dorsum]], [[Taille]]
+
+{{Verkleinerungsformen}}
+:[1, 3] [[Bäuchelchen]], [[Bäuchlein]]
+
+{{Oberbegriffe}}
+:[1, 3] [[Körperteil]], [[Rumpf]]
+
+{{Unterbegriffe}}
+:[1] [[Mittelbauch]], [[Oberbauch]], [[Unterbauch]]/[[Unterleib]]/''[[medizinisch]]:'' [[Hypogastrium]]; [[Waschbrettbauch]]
+:[1] [[Schweinebauch]]
+:[3] [[Babybauch]]; [[Bierbauch]], [[Blähbauch]], [[Dickbauch]], [[Fettbauch]], [[Hängebauch]], [[Schmerbauch]], [[Spitzbauch]]
+:[4a, 6] [[Schiffsbauch]]
+
+{{Beispiele}}
+:[1] „Wer fromm genug ist, kann sich flankierend von moslemischen Wunderheilern behandeln lassen, die dem Patienten Koranverse auf den nackten ''Bauch'' malen, um ihn resistent zu machen.“<ref>{{Per-Spiegel | Autor=Erich Wiedemann | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/13531824 | Titel=„Dein Bauch ist ein tobendes Schlangenloch“ | Nummer=51 | Tag=19 | Monat=12 | Jahr=1988 | Seiten=114 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[1] „Ein Anwärter zieht sein T-Shirt hoch und zeigt eine Narbe, die vom Brustkorb über den ''Bauch'' bis unter den Nabel reicht.“<ref>{{Per-Le Monde diplomatique Online | Autor=Raphaël Gomide | Online=https://web.archive.org/web/20130426172357/http://monde-diplomatique.de/pm/2009/08/07/a0200.text.name,askVXKTRR.n,44 | Titel=Nimm das Geld und nerv nicht | TitelErg=Ein Monat bei der Polícia Militar in Rio | Übersetzer=Karin von Schweder-Schreiner aus dem Portugiesischen | Nummer=8955 | Tag=07 | Monat=08 | Jahr=2009 | Seiten=6–7 | Zugriff=2011-04-19 }}</ref>
+:[1] „Auf der Flucht vor den Polizisten sprangen zwei Nigerianer durch ein Fenster. Der eine schnitt sich an der Fensterscheibe den ''Bauch'' auf, der andere fiel auf den Kopf und lag mehrere Tage im Koma.“<ref>{{Per-Le Monde diplomatique Online | Autor=Tristan Coloma | Online=https://web.archive.org/web/20130426192330/http://www.monde-diplomatique.de/pm/2010/05/14.mondeText.artikel,a0048.idx,15 | Titel=Chocolate City | TitelErg=Afrikanische Existenzgründer in China | Übersetzer=Sabine Jainski aus dem Französischen | Nummer=9187 | Tag=14 | Monat=5 | Jahr=2010 | Zugriff=2011-04-19 }}</ref>
+:[2] „Sicher war das überwältigende Ja-Votum nicht ausschließlich eine Herzensangelegenheit. ‚Viele hatten das Nein im ''Bauch'' und das Ja im Hirn‘, kommentierte der Star in Johannesburg.“<ref>{{Per-Spiegel | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/13682374 | Titel=AUSLAND: „Nein im Bauch und Ja im Hirn“ | Nummer=13 | Tag=23 | Monat=03 | Jahr=1992 | Seiten=151 | Zugriff=2011-04-19 | Kommentar=PDF }}<br />Die Kursivsetzung im Originalsatz des Wortes »Star« wurde nicht übernommen.</ref>
+:[2] „Lust am Essen und Gesundheit erscheinen als Gegensätze - nach dem Motto: Alles, was Spaß macht, ist entweder verboten, unanständig oder ungesund. Und so stehen sich Kopf und ''Bauch'' bisweilen im Weg. Der Verstand verweigert, was der Magen wünscht.<br />Diese Diskrepanz zwischen Kopf und ''Bauch,'' sagt Pollmer, nehme ‚immer groteskere Formen‘ an - bis hin zum Selbstbetrug.“<ref>{{Per-Spiegel | Autor=Nobert F. Pötzl | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/40857977 | Titel=Kopf und Bauch | Nummer=5 | Tag=28 | Monat=06 | Jahr=2005 | Seiten=7 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[3] „Fest steht er da auf seinen mageren Beinen, mit rundem ''Bauch'' und einem pausbäckigen Gesicht, dem auch der graue Bart keinen Anschein von Ernsthaftigkeit verleihen kann.“<ref>{{Per-Le Monde diplomatique Online | Autor=Donatien Garnier | Online=https://web.archive.org/web/20130426154513/http://www.monde-diplomatique.de/pm/2007/04/13/a0045.text.name,askFYlpQV.n,1 | Titel=Klimaflüchtlinge in Bangladesch | TitelErg=Wenn der Meeresspiegel weiter steigt, haben bald 5,5 Millionen Menschen kein Land mehr | Übersetzer=Patrick Batarilo aus dem Französischen | Nummer=8249 | Tag=13 | Monat=04 | Jahr=2007 | Seiten=14–15 | Zugriff=2011-04-19 }}</ref>
+:[3] „Die hochschwangere Angelina Jolie hielt ihren schönen ''Bauch'' gleich an mehreren Abenden ins Blitzlichtgewitter und präsentierte ihn bei einem Fototermin sogar nackt den Augen der Welt.“<ref>{{Per-Spiegel | Autor=Lars-Olav Beier, Martin Wolf | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/57119402 | Titel=FILM: Aus dem Bauch | Nummer=22 | Tag=26 | Monat=05 | Jahr=2008 | Seiten=160 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[3] „Obasanjo ist da, mit seinem dicken fetten ''Bauch,'' aber er will ihn nicht nehmen.“<ref>{{Per-Le Monde diplomatique Online | | Autor=Nicholas Shaxson | Online=https://web.archive.org/web/20130426162903/http://www.monde-diplomatique.de/pm/2009/03/13.mondeText.artikel,a0043.idx,15 | Titel=Verflucht sei das Erdöl | TitelErg=Nigeria ist verschmutzt, korrupt und zersplittert | Übersetzer=Niels Kadritzke aus dem Englischen | Nummer=8834 | Tag=13 | Monat=03 | Jahr=2009 | Zugriff=2011-04-19 }}</ref>
+:[3] „Mitte Januar dann war ihr ''Bauch'' so rund, dass sich die Sache nicht mehr geheim halten ließ, nur war sie da schon im vierten Monat, und die Republik konnte ruhig erfahren, dass sie ein Kind erwartet.“<ref>{{Per-Spiegel | Autor=René Pfister | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/76659489 | Titel=KARRIEREN: Mein Bauch gehört mir | Nummer=5 | Tag=31 | Monat=01 | Jahr=2011 | Seiten=26 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[4] „Am Naiskos auf dem ''Bauch'' der Vase sitzt ein nackter Krieger auf seinem weinroten Mantel.“<ref>{{Literatur | Autor=[[w:Konrad Schauenburg|Konrad Schauenburg]] | Titel=Zur Grabsymbolik apulischer Vasen | Sammelwerk=Jahrbuch des Deutschen Archäologischen Instituts (JdI) | Band=Band 104 | Verlag=Walter de Gruyter | Ort=Berlin | Jahr=1989 | ISBN=3-11-011860-2 | ISSN=0070-4415 | Seiten=40 | Online=Zitiert nach {{GBS|dI5-79d8Yx8C|PA40|Hervorhebung=Bauch}} }}.</ref>
+:[4a] „Während oben auf dem Dach des Schiffes der Schornstein festgeschweißt wird, laufen auch die Arbeiten unter dem ''Bauch'' des Schiffes auf Hochtouren.“<ref>{{Per-Süddeutsche Online | Online=http://www.sueddeutsche.de/wirtschaft/arbeitsbericht-so-kommt-das-neue-in-die-welt-das-schiff-1.640718-8 | Titel=So kommt das Neue in die Welt: das Schiff | Tag=09 | Monat=10 | Jahr=2006 | Zugriff=2011-04-19 }}</ref>
+:[4b] „Er machte mehrere Anflüge in geringer Höhe, damit das technische Flughafenpersonal den ''Bauch'' der Maschine im Scheinwerferlicht inspizieren konnte. […] Mit einer unmäßig hohen Geschwindigkeit – etwa 300 km/st – setzte Kommandant Bengoa die ‚Pinta‘ auf den ''Bauch.''“<ref>{{Per-Spiegel | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/41960779 | Titel=LUFTFAHRT: Landung auf dem Bauch | Nummer=49 | Tag=30 | Monat=11 | Jahr=1955 | Seiten=60 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[4c] „Gut für Jäger, Almwirte und Förster, die den Komfort und die Unauffälligkeit eines Golf oder Passat schätzten, aber mehr Luft unter dem ''Bauch'' im Gelände brauchten.“<ref>{{Literatur | Online=Onlineausgabe: [http://www.autobild.de/artikel/vw-passat-1.9-tdi-4motion-von-seikel-44697.html URL] | Titel=Mehr Luft unter dem VW-Bauch | Sammelwerk=AUTO BILD | Tag=10 | Monat=03 | Jahr=2004 | ISSN=0930-7095 | Zugriff=2011-04-19 }}.</ref>
+:[4d] „Dessen Wurzelwuchs war laut Baudirektor Hermann Schober so stark, dass sich die äußere Schicht der in zwei Schichten aufgebauten Mauer ‚ausgebaucht‘ hatte. Dem Problem wollte die Stadt zunächst mit sanfter Gewalt Herr werden. Mit dem Versuch, den ''Bauch'' der Mauer einfach wieder zurück zu drücken.“<ref>{{Literatur | Online=Onlineausgabe: [http://www.mainpost.de/regional/bad-kissingen/Mauer-an-der-Oberen-Saline-wird-saniert-bevor-Dracula-kommt;art766,5234192 URL] | Titel=BAD KISSINGEN: Mauer an der Oberen Saline wird saniert, bevor Dracula kommt | Sammelwerk=Main Post | Tag=31 | Monat=07 | Jahr=2009 | Zugriff=2011-04-19 }}.</ref>
+:[5] „Im ''Bauch'' eines 16-jährigen Jungen aus Bangladesch wurde ein toter Fötus gefunden.“<ref>{{Per-Spiegel Online | Online=http://www.spiegel.de/wissenschaft/mensch/0,1518,362404,00.html | Titel=Gruseliger Fund: Toter Fötus im Bauch eines Jungen entdeckt | Tag=27 | Monat=06 | Jahr=2005 | Zugriff=2011-04-19 }}</ref>
+:[5] „Sie fiel auf, weil sie kein Gepäck dabei hatte - da schlugen die Zöllner am Flughafen Sizilien zu und wurden fündig: Ein 24-jähriges Model hatte 98 Kapseln mit Kokain im ''Bauch.''“<ref>{{Per-Spiegel Online | Online=http://www.spiegel.de/panorama/justiz/0,1518,456575,00.html | Titel=98 Kapseln im Bauch: Model mit einem Kilo Kokain gefasst | Tag=26 | Monat=12 | Jahr=2006 | Zugriff=2011-04-19 }}</ref>
+:[5] „Zum ersten Mal in der Geschichte sind es mehr als eine Milliarde Menschen, die jeden Abend mit hungrigem ''Bauch'' ins Bett gehen müssen.“<ref>{{Per-Le Monde diplomatique Online | Autor=Martine Bulard | Online=https://web.archive.org/web/20130426185250/http://www.monde-diplomatique.de/pm/2010/10/08.mondeText.artikel,a0062.idx,22 | Titel=edito | TitelErg=Welthunger und Profitdurst | Nummer=9312 | Tag=08 | Monat=10 | Jahr=2010 | Zugriff=2011-04-19 }}</ref>
+:[6] „Wir gehen an Bord. Der riesige ''Bauch'' des Transportflugzeugs ist mit braunen Sportmatten ausgelegt.“<ref>{{Per-Focus Online | Autor=Frank Siering | Online=http://www.focus.de/panorama/reportage/raumfahrt-den-sternen-entgegen_aid_157864.html | Titel=RAUMFAHRT: DEN STERNEN ENTGEGEN | Nummer=19 | Tag=06 | Monat=05 | Jahr=1996 | Zugriff=2011-04-19 }}</ref>
+:[6] „Wir passieren die Passkontrolle und werden dann in den ''Bauch'' des Schiffes geleitet.“<ref>{{Per-Spiegel Online | Autor=Christoph Minder | Online=http://www.spiegel.de/reise/staedte/0,1518,65875,00.html | Titel=Im Smart ans Nordkap: Im Bauch der Fähre | Tag=23 | Monat=02 | Jahr=2000 | Zugriff=2011-04-19 }}</ref>
+:[6] „Im ''Bauch'' der Anlage, in der 140 Computer rund 18 Kilometer Transportbänder steuern, um bis zu 12 000 Gepäckstücke pro Stunde zu befördern, herrschte schnell Anarchie: Koffer türmten sich auf den Bändern und stürzten an Verteilungspunkten auf den Boden.“<ref>{{Per-Spiegel | Autor=Ulrich Jaeger | Archiv-URL=http://magazin.spiegel.de/EpubDelivery/spiegel/pdf/56479881 | Titel=LUFTFAHRT: Mutierendes Monster | Nummer=15 | Tag=07 | Monat=04 | Jahr=2008 | Seiten=150 | Zugriff=2011-04-19 | Kommentar=PDF }}</ref>
+:[6] „Verstümmelte und traumatisierte Opfer des Krieges lagen auf den im ''Bauch'' des Schiffes provisorisch errichteten Krankenbetten.“<ref>{{Literatur | Online=Onlineausgabe: [http://www.az-online.de/libyen-nachrichten/libyer-rufen-hilfe-misurata-zr-1194329.html URL] | Titel=Libyer rufen um Hilfe für Misurata | Sammelwerk=Allgemeine Zeitung | Tag=07 | Monat=04 | Jahr=2011 | Zugriff=2011-04-19 }}.</ref>
+
+{{Redewendungen}}
+:[1] {{ugs.|:}} [[sich den Bauch halten]], [[sich vor Lachen den Bauch halten]]
+:[1] {{ugs.|:}} [[auf den Bauch fallen]]
+:[1] {{ugs.|:}} [[auf den Bauch liegen]]
+:[1] {{ugs.}} {{abw.|:}} [[vor jemandem auf dem Bauch kriechen]]/[[vor jemandem auf dem Bauch liegen]]/[[vor jemandem auf dem Bauch rutschen]]
+:[1] {{ugs.|:}} [[sich die Beine in den Bauch stehen]]
+:[1] ''[[salopp]]:'' [[jemandem ein Loch in den Bauch fragen]]/[[jemandem Löcher in den Bauch fragen]]
+:[1] ''[[salopp]]:'' [[jemandem ein Loch in den Bauch reden]]/[[jemandem Löcher in den Bauch reden]]
+:[1] ''[[salopp]]:'' [[jemandem den Bauch aufschneiden]]
+:[1] {{ugs.|:}} [[fähiger Bauch]]
+:[1] {{ugs.|:}} [[fauler Bauch]]
+:[1] {{ugs.|:}} [[frommer Bauch]]
+:[1] {{ugs.|:}} [[gekälkter Bauch]]
+:[1] {{ugs.|:}} [[jemand deckt sich mit dem Bauch zu]]
+:[1] {{ugs.|:}} [[jemanden vor den Bauch treten]]
+:[1] {{ugs.|:}} [[kluger Bauch]]
+:[1] {{ugs.|:}} [[mit dem Bauch arbeiten]]
+:[1] {{ugs.|:}} [[beiß ihn in den Bauch]]!
+:[1] {{ugs.|:}} [[man möchte sich vor Wut in den Bauch beißen und heißen Käse reinpusten]]/[[man möchte sich vor Wut in den Bauch beißen]]
+:[1] {{ugs.|:}} [[sich ein Monogramm in den Bauch beißen]]
+:[1] {{ugs.|:}} [[sich am Bauch gepinselt fühlen]]
+:[1] {{ugs.|:}} [[sich vor den Bauch geklatscht fühlen]]
+:[1, 3] {{ugs.|:}} [[lauter Bauch]]
+:[1, 3] {{ugs.|:}} [[einen lauten Bauch haben]]
+:[1, 3] {{ugs.|:}} [[sich einen Bauch anessen]]/[[sich einen Bauch anfressen]]/[[sich einen Bauch anmästen]]
+:[1, 3] {{ugs.|:}} [[sich einen Bauch ansaufen]]
+:[1, 3] {{ugs.|:}} [[sich einen Bauch zulegen]]
+:[1, 3] {{ugs.|:}} [[sich etwas in den Bauch schlagen]]
+:[2] {{ugs.|:}} [[aus dem Bauch]]/[[aus dem Bauch heraus]]
+:[2] {{ugs.|:}} [[aus dem Bauch quatschen]]/[[aus dem Bauch reden]]
+:[2] {{ugs.|:}} [[aus dem Bauch schreiben]]
+:[2] {{ugs.|:}} [[eine Wut im Bauch haben]]/[[Wut im Bauch haben]]
+:[2] {{ugs.|:}} [[etwas mit Wut im Bauch tun]]
+:[2] {{ugs.|:}} [[den Bauch voll Wut haben]]/[[den Bauch voll Zorn haben]]
+:[2, 5] {{ugs.|:}} [[jemandem etwas in den Bauch reden]]
+:[2, 5] {{ugs.|:}} [[jemandem ein Kind in den Bauch reden]]
+:[3] {{ugs.}} ''[[ironisch]]:'' [[einen schlauen Bauch haben]]
+:[3] {{ugs.|:}} [[einen schlauen Bauch haben und dumme Eingeweide]]
+:[3] {{ugs.}} ''[[ironisch]]:'' [[der ganze Bauch eine Falte]]
+:[3] {{ugs.|:}} [[jemandem den Bauch wegmassieren]]
+:[3] {{ugs.|:}} [[jemand kann sich mit dem Bauch zudecken]]
+:[3] {{ugs.|:}} [[nur Bauch sein]]
+:[3] {{ugs.|:}} [[sich einen Bauch stehen lassen]]
+:[3, 5] {{ugs.|:}} [[jemandem einen dicken Bauch machen]]
+:[4b] {{ugs.|:}} [[ein Flugzeug auf den Bauch legen]]
+:[5] {{ugs.|:}} [[aus dem hohlen Bauch]]
+:[5] {{ugs.|:}} [[etwas aus dem hohlen Bauch probieren]]
+:[5] {{ugs.|:}} [[etwas nicht aus dem hohlen Bauch können]]
+:[5] {{ugs.|:}} [[den Bauch nicht voll kriegen]]
+:[5] {{ugs.|:}} [[den Bauch voll haben]]
+:[5] {{ugs.|:}} [[den ganzen Bauch voll Hunger haben]]
+:[5] {{ugs.|:}} [[sich den Bauch verrenken]]
+:[5] {{ugs.|:}} [[sich den Bauch voll hauen]]/[[sich den Bauch voll schlagen]]
+:[5] {{ugs.|:}} [[sich den Bauch voll anlachen]]/[[sich den Bauch voll lachen]]
+:[5] {{ugs.|:}} [[sich den Bauch voll plempern]]
+:[5] {{ugs.|:}} [[vom Bauch in den Mund leben]]
+
+{{Sprichwörter}}
+:[1, 3] {{ugs.|:}} [[der Bauch ist sein Gott]]
+:[3] {{ugs.|:}} [[er hat einen schlauen Bauch, nur schade, dass er rinnt]]
+:[3] {{ugs.|:}} [[solang’ der Bauch noch in die Weste passt, wird keine Arbeit angefasst]]
+:[3] {{ugs.|:}} [[und schlägt der Bauch auch Falten, wir bleiben doch die Alten]]
+:[5] [[ein voller Bauch studiert nicht gern]]
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[auf]] dem Bauch [[liegen]], [[schlafen]]; den Bauch [[vorstrecken]]
+:[2] [[etwas]] mit dem [[Kopf]] [[und]] mit dem Bauch [[begreifen]]; [[seinem]] Bauch [[vertrauen]]
+:[3] ein [[dick]]er, [[fett]]er, [[flach]]er, [[spitz]]er Bauch; einen Bauch [[ansetzen]], [[haben]]; die [[Hand|Hände]] [[über]] dem Bauch [[falten]]
+:[4] der Bauch einer [[Flasche]], eines [[Kruges]], einer [[Vase]]
+:[5] einen [[leer]]en Bauch [[haben]]; [[jemand]]em [[tut weh|tut]] der Bauch [[tut weh|weh]]; [[nichts]] [[im#im (Deutsch)|im]] Bauch [[haben]]
+:[6] im Bauch eines [[Schiff]]es
+
+{{Wortbildungen}}
+:[1] [[Bauchfilz]], [[Bauchflosse]], [[Bauchhaar]], [[Bauchpanzer]], [[Bauchwarze]], [[Bauchwassersucht]]
+:[1, 3] [[Bauchfalte]], [[bauchfrei]], [[Bauchgrimmen]], [[Bauchgurt]], [[Bauchklatscher]], [[Bauchkneifen]]/[[Bauchkneipen]], [[Bauchknöpfchen]], [[Bauchladen]], [[Bauchlage]], [[bäuchlings]], [[Bauchnabel]], [[bauchpinseln]], [[bauchreden]], [[Bauchriemen]], [[Bauchschmerz]], [[Bauchseite]], [[Bauchstraffung]], [[Bauchtanz]], [[Bauchtänzerin]], [[Bauchweh]], [[Bauchzwicken]]
+:[1, 3, 4] [[Bauchfläche]]
+:[1, 3, 5] [[Bauchfett]], [[Bauchfleisch]], [[Bauchhaut]], [[Bauchnaht]], [[Bauchoperation]], [[Bauchschnitt]], [[Bauchschuss]], [[Bauchunterseite]]
+:[1, 5] [[Bauchatmung]], [[Bauchaußenseite]], [[Bauchfell]], [[Bauchfluss]]
+:[2] [[Bauchentscheidung]], [[Bauchgefühl]]
+:[3] [[Bauchansatz]], [[Bauchbinde]], [[Bauchform]], [[bäuchig]]
+:[3, 4] [[bauchig]], [[Bauchung]]
+:[4] [[bauchen]], [[Bauchlandung]]
+:[5] [[Bauchdecke]], [[Bauchgrummeln]], [[Bauchhärling]], [[Bauchhöhle]], [[Bauchkrampf]], [[Bauchmuskel]], [[Bauchorgan]], [[Bauchraum]], [[Bauchschlagader]], [[Bauchspeck]], [[Bauchspeicheldrüse]], [[Bauchspiegelung]], [[Bauchwand]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{sq}}: [1] {{Ü|sq|bark}} {{m}}, [1, 3, 5] {{Ü|sq|stomak}}
+*{{ang}}: [1] {{Ü|ang|wamb}} {{f}}, [1, 3, 4] {{Ü|ang|búc|būc}} {{m}}
+*{{am}} <small>([http://scriptsource.org/cms/scripts/page.php?item_id=entry_detail&uid=vsytndbyev B&D])</small>: [1] {{Üt|am|ሆድ|hod}}, {{Üt|am|በዠድ|bäžäd}}, [1, 3] {{Üt|am|ቦርጭ|borč̣}}
+*{{ar|DMG}}:
+**{{MHA}}: [1, 3, 4, 4c, 4d] {{Üxx4|ar|بطن|v=بَطْن|d=baṭn|DMG=0}} {{m}}, [3] {{Üxx4|ar|كرش|v=كِرْش٬ كَرِش|d=kirš, kariš|DMG=0}} {{m}}, [4a, 4b, 6] {{Üxx4|ar|داخل|v=دَاخِل|d=dāḫil|DMG=0}} {{m}}, [5] {{Üxx4|ar|جوف|v=جَوْف|d=ǧawf|DMG=0}} {{m}}
+*{{ay}}: [1] {{Ü|ay|phatanka}}
+*{{eu}}: [1, 4] {{Ü|eu|sabel}}
+*{{bs}}: [1, 3] {{Ü|bs|trbuh}} {{m}}, [1, 3, 5] {{Ü|bs|mida}} {{f}}, {{Ü|bs|tibica}}; [5] {{Ü|hr|stomak}} {{m}}, {{Ü|bs|želudac}} {{m}}
+*{{br}}: [1] {{Ü|br|tor}} {{m}}, [1, 3, 5] {{Ü|br|kof}} {{f}}
+*{{bg}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|bg|корем|korem}}, [3] {{Üt|bg|шкембе|škembe}}, {{Üt|bg|търбух|tʺrbuh}}
+*{{da}}: [1] {{Ü|da|bug}}, {{Ü|da|vom}}; [1, 5] {{Ü|da|mave}}
+*{{en}}: [1] ''[[obsolet]]:'' {{Ü|en|womb}}, [1, 3–4b, 5, 6] {{Ü|en|belly}}, [1, 3] ''kindersprachlich:'' {{Ü|en|tum}}, {{Ü|en|tummy}}; [1, 5] {{Ü|en|stomach}}, [2] ''je nach Kontext:'' {{Ü|en|gut}}, {{Ü|en|heart}}, [3] ''je nach Kontext:'' {{Ü|en|gut}}, {{Ü|en|paunch}}, {{Ü|en|pot-belly}} / {{Ü|en|potbelly}}, [3, 4, 4d] {{Ü|en|bulge}}; [4a] {{Ü|en|bilge}}
+*{{fo}}: [1] {{Ü|fo|búkur}} {{m}}
+*{{fi}}: [1] {{Ü|fi|masu}}, [1, 3, 4, 5] {{Ü|fi|maha}}; [1, 5] {{Ü|fi|mahalaukku}}, {{Ü|fi|vatsa}}; [2] {{Ü|fi|mututuntuma}}, {{Ü|fi|näppituntuma}}
+*{{fr}}: [1, 3–4b, 5, 6] {{Ü|fr|ventre}} {{m}}, [2] ''je nach Kontext:'' {{Ü|fr|cœur}} {{m}}, {{Ü|fr|entraille|entrailles}} {{fPl.}}, {{Ü|fr|rein#rein (Französisch)|reins}} {{mPl.}}, {{Ü|fr|tripe|tripes}} {{fPl.}}, [4a] {{Ü|fr|bouchain}} {{m}}; [4c] {{Ü|fr|bas de caisse}} {{m}}; [4d] {{Ü|fr|bombement}} {{m}}; [6] {{Ü|fr|intérieur}} {{m}}; ''[[Schiff]]:'' {{Ü|fr|fond de cale}} {{m}}; ''[[Flugzeug]], [[Schiff]]:'' {{Ü|fr|soute}} {{f}}
+*{{fur}}: [1, 3, 4] {{Ü|fur|panze}} {{f}}
+*{{ka}} <small>([[w:Georgisches Alphabet#Umschrift|DIN 32707:2010-01]])</small>: [1] {{Üt|ka|მუცელი|muc̕eli}}
+*{{el|iU}}: [1] {{Üt|el|κοιλιά|koiliá}} {{f}}
+*{{he|CHA}}: [1, 3, 5, 6] {{Üxx4|he|בטן|v=בֶּטֶן|d=bæṭæn|CHA=0}} {{f}}, [3] ''Rundung einer Schwangeren:'' {{Üxx4|he|חמוק|v=חַמּוּק|d=ḥamūḳ|CHA=0}} {{m}}, [3, 5] {{Üxx4|he|כרס|v=כָּרֵס, כֶּרֶס|d=kārḗs, kǽræs|CHA=0}} {{f}}, [4] {{Üxx4|he|קמירה|v=קְמִירָה|d=ḳmīrā|CHA=0}} {{f}}, [4a] {{Üxx4|he|טובה|v=טוּבָּה|d=ṭūbā|CHA=0}} {{f}}, [4b] {{Üxx4|he|מרכב-המטוס|v=מֶרְכָּב-הַמָטוֹס|d=mærkāv ha-māṭōs|CHA=0}} {{m}}
+*{{ia}}: [1] {{Ü|ia|ventre}}
+*{{is}}: [1] {{Ü|is|kviður}} {{m}}, {{Ü|is|magi}} {{m}}, {{Ü|is|vömb}} {{f}}; [3] {{Ü|is|ístra}} {{f}}
+*{{it}}: [1, 3, 4] {{Ü|it|pancia}} {{f}}; {{va.}} ''[[literarisch]]:'' {{Ü|it|epa}} {{f}}, [1, 4, 6] {{Ü|it|ventre}} {{m}}; [4a] {{Ü|it|scafo}} {{m}}
+**{{vec}}: [1, 3, 4] {{Ü|vec|pansa}} {{f}}
+*{{ja}} <small>([[Hilfe:Hepburn-System|Hepburn]])</small>: [1] ''[[schriftsprachlich]]:'' {{Üt|ja|腹部|ふくぶ, fuku･bu}}, [1–3, 4, 5] {{Üt|ja|腹|はら, hara}}, [1, 5] {{Üt|ja|△御中|おなか, o･naka}}
+*{{yi|YIVO}}: [1–3] {{Üxx4|yi|בויך|d=boykh|YIVO=0}} {{m}}
+*{{ca}}: [1, 3, 4] {{Ü|ca|panxa}} {{f}}; [1, 4] {{Ü|ca|ventre}} {{m}}; [6] {{Ü|ca|interior}} {{m}}, ''[[Schiff]]:'' {{Ü|ca|bodega}} {{f}}
+*{{ko}} <small>([[w:Revidierte Romanisierung|RR]])</small>: [1] {{Üt|ko|배|bae}}
+*{{hr}}: [1, 3] {{Ü|hr|trbuh}} {{m}}; [5] {{Ü|hr|želudac}} {{m}}; {{reg.|:}} {{Ü|hr|stomak}} {{m}}
+*{{ku}}: [1] {{Ü|ku|zik}} {{m}}
+*{{lad}}: [1] {{Üxx4|lad|טריפה|d=[[tripa#tripa (Ladino)|tripa]]}} {{f}}
+*{{la}}: [1] {{Ü|la|venter}} {{m}}
+|Ü-rechts=
+*{{mt}}: [1] {{Ü|mt|botna}} {{f}}, [1, 3, 5] {{Ü|mt|żaqq}} {{f}}; [5] {{Ü|mt|stonku}} {{m}}
+*{{mi}}: [1] {{Ü|mi|kōpū}}, {{Ü|mi|takapū}}, [1, 3, 4] {{Ü|mi|puku}}; [2] {{Ü|mi|poho}}; [4a] {{Ü|mi|riu}}
+*{{nds}}: [1–6] {{Ü|nds|Buuk}} {{m}}
+*{{nl}}: [1, 3, 4, 4a, 6] {{Ü|nl|buik}} {{m}}
+*{{no}}: [1, 3] {{Ü|no|vom}} {{m}}, [1, 3, 5] {{Ü|no|mage}} {{m}}, {{Ü|no|mave}} {{m}}; [1, 4] {{Ü|no|buk}}
+*{{oc}}: [1, 4] {{Ü|oc|ventre}} {{m}}; [6] {{Ü|oc|endedins}} {{m}}
+**[[Aranesisch]]: [1, 4] {{Ü|oc|vrente}} {{m}}
+*{{pap}}: [1] {{Ü|pap|bariga}}, {{Ü|pap|barika}}
+*{{fa}}:
+**Farsi, {{prs|DMG}}: [1, 3, 4 (ohne 4a–4d), 5] {{Üxx4|fa|شكم|d=šekäm|DMG=0}}, [2] {{Üxx4|fa|دل|d=del|DMG=0}},  [3, 5, 6] {{Üxx4|fa|بطن|d=bäṭn|DMG=0}}, [5] {{Üxx4|fa|جوف|d=ǧouf|DMG=0}}
+*{{pl}}: [1] {{Ü|pl|brzuch}} {{m}}
+*{{pt}}: [1, 5] {{Ü|pt|barriga}} {{f}}, {{Ü|pt|ventre}} {{m}}; [2] {{Ü|pt|entranha|entranhas}} {{fPl.}}, [3] {{Ü|pt|bandulho}} {{m}}, {{Ü|pt|barriga}} {{f}}, {{Ü|pt|pança}} {{f}}; [4] {{Ü|pt|bojo}} {{m}}, {{Ü|pt|saliência}} {{f}}; [6] {{Ü|pt|interior}} {{m}}; ''[[Schiff]]:'' {{Ü|pt|estiva}} {{f}}, {{Ü|pt|porão}} {{m}}
+*{{qu}}: [1, 5] {{Ü|qu|wisa}}
+*{{rm}}: [1] {{Ü|rm|venter}} {{m}}
+**Surmeirisch: [1] {{Ü|rm|vainter}} {{m}}
+**Surselvisch: [1] {{Ü|rm|venter}} {{m}}
+**Sutselvisch: [1] {{Ü|rm|vainter}} {{m}}
+**Oberengadinisch: [1] {{Ü|rm|vainter}} {{m}}
+**Unterengadinisch: [1] {{Ü|rm|vainter}} {{m}}
+*{{ro}}: [1, 4, 5, 6] {{Ü|ro|pântece}} {{n}} / {{Ü|ro|pântec}} {{n}}, {{Ü|ro|vintre}} {{f}}, [1, 3, 4] {{Ü|ro|burtă}} {{f}}
+*{{ru}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|ru|живот|živót}} {{m}}, {{Üt|ru|чрево|črévo}} {{n}}, [3] {{Üt|ru|брюхо|brû́ho}} {{n}}, {{Üt|ru|брюшко|brûškó}} {{n}}, {{Üt|ru|пузо|púzo}} {{n}}, [5] {{Üt|ru|желудок|želúdok}} {{m}}
+*{{sm}}: [1] {{Ü|sm|manava}}, {{Ü|sm|upu}}
+*{{sv}}: [1, 3, 4] {{Ü|sv|buk}}, [1, 3, 5] {{Ü|sv|mage}} {{u}}
+*{{sr}}: [1, 3] {{Üt|sr|трбух|[[trbuh#trbuh (Serbisch)|trbuh]]}} {{m}}; [5] {{Üt|sr|стомак|[[stomak#stomak (Serbisch)|stomak]]}} {{m}}, {{Üt|sr|желудац|[[želudac#želudac (Serbisch)|želudac]]}} {{m}}
+*{{so}}: [1, 3, 5] {{Ü|so|calool}}
+*{{wen}}:
+**{{dsb}}: [1, 3] {{Ü|dsb|brjuch}} {{m}}
+**{{hsb}}: [1, 3] {{Ü|hsb|brjuch}} {{m}}
+*{{es}}: [1] {{Ü|es|abdomen}} {{m}}, {{Ü|es|barriga}} {{f}}, {{Ü|es|panza}} {{f}}, {{Ü|es|vientre}} {{m}}, ''Mexiko:'' {{Ü|es|timba}} {{f}}; [3, 4] {{Ü|es|barriga}} {{f}}, {{Ü|es|panza}} {{f}}, {{Ü|es|tripa}} {{f}}, {{Ü|es|vientre}} {{m}}; [5] {{Ü|es|barriga}} {{f}}, {{Ü|es|tripa}} {{f}}; [6] ''[[Schiff]]:'' {{Ü|es|bodega}} {{f}}
+*{{th}} <small>([[Hilfe:RTGS|RTGS]])</small>: [1, 3, 5] {{Üt|th|พุง|pung}}
+*{{tpi}}: [1] {{Ü|tpi|bel}}
+*{{cs}}: [1, 3] {{Ü|cs|břicho}} {{n}}; [4] {{Ü|cs|nitro}} {{n}}, {{Ü|cs|trup}} {{m}}
+*{{tr}}: [1, 5] {{Ü|tr|karın}}; [1–3] {{Ü|tr|göbek}}
+*{{vi}}: [1] {{Ü|vi|bụng}} , {{Ü|vi|dạ dày}}
+*{{vo}}: [1] {{Ü|vo|bälid}}
+*{{cy}}: [1] {{Ü|cy|tor}} {{f}}; [3] {{Ü|cy|rhumen}} {{f}}
+|Dialekttabelle=
+*'''Westniederdeutsch:'''
+*'''Westmitteldeutsch:'''
+**Rheinfränkisch:
+***[[Hessisch]]: [?] [[Ranzen]]{{QS Herkunft|unbelegt}}
+***{{pfl}}: [1, 3, 5] [[Ranzen]]<ref>{{Ref-Pfälzisch|Ranzen|id=PR00331}}</ref>
+**Ripuarisch:
+***[[Kölsch]]: [1–6] Buch {{Lautschrift|bʊχ}}<ref>{{Internetquelle | werk=Kölsch Wörterbuch | url=http://www.koelsch-woerterbuch.de/bauch-auf-koelsch-227.html | titel=Buch | hrsg=www.koelsch-woerterbuch.de | zugriff=2011-04-19 }}</ref><ref>{{Internetquelle | werk=Akademie för uns kölsche Sproch | url=http://koelschakademie.finbot.com/index.php3?seite=968 | titel=Buch | hrsg=koelschakademie.finbot.com | zugriff=2011-04-19 }}</ref>
+*'''Westoberdeutsch ([[Alemannisch]]):'''
+**Schweizerdeutsch: [1, 3] [[Ranzen]]<ref>{{Lit-Ammon: Variantenwörterbuch|A=1}}, Seite 608–609.</ref>/Ranzä<ref>{{Internetquelle | werk=Sammlung Schweizerdeutscher Dialektwörter | url=http://www.dialektwoerter.ch/de/b.html | titel=Bauch | hrsg=www.dialektwoerter.ch | zugriff=2011-04-19 }}</ref>
+|D-rechts=
+*'''Ostniederdeutsch:'''
+*'''Ostmitteldeutsch:'''
+**Sächsisch: [1, 3, 5] [[Botten]] {{m}}<ref>{{Lit-Bergmann: Kleines sächsisches Wörterbuch|V=Beck}}, Seite 41.</ref>
+*'''Ostoberdeutsch:'''
+**[[Bairisch]]-Österreichisch: [1, 3] [[Wampen|Wampen/Wampn]] {{mf}}
+***Mittelbairisch:
+****Niederösterreichisch: [1, 3] [[Wimmerl]] {{n}}
+***Südbairisch:
+****Tirolisch:
+*****Südtirolisch: [1, 3] [[Wamp|Womp]]/[[Wampen|Wompm]]<ref name="StirDW">{{Internetquelle | werk=Das Südtiroler Dialekt Wörterbuch | url=http://oschpele.ritten.org/index.php?wort=Bauch&submit=%3E&site=3 | titel=Bauch | hrsg=oschpele.ritten.org | zugriff=2011-04-19 }}</ref>, [[Bonzen|Bonzn]]/[[Ponzen|Ponzn]]<ref name="StirDW"/>
+**Ostfränkisch: [?] [[Wampn]]{{QS Herkunft|unbelegt}}
+}}
+
+{{Referenzen}}
+:[1, 3, 4] {{Wikipedia}}
+:[1, 3, 4, 5, 6] {{Ref-DWDS}}
+:[*] {{Ref-Canoo}}
+:[*] {{Ref-OWID|elexiko|169596}}
+:[1, 3, 4, 5, 6] {{Ref-FreeDictionary}}
+:[1–4, 5, 6] {{Ref-Duden}}
+:[1, 4, 5] {{Ref-wissen.de|Wörterbuch}}
+:[*] {{Ref-UniLeipzig}}
+:[1] {{Ref-Adelung}}
+:[1] {{Ref-Kruenitz}}
+:[1] {{Ref-Herder1854}}, Band 1, 1854, Seite 429.
+:[1] Pierer's Universal-Lexikon „[http://www.zeno.org/Pierer-1857/A/Bauch+%5B1%5D?hl=bauch Bauch]“, Band 2, 1857, Seite 405-407.
+:[1, 3, 4] {{Ref-Grimm}}
+:[1] {{Ref-Brockhaus1911}}, 5. Auflage, Band 1, 1911, Seite 162.
+:[1] {{Ref-Meyers}}
+:[4a–4d] {{Lit-Küpper: Lexikon der Umgangssprache|B=1}}, Seite 304–306.
+:[4a–4d] {{Lit-Küpper: Wörterbuch der Umgangssprache|A=1 (Digitale Bibliothek)}}, Stichwort »Bauch«.
+:[1–4, 5, 6] {{Lit-Duden: Universalwörterbuch|A=6}}, Seite 250.
+
+{{Quellen}}
+
+=== {{Wortart|Substantiv|Deutsch}}, {{mf}}, {{Wortart|Nachname|Deutsch}} ===
+
+{{Deutsch Nachname Übersicht
+}}
+
+{{Worttrennung}}
+:Bauch, {{Pl.}} Bauchs
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|baʊ̯χ}}
+:{{Hörbeispiele}} {{Audio|De-Bauch.ogg}}
+:{{Reime}} {{Reim|aʊ̯χ|Deutsch}}
+
+{{Bedeutungen}}
+:[1] deutscher [[Familienname]]
+
+{{Abkürzungen}}
+:[1] [[B.]]
+
+{{Herkunft}}
+:Übername für Menschen mit dickem Bauch; zuweilen läßt sich der Übername von einer bäuerlichen Abgabe herleiten, die {{gmh.}} ''{{Ü|gmh|buch}}'' oder ''{{Ü|gmh|būch}}'' „[[Keule]], [[Schlegel]]“ bezeichnet wurde; vergleiche auch ''{{Ü|gmh|rindsbuch}},'' ''{{Ü|gmh|kelberbuch}},'' ''{{Ü|gmh|lemberbuch}}''<ref>{{Lit-Duden: Familiennamen|A=2008}}, Seite 98.</ref>
+
+{{Bekannte Namensträger}}
+:[1] [[w:Bruno Bauch|Bruno Bauch]], [[w:Michael Bauch|Michael Bauch]]
+
+{{Beispiele}}
+:[1] Beim Skat hat mich der ''Bauch'' schon wieder übers Ohr gehauen.
+:[1] He, ''Bauch,'' komm mal hier rüber mit dem Zement!
+:[1] Die alte ''Bauch'' aus der dritten Etage hat schon wieder den Schlüssel der Waschküche verlegt.
+
+{{Absatz}}
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Bauch}}
+:[1] {{Lit-Duden: Familiennamen|A=2008}}, Seite 98.
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[auch]], [[Bach]], [[Bauche]], [[Bausch]], [[Brauch]], [[Bruch]], [[Buch]], [[fauch]], [[Hauch]], [[Gauch]], [[Lauch]], [[Rauch]], [[rauch]], [[tauch]]}}

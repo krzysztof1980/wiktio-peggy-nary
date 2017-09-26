@@ -1,0 +1,85 @@
+== Distribution ({{Sprache|Deutsch}}) ==
+{{erweitern|Bedeutungen aus der Physik, Mathematik, EDV fehlen|Deutsch}}
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Distribution
+|Nominativ Plural=Distributionen
+|Genitiv Singular=Distribution
+|Genitiv Plural=Distributionen
+|Dativ Singular=Distribution
+|Dativ Plural=Distributionen
+|Akkusativ Singular=Distribution
+|Akkusativ Plural=Distributionen
+}}
+
+{{Worttrennung}}
+:Dis·tri·bu·ti·on, {{Pl.}} Dis·tri·bu·ti·o·nen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|dɪstʀibuˈʦi̯oːn}}
+:{{Hörbeispiele}} {{Audio|De-Distribution.ogg}}
+:{{Reime}} {{Reim|oːn|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{Kontext|Wirtschaft}} die [[Verteilung]] von [[Ware]]n
+:[2] {{Kontext|Fachsprache}} das Verteiltsein, besonders von Einkommen
+:[3] {{Kontext|Linguistik}} das Vorkommen sprachlicher Ausdrücke in einer bestimmten sprachlichen Umgebung (siehe [[Distributionsklasse]])
+
+{{Herkunft}}
+:von lateinisch ''[[distributio]]'', seit dem 16.&nbsp;Jahrhundert belegt<ref>{{Ref-DWDS}}</ref>
+
+{{Sinnverwandte Wörter}}
+:[1–3] [[Verbreitung]], [[Verteiltsein]], [[Verteilung]]
+:[3] [[Vorkommen]]
+
+{{Gegenwörter}}
+:[1] [[Redistribution]], [[Rücknahme]]
+
+{{Unterbegriffe}}
+:[1] [[Absatz]], [[Verkauf]], [[Vertrieb]]
+
+{{Beispiele}}
+:[1] Hauptaufgaben der physischen ''Distribution'' sind Transport und Lagerung.
+:[1] Die ''Distribution'' der Hilfsgüter wird durch das schlechte Wetter behindert.
+:[2] Die ''Distribution'' der Einkommen ist alles andere als gleich.
+:[3] Die Ausdrücke, die man in dem Satz "Der Lehrer … schnell" an der Leerstelle einsetzen kann, haben die gleiche ''Distribution.''
+:[3] ''Distribution'' ist ein Schlüsselbegriff der strukturellen Linguistik.
+:[3] „Die Erfassung der ''Distribution'' eines sprachlichen Elements erlaubt, Kombinationsmöglichkeiten und semantische Valenz eines Wortbildungsmittels zu beschreiben und so Funktion und Bedeutung von Wortbildungsmitteln zu bestimmen.“<ref>Thea Schippan: ''Lexikologie der deutschen Gegenwartssprache.'' Niemeyer, Tübingen 1992, Seite 113. ISBN 3-484-73002-1.</ref>
+:[3] „Der Stoßton, ein Fast-Kehlkopfverschluss in langvokalischer und stimmhaft konsonantischer Umgebung (…), ist Deutschen weniger von der phonetischen Substanz, sondern eher von der ''Distribution'' her fremd.“<ref>{{Literatur |Autor= Kurt Braunmüller| Titel=Die skandinavischen Sprachen im Überblick|Verlag= Francke|Ort= Tübingen|Jahr= 1991|ISBN= 3-7720-1694-4.}} Zitat Seite 77.</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[physisch]]e ''Distribution''
+
+{{Wortbildungen}}
+:[1] [[Distributionsform]], [[Distributionskanal]], [[Distributionslogistik]], [[Distributionsmanagement]], [[Distributionsobjekt]], [[Distributionswirtschaft]]
+:[3] [[Distributionalismus]], [[Distributionsanalyse]], [[distributionell]], [[Distributionsklasse]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1, 3] {{Ü|en|distribution}}
+*{{fr}}: [1] {{Ü|fr|distribution}}
+*{{it}}: [1] {{Ü|it|distribuzione}}
+*{{nl}}: [1] {{Ü|nl|distributie}}
+|Ü-rechts=
+*{{pt}}: [1] {{Ü|pt|distribuição}}
+*{{ru}}: [1] {{Üt|ru|распостранение|}}
+*{{sv}}: [1] {{Ü|sv|distribution}}
+*{{es}}: [1, 3] {{Ü|es|distribución}} {{f}}
+}}
+
+{{Referenzen}}
+:[1–3] {{Wikipedia|Distribution}}
+:[3] {{Ref-DWDS|Distribution}}
+:[*] {{Ref-Canoo|Distribution}}
+:[*] {{Ref-UniLeipzig|Distribution}}
+:[1–3] {{Ref-Duden}}
+:[1, 2] [http://wirtschaftslexikon.gabler.de/Definition/distribution.html Gabler, Wirtschaftslexikon]
+:[3] Hadumod Bußmann: ''Lexikon der Sprachwissenschaft.'' 3., aktualisierte und erweiterte Auflage. Kröner, Stuttgart 2002. Stichwort: „Distribution“. ISBN 3-520-45203-0.
+:[3] Helmut Glück (Herausgeber), unter Mitarbeit von Friederike Schmöe: ''Metzler Lexikon Sprache.'' Dritte, neubearbeitete Auflage, Stichwort: „Distribution“. Metzler, Stuttgart/ Weimar 2005. ISBN 978-3-476-02056-7.
+:[3] Theodor Lewandowski: ''Linguistisches Wörterbuch''. 4., neu bearbeitete Auflage Quelle & Meyer, Heidelberg 1985, Stichwort: „Distribution“. ISBN 3-494-02050-7.
+
+{{Quellen}}
+
+[[Kategorie:Fremdwort]]

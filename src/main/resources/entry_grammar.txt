@@ -121,11 +121,7 @@ TPosParam = (!(SEP / RT) RichTextComponent)* {};
 TextualTParam = (!(SEP / RT) _)+ ;
 
 // Kontext template
-Kontext = LT [Kk] KontextPartList KontextFtParam KontextSprParam RT {};
-KontextPartList = !(SEP "ft" EQ / SEP "spr" EQ) (SEP TPosParam KontextPartSep)+ {};
-KontextPartSep = (SEP "t" [1-7] EQ [:;_])? {};
-KontextFtParam = (SEP "ft" EQ (!(SEP / RT) RichTextComponent*))? {};
-KontextSprParam = (SEP "spr" EQ (!(SEP / RT) RichTextComponent*))? ;
+Kontext = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
 
 AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {} ;
 AbkTemplateName = (!(SEP / RT) _)+ ;

@@ -27,7 +27,7 @@ class MeaningsParserSpec extends ParserSpecBase {
         meaning.text == text
     }
 
-    def "with plain text-Kontext"() {
+    def "plain text-Kontext"() {
         given:
         def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("Politik"))])
 
@@ -47,13 +47,40 @@ class MeaningsParserSpec extends ParserSpecBase {
     }
 
     def "Kontext with multiple parts"() {
-        given:
-        def kontext = new MeaningKontext(parts: [
-                new MeaningKontext.Part(text: new RichText("ironisch")),
-                new MeaningKontext.Part(text: new RichText("scherzhaft"))])
+        when:
+        def kontext = getMeaningFromWiktionaryEntry("Bauch", 5).kontext
 
-        expect:
-        getMeaningFromWiktionaryEntry("Kartoffel", 4).kontext == kontext
+        then:
+        kontext.parts.size() == 3
+        kontext.parts[0].text == new RichText("ugs.")
+        kontext.parts[0].separator == new RichText("_")
+        kontext.parts[1].text == new RichText("übertr.")
+        kontext.parts[1].separator == new RichText("_")
+        kontext.parts[2].text == new RichText("zu [5]")
+        kontext.parts[2].separator == null
+    }
+
+    def "Kontext with loose ordering of parameters"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Verpflegung", 0)
+
+        then:
+        meaning.kontext != null
+        meaning.kontext.suffix == new RichText()
+        meaning.kontext.parts.size() == 1
+        def kontextPart = meaning.kontext.parts[0]
+        kontextPart.text == new RichText("ohne Plural")
+        kontextPart.separator == null
+    }
+
+    def "Kontext with 'Kontext' as template name"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Distribution", 0)
+
+        then:
+        meaning.kontext != null
+        meaning.kontext.parts.size() == 1
+        meaning.kontext.parts[0].text == new RichText("Wirtschaft")
     }
 
     def "Kontext in form of a Abk-template "() {

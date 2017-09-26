@@ -1,0 +1,112 @@
+== Steppke ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Steppke
+|Nominativ Plural=Steppkes
+|Genitiv Singular=Steppke
+|Genitiv Singular*=Steppkes
+|Genitiv Plural=Steppkes
+|Dativ Singular=Steppke
+|Dativ Plural=Steppkes
+|Akkusativ Singular=Steppke
+|Akkusativ Plural=Steppkes
+}}
+
+{{Worttrennung}}
+:Stepp·ke, {{Pl.}} Stepp·kes
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈʃtɛpkə}}
+:{{Hörbeispiele}} {{Audio|De-Steppke.ogg}}
+
+{{Bedeutungen}}
+:[1] {{ugs.|,}} ''[[norddeutsch]], [[mitteldeutsch]], besonders [[berlinisch]]:''
+::[a] [[klein]]er ([[kess]]er) [[Junge]]
+::[b] [[klein]]es [[Kind]]
+:[2] {{ugs.|:}} eine [[Person]], die [[andere]] (zum Arbeiten) [[antreibt]]
+
+{{Herkunft}}
+:[1a, 1b] seit dem späten 19. Jahrhundert<ref name="Küpper">{{Lit-Küpper: Wörterbuch der Umgangssprache|A=1 (Digitale Bibliothek)}}, Stichwort »Steppke«.</ref> (um 1900<ref name="Pfeifer">{{Ref-Pfeifer|Steppke}}</ref>, seit dem 20. Jahrhundert<ref name="Kluge">{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Seite 881.</ref>) bezeugte, von Berlin ausgehende, [[niederdeutsch]]e [[Diminutivbildung]] zur [[hochdeutsch]]en [[Entsprechung]] von »[[Stopf]]«, »[[Stopfen]]« „[[Korken]], [[Öffnungsverschluss]]“ (siehe »[[stopfen]]«)<ref name="Pfeifer"/>, also etwa „[[Stöpsel]]“ als [[sexuell]]e [[Metapher]] und [[Metonymie]]<ref name="Kluge"/>; nach [[w:/Etymologisches_Wörterbuch_der_deutschen_Sprache|Kluge]] könnte es vermutlich ebenso eine Koseform zu dem Namen »[[Stephan]]« sein<ref name="Kluge"/>
+:[2] seit 1870 bezeugt; Übertragung vom Hütejungen<ref name="Küpper"/>
+
+{{Synonyme}}
+:[1a, 1b] ''[[bundesdeutsch]], [[schweizerisch]]:'' [[Dreikäsehoch]]
+:[1a, 1b] ''[[norddeutsch]], [[mitteldeutsch]]:'' [[Krümel]]
+:[1a, 1b] ''[[ostdeutsch]]:'' [[Murkel]]
+:[1a, 1b] ''[[mittelwestdeutsch]], [[südwestdeutsch]], [[österreichisch]]:'' [[Pimpf]]
+:[1a, 1b] ''[[südwestdeutsch]], [[schweizerisch]]:'' [[Knopf]]
+:[1a, 1b] ''[[Namibia]]:'' [[Leitie]]
+:[1a] [[Kleiner]], [[Knirps]]
+:[1a] ''[[schweizerisch]]:'' [[Pfüderi]]
+:[1b] [[Kleines]]
+
+{{Sinnverwandte Wörter}}
+:[1a, 1b] [[Rotznase]], [[Schlingel]], [[Wicht]]
+:[1a, 1b] ''[[ostösterreichisch]]:'' [[Bauxerl]]
+:[1a] [[Bengel]], [[Bübchen]], [[Bubi]], [[Bürschchen]], [[Bürschlein]], [[Hosenmatz]],  [[Lausbub]]/[[Lauser]], [[Lümmel]], [[Matz#Substantiv, m|Matz]], [[Rotzbengel]]/[[Rotzbub]]/[[Rotzbube]]/[[Rotzlöffel]], [[Rüpel]], [[Spitzbub]]/[[Spitzbube]], [[Stift]], [[Strolch]]
+:[1a] ''[[berlinisch]]:'' [[Schniepel]]
+:[1b] [[Frechdachs]], [[Früchtchen]], [[Racker]]
+
+{{Gegenwörter}}
+:[1a] [[Bursche]], [[Jüngling]]
+:[1b] [[Jugendlicher]], [[Erwachsener]], [[Greis]]
+:[1b] [[Fant]], [[Halbstarker]], [[Halbwüchsiger]], [[Milchbart]], [[jung]]er [[Spund]], [[Teen]]
+
+{{Oberbegriffe}}
+:[1a–2] [[Lebewesen]], [[Mensch]], [[menschlich]]es [[Wesen]]
+:[1a, 1b] [[Kind]], [[jung]]er [[Mensch]], [[Minderjähriger]]
+
+{{Beispiele}}
+:[1a] „[[w:Marcel Ketelaer|Ketelaer]] flitzte über den Rasen wie ein übermütiger ''Steppke'' über den Schulhof in der großen Pause, die Wangen gerötet, kein Weg zu weit, jeder Ballgewinn zählt.“<ref>Leif Allendorf: ''[http://www.berlinonline.de/berliner-zeitung/archiv/.bin/dump.fcgi/2001/1015/sport/0076/index.html BALLERMANN DES TAGES. Übermütiger Steppke].'' In: Berliner Zeitung, 15.10.2001. {{ISSN|0947-174X}}. Online-Auflage abgerufen am 06. März 2011.</ref>
+:[1a, 1b] „Gepflegte Kinder in gutbürgerlichen Haushalten sollten von Zeit zu Zeit diese Kur machen – der kleine ''Steppke,'' den Sie hier im Bilde sehen, weiß seit seiner Geburt nicht, was Feuchtigkeit ist.“<ref>[[w:Kurt Tucholsky|Kurt Tucholsky]]: ''Werbekunst,'' 1927. In: Mary Gerold-Tucholsky, Fritz J. Raddatz (Hrsg.): ''Kurt Tucholsky: Gesammelte Werke in zehn Bänden.'' Rowohlt Verlag, Reinbek bei Hamburg 1975, Seite 431. Zitiert nach [http://www.zeno.org/Literatur/M/Tucholsky,+Kurt/Werke/1927/Werbekunst?hl=steppke www.zeno.org].</ref>
+:[1b] „Englischunterricht für sprachbegabte ''Steppkes'' zwischen einem und 14 Jahren[…]“<ref>''[http://www.tagesspiegel.de/zeitung/englischunterricht-fuer-sprachbegabte-steppkes-zwischen-einem-und-14-jahren-als-selbststaendige-lehrerin-im-tegeler-learning-centre/421324.html Englischunterricht für sprachbegabte Steppkes zwischen einem und 14 Jahren. Als selbstständige Lehrerin im Tegeler Learning Centre].'' In: Der Tagesspiegel, 08.06.2003. Online-Ausgabe abgerufen am 06. März 2011.</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1a, 1b] [[fies]]er Steppke, [[frech]]er Steppke, [[kess]]er Steppke, [[klein]]er Steppke, [[lieb]]er Steppke, [[oll]]er Steppke, [[putzig]]er Steppke, [[süß]]er Steppke
+
+{{Wortbildungen}}
+:[1a, 1b] [[Steppkegesicht]], [[Steppkespiel]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{ar}}: [1a, 1b] {{Arab|ولد|v=وَلَد|d=walad|Ü}}
+*{{en}}: [1a, 1b] {{Ü|en|nipper}}; [2] {{Ü|en|slave driver}}
+*{{fr}}: [1a, 1b] {{Ü|fr|gamin}} {{m}}, {{Ü|fr|gars}} {{m}}, {{Ü|fr|gosse}} {{mf}}, [1b] {{Ü|fr|gone}} {{m}}, {{Ü|fr|môme}} {{mf}}; ''[[landschaftlich]]:'' {{Ü|fr|minot}} {{m}}, [2] ''stark [[abwertend]]:'' {{Ü|fr|négrier}} {{m}}
+*{{it}}: [1a] {{Ü|it|bambinetto}} {{m}}, {{Ü|it|bambino piccolo}} {{m}}, {{Ü|it|ragazzaccio}} {{m}}
+|Ü-rechts=
+*{{ru}}: [1a, 1b] {{Üt|ru|малыш|malýš}} {{m}}
+*{{dsb}}: [1a, 1b] {{Ü|dsb|šwjerc}} {{m}}, {{Ü|dsb|wjergel}} {{m}}, {{Ü|dsb|wjerglišk}} {{m}}; [1a] {{Ü|dsb|gólcyk}} {{m}}, [2] ''je nach Kontext:'' {{Ü|dsb|nukaŕ}} {{m}}, {{Ü|dsb|póganjaŕ}} {{m}}, {{Ü|dsb|pógónjaŕ}} {{m}}, {{Ü|dsb|pógóńc}} {{m}}
+*{{es}}: [1a, 1b] {{Ü|es|chichito}} {{m}}, {{Ü|es|nene}} {{m}}, ''[[Lateinamerika]]: [[Mexiko]]:'' {{Ü|es|chilpayate}} {{m}} [1b] {{Ü|es|chiquillo}} {{m}}, ''[[Lateinamerika]]: [[Chile]]:'' {{Ü|es|peneca}} {{m}}
+|Dialekttabelle=
+*'''Westniederdeutsch:''' [1a, 1b] [[Lütte]]
+*'''Westmitteldeutsch:'''
+*'''Westoberdeutsch ([[Alemannisch]]):''' [?] [[Gof]]
+**Badisch: [?] [[Zwuckel]]
+|D-rechts=
+*'''Ostniederdeutsch:''' [1a, 1b] [[Lütte]]
+*'''Ostmitteldeutsch:'''
+*'''Ostoberdeutsch:'''
+**Österreichisch: [?] [[Bosnickel]], [[Bübel]], [[Rotznigel]], [[Schlankel]]
+**Bairisch: [1a] [[Bub]], [[Bübel]]
+}}
+
+{{Referenzen}}
+:[1a, 1b] {{Lit-Duden: Universalwörterbuch|A=6}}, Seite 1611.
+:[1a, 1b] {{Lit-Ammon: Variantenwörterbuch|A=1}}, Seite 754.
+:[1a] {{Lit-Langenscheidt: Lilliput Berlinerisch|A=1}}, Seite 288.
+:[1a] Hans Meyer, Siegfried Mauermann, Walther Kiaulehn: ''Der richtige Berliner in Wörtern und Redensarten,'' Neuausgabe der 10. Auflage, C. H. Beck, München 1985, ISBN 3-406-30611-X, Seite 161.
+:[1a, 2] {{Lit-Küpper: Wörterbuch der Umgangssprache|A=1 (Digitale Bibliothek)}}, Stichwort »Steppke«.
+:[1a] {{Ref-wissen.de|Wörterbuch|Steppke}}
+:[2] {{Ref-Grimm|Steppke}}
+:[1a] {{Ref-DWDS|Steppke}}
+:[*] {{Ref-Canoo|Steppke}}
+:[*] {{Ref-UniLeipzig|Steppke}}
+:[1a] {{Ref-FreeDictionary|Steppke}}
+:[*] {{Ref-OWID|Steppke}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten}}
+:[[Steppe]], [[steppte]], [[stecke]]

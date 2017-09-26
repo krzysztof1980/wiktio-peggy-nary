@@ -409,7 +409,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//  TParam = TPosParam
 	//-------------------------------------------------------------------
 	void TParam_2() {
-		lhs().put(new AnonymousTemplateParameter((RichText) rhs(0).get()));
+		lhs().put(new PositionalTemplateParameter((RichText) rhs(0).get()));
 	}
 	
 	//-------------------------------------------------------------------
@@ -464,54 +464,15 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  Kontext = LT "K" KontextPartList KontextFtParam KontextSprParam RT
-	//            0   1         2              3
+	//  Kontext = LT ([Kk] / "Kontext") (SEP TParam)+ RT
+	//            0          1            2     3     n-1
 	//=====================================================================
 	void Kontext() {
-		MeaningKontext kontext = new MeaningKontext();
-		kontext.setParts((List<MeaningKontext.Part>) rhs(2).get());
-		kontext.setSuffix((RichText) rhs(3).get());
-		lhs().put(kontext);
-	}
-	
-	//=====================================================================
-	//  KontextPartList = (SEP TPosParam KontextPartSep)+
-	//                    0 (3)   1 (4)      2 (5)
-	//=====================================================================
-	void KontextPartList() {
-		List<MeaningKontext.Part> parts = new ArrayList<>();
-		for (int i = 1; i < rhsSize() - 1; i += 3) {
-			MeaningKontext.Part part = new MeaningKontext.Part();
-			part.setText((RichText) rhs(i).get());
-			part.setSeparator((String) rhs(i + 1).get());
-			parts.add(part);
+		List<TemplateParameter> params = new ArrayList<>();
+		for (int i = 3; i < rhsSize() - 1; i += 2) {
+			params.add((TemplateParameter) rhs(i).get());
 		}
-		lhs().put(parts);
-	}
-	
-	//=====================================================================
-	//  KontextPartSep = (SEP "t" [1-7] EQ [:;_])?
-	//                     0   1    2    3   4
-	//=====================================================================
-	void KontextPartSep() {
-		if (!lhs().isEmpty()) {
-			String sep = rhs(4).text();
-			if (sep.equals("_"))
-				sep = " ";
-			lhs().put(sep);
-		}
-	}
-	
-	//=====================================================================
-	//  KontextFtParam = (SEP "ft" EQ RichTextComponent*)?
-	//                     0    1  2      3..n-1
-	//=====================================================================
-	void KontextFtParam() {
-		if (!lhs().isEmpty()) {
-			RichText text = new RichText();
-			processSequenceOfRichTextComponents(3, rhsSize(), text);
-			lhs().put(text);
-		}
+		lhs().put(MeaningKontext.fromTemplate(params));
 	}
 	
 	//=====================================================================
