@@ -67,7 +67,7 @@ MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
 Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*+ EOL {};
 MeaningLvl = ":"+ ;
-MeaningKontext = (Kontext / QsTemplate / AbkTemplate)? {};
+MeaningKontext = (Kontext / AbkTemplate)? {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -98,9 +98,12 @@ SEP         = Space "|" Space ; // attribute separator (used in links and templa
 TextbausteinEnd = LT / KopfStart / EOF ;
 
 // Rich text components
-RichTextComponent = Link {}
-                  / CursiveText {}
-                  / !EOL _ {};
+RichTextComponent = Link {RichtTextLink}
+                  / CursiveText {RichTextCursiveText}
+                  / Reference
+                  / Space QsTemplate Space
+                  / Template {RichTextTemplate}
+                  / !EOL _ {RichTextPlainText};
 
 // Link
 LL = "[[" ;   // Left Link opening
@@ -113,6 +116,8 @@ CursiveText = "''" RichTextComponent*+ "''" {};
 // Template
 LT =       "{{" Space ; // Left Template opening
 RT = Space "}}" ; // Right Template closing
+Template = LT TName (SEP TParam)* RT ;
+TName = (!(SEP / RT) _)+ ;
 TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TPosParam {};
@@ -123,10 +128,12 @@ TextualTParam = (!(SEP / RT) _)+ ;
 // Kontext template
 Kontext = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
 
-AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {} ;
+AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {&} ;
 AbkTemplateName = (!(SEP / RT) _)+ ;
 
 QsTemplate = LT "QS Bedeutungen" (SEP TPosParam)* RT ;
+
+WpTemplate = LT "W" "P"? (SEP TextualTParam)+ RT {};
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" ItemNoBody "]" Space {};
@@ -141,6 +148,7 @@ BR = "<br" Space "/>" ;
 Comment         = CommentStart _++ CommentEnd Space ;
 CommentStart    = "<!--" Space ;
 CommentEnd      = "-->" Space ;
+Reference       = "<ref>" _*+ "</ref>" ;
 
 //------------------------------------------------------------------------------
 // Common expressions

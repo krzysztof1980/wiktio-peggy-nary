@@ -29,7 +29,8 @@ class MeaningsParserSpec extends ParserSpecBase {
 
     def "plain text-Kontext"() {
         given:
-        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("Politik"))])
+        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("Politik"))],
+                                         suffix: new RichText(":"))
 
         expect:
         getMeaningFromWiktionaryEntry("Staat", 1).kontext == kontext
@@ -40,7 +41,8 @@ class MeaningsParserSpec extends ParserSpecBase {
         def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(
                 text: new RichText(new InternalLink.Builder().withPageTitle("umgangssprachlich").build(),
                                    new PlainText(", nur "),
-                                   new InternalLink.Builder().withPageTitle("Plural").build()))])
+                                   new InternalLink.Builder().withPageTitle("Plural").build()))],
+                                         suffix: new RichText(":"))
 
         expect:
         getMeaningFromWiktionaryEntry("Staat", 2).kontext == kontext
@@ -152,7 +154,7 @@ class MeaningsParserSpec extends ParserSpecBase {
         entry.meanings[0].text == new RichText()
     }
 
-    def "QS Bedeutungen"() {
+    def "QS Bedeutungen at the beginning of meaning-text"() {
         when:
         def meaning = getMeaningFromWiktionaryEntry("Lichtwoche", 0)
 
@@ -160,6 +162,26 @@ class MeaningsParserSpec extends ParserSpecBase {
         meaning.numbers == [ItemNumber.singleNumber("1")]
         meaning.kontext == null
         meaning.text == new RichText("Entfernung, die das Licht in einer Woche im Vakuum zurücklegt")
+    }
+
+    def "QS Bedeutungen at the end of meaning-text"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Bekanntwerdung", 2)
+
+        then:
+        meaning.text.components.size() == 1
+        meaning.text.components[0] == new PlainText("das Kennenlernen")
+    }
+
+    def "ref-elements should be ignored"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Müller").wiktionaryEntries[1]
+        def meaning = entry.meanings[0]
+
+        then:
+        PlainText mergedText = meaning.text.components[7] as PlainText
+        mergedText.text.startsWith(
+                " mit etwa 10,6% Anteil und über 600.000 Namenträgern häufigster Familienname in Deutschland")
     }
 
     private Meaning getMeaningFromWiktionaryEntry(String lemma, int meaningIdx) {

@@ -1,0 +1,253 @@
+{{Wort der Woche|25|2016}}
+== Müller ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Müller
+|Nominativ Plural=Müller
+|Genitiv Singular=Müllers
+|Genitiv Plural=Müller
+|Dativ Singular=Müller
+|Dativ Plural=Müllern
+|Akkusativ Singular=Müller
+|Akkusativ Plural=Müller
+|Bild=Miller to work in the flour mill Spijkenisse.jpg|thumb|1|Müller bei der Arbeit
+}}
+
+{{Worttrennung}}
+:Mül·ler, {{Pl.}} Mül·ler
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmʏlɐ}}
+:{{Hörbeispiele}} {{Audio|De-Müller.ogg}}
+:{{Reime}} {{Reim|ʏlɐ|Deutsch}}
+
+{{Bedeutungen}}
+:[1] meist [[selbstständig]]er [[Handwerker]], [[Gewerbetreibender]], aber auch [[Arbeiter]], der in einer [[Mühle]] das [[Getreide]] oder anderes [[Mahlgut]], zum Beispiel [[ölhaltig]]e [[Pflanzenteil]]e (''siehe dazu:'' [[Ölmüller]]), [[lagert]], [[reinigt]] und [[mahlt]]; einer, der [[Mehl]] [[herstellen|herstellt]]
+
+{{Herkunft}}
+:mittelhochdeutsch ''[[mülnære]], [[mülner]],''<ref>{{Ref-Lexer|mülnære|id=LM03082}}</ref> althochdeutsch ''[[mulinâri]], [[mulnâri]],''<ref>{{Ref-BMZ|mülnære|id=BM00252}}</ref> im 11. Jahrhundert entlehnt von mittellateinisch ''{{Ü|la|molinarius}}'' „Müller“<ref>{{Ref-Grimm|Müller}}</ref><ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „Müller“, Seite 636.</ref>
+
+{{Weibliche Wortformen}}
+:[1] [[Müllerin]]
+
+{{Verkleinerungsformen}}
+:[1] [[Müllerchen]], [[Müllerlein]]; [[Müllerle]]
+
+{{Oberbegriffe}}
+:[1] [[Handwerker]], [[Beruf]], [[Gewerbetreibender]]
+
+{{Beispiele}}
+:[1] „Das Wandern ist des ''Müllers'' Lust / Das Wandern / Das muss ein schlechter ''Müller'' sein / Dem niemals fiel das Wandern ein / Das Wandern / Das Wandern…“<ref>''beliebtes Wanderlied aus dem 19. Jahrhundert, Melodie: [[w:Carl Friedrich Zöllner]], Text: [[w:Wilhelm Müller]]''</ref>
+:[1] „Der ''Müller'' mahlt auf seiner Windmühle nicht nur Roggen und Weizen; er schrotet auch Hafer, stampft Buchweizen und bäckt vor allem im Haus unter der Mühle Brot.“<ref>{{Literatur| Autor= Erwin Strittmatter | Titel= Der Laden | TitelErg= Roman| Auflage= 1. | Verlag= Aufbau-Verlag |Ort= Berlin und Weimar |Jahr= 1983 |  ISBN= |Seiten= 30.}}</ref>
+
+{{Wortbildungen}}
+:[[Müllerbursche]], [[Müllerei]], [[Müllerfamilie]], [[Müllergeselle]], [[Müllerhandwerk]], [[Müllerhaus]], [[Müllermeister]], [[Müllersbursche]], [[Müllerschule]], [[Müllersmann]], [[Müllerssohn]], [[Müllerstochter]], [[Müllerwohnhaus]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{abq}} <small>([[w:ISO 9|ISO 9]])</small>: {{Üt|abq|дзылуте́т|dzylutét}}
+*{{ady}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|ady|шъхьалытес|šʺhʹalytés}}
+*{{af}}: [1] {{Ü|af|meulenaar}}
+*{{sq}}: [1] {{Ü|sq|mullinar}} {{m}}, {{Ü|sq|mullis}} {{m}}, {{Ü|sq|mullixhi}} {{m}}
+*{{alt}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|alt|теерменчи|teermenči}}
+*{{ar|DMG}}:
+**{{KA}}: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref>{{Lit-Lane: Arabic-English Lexicon}}, Stichwort »{{Arab|طَحَّانُ}}«, Seite 1832.</ref>
+**{{xaa}}: [1] {{Üxx4|ar|رحاوي|v=رِحَاوِيّ|d=riḥāwī|DMG=0}} {{m}}<ref name="Corriente204">{{Literatur | Autor=Federico Corriente | Titel=A Dictionary of Andalusi Arabic | Verlag=Brill | Ort=Leiden/New York/Köln | Jahr=1997 (Handbuch der Orientalistik. Erste Abteilung, der Nahe und Mittlere Osten; Band 29, {{ISSN|0169-9423}}) | ISBN=978-90-04-09846-6 }}, Stichwort »*{RḤW}«, Seite 204.</ref>, {{Üxx4|ar|رحوي|v=رَحَوِيّ|d=raḥawī|DMG=0}} {{m}}<ref name="Corriente204"/>, {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref name="Corriente325">Ebenda, Stichwort »*{ṬḤN}«, Seite 325.</ref>, {{Üxx4|ar|طحوني|v=طَحُونِيّ|d=ṭaḥūnī|DMG=0}} {{m}}<ref name="Corriente325"/>
+**{{MHA}}: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}
+**[[w:Maghrebinisches Arabisch|Maghrebinisches Arabisch]]:
+***{{ary}}: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān; ''mundartnah:'' ṭeḥḥan<ref>Mundartnahe Umschrift nach {{Literatur | Herausgeber=Harvey Sobleman, Richard S. Harrell; compilation by Thomas Fox, Alan McAninch, Allal Chreibi, Majid Soussane, Mohamed Neheiri | Titel=A Dictionary of Moroccan Arabic | TitelErg=English–Moroccan | Verlag=Georgetown University Press | Ort=Washington, D.C. | Jahr=1963 }}, Stichwort »miller«, Seite 124.</ref>|DMG=0}} {{m}}
+***{{arq}}: [1] {{Üxx4|ar|رحاي|v=رَحَّايْ|d=raḥḥāy|DMG=0}} {{m}}<ref>{{Literatur | Autor=Norbert Tapiéro | Titel=Manuel d’arabe algérien moderne | Verlag=C. Klincksieck | Ort=Paris | Jahr=1971 | Seiten=142 }}.</ref>, {{Üxx4|ar|رحوي|v=رَحْوِيّ|d=raḥwī; ''mundartnah:'' raḥwi|DMG=0}} {{m}}<ref>{{Literatur | Autor=Belkassem Ben Sedira | Titel=Petit dictionnaire arabe-français de la langue parlée en Algérie | TitelErg=contenant tous les mots et les formules employés dans les lettres et les actes judiciaires | Verlag=Adolphe Jourdan | Ort=Alger | Jahr=[1910], Stichwort »{{Arab|رحوي}}« | Seiten=160 | Online=Zitiert nach {{IA|petitdictionnair00abaluoft#page/160/mode/1up/search/meunier|FB}} }}.</ref><ref name="Ben Sedira384">{{Literatur | Autor=Belkassem Ben Sedira | Titel=Dictionnaire français-arabe de la langue parlée en Algérie | Auflage=5. | Verlag=Adolphe Jourdan | Ort=Alger | Jahr=1910, Stichwort »Meunier« | Seiten=384 | Online=Zitiert nach {{IA|dictionnairefran00abaluoft#page/384/mode/1up/search/meunier|FB}} }}.</ref>, {{Üxx4|ar|فران|v=فِرَّان|d=firrān; ''mundartnah:'' ferran|DMG=0}} {{m}}<ref name="Ben Sedira384"/>
+***{{aeb}}: [1] {{Üxx4|ar|رحاي|v=رَحَّايْ|d=raḥḥāy; ''mundartnah:'' raḥḥay|DMG=0}} {{m}}<ref name="Ben Sedira777">{{Literatur | Autor=Belkassem Ben Sedira | Titel=Dictionnaire français-arabe de la langue parlée en Algérie | Auflage=5. | Verlag=Adolphe Jourdan | Ort=Alger | Jahr=1910, Stichwort »Meunier« | Seiten=777 (Supplément: Expressions employées dans la Régence de Tunis) | Online=Zitiert nach {{IA|dictionnairefran00abaluoft#page/777/mode/1up/search/meunier|FB}} }}.</ref>, {{Üxx4|ar|طواحني|v=طْوَاحَنِيّ|d=ṭwāḥanī; ''mundartnah:'' ṭwaḥeni|DMG=0}} {{m}}<ref name="Ben Sedira777"/>
+**{{arz}}: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref>{{Literatur | Autor=El-Said Badawi, Martin Hinds | Titel=A Dictionary of Egyptian Arabic | TitelErg=Arabic-English | Verlag=Librairie du Liban | Ort=Beirut | Jahr=1986 }}, Stichwort »{{Arab|طحّان}}«, Seite 533.</ref>
+**[[w:en:Levantine Arabic|Levantinisches Arabisch]]:
+***[[w:Palästinensisch-Arabisch|Palästinensisch-Arabisch]]: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref name="Bauer">{{Lit-Bauer: Wörterbuch der arabischen Umgangssprache|A=2}}, Stichwort »Müller«, Seite 210.</ref>
+***[[w:Libanesisch-Arabisch|Libanesisch-Arabisch]]: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref name="Bauer"/>
+***[[w:Syrisch-Arabisch|Syrisch-Arabisch]]: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}; {{reg.}} ''([http://wikimapia.org/#lang=de&lat=36.434167&lon=41.215278&z=13&m=b&search=Khatunia Ḫātūniyya]: Mundart der Ḫawētna):'' {{Üxx4|ar|ابو الطاحونة|v=أَبُو ﭐلطَّاحُونَة|d=abū 'ṭ-ṭāḥūna; ''mundartnah:'' abu 'ṭ-ṭāḥūna<ref>Mundartnahe Umschrift nach {{Literatur | Autor=Shabo Talay | Titel=Der arabische Dialekt der Khawētna | TitelErg=Ⅱ: Texte und Glossar | Verlag=Otto Harrassowitz | Ort=Wiesbaden | Jahr=2003 (Semitica viva ; Band 21, {{ISSN|0931-2811}})| ISBN=3-447-04734-8 }}, Seite 254 (Transkriptionstext).</ref>}} {{m}}
+**[[w:Irakisch-Arabisch|Irakisch-Arabisch]]: [1] {{Üxx4|ar|طحان|v=طَحَّان|d=ṭaḥḥān|DMG=0}} {{m}}<ref>{{Literatur | Autor=D.R. Woodhead, Wayne Beene (Hrsg.); under the technical direction of Karl Stowasser, with the assistance of Majid Damah, Faisal Al-Khalaf, Husain Mustafa, Darrel Smith, Ronald G. Wolfe | Titel=A Dictionary of Iraqi Arabic | TitelErg=Arabic–English | Verlag=Georgetown University Press | Ort=Washington, D.C. | Jahr=1967 | ISBN=0-87840-281-0 }}, Stichwort »ṭ-{{Arab|ح}}-n, ṭa{{Arab|حﺡ}}aan«, Seite 287.</ref><ref>Mundartnahe Umschrift nach {{Literatur | Herausgeber=Beverly E. Clarity, Karl Stowasser, Ronald G. Wolfe, D.R. Woodhead, Wayne Beene | Titel=A Dictionary of Iraqi Arabic | TitelErg=English–Arabic Arabic–English | Verlag=Georgetown University Press | Ort=Washington, D.C. | Jahr=2003 | ISBN=0-87840-136-9 }}, Stichwort »ṭ-{{Arab|ح}}-n, ṭa{{Arab|حﺡ}}aan«, Seite 287 (arabisch-englischer Teil).</ref>
+*{{arc}} <small>(ALA-LC)</small>:
+**Klassisches Aramäisch: [1] ''jüdisch-palästinensisch:'' {{Üxx4|arc|𐡈𐡇𐡅𐡍|d=ṭāḥōn}} {{m}}
+**Neuaramäisch:
+***Ostaramäisch: [1] ''jüdisch'' {{reg.}} ''([[w:Amediye|Amidya]], [[w:Dohuk|Dihok]], Nerwa, [[w:Zaxo|Zakho]]):'' {{Üxx4|arc|מרי ארכה|d=mārē ʾirḵa; ''mundartnah:'' mare ʾirḵe<ref>Mundartnahe Umschrift nach {{Literatur | Autor=Yona Sabar | Titel=A Jewish Neo-Aramaic Dictionary | TitelErg=Dialects of Amidya, Dihok, Nerwa and Zakho, northwestern Iraq. Based on old and new manuscripts, oral and written bible translations, folkloric texts, and diverse spoken registers, with an introduction to grammar and semantics, and an index of Talmudic words which have reflexes in Jewish Neo-Aramaic | Verlag=Harrassowitz Verlag | Ort=Wiesbaden | Jahr=2002 (Semitica viva ; Band 28, {{ISSN|0931-2811}}) | ISBN=3-447-04557-4 | Seiten=100 }}.</ref>, mare ʾəṛḵe<ref>Mundartnahe Umschrift nach {{Literatur | Autor=Hezy Mutzafi | Titel-P=The Jewish Neo-Aramaic Dialect of Betanure | TitelErg=(Province of Dihok) | Verlag=Harrassowitz Verlag | Ort=Wiesbaden | Jahr=2008 (Semitica viva ; Band 43, {{ISSN|0931-2811}})| ISBN=978-3-447-05710-3 | Seiten=362 }}.</ref>}} {{m}}, ''([[w:Dohuk|Dihok]]: Betanure)'' {{Üxx4|arc|אשואנה|d=ʾašwāna ~ šwāna}} {{m}}<ref>{{Literatur | Autor=Hezy Mutzafi | Titel-P=The Jewish Neo-Aramaic Dialect of Betanure | TitelErg=(Province of Dihok) | Verlag=Harrassowitz Verlag | Ort=Wiesbaden | Jahr=2008 (Semitica viva ; Band 43, {{ISSN|0931-2811}})| ISBN=978-3-447-05710-3 | Seiten=329 }}.</ref>, ''([[w:As-Sulaimaniyya (Gouvernement)|as-Sulaymānīya]], [[w:Halabdscha (Gouvernement)|Ḥalabǧa]])'' {{Üxx4|arc|אשואן|d=ʾašawān}} {{m}}<ref>{{Literatur | Autor=Geoffrey Khan | Titel=The Jewish Neo-Aramaic Dialect of Sulemaniyya and Ḥalabja | Verlag=Brill | Ort=Leiden/Boston | Jahr=2004 (Studies in Semitic languages and linguistics ; volume 44, , {{ISSN|0081-8461}})| ISBN=978-90-04-13869-8 | Seiten=455, 596 }}.</ref>, ''([[w:Aserbaidschan (Iran)|Iran: Aserbaidschan]])'' {{Üxx4|arc|دجرمنچى|d=daǧirmanči}} {{m}}<ref>{{Literatur | Autor=Irene Garbell | Titel=The Jewish Neo-Aramaic Dialect of Persian Azerbaijan | TitelErg=The Linguistic Analysis and Folkloristic Texts | Verlag=Mouton & Co. | Ort=The Hague | Jahr=1965 | Seiten=303 }}.</ref>;<br />''christlich'' {{reg.|:}} ''([[w:en:Tell Arboush|Tall ʿArbūš]])'' {{Üxx4|arc|ܐܪܚܟܝ|v=ܐܰܪܚܰܟ̰ܝ|d=ʾarḥači}} {{m}}<ref>{{Literatur | Autor=Shabo Talay | Titel=Die neuaramäischen Dialekte der Khabur-Assyrer in Nordostsyrien | TitelErg=Einführung, Phonologie und Morphologie | Verlag=Harrassowitz Verlag | Ort=Wiesbaden | Jahr=2008 (Semitica viva ; Band 40, {{ISSN|0931-2811}}) | ISBN=978-3-447-05702-8 | Seiten=376 }}.</ref>, {{Üxx4|arc|ܐܫܘܐܢ|v=ܐܰܫܰܘܰܐܢ|d=ʾašawān}} {{m}}<ref>{{Literatur | Autor=Shabo Talay | Titel=Neuaramäische Texte in den Dialekten der Khabur-Assyrer in Nordostsyrien | Verlag=Harrassowitz Verlag | Ort=Wiesbaden | Jahr=2009 (Semitica viva ; Band 41, {{ISSN|0931-2811}}) | ISBN=978-3-447-05701-1 | Seiten=348, 349 }}.</ref>, ''([[w:Barwari|Bawar]], Diyana-Zariwaw)'' {{Üxx4|arc|ܛܚܐܢ|v=ܛܰܚܰܐܢܰ|d=ṭaḥāna; ''mundartnah:'' ṭaḥana<ref>Mundartnahe Umschrift nach {{Literatur | Autor=Geoffrey Khan | Titel=The Neo-Aramaic Dialect of Barwar | Verlag=Brill | Ort=Leiden/Boston | Jahr=2008 (Handbook of Oriental Studies. Section 1, the Near and Middle East ; 96, {{ISSN|0169-9423}})| ISBN=978-90-04-17265-0 | Seiten=321, 357, 1424 }}.</ref><ref>Mundartnahe Umschrift nach {{Literatur | Autor=Lidia Napiorkowska | Titel=A Grammar of the Christian Neo-Aramaic Dialect of Diyana-Zariwaw | Verlag=Brill | Ort=Leiden/Boston | Jahr=2015 (Studies in Semitic languages and linguistics ; volume 81, {{ISSN|0081-8461}})| ISBN=978-90-04-29032-7 | Seiten=518, 554 }}.</ref>}} {{m}}, ''([[w:Barwari|Bawar]]) einer Wassermühle:'' {{Üxx4|arc|ܐܙܘܐܢ|v=ܐܰܙ̰ܘܰܐܢܰ|d=ʾažvana}} {{m}}<ref>{{Literatur | Autor=Geoffrey Khan | Titel=The Neo-Aramaic Dialect of Barwar | Verlag=Brill | Ort=Leiden/Boston | Jahr=2008 (Handbook of Oriental Studies. Section 1, the Near and Middle East ; 96, {{ISSN|0169-9423}})| ISBN=978-90-04-17265-0 | Seiten=1223 }}.</ref>
+****[[w:Turoyo|Ṭūrōyo]]: [1] {{reg.}} ''([[w:Öğündük|Mīdin]] im [[w:Tur Abdin|Ṭūr ʿAbdīn]]):'' [1] {{Üxx4|arc|ܩܪܩܐܫ|v=ܩܰܪܩܰܐܫ|d=qarqāš}} {{m}}<ref>{{Literatur | Autor=Otto Jastrow | Titel=Laut- und Formenlehre des neuaramäischen Dialekts von Mīdin im Ṭūr ʿAbdīn | Auflage=4., unveränderte | Verlag=Harrassowitz | Ort=Wiesbaden | Jahr=1993 (Semitica viva; Band 9; {{ISSN|0931-2811}}) | ISBN=3-447-03334-7 | Seiten=209 }}.</ref>
+*{{hy}} <small>([[w:Armenisches Alphabet#Buchstaben|DIN 32706]])</small>: [1] {{Üt|hy|ջաղացպան|ǰaġac̕pan}}
+*{{ba}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|ba|тирмәнсе|tirma̋nse}}
+*{{eu}}: [1] {{Ü|eu|errotari}}
+*{{bs}}: [1] {{Ü|bs|mlinar}} {{m}}, ''einer Wassermühle:'' {{Ü|bs|vodeničar}} {{m}}; ''Turkismus:'' {{Ü|bs|degrmendžija}}
+*{{br}}: [1] {{Ü|br|miliner}}
+*{{bg}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|bg|воденичар|vodeničár}} {{m}}, {{Üt|bg|мелничар|melničár}} {{m}}
+*{{zh}}:
+**[[Hochchinesisch|Hochchinesisch/Mandarin]] <small>([[w:Pinyin|Pinyin]])</small>: [1] {{Üt|zh|磨坊主|mòfángzhǔ}}
+*{{da}}: [1] {{Ü|da|møller}}
+*{{en}}: [1] {{Ü|en|miller}}
+*{{eo}}: [1] {{Ü|eo|muelisto}}
+*{{et}}: [1] {{Ü|et|mölder}}
+*{{fi}}: [1] {{Ü|fi|mylläri}}
+*{{fr}}: [1] {{Ü|fr|meunier}} {{m}}
+*{{fur}}: [1] {{Ü|fur|mulinâr}} {{m}}
+*{{gl}}: [1] {{Ü|gl|muiñeiro}}
+|Ü-rechts=
+*{{ka}} <small>([[w:Georgisches Alphabet#Umschrift|DIN 32707]])</small>: [1] {{Üt|ka|მეწისქვილე|mecisk̕vile}}
+*{{el|iU}}: [1] {{Üt|el|μυλωνάς|mylonás}} {{m}}
+*{{he|CHA}}: [1] {{Üxx4|he|טוחן|v=טוֹחֵן|d=ṭōḥḗn|CHA=0}} {{m}}
+*{{io}}: [1] {{Ü|io|muelisto}}
+*{{ia}}: [1] {{Ü|ia|molinero}}
+*{{ga}}: [1] {{Ü|ga|muilleoir}} {{m}}
+*{{izh}}: [1] {{Ü|izh|müllünikkä}}
+*{{is}}: [1] {{Ü|is|malari}}
+*{{it}}: [1] {{Ü|it|mugnaio}} {{m}}, {{reg.|:}} {{Ü|it|mulinaro}} {{m}}
+*{{ja}} <small>([[Hilfe:Hepburn-System|Hepburn]])</small>: [1] {{Üt|ja|粉屋|こな･や, kona·ya}}, {{Üt|ja|製粉業者|せいふん･ぎょうしゃ, seifun·gyōsha}}
+*{{yi|YIVO}}: [1] {{Üxx4|yi|מילנער|d=milner|YIVO=0}} {{m}}
+*{{kbd}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|kbd|щхьэлтет|ŝhʹèltet}}
+*{{krc}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|krc|тирменчи|tirmenči}}
+*{{kk}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|kk|диірменші|diìrmenšì}}
+*{{ca}}: [1] {{Ü|ca|moliner}} {{m}}
+*{{crh}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Ü|crh|degirmenci}}, {{Üt|crh|дегирменджи|degirmendži}}
+*{{hr}}: [1] {{Ü|hr|mlinar}} {{m}}, ''einer Wassermühle:'' {{Ü|hr|vodeničar}} {{m}}
+*{{ku}}:
+**{{ckb|DMG}}: [1] {{Üxx4|ckb|آشه وان|d=āša-wān|DMG=0}}<ref name="Mokri">{{Literatur | Autor=Mohammad Mokri | Titel=Grammaire et lexique comparés des dialectes kurdes | TitelErg=Eléments de linguistique iranienne | Verlag=Éditions K<small cab>ARTHALA</small cab> | Ort=Paris | Jahr=2003 | ISBN=2-84586-427-2 | Seiten=118 | Online={{GBS|JtXbqoCNAL0C|PA902|Hervorhebung=meunier}} }}</ref>, {{Üxx4|ckb|آسياوان|d=āsīāwān|DMG=0}}<ref name="Mokri"/>
+*{{la}}: [1] {{Ü|la|molinarius|molīnārius}} {{m}}; ''mit einer Handmühle mahlender Müller, Handmüller:'' {{Ü|la|pistor|pīstor}} {{m}}, {{Ü?|la|pristinarius}} {{m}}
+*{{lv}}: [1] {{Ü|lv|dzirnavnieks}} {{m}}
+*{{lt}}: [1] {{Ü|lt|malūnininkas}}
+*{{lb}}: [1] {{Ü|lb|Mëller}} {{m}}
+*{{mt}}: [1] {{Ü|mt|taħħan}} {{m}}
+*{{gv}}: [1] {{Ü|gv|mwyllar}}
+*{{mn}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|mn|тээрэмчин|tèèrèmčin}}
+*{{nds}}: [1] {{Ü|nds|Möller}} {{m}}
+*{{nl}}: [1] {{Ü|nl|molenaar}} {{m}}
+*{{no}}:
+**{{nb}}: [1] {{Ü|nb|møller}} {{m}}
+**{{nn}}: [1] {{Ü|nn|møllar}} {{m}}, {{Ü|nn|mylnar}} {{m}}
+*{{oc}}: [1] {{Ü|oc|molinièr}} {{m}}; {{ugs.|:}} {{Ü|oc|farinaire}} {{m}}
+*{{os}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|os|куыройгæс|kuyrojgæs}}
+*{{fa}}:
+**Farsi <small>([[Hilfe:DMG|DMG]])</small>: [1] {{Üxx4|fa|آسيابان|d=āsīābān, āsiyābān|DMG=0}}
+**{{tg}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|tg|осиёбон|osiëbon}}
+*{{pl}}: [1] {{Ü|pl|młynarz}} {{m}}
+*{{pt}}: [1] {{Ü|pt|moleiro}} {{m}}
+*{{rm}}: [1] {{Ü|rm|muliner}} {{m}}
+*{{ro}}: [1] {{Ü|ro|morar}} {{m}}
+*{{ru}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|ru|мельник|mélʹnik}} {{m}}
+*{{gd}}: [1] {{Ü|gd|muillear}} {{m}}
+*{{sv}}: [1] {{Ü|sv|mjölnare}} {{u}}
+*{{sr}}: [1] {{Üt|sr|млинар|[[mlinar#mlinar (Serbisch)|mlinar]]}} {{m}}, ''einer Wassermühle:'' {{Üt|sr|воденичар|[[vodeničar#vodeničar (Serbisch)|vodeničar]]}} {{m}}
+*{{sh}}: [1] {{Üt|sh|млинар|[[mlinar#mlinar (Serbokroatisch)|mlinar]]}} {{m}}, ''einer Wassermühle:'' {{Üt|sh|воденичар|[[vodeničar#vodeničar (Serbokroatisch)|vodeničar]]}} {{m}}
+*{{wen}}:
+**{{dsb}}: [1] {{Ü|dsb|młynikaŕ}} {{m}}
+**{{hsb}}: [1] {{Ü|hsb|młynk}} {{m}}
+*{{es}}: [1] {{Ü|es|molinero}} {{m}}
+*{{sw}}: [1] {{Ü|sw|msaga}}
+*{{syr|ALA-LC}}: [1] {{Üxx4|syr|ܪܚܚܐ|v=ܪܰܚܳܚܳܐ|d=raḥoḥō|ALA-LC=0}} {{m}}<ref>{{Literatur | Herausgeber=Jessie Payne Smith | Titel-P=A compendious Syriac dictionary, | TitelErg=founded upon the Thesaurus Syriacus of Robert Payne Smith | Verlag=At the Clarendon Press | Ort=Oxford | Jahr=1903 | Seiten=537 | Online=[https://upload.wikimedia.org/wikipedia/commons/1/10/A_compendious_Syriac_Dictionary.pdf#page=543 Digitalisat: PDF 39 MB] auf [[commons:File:A compendious Syriac Dictionary.pdf|Commons]] }}.</ref>
+*{{tt}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|tt|тегермәнче|tegerma̋nče}}
+*{{cs}}: [1] {{Ü|cs|mlynář}} {{m}}
+*{{ce}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|ce|хьархо|hʹarho}}
+*{{cv}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|cv|мельник|melʹnik}}
+*{{tr}}: [1] {{Ü|tr|değirmenci}}
+*{{uk}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|uk|мірошник|mìróšnik}} {{m}}, {{Üt|uk|млинар|mlinár}} {{m}}
+*{{hu}}: [1] {{Ü|hu|molnár}}
+*{{uz}}: [1] {{Ü|uz|tegirmonchi}}
+*{{vo}}: [1] {{Ü|vo|mülan}}
+*{{cy}}: [1] {{Ü|cy|melinydd}} {{m}}
+*{{be}} <small>([[w:ISO 9|ISO 9]])</small>: [1] {{Üt|be|мельнік|mélʹnìk}} {{m}}, {{Üt|be|млынар|mlynár}} {{m}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Müller}}
+:[1] {{Ref-Grimm|Müller}}
+:[1] {{Ref-DWDS|Müller}}
+:[1] {{Ref-Canoo|Müller}}
+:[1] {{Ref-UniLeipzig|Müller}}
+
+{{Quellen}}
+
+=== {{Wortart|Substantiv|Deutsch}}, {{mf}}, {{Wortart|Nachname|Deutsch}} ===
+
+{{Deutsch Nachname Übersicht
+|Bild 1=Verteilung Nachname Müller DE.png|mini|1|geografische Verteilung des Nachnamens ''Müller'' in Deutschland
+|Bild 2=Verteilung Nachname Müller AT.png|mini|1|geografische Verteilung des Nachnamens ''Müller'' in Österreich
+}}
+
+{{Alternative Schreibweisen}}
+:[[Mueller]]
+
+{{Worttrennung}}
+:Mül·ler, {{Pl.}} Mül·lers
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmʏlɐ}}, {{Pl.}} {{Lautschrift|ˈmʏlɐs}}
+:{{Hörbeispiele}} {{Audio|De-Müller.ogg}}, {{Pl.}} {{Audio|}}
+:{{Reime}} {{Reim|ʏlɐ|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[deutschsprachig]]er [[Nachname]], [[Familienname]], unter Berücksichtigung von [[Mueller]] mit etwa 10,6% Anteil und über 600.000<ref>{{Lit-dtv-Atlas: Namenkunde|A=3}}</ref> Namenträgern häufigster Familienname in Deutschland und der Schweiz. In Österreich ist es der vierthäufigste Nachname. Nach Angaben aus<ref>{{Lit-Udolph: Buch der Namen|A=1}}</ref>, welcher die Festnetz-Telefonanschlüsse analysiert hat, sind es in Deutschland etwa 270.000 (9,5‰), in Österreich etwa 10.500 und in der Schweiz etwa 35.400
+:''siehe auch:'' [[Verzeichnis:Deutsch/Liste der häufigsten Nachnamen Deutschlands|Liste der häufigsten Nachnamen Deutschlands]]
+:''siehe auch:'' [[Verzeichnis:Deutsch/Liste der häufigsten Nachnamen Österreichs|Liste der häufigsten Nachnamen Österreichs]]
+:''siehe auch:'' [[Verzeichnis:Deutsch/Liste der häufigsten Nachnamen der Schweiz|Liste der häufigsten Nachnamen der Schweiz]]
+
+{{Herkunft}}
+:leitet sich vom [[Berufsname]]n „[[Müller#Substantiv, m|Müller]]“ ab, wobei der erste Namenträger das [[Müllerhandwerk]] [[ausübte]], eine [[Mühle]] [[betrieb]], [[besaß]] oder darin [[wohnte]]. Die Häufigkeit lässt sich durch das Vorhandensein mindestens einer [[Windmühle|Wind-]] oder [[Wassermühle]] in fast jedem Ort zur Zeit der Namenentstehung erklären.<ref>{{Lit-Bahlow: Namenlexikon|V=Gondrom}}</ref>
+
+{{Namensvarianten}}
+:[[Mahler]], [[Mahlmann]], [[Mallmann]], [[Meller]], [[Meulenaers]], [[Meuleneers]], [[Meuleners]], [[Meunier]], [[Miller]], [[Mielnik]], [[Mlynar]], [[Młynk]], [[Moeller]], [[Molenaar]], [[Molitor]], [[Moller]], [[Möllemann]], [[Möller]], [[Møller]], [[Möllers]], [[Möllmann]], [[Molnar]], [[Mueller]], [[Mühlemann]], [[Mühler]], [[Mühlmann]], [[Mühlner]], [[Mulders]], [[Mülders]], [[Mulerius]], [[Mülher]], [[Müllers]], [[Müllmann]], [[Muller]], [[Müllner]], [[Mülner]], [[Myller]]
+
+{{Bekannte Namensträger}}
+:[[w:Andy Müller-Maguhn|Andy Müller-Maguhn]], Unternehmer
+:[[w:Inge Müller|Inge Müller]], Schriftstellerin
+:Wegen der Vielzahl der Namenträger werden hier nur zwei Namenträger aufgeführt. Eine umfangreiche Liste siehe hier:
+:[http://de.wikipedia.org/wiki/M%C3%BCller_%28Familienname%29 Bekannte Namensträger „Müller“ in der Wikipedia]
+
+{{Beispiele}}
+:[1] Frau ''Müller'' ist ein Genie im Verkauf.
+:[1] Herr ''Müller'' wollte uns kein Interview geben.
+:[1] Die ''Müllers'' fliegen heute nach Kanada.
+:[1] Der ''Müller'' trägt nie die Pullover, die die ''Müller'' ihm strickt.
+:[1] Das kann ich dir aber sagen: „Wenn die Frau ''Müller'' kommt, geht der Herr ''Müller''.“
+:[1] ''Müller'' kommt und geht.
+:[1] ''Müllers'' kamen, sahen und siegten.
+
+{{Redewendungen}}
+:''[[Lieschen Müller]]'' - eine [[durchschnittlich]]e [[Frau]] oder [[Mädchen]], ein weiblicher Durchschnittsmensch
+:''[[wie von Lieschen Müller]]'' - bezeichnet etwas Durchschnittliches, Gewöhnliches, allgemein Bekanntes
+
+{{Wortbildungen}}
+:''bei Erfindungen und Patenten:''
+:[[Geiger-Müller-Zähler]]
+:''als Bestandteil anderer Nachnamen:''
+:[[Aitzetmüller]], [[Altmüller]], [[Angermüller]], [[Atzmüller]], [[Aumüller]], [[Barthmüller]], [[Bimüller]], [[Bleimüller]], [[Bruchmüller]], [[Bruckmüller]], [[Dornmüller]], [[Eichmüller]], [[Eisenmüller]], [[Forstmüller]], [[Fortmüller]], [[Freimüller]], [[Furtmüller]], [[Gansmüller]], [[Ganzenmüller]], [[Gramüller]], [[Grubmüller]], [[Hagenmüller]], [[Hammermüller]], [[Hasenmüller]], [[Hasmüller]], [[Heimüller]], [[Heumüller]], [[Hofmüller]], [[Höllmüller]], [[Holzmüller]], [[Jahnsmüller]], [[Kanamüller]], [[Kindsmüller]], [[Kitzmüller]], [[Klappermüller]], [[Knollmüller]], [[Krottenmüller]], [[Kumpfmüller]], [[Kundmüller]], [[Ledermüller]], [[Mattmüller]], [[Mittelmüller]], [[Mittermüller]], [[Moosmüller]], [[Neumüller]], [[Niedermüller]], [[Obermüller]], [[Patzschmüller]], [[Pirkmüller]], [[Reinmüller]], [[Reumüller]], [[Riedmüller]], [[Rodaumüller]], [[Rodmüller]], [[Rosenmüller]], [[Schartmüller]], [[Schloßmüller]], [[Schmolmüller]], [[Schwarzlmüller]],  [[Seemüller]], [[Sengmüller]], [[Sickmüller]], [[Siegelmüller]], [[Sommermüller]], [[Spitzmüller]], [[Stadtmüller]], [[Steinmüller]], [[Stelzmüller]], [[Stögmüller]], [[Traunmüller]], [[Wahlmüller]], [[Wallmüller]], [[Weidenmüller]], [[Weißmüller]], [[Wiesmüller]], [[Wolfmüller]], [[Zweimüller]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{da}}: [1] {{Ü|da|Møller}}
+*{{en}}: [1] {{Ü|en|Miller}}
+*{{fr}}: [1] {{Ü|fr|Meunier}}
+*{{it}}: [1] {{Ü|it|Molinari}}
+|Ü-rechts=
+*{{pl}}: [1] {{Ü|pl|Mielnik}}
+*{{ru}}: [1] {{Üt|ru|Мюллер|}}
+*{{cs}}: [1] {{Ü|cs|Mlynář}}
+*{{hu}}: [1] {{Ü|hu|Molnár}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Müller (Name)|Müller}}
+:[1] {{Ref-UniLeipzig|Müller}}
+:[1] {{Ref-Nachname|Müller}}
+:[1] [http://christoph.stoepel.net/geogen/v3/Default.aspx?name=Müller „Müller“ bei Geogen Onlinedienst (V. 4.0) - (Namen bitte eintragen; mit Ähnlichkeitssuche)]
+:[1] {{Lit-Bahlow: Namenlexikon|V=Gondrom}}, Seite 345
+:[1] {{Lit-dtv-Atlas: Namenkunde|A=3}}, Seite 66 f. u. a.
+:[1] {{Lit-Duden: Familiennamen|A=2000}}, Seite 466
+:[1] {{Lit-Feinig: Familiennamen in Kärnten}}, Seite 172
+:[1] {{Lit-Gottschald: Deutsche Namenkunde|A=6}}, Seite 357 f.
+:[1] {{Lit-Heintze: Familiennamen|A=4}}, Seite 225
+:[1] {{Lit-Klausmann: Atlas der Familiennamen}}, Seite 11 u. a.
+:[1] {{Lit-Linnartz: Unsere Familiennamen|B=1|A=1}}, Seite 95
+:[1] {{Ref-MetaGenealogy}}
+:[1] [http://www.verwandt.de/karten/absolut/Müller.html  Müller bei verwandt.de (dort mit Links zu schweizerischen Verteilungs-Karten)]
+:[1] [http://namenskarten.lima-city.at Namensverteilung in Österreich (Namen bitte eintragen)]
+:[1] [http://blog.tagesanzeiger.ch/datenblog/index.php/6859/alles-mueller-oder-was Namensverteilung in der Schweiz (Namen bitte eintragen)]
+:[1] [http://de.rodovid.org/wk/Sippe:Müller „Müller“ auf de.rodovid.org]
+
+{{Quellen}}
+
+{{Navigationsleiste Anthroponyme}}

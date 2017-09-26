@@ -8,6 +8,7 @@ import wiktiopeggynary.model.markup.RichText
 import wiktiopeggynary.model.markup.TemplateParameter
 
 import java.util.stream.Collectors
+import java.util.stream.IntStream
 
 /**
  * @author Krzysztof Witukiewicz
@@ -37,6 +38,18 @@ class MeaningKontext {
                 meaningKontext.suffix = p.value
             }
         }
+        // set default value for separator in all but the last Part, if null
+        IntStream.range(0, meaningKontext.parts.size() - 1)
+                 .forEach { i ->
+            def part = meaningKontext.parts[i]
+            if (part.separator == null)
+                part.separator = new RichText(",")
+        }
+        // set default value for suffix, if null
+        if (meaningKontext.suffix == null) {
+            meaningKontext.suffix = new RichText(":")
+        }
+
         return meaningKontext
     }
 

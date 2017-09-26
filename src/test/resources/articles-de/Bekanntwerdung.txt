@@ -1,0 +1,62 @@
+== Bekanntwerdung ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Bekanntwerdung
+|Nominativ Plural=Bekanntwerdungen
+|Genitiv Singular=Bekanntwerdung
+|Genitiv Plural=Bekanntwerdungen
+|Dativ Singular=Bekanntwerdung
+|Dativ Plural=Bekanntwerdungen
+|Akkusativ Singular=Bekanntwerdung
+|Akkusativ Plural=Bekanntwerdungen
+}}
+
+{{Worttrennung}}
+:Be·kannt·wer·dung, {{Pl.}} Be·kannt·wer·dun·gen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bəˈkantˌveːɐ̯dʊŋ}}
+:{{Hörbeispiele}} {{Audio|De-Bekanntwerdung.ogg}}
+
+{{Bedeutungen}}
+:[1] das zur Kenntnis Gelangen {{QS Bedeutungen}}
+:[2] das Erlangen der allgemeinen Bekanntheit {{QS Bedeutungen}}
+:[3] das Kennenlernen {{QS Bedeutungen}} {{QS Bedeutungen|unbelegt}}
+
+{{Herkunft}}
+:[[Ableitung]] des Adjektivs ''[[bekannt]]'' mit dem Stamm des Verbs ''[[werden]]'' und dem Suffix ''[[-ung]]'' zu einem Substantiv
+
+{{Sinnverwandte Wörter}}
+:[1] [[Bekanntgabe]], [[Kenntnisnahme]], [[Verlautbarung]]
+:[2] [[Auftreten]]
+
+{{Beispiele}}
+:[1] „[…] ([…] in der Praxis werde diese Bestimmung oftmals als rigoroser Rückforderungsanspruch des Versicherungsträgers bei sämtlichen nachträglich bekanntgewordenen Weiterleistungen von Geld- und Sachbezügen angewendet, auch wenn dem Versicherungsträger an dieser nachträglichen ''Bekanntwerdung'' ein erhebliches Verschulden treffe).“<ref>[https://www.ris.bka.gv.at/Dokumente/Justiz/JJT_19971104_OGH0002_010OBS00353_97B0000_000/JJT_19971104_OGH0002_010OBS00353_97B0000_000.pdf Erkenntnis des österreichischen Obersten Gerichtshofs vom 4. November 1997]</ref>
+:[1] „Der Magistrat sucht diese Unordnungen zu verbergen, und unterdrückt möglichst ihre ''Bekanntwerdungen''.“<ref>{{Literatur | Autor= | Titel=Politisches Journal | TitelErg=nebst Anzeige von gelehrten und andern Sachen | Band=Zweyter Band | Ort=Hamburg | Jahr=1791 | Seiten=1203| Online={{GBS|7i5GAAAAcAAJ|PA1203|Hervorhebung=Bekanntwerdungen}}| Zugriff=2016-10-23}}</ref>
+:[1] „Auch die wichtige Zeitung, daß der Richter einen noch lebenden Vater habe, dessen ''Bekanntwerdung'' vom Grafen abhängt, vermag ihn nicht zu verführen; er ergiebt sich dem Mangel, dem er durch den Verlust seiner Stelle sich blos setzt.“<ref>{{Literatur | Autor=Albrecht von Haller, L.Ph. Hahn, Graf Carl von Adelsberg | Titel=Literaturkritik | Verlag=Walter de Gruyter | Jahr=1970/1776 | Seiten=184| Online={{GBS|_XsjAAAAQBAJ|PA184|Hervorhebung=Bekanntwerdung}}| Zugriff=2016-10-23}}</ref>
+:[1] „Die Richterin befand es als ‚merkwürdig‘, dass die Diagnose nur wenige Tage nach ''Bekanntwerdung'' der Insolvenzverschleppung erging und nicht schon in den Monaten vorher.“<ref>{{Per-Süddeutsche Online | Online=http://www.sueddeutsche.de/muenchen/ebersberg/ebersberg-mildernde-umstaende-1.2932244 | Autor=Max Nahrhaft | Titel= "Mildernde Umstände"| TitelErg=Ein Steuersünder muss weniger Strafe zahlen - dank Arztattest | Tag=03| Monat=04| Jahr=2016| Zugriff=2016-10-24 }}</ref>
+:[1, (2?)] „Der Tabak hat bei seiner ''Bekanntwerdung'' und Verbreitung in Europa mancherlei Tadel und Verfolgungen erdulden müssen. “<ref>{{Literatur | Autor=Anton Hornstein| Titel=Der Taback in historischer, finanzieller und diätetischer Beziehung | Verlag=Traßler |  Ort=Brünn|Jahr=1828 | Seiten=14| Online={{GBS|enJYAAAAcAAJ|PA14|Hervorhebung=Bekanntwerdung}}| Zugriff=2016-10-25}}</ref>
+:[(1?), 2] „Eben so wenig kann ein geringer Grad von Verbreitung Milderungsgrund fein, weil die mehrere oder wenigere ''Bekanntwerdung'' an und für sich in der Sache nichts ändert.“<ref>{{Literatur | Autor=Johann-August-Ludwig Fürstenthal | Titel=Real-Encyclopädie des gesammten in Deutschland geltenden gemeinen Rechts, oder Handwörterbuch des römischen und deutschen Privat-, des Staats-, Völker-, Kirchen-, Lehn-, Criminal- und Proceß-Rechts | Band=Band 2 | Verlag=August Rücker |  Jahr=1827 | Seiten=556| Online={{GBS|U2hTAAAAcAAJ|PA556|Hervorhebung=Bekanntwerdung}}| Zugriff=2016-10-23}}</ref>
+:[1, 2] „Heartbleed wurde seit seiner ''Bekanntwerdung'' vor wenigen Wochen mit vielen dramatischen Beinamen bedacht.“<ref>{{Per-Standard Online | Online=http://derstandard.at/1399507030882/Heartbleed-Noch-immer-300000-Server-verwundbar | Titel=Heartbleed: Noch immer 300.000 Server verwundbar| Tag=09 | Monat=05| Jahr=2014| Zugriff=2016-10-23 }}</ref>
+:[1, 2] „Man weiß von Göthe selbst, mit welchen treffenden Urtheilen dieser eigne Mann, dessen Charakteristik nach der ''Bekanntwerdung'' der an ihn gerichteten Briefe und nach Vergleichung seiner literarischen Arbeiten etwas klarer als die Göthische ausfallen kann, auch früher Göthen in seiner Wirksamkeit leitete oder begleitete.“<ref>{{Literatur | Autor= Georg Gottfried Gervinus| Titel=Ueber den Göthischen Briefwechsel | Verlag=Wilhelm Engelmann | Ort=Leipzig | Jahr=1836 | Seiten=24| Online={{GBS|6rREAQAAIAAJ|PA24|Hervorhebung=Bekanntwerdung}}| Zugriff=2016-10-25}}</ref>
+:[2] „Leider hat die Art der ''Bekanntwerdung'' den ersten Eindruck getrübt.“<ref>{{Per-FAZ Online | Online=http://www.faz.net/aktuell/feuilleton/kunst/ein-neuer-leonardo-er-rettet-die-welt-mit-segnender-hand-11160.html | Autor=Gina Thomas | Titel=Er rettet die Welt mit segnender Hand | TitelErg=Ein neuer Leonardo? | Tag=11 | Monat=07| Jahr=2011| Zugriff= 2016-10-24 }}</ref>
+:[2] „Die Agentur ist mit der Platzierung der Marke und deren ''Bekanntwerdung'' sowie die dazu nötigen Kommunikationsaufgaben verantwortlich.“<ref>{{Per-Kurier Online | Online=https://kurier.at/wirtschaft/atmedia/kumho-tyres-etat-fuer-rueckenwind/85.815.538 | Titel=Kumho-Tyres-Etat für Rückenwind| Tag=04 | Monat=04| Jahr=2013 | Zugriff=2016-10-23 }}</ref>
+:[2] „Es folgt hier also zuerst Hellas im Allgemeinen, und zwar habe ich im ersten Capitel von der allmähligen ''Bekanntwerdung'' Griechenlands durch die Quellenschriftsteller […] gehandelt.“<ref>{{Literatur | Autor=D. Friedrich Carl Hermann Kruse | Titel= Die Bekanntwerdung Griechenlands durch die Quellenschriftsteller, die Geschichte der Wiederentdeckung des Landes in seinen einzelnen Theilen durch die neuen Reisebeschreiber etc., die mathematische, physische und historisch-politische Geographie von Hellas| Band= Erster, allgemeiner Theil| TitelErg=Mit Kupfern und Charten| Verlag=Leopold Voß | Ort=Leipzig | Jahr=1825 | Seiten=xix| Online={{GBS|3XJYAAAAcAAJ|PR19|Hervorhebung=Bekanntwerdung }}| Zugriff=2016-10-24}}</ref>
+:[3] „So muss die ''Bekanntwerdung'' von zwei Personen nicht in einem Beziehungsaufbau münden und eine verfestigte Beziehung muss nicht über eine Verschlechterung zu ihrer Auflösung führen.“<ref>{{Literatur | Autor=Caroline Ruiner | Titel=Paare im Wandel | TitelErg=Eine qualitative Paneluntersuchung zur Dynamik des Verlaufs von Paarbeziehungen |Verlag= Springer | Jahr=2010 | Seiten=37| Online={{GBS|tlKtwADpZqMC|PA37|Hervorhebung=}}| Zugriff=2016-10-23}}</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+*{{fr}}: [1] {{Ü|fr|}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|}}
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[*] {{Wikipedia-Suche|Bekanntwerdung}}
+:[*] {{Ref-DWDS|Bekanntwerdung}}
+
+{{Quellen}}

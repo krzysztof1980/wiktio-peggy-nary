@@ -293,7 +293,7 @@ class WiktionarySemantics extends SemanticsBase {
 	//=====================================================================
 	void ItemNoBody() {
 		List<ItemNumber> numbers = new ArrayList<>();
-		for (int i = 0; i < rhsSize(); i+=2) {
+		for (int i = 0; i < rhsSize(); i += 2) {
 			numbers.add((ItemNumber) rhs(i).get());
 		}
 		lhs().put(numbers);
@@ -445,21 +445,25 @@ class WiktionarySemantics extends SemanticsBase {
 	//-------------------------------------------------------------------
 	//  RichTextComponent = Link
 	//-------------------------------------------------------------------
-	void RichTextComponent_0() {
+	void RichtTextLink() {
 		lhs().put(rhs(0).get());
 	}
 	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = CursiveText
 	//-------------------------------------------------------------------
-	void RichTextComponent_1() {
+	void RichTextCursiveText() {
 		lhs().put(rhs(0).get());
+	}
+	
+	void RichTextTemplate() {
+		throw new ParseException("Unexpected template in RichText: " + lhs().text());
 	}
 	
 	//-------------------------------------------------------------------
 	//  RichTextComponent = !EOL _
 	//-------------------------------------------------------------------
-	void RichTextComponent_2() {
+	void RichTextPlainText() {
 		lhs().put(new PlainText(rhsText(0, rhsSize())));
 	}
 	
@@ -479,12 +483,12 @@ class WiktionarySemantics extends SemanticsBase {
 	//  AbkTemplate = LT AbkTemplateName (SEP TParam)* RT
 	//                0         1          2     3     n-1
 	//=====================================================================
-	void AbkTemplate() {
+	boolean AbkTemplate() {
 		String abk = rhs(1).text();
+		if (!KontextShortcutMapper.getShortcuts().containsKey(abk))
+			return false;
 		if (rhsSize() > 5)
 			throw new ParseException("More than 1 parameter in Abk-template: " + abk);
-		if (!KontextShortcutMapper.getShortcuts().containsKey(abk))
-			throw new ParseException("Unknown shortcut in Abk-template: " + abk);
 		MeaningKontext kontext = new MeaningKontext();
 		kontext.setParts(Collections.singletonList(new MeaningKontext.Part(new RichText(abk), null)));
 		if (rhsSize() == 5) {
@@ -492,6 +496,11 @@ class WiktionarySemantics extends SemanticsBase {
 			kontext.setSuffix(param.getValue());
 		}
 		lhs().put(kontext);
+		return true;
+	}
+	
+	void WpTemplate() {
+	
 	}
 	
 	//=====================================================================
