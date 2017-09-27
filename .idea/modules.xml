@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wiktiopeggynary.iml" filepath="$PROJECT_DIR$/wiktiopeggynary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiktiopeggynary.iml" filepath="$PROJECT_DIR$/.idea/modules/wiktiopeggynary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiktiopeggynary_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wiktiopeggynary_main.iml" group="wiktiopeggynary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wiktiopeggynary_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wiktiopeggynary_test.iml" group="wiktiopeggynary" />
     </modules>
   </component>
 </project>
