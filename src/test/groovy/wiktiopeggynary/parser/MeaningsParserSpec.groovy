@@ -168,7 +168,7 @@ class MeaningsParserSpec extends ParserSpecBase {
         meaning.text.components[0] == new PlainText("das Kennenlernen")
     }
 
-    def "ref-elements should be ignored"() {
+    def "ref-elements should be ignored: element without attributes"() {
         when:
         def entry = parseWiktionaryEntryPage("Müller").wiktionaryEntries[1]
         def meaning = entry.meanings[0]
@@ -179,8 +179,17 @@ class MeaningsParserSpec extends ParserSpecBase {
                 " mit etwa 10,6% Anteil und über 600.000 Namenträgern häufigster Familienname in Deutschland")
     }
 
+    def "ref-elements should be ignored: element with attribute"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry("Weltchronik", 0)
+
+        then:
+        PlainText lastComp = meaning.text.components.last() as PlainText
+        lastComp.text.endsWith("historisch wird ")
+    }
+
     private Meaning getMeaningFromWiktionaryEntry(String lemma, int meaningIdx) {
         def entry = parseWiktionaryEntryPage(lemma).wiktionaryEntries[0]
-        return entry.getMeanings().get(meaningIdx)
+        return entry.meanings[meaningIdx]
     }
 }

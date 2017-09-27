@@ -1,0 +1,47 @@
+== Weltchronik ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Weltchronik
+|Nominativ Plural=Weltchroniken
+|Genitiv Singular=Weltchronik
+|Genitiv Plural=Weltchroniken
+|Dativ Singular=Weltchronik
+|Dativ Plural=Weltchroniken
+|Akkusativ Singular=Weltchronik
+|Akkusativ Plural=Weltchroniken
+}}
+
+{{Worttrennung}}
+:Welt·chro·nik, {{Pl.}}  Welt·chro·ni·ken
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈvɛltˌkʀoːnɪk}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] ''Geschichtsschreibung:'' eine mittelalterliche Art der Geschichtsschreibung, die im Gegensatz zu den [[Annalen]] immer mit der Erschaffung der Welt beginnt und die in der Zeit des jeweiligen Verfassers historisch wird <ref name="wc"> nach {{Lit-Herder: Der Neue Herder in 2 Bänden}}, Band 2, Spalte 4833, Artikel Weltchronik </ref>
+
+{{Herkunft}}
+:[[Determinativkompositum]] aus den Substantiven [[Welt]] und [[Chronik]]
+
+{{Beispiele}}
+:[1] Mittelalterliche Beispiele für ''Weltchroniken'' bieten folgende Autoren: [[w:Regino von Prüm|Regino von Prüm]], [[w:Hermann von Reichenau|Hermann]] und [[w:Berthold von Reichenau|Berthold von Reichenau]], [[w:Otto von Freising|Otto von Freising]] oder die [[w:Sächsische Weltchronik|Sächsische Weltchronik]]. <ref name="wc"/>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|}}
+|Ü-rechts=
+*{{fr}}: [] {{Ü|fr|}}
+*{{hu}}: [1] {{Ü|hu|világtörténelem}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Weltchronik}}
+:[1] {{Ref-Grimm|Weltchronik}}
+:[1] {{Ref-DWDS|Weltchronik}}
+:[1] {{Ref-Canoo|Weltchronik}}
+:[1] {{Ref-UniLeipzig|Weltchronik}}
+
+{{Quellen}}

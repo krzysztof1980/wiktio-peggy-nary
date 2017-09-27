@@ -145,7 +145,7 @@ BR = "<br" Space "/>" ;
 Comment         = CommentStart _++ CommentEnd Space ;
 CommentStart    = "<!--" Space ;
 CommentEnd      = "-->" Space ;
-Reference       = "<ref>" _*+ "</ref>" ;
+Reference       = "<ref" (">" / Space _*+ ">") _*+ "</ref>" ;
 
 //------------------------------------------------------------------------------
 // Common expressions

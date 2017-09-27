@@ -1,0 +1,116 @@
+== Dreieck ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Dreieck
+|Nominativ Plural=Dreiecke
+|Genitiv Singular=Dreieckes
+|Genitiv Singular*=Dreiecks
+|Genitiv Plural=Dreiecke
+|Dativ Singular=Dreieck
+|Dativ Singular*=Dreiecke
+|Dativ Plural=Dreiecken
+|Akkusativ Singular=Dreieck
+|Akkusativ Plural=Dreiecke
+|Bild=Regular triangle.svg|mini|1|ein gleichseitiges ''Dreieck''
+}}
+
+{{Nicht mehr gültige Schreibweisen}}
+:[[Dreiekk]], [[Dreyekk]], [[Dreyeck]], [[Dreyecke]]
+
+{{Alternative Schreibweisen}}
+:''umgangssprachlich:'' [[3-Eck]]
+
+{{Worttrennung}}
+:Drei·eck, {{Pl.}} Drei·ecke
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈdʀaɪ̯ˌʔɛk}}
+:{{Hörbeispiele}} {{Audio|De-Dreieck.ogg}}, {{Audio|De-at-Dreieck.ogg|spr=at}}
+
+{{Bedeutungen}}
+:[1] {{WP|geometrische Figur}}, bei der drei nicht auf einer [[Geraden]] gelegene [[Punkte]] ([[Ecken]]) durch [[Strecken]] ([[Seiten]]) verbunden sind, sodass der entstandene [[Linienzug]] eine zusammenhängende Fläche [[umschließt]]
+
+{{Herkunft}}
+:[[Determinativkompositum]], zusammengesetzt aus ''[[drei]]'' und dem Substantiv ''[[Ecke]]''
+:Seit dem 16. Jahrhundert belegt; [[Rückbildung]] aus dem Adjektiv ''[[dreieckig]]''<ref>{{Lit-Pfeifer: Etymologisches Wörterbuch|V=|A=7}}, Seite 242, Eintrag „drei“</ref><ref>{{Lit-Duden: Herkunftswörterbuch|A=2}}, Seite 136, Eintrag „drei“</ref>
+
+{{Synonyme}}
+:[1] [[Trigon]]; ''veraltet:'' [[Dreiwinkel]], [[Triangel]]
+
+{{Gegenwörter}}
+:[1] alle anderen Vielecke, z.&nbsp;B.: [[Viereck]], [[Fünfeck]], [[Sechseck]]
+
+{{Oberbegriffe}}
+:[1] [[Vieleck]] ([[Polygon]])
+
+{{Beispiele}}
+:[1] Die Summe aller Winkel im ''Dreieck'' beträgt 180 Grad.
+:[1] „Die Kongruenzsätze für ''Dreiecke'' sind Sätze der euklidischen Geometrie.“<ref>{{Literatur | Herausgeber=Eberhard Zeidler | Titel=Springer-Taschenbuch der Mathematik  |Auflag=3. | Verlag=Springer Spektrum| Ort= | Jahr=2012 | ISBN=978-3835101234 | Seiten=664}}</ref>
+
+{{Redewendungen}}
+:[1] [[im Dreieck springen]], [[im Dreieck hüpfen]] – sehr wütend sein
+
+{{Charakteristische Wortkombinationen}}
+:[1] [[allgemeines]]/ [[beliebiges]]/ [[ungleichseitiges]] ''Dreieck''; [[sphärisches]] ''Dreieck''
+:[1] [[gleichseitiges]]/ [[gleichschenkliges]]/ [[unregelmäßiges]]/ [[rechtwinkliges]]/ [[schiefwinkliges]] ([[spitzwinkliges]]/ [[spitzes]], [[stumpfwinkliges]]/ [[stumpfes]]) ''Dreieck''
+:[1] [[ähnliche]]/ [[kongruente]] ''Dreiecke''
+
+{{Wortbildungen}}
+:[[dreieckig]]
+:[[Dreieckfenster]], [[Dreieckform]]/ [[Dreiecksform]], [[Dreieckfunktion]]/ [[Dreiecksfunktion]], [[Dreieckpyramide]], [[Dreiecksarten]], [[Dreiecksfläche]], [[Dreiecksformation]], [[Dreiecksgeometrie]], [[Dreiecksgraph]], [[Dreieckskongruenz]], [[Dreiecksmatrix]], [[Dreiecksmessung]], [[Dreiecksnetz]], [[Dreiecksseite]], [[Dreiecksungleichung]], [[Dreiecksverteilung]], [[Dreieckszahl]]
+:[[Dreiecksband]], [[Dreiecksbau]], [[Dreiecksbein]], [[Dreiecksbetrug]], [[Dreiecksbeziehung]], [[Dreieckschaltung]], [[Dreieckschild]], [[Dreieckschwingung]], [[Dreiecksdiagramm]], [[Dreiecksflug]], [[Dreiecksgeschichte]], [[Dreieckshandel]], [[Dreieckskomödie]], [[Dreieckskomposition]], [[Dreieckskrabbe]], [[Dreiecksmanöver]], [[Dreiecksnatter]], [[Dreiecksnebel]], [[Dreieckssaat]]/ [[Dreiecksaussaat]], [[Dreieckspinne]]/ [[Dreiecksspinne]], [[Dreieckstuch]]/ [[Dreiecktuch]], [[Dreiecksverhältnis]], [[Dreieckzielen]]
+:[[Fußpunktdreieck]], [[Höhenfußpunktdreieck]], [[Kugeldreieck]], [[Polardreieck]]
+:[[Anhängerdreieck]], [[Autobahndreieck]], [[Bermudadreieck]], [[Frühlingsdreieck]], [[Geodreieck]], [[Giebeldreieck]], [[Gleisdreieck]], [[Karotisdreieck]], [[Leistendreieck]], [[Pannendreieck]], [[Schamdreieck]], [[Sommerdreieck]], [[Todesdreieck]], [[Warndreieck]], [[Winterdreieck]], [[Zeichendreieck]]
+
+{{Absatz}}
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{ar}}: [1] {{Üt|ar|مثلث|}}
+*{{hy}}: [1] {{Üt|hy|եռանկիւնի|jerankiuni}}
+*{{bg}}: [1] {{Üt|bg|триъгълник|tri'ăgălnik}} {{m}}
+*{{eu}}: [1] {{Ü|eu|hiruki}}, {{Ü|eu|triangelu}}
+*{{da}}: [1] {{Ü|da|trekant}} {{u}}
+*{{en}}: [1] {{Ü|en|triangle}}
+*{{fo}}: [1] {{Ü|fo|tríkantur}} {{m}}
+*{{fi}}: [1] {{Ü|fi|kolmio}}
+*{{fr}}: [1] {{Ü|fr|triangle}}
+*{{ka}}: [1] {{Üt|ka|სამკუთხედი|samkutchedi}}
+*{{el}}: [1] {{Üt|el|τρίγωνο|trígono}} {{n}}
+*{{id}}: [1] {{Ü|id|segitiga}}
+*{{ia}}: [1] {{Ü|ia|triangulo}}
+*{{is}}: [1] {{Ü|is|þríhyrningur}} {{m}}
+*{{it}}: [1] {{Ü|it|triangolo}}
+*{{ja}}: [1] {{Üt|ja|三角形|さんかくけい, sankakukei}}
+|Ü-rechts=
+*{{ca}}: [1] {{Ü|ca|triangle}} {{m}}
+*{{ku}}: [1] {{Ü|ku|sêgoşe}} {{f}}
+*{{la}}: [1] {{Ü|la|triangulum}} {{n}}
+*{{nl}}: [1] {{Ü|nl|driehoek}}
+*{{no}}: [1] {{Ü|no|trekant}} {{m}}
+*{{pl}}: [1] {{Ü|pl|trójkąt}}
+*{{pt}}: [1] {{Ü|pt|triângulo}}
+*{{ru}}: [1] {{Üt|ru|треугольник|treugólnik}}
+*{{sv}}: [1] {{Ü|sv|triangel}}, {{Ü|sv|trehörning}}
+*{{sr}}: [1] {{Ü|sr|троугао}}
+*{{sk}}: [1] {{Ü|sk|trojuhoľník}}
+*{{sl}}: [1] {{Ü|sl|trikotnik}}
+*{{es}}: [1] {{Ü|es|triángulo}}
+*{{cs}}: [1] {{Ü|cs|trojúhelník}}
+*{{tr}}: [1] {{Ü|tr|üçgen}}
+*{{hu}}: [1] {{Ü|hu|háromszög}}
+|Dialekttabelle=
+*Schweizerdeutsch: [[Drüüeck]]
+|D-rechts=
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Dreieck}}
+:[1] {{Wikipedia|Dreieck (Begriffsklärung)}}
+:[1] {{Ref-Duden|Dreieck}}
+:[1] {{Ref-DWDS|Dreieck}}
+:[1] {{Ref-Canoo|Dreieck}}
+:[1] {{Ref-UniLeipzig|Dreieck}}
+
+{{Quellen}}
