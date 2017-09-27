@@ -14,7 +14,6 @@ import wiktiopeggynary.model.markup.RichText
 class Meaning {
 
     List<ItemNumber> numbers
-    MeaningKontext kontext
     RichText text
     final List<Meaning> subMeanings = new ArrayList<>()
 

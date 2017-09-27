@@ -19,7 +19,6 @@ import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.markup.*;
 import wiktiopeggynary.model.meaning.KontextShortcutMapper;
 import wiktiopeggynary.model.meaning.Meaning;
-import wiktiopeggynary.model.meaning.MeaningKontext;
 import wiktiopeggynary.model.substantiv.*;
 import wiktiopeggynary.model.translation.Translation;
 import wiktiopeggynary.model.translation.TranslationMeaning;
@@ -311,8 +310,8 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent* EOL
-	//                0            1               2         3         4..n-2       n-1
+	//  Meaning = MeaningLvl (ItemNo / "*") RichTextComponent* EOL
+	//                0            1              2..n-2       n-1
 	//-------------------------------------------------------------------
 	void Meaning() {
 		Meaning meaning = new Meaning();
@@ -324,12 +323,9 @@ class WiktionarySemantics extends SemanticsBase {
 		}
 		meaning.setNumbers(numbers);
 		
-		// MeaningKontext
-		meaning.setKontext((MeaningKontext) rhs(2).get());
-		
 		// text
 		RichText text = new RichText();
-		processSequenceOfRichTextComponents(4, rhsSize()-1, text);
+		processSequenceOfRichTextComponents(2, rhsSize()-1, text);
 		meaning.setText(text);
 		
 		if (rhs(0).text().length() == 1) {
@@ -456,6 +452,14 @@ class WiktionarySemantics extends SemanticsBase {
 		lhs().put(rhs(0).get());
 	}
 	
+	void RichTextKTemplate() {
+		lhs().put(rhs(0).get());
+	}
+	
+	void RichTextAbkTemplate() {
+		lhs().put(rhs(0).get());
+	}
+	
 	void RichTextTemplate() {
 		throw new ParseException("Unexpected template in RichText: " + lhs().text());
 	}
@@ -468,15 +472,15 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  Kontext = LT ([Kk] / "Kontext") (SEP TParam)+ RT
-	//            0          1            2     3     n-1
+	//  KTemplate = LT ([Kk] / "Kontext") (SEP TParam)+ RT
+	//              0          1            2     3     n-1
 	//=====================================================================
-	void Kontext() {
+	void KTemplate() {
 		List<TemplateParameter> params = new ArrayList<>();
 		for (int i = 3; i < rhsSize() - 1; i += 2) {
 			params.add((TemplateParameter) rhs(i).get());
 		}
-		lhs().put(MeaningKontext.fromTemplate(params));
+		lhs().put(KTemplate.fromTemplate(params));
 	}
 	
 	//=====================================================================
@@ -489,8 +493,8 @@ class WiktionarySemantics extends SemanticsBase {
 			return false;
 		if (rhsSize() > 5)
 			throw new ParseException("More than 1 parameter in Abk-template: " + abk);
-		MeaningKontext kontext = new MeaningKontext();
-		kontext.setParts(Collections.singletonList(new MeaningKontext.Part(new RichText(abk), null)));
+		KTemplate kontext = new KTemplate();
+		kontext.setParts(Collections.singletonList(new KTemplate.Part(new RichText(abk), null)));
 		if (rhsSize() == 5) {
 			TemplateParameter param = (TemplateParameter) rhs(3).get();
 			kontext.setSuffix(param.getValue());

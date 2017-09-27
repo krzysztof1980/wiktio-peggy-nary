@@ -1,9 +1,6 @@
 package wiktiopeggynary.model.visitor;
 
-import wiktiopeggynary.model.markup.CursiveBlock;
-import wiktiopeggynary.model.markup.InternalLink;
-import wiktiopeggynary.model.markup.PlainText;
-import wiktiopeggynary.model.markup.RichText;
+import wiktiopeggynary.model.markup.*;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -17,4 +14,6 @@ public interface RichTextComponentVisitor {
 	void visit(CursiveBlock cursiveBlock);
 
 	void visit(InternalLink internalLink);
+	
+	void visit(KTemplate kTemplate);
 }

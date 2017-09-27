@@ -3,7 +3,6 @@ package wiktiopeggynary.parser
 import spock.lang.Unroll
 import wiktiopeggynary.model.markup.*
 import wiktiopeggynary.model.meaning.Meaning
-import wiktiopeggynary.model.meaning.MeaningKontext
 
 /**
  * @author Krzysztof Witukiewicz
@@ -11,7 +10,7 @@ import wiktiopeggynary.model.meaning.MeaningKontext
 @Unroll
 class MeaningsParserSpec extends ParserSpecBase {
 
-    def "without Kontext"() {
+    def "test text"() {
         given:
         def text = new RichText(new PlainText("nach Einfluss oder Aufgabe gestaffeltes "),
                                 new InternalLink.Builder().withPageTitle("System").build(),
@@ -23,78 +22,75 @@ class MeaningsParserSpec extends ParserSpecBase {
         def meaning = getMeaningFromWiktionaryEntry("Staat", 0)
 
         then:
-        meaning.kontext == null
         meaning.text == text
     }
 
-    def "plain text-Kontext"() {
+    def "plain text-KTemplate"() {
         given:
-        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("Politik"))],
-                                         suffix: new RichText(":"))
+        def kTemplate = new KTemplate(parts: [new KTemplate.Part(text: new RichText("Politik"))],
+                                      suffix: new RichText(":"))
 
         expect:
-        getMeaningFromWiktionaryEntry("Staat", 1).kontext == kontext
+        getMeaningFromWiktionaryEntry("Staat", 1).text.components[0] == kTemplate
     }
 
-    def "rich text-Kontext"() {
+    def "rich text-KTemplate"() {
         given:
-        def kontext = new MeaningKontext(parts: [new MeaningKontext.Part(
+        def kTemplate = new KTemplate(parts: [new KTemplate.Part(
                 text: new RichText(new InternalLink.Builder().withPageTitle("umgangssprachlich").build(),
                                    new PlainText(", nur "),
                                    new InternalLink.Builder().withPageTitle("Plural").build()))],
-                                         suffix: new RichText(":"))
+                                      suffix: new RichText(":"))
 
         expect:
-        getMeaningFromWiktionaryEntry("Staat", 2).kontext == kontext
+        getMeaningFromWiktionaryEntry("Staat", 2).text.components[0] == kTemplate
     }
 
-    def "Kontext with multiple parts"() {
+    def "KTemplate with multiple parts"() {
         when:
-        def kontext = getMeaningFromWiktionaryEntry("Bauch", 5).kontext
+        def kTemplate = getMeaningFromWiktionaryEntry("Bauch", 5).text.components[0] as KTemplate
 
         then:
-        kontext.parts.size() == 3
-        kontext.parts[0].text == new RichText("ugs.")
-        kontext.parts[0].separator == new RichText("_")
-        kontext.parts[1].text == new RichText("übertr.")
-        kontext.parts[1].separator == new RichText("_")
-        kontext.parts[2].text == new RichText("zu [5]")
-        kontext.parts[2].separator == null
+        kTemplate.parts.size() == 3
+        kTemplate.parts[0].text == new RichText("ugs.")
+        kTemplate.parts[0].separator == new RichText("_")
+        kTemplate.parts[1].text == new RichText("übertr.")
+        kTemplate.parts[1].separator == new RichText("_")
+        kTemplate.parts[2].text == new RichText("zu [5]")
+        kTemplate.parts[2].separator == null
     }
 
-    def "Kontext with loose ordering of parameters"() {
+    def "KTemplate with loose ordering of parameters"() {
         when:
-        def meaning = getMeaningFromWiktionaryEntry("Verpflegung", 0)
+        def kTemplate = getMeaningFromWiktionaryEntry("Verpflegung", 0).text.components[0] as KTemplate
 
         then:
-        meaning.kontext != null
-        meaning.kontext.suffix == new RichText()
-        meaning.kontext.parts.size() == 1
-        def kontextPart = meaning.kontext.parts[0]
+        kTemplate.suffix == new RichText()
+        kTemplate.parts.size() == 1
+        def kontextPart = kTemplate.parts[0]
         kontextPart.text == new RichText("ohne Plural")
         kontextPart.separator == null
     }
 
-    def "Kontext with 'Kontext' as template name"() {
+    def "KTemplate with 'Kontext' as template name"() {
         when:
-        def meaning = getMeaningFromWiktionaryEntry("Distribution", 0)
+        def kTemplate = getMeaningFromWiktionaryEntry("Distribution", 0).text.components[0] as KTemplate
 
         then:
-        meaning.kontext != null
-        meaning.kontext.parts.size() == 1
-        meaning.kontext.parts[0].text == new RichText("Wirtschaft")
+        kTemplate.parts.size() == 1
+        kTemplate.parts[0].text == new RichText("Wirtschaft")
     }
 
-    def "Kontext in form of a Abk-template "() {
+    def "Abk-template"() {
         when:
         def entry = parseWiktionaryEntryPage("Steppke").wiktionaryEntries[0]
 
         then:
         entry.meanings.size() == 2
-        entry.meanings[0].kontext == new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("ugs."))],
-                                                        suffix: new RichText(","))
-        entry.meanings[1].kontext == new MeaningKontext(parts: [new MeaningKontext.Part(text: new RichText("ugs."))],
-                                                        suffix: new RichText(":"))
+        entry.meanings[0].text.components[0] == new KTemplate(parts: [new KTemplate.Part(text: new RichText("ugs."))],
+                                                              suffix: new RichText(","))
+        entry.meanings[1].text.components[0] == new KTemplate(parts: [new KTemplate.Part(text: new RichText("ugs."))],
+                                                              suffix: new RichText(":"))
     }
 
     def "citation as details"() {
@@ -160,7 +156,6 @@ class MeaningsParserSpec extends ParserSpecBase {
 
         then:
         meaning.numbers == [ItemNumber.singleNumber("1")]
-        meaning.kontext == null
         meaning.text == new RichText("Entfernung, die das Licht in einer Woche im Vakuum zurücklegt")
     }
 

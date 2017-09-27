@@ -65,9 +65,8 @@ MiddleSection = (!KopfStart (FlexionTable / MeaningsTextbaustein / Line))* ;
 MeaningsTextbaustein = MeaningsKopf MeaningList ;
 MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
 MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
-Meaning = MeaningLvl (ItemNo / "*") MeaningKontext Space RichTextComponent*+ EOL {};
+Meaning = MeaningLvl (ItemNo / "*") RichTextComponent*+ EOL {};
 MeaningLvl = ":"+ ;
-MeaningKontext = (Kontext / AbkTemplate)? {};
 
 //------------------------------------------------------------------------------
 // Translations
@@ -102,6 +101,8 @@ RichTextComponent = Link {RichtTextLink}
                   / CursiveText {RichTextCursiveText}
                   / Reference
                   / Space QsTemplate Space
+                  / KTemplate {RichTextKTemplate}
+                  / AbkTemplate {RichTextAbkTemplate}
                   / Template {RichTextTemplate}
                   / !EOL _ {RichTextPlainText};
 
@@ -125,14 +126,10 @@ TParamName = (!(SEP / RT / EQ) _)+ ;
 TPosParam = (!(SEP / RT) RichTextComponent)* {};
 TextualTParam = (!(SEP / RT) _)+ ;
 
-// Kontext template
-Kontext = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
-
-AbkTemplate = LT AbkTemplateName (SEP TParam)* RT {&} ;
-AbkTemplateName = (!(SEP / RT) _)+ ;
-
+// Concrete templates
+KTemplate = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
+AbkTemplate = LT TName (SEP TParam)* RT {&};
 QsTemplate = LT "QS Bedeutungen" (SEP TPosParam)* RT ;
-
 WpTemplate = LT "W" "P"? (SEP TextualTParam)+ RT {};
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings

@@ -1,9 +1,6 @@
 package wiktiopeggynary.model.visitor;
 
-import wiktiopeggynary.model.markup.CursiveBlock;
-import wiktiopeggynary.model.markup.InternalLink;
-import wiktiopeggynary.model.markup.PlainText;
-import wiktiopeggynary.model.markup.RichText;
+import wiktiopeggynary.model.markup.*;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -24,5 +21,10 @@ public abstract class DefaultRichTextComponentVisitor implements RichTextCompone
 
 	@Override
 	public void visit(InternalLink internalLink) {
+	}
+	
+	@Override
+	public void visit(KTemplate kTemplate) {
+	
 	}
 }

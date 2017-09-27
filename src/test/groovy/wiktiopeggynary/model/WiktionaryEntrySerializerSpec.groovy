@@ -31,8 +31,7 @@ class WiktionaryEntrySerializerSpec extends ParserSpecBase {
         !entry.meanings.isEmpty()
         def meaning = entry.meanings[4]
         meaning.numbers == [ItemNumber.singleNumber("5")]
-        meaning.kontext.parts.size() == 2
-        meaning.text.components.size() == 4
+        meaning.text.components.size() == 5
     }
 
     def "complex substantiv"() {

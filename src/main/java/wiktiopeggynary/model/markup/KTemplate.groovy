@@ -1,11 +1,8 @@
-package wiktiopeggynary.model.meaning
+package wiktiopeggynary.model.markup
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import wiktiopeggynary.model.markup.NamedTemplateParameter
-import wiktiopeggynary.model.markup.PositionalTemplateParameter
-import wiktiopeggynary.model.markup.RichText
-import wiktiopeggynary.model.markup.TemplateParameter
+import wiktiopeggynary.model.visitor.RichTextComponentVisitor
 
 import java.util.stream.Collectors
 import java.util.stream.IntStream
@@ -15,13 +12,13 @@ import java.util.stream.IntStream
  */
 @ToString(includePackage = false, ignoreNulls = true)
 @EqualsAndHashCode
-class MeaningKontext {
+class KTemplate implements RichTextComponent {
 
     List<Part> parts
     RichText suffix
 
-    static MeaningKontext fromTemplate(List<TemplateParameter> params) {
-        MeaningKontext meaningKontext = new MeaningKontext()
+    static KTemplate fromTemplate(List<TemplateParameter> params) {
+        KTemplate meaningKontext = new KTemplate()
         meaningKontext.parts = params.stream()
                                      .filter { p -> p instanceof PositionalTemplateParameter }
                                      .map { p -> PositionalTemplateParameter.class.cast(p) }
@@ -51,6 +48,21 @@ class MeaningKontext {
         }
 
         return meaningKontext
+    }
+
+    @Override
+    void accept(RichTextComponentVisitor visitor) {
+        visitor.visit(this)
+    }
+
+    @Override
+    Optional<? extends RichTextComponent> mergeWith(RichTextComponent component) {
+        return Optional.empty()
+    }
+
+    @Override
+    boolean isEmpty() {
+        return false
     }
 
     @ToString(includePackage = false, ignoreNulls = true)
