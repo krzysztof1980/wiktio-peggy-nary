@@ -53,6 +53,13 @@ class KTemplate implements RichTextComponent {
     @Override
     void accept(RichTextComponentVisitor visitor) {
         visitor.visit(this)
+        parts.each { p ->
+            p.text.accept(visitor)
+            if (p.separator != null)
+                p.separator.accept(visitor)
+        }
+        if (suffix != null)
+            suffix.accept(visitor)
     }
 
     @Override

@@ -1,6 +1,8 @@
 package wiktiopeggynary.model.visitor;
 
 import wiktiopeggynary.model.markup.*;
+import wiktiopeggynary.model.substantiv.MultiGender;
+import wiktiopeggynary.model.translation.Translation;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -25,6 +27,16 @@ public abstract class DefaultRichTextComponentVisitor implements RichTextCompone
 	
 	@Override
 	public void visit(KTemplate kTemplate) {
+	
+	}
+	
+	@Override
+	public void visit(Translation translation) {
+	
+	}
+	
+	@Override
+	public void visit(MultiGender gender) {
 	
 	}
 }

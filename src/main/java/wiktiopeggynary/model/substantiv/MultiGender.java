@@ -1,14 +1,18 @@
 package wiktiopeggynary.model.substantiv;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.apache.commons.lang3.ArrayUtils;
+import wiktiopeggynary.model.markup.RichTextComponent;
+import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
 
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
  * @author Krzysztof Witukiewicz
  */
-public class MultiGender {
+public class MultiGender implements RichTextComponent {
 
     private Gender[] genders;
 
@@ -35,7 +39,25 @@ public class MultiGender {
     public boolean isSameAs(Gender gender) {
         return genders != null && genders.length == 1 && genders[0].equals(gender);
     }
-
+	
+	@Override
+	public void accept(RichTextComponentVisitor visitor) {
+		visitor.visit(this);
+	}
+	
+	@Override
+	public Optional<MultiGender> mergeWith(RichTextComponent component) {
+		if (!(component instanceof MultiGender))
+			return Optional.empty();
+		MultiGender otherGender = (MultiGender) component;
+		return Optional.of(new MultiGender(ArrayUtils.addAll(genders, otherGender.genders)));
+	}
+	
+	@Override
+	public boolean isEmpty() {
+		return genders != null && genders.length > 0;
+	}
+    
     @Override
     public String toString() {
         return Arrays.stream(genders)

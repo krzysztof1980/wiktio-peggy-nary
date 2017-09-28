@@ -1,0 +1,150 @@
+{{Siehe auch|[[spiel]]}}
+== Spiel ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Spiel
+|Nominativ Plural=Spiele
+|Genitiv Singular=Spiels
+|Genitiv Singular*=Spieles
+|Genitiv Plural=Spiele
+|Dativ Singular=Spiel
+|Dativ Singular*=Spiele
+|Dativ Plural=Spielen
+|Akkusativ Singular=Spiel
+|Akkusativ Plural=Spiele
+|Bild=Rommee1.jpg|250px|1, 7|''Spiel'' mit Karten
+}}
+
+{{Worttrennung}}
+:Spiel, {{Pl.}} Spie·le
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʃpiːl}}
+:{{Hörbeispiele}} {{Audio|De-Spiel.ogg}}, {{Audio|De-at-Spiel.ogg|spr=at}}
+:{{Reime}} {{Reim|iːl|Deutsch}}
+
+{{Bedeutungen}}
+:[1] Tätigkeit ohne Zweck und aus Freude
+:[2] {{K|Sport}} [[Aufführung]] mit sportlichem oder künstlerischem Charakter
+:[3] {{K|Musik}} {{kPl.}} Betätigen von Musikinstrumenten und Musikwiedergabegeräten, Musizieren
+:[4] gefährliches Treiben, nicht öffentliche Absprache
+:[5] lebhafte, harmonische Bewegung mehrerer gleichartiger oder zusammengehöriger Teile, Elemente
+:[6] {{K|Mechanik}} freie Beweglichkeit von mechanischen Teilen
+:[7] Satz von Karten bzw. Spielfiguren und Spielbrett
+:[8] {{K|Spieltheorie}} eine abstrakte strategische Situation
+:[9] ''ohne Plural:'' künstlerische Darbietung durch Gestaltung einer Rolle
+:[10] {{K|Linguistik}} [[Redensart]], [[Wendung]]
+
+{{Herkunft}}
+:{{gmh.}}, {{goh.}} ''spil'', belegt seit dem 9. Jahrhundert; weitere Herkunft unbekannt<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „Spiel“, Seite 865.</ref>
+
+{{Synonyme}}
+:[2] [[Aufführung]], [[Darbietung]], [[Vorführung]], [[Wettbewerb]], [[Wettkampf]]
+:[3] [[Freizeitbeschäftigung]], [[musizieren|Musizieren]]
+:[5] [[Zusammenspiel]]
+:[6] [[Spielraum]]
+
+{{Gegenwörter}}
+:[1] [[Arbeit]], [[Ernst]]
+
+{{Verkleinerungsformen}}
+:[[Spielchen]]
+
+{{Unterbegriffe}}
+:[?] [[Gedankenspiel]]
+:[1] [[Brettspiel]], [[Ferienspiel]], [[Gesellschaftsspiel]], [[Gewinnspiel]], [[Golfspiel]], [[Gruppenspiel]], [[Hütchenspiel]], [[Kartenspiel]], [[Kinderspiel]], [[Kriegsspiel]], [[Kugelspiel]], [[Minispiel]], [[Rollenspiel]], [[Würfelspiel]]
+:[1] [[Computerspiel]]; [[Handy-Spiel]], [[Onlinespiel]], [[Telespiel]], [[Smartphone-Spiel]], [[Videospiel]]
+:[1] [[Defensivspiel]], [[Fesselspiel]], [[Festspiel]], [[Liebesspiel]], [[Passionsspiel]], [[Sexspiel]], [[Offensivspiel]]
+:[1, 2] [[Auftaktspiel]], [[Ballspiel]], [[Foulspiel]], [[Gladiatorenspiel]], [[Kampfspiel]], [[Vorspiel]], [[Zahlenspiel]]
+:[1, 2, 7] [[Abschiedsspiel]], [[Entscheidungsspiel]], [[Freundschaftsspiel]], [[Strategiespiel]], [[Pflichtspiel]], [[Punktspiel]]/[[Punktespiel]], [[Qualifikationsspiel]], [[Testspiel]], [[Turnierspiel]], [[Vorbereitungsspiel]], [[Wiederholungsspiel]]
+:[1, 7] [[Glücksspiel]], [[Lottospiel]], [[Rubbelspiel]], [[Schachspiel]], [[Skatspiel]], [[Tarotspiel]], [[Vexierspiel]], [[Wettspiel]], [[Würfelspiel]]
+:[2] [[Achtelfinalspiel]], [[Anspiel]], [[Aufstiegsspiel]], [[Ausscheidungsspiel]], [[Auswärtsspiel]], [[Benefizspiel]], [[Eröffnungsspiel]], [[Finalspiel]], [[Fußballspiel]], [[Geisterspiel]], [[Gruppenspiel]], [[Halbfinalspiel]], [[Handspiel]], [[Heimspiel]], [[Hinspiel]], [[Hochrisikospiel]], [[Länderspiel]], [[Ligaspiel]], [[Meisterschaftsspiel]], [[Nachholspiel]], [[Olympische Spiele|Olympisches Spiel]], [[Passspiel]], [[Pflichtspiel]], [[Playoff-Spiel]], [[Pokalspiel]], [[Rückspiel]], [[Saisonspiel]], [[Sommerspiel]], [[Umschaltspiel]], [[Viertelfinalspiel]], [[Vorrundenspiel]], [[Weltmeisterschaftsspiel]], [[Wettkampfspiel]], [[Winterspiel]]
+:[3] [[Anschlag]], [[Bogenstrich]], [[Flötenspiel]], [[Gitarrespiel]], [[Glockenspiel]], [[Klavierspiel]], [[Orgelspiel]], [[Schlagzeugspiel]], [[Zitherspiel]]
+:[5] [[Farbenspiel]]
+:[8] [[Nullsummenspiel]], [[Vielsummenspiel]]
+:[9] [[Hörspiel]], [[Lustspiel]], [[Puppenspiel]], [[Schauspiel]], [[Schattenspiel]], [[Singspiel]]
+:[10] [[Wortspiel]]
+
+{{Beispiele}}
+:[1] Wir dachten uns immer neue ''Spiele'' aus.
+:[1] „Es gab keine ''Spiele'', Spaziergänge oder Siestas mehr.“<ref>{{Literatur | Autor= François Garde  | Titel= Was mit dem weißen Wilden geschah | TitelErg= Roman | Verlag= Beck | Ort= München | Jahr= 2014 | ISBN= 978-3-406-66304-8}}, Seite 109. Französisches Original „Ce qu'il advint du sauvage blanc“ 2012. ''weißen Wilden'' im Titel kursiv.</ref>
+:[2] Das ''Spiel'' dauert 90 Minuten.
+:[3] Ihr ''Spiel'' ließ noch zu wünschen übrig.
+:[4] Er treibt ein gefährliches ''Spiel.''
+:[5] „Ein definiert großes ''Spiel'' zwischen zwei Einzelteilen ist durch eine geeignete Tolerierung der Einzelteile erreichbar.“<ref>{{Internetquelle | url=http://de.wikipedia.org/ | titel=Spiel | hrsg=Wikipedia | datum=2013-12-25 | archiv-url=http://de.wikipedia.org/wiki/Spiel (Technik) | archiv-datum=2013-12-25 | zugriff=2014-11-29 | sprache=Deutsch | format=HTML }}</ref>
+:[6] Das Rad hat ''Spiel.''
+:[7] Ich habe drei ''Spiele'' Skatkarten gekauft.
+:[8] Nach der eingehender Analyse stellte sich heraus, dass dieses ''Spiel'' ein Nullsummenspiel ist.
+:[9] Sie spielt ihre Rolle im ''Spiel'' fabelhaft und beweist immer wieder, dass sie eine außergewöhnliche Schauspielerin ist.
+:[10] Das ''Spiel'' hat sich gewendet, und nun ist er mit einmal der Bittsteller.
+
+{{Redewendungen}}
+:[[auf dem Spiel stehen]], [[aufs Spiel setzen]], [[aus dem Spiel bleiben]], [[das Spiel zu weit treiben]], [[die Hand im Spiel haben]], [[gute Miene zum bösen Spiel machen]], [[leichtes Spiel haben]], [[mit jemandem sein Spiel treiben]]
+:[[im Spiel sein]]
+:[4] [[das Spiel ist aus]]! (z.B.: Deine kriminellen Machenschaften sind aufgedeckt!), [[ein Spiel mit dem Feuer]]
+:[10] [[das Spiel hat sich gewendet]]
+
+{{Charakteristische Wortkombinationen}}
+:[1] mit einem ''Spiel'' anfangen / aufhören; das ''Spiel''  beginnen / beenden; sich ein ''Spiel'' ausdenken; ein ''Spiel'' vermarkten; Brot und ''Spiele''
+:[2] Sport und ''Spiel,'' die Olympischen ''Spiele''; ''Spiel'' um Platz 3/5/7/9/11/13/15/17/19/21/23
+:[2] ein [[auswärtig]]es ''Spiel,'' das [[entscheidend]]e ''Spiel,'' ein [[fair]]es ''Spiel,'' ein {{Audio|De-packendes Spiel.ogg|->}} [[packend]]es ''Spiel,'' ein [[spannend]]es ''Spiel,'' ein [[unfair]]es ''Spiel,'' ein [[unterhaltsam]]es ''Spiel''
+:[4] ein [[abgekartet]]es ''Spiel,'' ein [[betrügerisch]]es ''Spiel,'' ein [[falsch]]es ''Spiel'' [[treiben]], ein [[gefährlich]]es ''Spiel'' [[treiben]], ein [[riskant]]es ''Spiel'' [[treiben]]
+:[7] [[das königliche Spiel]] (Schach)
+
+{{Wortbildungen}}
+:{{Wortbildung|Adjektive}} [[spielend]], [[spielstark]]
+:{{Wortbildung|Substantive}} [[Doppelspiel]], [[Gespiele]], [[Langspielplatte]],  [[Spielabbruch]], [[Spielabend]]/[[Spieleabend]], [[Spielalter]], [[Spielanteil]], [[Spielart]], [[Spielausgang]], [[Spielautomat]], [[Spielball]], [[Spielbank]], [[Spielbeginn]], [[Spielbein]], [[Spielbetrieb]], [[Spielbrett]], [[Spielcomputer]], [[Spieldauer]], [[Spieldesign]], [[Spieldose]], [[Spieleffekt]], [[Spielende]], [[Spieler]], [[Spielerlebnis]], [[Spielfeld]], [[Spielfigur]], [[Spielfilm]], [[Spielfluss]], [[Spielfreude]], [[Spielgefährte]], [[Spielgeld]], [[Spielgerät]], [[Spielgeschehen]], [[Spielhalle]], [[Spielhandlung]], [[Spielhölle]], [[Spielhumor]], [[Spielkamerad]], [[Spielkarte]], [[Spielkasino]], [[Spielklasse]], [[Spielkonsole]], [[Spielkram]], [[Spielleidenschaft]], [[Spielleiter]], [[Spielmacher]], [[Spielmanipulation]], [[Spielmann]], [[Spielmarke]], [[Spielmechanik]], [[Spielminute]], [[Spielort]], [[Spielothek]], [[Spielphase]], [[Spielplan]], [[Spielplatz]], [[Spielratte]], [[Spielraum]], [[Spielregel]], [[Spielsachen]], [[Spielschuld]], [[Spielschule]], [[Spielspaß]], [[Spielstand]], [[Spielstil]], [[Spielstraße]], [[Spielsucht]], [[Spieltag]], [[Spielteufel]], [[Spieltiefe]], [[Spieltisch]], [[Spieltrieb]], [[Spieluhr]], [[Spielverbot]], [[Spielverderber]], [[Spielvereinigung]], [[Spielvergnügen]], [[Spielverlauf]], [[Spielwaren]], [[Spielweise]], [[Spielwelt]], [[Spielwerk]], [[Spielwiese]], [[Spielwitz]], [[Spielwürfel]], [[Spielzeit]], [[Spielzeug]], [[Spielzimmer]], [[Spielzug]], [[Trinkspiel]], [[Wasserspiel]]
+:{{Wortbildung|Verb}} [[spielen]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{sq}}: [1] {{Ü|sq|lojë}} {{f}}
+*{{ar}}: [1] {{Üxx5|ar|laʕbun|لَعْبٌ|لعب}} {{m}}
+*{{bg}}: [1] {{Üt|bg|игра|igrá}} {{f}}
+*{{en}}: [1, 3, 4] {{Ü?|en|game}}; [1, 2] {{Ü|en|playing}}; [3, 6] {{Ü|en|play}}; [7] {{Ü|en|deck}}, {{Ü|en|pack}}
+*{{eo}}: [1] {{Ü|eo|ludo}}
+*{{fi}}: [1] {{Ü|fi|peli}}
+*{{fr}}: [1] {{Ü|fr|jeu}} {{m}}
+*{{fur}}: [1] {{Ü|fur|zûc}} {{m}}
+*{{el}}: [1, 2, 4] {{Üt|el|παιχνίδι|pechnídi}} {{n}}; [2] {{Üt|el|αγώνας|agónas}} {{m}}; [3] {{Üt|el|παίξιμο|péximo}} {{n}}
+*{{is}}: [1] {{Ü|is|leikur}} {{m}}
+*{{it}}: [1] {{Ü|it|gioco}} {{m}}; [2] (''[[Musik]]'') {{Ü?|it|interpretazione}} {{f}}, {{Ü|it|esecuzione}} {{f}}; [3] [[partita]] {{f}}
+*{{ja}}: [1] {{Üt|ja|遊び|あそび, asobi}}; [3] {{Üt?|ja|試合|しあい, shiai}} (''[[Sport]]'')
+*{{ca}}: [1] {{Ü|ca|joc}} {{m}}
+*{{la}}: [1] {{Ü|la|ludus}} {{m}}
+*{{lt}}: [1] {{Ü|lt|žaidimas}}
+*{{nds}}: [1-3] {{Ü|nds|Speel}} {{n}}
+|Ü-rechts=
+*{{nl}}: [1, 2] {{Ü?|nl|spel}} {{n}}
+*{{no}}:
+**{{nb}}: [1] {{Ü|sv|spill}} {{n}}, {{Ü|sv|lek}} {{m}}
+*{{oc}}: [1] {{Ü|oc|jòc}} {{m}}
+*{{pl}}: [1, 3, 4] {{Ü?|pl|gra}} {{f}}; [7] {{Ü|pl|partia}} {{f}}
+*{{pt}}: [1] {{Ü|pt|jogo}} {{m}}
+*{{ro}}: [1] {{Ü|ro|joc}}
+*{{ru}}: [1–7] {{Üt|ru|игра|igra}} {{f}}
+*{{sv}}: [1] {{Ü|sv|spel}} {{n}}, {{Ü|sv|lek}} {{u}}
+*{{sr}}: [1, 4, 5, 7] {{Üt|sr|игра|igra}}; [2] {{Üt?|sr|музицирање|muziciranje}}; [3] {{Üt|sr|утакмица|utakmica}}, {{Üt|sr|представа|predstava}}; [6] {{Üt|sr|ход|hod}}
+*{{sl}}: [1, 2] {{Ü?|sl|igra}} {{n}}
+*{{es}}: [1] {{Ü|es|juego}} {{m}}
+*{{cs}}: [1–5, 7] {{Ü|cs|hra}} {{f}}; [6] {{Ü|cs|vůle}} {{f}}
+*{{tr}}: [1, 3, 7–10] {{Ü?|tr|oyun}}; [2] {{Ü|tr|çalma}}; [4] {{Ü|tr|oynama}}; [6] {{Ü|tr|boşluk}}
+*{{hu}}: [1] {{Ü|hu|játék}}
+*{{vec}}: [1] {{Ü|vec|zogo}} {{m}}
+*{{cy}}: [1] {{Ü|cy|chwarae}} {{m}}
+}}
+
+{{Referenzen}}
+:[1, 5–7] {{Wikipedia}}
+:[1] {{Ref-Grimm}}
+:[1, 2, 4, 7, 9, 10] {{Ref-DWDS}}
+:[1–3, 5–7, 9, 10] {{Ref-Canoo}}
+:[1, 2, 6] {{Ref-UniLeipzig}}
+:[1–3, 6, 9] {{Ref-FreeDictionary}}
+:[1–10] {{Ref-Duden}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[Siel]], [[spie]], [[spieb]], [[Spier]], [[Spieß]], [[Spill]], [[Stiel]]}}

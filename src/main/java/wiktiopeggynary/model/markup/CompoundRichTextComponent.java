@@ -33,7 +33,7 @@ public abstract class CompoundRichTextComponent implements RichTextComponent {
 	public List<RichTextComponent> getComponents() {
 		return Collections.unmodifiableList(components);
 	}
-
+	
 	@Override
 	public boolean isEmpty() {
 		return components.isEmpty() || components.stream().allMatch(RichTextComponent::isEmpty);

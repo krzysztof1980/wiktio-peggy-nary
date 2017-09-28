@@ -1,0 +1,53 @@
+== Erziehungsziel ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Erziehungsziel
+|Nominativ Plural=Erziehungsziele
+|Genitiv Singular=Erziehungszieles
+|Genitiv Singular*=Erziehungsziels
+|Genitiv Plural=Erziehungsziele
+|Dativ Singular=Erziehungsziel
+|Dativ Singular*=Erziehungsziele
+|Dativ Plural=Erziehungszielen
+|Akkusativ Singular=Erziehungsziel
+|Akkusativ Plural=Erziehungsziele
+}}
+
+{{Worttrennung}}
+:Er·zie·hungs·ziel, {{Pl.}} Er·zie·hungs·zie·le
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ɛɐ̯ˈʦiːʊŋsˌʦiːl}}
+:{{Hörbeispiele}} {{Audio|De-Erziehungsziel.ogg}}
+
+{{Bedeutungen}}
+:[1] eine Erwartung oder ein Ziel, auf das hin eine Erziehungsphilosophie oder ein Erziehungskonzept ausgerichtet ist
+
+{{Herkunft}}
+:[[Determinativkompositum]] aus ''[[Erziehung]],'' [[Fugenelement]] ''[[-s]]'' und ''[[Ziel]]''
+
+{{Synonyme}}
+:[1] [[Erziehungsideal]]
+
+{{Oberbegriffe}}
+:[1] [[Erziehungsnorm]]
+
+{{Beispiele}}
+:[1] Das zentrale ''Erziehungsziel'' der traditionellen christlichen Pädagogik ist der Glaube.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|child-rearing goal}}, {{Ü|en|parenting objective}}, {{Ü|en|parenting goal}}; <br />''Anmerkung: {{Ü|en|educational objective}} und {{Ü|en|educational goal}} bedeuten eher „[[Lernziel]]“ als „Erziehungsziel“''
+|Ü-rechts=
+*{{fr}}: [1] {{Ü|fr|}}
+*{{it}}: [1] {{Ü|it|}}
+*{{sv}}: [1] {{Ü|sv|uppfostringsmål}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Erziehungsziel}}
+:[1] {{Ref-DWDS|Erziehungsziel}}
+:[*] {{Ref-Canoo|Erziehungsziel}}
+:[1] {{Ref-UniLeipzig|Erziehungsziel}}

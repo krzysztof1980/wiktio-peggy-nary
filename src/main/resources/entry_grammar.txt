@@ -54,8 +54,9 @@ AkkPl = "Akkusativ Plural" Space OptDigit "*"? Space "=" Phrase EOL {addAkkPl};
 //==============================================================================
 // Common Wiktionary markup
 //==============================================================================
-Gender = LT GenderTemplateArgument "."? RT Space {};
-GenderTemplateArgument = [mnfu]+ {};
+Gender = LT GenderTemplateArgument "."? RT {};
+GenderTemplateArgument = ("fPl." / "mPl.") {}
+                       / [mnfu]+ {};
 
 MiddleSection = (!KopfStart (FlexionTable / MeaningsTextbaustein / Line))* ;
 
@@ -77,12 +78,11 @@ TranslationsTable = TranslationsTableKopf (LangTranslations / DialectTable / !RT
 TranslationsTableKopf = LT "Ü-Tabelle" Line ;
 LangTranslations = LangLvl Lang ":" Space TranslationMeaning* RestOfLine {addTranslationsForLanguage};
 LangLvl = "*"+ ;
-Lang = LT Phrase RT {};
-TranslationMeaning = ItemNo Translation+ {};
-Translation = TranslationDetails (UeTemplate / UetTemplate) Gender? TranslationDetails (COMMA / SEMICOLON)? Space {};
-TranslationDetails = (CursiveText / Link / (!(ItemNo / UeTemplate / UetTemplate / COMMA / SEMICOLON / EOL) _))* (COMMA / SEMICOLON)?;
-UeTemplate = LT ("Ü" / "Ü?") SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? RT Space {};
-UetTemplate = LT ("Üt" / "Üt?") SEP TParam SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? RT Space {};
+Lang = LT ("pl" / "en" / "fr" / "it" / "es" / "ru") RT {};
+TranslationMeaning = ItemNo TranslationMeaningBody {};
+TranslationMeaningBody = (!(ItemNo) RichTextComponent)+ {};
+UeTemplate =  LT ("Ü?" / "Ü")   SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? RT {};
+UetTemplate = LT ("Üt?" / "Üt") SEP TParam SEP TParam (SEP TParam)? (SEP TParam)? (SEP TParam)? RT {};
 DialectTable = "|Dialekttabelle=" RestOfLine (!RT Line)* ; // ignore it for now
 
 //------------------------------------------------------------------------------
@@ -103,7 +103,9 @@ RichTextComponent = Link {RichtTextLink}
                   / Space QsTemplate Space
                   / KTemplate {RichTextKTemplate}
                   / AbkTemplate {RichTextAbkTemplate}
-                  / Template {RichTextTemplate}
+                  / Gender {RichTextGender}
+                  / (UeTemplate / UetTemplate) {RichTextTranslation}
+                  / UnknownTemplate
                   / !EOL _ {RichTextPlainText};
 
 // Link
@@ -117,7 +119,7 @@ CursiveText = "''" RichTextComponent*+ "''" {};
 // Template
 LT =       "{{" Space ; // Left Template opening
 RT = Space "}}" ; // Right Template closing
-Template = LT TName (SEP TParam)* RT ;
+UnknownTemplate = LT TName (SEP TParam)* RT {};
 TName = (!(SEP / RT) _)+ ;
 TParam = Number     EQ (!(SEP / RT) RichTextComponent)* {} /
 	     TParamName EQ (!(SEP / RT) RichTextComponent)* {} /
@@ -130,7 +132,7 @@ TextualTParam = (!(SEP / RT) _)+ ;
 KTemplate = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
 AbkTemplate = LT TName (SEP TParam)* RT {&};
 QsTemplate = LT "QS Bedeutungen" (SEP TPosParam)* RT ;
-WpTemplate = LT "W" "P"? (SEP TextualTParam)+ RT {};
+WpTemplate = LT ("WP" / "Wikipedia" / "W") (SEP TextualTParam)+ RT {};
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" ItemNoBody "]" Space {};

@@ -10,7 +10,9 @@ public enum Gender {
 	FEMININUM("die", "f"),
 	NEUTRUM("das", "n"),
 	UTRUM("-", "u"),
-	PLURAL("pl.", "0", "x", "pl");
+	PLURAL("pl.", "0", "x", "pl"),
+	M_PLURAL("m Pl.", "mPl."),
+	F_PLURAL("f Pl.", "fPl.");
 	
 	private final String artikel;
 	private final String[] shortcuts;

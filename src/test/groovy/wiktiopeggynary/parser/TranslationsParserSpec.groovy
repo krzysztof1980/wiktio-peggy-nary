@@ -1,9 +1,10 @@
 package wiktiopeggynary.parser
 
 import spock.lang.Unroll
-import wiktiopeggynary.model.markup.ItemNumber
+import wiktiopeggynary.model.markup.*
 import wiktiopeggynary.model.substantiv.Gender
 import wiktiopeggynary.model.substantiv.MultiGender
+import wiktiopeggynary.model.translation.Translation
 
 /**
  * @author Krzysztof Witukiewicz
@@ -13,16 +14,19 @@ class TranslationsParserSpec extends ParserSpecBase {
 
     def "translation meaning numbers"() {
         when:
-        def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
+        def entry = parseWiktionaryEntryPage("Bauch").wiktionaryEntries[0]
 
         then: "the meaning number is an integer"
-        entry.translations["ar"][0].meaningNumbers == [ItemNumber.singleNumber("1")]
+        entry.translations["en"][0].meaningNumbers == [ItemNumber.singleNumber("1")]
 
         then: "the meaning number is a list of integers"
-        entry.translations["fo"][0].meaningNumbers == [ItemNumber.singleNumber("1"), ItemNumber.singleNumber("2")]
+        entry.translations["en"][2].meaningNumbers == [ItemNumber.singleNumber("1"), ItemNumber.singleNumber("3")]
 
-        and: "the meaning number is a list of range and integer"
-        entry.translations["fr"][0].meaningNumbers == [ItemNumber.range("1", "2"), ItemNumber.singleNumber("4")]
+        then: "the meaning number is a list of integers and range"
+        entry.translations["en"][1].meaningNumbers == [ItemNumber.singleNumber("1"),
+                                                       ItemNumber.range("3", "4b"),
+                                                       ItemNumber.singleNumber("5"),
+                                                       ItemNumber.singleNumber("6")]
     }
 
     def "entry['#lang'] has #meaningCount meanings#notes"() {
@@ -34,8 +38,8 @@ class TranslationsParserSpec extends ParserSpecBase {
 
         where:
         notes                       | lang || meaningCount
-        ""                          | "ar" || 1
-        " (separated by semicolon)" | "ku" || 2
+        ""                          | "it" || 1
+        " (separated by semicolon)" | "ru" || 4
         " (separated by space)"     | "pl" || 5
     }
 
@@ -83,11 +87,11 @@ class TranslationsParserSpec extends ParserSpecBase {
     }
 
     def "translation '#translationTxt' has gender: #gender"() {
-        when: "we take translations for Spanish"
+        when:
         def entry = parseWiktionaryEntryPage("Staat").wiktionaryEntries[0]
         def langTranslations = entry.translations["pl"]
 
-        then: "the first translation in second meaning is Femininum"
+        then:
         langTranslations[meaningIdx].translations[translationIdx].gender == gender
 
         where:
@@ -113,20 +117,65 @@ class TranslationsParserSpec extends ParserSpecBase {
         translation.internalLink == internalLink
         translation.transcription == transcription
         translation.label == label
-        translation.externalLink == externalLink
 
         where:
-        lang | meaningIdx | translationIdx | translationTxt               || internalLink | transcription | label | externalLink
-        "eu" | 0          | 0              | "{{Ü|eu|estatu}}"            || "estatu"     | null          | null  | null
-        "bg" | 0          | 0              | "{{Üt|bg|държава|dŭrzhava}}" || "държава"    | "dăržáva"     | null  | null
+        lang | meaningIdx | translationIdx | translationTxt                      || internalLink  | transcription | label
+        "pl" | 0          | 0              | "{{Ü|pl|państwo}}"                  || "państwo"     | null          | null
+        "ru" | 0          | 0              | "{{Üt|ru|государство|gosudarstwo}}" || "государство" | "gosudarstwo" | null
     }
 
-    def "ignore empty translations and comments"() {
+    def "ignore meanings with empty translation"() {
         when:
-        def entry = parseWiktionaryEntryPage("Heckmeck").wiktionaryEntries[0]
+        def entry = parseWiktionaryEntryPage("Tiefgang").wiktionaryEntries[0]
 
-        then: "there is only a Swedish translation, because other 2 are empty"
+        then:
         entry.translations.size() == 1
-        entry.translations.containsKey("sv")
+        entry.translations.containsKey("en")
+    }
+
+    def "meaning with non-empty text without translation-template"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Spiel").wiktionaryEntries[0]
+
+        then:
+        def itMeanings = entry.translations["it"]
+        itMeanings.size() == 3
+        def meaning3 = itMeanings[2]
+        meaning3.translations.isEmpty()
+        meaning3.text == new RichText(new InternalLink.Builder().withPageTitle("partita").build(),
+                                      new PlainText(" "),
+                                      new MultiGender(Gender.FEMININUM))
+    }
+
+    def "translation inside cursive text"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Erziehungsziel").wiktionaryEntries[0]
+
+        then:
+        def enMeanings = entry.translations["en"]
+        enMeanings[0].translations.size() == 5
+    }
+
+    def "complex meaning text"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Erziehungsziel").wiktionaryEntries[0]
+
+        then:
+        def enMeaning1 = entry.translations["en"][0]
+        enMeaning1.text.components.size() == 7
+        enMeaning1.text.components[0] == new Translation(internalLink: "child-rearing goal")
+        enMeaning1.text.components[1] == new PlainText(", ")
+        enMeaning1.text.components[2] == new Translation(internalLink: "parenting objective")
+        enMeaning1.text.components[3] == new PlainText(", ")
+        enMeaning1.text.components[4] == new Translation(internalLink: "parenting goal")
+        enMeaning1.text.components[5] == new PlainText("; <br />")
+        enMeaning1.text.components[6] ==
+                new CursiveBlock(new RichText(new PlainText("Anmerkung: "),
+                                              new Translation(internalLink: "educational objective"),
+                                              new PlainText(" und "),
+                                              new Translation(internalLink: "educational goal"),
+                                              new PlainText(" bedeuten eher „"),
+                                              new InternalLink.Builder().withPageTitle("Lernziel").build(),
+                                              new PlainText("“ als „Erziehungsziel“")))
     }
 }

@@ -83,16 +83,23 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	// Gender = LT GenderTemplateArgument "."? RT Space
+	// Gender = LT GenderTemplateArgument RT
 	//-------------------------------------------------------------------
 	void Gender() {
 		lhs().put(rhs(1).get());
 	}
 	
 	//-------------------------------------------------------------------
+	// GenderTemplateArgument = ("fPl." / "mPl.")
+	//-------------------------------------------------------------------
+	void GenderTemplateArgument_0() {
+		lhs().put(new MultiGender(Gender.fromShortcut(lhs().text())));
+	}
+	
+	//-------------------------------------------------------------------
 	// GenderTemplateArgument = [mnfu]+
 	//-------------------------------------------------------------------
-	void GenderTemplateArgument() {
+	void GenderTemplateArgument_1() {
 		lhs().put(new MultiGender(lhs().text()));
 	}
 	
@@ -209,8 +216,9 @@ class WiktionarySemantics extends SemanticsBase {
 		String language = (String) rhs(1).get();
 		for (int i = 4; i < rhsSize() - 1; i++) {
 			TranslationMeaning meaning = (TranslationMeaning) rhs(i).get();
-			if (!meaning.getTranslations().isEmpty())
+			if (!meaning.getText().isEmpty()) {
 				wiktionaryEntries.peek().addTranslationMeaning(language, meaning);
+			}
 		}
 	}
 	
@@ -222,61 +230,51 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//-------------------------------------------------------------------
-	//  TranslationMeaning = ItemNo Translation+
+	//  TranslationMeaning = ItemNo TranslationMeaningBody SEMICOLON?
 	//-------------------------------------------------------------------
 	void TranslationMeaning() {
-		TranslationMeaning meaning = new TranslationMeaning((List<ItemNumber>) rhs(0).get());
-		for (int i = 1; i < rhsSize(); i++) {
-			Translation translation = (Translation) rhs(i).get();
-			if (!translation.getInternalLink().isEmpty())
-				meaning.addTranslation(translation);
-		}
+		List<ItemNumber> itemNumbers = (List<ItemNumber>) rhs(0).get();
+		RichText text = (RichText) rhs(1).get();
+		TranslationMeaning meaning = new TranslationMeaning(itemNumbers, text);
 		lhs().put(meaning);
 	}
 	
-	//-------------------------------------------------------------------
-	//  Translation = TranslationDetails (UeTemplate / UetTemplate) Gender?
-	//                      0                        1                 2
-	//      TranslationDetails (COMMA / SEMICOLON)? Space
-	//               3(2)              4(3)
-	//-------------------------------------------------------------------
-	void Translation() {
-		Translation t = (Translation) rhs(1).get();
-		if (rhs(2).get() instanceof MultiGender)
-			t.setGender((MultiGender) rhs(2).get());
-		lhs().put(t);
+	//=====================================================================
+	//  TranslationMeaningBody = (UeTemplate / UetTemplate / !(ItemNo) RichTextComponent)+
+	//=====================================================================
+	void TranslationMeaningBody() {
+		RichText text = new RichText();
+		processSequenceOfRichTextComponents(0, rhsSize(), text);
+		lhs().put(text);
 	}
 	
 	//-------------------------------------------------------------------
 	//  UeTemplate = LT ("Ü" / "Ü?") IT TemplateAttr IT TemplateAttr
 	//                0      1        2       3       4       5
-	//      (IT TemplateAttr)? (IT TemplateAttr)? RT Space
-	//        6        7         8      9        10(6) 11(7)
+	//      (IT TemplateAttr)? (IT TemplateAttr)? RT
+	//        6        7         8      9        n-1
 	//-------------------------------------------------------------------
 	void UeTemplate() {
 		Translation translation = new Translation();
 		translation.setInternalLink(rhs(5).text());
-		if (rhsSize() > 6 + 2) // 2 = RT Space
+		if (rhsSize() - 1 >= 8)
 			translation.setLabel(rhs(7).text());
-		if (rhsSize() == 12)
-			translation.setExternalLink(rhs(9).text());
 		lhs().put(translation);
 	}
 	
 	//-------------------------------------------------------------------
 	//  UetTemplate = LT ("Üt" / "Üt?") IT TemplateAttr IT TemplateAttr
 	//                 0        1        2       3       4       5
-	//      IT TemplateAttr (IT TemplateAttr)? (IT TemplateAttr)? RT Space
-	//       6        7       8      9          10       11      12(6) 13(7)
+	//      (IT TemplateAttr)? (IT TemplateAttr)? (IT TemplateAttr)? RT
+	//        6        7        8      9          10       11       n-1
 	//-------------------------------------------------------------------
 	void UetTemplate() {
 		Translation translation = new Translation();
 		translation.setInternalLink(rhs(5).text());
-		translation.setTranscription(rhs(7).text());
-		if (rhsSize() > 8 + 2) // 2 = RT Space
+		if (rhsSize() - 1 >= 8)
+			translation.setTranscription(rhs(7).text());
+		if (rhsSize() - 1 >= 10)
 			translation.setLabel(rhs(9).text());
-		if (rhsSize() == 14)
-			translation.setExternalLink(rhs(11).text());
 		lhs().put(translation);
 	}
 	
@@ -325,7 +323,7 @@ class WiktionarySemantics extends SemanticsBase {
 		
 		// text
 		RichText text = new RichText();
-		processSequenceOfRichTextComponents(2, rhsSize()-1, text);
+		processSequenceOfRichTextComponents(2, rhsSize() - 1, text);
 		meaning.setText(text);
 		
 		if (rhs(0).text().length() == 1) {
@@ -438,16 +436,10 @@ class WiktionarySemantics extends SemanticsBase {
 		lhs().put(new CursiveBlock(body));
 	}
 	
-	//-------------------------------------------------------------------
-	//  RichTextComponent = Link
-	//-------------------------------------------------------------------
 	void RichtTextLink() {
 		lhs().put(rhs(0).get());
 	}
 	
-	//-------------------------------------------------------------------
-	//  RichTextComponent = CursiveText
-	//-------------------------------------------------------------------
 	void RichTextCursiveText() {
 		lhs().put(rhs(0).get());
 	}
@@ -460,7 +452,18 @@ class WiktionarySemantics extends SemanticsBase {
 		lhs().put(rhs(0).get());
 	}
 	
-	void RichTextTemplate() {
+	void RichTextGender() {
+		lhs().put(rhs(0).get());
+	}
+	
+	void RichTextTranslation() {
+		lhs().put(rhs(0).get());
+	}
+	
+	//-------------------------------------------------------------------
+	//  UnknownTemplate = LT TName (SEP TParam)* RT
+	//-------------------------------------------------------------------
+	void UnknownTemplate() {
 		throw new ParseException("Unexpected template in RichText: " + lhs().text());
 	}
 	

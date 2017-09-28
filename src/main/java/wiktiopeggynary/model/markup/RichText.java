@@ -36,12 +36,12 @@ public class RichText extends CompoundRichTextComponent {
 			super.addComponent(component);
 		}
 	}
-
+	
 	@Override
 	public void accept(RichTextComponentVisitor visitor) {
 		visitor.visit(this);
 	}
-
+	
 	@Override
 	public Optional<RichText> mergeWith(RichTextComponent component) {
 		final RichText[] mergedObj = new RichText[1];

@@ -1,0 +1,81 @@
+== Tiefgang ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Tiefgang
+|Nominativ Plural=Tiefgänge
+|Genitiv Singular=Tiefgangs
+|Genitiv Singular*=Tiefganges
+|Genitiv Plural=Tiefgänge
+|Dativ Singular=Tiefgang
+|Dativ Singular*=Tiefgange
+|Dativ Plural=Tiefgängen
+|Akkusativ Singular=Tiefgang
+|Akkusativ Plural=Tiefgänge
+|Bild 1=Double keel.jpg|thumb|1|der ''Tiefgang'' eines [[Segelbootes]] ist die [[Länge]] von der [[Wasserlinie]] ([[schwarz]]) bis zum [[tief]]sten [[Punkt]] des [[Kiel]]s ([[Holzauflieger]])
+|Bild 2=Draft scale at the ship bow (PIC00110).jpg|thumb|1|den ''Tiefgang'' eines [[Schiff]]es kann man manchmal von außen [[ablesen]]
+}}
+
+{{Worttrennung}}
+:Tief·gang, {{Pl.}} Tief·gän·ge
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈtiːfˌɡaŋ}}
+:{{Hörbeispiele}} {{Audio|De-Tiefgang.ogg}}
+
+{{Bedeutungen}}
+:[1] die [[senkrecht]]e [[Länge]], die die [[Differenz]] zwischen der [[Wasseroberfläche]] und dem [[tief]]sten [[Punkt]] eines [[Schiff]]es [[beschreiben|beschreibt]]
+:[2] der [[anspruchsvoll]]e [[Gehalt]] oder die [[Substanz]] eines [[Gedanke]]ns oder eines [[ Text]]es
+
+{{Synonyme}}
+:[2] [[Tiefsinn]]
+
+{{Sinnverwandte Wörter}}
+:[2] [[Essenz]], [[Gedankenreichtum]], [[Gedankentiefe]], [[Gehalt]], [[Tiefgründigkeit]], [[Tiefsinnigkeit]]
+
+{{Gegenwörter}}
+:[2] [[Banalität]], [[Oberflächlichkeit]]
+
+{{Beispiele}}
+:[1] Je mehr Container oder Waren ein Schiff geladen hat, um so mehr ''Tiefgang'' hat es auch.
+:[1] Der JadeWeserPort ist der einzige Hafen in Deutschland, den Schiffe unabhängig von Beladung, ''Tiefgang'' und Wasserstand anlaufen können. Mit vollem Gewicht an Bord hätte die "MSC Oscar" etwa 16 Meter ''Tiefgang.'' Beim Einlaufen nach Bremerhaven war das Schiff auf seiner Jungfernfahrt jedoch nicht voll beladen und kam auf knapp 13 Meter ''Tiefgang.''<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/1EmUV | Autor= | Titel=Wirtschaft - Kommt ein Oscar geschwommen | TitelErg= | Tag=06 | Monat=03 | Jahr=2015 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+:[1] Da wir gerade bei Schiffen sind: Ballast, ein Wort aus der Seemannssprache, bezeichnet jene Last, die dem Schiff ''Tiefgang,'' Gleichgewicht und damit optimale Wasserlage geben soll.<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/DpiH | Autor=Michael Utz | Titel=Deutsch lernen - Last | TitelErg=Probleme sind eine seelische Belastung. Schwere Einkaufstüten sind eine körperliche Last. Im Leben hat jeder sein Päckchen zu tragen, sagt man. Und jeder kommt irgendwann an die Belastungsgrenze – nur der Lastesel nicht | Tag=28 | Monat=04 | Jahr=2008 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+:[1] Nach dem Willen der Planer sollen in Zukunft Schiffe bis 13,50 Meter ''Tiefgang'' jederzeit Hamburg erreichen können. Bisher sind nur 12,50 Meter möglich. Bei Hochwasser sollen sogar Schiffe mit bis zu 14,50 Meter ''Tiefgang'' nach Hamburg fahren können.<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/14n2H | Autor=Julian Bohne | Titel=Verkehr - Elbvertiefung vor Gericht | TitelErg=Das Bundesverwaltungsgericht soll entscheiden, ob die Elbe vertieft werden darf, damit größere Containerschiffe den Hamburger Hafen anlaufen können. Umweltschützer verlangen ein Verbot der Vertiefung | Tag=15 | Monat=07 | Jahr=2014 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+:[1] „Nutzen Schiffe die Flutwelle, um den Hamburger Hafen zu erreichen oder zu verlassen, dürfen sie höhere ''Tiefgänge'' aufweisen.“<ref>{{Internetquelle|autor=Marc-Oliver Rehrmann|hrsg=NDR|titel=Was bringt die Elbvertiefung?|url=http://www.ndr.de/nachrichten/hamburg/hafen/verstehen/Was-bringt-die-Elbvertiefung,hafenelbvertiefung2.html |datum=2014-11-26|zugriff=2016-03-21}}</ref>
+:[1] „‚Die kennen unsere Schiffe fast besser als wir‘, sagt Sieck, ‚und wollen alles über ''Tiefgänge'' und Wendekreise wissen.‘“<ref>{{Per-Süddeutsche Online | Online=http://www.sueddeutsche.de/wirtschaft/hamburger-hafencity-zimmer-mit-aussicht-1.286853-3 | Autor=Meite Thiede | Titel=Zimmer mit Aussicht | TitelErg= | Tag=17| Monat=05| Jahr=2010| Zugriff=2016-03-21 | Kommentar= }}</ref>
+:[2] [Es] gibt aber auch Bücher, die sowohl Erfolg haben als auch ''intellektuellen'' Tiefgang, etwa die Werke von [den indonesischen Auoren] Ayu Utami, Seno Gumira Ajidarma oder Eka Kurniawan.<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/1G57k | Autor=Monika Griebeler | Titel=Indonesien - "Indonesische Lesekultur im Aufwind" | TitelErg=Feby Indirani war erfolgreiche TV-Journalistin. Jetzt arbeitet sie als Autorin - in einem Land, in dem kaum jemand Bücher liest. Ein Gespräch über Herausforderungen für Autoren in Indonesien und die Macht von Texten. | Tag=17 | Monat=10 | Jahr=2015 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+:[2] Der 65-Jährige [Dieter Kosslick soll] als Chefkurator [der Berliner Filmfestspiele] auch für den nötigen ''Tiefgang'' bei der Filmauswahl sorgen.<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/19l0b | Autor= | Titel=Gästeliste - Dieter Kosslick, Leiter „Berlinale“ | TitelErg= | Tag=20 | Monat=09 | Jahr=2013 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+:[2] "So glücklich war ich noch nie" ist eine sehr unterhaltsame, glänzend gespielte Gaunerkomödie mit ''Tiefgang.''<ref>{{Per-Deutsche Welle | Online=http://dw.com/p/HNHa | Autor= | Titel=Filme - Hochstapler im Kino | TitelErg=Regisseur Alexander Adolph zeigt in seinem Film "So glücklich war ich noch nie" einen charmanten Hochstapler. Im DW-World-Interview gibt der Regisseur Auskunft über die Charakterstruktur seines Helden.  | Tag=07 | Monat=04 | Jahr=2009 | Zugriff=2015-12-11 | Kommentar= }}</ref>
+
+{{Charakteristische Wortkombinationen}}
+:[1] der [[maximal]]e ''Tiefgang''
+:[1] der ''Tiefgang'' eines [[Boot]]es, der ''Tiefgang'' eines [[Containerschiff]]es, der ''Tiefgang'' eines [[Kielboot]]es, der ''Tiefgang'' eines [[Schiff]]es, der ''Tiefgang'' einer [[Yacht]]
+:[2] [[intellektuell]]er ''Tiefgang''
+:[2] ein [[Gespräch]] mit ''Tiefgang,'' eine [[Unterhaltung]] mit ''Tiefgang,'' ein [[Vortrag]] mit ''Tiefgang''
+:[2] jemandem [[mangeln|mangelt]] es an ''Tiefgang''
+
+{{Absatz}}
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{Ü|en|draught|(BE) draught}}, {{Ü|en|draft|(AE) draft}}; [2] {{Ü|en|profoundness}}, {{Ü|en|profundity}}
+*{{fr}}: [1] {{Ü|fr|}}
+*{{is}}: [1] {{Ü|is|}}
+|Ü-rechts=
+*{{it}}: [1] {{Ü|it|}}
+*{{ru}}: [1] {{Üt|ru|}}
+*{{es}}: [1] {{Ü|es|}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Tiefgang}}
+:[1] {{Ref-Grimm|Tiefgang}}
+:[*] {{Ref-Canoo|Tiefgang}}
+:[1, 2] {{Ref-DWDS|Tiefgang}}
+:[1, 2] {{Ref-UniLeipzig|Tiefgang}}
+:[1, 2] {{Ref-Duden|Tiefgang}}
+:[1, 2] {{Ref-Pons|Tiefgang}}
+:[1, 2] {{Ref-Pons|en|Tiefgang}}
+:[1, 2] {{Ref-dictcc|en|Tiefgang}}
+
+{{Quellen}}
