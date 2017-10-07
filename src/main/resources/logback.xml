@@ -16,16 +16,8 @@
         </encoder>
     </appender>
 
-    <appender name="MISSING_TEMPLATE_DEFINITIONS" class="ch.qos.logback.core.FileAppender">
-        <file>missing_template_definitions.log</file>
-        <append>false</append>
-        <encoder>
-            <pattern>%msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <appender name="ERRONEOUS_TEMPLATE_DEFINITIONS" class="ch.qos.logback.core.FileAppender">
-        <file>erroneous_template_definitions.log</file>
+    <appender name="UNKNOWN_TEMPLATES" class="ch.qos.logback.core.FileAppender">
+        <file>unknown_templates.log</file>
         <append>false</append>
         <encoder>
             <pattern>%msg%n</pattern>
@@ -62,12 +54,8 @@
         <appender-ref ref="ERRONEOUS_WIKTIONARY_ENTRIES" />
     </logger>
 
-    <logger name="missing_template_definitions" level="debug">
-        <appender-ref ref="MISSING_TEMPLATE_DEFINITIONS" />
-    </logger>
-
-    <logger name="erroneous_template_definitions" level="debug">
-        <appender-ref ref="ERRONEOUS_TEMPLATE_DEFINITIONS" />
+    <logger name="unknown_templates" level="debug" additivity="false">
+        <appender-ref ref="UNKNOWN_TEMPLATES" />
     </logger>
 
     <logger name="wiktiopeggynary.persistence" level="debug">

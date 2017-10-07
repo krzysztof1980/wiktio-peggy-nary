@@ -70,6 +70,8 @@ class KontextShortcutMapper {
                                   'unpers.'     : 'unpersönlich',
                                   'ungebr.'     : 'ungebräuchlich',
                                   'va.'         : 'veraltet',
+                                  'veraltet'    : 'veraltet',
+                                  'veraltend'   : 'veraltend',
                                   'tlwva.'      : 'veraltet',
                                   'vatd.'       : 'veraltend',
                                   'tlwvatd.'    : 'veraltend',

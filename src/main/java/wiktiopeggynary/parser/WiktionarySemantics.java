@@ -30,6 +30,7 @@ import java.util.stream.IntStream;
 class WiktionarySemantics extends SemanticsBase {
 	
 	private static final Logger logger = LoggerFactory.getLogger(WiktionarySemantics.class);
+	private static final Logger unknownTemplatesLogger = LoggerFactory.getLogger("unknown_templates");
 	
 	private String lemma;
 	private WiktionaryEntry entryWorkingCopy;
@@ -335,14 +336,6 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  MeaningKontext = Kontext?
-	//=====================================================================
-	void MeaningKontext() {
-		if (!lhs().isEmpty())
-			lhs().put(rhs(0).get());
-	}
-	
-	//=====================================================================
 	//  OldSpellingTemplate = LT "..." SEP TextualTParam RestOfLine
 	//                        0    1    2         3         n-1
 	//=====================================================================
@@ -444,7 +437,8 @@ class WiktionarySemantics extends SemanticsBase {
 	//  UnknownTemplate = LT TName (SEP TParam)* RT
 	//-------------------------------------------------------------------
 	void UnknownTemplate() {
-		throw new ParseException("Unexpected template in RichText: " + lhs().text());
+		unknownTemplatesLogger.warn(lemma + ": " + lhs().text());
+		lhs().put(new PlainText(lhs().text()));
 	}
 	
 	//-------------------------------------------------------------------
