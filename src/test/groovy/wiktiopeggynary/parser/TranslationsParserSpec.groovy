@@ -178,4 +178,24 @@ class TranslationsParserSpec extends ParserSpecBase {
                                               new InternalLink.Builder().withPageTitle("Lernziel").build(),
                                               new PlainText("“ als „Erziehungsziel“")))
     }
+
+    def "language variants"() {
+        when:
+        def entry = parseWiktionaryEntryPage("Billion").wiktionaryEntries[0]
+
+        then:
+        def enMeaning1 = entry.translations["en"][0]
+        def langVariants = enMeaning1.text.components.findAll { c -> c instanceof LanguageVariant}
+        langVariants.size() == 2
+
+        and:
+        def beVariant = langVariants[0] as LanguageVariant
+        beVariant.variant == LanguageVariant.Variant.British
+        beVariant.suffix == ":"
+
+        and:
+        def aeVariant = langVariants[1] as LanguageVariant
+        aeVariant.variant == LanguageVariant.Variant.American
+        aeVariant.suffix == ":"
+    }
 }

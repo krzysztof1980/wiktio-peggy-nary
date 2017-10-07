@@ -27,6 +27,11 @@ public abstract class DefaultRichTextComponentVisitor implements RichTextCompone
 	}
 	
 	@Override
+	public void visit(LanguageVariant languageVariant) {
+	
+	}
+	
+	@Override
 	public void visit(InternalLink internalLink) {
 	}
 	

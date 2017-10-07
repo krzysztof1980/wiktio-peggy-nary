@@ -19,6 +19,8 @@ public interface RichTextComponentVisitor {
 	
 	void visit(WikipediaLink wikipediaLink);
 	
+	void visit(LanguageVariant languageVariant);
+	
 	void visit(KTemplate kTemplate);
 	
 	void visit(Translation translation);

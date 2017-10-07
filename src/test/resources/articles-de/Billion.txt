@@ -1,0 +1,76 @@
+== Billion ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{f}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f
+|Nominativ Singular=Billion
+|Nominativ Plural=Billionen
+|Genitiv Singular=Billion
+|Genitiv Plural=Billionen
+|Dativ Singular=Billion
+|Dativ Plural=Billionen
+|Akkusativ Singular=Billion
+|Akkusativ Plural=Billionen
+}}
+
+{{Worttrennung}}
+:Bil·li·on, {{Pl.}} Bil·li·o·nen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|bɪˈli̯oːn}}
+:{{Hörbeispiele}} {{Audio|De-Billion.ogg}}
+:{{Reime}} {{Reim|oːn|Deutsch}}
+
+{{Bedeutungen}}
+:[1] 1.000.000.000.000 = 10<sup>12</sup> (''[[Eselsbrücke]]:'' eine Million [[Million]]en bzw. eine Million hoch ''zwei'' gleich „bi-“);
+
+{{Herkunft}}
+:[1] im 18. Jahrhundert von französisch {{Ü|fr|billion}} entlehnt, einer [[Kontamination]] aus dem [[Derivatem]] ([[Wortbildungsmorphem]]) ''[[bi-]]'' und dem [[Substantiv]] ''[[Million]]''<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „Billion“, Seite 123.</ref>
+
+{{Oberbegriffe}}
+:[1] natürliche [[Zahl]]
+
+{{Beispiele}}
+:[1] Eine ''Billion'' ist eine sehr hohe Zahl, die nicht in sehr vielen Kontexten auftaucht.
+:[1] Nach Informationen der Financial Times Deutschland sprach er vor Abgeordneten der schwarz-gelben Koalition über eine Hebelung des Fonds auf maximal eine ''Billion'' Euro.<ref>{{Per-Zeit Online | Online=http://www.zeit.de/wirtschaft/2011-10/schaeuble-rettungsschirm-finanzen | Autor=ZEIT ONLINE, dpa, Reuters | Titel=Rettungsfonds soll für Schulden der Krisenstaaten bürgen | TitelErg=Euro-Krise | Tag=19 | Monat=10 | Jahr=2011 | Zugriff=2012-01-29 }}</ref>
+:[1] „Ich vertrieb mir die Zeit, indem ich den Schreibtisch durchsuchte, allerdings nichts fand außer fünfzig ''Billionen'' altes Inflationsgeld, das unser Lieblingswärter sammelte wie jedes andere entwertete Papiergeld.“<ref>{{Literatur|Autor= Siegfried Lenz|Titel=Die Deutschstunde|TitelErg =Roman|Verlag=C. W. Niemeyer|Ort=Hameln|Jahr= 1989|ISBN= 3-87585-884-0}}, Seite 156. Erstveröffentlichung 1968.</ref>
+
+{{Wortbildungen}}
+:[1] [[Billionär]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{en}}: [1] {{brit.|:}} {{Ü|en|billion}}; {{amer.|:}} {{Ü|en|trillion}}
+*{{fi}}: [1] {{Ü|fi|biljoona}}
+*{{fr}}: [1] {{Ü|fr|billion}}
+*{{ia}}: [1] {{Ü|ia|billion}}
+*{{it}}: [1] {{Ü|it|bilione}} {{m}}
+*{{ja}}: [1] {{Üt|ja|兆|}}
+*{{ca}}: [1] {{Ü|ca|bilió}} {{m}}
+|Ü-rechts=
+*{{nds}}: [1] {{Ü|nds|Billjoon}} {{f}}
+*{{nl}}: [1] {{Ü|nl|biljoen}}
+*{{pl}}: [1] {{Ü|pl|bilion}} {{f}}
+*{{pt}}: [1] {{Ü|pt|bilhão}}
+*{{ru}}: [1] {{Üt|ru|биллион|billión}}
+*{{sv}}: [1] {{Ü|sv|biljon}}
+*{{es}}: [1] {{Ü|es|billón}} {{m}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Billion}}
+:[1] {{Lit-Wahrig: Deutsches Wörterbuch|A=1986}}
+:[1] {{Lit-Küfner: Fremdwörterbuch|A=6}}
+:[1] {{Lit-Duden: Universalwörterbuch|A=6}}, Seite 307, Eintrag „Billion“
+:[1] {{Ref-Grimm|Billion}}
+:[1] {{Ref-DWDS|Billion}}
+:[1] {{Ref-Canoo|Billion}}
+:[1] {{Ref-UniLeipzig|Billion}}
+:[1] {{Ref-FreeDictionary|Billion}}
+
+{{Quellen}}
+{{Absatz}}
+{{Zahlensystem (Deutsch)}}
+
+{{Ähnlichkeiten}}
+:[[billion]], [[Billon]], [[Boullion]], [[Million]], [[Zillion]]

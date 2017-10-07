@@ -436,31 +436,7 @@ class WiktionarySemantics extends SemanticsBase {
 		lhs().put(new CursiveBlock(body));
 	}
 	
-	void RichtTextLink() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextCursiveText() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextKTemplate() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextAbkTemplate() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextGender() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextTranslation() {
-		putRhsObjectAtLhs();
-	}
-	
-	void RichTextWpLink() {
+	void RichTextComponent() {
 		putRhsObjectAtLhs();
 	}
 	
@@ -521,6 +497,26 @@ class WiktionarySemantics extends SemanticsBase {
 			link.setLinkText(rhs(5).text());
 		}
 		lhs().put(link);
+	}
+	
+	void AeLangVariantTemplate() {
+		LangVariantTemplate(LanguageVariant.Variant.American);
+	}
+	
+	void BeLangVariantTemplate() {
+		LangVariantTemplate(LanguageVariant.Variant.British);
+	}
+	
+	//=====================================================================
+	// LangVariantTemplate = LT ( "[Variant]" ) (SEP TextualTParam)? RT
+	//                       0         1          2         3        4
+	//=====================================================================
+	private void LangVariantTemplate(LanguageVariant.Variant variant) {
+		LanguageVariant languageVariant = new LanguageVariant(variant);
+		if (rhsSize() == 5) {
+			languageVariant.setSuffix(rhs(3).text());
+		}
+		lhs().put(languageVariant);
 	}
 	
 	//=====================================================================

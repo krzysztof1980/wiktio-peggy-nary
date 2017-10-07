@@ -97,15 +97,16 @@ SEP         = Space "|" Space ; // attribute separator (used in links and templa
 TextbausteinEnd = LT / KopfStart / EOF ;
 
 // Rich text components
-RichTextComponent = Link {RichtTextLink}
-                  / CursiveText {RichTextCursiveText}
+RichTextComponent = Link {RichTextComponent}
+                  / CursiveText {RichTextComponent}
                   / Reference
                   / Space QsTemplate Space
-                  / KTemplate {RichTextKTemplate}
-                  / AbkTemplate {RichTextAbkTemplate}
-                  / Gender {RichTextGender}
-                  / WpTemplate {RichTextWpLink}
-                  / (UeTemplate / UetTemplate) {RichTextTranslation}
+                  / KTemplate {RichTextComponent}
+                  / AbkTemplate {RichTextComponent}
+                  / Gender {RichTextComponent}
+                  / WpTemplate {RichTextComponent}
+                  / (AeLangVariantTemplate / BeLangVariantTemplate) {RichTextComponent}
+                  / (UeTemplate / UetTemplate) {RichTextComponent}
                   / UnknownTemplate
                   / !EOL _ {RichTextPlainText};
 
@@ -134,6 +135,8 @@ KTemplate = LT ("Kontext" / [Kk]) (SEP TParam)+ RT {};
 AbkTemplate = LT TName (SEP TParam)* RT {&};
 QsTemplate = LT "QS Bedeutungen" (SEP TPosParam)* RT ;
 WpTemplate = LT ("WP" / "Wikipedia" / "W") (SEP TextualTParam)+ RT {};
+AeLangVariantTemplate = LT ("amer." / "AE" ) (SEP TextualTParam)? RT {};
+BeLangVariantTemplate = LT ("brit." / "BE" ) (SEP TextualTParam)? RT {};
 
 // Item number, that is used to number the elements in a Textbaustein like translation table or meanings
 ItemNo = "[" ItemNoBody "]" Space {};

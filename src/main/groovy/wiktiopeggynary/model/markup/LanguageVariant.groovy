@@ -1,8 +1,8 @@
 package wiktiopeggynary.model.markup
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import org.apache.commons.lang3.StringUtils
 import wiktiopeggynary.model.visitor.RichTextComponentVisitor
 
 /**
@@ -10,10 +10,14 @@ import wiktiopeggynary.model.visitor.RichTextComponentVisitor
  */
 @ToString(includePackage = false, ignoreNulls = true)
 @EqualsAndHashCode
-class WikipediaLink implements RichTextComponent {
+class LanguageVariant implements RichTextComponent {
 
-    String pageTitle
-    String linkText
+    final Variant variant
+    String suffix
+
+    LanguageVariant(@JsonProperty("variant") Variant variant) {
+        this.variant = variant
+    }
 
     @Override
     void accept(RichTextComponentVisitor visitor) {
@@ -27,6 +31,11 @@ class WikipediaLink implements RichTextComponent {
 
     @Override
     boolean isEmpty() {
-        return StringUtils.isBlank(pageTitle) && StringUtils.isBlank(linkText)
+        return false
+    }
+
+    enum Variant {
+
+        British, American
     }
 }
