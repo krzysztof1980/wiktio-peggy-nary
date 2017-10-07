@@ -1,0 +1,78 @@
+== Höhlenbär ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Höhlenbär
+|Nominativ Plural=Höhlenbären
+|Genitiv Singular=Höhlenbären
+|Genitiv Plural=Höhlenbären
+|Dativ Singular=Höhlenbären
+|Dativ Plural=Höhlenbären
+|Akkusativ Singular=Höhlenbären
+|Akkusativ Plural=Höhlenbären
+|Bild=Ursus spelaeus Sergiodlarosa.jpg|mini|1|Rekonstruktion eines ''Höhlenbären''
+}}
+
+{{Worttrennung}}
+:Höh·len·bär, {{Pl.}} Höh·len·bä·ren
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈhøːlənˌbɛːɐ̯}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] {{K|Zoologie|Paläozoologie}} eine [[ausgestorben]]e, in [[Europa]] [[vertreten#Adjektiv|vertretene]], besonders [[groß]]e [[Bärenart]] der {{WP|Letzte_Kaltzeit|letzten Kaltzeit}}, die in [[Felsenhöhle]]n lebte
+
+{{Herkunft}}
+:[[Determinativkompositum]] ([[Zusammensetzung]]) aus dem [[Substantiv]] ''[[Höhle]]'', dem [[Fugenelement]] ''[[-en]]'' und dem Substantiv ''[[Bär]]''
+
+{{Synonyme}}
+:[1] ''wissenschaftlich:'' [[Ursus spelaeus]]
+
+{{Weibliche Wortformen}}
+:[1] [[Höhlenbärin]]
+
+{{Oberbegriffe}}
+:[1] [[Bär]], [[Höhlenbewohner]], [[Raubtier]], [[Säugetier]]
+
+{{Beispiele}}
+:[1] Der ''Höhlenbär'' muss einen furchterregenden Anblick geboten haben. Mit einer Größe von über dreieinhalb Metern und einem Gewicht von bis zu einer Tonne zählte er zu den größten Landsäugetieren, die je gelebt haben.<ref name=Oslo>{{Per-Spiegel Online | Online=http://www.spiegel.de/wissenschaft/natur/eiszeit-folge-hoehlenbaer-verschwand-frueher-als-bislang-gedacht-a-592692.html | Autor=hda/ddp | Titel=Eiszeit-Folge: Höhlenbär verschwand früher als bislang gedacht | Tag=26 | Monat=11 | Jahr=2008 | Zugriff=2015-09-13 }}</ref>
+:[1] Um zu überwintern, waren Höhlenbären auf natürliche Höhlen angewiesen.<ref>{{Literatur | Online=[http://www.planet-wissen.de/natur/wildtiere/baeren/pwiehoehlenbaer100.html Online] | Autor=Susanne Wagner | Titel=Höhlenbär | TitelErg=Bären | Sammelwerk=planet-wissen.de | Tag=15 | Monat=01 | Jahr=2015 | Zugriff=2015-09-13 }}.</ref>
+:[1] Unklar sei noch, warum der Braunbär überlebte, während der letzte ''Höhlenbär'' vor 27.800 Jahren nicht mehr aus seinem Winterschlaf erwacht oder auf andere Weise zu Tode gekommen sei.<ref name=Oslo/>
+:[1] ''Höhlenbären'' waren vor Tausenden Jahren in unseren Breiten offenbar eine wichtige Nahrungs- und Materialquelle für Neandertaler.<ref>{{Per-Welt Online | Online=http://www.welt.de/wissenschaft/article112863153/Wie-Neandertaler-gefaehrliche-Hoehlenbaeren-toeteten.html | Autor=dpa | Titel=Wie Neandertaler gefährliche Höhlenbären töteten | TitelErg=Archäologie | Tag=18 | Monat=01 | Jahr=2013 | Zugriff=2015-09-13 }}</ref>
+:[1] „Das Verschwinden des ''Höhlenbären'' vor rund 27.500 Jahren beruhte auf einer signifikanten Verringerung des Angebots und der Qualität der Pflanzennahrung, die die das Resultat eines deutlich kühleren Klimas waren“, fasst Stuart die Ergebnisse zusammen.<ref>{{Literatur | Online=[http://www.scinexx.mobi/dossier-detail-550-8.html Online] | Autor=Dieter Lohmann | Titel=Klimaabkühlung stürzte Höhlenbären ins Verderben | Sammelwerk=scinexx.de | Tag=22 | Monat=07 | Jahr=2011 | Zugriff=2015-09-13 }}.</ref>
+
+{{Wortbildungen}}
+:[[Höhlenbärin]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|Ü-links=
+*{{da}}: [1] {{Ü|da|hulebjørn}}
+*{{en}}: [1] {{Ü|en|cave bear}}
+*{{fr}}: [1] {{Ü|fr|ours des cavernes}} {{m}}
+*{{it}}: [1] {{Ü|it|orso delle caverne}} {{m}}, {{Ü|it|orso speleo}} {{m}}
+*{{ca}}: [1] {{Ü|ca|ós de les cavernes}}
+*{{hr}}: [1] {{Ü|hr|spiljski medvjed}}
+*{{nl}}: [1] {{Ü|nl|holenbeer}}
+|Ü-rechts=
+*{{pl}}: [1] {{Ü|pl|niedźwiedź jaskiniowy}} {{m}}
+*{{pt}}: [1] {{Ü|pt|urso-das-cavernas}} {{m}}
+*{{ru}}: [1] {{Üt|ru|пещерный медведь|pjeschtschjernyj mjedwjed}} {{m}}
+*{{sv}}: [1] {{Ü|sv|grottbjörn}}
+*{{sl}}: [1] {{Ü|sl|jamski medved}}
+*{{es}}: [1] {{Ü|es|oso de las cavernas}} {{m}}, {{Ü|es|oso cavernario}} {{m}}
+*{{cs}}: [1] {{Ü|cs|medvěd jeskynní}} {{m}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Höhlenbär}}
+:[1] {{Ref-DWDS|Höhlenbär}}
+:[1] {{Ref-Canoo|Höhlenbär}}
+:[1] {{Ref-UniLeipzig|Höhlenbär}}
+:[1] {{Ref-Duden|Höhlenbär}}
+:[1] {{Ref-wissen.de|Wörterbuch|Höhlenbär}}
+:[1] {{Ref-wissen.de|Lexikon|Höhlenbär}}
+:[*] {{Ref-OWID|elexiko|45969}}
+
+{{Quellen}}

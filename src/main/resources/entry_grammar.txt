@@ -104,6 +104,7 @@ RichTextComponent = Link {RichtTextLink}
                   / KTemplate {RichTextKTemplate}
                   / AbkTemplate {RichTextAbkTemplate}
                   / Gender {RichTextGender}
+                  / WpTemplate {RichTextWpLink}
                   / (UeTemplate / UetTemplate) {RichTextTranslation}
                   / UnknownTemplate
                   / !EOL _ {RichTextPlainText};

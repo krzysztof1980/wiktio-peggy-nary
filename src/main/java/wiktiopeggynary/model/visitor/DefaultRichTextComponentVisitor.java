@@ -20,7 +20,12 @@ public abstract class DefaultRichTextComponentVisitor implements RichTextCompone
 	@Override
 	public void visit(CursiveBlock cursiveBlock) {
 	}
-
+	
+	@Override
+	public void visit(WikipediaLink wikipediaLink) {
+	
+	}
+	
 	@Override
 	public void visit(InternalLink internalLink) {
 	}

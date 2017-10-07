@@ -437,27 +437,31 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	void RichtTextLink() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
 	}
 	
 	void RichTextCursiveText() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
 	}
 	
 	void RichTextKTemplate() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
 	}
 	
 	void RichTextAbkTemplate() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
 	}
 	
 	void RichTextGender() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
 	}
 	
 	void RichTextTranslation() {
-		lhs().put(rhs(0).get());
+		putRhsObjectAtLhs();
+	}
+	
+	void RichTextWpLink() {
+		putRhsObjectAtLhs();
 	}
 	
 	//-------------------------------------------------------------------
@@ -506,8 +510,17 @@ class WiktionarySemantics extends SemanticsBase {
 		return true;
 	}
 	
+	//=====================================================================
+	// WpTemplate = LT ("WP" / "Wikipedia" / "W") (SEP TextualTParam)+ RT
+	//              0               1               2         3        n-1
+	//=====================================================================
 	void WpTemplate() {
-	
+		WikipediaLink link = new WikipediaLink();
+		link.setPageTitle(rhs(3).text());
+		if (rhsSize() > 5) {
+			link.setLinkText(rhs(5).text());
+		}
+		lhs().put(link);
 	}
 	
 	//=====================================================================
@@ -522,5 +535,9 @@ class WiktionarySemantics extends SemanticsBase {
 	
 	private String getFormattedErrorMessageForLogging() {
 		return lhs().errMsg().replace("\n", "\\n");
+	}
+	
+	private void putRhsObjectAtLhs() {
+		lhs().put(rhs(0).get());
 	}
 }

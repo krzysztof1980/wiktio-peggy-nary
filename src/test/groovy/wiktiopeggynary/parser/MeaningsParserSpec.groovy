@@ -104,6 +104,22 @@ class MeaningsParserSpec extends ParserSpecBase {
         getMeaningFromWiktionaryEntry("Boot", 1).text == text
     }
 
+    def "Wikipedia-link in details"() {
+        when:
+        def meaning = getMeaningFromWiktionaryEntry(lemma, meaningIdx)
+
+        then:
+        def link = meaning.text.components.find { c -> c instanceof WikipediaLink } as WikipediaLink
+        link != null
+        link.pageTitle == pageTitle
+        link.linkText == linkText
+
+        where:
+        lemma       | meaningIdx || pageTitle            | linkText
+        "Dreieck"   | 0          || "geometrische Figur" | null
+        "Höhlenbär" | 0          || "Letzte_Kaltzeit"    | "letzten Kaltzeit"
+    }
+
     def "sub-meaning"() {
         when:
         def entry = parseWiktionaryEntryPage("Dirham").wiktionaryEntries[0]
