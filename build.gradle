@@ -70,3 +70,11 @@ task('updateTestData', dependsOn: [jar]) {
         }
     }
 }
+
+task runParser(type: JavaExec) {
+    main = 'wiktiopeggynary.WiktiopeggynaryApp'
+    classpath = sourceSets.main.runtimeClasspath
+    if (project.hasProperty('dumpFile')) {
+        args '-f', project.getProperty('dumpFile').toString()
+    }
+}
