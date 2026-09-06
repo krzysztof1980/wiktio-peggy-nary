@@ -14,12 +14,12 @@ plugins {
     id 'maven-publish'
 }
 
-group 'wiktiopeggynary'
-version '1.0-SNAPSHOT'
+group = 'wiktiopeggynary'
+version = '1.0-SNAPSHOT'
 
 java {
-    sourceCompatibility = 17
-    targetCompatibility = 17
+    sourceCompatibility = 25
+    targetCompatibility = 25
 }
 
 repositories {
@@ -35,7 +35,7 @@ dependencies {
             'org.apache.commons:commons-lang3:3.4',
             'org.slf4j:slf4j-api:2.0.18',
             'commons-cli:commons-cli:1.3',
-            'org.apache.groovy:groovy:4.0.11'
+            'org.apache.groovy:groovy:4.0.27',
             'pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT'
 
     runtimeOnly 'ch.qos.logback:logback-classic:1.5.38',
@@ -43,7 +43,7 @@ dependencies {
 
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.14.1',
-                'org.apache.groovy:groovy:4.0.11',
+                'org.apache.groovy:groovy:4.0.27',
                 'org.spockframework:spock-core:2.4-groovy-4.0',
                 'cglib:cglib-nodep:3.1',
                 'org.objenesis:objenesis:2.1'

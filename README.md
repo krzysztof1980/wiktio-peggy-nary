@@ -11,9 +11,9 @@ This app parses a German Wiktionary dump and indexes the entries into Elasticsea
 
 ### Prerequisites
 
-- **Java 1.8** (e.g. Corretto JDK). The app requires Java 1.8; newer JDKs (11+) break the build. `java` is not on the default PATH — point `JAVA_HOME` at a JDK 1.8 for every Gradle/Java invocation:
+- **JDK 25** (e.g. Temurin or Corretto). The app targets Java 25; the build requires JDK 25 (older JDKs cannot compile Java 25 bytecode). `java` is not on the default PATH — point `JAVA_HOME` at a JDK 25 for every Gradle/Java invocation:
   ```bash
-  export JAVA_HOME=/path/to/jdk1.8   # e.g. ~/.jdks/corretto-1.8.0_504
+  export JAVA_HOME=/path/to/jdk25   # e.g. ~/.jdks/jdk-25.0.4.1+1
   ```
 - **Docker** (to run Elasticsearch).
 - **Gradle** (the bundled wrapper `./gradlew` is sufficient).
@@ -24,7 +24,7 @@ This project depends on `wiktionary-dump-browser` (a sibling project), resolved 
 
 ```bash
 cd ../wiktionary-dump-browser
-./gradlew install
+./gradlew build publishToMavenLocal
 ```
 
 ### 2. Build this project
@@ -38,7 +38,7 @@ This compiles the app, runs the 76-test suite, and produces `build/libs/wiktiope
 
 ### 3. Start Elasticsearch
 
-The app hardcodes the Elasticsearch connection: `localhost:9200`, user `elastic`, password `changeme` (in the sibling project's `ElasticsearchRepository`). Start an ES 5.6.0-compatible instance. The sibling project ships a `docker-compose.yml`:
+The app hardcodes the Elasticsearch connection: `localhost:9200`, user `elastic`, password `changeme` (in the sibling project's `ElasticsearchRepository`). Start an ES 8.x instance. The sibling project ships a `docker-compose.yml`:
 
 ```bash
 cd ../wiktionary-dump-browser
@@ -53,7 +53,7 @@ Or run the ES image directly (no Compose needed):
 docker run -d --name elasticsearch1 -p 9200:9200 \
   -e ES_JAVA_OPTS="-Xms512m -Xmx512m" \
   -e ELASTIC_PASSWORD=changeme \
-  docker.elastic.co/elasticsearch/elasticsearch:5.6.0
+  docker.elastic.co/elasticsearch/elasticsearch:8.15.1
 ```
 
 Verify ES is up:
@@ -100,4 +100,4 @@ The docker-compose file also starts Kibana (a web client for Elasticsearch) on p
 
 ### Known issue
 
-- **Full-dump indexing NPE**: When running the full dump, many entries fail to index with a `NullPointerException` in the sibling project's `ElasticsearchIndexingRepository.indexDocument` (the `bulkProcessor` field is null). A small subset of entries (e.g. 20 small namespace-0 entries) indexes successfully; the full run does not. The bug is in the sibling project (`wiktionary-dump-browser`), not this project.
+- **Full-dump indexing (re-validating)**: Previously, the full dump failed with a `NullPointerException` in the old ES 5.6 client's `BulkProcessor` (the `bulkProcessor` field was null). The client was upgraded to ES 8, which replaces `BulkProcessor` with manual bulk handling, so that specific NPE can no longer occur. A 50-entry subset indexes cleanly; a full-dump run is pending to confirm the fix at scale.
