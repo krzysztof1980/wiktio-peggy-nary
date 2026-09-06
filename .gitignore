@@ -1,0 +1,11 @@
+# Gradle build output + project cache
+build/
+.gradle/
+
+# Runtime logs
+*.log
+
+# IntelliJ auto-generated files (per-dependency descriptors, generated module files, per-user workspace state)
+.idea/libraries/
+.idea/modules/
+.idea/workspace.xml
