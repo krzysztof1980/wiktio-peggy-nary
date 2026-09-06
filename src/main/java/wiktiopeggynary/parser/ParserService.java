@@ -46,18 +46,21 @@ public class ParserService {
 	                                         Consumer<WiktionaryEntryPageParseResult> consumer) {
 		AtomicInteger count = new AtomicInteger();
 		ExecutorService executor = parserTaskExecutorFactory.createExecutor();
-		WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
-			if (p.getNamespace() == null && !ignoredEntries.contains(p.getTitle())) {
-				executor.execute(new ParseWiktionaryEntryPageTask(p, consumer, count));
-			}
-		});
-		WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(wiktionaryPageParser);
-		dumpParser.parse(wiktionaryDumpPath.toFile());
-		executor.shutdown();
 		try {
-			executor.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
-		} catch (InterruptedException e) {
-			logger.error("Exception waiting for threads parsing wiktionary pages to finish", e);
+			WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
+				if (p.getNamespace() == null && !ignoredEntries.contains(p.getTitle())) {
+					executor.execute(new ParseWiktionaryEntryPageTask(p, consumer, count));
+				}
+			});
+			WiktionaryDumpParser dumpParser = new WiktionaryDumpParser(wiktionaryPageParser);
+			dumpParser.parse(wiktionaryDumpPath.toFile());
+		} finally {
+			executor.shutdown();
+			try {
+				executor.awaitTermination(Long.MAX_VALUE, TimeUnit.SECONDS);
+			} catch (InterruptedException e) {
+				logger.error("Exception waiting for threads parsing wiktionary pages to finish", e);
+			}
 		}
 	}
 	

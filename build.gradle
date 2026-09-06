@@ -86,6 +86,12 @@ task('updateTestData', dependsOn: [jar]) {
 task runParser(type: JavaExec) {
     mainClass = 'wiktiopeggynary.WiktiopeggynaryApp'
     classpath = sourceSets.main.runtimeClasspath
+    // JDK 25 introduced XML entity-size security limits (defaults in conf/jaxp.properties):
+    //   - jdk.xml.maxGeneralEntitySizeLimit (single entity, default 100000) -> JAXP00010003
+    //   - jdk.xml.totalEntitySizeLimit      (accumulated total, default 100000) -> JAXP00010004
+    // Wiktionary dump pages exceed these, causing SAXParseException. Raise both to 1GB.
+    systemProperty 'jdk.xml.maxGeneralEntitySizeLimit', '1073741824'
+    systemProperty 'jdk.xml.totalEntitySizeLimit', '1073741824'
     if (project.hasProperty('dumpFile')) {
         args '-f', project.getProperty('dumpFile').toString()
     }
