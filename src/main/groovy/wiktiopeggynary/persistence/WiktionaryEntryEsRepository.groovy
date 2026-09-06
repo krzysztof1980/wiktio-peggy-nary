@@ -3,6 +3,7 @@ package wiktiopeggynary.persistence
 import org.apache.http.HttpEntity
 import org.apache.http.entity.ContentType
 import org.apache.http.nio.entity.NStringEntity
+import org.elasticsearch.client.Request
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import pl.kwitukiewicz.wdb.elasticsearch.ElasticsearchIndexingRepository
@@ -50,8 +51,10 @@ class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository {
 }
 """
         HttpEntity entity = new NStringEntity(jsonString, ContentType.APPLICATION_JSON)
+        Request request = new Request("PUT", "${index}/_mapping")
+        request.setEntity(entity)
         try {
-            lowLevelClient.performRequest("PUT", "${index}/_mapping/${type}", Collections.emptyMap(), entity)
+            lowLevelClient.performRequest(request)
         } catch (Exception e) {
             throw new RuntimeException("Error setting mappings in ${index}", e)
         }
