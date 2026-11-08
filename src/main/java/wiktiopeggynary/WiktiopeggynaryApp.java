@@ -4,7 +4,6 @@ import org.apache.commons.cli.*;
 import wiktiopeggynary.model.WiktionaryEntrySerializer;
 import wiktiopeggynary.parser.ConcurrentParserTaskExecutorFactory;
 import wiktiopeggynary.parser.ParserService;
-import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory;
 import wiktiopeggynary.persistence.WiktionaryEntryEsRepository;
 
 import java.io.IOException;
@@ -70,7 +69,7 @@ public class WiktiopeggynaryApp {
 		}
 		ParserService parserService = new ParserService(parallel
 		                                                ? new ConcurrentParserTaskExecutorFactory()
-		                                                : new SequentialParserTaskExecutorFactory());
+		                                                : new ConcurrentParserTaskExecutorFactory(1));
 		WiktionaryEntryEsRepository wiktionaryEntryRepo = new WiktionaryEntryEsRepository(new WiktionaryEntrySerializer());
 		WiktionaryDumpParseManager parseManager = new WiktionaryDumpParseManager(parserService, wiktionaryEntryRepo);
 		try {

@@ -10,11 +10,24 @@ import java.util.concurrent.TimeUnit;
  */
 public class ConcurrentParserTaskExecutorFactory implements ParserTaskExecutorFactory {
 
-	private static final int THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors();
+	private final int poolSize;
+
+	public ConcurrentParserTaskExecutorFactory() {
+		this(Runtime.getRuntime().availableProcessors());
+	}
+
+	public ConcurrentParserTaskExecutorFactory(int poolSize) {
+		if (poolSize < 1)
+			throw new IllegalArgumentException("poolSize must be at least 1");
+		this.poolSize = poolSize;
+	}
 
 	@Override
 	public ExecutorService createExecutor() {
-		ThreadPoolExecutor executor = new ThreadPoolExecutor(THREAD_POOL_SIZE, THREAD_POOL_SIZE, 0L,
+		// Zero-capacity SynchronousQueue: a task is never buffered — it is handed to an idle worker
+		// or, when all workers are busy, run by the submitting (XML-reader) thread.
+		// poolSize == 1 gives sequential mode with bounded memory.
+		ThreadPoolExecutor executor = new ThreadPoolExecutor(poolSize, poolSize, 0L,
 		                                                     TimeUnit.MILLISECONDS, new SynchronousQueue<>());
 		executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
 		return executor;

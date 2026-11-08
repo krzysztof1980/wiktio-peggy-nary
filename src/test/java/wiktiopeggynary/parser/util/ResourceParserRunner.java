@@ -1,7 +1,7 @@
 package wiktiopeggynary.parser.util;
 
 import wiktiopeggynary.parser.ParserService;
-import wiktiopeggynary.parser.SequentialParserTaskExecutorFactory;
+import wiktiopeggynary.parser.ConcurrentParserTaskExecutorFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ public class ResourceParserRunner {
 
     public static void main(String[] args) throws IOException {
         String articleTitle = getArticleFromUserInput();
-        ParserService parserService = new ParserService(new SequentialParserTaskExecutorFactory());
+        ParserService parserService = new ParserService(new ConcurrentParserTaskExecutorFactory(1));
         parserService.parseWiktionaryEntryPage(ResourceUtils.readArticleFromResources(articleTitle))
                       .ifPresent(result -> result.getWiktionaryEntries().forEach(System.out::println));
     }

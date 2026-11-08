@@ -14,7 +14,7 @@ public class ParserSpecBase {
 
     @BeforeEach
     void setUp() {
-        parserService = new ParserService(new SequentialParserTaskExecutorFactory());
+        parserService = new ParserService(new ConcurrentParserTaskExecutorFactory(1));
     }
 
     public WiktionaryEntryPageParseResult parseWiktionaryEntryPage(String lemma) {
