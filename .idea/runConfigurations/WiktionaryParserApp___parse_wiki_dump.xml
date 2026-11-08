@@ -10,7 +10,7 @@
     <option name="ENABLE_SWING_INSPECTOR" value="false" />
     <option name="ENV_VARIABLES" />
     <option name="PASS_PARENT_ENVS" value="true" />
-    <module name="wiktiopeggynary_main" />
+    <module name="wiktio-peggy-nary.wiktiopeggynary.main" />
     <envs />
     <method>
       <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_Mouse_Parser Generator" />
