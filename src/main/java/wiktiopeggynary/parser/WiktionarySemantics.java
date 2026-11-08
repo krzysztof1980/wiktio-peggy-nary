@@ -331,7 +331,7 @@ class WiktionarySemantics extends SemanticsBase {
 			entryWorkingCopy.addMeaning(meaning);
 		} else {
 			Meaning mainMeaning = entryWorkingCopy.getMeanings().get(entryWorkingCopy.getMeanings().size() - 1);
-			mainMeaning.addSubMeaing(meaning);
+			mainMeaning.addSubMeaning(meaning);
 		}
 	}
 	
@@ -470,13 +470,12 @@ class WiktionarySemantics extends SemanticsBase {
 			return false;
 		if (rhsSize() > 5)
 			throw new ParseException("More than 1 parameter in Abk-template: " + abk);
-		KTemplate kontext = new KTemplate();
-		kontext.setParts(Collections.singletonList(new KTemplate.Part(new RichText(abk), null)));
+		RichText suffix = null;
 		if (rhsSize() == 5) {
 			TemplateParameter param = (TemplateParameter) rhs(3).get();
-			kontext.setSuffix(param.getValue());
+			suffix = param.getValue();
 		}
-		lhs().put(kontext);
+		lhs().put(new KTemplate(List.of(new KTemplate.Part(new RichText(abk), null)), suffix));
 		return true;
 	}
 	
@@ -485,12 +484,8 @@ class WiktionarySemantics extends SemanticsBase {
 	//              0               1               2         3        n-1
 	//=====================================================================
 	void WpTemplate() {
-		WikipediaLink link = new WikipediaLink();
-		link.setPageTitle(rhs(3).text());
-		if (rhsSize() > 5) {
-			link.setLinkText(rhs(5).text());
-		}
-		lhs().put(link);
+		String linkText = rhsSize() > 5 ? rhs(5).text() : null;
+		lhs().put(new WikipediaLink(rhs(3).text(), linkText));
 	}
 	
 	void AeLangVariantTemplate() {
@@ -506,11 +501,8 @@ class WiktionarySemantics extends SemanticsBase {
 	//                       0         1          2         3        4
 	//=====================================================================
 	private void LangVariantTemplate(LanguageVariant.Variant variant) {
-		LanguageVariant languageVariant = new LanguageVariant(variant);
-		if (rhsSize() == 5) {
-			languageVariant.setSuffix(rhs(3).text());
-		}
-		lhs().put(languageVariant);
+		String suffix = rhsSize() == 5 ? rhs(3).text() : null;
+		lhs().put(new LanguageVariant(variant, suffix));
 	}
 	
 	//=====================================================================

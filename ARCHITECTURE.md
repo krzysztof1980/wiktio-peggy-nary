@@ -6,8 +6,8 @@
 
 ## Build & Language
 
-- Gradle build, but it is effectively a **Groovy project**: `build.gradle` sets `java { srcDirs = [] }` and points the Groovy compiler at *both* `src/main/java` and `src/main/groovy`. So `.java` and `.groovy` files are co-compiled by the Groovy compiler and can reference each other.
-- Java owns the parser core + model; Groovy owns persistence, the serializer, a few model classes, and all tests (Spock).
+- Pure **Java 25** project: Gradle `java` plugin, standard source sets (`src/main/java`, `src/test/java`). Groovy/Spock were fully removed (2026-11): former Groovy model/persistence classes became Java (records for immutable value types), and the Spock specs were ported to JUnit 5.
+- The same de-Groovification happened in the sibling library `wiktionary-dump-browser`, so no Groovy runtime is on the classpath anywhere.
 
 ---
 
@@ -37,7 +37,7 @@ flowchart TD
 
 ```text
 wiktio-peggy-nary/
-├── build.gradle                  # Groovy build; compiles java+groovy src dirs
+├── build.gradle                  # Gradle Groovy DSL, java plugin
 ├── settings.gradle
 ├── gradlew / gradlew.bat
 ├── gradle/wrapper/
@@ -75,72 +75,67 @@ wiktio-peggy-nary/
     │   │   │   └── dumpparser/
     │   │   │       ├── WiktionaryPageParser.java    # JWKT IWiktionaryPageParser impl
     │   │   │       └── WiktionaryPageDocument.java
-    │   │   └── model/
-    │   │       ├── Kasus.java
-    │   │       ├── Numerus.java
-    │   │       ├── WiktionaryEntry.java             # base model
-    │   │       ├── markup/                           # rich-text components (Visitor)
-    │   │       │   ├── CursiveBlock.java
-    │   │       │   ├── CompoundRichTextComponent.java
-    │   │       │   ├── Constant.java
-    │   │       │   ├── InternalLink.java
-    │   │       │   ├── NamedTemplateParameter.java
-    │   │       │   ├── NumberedTemplateParameter.java
-    │   │       │   ├── PlainText.java
-    │   │       │   ├── PositionalTemplateParameter.java
-    │   │       │   ├── RichText.java
-    │   │       │   ├── RichTextComponent.java
-    │   │       │   └── TemplateParameter.java
-    │   │       ├── substantiv/
-    │   │       │   ├── Flexion.java
-    │   │       │   ├── FlexionForm.java
-    │   │       │   ├── Gender.java
-    │   │       │   ├── MultiGender.java
-    │   │       │   └── Substantiv.java
-    │   │       ├── translation/
-    │   │       │   ├── Translation.java
-    │   │       │   └── TranslationMeaning.java
-    │   │       └── visitor/
-    │   │           ├── DefaultRichTextComponentVisitor.java
-    │   │           ├── DescendingRichTextComponentVisitor.java
-    │   │           ├── RichTextComponentVisitor.java
-    │   │           └── TemplateParameterVisitor.java
-    │   └── groovy/wiktiopeggynary/
-    │       ├── model/
-    │       │   ├── ReferenceWiktionaryEntry.groovy
-    │       │   ├── WiktionaryEntrySerializer.groovy  # Jackson
-    │       │   ├── markup/
-    │       │   │   ├── ItemNumber.groovy
-    │       │   │   ├── KTemplate.groovy
-    │       │   │   ├── LanguageVariant.groovy
-    │       │   │   └── WikipediaLink.groovy
-    │       │   └── meaning/
-    │       │       ├── KontextShortcutMapper.groovy
-    │       │       └── Meaning.groovy
-    │       └── persistence/
-    │           └── WiktionaryEntryEsRepository.groovy  # Elasticsearch
+    │   ├── model/
+    │   │   ├── Kasus.java
+    │   │   ├── Numerus.java
+    │   │   ├── ReferenceWiktionaryEntry.java
+    │   │   ├── WiktionaryEntry.java             # base model
+    │   │   ├── WiktionaryEntrySerializer.java   # Jackson
+    │   │   ├── markup/                           # rich-text components (Visitor)
+    │   │   │   ├── CursiveBlock.java
+    │   │   │   ├── CompoundRichTextComponent.java
+    │   │   │   ├── Constant.java
+    │   │   │   ├── InternalLink.java
+    │   │   │   ├── ItemNumber.java                   # record
+    │   │   │   ├── KTemplate.java                    # record + nested Part record
+    │   │   │   ├── LanguageVariant.java              # record
+    │   │   │   ├── NamedTemplateParameter.java
+    │   │   │   ├── NumberedTemplateParameter.java
+    │   │   │   ├── PlainText.java
+    │   │   │   ├── PositionalTemplateParameter.java
+    │   │   │   ├── RichText.java
+    │   │   │   ├── RichTextComponent.java
+    │   │   │   ├── TemplateParameter.java
+    │   │   │   └── WikipediaLink.java                # record
+    │   │   ├── meaning/
+    │   │   │   ├── KontextShortcutMapper.java
+    │   │   │   └── Meaning.java
+    │   │   ├── substantiv/
+    │   │   │   ├── Flexion.java
+    │   │   │   ├── FlexionForm.java
+    │   │   │   ├── Gender.java
+    │   │   │   ├── MultiGender.java
+    │   │   │   └── Substantiv.java
+    │   │   ├── translation/
+    │   │   │   ├── Translation.java
+    │   │   │   └── TranslationMeaning.java
+    │   │   └── visitor/
+    │   │       ├── DefaultRichTextComponentVisitor.java
+    │   │       ├── DescendingRichTextComponentVisitor.java
+    │   │       ├── RichTextComponentVisitor.java
+    │   │       └── TemplateParameterVisitor.java
+    │   └── persistence/
+    │       └── WiktionaryEntryEsRepository.java  # Elasticsearch
     └── test/
-        ├── groovy/wiktiopeggynary/
+        ├── java/wiktiopeggynary/
         │   ├── model/
-        │   │   └── WiktionaryEntrySerializerSpec.groovy
-        │   ├── markup/
-        │   │   └── RichTextComponentSpec.groovy
-        │   ├── parser/
-        │   │   ├── GeneralParserSpec.groovy
-        │   │   ├── MeaningsParserSpec.groovy
-        │   │   ├── ParserSpecBase.groovy
-        │   │   ├── SubstantivParserSpec.groovy
-        │   │   └── TranslationsParserSpec.groovy
-        │   ├── translation/
-        │   │   └── TranslationMeaningSpec.groovy
-        │   └── util/
-        │       ├── ResourceParserRunner.groovy
-        │       └── ResourceUtils.groovy
+        │   │   ├── WiktionaryEntrySerializerTest.java
+        │   │   ├── markup/
+        │   │   │   └── RichTextComponentTest.java
+        │   │   └── translation/
+        │   │       └── TranslationMeaningTest.java
+        │   └── parser/
+        │       ├── GeneralParserTest.java
+        │       ├── MeaningsParserTest.java
+        │       ├── ParserSpecBase.java
+        │       ├── SubstantivParserTest.java
+        │       ├── TranslationsParserTest.java
+        │       └── util/
+        │           ├── ResourceParserRunner.java
+        │           └── ResourceUtils.java
         └── resources/
             └── articles-de/              # ~60 German article fixtures
 ```
-
-> Note: the `model/markup` package is split across both source roots — the Java side (`src/main/java/.../model/markup/`) holds the core rich-text tree, while the Groovy side (`src/main/groovy/.../model/markup/`) holds `ItemNumber`, `KTemplate`, `LanguageVariant`, `WikipediaLink`. Both live in the same `wiktiopeggynary.model.markup` package.
 
 ---
 
@@ -171,14 +166,14 @@ wiktio-peggy-nary/
 
 - `WiktionaryEntry` (base): `lemma`, `List<Meaning>`, `Map<language, List<TranslationMeaning>>`.
 - `Substantiv extends WiktionaryEntry`: `MultiGender`, attributes, `Map<Numerus, List<FlexionForm>>` (Singular/Plural flexion forms).
-- `Meaning` (Groovy): `List<ItemNumber>`, `RichText text`, nested `subMeanings`.
-- `markup/` — a **tree of rich-text components** (`RichText`, `PlainText`, `InternalLink`, `TemplateParameter` + named/numbered/positional variants, `CursiveBlock`, …) built on a **Visitor pattern** (`RichTextComponentVisitor` + `Default`/`Descending` visitors) with `mergeWith` semantics. Annotated `@JsonTypeInfo(Id.MINIMAL_CLASS)` so Jackson can round-trip the polymorphic tree.
+- `Meaning`: `List<ItemNumber>`, `RichText text`, nested `subMeanings`.
+- `markup/` — a **tree of rich-text components** (`RichText`, `PlainText`, `InternalLink`, `TemplateParameter` + named/numbered/positional variants, `CursiveBlock`, `KTemplate`, `LanguageVariant`, `WikipediaLink`, `ItemNumber` …) built on a **Visitor pattern** (`RichTextComponentVisitor` + `Default`/`Descending` visitors) with `mergeWith` semantics. The value types that were Groovy (`ItemNumber`, `KTemplate` + `Part`, `LanguageVariant`, `WikipediaLink`) are now **Java records** — free `equals`/`hashCode`/`toString`, JSON shape unchanged. Annotated `@JsonTypeInfo(Id.MINIMAL_CLASS)` so Jackson can round-trip the polymorphic tree (record class names are identical to the old Groovy ones, so stored ES documents stay compatible).
 - `substantiv/`, `translation/`, `meaning/` — supporting enums/value objects (`Gender`, `MultiGender`, `Numerus`, `Kasus`, `Flexion`, `FlexionForm`, `Translation`, `TranslationMeaning`).
 
-### 5. Persistence (`persistence/`, Groovy)
+### 5. Persistence (`persistence/`)
 
 - `WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository` (base class from the sibling project). Index `dewiktionary_entries`, type `entry`. Sets a mapping (`lemma` as `text` + `keyword` sub-field) on rebuild, indexes each entry under a random UUID.
-- `WiktionaryEntrySerializer` (Groovy) — Jackson `ObjectMapper` wrapper; `FAIL_ON_UNKNOWN_PROPERTIES` disabled.
+- `WiktionaryEntrySerializer` — Jackson `ObjectMapper` wrapper; `FAIL_ON_UNKNOWN_PROPERTIES` disabled. Jackson's checked exceptions are wrapped in `UncheckedIOException` (the old Groovy code threw them unchecked; API stays throws-free).
 
 ---
 
@@ -195,14 +190,14 @@ wiktio-peggy-nary/
 ## Dependencies & the Sibling Project
 
 - `de.tudarmstadt.ukp.jwktl:jwktl:1.0.1` — JWKT toolkit; provides `WiktionaryDumpParser` + the `IWiktionaryPageParser`/`IDumpInfo` callback interfaces that `WiktionaryPageParser` implements.
-- **`pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT`** — the sibling project in this workspace. Provides the Elasticsearch base classes (`ElasticsearchIndexingRepository`, `ElasticsearchRepository`, `WiktionaryDumpEsRepository`). `WiktionaryEntryEsRepository` extends `ElasticsearchIndexingRepository`. The Gradle `updateTestData` task uses the sibling's `WiktionaryDumpEsRepository` to pull real articles into test fixtures.
+- **`pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT`** — the sibling project in this workspace (also pure Java since 2026-11). Provides the Elasticsearch base classes (`ElasticsearchIndexingRepository`, `ElasticsearchRepository`, `WiktionaryDumpEsRepository`). `WiktionaryEntryEsRepository` extends `ElasticsearchIndexingRepository`. The Gradle `updateTestData` task uses the sibling's `WiktionaryDumpEsRepository` to pull real articles into test fixtures.
 - Jackson (JSON), Elasticsearch REST high-level client 5.6, commons-lang3, commons-cli, slf4j + logback.
 
 ---
 
 ## Testing
 
-- Spock specs under `src/test/groovy`, extending `ParserSpecBase` (which builds a `ParserService` with the sequential executor and parses fixtures from `src/test/resources/articles-de/*.txt` — ~60 real German articles). Specs cover `SubstantivParserSpec`, `MeaningsParserSpec`, `TranslationsParserSpec`, `GeneralParserSpec`, plus `WiktionaryEntrySerializerSpec`, `RichTextComponentSpec`, `TranslationMeaningSpec`.
+- JUnit 5 tests under `src/test/java`, extending `ParserSpecBase` (which builds a `ParserService` with the sequential executor and parses fixtures from `src/test/resources/articles-de/*.txt` — ~60 real German articles). Tests cover `SubstantivParserTest`, `MeaningsParserTest`, `TranslationsParserTest`, `GeneralParserTest`, plus `WiktionaryEntrySerializerTest`, `RichTextComponentTest`, `TranslationMeaningTest`. The old Spock `where:` data tables are now JUnit `@ParameterizedTest`s.
 
 ---
 
@@ -213,7 +208,7 @@ wiktio-peggy-nary/
 1. **Elasticsearch** reachable at `localhost:9200` (HTTP), user `elastic` / password `changeme` — these are hardcoded in the sibling's `ElasticsearchRepository`. The tool **deletes and recreates** the `dewiktionary_entries` index on every run.
 2. **Sibling project** `wiktionary-dump-browser` installed to local Maven — `build.gradle` resolves `pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT` from `mavenLocal()`. Build it first:
    ```bash
-   cd ../wiktionary-dump-browser && ./gradlew install
+   cd ../wiktionary-dump-browser && ./gradlew publishToMavenLocal
    ```
 3. **A German Wiktionary dump** — a MediaWiki `*-pages-articles-multistream.xml` file (the author's run config points at `dewiktionary-20170820-pages-articles-multistream.xml`).
 
@@ -222,8 +217,6 @@ wiktio-peggy-nary/
 ```bash
 ./gradlew build      # or: ./gradlew jar
 ```
-
-The Groovy compiler compiles both `src/main/java` and `src/main/groovy` (Java `srcDirs` are disabled in `build.gradle`).
 
 ### Run the parser
 
@@ -250,7 +243,7 @@ The parser is **generated**, not hand-edited. The IntelliJ run configs run a *Mo
 ./gradlew test
 ```
 
-Spock specs (see [Testing](#testing)); they parse the `articles-de` fixtures and need no Elasticsearch.
+JUnit 5 tests (see [Testing](#testing)); they parse the `articles-de` fixtures and need no Elasticsearch.
 
 ### Debug a single article
 
@@ -268,6 +261,5 @@ Pulls real article text from ES (via the sibling's `WiktionaryDumpEsRepository`)
 
 ## Notable Observations
 
-- **Mixed-language build**: everything compiles through the Groovy compiler (Java `srcDirs` disabled). This is intentional to let Groovy and Java interoperate, but it means the "Java" sources are really Groovy-compiled.
 - **Generated code is checked in**: `WiktionaryParser.java` (Mouse 1.9, 2017) and the `WiktionarySemantics` skeleton (Mouse 1.6.1, 2015) carry generation banners; the grammar and the generated parser can drift if one is updated without regenerating.
 - **Two `wiktionary` projects share the workspace**: this one (`wiktio-peggy-nary`) is the *parser/indexer*; `wiktionary-dump-browser` is the *ES-backed dump browser* it depends on. The README mentions CouchDB as the original target, but the implementation uses Elasticsearch.
