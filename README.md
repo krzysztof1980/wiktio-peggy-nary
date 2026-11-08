@@ -86,10 +86,11 @@ bunzip2 dewiktionary-${DATE}-pages-articles-multistream.xml.bz2
 
 ### 6. Run the app
 
-The app deletes/recreates the `dewiktionary_entries` index on every run. Run it with the `runParser` Gradle task, passing the dump file:
+The app deletes/recreates the `dewiktionary_entries` index on every run. Run it with the `runParser` Gradle task (sequential) or `runParserParallel` (one parser thread per CPU core), passing the dump file:
 
 ```bash
 ./gradlew runParser -PdumpFile=dewiktionary-${DATE}-pages-articles-multistream.xml
+./gradlew runParserParallel -PdumpFile=dewiktionary-${DATE}-pages-articles-multistream.xml
 ```
 
 The full dump has ~300k entries and takes a long time to parse/index. Progress is logged to `wiktiopeggynary.log`.

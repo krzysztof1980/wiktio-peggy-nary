@@ -71,18 +71,37 @@ task('updateTestData', dependsOn: [jar]) {
     }
 }
 
-task runParser(type: JavaExec) {
-    mainClass = 'wiktiopeggynary.WiktiopeggynaryApp'
-    classpath = sourceSets.main.runtimeClasspath
+def configureParserTask = { JavaExec exec, boolean parallel ->
+    exec.mainClass = 'wiktiopeggynary.WiktiopeggynaryApp'
+    exec.classpath = sourceSets.main.runtimeClasspath
     // JDK 25 introduced XML entity-size security limits (defaults in conf/jaxp.properties):
     //   - jdk.xml.maxGeneralEntitySizeLimit (single entity, default 100000) -> JAXP00010003
     //   - jdk.xml.totalEntitySizeLimit      (accumulated total, default 100000) -> JAXP00010004
     // Wiktionary dump pages exceed these, causing SAXParseException. Raise both to 1GB.
-    systemProperty 'jdk.xml.maxGeneralEntitySizeLimit', '1073741824'
-    systemProperty 'jdk.xml.totalEntitySizeLimit', '1073741824'
+    exec.systemProperty 'jdk.xml.maxGeneralEntitySizeLimit', '1073741824'
+    exec.systemProperty 'jdk.xml.totalEntitySizeLimit', '1073741824'
     if (project.hasProperty('dumpFile')) {
-        args '-f', project.getProperty('dumpFile').toString()
+        exec.args '-f', project.getProperty('dumpFile').toString()
     }
+    if (parallel) {
+        // app's -p flag: entry parsing on a core-sized thread pool
+        exec.args '-p'
+    }
+    exec.doFirst {
+        if (!project.hasProperty('dumpFile')) {
+            throw new GradleException("Missing dump file. Run as: ./gradlew ${exec.name} -PdumpFile=<pages-articles.xml>")
+        }
+    }
+}
+
+// usage: ./gradlew runParser -PdumpFile=<dump.xml>  (sequential)
+task runParser(type: JavaExec) {
+    configureParserTask delegate, false
+}
+
+// usage: ./gradlew runParserParallel -PdumpFile=<dump.xml>  (parallel)
+task runParserParallel(type: JavaExec) {
+    configureParserTask delegate, true
 }
 
 publishing {
