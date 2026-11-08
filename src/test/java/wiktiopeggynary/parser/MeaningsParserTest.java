@@ -66,9 +66,9 @@ class MeaningsParserTest extends ParserSpecBase {
 
         assertEquals(3, kTemplate.parts().size());
         assertEquals(new RichText("ugs."), kTemplate.parts().get(0).text());
-        assertEquals(new RichText("_"), kTemplate.parts().get(0).separator());
+        assertEquals(new RichText(), kTemplate.parts().get(0).separator());
         assertEquals(new RichText("übertr."), kTemplate.parts().get(1).text());
-        assertEquals(new RichText("_"), kTemplate.parts().get(1).separator());
+        assertEquals(new RichText(), kTemplate.parts().get(1).separator());
         assertEquals(new RichText("zu [5]"), kTemplate.parts().get(2).text());
         assertNull(kTemplate.parts().get(2).separator());
     }
