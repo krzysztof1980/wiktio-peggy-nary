@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      # This project resolves pl.kwitukiewicz:wiktionary-dump-browser:1.0-SNAPSHOT
+      # from mavenLocal, which is empty on CI runners. Check out the sibling repo
+      # (default branch) and publish it to mavenLocal first — build.gradle needs it
+      # on the buildscript classpath at configuration time, so this must run before
+      # any Gradle invocation in this project.
+      - name: Check out wiktionary-dump-browser (mavenLocal dependency)
+        uses: actions/checkout@v4
+        with:
+          repository: krzysztof1980/wiktionary-dump-browser
+          path: wiktionary-dump-browser
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: gradle
+
+      - name: Publish wiktionary-dump-browser to mavenLocal
+        working-directory: wiktionary-dump-browser
+        # See the override comment below.
+        run: ./gradlew -Dorg.gradle.java.home="$JAVA_HOME" publishToMavenLocal
+
+      # gradle.properties pins org.gradle.java.home to a developer's local JDK path.
+      # Override it on the command line so Gradle uses the JDK setup-java installed.
+      - name: Build and test
+        run: ./gradlew -Dorg.gradle.java.home="$JAVA_HOME" build
+
+      - name: Upload test results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/test-results/
+          retention-days: 7
