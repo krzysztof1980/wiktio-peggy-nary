@@ -3,69 +3,140 @@ package wiktiopeggynary.model.markup;
 import wiktiopeggynary.model.visitor.RichTextComponentVisitor;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author Krzysztof Witukiewicz
  */
 public record KTemplate(List<Part> parts, RichText suffix) implements RichTextComponent {
 
+    private static final String COMMA_TEXT = ",";
+    private static final String SEPARATOR_SUPPRESSION_MARKER = "_";
+    /**
+     * Vorlage:K: t7 separates the last positional parameter from ft and applies
+     * regardless of how many positional parameters there are.
+     */
+    private static final int SEPARATOR_BEFORE_FREE_TEXT_POSITION = 7;
+    private static final Pattern T_SEPARATOR = Pattern.compile("t([0-9]+)");
+
+    /**
+     * Interprets {{K|...}} parameters as documented in
+     * <a href="https://de.wiktionary.org/wiki/Vorlage:K">Vorlage:K</a>. The parts render as
+     * {@code part1 sep1 part2 sep2 … sepLast freeText}, where
+     * <ul>
+     *   <li>positional parameters become parts,</li>
+     *   <li>{@code t1}..{@code t6} override the separator after the n-th part,
+     *       only when another part follows it,</li>
+     *   <li>{@code t7} overrides the separator before the free text ({@code ft})
+     *       and applies however few parts there are,</li>
+     *   <li>a declared separator of {@code "_"} renders as nothing, an undeclared one as {@code ","},</li>
+     *   <li>{@code ft} becomes the suffix; when absent, {@code ":"} is used.</li>
+     * </ul>
+     * For example {{K|trans.|t1=;|besonders|bayrisch}} renders "transitiv; besonders, bayrisch:".
+     * Out-of-range and unknown named parameters are ignored.
+     */
     public static KTemplate fromTemplate(List<TemplateParameter> params) {
-        List<Part> parts = new ArrayList<>();
-        params.stream()
-              .filter(PositionalTemplateParameter.class::isInstance)
-              .map(PositionalTemplateParameter.class::cast)
-              .forEach(p -> parts.add(new Part(p.getValue(), null)));
+        List<RichText> contextTexts = contextTexts(params);
+        Separators separators = declaredSeparators(params, contextTexts.size());
+        Optional<RichText> freeText = freeText(params);
 
-        RichText suffix = null;
-        RichText beforeSuffix = null;
-        for (TemplateParameter param : params) {
-            if (!(param instanceof NamedTemplateParameter p))
-                continue;
-            String name = p.getName();
-            if (name.equals("ft")) {
-                suffix = p.getValue();
-            } else if (name.matches("t[0-9]+")) {
-                // Vorlage:K: t1..t6 = separator between positional parameter N and N+1;
-                // t7 = separator between the last positional parameter and ft, which applies
-                // even with fewer than seven positional parameters. A value of "_" suppresses
-                // the separator. Out-of-range tN is ignored instead of throwing.
-                int pos = Integer.parseInt(name.substring(1));
-                RichText separator = separatorOf(p.getValue());
-                if (pos == 7) {
-                    beforeSuffix = separator;
-                } else if (pos >= 1 && pos < parts.size()) {
-                    Part part = parts.get(pos - 1);
-                    parts.set(pos - 1, new Part(part.text(), separator));
-                }
-            }
-        }
-        // set default value for separator in all but the last Part, if null
-        for (int i = 0; i < parts.size() - 1; i++) {
-            Part part = parts.get(i);
-            if (part.separator() == null)
-                parts.set(i, new Part(part.text(), new RichText(",")));
-        }
-        // separator between the last Part and the ft text: comma by default, t7 overrides it
-        if (!parts.isEmpty() && suffix != null && !suffix.isEmpty()) {
-            int last = parts.size() - 1;
-            Part lastPart = parts.get(last);
-            if (lastPart.separator() == null)
-                parts.set(last, new Part(lastPart.text(), beforeSuffix != null ? beforeSuffix : new RichText(",")));
-        }
-        // set default value for suffix, if null
-        if (suffix == null)
-            suffix = new RichText(":");
-
-        return new KTemplate(List.copyOf(parts), suffix);
+        List<Part> parts = joinWithSeparators(contextTexts, separators, freeText);
+        return new KTemplate(parts, freeText.orElseGet(() -> new RichText(":")));
     }
 
-    private static RichText separatorOf(RichText value) {
+    private static List<RichText> contextTexts(List<TemplateParameter> params) {
+        return namedAndPositionalParams(params, PositionalTemplateParameter.class).stream()
+                                                                                   .map(PositionalTemplateParameter::getValue)
+                                                                                   .toList();
+    }
+
+    /** The {@code ft} parameter, or empty when absent; last one wins. */
+    private static Optional<RichText> freeText(List<TemplateParameter> params) {
+        RichText freeText = null;
+        for (NamedTemplateParameter param : namedAndPositionalParams(params, NamedTemplateParameter.class))
+            if (param.getName().equals("ft"))
+                freeText = param.getValue();
+        return Optional.ofNullable(freeText);
+    }
+
+    private static Separators declaredSeparators(List<TemplateParameter> params, int partCount) {
+        Map<Integer, RichText> afterPart = new HashMap<>();
+        RichText beforeFreeText = null;
+        for (NamedTemplateParameter param : namedAndPositionalParams(params, NamedTemplateParameter.class)) {
+            int position = separatorPosition(param.getName());
+            if (position < 0)
+                continue;
+            RichText declared = declaredSeparator(param.getValue());
+            if (position == SEPARATOR_BEFORE_FREE_TEXT_POSITION)
+                beforeFreeText = declared;
+            else if (position >= 1 && position < partCount)
+                afterPart.put(position - 1, declared);
+        }
+        return new Separators(afterPart, beforeFreeText);
+    }
+
+    /** @return 1..99 when the parameter name declares a separator (like {@code t3}), -1 otherwise. */
+    private static int separatorPosition(String name) {
+        Matcher matcher = T_SEPARATOR.matcher(name);
+        return matcher.matches() ? Integer.parseInt(matcher.group(1)) : -1;
+    }
+
+    /** A declared separator of "_" means: render nothing between the parts. */
+    private static RichText declaredSeparator(RichText value) {
         List<RichTextComponent> components = value.getComponents();
-        if (components.size() == 1 && components.get(0) instanceof PlainText plain && "_".equals(plain.getText()))
-            return RichText.empty();   // "_" suppresses the separator (Vorlage:K)
-        return value;
+        boolean suppressed = components.size() == 1
+                             && components.get(0) instanceof PlainText plain
+                             && SEPARATOR_SUPPRESSION_MARKER.equals(plain.getText());
+        return suppressed ? RichText.empty() : value;
+    }
+
+    private static List<Part> joinWithSeparators(List<RichText> contextTexts, Separators separators,
+                                                 Optional<RichText> freeText) {
+        List<Part> parts = new ArrayList<>();
+        for (int partIndex = 0; partIndex < contextTexts.size(); partIndex++) {
+            boolean lastPart = partIndex == contextTexts.size() - 1;
+            parts.add(new Part(contextTexts.get(partIndex),
+                               separatorAfter(separators, partIndex, lastPart, freeText)));
+        }
+        return parts;
+    }
+
+    private static RichText separatorAfter(Separators separators, int partIndex, boolean lastPart,
+                                           Optional<RichText> freeText) {
+        RichText declared = separators.afterPart(partIndex);
+        if (declared != null)
+            return declared;
+        if (!lastPart)
+            return comma();
+        boolean rendersFreeText = freeText.filter(text -> !text.isEmpty()).isPresent();
+        if (!rendersFreeText)
+            return null;
+        return separators.beforeFreeText() != null ? separators.beforeFreeText() : comma();
+    }
+
+    private static RichText comma() {
+        return new RichText(COMMA_TEXT);
+    }
+
+    private static <T extends TemplateParameter> List<T> namedAndPositionalParams(List<TemplateParameter> params,
+                                                                                   Class<T> type) {
+        return params.stream().filter(type::isInstance).map(type::cast).toList();
+    }
+
+    /**
+     * Separator overrides declared by {@code tN} parameters: {@code afterPart} maps a part index
+     * to the separator rendered right after it, {@code beforeFreeText} is {@code t7}.
+     */
+    private record Separators(Map<Integer, RichText> afterPart, RichText beforeFreeText) {
+
+        RichText afterPart(int partIndex) {
+            return afterPart.get(partIndex);
+        }
     }
 
     @Override
