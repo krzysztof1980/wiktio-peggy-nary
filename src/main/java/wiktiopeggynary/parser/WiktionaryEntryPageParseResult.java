@@ -36,6 +36,7 @@ public class WiktionaryEntryPageParseResult {
 	public String toString() {
 		return "WiktionaryEntryPageParseResult{" +
 				       "wiktionaryEntries=" + wiktionaryEntries +
+				       ", sequence=" + sequence +
 				       '}';
 	}
 }

@@ -26,6 +26,21 @@ public class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository
         this.entrySerializer = entrySerializer;
     }
 
+    /**
+     * Cross-repo contract with the derdieapp exporter: the document {@code _id} format is
+     * {@code %012d-%02d} ({@code pageSequence-entryIndex}). Because both components are
+     * fixed-width and zero-padded, lexicographic order equals numeric order, so {@code _id}
+     * ascending reconstructs Wiktionary dump page order — this is the ordering contract the
+     * derdieapp exporter consumes.
+     *
+     * <p>Guarantees/ceilings: the entry-index component stays lexicographically ordered only
+     * for fewer than 100 entries per page (the corpus maximum is single digits); the page
+     * sequence counts only parsed pages (gaps are allowed) and is assigned monotonically on
+     * the dump-stream thread.
+     *
+     * <p>Consumers must sort {@code _id} client-side: Elasticsearch 8.x disallows fielddata
+     * access on {@code _id}, so a server-side sort on {@code _id} fails.
+     */
     public static String documentId(long pageSequence, int entryIndex) {
         return String.format("%012d-%02d", pageSequence, entryIndex);
     }

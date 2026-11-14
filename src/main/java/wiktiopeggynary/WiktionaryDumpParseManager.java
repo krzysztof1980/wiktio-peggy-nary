@@ -23,7 +23,7 @@ public class WiktionaryDumpParseManager {
 	}
 
 	public void parse(Path wiktionaryDumpPath) {
-		logger.info("Deleting indices...");
+		logger.info("Rebuilding index (delete + create)...");
 
 		logger.info("Indexing wiktionary entries...");
 		wiktionaryEntryRepo.prepareIndexForRebuild();
