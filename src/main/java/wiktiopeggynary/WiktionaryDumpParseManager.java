@@ -27,9 +27,12 @@ public class WiktionaryDumpParseManager {
 
 		logger.info("Indexing wiktionary entries...");
 		wiktionaryEntryRepo.prepareIndexForRebuild();
-		parserService.getWiktionaryEntriesFromDump(wiktionaryDumpPath,
-		                                           r -> r.getWiktionaryEntries().forEach(wiktionaryEntryRepo::indexWiktionaryEntry)
-		);
+		parserService.getWiktionaryEntriesFromDump(wiktionaryDumpPath, r -> {
+			var entries = r.getWiktionaryEntries();
+			for (int entryIndex = 0; entryIndex < entries.size(); entryIndex++) {
+				wiktionaryEntryRepo.indexWiktionaryEntry(r.getSequence(), entryIndex, entries.get(entryIndex));
+			}
+		});
 		wiktionaryEntryRepo.indexRebuildDone();
 	}
 }

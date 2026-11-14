@@ -17,6 +17,7 @@ import java.util.Optional;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
@@ -45,10 +46,14 @@ public class ParserService {
 	public void getWiktionaryEntriesFromDump(Path wiktionaryDumpPath,
 	                                         Consumer<WiktionaryEntryPageParseResult> consumer) {
 		AtomicInteger count = new AtomicInteger();
+		AtomicLong emitted = new AtomicLong();
 		ExecutorService executor = parserTaskExecutorFactory.createExecutor();
 		try {
 			WiktionaryPageParser wiktionaryPageParser = new WiktionaryPageParser(p -> {
 				if (p.getNamespace() == null && !ignoredEntries.contains(p.getTitle())) {
+					// Assigned on the dump-stream thread, before submission, so that
+					// sequence order matches page order regardless of executor parallelism.
+					p.setSequence(emitted.getAndIncrement());
 					executor.execute(new ParseWiktionaryEntryPageTask(p, consumer, count));
 				}
 			});
@@ -110,7 +115,8 @@ public class ParserService {
 				Optional<WiktionaryEntryPageParseResult> optParseResult = parseWiktionaryEntryPage(
 						pageDocument.getText());
 				if (optParseResult.isPresent()) {
-					consumer.accept(optParseResult.get());
+					consumer.accept(new WiktionaryEntryPageParseResult(
+							optParseResult.get().getWiktionaryEntries(), pageDocument.getSequence()));
 				} else {
 					logger.error("Cannot parse entry with title '{}'", pageDocument.getTitle());
 					erroneousEntriesLogger.error(pageDocument.getTitle() + " (cannot parse)");

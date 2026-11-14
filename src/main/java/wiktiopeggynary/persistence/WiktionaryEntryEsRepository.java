@@ -10,8 +10,6 @@ import pl.kwitukiewicz.wdb.elasticsearch.ElasticsearchIndexingRepository;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.WiktionaryEntrySerializer;
 
-import java.util.UUID;
-
 /**
  * @author Krzysztof Witukiewicz
  */
@@ -28,10 +26,13 @@ public class WiktionaryEntryEsRepository extends ElasticsearchIndexingRepository
         this.entrySerializer = entrySerializer;
     }
 
-    public void indexWiktionaryEntry(WiktionaryEntry entry) {
-        String id = UUID.randomUUID().toString();
+    public static String documentId(long pageSequence, int entryIndex) {
+        return String.format("%012d-%02d", pageSequence, entryIndex);
+    }
+
+    public void indexWiktionaryEntry(long pageSequence, int entryIndex, WiktionaryEntry entry) {
         String entryJsonString = entrySerializer.serializeWiktionaryEntry(entry);
-        indexDocument(id, entryJsonString);
+        indexDocument(documentId(pageSequence, entryIndex), entryJsonString);
     }
 
     @Override

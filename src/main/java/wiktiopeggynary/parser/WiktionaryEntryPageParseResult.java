@@ -13,9 +13,19 @@ import java.util.List;
 public class WiktionaryEntryPageParseResult {
 
 	private final List<WiktionaryEntry> wiktionaryEntries = new ArrayList<>();
+	private final long sequence;
 
 	public WiktionaryEntryPageParseResult(Collection<WiktionaryEntry> wiktionaryEntries) {
+		this(wiktionaryEntries, 0L);
+	}
+
+	public WiktionaryEntryPageParseResult(Collection<WiktionaryEntry> wiktionaryEntries, long sequence) {
 		this.wiktionaryEntries.addAll(wiktionaryEntries);
+		this.sequence = sequence;
+	}
+
+	public long getSequence() {
+		return sequence;
 	}
 
 	public List<WiktionaryEntry> getWiktionaryEntries() {
