@@ -66,20 +66,11 @@ public record KTemplate(List<Part> parts, RichText suffix) implements RichTextCo
     }
 
     private static Separators declaredSeparators(List<TemplateParameter> params, int partCount) {
-        Map<Integer, RichText> afterPart = new HashMap<>();
-        RichText beforeFreeText = null;
-        for (NamedTemplateParameter param : namedAndPositionalParams(params, NamedTemplateParameter.class)) {
-            OptionalInt position = separatorPosition(param.getName());
-            if (position.isEmpty())
-                continue;
-            int pos = position.getAsInt();
-            RichText declared = declaredSeparator(param.getValue());
-            if (pos == SEPARATOR_BEFORE_FREE_TEXT_POSITION)
-                beforeFreeText = declared;
-            else if (pos < partCount)
-                afterPart.put(pos - 1, declared);
-        }
-        return new Separators(afterPart, beforeFreeText);
+        Separators.Builder builder = Separators.builder(partCount);
+        for (NamedTemplateParameter param : namedAndPositionalParams(params, NamedTemplateParameter.class))
+            separatorPosition(param.getName())
+                            .ifPresent(position -> builder.declare(position, declaredSeparator(param.getValue())));
+        return builder.build();
     }
 
     /**
@@ -141,6 +132,38 @@ public record KTemplate(List<Part> parts, RichText suffix) implements RichTextCo
 
         RichText afterPart(int partIndex) {
             return afterPart.get(partIndex);
+        }
+
+        static Builder builder(int partCount) {
+            return new Builder(partCount);
+        }
+
+        /** Accumulates the declared {@code tN} parameters into an immutable {@link Separators}. */
+        private static final class Builder {
+
+            private final int partCount;
+            private final Map<Integer, RichText> afterPart = new HashMap<>();
+            private RichText beforeFreeText;
+
+            private Builder(int partCount) {
+                this.partCount = partCount;
+            }
+
+            /**
+             * Records a separator declared at a 1-based {@code tN} position; positions pointing
+             * behind the last part are out of range and dropped.
+             */
+            Builder declare(int position, RichText separator) {
+                if (position == SEPARATOR_BEFORE_FREE_TEXT_POSITION)
+                    beforeFreeText = separator;
+                else if (position < partCount)
+                    afterPart.put(position - 1, separator);
+                return this;
+            }
+
+            Separators build() {
+                return new Separators(Map.copyOf(afterPart), beforeFreeText);
+            }
         }
     }
 
