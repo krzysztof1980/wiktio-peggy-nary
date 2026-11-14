@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.OptionalInt;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,7 +23,7 @@ public record KTemplate(List<Part> parts, RichText suffix) implements RichTextCo
      * regardless of how many positional parameters there are.
      */
     private static final int SEPARATOR_BEFORE_FREE_TEXT_POSITION = 7;
-    private static final Pattern T_SEPARATOR = Pattern.compile("t([0-9]+)");
+    private static final Pattern T_SEPARATOR = Pattern.compile("t([1-7])");
 
     /**
      * Interprets {{K|...}} parameters as documented in
@@ -68,22 +69,26 @@ public record KTemplate(List<Part> parts, RichText suffix) implements RichTextCo
         Map<Integer, RichText> afterPart = new HashMap<>();
         RichText beforeFreeText = null;
         for (NamedTemplateParameter param : namedAndPositionalParams(params, NamedTemplateParameter.class)) {
-            int position = separatorPosition(param.getName());
-            if (position < 0)
+            OptionalInt position = separatorPosition(param.getName());
+            if (position.isEmpty())
                 continue;
+            int pos = position.getAsInt();
             RichText declared = declaredSeparator(param.getValue());
-            if (position == SEPARATOR_BEFORE_FREE_TEXT_POSITION)
+            if (pos == SEPARATOR_BEFORE_FREE_TEXT_POSITION)
                 beforeFreeText = declared;
-            else if (position >= 1 && position < partCount)
-                afterPart.put(position - 1, declared);
+            else if (pos < partCount)
+                afterPart.put(pos - 1, declared);
         }
         return new Separators(afterPart, beforeFreeText);
     }
 
-    /** @return 1..99 when the parameter name declares a separator (like {@code t3}), -1 otherwise. */
-    private static int separatorPosition(String name) {
+    /**
+     * @return the declared 1-based position when the parameter name is a separator override
+     *         ({@code t1}..{@code t7}, the only ones Vorlage:K defines), empty otherwise
+     */
+    private static OptionalInt separatorPosition(String name) {
         Matcher matcher = T_SEPARATOR.matcher(name);
-        return matcher.matches() ? Integer.parseInt(matcher.group(1)) : -1;
+        return matcher.matches() ? OptionalInt.of(Integer.parseInt(matcher.group(1))) : OptionalInt.empty();
     }
 
     /** A declared separator of "_" means: render nothing between the parts. */
