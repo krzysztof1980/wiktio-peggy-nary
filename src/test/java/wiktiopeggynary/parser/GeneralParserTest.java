@@ -7,6 +7,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import wiktiopeggynary.model.ReferenceWiktionaryEntry;
 import wiktiopeggynary.model.WiktionaryEntry;
+import wiktiopeggynary.model.substantiv.Gender;
+import wiktiopeggynary.model.substantiv.Substantiv;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -14,6 +16,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @author Krzysztof Witukiewicz
@@ -24,6 +27,19 @@ class GeneralParserTest extends ParserSpecBase {
     @CsvSource({"\"empty line at the begin of file\",Unabwendbarkeit"})
     void newline(String testcase, String lemma) {
         assertFalse(parseWiktionaryEntryPage(lemma).getWiktionaryEntries().isEmpty());
+    }
+
+    @Test
+    void parseTeilPageFromDump() {
+        List<WiktionaryEntry> entries = parseWiktionaryEntryPage("Teil").getWiktionaryEntries();
+
+        assertEquals(2, entries.size());
+        Substantiv stueckTeil = assertInstanceOf(Substantiv.class, entries.get(0));
+        assertTrue(stueckTeil.getGender().isSameAs(Gender.NEUTRUM));
+        assertEquals(3, stueckTeil.getMeanings().size());
+        Substantiv mathTeil = assertInstanceOf(Substantiv.class, entries.get(1));
+        assertTrue(mathTeil.getGender().isSameAs(Gender.MASKULINUM));
+        assertEquals(3, mathTeil.getMeanings().size());
     }
 
     @Test

@@ -22,7 +22,7 @@ Lemma = (!(Space "(") _)+ Space {};
 DeWortart = ( WortartKopf WortartBody / UnknownWortartKopf (!KopfStart Line)* ) ;
 WortartKopf = SubstantivKopf {saveEintrag};
 WortartBody = MiddleSection TranslationsSection? ~{};
-UnknownWortartKopf = KOPF3 WortartTemplate _*+ KOPF3 RestOfLine ;
+UnknownWortartKopf = KOPF3 WortartTemplate RestOfLine ;
 WortartTemplate = LT "Wortart" SEP TParam SEP "Deutsch" RT {};
 
 //==============================================================================
@@ -33,7 +33,8 @@ SubstantivTemplate = LT "Wortart" SEP "Substantiv" SEP "Deutsch" RT {createSubst
 SubstantivAttributes = (","? Space SubstantivAttribute)* ~{};
 SubstantivAttribute = Gender {substantivGender}
                     / WortartTemplate {substantivWortart}
-                    / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination};
+                    / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination}
+                    / "''" (!"''" _)* "''" ;
 
 //------------------------------------------------------------------------------
 // Flexion table
