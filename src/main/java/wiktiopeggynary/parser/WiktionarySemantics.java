@@ -111,6 +111,16 @@ class WiktionarySemantics extends SemanticsBase {
 	void substantivAdjDeklination() {
 		((Substantiv) entryWorkingCopy).addAttribute(Substantiv.ATTR_ADJ_DEKLINATION);
 	}
+
+	//-------------------------------------------------------------------
+	//  SubstantivAttribute = "''" (!"''" _)* "''"
+	//                            1 .. rhsSize()-2
+	//-------------------------------------------------------------------
+	void substantivAnnotation() {
+		String annotation = rhsText(1, rhsSize() - 1);
+		if (!annotation.isBlank())
+			((Substantiv) entryWorkingCopy).setMeaningAnnotation(annotation);
+	}
 	
 	//=====================================================================
 	//  Genus = "Genus" (Space Digit)? "=" ([mnfu0x] / "pl") EOL

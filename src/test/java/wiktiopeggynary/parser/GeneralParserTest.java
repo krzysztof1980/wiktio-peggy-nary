@@ -36,9 +36,11 @@ class GeneralParserTest extends ParserSpecBase {
         assertEquals(2, entries.size());
         Substantiv stueckTeil = assertInstanceOf(Substantiv.class, entries.get(0));
         assertTrue(stueckTeil.getGender().isSameAs(Gender.NEUTRUM));
+        assertEquals("Stück", stueckTeil.getMeaningAnnotation());
         assertEquals(3, stueckTeil.getMeanings().size());
         Substantiv mathTeil = assertInstanceOf(Substantiv.class, entries.get(1));
         assertTrue(mathTeil.getGender().isSameAs(Gender.MASKULINUM));
+        assertEquals("Untermenge", mathTeil.getMeaningAnnotation());
         assertEquals(3, mathTeil.getMeanings().size());
     }
 

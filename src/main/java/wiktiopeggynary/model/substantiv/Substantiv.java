@@ -15,6 +15,7 @@ public class Substantiv extends WiktionaryEntry {
 	private final Collection<String> attributes = new ArrayList<>();
 	private final Map<Numerus, List<FlexionForm>> flexionForms = new HashMap<>();
 	private MultiGender gender;
+	private String meaningAnnotation;
 	
 	public Substantiv() {
 		flexionForms.put(Numerus.Singular, new ArrayList<>());
@@ -27,6 +28,20 @@ public class Substantiv extends WiktionaryEntry {
 	
 	public void setGender(MultiGender gender) {
 		this.gender = gender;
+	}
+
+	/**
+	 * The meaning annotation of the word-class head line, e.g. {@code Stück} in
+	 * {@code === {{Wortart|Substantiv|Deutsch}}, {{n}}, ''Stück'' ===}. Distinguishes
+	 * homograph sections sharing lemma and gender on de.wiktionary; null when the
+	 * head line carries no annotation.
+	 */
+	public String getMeaningAnnotation() {
+		return meaningAnnotation;
+	}
+
+	public void setMeaningAnnotation(String meaningAnnotation) {
+		this.meaningAnnotation = meaningAnnotation;
 	}
 	
 	public Collection<String> getAttributes() {

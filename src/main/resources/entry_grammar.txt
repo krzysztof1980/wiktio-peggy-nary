@@ -34,7 +34,7 @@ SubstantivAttributes = (","? Space SubstantivAttribute)* ~{};
 SubstantivAttribute = Gender {substantivGender}
                     / WortartTemplate {substantivWortart}
                     / "''adjektivische Deklination" ","? "''" {substantivAdjDeklination}
-                    / "''" (!"''" _)* "''" ;
+                    / "''" (!"''" _)* "''" {substantivAnnotation};
 
 //------------------------------------------------------------------------------
 // Flexion table
