@@ -234,7 +234,23 @@ Output: entries indexed into the ES index `dewiktionary_entries` (type `entry`, 
 
 ### Regenerate the parser (Mouse)
 
-The parser is **generated**, not hand-edited. The IntelliJ run configs run a *Mouse Parser Generator* external tool as a **Before-launch** step, regenerating `WiktionaryParser.java` from `entry_grammar.txt` (a separate *Mouse Test Parser Generator* backs the test runner). So the development loop is: **edit `entry_grammar.txt` → regenerate → run.**
+The parser is **generated**, not hand-edited. The development loop is: **edit `entry_grammar.txt` → regenerate → run.**
+
+The old IntelliJ *Mouse Parser Generator* external tool no longer exists on the workstation; regenerate from the command line instead (verified 2026-11-16: regenerating the unchanged grammar reproduces the checked-in `WiktionaryParser.java` byte-for-byte except the header banner):
+
+```bash
+# Mouse 1.9 (same version that generated the checked-in parser), Apache-2.0:
+# https://sourceforge.net/projects/mousepeg/files/Mouse-1.9/
+curl -sL 'https://sourceforge.net/projects/mousepeg/files/Mouse-1.9/Mouse-1.9.tar.gz/download' -o /tmp/Mouse-1.9.tar.gz
+tar xzf /tmp/Mouse-1.9.tar.gz -C /tmp
+$JAVA_HOME/bin/java -cp /tmp/Mouse-1.9/Mouse-1.9.jar mouse.Generate \
+    -G src/main/resources/entry_grammar.txt \
+    -P WiktionaryParser -S WiktionarySemantics \
+    -p wiktiopeggynary.parser -r wiktiopeggynary.parser.mouse \
+    -D src/main/java/wiktiopeggynary/parser
+```
+
+`WiktionarySemantics.java` is hand-maintained — never pass `-s` to overwrite it with a skeleton.
 
 ### Run tests
 
