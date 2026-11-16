@@ -1,0 +1,99 @@
+{{Siehe auch|[[quatsch]]}}
+== Quatsch ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Quatsch
+|Nominativ Plural=—
+|Genitiv Singular=Quatschs
+|Genitiv Singular*=Quatsches
+|Genitiv Plural=—
+|Dativ Singular=Quatsch
+|Dativ Singular*=Quatsche
+|Dativ Plural=—
+|Akkusativ Singular=Quatsch
+|Akkusativ Plural=—
+}}
+
+{{Worttrennung}}
+:Quatsch, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|kvat͡ʃ}}
+:{{Hörbeispiele}} {{Audio|De-Quatsch.ogg}}
+:{{Reime}} {{Reim|at͡ʃ|Deutsch}}
+
+{{Bedeutungen}}
+:{{K|ugs.}}
+::[1] {{K|abwertend}} unkluge, [[ungereimt]]e Aussage oder Aussagen
+::[2] {{K|abwertend}} [[Torheit]]; falsche, unüberlegte, unkluge Handlung
+::[3] {{K|abwertend}} [[Alberei]]; kindisches Benehmen
+::[4] etwas Unsinniges
+::[5] {{K|landschaftlich}} breiiger [[Matsch]]
+
+{{Herkunft}}
+:[[Ableitung]] des Substantivs vom Verb ''[[quatschen]]'' durch [[Konversion]]. Das Wort ist im Sinne von „Matsch, Dreck“ seit dem 18. Jahrhundert, im Sinne von „Unsinn, Geschwätz, dummes Zeug“ seit dem 19. Jahrhundert belegt.<ref>{{Literatur|Autor=Wolfgang Pfeifer [Leitung]|Titel=Etymologisches Wörterbuch des Deutschen|Auflage=2. durchgesehene und erweiterte |Verlag=Deutscher Taschenbuch Verlag|Ort=München|Jahr=1993|ISBN=3-423-03358-4}}, Stichwort „quatschen“.</ref>
+
+{{Beispiele}}
+:[1] Red nicht solchen ''Quatsch,'' natürlich kommt er wieder nach Hause!
+:[1] Das ist doch ''Quatsch,'' so kann es gar nicht gewesen sein.
+:[2] Was hast du jetzt wieder für einen ''Quatsch'' verzapft? Das kriegt doch keiner wieder richtig zusammengebaut!
+:[2] „Jeder ''Quatsch,'' den man mit einem Manne erlebte, erklärte sich dadurch, daß er verheiratet war.“<ref>{{Literatur | Autor=Hans Fallada | Titel= Wolf unter Wölfen| TitelErg= Roman |Auflage= 2. |Verlag= Aufbau Verlag | Ort= Berlin |Jahr= 2013| Seiten= 106.|ISBN=978-3-7466-2743-4|}} Erstveröffentlichung 1937.</ref>
+:[3] Lasst den ''Quatsch,'' jetzt wird aufgeräumt und Abendbrot gegessen!
+:[4] Reiserücktrittsversicherungen sind ''Quatsch,'' im Ernstfall zahlen sie sowieso nicht.
+:[4] Es ist ''Quatsch,'' jetzt noch etwas an dem Entwurf ändern zu wollen; in einer Stunde ist Abgabetermin.
+
+{{Redewendungen}}
+:[[Quatsch mit Soße]]
+
+{{Charakteristische Wortkombinationen}}
+:den ''Quatsch'' lassen, ''Quatsch'' reden, ''Quatsch'' verzapfen
+
+{{Wortbildungen}}
+:[[Quatschkopf]], [[Quatschmaul]]
+:[[quatschnass]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=dumme, ungereimte Aussage|Ü-Liste=
+*{{en}}: {{Ü|en|nonsense}}, {{Ü|en|bullshit}}, {{Ü|en|rubbish}}
+*{{eo}}: {{Ü|eo|stultaĵo}}, {{Ü|eo|sensencaĵo}}, {{Ü|eo|galimatio}}
+*{{fo}}: {{Ü|fo|tvætl}} {{n}}, {{Ü|fo|møsn}} {{n}}, {{Ü|fo|svass}} {{n}}
+*{{fr}}: {{Ü|fr|balivernes}}, {{Ü|fr|idiotie}} {{f}}
+*{{it}}: {{Ü|it|stupidaggine}}
+*{{nl}}: {{Ü|nl|flauwekul}} {{m}}, {{Ü|nl|kwats}} {{f}}, {{Ü|nl|quatsch}} {{m}}
+*{{pl}}: {{Ü|pl|bzdura}} {{f}}
+*{{pt}}: {{Ü|pt|bobagem}} {{f}}, {{Ü|pt|besteira}} {{f}}, {{Ü|pt|leseira}}
+*{{ru}}: {{Üt|ru|вздор}}
+*{{sv}}: {{Ü|sv|smörja}}{{u}}, {{Ü|sv|trams}}{{n}}
+*{{es}}: {{Ü|es|tonterías}} {{f}}, {{Ü|es|chorrada}}, {{Ü|es|pamplinas}}
+}}
+
+{{Ü-Tabelle|2|G=Torheit, falsche, unüberlegte, unkluge Handlung|Ü-Liste=
+*{{fr}}: {{Ü|fr|bêtises}} {{f}} ''Pl.''
+*{{sv}}: {{Ü|sv|smörja}}{{u}}, {{Ü|sv|trams}}{{n}}
+}}
+
+{{Ü-Tabelle|3|G=Alberei, kindisches Benehmen|Ü-Liste=
+*{{en}}: {{Ü|en|flim-flam}}
+*{{fr}}: {{Ü|fr|enfantillage}} {{m}}
+}}
+
+{{Ü-Tabelle|4|G=etwas Unsinniges|Ü-Liste=
+*{{en}}: {{Ü|en|flim-flam}}
+*{{sv}}: {{Ü|sv|smörja}}{{u}}, {{Ü|sv|trams}}{{n}}
+}}
+
+{{Ü-Tabelle|5|G=breiiger Matsch|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+*{{fr}}: {{Ü|fr|}}
+}}
+
+{{Referenzen}}
+:[1, 5] {{Ref-Grimm|Quatsch}}
+:[1, 2, 5] {{Ref-DWDS|Quatsch}}
+:[*] {{Ref-UniLeipzig|Quatsch}}
+:[2] {{Ref-FreeDictionary|Quatsch}}
+:[1–5] {{Ref-Duden|Quatsch}}
+
+{{Quellen}}

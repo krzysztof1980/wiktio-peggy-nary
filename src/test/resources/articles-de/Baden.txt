@@ -1,0 +1,234 @@
+{{Siehe auch|[[baden]]}}
+== Baden ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Baden
+|Nominativ Plural=-
+|Genitiv Singular=Badens
+|Genitiv Plural=-
+|Dativ Singular=Baden
+|Dativ Plural=-
+|Akkusativ Singular=Baden
+|Akkusativ Plural=-
+}}
+
+{{Worttrennung}}
+:Ba·den, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈbaːdn̩}}
+:{{Hörbeispiele}} {{Audio|De-Baden.ogg}}
+:{{Reime}} {{Reim|aːdn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] der Vorgang oder das Konzept einen Gegenstand oder eine Person in eine [[Flüssigkeit]], [[Strahlung]] oder ein [[feinkörnig]]es [[Material]] [[eintauchen|einzutauchen]], ein [[Bad]] zu nehmen, zu baden
+
+{{Herkunft}}
+:[[Substantivierung]] des [[Verbs]] „[[baden]]“
+
+{{Unterbegriffe}}
+:[1] [[Frauenbaden]], [[Nacktbaden]], [[Sonnenbaden]]
+
+{{Beispiele}}
+:[1] An dieser Stelle ist das ''Baden'' verboten.
+:[1] „In den christlichen Ländern gewann dagegen die Lehrrichtung der Askese zunehmend an Bedeutung, die das ''Baden'' als Verweichlichung und Luxus ablehnte.“<ref>{{Wikipedia |oldid=135152318#Mittelalter |Badekultur}}</ref>
+:[1] „Jede dialektische Theorie des ''Badens'', Schwimmens, Planschens sowie Tauchens und Taufens beginnt kalt und klar mit Heraklits Grundsatz: »Man kann nicht zweimal in denselben Fluss steigen.«“<ref>{{Internetquelle | titel=Baden gehen | autor=Roger Behrens | werk=Jungle World |url=http://jungle-world.com/artikel/2014/33/50387.html |datum=2014-08-14 |zugriff=2014-11-08}}</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Vorgang, ein Bad zu nehmen|Ü-Liste=
+*{{en}}: {{Ü|en|bathing}}, {{Ü|en|dipping}}
+*{{fr}}: {{Ü|fr|}}
+*{{it}}: {{Ü|it|}}
+*{{mk}}: {{Üt|mk|бањање|banjanje}} {{n}}, {{Üt|mk|капење|kapenje}} {{n}}
+*{{sv}}: {{Ü|sv|}}
+*{{sr}}: {{Üt|sr|купање|kupanje}} {{n}}, {{va.|:}} {{Üt|sr|бањање|banjanje}} {{n}}
+*{{es}}: {{Ü|es|baño}}, {{Ü|es|tomar un baño}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Badekultur|Baden}}
+:[1] {{Ref-DWDS|Baden}}
+
+{{Quellen}}
+
+=== {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Toponym|Deutsch}} ===
+
+{{Deutsch Toponym Übersicht}}
+
+{{Worttrennung}}
+:Ba·den, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈbaːdn̩}}, {{Lautschrift|ˈbaːdən}}
+:{{Hörbeispiele}} {{Audio|De-Baden.ogg}}, {{Audio|}}
+:{{Reime}} {{Reim|aːdn̩|Deutsch}}
+
+{{Bedeutungen}}
+*{{K|ft=Gebiet im äußersten Südwesten Deutschlands}}
+::[1] die ehemalige Markgrafschaft ''Baden'', später Großherzogtum und Land des Deutschen Reichs (Hauptstadt Karlsruhe), 1945 geteilt (Nord- und Südbaden) und seit 1952 westlicher Teil des Landes Baden-Württemberg. Siehe auch [[w:Markgrafschaft Baden|Markgrafschaft Baden]].
+::[2] das Weinanbaugebiet ''Baden'' in Deutschland
+::[3] ehemaliges Land (Hauptstadt Freiburg im Breisgau) der französischen Besatzungszone beziehungsweise der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg, ging 1952 im Land Baden-Württemberg auf (Südbaden)
+:[4] bis 1931 offizieller Name der heutigen Stadt [[Baden-Baden]] in [[Baden-Württemberg]]
+:[5] Bezirkshauptstadt und Kurort in [[Niederösterreich]]
+:[6] Verwaltungsbezirk in [[Niederösterreich]]
+:[7] der Bezirkshauptort im Schweizer Kanton [[Aargau]]
+*{{K|ft=ein Gebiet im heutigen Kanton [[Aargau]]}}
+::[8] Bezirk im Kanton Aargau
+::[9] ehemaliger Kanton ''Baden'' der Schweiz während der Zeit der Helvetischen Republik
+::[10] Grafschaft ''Baden'' ein ehemaliges Untertanengebiet (gemeine Herrschaft) der Eidgenossenschaft
+:[11] Ortsteil von [[Achim]] in [[Niedersachsen]]
+:[12] Gemeinde im französischen Département [[Morbihan]]
+:[13] Ortschaft in der kanadischen Provinz [[Ontario]]
+:[14] Ortschaft in der kanadischen Provinz [[Manitoba]]
+:[15] Ortschaft im US-amerikanischen Bundesstaat [[Pennsylvania]]
+
+{{Abkürzungen}}
+:[4] [[BAD]]
+:[6] ''KFZ-Kennzeichen:'' [[BN]]
+
+{{Synonyme}}
+:[4] [[Baden-Baden]]
+
+{{Oberbegriffe}}
+:[1] [[Gebiet]]
+:[4, 5, 7] [[Stadt]]
+:[6] [[Verwaltungsbezirk]]
+:[6] [[Gebiet]]
+:[11] [[Ortsteil]]
+:[8–11] [[Ortschaft]]
+
+{{Unterbegriffe}}
+:[1] [[Mittelbaden]], [[Nordbaden]], [[Oberbaden]], [[Südbaden]]
+
+{{Meronyme}}
+:[5] ''Teile der Stadt Baden:'' [[Baden]], [[Braiten]], [[Gamingerhof]], [[Leesdorf]], [[Mitterberg]], [[Rauhenstein]], [[Weikersdorf]] 
+:[6] ''Gemeinden des Bezirks Baden:'' [[Alland]], [[Altenmarkt an der Triesting]], [[Bad Vöslau]], [[Baden]], [[Berndorf]], [[Blumau-Neurißhof]], [[Ebreichsdorf]], [[Enzesfeld-Lindabrunn]], [[Furth an der Triesting]], [[Günselsdorf]], [[Heiligenkreuz]], [[Hernstein]], [[Hirtenberg]], [[Klausen-Leopoldsdorf]], [[Kottingbrunn]], [[Leobersdorf]], [[Mitterndorf an der Fischa]], [[Oberwaltersdorf]], [[Pfaffstätten]], [[Pottendorf]], [[Pottenstein]], [[Reisenberg]], [[Schönau an der Triesting]], [[Seibersdorf]], [[Sooß]], [[Tattendorf]], [[Teesdorf]], [[Traiskirchen]], [[Trumau]], [[Weissenbach an der Triesting]]
+
+{{Beispiele}}
+:[1] Der deutsche Staat ''Baden'' ging 1952 im Bundesland Baden-Württemberg auf.
+:[1] „Im Jahre 1838 waren in ''Baden'' etwa 400 Goldwäscher hauptberuflich tätig.“<ref>{{Literatur | Autor=Bruno P. Kremer | Titel =Der Rhein von den Alpen bis zur Nordsee| Verlag=Fachtechnik + Mercator-Verlag | Ort=Duisburg | Jahr=2010 | ISBN=978-3-87463-456-4 | Seiten=74.}}</ref>
+:[2] ''Baden'' ist ein bekanntes Weinanbaugebiet.
+:[3] ''Baden'' hatte wie Rheinland-Pfalz und Württemberg nach dem 2. Weltkrieg eigene Briefmarken.
+:[5] Nun bringt er Europas größte Fotoausstellung nach ''Baden.''<ref>{{Per-Kurier Online | Online=https://kurier.at/chronik/niederoesterreich/baden-eine-ganze-stadt-als-foto-galerie/400028572 | Titel=Baden: Eine ganze Stadt als Foto-Galerie | Tag= 30 | Monat=04 | Jahr=2018 | Zugriff=2018-06-04 }}</ref>
+:[6] Die negative Entwicklung, die besonders im Umfeld des Flüchtlingslagers Traiskirchen im Bezirk ''Baden'' und Umgebung stark zu spüren ist, wurde zuletzt auf politischer Ebene heiß diskutiert.<ref>{{Per-Kurier Online | Online=https://kurier.at/chronik/niederoesterreich/kriminalitaet-stieg-mit-zahl-der-fluechtlinge/277.024.271 | Autor=Patrick Wammerl | Titel=Kriminalität stieg mit Zahl der Flüchtlinge | Tag=25 | Monat=07 | Jahr=2017 | Zugriff=2018-06-04 }}</ref>
+
+{{Wortbildungen}}
+:[[Badner]],  [[Badener]], [[badisch]], [[Badenser]], [[symbadisch]], [[unsymbadisch]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=ehemalige Markgrafschaft Baden, später Großherzogtum und Land des Deutschen Reichs|Ü-Liste=
+*{{en}}: {{Ü|en|Baden}}
+*{{fr}}: {{Ü|fr|}}
+*{{ca}}: {{Ü|ca|Baden}}
+*{{es}}: {{Ü|es|Baden}}
+*{{vo}}: {{Ü|vo|Badän}}
+}}
+{{Ü-Tabelle|2|G=Weinanbaugebiet Baden in Deutschland|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|3|G=ehemalige französische Besatzungszone, in der Bundesrepublik Deutschland nach dem Zweiten Weltkrieg|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|4|G=bis 1931 offizieller Name der heutigen Stadt Baden-Baden in Baden-Württemberg|Ü-Liste=
+*{{pl}}: {{Ü|pl|Badenia}} {{f}}
+}}
+{{Ü-Tabelle|5|G=Bezirkshauptstadt und Kurort in Niederösterreich|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|6|G=Verwaltungsbezirk in Niederösterreich|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|7|G=Bezirkshauptort im Schweizer Kanton Aargau|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|8|G=Bezirk im Kanton Aargau|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|9|G=ehemaliger Kanton Baden der Schweiz während der Zeit der Helvetischen Republik|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|10|G=Grafschaft Baden ein ehemaliges Untertanengebiet (gemeine Herrschaft) der Eidgenossenschaft|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|11|G=Ortsteil von Achim in Niedersachsen|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|12|G=Gemeinde im französischen Département Morbihan|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|13|G=Ortschaft in der kanadischen Provinz Ontario|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|14|G=Ortschaft in der kanadischen Provinz Manitoba|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+{{Ü-Tabelle|15|G=Ortschaft im US-amerikanischen Bundesstaat Pennsylvania|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+}}
+
+{{Referenzen}}
+:[1–15] {{Wikipedia|Baden}}
+
+{{Quellen}}
+{{Navigationsleiste Bezirke Niederösterreichs}}
+
+{{Ähnlichkeiten 1|[[Barden]], [[Waden]], [[waten]]|Anagramme=[[Abend]], [[Bande]]}}
+
+== Baden ({{Sprache|Englisch}}) ==
+=== {{Wortart|Substantiv|Englisch}}, {{Wortart|Vorname|Englisch}} ===
+
+{{Worttrennung}}
+:Ba·den
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈbeɪ̯dən}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] [[englisch]]er männlicher Vorname
+
+{{Bekannte Namensträger}}
+:[1] [[w:Baden Cooke|Baden Cooke]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=englischer männlicher Vorname|Ü-Liste=
+*{{de}}: {{Ü|de|Baden}}
+*{{en}}: {{Ü|en|}}
+*{{it}}: {{Ü|it|}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=en|Baden}}
+
+== Baden ({{Sprache|Katalanisch}}) ==
+=== {{Wortart|Substantiv|Katalanisch}}, {{m}}, {{Wortart|Toponym|Katalanisch}} ===
+
+{{Katalanisch Substantiv Übersicht
+|Singular=Baden
+|Plural=-
+|Genus=m
+|Toponym=1
+}}
+
+{{Worttrennung}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift||spr=ca}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] historische Region im Südwesten Deutschlands
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=historische Region im Südwesten Deutschlands |Ü-Liste=
+*{{de}}: {{Ü|de|Baden}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=ca|Baden}}
+:[1] {{Lit-Catalana: Enciclopèdia Catalana|A=1}}, Band 1, Seite 824, Artikel „Baden“

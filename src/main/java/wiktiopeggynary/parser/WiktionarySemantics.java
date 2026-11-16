@@ -348,6 +348,38 @@ class WiktionarySemantics extends SemanticsBase {
 			mainMeaning.addSubMeaning(meaning);
 		}
 	}
+
+	//-------------------------------------------------------------------
+	//  LabelMeaning = (MeaningLvl / "*") RichTextComponent++ EOL
+	//                                        1..n-2        n-1
+	//  de.wiktionary grouping convention (cf. Hilfe:Bedeutungen "Absätze"):
+	//  inside {{Bedeutungen}}, a line carrying NO item number is a group label
+	//  (e.g. "* {{K|trans.}}", ":{{K|ugs.}}"). Labels become main meanings so
+	//  that following "::"-lines nest under them as sub-meanings.
+	//-------------------------------------------------------------------
+	void labelMeaning() {
+		RichText text = new RichText();
+		boolean leadingWhitespace = true;
+		for (int i = 1; i < rhsSize() - 1; i++) {
+			Object component = rhs(i).get();
+			if (component == null)
+				continue;
+			if (leadingWhitespace && component instanceof PlainText plain && plain.getText().isBlank())
+				continue;
+			leadingWhitespace = false;
+			text.addComponent((RichTextComponent) component);
+		}
+		if (leadingWhitespace)
+			return;
+
+		Meaning label = new Meaning();
+		label.setText(text);
+		if (rhs(0).text().length() <= 1 || entryWorkingCopy.getMeanings().isEmpty()) {
+			entryWorkingCopy.addMeaning(label);
+		} else {
+			entryWorkingCopy.getMeanings().get(entryWorkingCopy.getMeanings().size() - 1).addSubMeaning(label);
+		}
+	}
 	
 	//=====================================================================
 	//  OldSpellingTemplate = LT "..." SEP TextualTParam RestOfLine

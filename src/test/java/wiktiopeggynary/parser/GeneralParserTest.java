@@ -8,6 +8,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.ReferenceWiktionaryEntry;
 import wiktiopeggynary.model.WiktionaryEntry;
+import wiktiopeggynary.model.markup.ItemNumber;
+import wiktiopeggynary.model.meaning.Meaning;
 import wiktiopeggynary.model.substantiv.Gender;
 import wiktiopeggynary.model.substantiv.Substantiv;
 
@@ -57,6 +59,51 @@ class GeneralParserTest extends ParserSpecBase {
         assertNull(matsuInseln.getGender());
         assertEquals(1, matsuInseln.getMeanings().size());
         assertEquals(0, matsuInseln.getFlexionForms(Numerus.Singular).size());
+    }
+
+    @Test
+    void parsesColonGroupedMeanings() {
+        List<WiktionaryEntry> entries = parseWiktionaryEntryPage("Quatsch").getWiktionaryEntries();
+
+        assertEquals(1, entries.size());
+        Substantiv quatsch = assertInstanceOf(Substantiv.class, entries.get(0));
+        assertEquals(1, quatsch.getMeanings().size());
+
+        Meaning colloquialLabel = quatsch.getMeanings().get(0);
+        assertNull(colloquialLabel.getNumbers());
+        assertEquals(5, colloquialLabel.getSubMeanings().size());
+        assertEquals(List.of(ItemNumber.singleNumber("1")), colloquialLabel.getSubMeanings().get(0).getNumbers());
+        assertEquals(List.of(ItemNumber.singleNumber("5")), colloquialLabel.getSubMeanings().get(4).getNumbers());
+    }
+
+    @Test
+    void parsesGroupedMeanings() {
+        List<WiktionaryEntry> entries = parseWiktionaryEntryPage("Baden").getWiktionaryEntries();
+
+        assertEquals(2, entries.size());
+        Substantiv bathing = assertInstanceOf(Substantiv.class, entries.get(0));
+        assertEquals(1, bathing.getMeanings().size());
+
+        Substantiv toponym = assertInstanceOf(Substantiv.class, entries.get(1));
+        List<Meaning> meanings = toponym.getMeanings();
+        assertEquals(11, meanings.size());
+
+        Meaning badenRegionGroup = meanings.get(0);
+        assertNull(badenRegionGroup.getNumbers());
+        assertTrue(badenRegionGroup.getText().toString().contains("Südwesten"));
+        assertEquals(3, badenRegionGroup.getSubMeanings().size());
+        assertEquals(List.of(ItemNumber.singleNumber("1")), badenRegionGroup.getSubMeanings().get(0).getNumbers());
+        assertEquals(List.of(ItemNumber.singleNumber("3")), badenRegionGroup.getSubMeanings().get(2).getNumbers());
+
+        assertEquals(List.of(ItemNumber.singleNumber("4")), meanings.get(1).getNumbers());
+        assertEquals(0, meanings.get(4).getSubMeanings().size());
+
+        Meaning aargauGroup = meanings.get(5);
+        assertEquals(3, aargauGroup.getSubMeanings().size());
+        assertEquals(List.of(ItemNumber.singleNumber("8")), aargauGroup.getSubMeanings().get(0).getNumbers());
+
+        assertEquals(List.of(ItemNumber.singleNumber("11")), meanings.get(6).getNumbers());
+        assertEquals(List.of(ItemNumber.singleNumber("15")), meanings.get(10).getNumbers());
     }
 
     @Test

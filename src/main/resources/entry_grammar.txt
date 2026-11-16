@@ -66,9 +66,10 @@ MiddleSection = (!KopfStart (FlexionTable / MeaningsTextbaustein / Line))* ;
 //------------------------------------------------------------------------------
 MeaningsTextbaustein = MeaningsKopf MeaningList ;
 MeaningsKopf = LT "Bedeutungen" RT RestOfLine ;
-MeaningList = (!TextbausteinEnd (Meaning / Line))* ;
+MeaningList = (!TextbausteinEnd (Meaning / LabelMeaning / Line))* ;
 Meaning = MeaningLvl (ItemNo / "*") RichTextComponent*+ EOL {};
 MeaningLvl = ":"+ ;
+LabelMeaning = (MeaningLvl / "*") RichTextComponent++ EOL {labelMeaning};
 
 //------------------------------------------------------------------------------
 // Translations
