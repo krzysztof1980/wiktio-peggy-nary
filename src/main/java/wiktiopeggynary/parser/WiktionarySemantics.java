@@ -123,8 +123,8 @@ class WiktionarySemantics extends SemanticsBase {
 	}
 	
 	//=====================================================================
-	//  Genus = "Genus" (Space Digit)? "=" ([mnfu0x] / "pl") EOL
-	//                                            n-2        n-1
+	//  Genus = "Genus" (Space Digit)? "=" ([mnfu0x] / "pl" / "Pl.") RestOfLine
+	//                                                     value  n-2       n-1
 	//=====================================================================
 	void addGenus() {
 		Gender gender = Gender.fromShortcut(rhs(rhsSize() - 2).text());
@@ -200,6 +200,10 @@ class WiktionarySemantics extends SemanticsBase {
 		FlexionForm flexionForm;
 		if (formIdx < flexionForms.size()) {
 			flexionForm = flexionForms.get(formIdx);
+		} else if (numerus == Numerus.Singular && ((Substantiv) entryWorkingCopy).getGender() == null) {
+			logger.warn("No gender known for '{}' (head line and Genus row absent) - skipping singular form '{}'",
+			            entryWorkingCopy.getLemma(), rhs(rhsSize() - 2).text());
+			return;
 		} else if (numerus == Numerus.Singular) {
 			flexionForm = new FlexionForm(((Substantiv) entryWorkingCopy).getGender().getGenders()[0]);
 			((Substantiv) entryWorkingCopy).addFlexionForm(Numerus.Singular, flexionForm);

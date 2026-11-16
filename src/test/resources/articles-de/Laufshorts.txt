@@ -1,0 +1,47 @@
+== Laufshorts ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=f (Pluraletantum)
+|Nominativ Singular=—
+|Nominativ Plural=Laufshorts
+|Genitiv Singular=—
+|Genitiv Plural=Laufshorts
+|Dativ Singular=—
+|Dativ Plural=Laufshorts
+|Akkusativ Singular=—
+|Akkusativ Plural=Laufshorts
+}}
+
+{{Worttrennung}}
+:{{kSg.}}, Lauf·shorts
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈlaʊ̯fˌʃɔːt͡s}}
+:{{Hörbeispiele}} {{Audio|De-Laufshorts.ogg}}
+
+{{Bedeutungen}}
+:[1] {{K|Laufsport}} kurze Hose ([[Sporthose]]), die speziell für das Laufen konzipiert ist
+
+{{Herkunft}}
+:[[Determinativkompositum]] aus den Substantiven ''[[Lauf]]'' und ''[[Shorts]]''
+
+{{Oberbegriffe}}
+:[1] [[Laufbekleidung]], [[Laufhose]], [[Laufkleidung]], [[Laufausstattung]], [[Laufausrüstung]], [[Sportbekleidung]], [[Sporthose]], [[Sportkleidung]]
+
+{{Beispiele}}
+:[1] „Die richtigen Shorts findest du am schnellsten, wenn du nicht nach Herrenshorts sondern je nach Bedarf nach Boxershorts, Bermudashorts, Sportshorts, ''Laufshorts'', etc. suchst.“<ref>{{DWDS-Korpus-Beleg|Bibl=Herrenshorts Ratgeber: Empfehlung und Kaufratgeber - Fashionmadl, Fashionmadl, 2023-01-15|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Laufshorts&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-07-03}}</ref>
+:[1] „Die bequeme Innenschale aus 75 % Polyamid mit 25 % Elasthan (Lycra) verhindert, dass Ihre wertvollen Teile bei dieser ''Laufshorts'' heraushängen.“<ref>{{DWDS-Korpus-Beleg|Bibl=Mister B URBAN Ibiza Shorts Fluo Blue S - Mister Love Erotikhandel, Mister Love Erotikhandel, 2023-05-02|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?corpus=webxl&q=Laufshorts|Zugriff=2025-07-03}}</ref>
+:[1] „Aus diesem Grund findest Du bei uns Laufhosen und ''Laufshorts'' in verschiedenen Längen - von Kurzgrößen über Normalgrößen bis hin zu Langgrößen.“<ref>{{DWDS-Korpus-Beleg|Bibl=Wärmende Lauftight mit Anti-Rutsch-Gummi ANDRO | TAO Sportswear, https://www.tao.info/, 2023-07-17|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?corpus=webxl&q=Laufshorts|Zugriff=2025-07-03}}</ref>
+:[1] „Hier ein paar Laufsocken, da ''Laufshorts'' unter dem Schreibtisch und hinten in der Ecke sind noch ein paar durchgetretene Laufschuhe – Wenn man sich bei dir zu Hause, bei deinen Eltern oder bei der Arbeit aufhält, findet man stets eine Spur bzw. ein sportliches Lebenszeichen von dir.“<ref>{{DWDS-Korpus-Beleg|Bibl=Verrückte Dinge, die nur Läufer*innen &#91;sic&#93; verstehen, Achilles Running, 2020-11-05|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Laufshorts&corpus=webxl&format=full&p=4&sort=date_desc&limit=50|Zugriff=2025-07-03}}</ref>
+:[1] „Mein Platz an der Theke ist noch warm, als ich in ''Laufshorts'' wieder vorm Zappes stehe.“<ref>{{DWDS-Korpus-Beleg|Bibl=ABGESAGT: ERINNERST DU DICH? (67), Marathon4you, 2020-10-04|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Laufshorts&corpus=webxl&format=full&p=4&sort=date_desc&limit=50|Zugriff=2025-07-03}}</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=kurze Hose zum Laufen|Ü-Liste=
+*{{en}}: {{Ü|en|running shorts|L=E}}
+}}
+
+{{Referenzen}}
+:[*] {{Ref-DWDS-Korpus|3=webxl}} (nach Anmeldung)
+
+{{Quellen}}

@@ -5,6 +5,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
+import wiktiopeggynary.model.Numerus;
 import wiktiopeggynary.model.ReferenceWiktionaryEntry;
 import wiktiopeggynary.model.WiktionaryEntry;
 import wiktiopeggynary.model.substantiv.Gender;
@@ -16,6 +17,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
@@ -27,6 +29,34 @@ class GeneralParserTest extends ParserSpecBase {
     @CsvSource({"\"empty line at the begin of file\",Unabwendbarkeit"})
     void newline(String testcase, String lemma) {
         assertFalse(parseWiktionaryEntryPage(lemma).getWiktionaryEntries().isEmpty());
+    }
+
+    @Test
+    void parsePluraTantumHeadlessOfGenderMarker() {
+        List<WiktionaryEntry> entries = parseWiktionaryEntryPage("Calisthenics").getWiktionaryEntries();
+
+        assertEquals(1, entries.size());
+        Substantiv calisthenics = assertInstanceOf(Substantiv.class, entries.get(0));
+        assertTrue(calisthenics.getGender().isSameAs(Gender.PLURAL));
+        assertEquals(1, calisthenics.getMeanings().size());
+    }
+
+    @Test
+    void parsesGenusRowWithParenthesizedSuffix() {
+        Substantiv laufshorts = assertInstanceOf(Substantiv.class,
+                parseWiktionaryEntryPage("Laufshorts").getWiktionaryEntries().get(0));
+
+        assertEquals(Gender.FEMININUM, laufshorts.getFlexionForms(Numerus.Singular).get(0).getGender());
+    }
+
+    @Test
+    void parsesPageWithoutAnyGenderInfo() {
+        Substantiv matsuInseln = assertInstanceOf(Substantiv.class,
+                parseWiktionaryEntryPage("Matsu-Inseln").getWiktionaryEntries().get(0));
+
+        assertNull(matsuInseln.getGender());
+        assertEquals(1, matsuInseln.getMeanings().size());
+        assertEquals(0, matsuInseln.getFlexionForms(Numerus.Singular).size());
     }
 
     @Test

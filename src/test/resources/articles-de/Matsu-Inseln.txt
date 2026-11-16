@@ -1,0 +1,47 @@
+== Matsu-Inseln ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{Wortart|Toponym|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=
+|Nominativ Singular=—
+|Nominativ Plural=Matsu-Inseln
+|Genitiv Singular=—
+|Genitiv Plural=Matsu-Inseln
+|Dativ Singular=—
+|Dativ Plural=Matsu-Inseln
+|Akkusativ Singular=—
+|Akkusativ Plural=Matsu-Inseln
+}}
+
+{{Worttrennung}}
+:{{kSg.}}, {{Pl.}} Ma·tsu-In·seln
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] Gruppe von 19 kleinen Inseln am nordwestlichen Rand der Taiwanstraße, die zu Taiwan gehört
+
+{{Beispiele}}
+:[1] „›Dann schicken die Sie auf die ''Matsu-Inseln''.‹“<ref>{{Literatur|Autor=Chang Kuo-Li|Titel=Der grillende Killer|Verlag=Droemer|Ort=München|Jahr=2022|ISBN=978-3-426-28389-9|Seiten=261}}.</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=taiwanesische Inselgruppe|Ü-Liste=
+*{{zh}}:
+**{{zh-tw}}: {{Üt|zh-tw|馬祖列島|Mǎzǔ Lièdǎo}}
+**{{hak}}: {{Üt|hak|馬祖島|Mâ-chú-tó}}
+**{{nan}}: {{Üt|nan|馬祖島|Má-chó͘-tó}}
+*{{en}}: {{Ü|en|Matsu Islands}}
+*{{id}}: {{Ü|id|Kepulauan Matsu}}
+*{{ja}}: {{Üt|ja|馬祖島|ばそとう, Basotō}}
+*{{pt}}: {{Ü|pt|Ilhas Matsu}}
+*{{sv}}: {{Ü|sv|Matsuöarna}}
+*{{vi}}: {{Ü|vi|Quần đảo Mã Tổ}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[*] {{Ref-DWDS-Korpus}}
+
+{{Quellen}}

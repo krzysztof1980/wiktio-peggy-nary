@@ -1,0 +1,64 @@
+== Calisthenics ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=Pl.
+|Nominativ Singular=–
+|Nominativ Plural=Calisthenics
+|Genitiv Singular=–
+|Genitiv Plural=Calisthenics
+|Dativ Singular=–
+|Dativ Plural=Calisthenics
+|Akkusativ Singular=–
+|Akkusativ Plural=Calisthenics
+|Bild=CALISTENIA.jpg|mini|1|ein Mann bei einer ''Calisthenics''-Übung
+}}
+
+{{Worttrennung}}
+:{{kSg.}}, {{Pl.}} Ca·lis·the·nics
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|kaliˈstɛnɪks}}
+:{{Hörbeispiele}} {{Audio|De-Calisthenics.ogg}}
+
+{{Bedeutungen}}
+:[1] Form des körperlichen [[Training]]s, bei dem hauptsächlich nur das eigene [[Körpergewicht]] als [[Widerstand]] genutzt wird
+
+{{QS Herkunft|fehlt}}
+
+{{Synonyme}}
+:[1] [[Kalisthenie]]
+
+{{Sinnverwandte Wörter}}
+:[1] [[Eigengewichtstraining]], [[Eigengewichtübung]], [[Streetlifting]], [[Street‑Workout]]
+
+{{Oberbegriffe}}
+:[1] [[Körpergewichtstraining]], [[Körpertraining]], [[Krafttraining]], [[Trainingsmethode]], [[Widerstandstraining]]
+
+{{Beispiele}}
+:[1] „''Calisthenics'', eine Form des Körpergewichtstrainings, hat sich zu einer beliebten und herausfordernden Art des Workouts entwickelt.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics Evolution: Erweitere deine Skills mit anspruchsvollen Fortgeschrittenen-Übungen - Fitnessquatsch, Fitnessquatsch, 2023-07-03|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?corpus=webxl&q=Calisthenics|Zugriff=2025-01-30}}</ref>
+:[1] „''Calisthenics'' bietet eine Vielzahl von Bewegungsabläufen, die Geschicklichkeit, Balance und Körperkontrolle erfordern.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics Evolution: Erweitere deine Skills mit anspruchsvollen Fortgeschrittenen-Übungen - Fitnessquatsch, Fitnessquatsch, 2023-07-03|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?corpus=webxl&q=Calisthenics|Zugriff=2025-01-30}}</ref>
+:[1] „Im Gegensatz zum klassischen Krafttraining müssen bei ''Calisthenics'' mehrere Muskelgruppen miteinander kooperieren.“<ref>{{DWDS-Korpus-Beleg|Bibl=7 Sommersport-Tipps, die nichts kosten. Fast nichts., Warum Nicht Anders, 2023-06-29|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+:[1] „''Calisthenics'' hat sich in den letzten Jahren zu einem immer beliebteren Fitness-Trend entwickelt.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics: Alles was du über den Sport wissen musst, Gym Generation®, 2023-06-29|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+:[1] „Insbesondere in den letzten Jahren hat ''Calisthenics'' durch Plattformen wie YouTube und Instagram an Popularität gewonnen, da immer mehr Menschen die Ästhetik und die vielfältigen Möglichkeiten dieser Trainingsmethode entdeckt haben.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics: Alles was du über den Sport wissen musst, Gym Generation®, 2023-06-29|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+:[1] „''Calisthenics'' bietet eine Reihe von Vorteilen im Vergleich zum klassischen Krafttraining im Fitnessstudio.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics: Alles was du über den Sport wissen musst, Gym Generation®, 2023-06-29|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+:[1] „Einer der grössten Vorteile ist, dass für ''Calisthenics'' keine teuren Geräte oder Hanteln erforderlich sind.“<ref>{{DWDS-Korpus-Beleg|Bibl=Calisthenics: Alles was du über den Sport wissen musst, Gym Generation®, 2023-06-29|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+:[1] „''Calisthenics'' kann praktisch überall trainiert werden.“<ref>{{DWDS-Korpus-Beleg|Bibl=Online Coaching - Calisthenics, Bewegerei, Krafttraining, Online Coaching, Personal Trainer, Calisthenics, Bewegerei, Krafttraining, Online Coaching, 2023-06-27|Korpus=WebXL-Korpus|URL=https://www.dwds.de/r/?q=Calisthenics&corpus=webxl&format=full&p=2&sort=date_desc&limit=50|Zugriff=2025-01-30}}</ref>
+
+{{Wortfamilie}}
+:[[Calisthenics-Park]], [[Calisthenics-Training]], [[Calisthenics-Übung]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Form des körperlichen Trainings, bei dem hauptsächlich nur das eigene Körpergewicht als Widerstand genutzt wird|Ü-Liste=
+*{{en}}: {{Ü|en|calisthenics}}, {{Ü|en|bodyweight training|L=E}}
+*{{it}}: {{Ü|it|callistenia}} {{f}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[*] {{Wikipedia-Suche}}
+:[1] {{Ref-DWDS}}
+:[*] {{Ref-DWDS-Korpus}}
+:[*] {{Ref-UniLeipzig}}
+
+{{Quellen}}
